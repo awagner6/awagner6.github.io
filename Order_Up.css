@@ -1,0 +1,264 @@
+body {
+    font-family: sans-serif, Arial;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.draggable.dragging {
+    opacity: 0.75;
+}
+
+.instructions {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0px;
+    font-size: 2vw; /* Adjust this value as needed */
+    color: #333;
+}
+
+.draggable {
+    padding: 0px;
+    width: 90%;
+    max-width: 500px; /* Maximum width of 500px */
+    height: 8vh;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+    touch-action: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw; /* Adjust this value as needed */
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.draggable.correct {
+    background-color: green !important;
+}
+
+
+@media (max-width: 480px) {
+    .instructions {
+        font-size: 5vw; /* Adjust for smaller screens if needed */
+    }
+
+    .draggable {
+        font-size: 5vw; /* Adjust for smaller screens if needed */
+    }
+
+    .correct {
+        font-size: 5vw;
+    }
+
+}
+
+  
+
+.menu-bar {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-title {
+    font-size: 7vw;
+    font-weight: 600;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.help-icon, .lightbulb-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px; /* Adjusted for vertical alignment */
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust spacing between icons */
+    vertical-align: middle; /* Added for vertical alignment */
+    font-size: 20px; /* Optional: Adjust the font size if needed */
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup p {
+    margin: 0;
+}
+
+.ghost {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0.75;
+    z-index: 999;
+}
+  
+@keyframes bulge {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Adjust the scale value as needed */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes winpop-bulge {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.125);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+  
+  @keyframes bulgePopup {
+    0% {
+      transform: translate(-50%, -50%) scale(0.95);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.05);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+.win-popup, .losing-popup {
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #f0f0f0;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 60%; /* Adjust the width as needed */
+    transform-origin: center; /* Add this line */
+    animation: winpop-bulge 0.3s ease forwards; /* Adjust the duration and easing as needed */
+    animation-delay: 0.1s; /* Add this line */
+  }
+
+
+  /* Add a container for the Submit button */
+.submit-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+#submitBtn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em; /* 50% bigger */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    border-radius: 20px; /* Adjust the border-radius as needed */
+    cursor: pointer;
+    background-color: #ffffff; /* Change to white */
+    border: 2px solid #b8b7b7; /* Make border solid black and slightly thicker */
+  }
+
+  #submitBtn:disabled {
+    opacity: 1 !important;
+    cursor: pointer !important;
+    background-color: #ffffff !important; /* Keep the background white */
+    border: 2px solid #b8b7b7 !important; /* Keep the border as defined */
+    color: #000000 !important; /* Maintain the text color */
+}
+
+  
+.guesses-remaining {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 5vw;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+.guesses-circles {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+.circle {
+    display: inline-block;
+    width: 11px; /* Increased width */
+    height: 10px; /* Smaller height */
+    border-radius: 4px; /* Adjusted to half of the height for a rounded rectangle shape */
+    background-color: #000;
+    margin: 0 2px;
+  }
+  
+  
+.circle.used {
+    background-color: #ccc;
+  }
+  
+.oh-no-popup {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    position: fixed;
+    top: 10%; /* Adjust this value as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Ensure the popup is on top of other elements */
+    text-align: center;
+    font-size: larger; /* Make the font a little bigger */
+  }
+  
+.popup-button {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: .75em;
+    color: #ffffff;
+    background-color: #131212;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+  
