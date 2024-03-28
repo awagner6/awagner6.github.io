@@ -1,7 +1,7 @@
 const container = document.getElementById('container');
 const draggableContainer = document.querySelector('.draggable-container');
 const draggables = document.querySelectorAll('.draggable');
-const correctOrder = ["FIRE TRUCK", "PUMPKIN", "BLONDE", "CROCODILE", "SKY", "DENIM", "LAVENDAR"];
+const correctOrder = ["FIRE TRUCK", "PUMPKIN", "BLONDE", "CROCODILE", "SKY", "DENIM", "LAVENDER"];
 const submitBtn = document.getElementById('submitBtn');
 const puzzleNumber = 1;
 
