@@ -6,6 +6,7 @@ import * as Popups from './popups.js';
 const currentPuzzleIndex = 1;
 const currentPuzzle = puzzles[currentPuzzleIndex];
 const correctOrder = currentPuzzle.solution;
+const theme = currentPuzzle.theme;
 const draggableContainer = document.querySelector('.draggable-container');
 const submitBtn = document.getElementById('submitBtn');
 
