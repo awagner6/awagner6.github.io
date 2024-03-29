@@ -3,9 +3,10 @@ import * as Popups from './popups.js';
 
 // Now you can use Popups.togglePopup, Popups.showOhNoPopup, etc.
 
-const { theme } = puzzles[1];
+const currentPuzzleIndex = 1;
+const currentPuzzle = puzzles[currentPuzzleIndex];
+const correctOrder = currentPuzzle.solution;
 const draggableContainer = document.querySelector('.draggable-container');
-const correctOrder = ["FIRE TRUCK", "PUMPKIN", "BLONDE", "CROCODILE", "SKY", "DENIM", "LAVENDER"];
 const submitBtn = document.getElementById('submitBtn');
 
 let lastOffset = Number.NEGATIVE_INFINITY;
@@ -27,7 +28,6 @@ function generateInitialOrder(puzzle) {
 }
 
 function setupDraggables() {
-  const currentPuzzle = puzzles[1]; // Example to select the first puzzle
   const initialOrder = generateInitialOrder(currentPuzzle);
 
   initialOrder.forEach(item => {
@@ -383,4 +383,6 @@ window.onclick = function(event) {
 }
 
 window.ontouchstart = window.onclick; // Use the same handler for touchend
+
+
 
