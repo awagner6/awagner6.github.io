@@ -1,0 +1,322 @@
+body {
+    font-family: sans-serif, Arial;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.draggable.dragging {
+    opacity: 0.75;
+}
+
+.instructions {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 2.1vh;
+    padding: 0px;
+    font-size: 3vh; /* Adjust this value as needed */
+    color: #333;
+}
+
+.draggable {
+    padding: 0px;
+    width: 90%;
+    max-width: 400px; /* Maximum width of 500px */
+    height: 7vh;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+    touch-action: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.25vh; /* Adjust this value as needed */
+    font-weight: bold;
+    border-radius: 3vh;
+}
+
+.draggable.correct {
+    background-color: #0edc9e !important;
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+  }
+  
+
+
+@media (max-width: 480px) {
+    .instructions {
+        font-size: 2.1vh; /* Adjust for smaller screens if needed */
+
+    }
+
+    .draggable {
+        
+        font-size: 3vh; /* Adjust for smaller screens if needed */
+        margin-bottom: 1vh;
+    }
+
+}
+
+  
+
+.menu-bar {
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+.game-title {
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .game-title {
+        font-size: 5.5vw
+    }
+}
+
+.icon-container {
+    display: flex;
+    max-width: 400px;
+}
+
+.help-icon, .lightbulb-icon {
+    max-width: 400px;
+    display: inline-block;
+    width: 5vh;
+    height: 5vh;
+    line-height: 5vh; /* Adjusted for vertical alignment */
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    text-align: center;
+    cursor: pointer;
+    margin-left: .5em; /* Adjust spacing between icons */
+    vertical-align: middle; /* Added for vertical alignment */
+    font-size: 2.5vh; /* Optional: Adjust the font size if needed */
+}
+
+@media (max-width: 480px) {
+    .help-icon, .lightbulb-icon {
+        width: 3.5vh;
+        height: 3.5vh;
+        line-height: 3.5vh; /* Adjusted for vertical alignment */
+        margin-left: .5em; /* Adjust spacing between icons */
+        font-size: 1.75vh; /* Optional: Adjust the font size if needed */
+    }
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    right: 10%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3vh;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup p {
+    margin: 0;
+}
+
+.ghost {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0.75;
+    z-index: 999;
+}
+  
+@keyframes bulge {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05); /* Adjust the scale value as needed */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes winpop-bulge {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+  
+  @keyframes bulgePopup {
+    0% {
+      transform: translate(-50%, -50%) scale(0.95);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.05);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+.win-popup, .losing-popup {
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    top: 44vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #f0f0f0;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 60%; /* Adjust the width as needed */
+    max-width: 300px;
+    transform-origin: center; /* Add this line */
+    animation: winpop-bulge 0.375s ease; /* Adjust the duration and easing as needed */
+  }
+
+
+  /* Add a container for the Submit button */
+.submit-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: .2vh; /* Adjust the margin as needed */
+  }
+  
+#submitBtn {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: sans-serif;
+    font-size: 2vh; /* Adjust font size as needed */
+    height: 6vh;
+    width: 12vh;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 20px; /* Adjust border-radius as needed */
+    cursor: pointer;
+    background-color: #ffffff; /* Change to white */
+    border: 1px solid #b8b7b7; /* Make border solid black and slightly thicker */
+}
+
+#submitBtn:active {
+    background-color: #555; /* Dark grey */
+  }
+
+#submitBtn:disabled {
+    opacity: 1 !important;
+    cursor: pointer !important;
+    background-color: #ffffff !important; /* Keep the background white */
+    border: 1px solid #b8b7b7 !important; /* Keep the border as defined */
+    color: #000000 !important; /* Maintain the text color */
+}
+
+@media (max-width: 480px) {
+    .submit-btn-container {
+        font-size: .85em;
+    }
+}
+  
+.guesses-remaining {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 2.5vh;
+    font-size: 2.75vh;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+.guesses-circles {
+    display: flex;
+    margin-top: .35vh;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+@media (max-width: 480px) {
+    .guesses-remaining {
+        font-size: 2.1vh;
+    }
+    .guesses-circles {
+        align-items: center;
+    }
+}
+  
+.circle {
+    display: inline-block;
+    width: 2vh; /* Increased width */
+    height: 1vh; /* Smaller height */
+    max-width: 480px;
+    border-radius: .9vh; /* Adjusted to half of the height for a rounded rectangle shape */
+    background-color: #000;
+    margin: 0 5px;
+  }
+  
+  
+.circle.used {
+    background-color: #ccc;
+  }
+  
+.oh-no-popup {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    position: fixed;
+    top: 10%; /* Adjust this value as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Ensure the popup is on top of other elements */
+    text-align: center;
+    font-size: larger; /* Make the font a little bigger */
+  }
+  
+.popup-button {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: .75em;
+    color: #ffffff;
+    background-color: #131212;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup-button:active {
+    background-color: #555; /* Dark grey */
+  }
+
+
+
+  

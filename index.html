@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order up!</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="hidden">
+    <div class="menu-bar">
+        <div class="game-title">Order Up</div>
+        <div class="icon-container">
+            <div class="help-icon" onclick="togglePopup('popup')">?</div>
+            <div class="lightbulb-icon" onclick="togglePopup('lightbulb-popup')">💡</div>
+        </div>
+    </div>    
+    <div class="popup" id="popup">
+        <p>This is a help popup. Tap or click outside to close.</p>
+    </div>
+    <div class="popup" id="lightbulb-popup">
+        <p>This is a lightbulb popup. Tap or click outside to close.</p>
+    </div>
+    <div class="container" id="container">
+        <div class="instructions">
+            <div>Put these items in order!</div>
+        </div>
+        <div class="draggable-container">
+        </div>
+    </div>
+    <div class="guesses-remaining">
+        <span>Guesses remaining:</span>
+        <div class="guesses-circles">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    <div class="submit-btn-container">
+        <button id="submitBtn">Submit</button>
+      </div>
+    <script type="module" src="game.js"></script>
+
+</body>
+</html>
