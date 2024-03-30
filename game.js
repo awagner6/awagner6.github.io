@@ -368,6 +368,7 @@ function animateLosingDraggables(draggables, callback) {
       // Apply the bulge animation and update the background color and text simultaneously
       draggable.style.animation = 'bulge 0.375s ease forwards';
       draggable.style.backgroundColor = '#6c6c6c';
+      draggable.style.cursor = 'default';
       if (!draggable.classList.contains('correct')) {
         draggable.style.color = '#f0f0f0';
       }
