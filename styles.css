@@ -159,6 +159,7 @@ body {
     }
   }
 
+
   @keyframes winpop-bulge {
     0% {
         transform: translate(-50%, -50%) scale(1);
@@ -316,6 +317,36 @@ body {
 .popup-button:active {
     background-color: #555; /* Dark grey */
   }
+
+.copied-popup {
+    position: absolute;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+    z-index: 1000;
+  }
+  
+#lightbulb-popup {
+    position: fixed;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60%;
+    max-width: 400px;
+    font-size: 2.1vh; /* Adjust the font size as needed */
+    height: auto; /* Adjust height based on content */
+    padding: 10px; /* Add some padding for better appearance */
+    display: none; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+#help-popup{
+    display: none;
+}
 
 
 
