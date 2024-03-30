@@ -1,4 +1,4 @@
-// popups.js
+
 
 export function togglePopup(popupId) {
     var popup = document.getElementById(popupId);
@@ -13,6 +13,7 @@ export function closeAllPopups() {
     document.querySelectorAll('.popup').forEach(popup => {
         popup.style.display = "none";
     });
+    isLightbulbPopupVisible = false;
 }
 
 export function showWinPopup(boardStates, theme) {
@@ -22,7 +23,7 @@ export function showWinPopup(boardStates, theme) {
     const transposedStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
     const emojiSequence = transposedStates.map(state => state.join('  ')).join('\n');
 
-    winPopup.innerHTML = `<p style="font-size: .75em;">You solved Order Up<br>in ${boardStates.length} ${boardStates.length === 1 ? 'guess' : 'guesses'}!<br><br><p style="font-size: .75em;">Today's theme:<br><strong>${theme}</strong></p><pre>${emojiSequence}</pre>`;
+    winPopup.innerHTML = `<p style="font-size: .75em;">You solved Order Up<br>in ${boardStates.length} ${boardStates.length === 1 ? 'guess' : 'guesses'}!<br><br><p style="font-size: .75em;">Theme description:<br><strong>${theme}</strong></p><pre>${emojiSequence}</pre>`;
     addButtons(winPopup, boardStates);
 
     document.body.appendChild(winPopup);
@@ -36,8 +37,6 @@ export function showWinPopup(boardStates, theme) {
 }
 
 export function showLosingPopup(boardStates, theme) {
-    showOhNoPopup();
-
     // Set a timeout to display the losing popup after a delay
     setTimeout(() => {
         closeAllPopups();
@@ -47,7 +46,7 @@ export function showLosingPopup(boardStates, theme) {
         const transposedStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
         const emojiSequence = transposedStates.map(state => state.join(' ')).join('\n');
 
-        losingPopup.innerHTML = `<p style="font-size: .75em;">Order Up got the<br>best of you today!</p><br><p style="font-size: .75em;">Today's theme:<br><strong>${theme}</strong></p><pre>${emojiSequence}</pre>`;
+        losingPopup.innerHTML = `<p style="font-size: .75em;">Order Up got the<br>best of you today!</p><br><p style="font-size: .75em;">Theme description:<br><strong>${theme}</strong></p><pre>${emojiSequence}</pre>`;
         addButtons(losingPopup, boardStates);
 
         document.body.appendChild(losingPopup);
@@ -55,49 +54,48 @@ export function showLosingPopup(boardStates, theme) {
     }, 750); // Adjust the delay (in milliseconds) as needed
 }
 
-
 function addButtons(popup, boardStates) {
     // Create a container for the buttons
     const buttonContainer = document.createElement('div');
     buttonContainer.classList.add('button-container');
     const gameWon = popup.classList.contains('win-popup');
-    // Add Share and Patreon buttons
+
+    // Add Share button
     const shareButton = document.createElement('button');
     shareButton.textContent = 'Share';
     shareButton.classList.add('popup-button');
     shareButton.onclick = () => {
-        // Define the content to share
-        const numberOfGuesses = gameWon ? boardStates.length : 'X';
-        const transposedStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
-        const emojiBoard = transposedStates.map(state => state.join(' ')).join('\n');
-        const shareText = `Order Up ${numberOfGuesses}/5\n\n${emojiBoard}`;
+        const shareText = 'Example share text';
+        console.log('Share button clicked');
     
-        const shareData = {
-            title: 'Order Up',
-            text: shareText,
-            url: 'https://orderup.games' // Replace with your puzzle's URL
-        };
+        navigator.clipboard.writeText(shareText)
+            .then(() => {
+                console.log('Text copied to clipboard');
+                const copiedPopup = document.createElement('div');
+                copiedPopup.classList.add('copied-popup');
+                copiedPopup.textContent = 'Copied';
+                document.body.appendChild(copiedPopup);
     
-        // Check if the Web Share API is supported
-        if (navigator.share) {
-            // Use the Web Share API
-            navigator.share(shareData)
-                .then(() => console.log('Share successful'))
-                .catch((error) => console.error('Error sharing:', error));
-        } else {
-            // Fallback for browsers that don't support the Web Share API
-            navigator.clipboard.writeText(shareText)
-                .then(() => {
-                    console.log('Share text copied to clipboard');
-                    // Optionally, show a confirmation message to the user
-                })
-                .catch((error) => {
-                    console.error('Failed to copy share text to clipboard:', error);
-                    // Optionally, handle errors (e.g., clipboard access denied)
-                });
-        }
-    }
-
+                const buttonRect = shareButton.getBoundingClientRect();
+                copiedPopup.style.left = `${buttonRect.left + (buttonRect.width/5)}px`;
+    
+                // Move the popup higher above the button
+                const popupOffset = 10; // Adjust this value as needed
+                copiedPopup.style.top = `${buttonRect.top - copiedPopup.offsetHeight - (3*popupOffset)}px`;
+    
+                copiedPopup.style.display = 'block';
+    
+                setTimeout(() => {
+                    copiedPopup.style.display = 'none';
+                    document.body.removeChild(copiedPopup);
+                }, 500);
+            })
+            .catch((error) => {
+                console.error('Failed to copy text to clipboard:', error);
+            });
+    };
+    
+    // Add Patreon button
     const patreonButton = document.createElement('button');
     patreonButton.textContent = 'Patreon';
     patreonButton.classList.add('popup-button');
@@ -113,11 +111,13 @@ function addButtons(popup, boardStates) {
     popup.appendChild(buttonContainer);
 }
 
+
 export function showOhNoPopup() {
     const ohNoPopup = document.createElement('div');
     ohNoPopup.classList.add('popup', 'oh-no-popup');
     ohNoPopup.innerHTML = '<p>Oh no!</p>';
     document.body.appendChild(ohNoPopup);
+    ohNoPopup.style.maxWidth = '80px';
     ohNoPopup.style.display = 'block';
   
     ohNoPopup.onclick = function(event) {
@@ -126,3 +126,20 @@ export function showOhNoPopup() {
       }
     };
   }
+
+  let isLightbulbPopupVisible = false;
+
+  export function showLightbulbPopup(currentPuzzle) {
+      const lightbulbPopup = document.getElementById('lightbulb-popup');
+      if (lightbulbPopup) {
+          if (isLightbulbPopupVisible) {
+              lightbulbPopup.style.display = 'none';
+          } else {
+              lightbulbPopup.innerHTML = `<p><span style="font-size: larger;">Theme hint:<br><span style="font-size: larger;"><strong>${currentPuzzle.hint2}</strong></p>`;
+              lightbulbPopup.style.display = 'block';
+          }
+          isLightbulbPopupVisible = !isLightbulbPopupVisible;
+      }
+  }
+  
+
