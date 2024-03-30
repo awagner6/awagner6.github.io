@@ -9,6 +9,9 @@ const correctOrder = currentPuzzle.solution;
 const theme = currentPuzzle.theme;
 const draggableContainer = document.querySelector('.draggable-container');
 const submitBtn = document.getElementById('submitBtn');
+const instructionsElement = document.getElementById('instructions');
+instructionsElement.innerHTML = `Put these items in order!<br><span style="font-size: smaller;">Theme: <strong>${currentPuzzle.hint}</strong></span>`;
+
 
 let lastOffset = Number.NEGATIVE_INFINITY;
 let gameWon = false;
@@ -230,6 +233,7 @@ function checkOrder() {
 
   if (JSON.stringify(currentOrder) === JSON.stringify(correctOrder)) {
       gameWon = true; // Set the gameWon flag to true
+      submitBtn.disabled = true; // Disable the submit button
       currentDraggables.forEach(draggable => {
           if (currentOrder.indexOf(draggable.textContent.trim()) === correctOrder.indexOf(draggable.textContent.trim())) {
               draggable.classList.add('correct'); // Mark as correct
@@ -238,7 +242,6 @@ function checkOrder() {
       });
   }
 }
-
 
 submitBtn.addEventListener('click', (e) => {
   // Prevent default action and event propagation
@@ -263,11 +266,17 @@ submitBtn.addEventListener('click', (e) => {
       setTimeout(() => { // Add a pause before the popup appears
         Popups.showWinPopup(boardStates, theme);
       }, 900); // Adjust the timing as needed
+    } else {
+      // Re-enable the Submit button only if there is at least one circle remaining
+      const circles = document.querySelectorAll('.circle');
+      const usedCircles = circles.length - document.querySelectorAll('.circle.used').length;
+      if (usedCircles > 0) {
+        submitBtn.disabled = false;
+      }
     }
-  // Re-enable the Submit button
-  submitBtn.disabled = false;
   }, currentOrder);
 });
+
 
 function getTextWidth(text, fontSize, fontFamily) {
   const canvas = document.createElement('canvas');
@@ -312,8 +321,11 @@ function animateDraggables(draggables, callback, currentOrder) {
 
           // Check for losing condition
           if (usedCircles.length + 1 === circles.length && !gameWon) {
-            // Show losing popup
-            Popups.showLosingPopup(boardStates, theme);
+            // Animate the losing draggables before showing the popup
+            animateLosingDraggables(draggables, () => {
+              // Show losing popup after the animation is complete
+              Popups.showLosingPopup(boardStates, theme);
+            });
           } else {
             // Call the callback function if provided
             if (callback) {
@@ -342,6 +354,11 @@ function animateDraggables(draggables, callback, currentOrder) {
 }
 
 function animateLosingDraggables(draggables, callback) {
+
+  Popups.showOhNoPopup()
+  // Deactivate all draggables immediately
+  draggables.forEach(deactivateDraggable);
+
   setTimeout(() => { // Add a pause before the animation starts
     draggables.forEach((draggable, index) => {
       // Force reflow to reset the animation
@@ -350,9 +367,11 @@ function animateLosingDraggables(draggables, callback) {
 
       // Apply the bulge animation and update the background color and text simultaneously
       draggable.style.animation = 'bulge 0.375s ease forwards';
-      draggable.style.backgroundColor = 'yellow';
+      draggable.style.backgroundColor = '#6c6c6c';
+      if (!draggable.classList.contains('correct')) {
+        draggable.style.color = '#f0f0f0';
+      }
       draggable.textContent = correctOrder[index];
-      deactivateDraggable(draggable); // Deactivate the draggable
     });
 
     setTimeout(() => {
@@ -363,6 +382,7 @@ function animateLosingDraggables(draggables, callback) {
     }, 375 + 500); // Adjust the timing to wait for the animation to complete
   }, 500); // Pause before the animation starts
 }
+
 
 
 window.onclick = function(event) {
@@ -385,5 +405,9 @@ window.onclick = function(event) {
 
 window.ontouchstart = window.onclick; // Use the same handler for touchend
 
-
-
+document.addEventListener('DOMContentLoaded', () => {
+  const lightbulbIcon = document.querySelector('.lightbulb-icon');
+  if (lightbulbIcon) {
+      lightbulbIcon.addEventListener('click', () => Popups.showLightbulbPopup(currentPuzzle));
+  }
+});
