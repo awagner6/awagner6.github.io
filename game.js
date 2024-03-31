@@ -1,182 +1,425 @@
+import { puzzles } from './constants.js';
+import * as Popups from './popups.js';
+
+// Now you can use Popups.togglePopup, Popups.showOhNoPopup, etc.
+
+const currentPuzzleIndex = 2;
+const currentPuzzle = puzzles[currentPuzzleIndex];
+const correctOrder = currentPuzzle.solution;
+const theme = currentPuzzle.theme;
+const draggableContainer = document.querySelector('.draggable-container');
+const submitBtn = document.getElementById('submitBtn');
+const instructionsElement = document.getElementById('instructions');
+instructionsElement.innerHTML = `Put these items in order!<br><span style="font-size: smaller;">Theme: <strong>${currentPuzzle.hint}</strong></span>`;
 
 
-export function togglePopup(popupId) {
-    var popup = document.getElementById(popupId);
-    var isVisible = popup.style.display === "block";
-    document.querySelectorAll('.popup').forEach(p => p.style.display = "none");
-    if (!isVisible) {
-        popup.style.display = "block";
+let lastOffset = Number.NEGATIVE_INFINITY;
+let gameWon = false;
+let ghostElement = null;
+let originalParent = null;
+let originalNextSibling = null;
+let lastAfterElement = null;
+let lastY = 0; // Initialize lastY outside of the function
+let boardStates = [];
+let boardOrders = [];
+
+function generateInitialOrder(puzzle) {
+    const initialOrder = [];
+    for (const char of puzzle.initialOrderSequence) {
+        const index = parseInt(char, 10) - 1;
+        initialOrder.push(puzzle.solution[index]);
     }
+    return initialOrder;
 }
 
-export function closeAllPopups() {
-    document.querySelectorAll('.popup').forEach(popup => {
-        popup.style.display = "none";
-    });
-    isLightbulbPopupVisible = false;
-    isHelpPopupVisible = false;
-}
+function setupDraggables() {
+  const initialOrder = generateInitialOrder(currentPuzzle);
 
-export function showWinPopup(boardStates, theme, currentPuzzle) {
-    const winPopup = document.createElement('div');
-    winPopup.classList.add('popup', 'win-popup');
+  initialOrder.forEach(item => {
+      const draggableElement = document.createElement('p');
+      draggableElement.classList.add('draggable');
+      draggableElement.setAttribute('draggable', 'true');
+      draggableElement.textContent = item;
+      draggableContainer.appendChild(draggableElement);
 
-    const transposedStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
-    const emojiSequence = transposedStates.map(state => state.join('  ')).join('\n');
 
-    winPopup.innerHTML = `<p style="font-size: .75em;">You solved Order Up<br>in ${boardStates.length} ${boardStates.length === 1 ? 'guess' : 'guesses'}!<br><br><p style="font-size: .75em;">Theme description:<br><strong>${theme}</strong></p><pre>${emojiSequence}</pre>`;
-    addButtons(winPopup, boardStates, currentPuzzle);
+      // Defer the font size adjustment until after the next repaint
+      requestAnimationFrame(() => adjustFontSize(draggableElement));
 
-    document.body.appendChild(winPopup);
-    winPopup.style.display = 'block';
+      // Add event listeners to the newly created draggable element
+      draggableElement.addEventListener('dragstart', handleDragStart, { passive: false });
+      draggableElement.addEventListener('dragend', handleEnd);
+      draggableElement.addEventListener('touchend', handleEnd);
+      draggableElement.addEventListener('touchstart', handleTouchStart, { passive: false });
+      draggableElement.addEventListener('touchmove', handleTouchMove, { passive: false });
+  });
 
-    winPopup.onclick = function(event) {
-        if (event.target === winPopup) {
-            document.body.removeChild(winPopup);
-        }
-    };
-}
-
-export function showLosingPopup(boardStates, theme, currentPuzzle) {
-    // Set a timeout to display the losing popup after a delay
-    setTimeout(() => {
-        closeAllPopups();
-        const losingPopup = document.createElement('div');
-        losingPopup.classList.add('popup', 'losing-popup');
-
-        const transposedStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
-        const emojiSequence = transposedStates.map(state => state.join(' ')).join('\n');
-
-        losingPopup.innerHTML = `<p style="font-size: .75em;">Order Up got the<br>best of you today!</p><br><p style="font-size: .75em;">Theme description:<br><strong>${theme}</strong></p><pre>${emojiSequence}</pre>`;
-        addButtons(losingPopup, boardStates, currentPuzzle);
-
-        document.body.appendChild(losingPopup);
-        losingPopup.style.display = 'block';
-    }, 750); // Adjust the delay (in milliseconds) as needed
-}
-
-function addButtons(popup, boardStates, currentPuzzle) {
-    // Create a container for the buttons
-    const buttonContainer = document.createElement('div');
-    buttonContainer.classList.add('button-container');
-    const gameWon = popup.classList.contains('win-popup');
-
-    // Add Share button
-    const shareButton = document.createElement('button');
-    shareButton.textContent = 'Share';
-    shareButton.classList.add('popup-button');
-    shareButton.onclick = () => {
-        const numberOfGuesses = gameWon ? boardStates.length : 'X';
-        const transposedBoardStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
-        const emojiBoard = transposedBoardStates.map(column => column.join('    ')).join('\n');
-        const lightbulbEmoji = lightbulbUsed ? '💡' : ''; // Add the lightbulb emoji if used
-        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5${lightbulbEmoji}\n\n${emojiBoard}`;
-
-        navigator.clipboard.writeText(shareText)
-            .then(() => {
-                console.log('Text copied to clipboard');
-                const copiedPopup = document.createElement('div');
-                copiedPopup.classList.add('copied-popup');
-                copiedPopup.textContent = 'Copied';
-                document.body.appendChild(copiedPopup);
-    
-                const buttonRect = shareButton.getBoundingClientRect();
-                copiedPopup.style.left = `${buttonRect.left + (buttonRect.width/5)}px`;
-    
-                // Move the popup higher above the button
-                const popupOffset = 10; // Adjust this value as needed
-                copiedPopup.style.top = `${buttonRect.top - copiedPopup.offsetHeight - (3*popupOffset)}px`;
-    
-                copiedPopup.style.display = 'block';
-    
-                setTimeout(() => {
-                    copiedPopup.style.display = 'none';
-                    document.body.removeChild(copiedPopup);
-                }, 500);
-            })
-            .catch((error) => {
-                console.error('Failed to copy text to clipboard:', error);
-            });
-    };
-    
-    // Add Patreon button
-    const patreonButton = document.createElement('button');
-    patreonButton.textContent = 'Patreon';
-    patreonButton.classList.add('popup-button');
-    patreonButton.onclick = () => {
-        window.open('https://www.patreon.com/anigrams', '_blank');
-    };
-
-    // Append buttons to the container
-    buttonContainer.appendChild(shareButton);
-    buttonContainer.appendChild(patreonButton);
-
-    // Append the container to the popup
-    popup.appendChild(buttonContainer);
+  // Make all content visible
+  document.body.classList.remove('hidden');
 }
 
 
-export function showOhNoPopup() {
-    const ohNoPopup = document.createElement('div');
-    ohNoPopup.classList.add('popup', 'oh-no-popup');
-    ohNoPopup.innerHTML = '<p>Oh no!</p>';
-    document.body.appendChild(ohNoPopup);
-    ohNoPopup.style.display = 'block';
-  
-    ohNoPopup.onclick = function(event) {
-      if (event.target === ohNoPopup) {
-        document.body.removeChild(ohNoPopup);
-      }
-    };
+
+// Call the setupDraggables function when the page loads
+window.addEventListener('DOMContentLoaded', setupDraggables);
+
+
+function handleDragStart(e) {
+  if (gameWon || e.target.classList.contains('correct')) {
+      e.preventDefault(); // Prevent the drag from starting
+      return;
+  }
+  e.target.classList.add('dragging');
+  originalParent = e.target.parentNode;
+  originalNextSibling = e.target.nextElementSibling;
+  lastY = e.clientY;
+}
+
+
+function handleTouchStart(e) {
+  if (gameWon || e.target.classList.contains('correct')) return;
+  const draggable = e.target;
+  draggable.classList.add('dragging');
+  originalParent = draggable.parentNode;
+  originalNextSibling = draggable.nextElementSibling;
+  ghostElement = draggable.cloneNode(true);
+  ghostElement.classList.add('ghost');
+  document.body.appendChild(ghostElement);
+  const touch = e.touches[0];
+  ghostElement.style.top = touch.clientY - ghostElement.offsetHeight / 2 + 'px';
+  ghostElement.style.left = touch.clientX - ghostElement.offsetWidth / 2 + 'px';
+  lastY = touch.clientY;
+  e.preventDefault();
+}
+
+function handleEnd(e) {
+  if (e.target.classList.contains('correct')) return;
+  e.target.classList.remove('dragging');
+  if (ghostElement) {
+      ghostElement.remove();
+      ghostElement = null;
+  }
+}
+
+function handleSwap(draggingElement, touchY) {
+  const afterElement = getDragAfterElement(draggableContainer, touchY);
+
+  if (!afterElement || afterElement.classList.contains('correct')) {
+      // If there is no element to swap with or it is correct, do nothing
+      //("correct - no swap")
+      return;
   }
 
-  let isLightbulbPopupVisible = false;
-  let isHelpPopupVisible = false;
-  let lightbulbUsed = false;
+  const afterElementCenter = afterElement.getBoundingClientRect().top + afterElement.offsetHeight / 2;
+  const offset = touchY - afterElementCenter;
+  //console.log(offset)
+
+  if (lastOffset === null) {
+      //console.log("null issue")
+      lastOffset = offset;
+      return;
+  }
+
+  // Define a threshold for the offset change
+  const threshold = 25; // You can adjust this value based on your needs
+
+  // Check if the offset change is within the threshold
+  if ((lastOffset < 0 && offset > 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold) ||
+      (lastOffset > 0 && offset < 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold)) {
+      // If the offset changes sign within the threshold, initiate a swap
+      //console.log("swap!")
+      swapElements(draggingElement, afterElement);
+  }
+
+  lastOffset = offset;
+}
+
+function swapElements(element1, element2) {
+  // Check if either element is marked as correct
+  if (element1.classList.contains('correct') || element2.classList.contains('correct')) {
+    return; // Do not perform the swap
+  }
+
+  // Remove any bulge animation before swapping
+  element1.style.animation = 'none';
+  element2.style.animation = 'none';
+
+  // Create a temporary placeholder element
+  const placeholder = document.createElement('div');
+
+  // Replace element1 with the placeholder
+  element1.replaceWith(placeholder);
+
+  // Replace element2 with element1
+  element2.replaceWith(element1);
+
+  // Replace the placeholder with element2
+  placeholder.replaceWith(element2);
+}
+
+function handleTouchMove(e) {
+  e.preventDefault();
+  if (e.target.classList.contains('correct')) return;
+  const touch = e.touches[0];
+  const draggingElement = document.querySelector('.dragging');
+
+  // Update the position of the ghost element
+  if (ghostElement) {
+      ghostElement.style.top = touch.clientY - ghostElement.offsetHeight / 2 + 'px';
+      ghostElement.style.left = touch.clientX - ghostElement.offsetWidth / 2 + 'px';
+  }
+
+  // Check for swap conditions more frequently
+  const interval = 10; // Adjust this value as needed
+  for (let i = 0; i < Math.abs(lastY - touch.clientY); i += interval) {
+      const newY = lastY < touch.clientY ? lastY + i : lastY - i;
+      //console.log(newY)
+      handleSwap(draggingElement, newY);
+  }
+  lastY = touch.clientY;
+}
+
+draggableContainer.addEventListener('dragover', e => {
+  e.preventDefault();
+  if (e.target.classList.contains('correct')) return;
+  const draggingElement = document.querySelector('.dragging');
+  const clientY = e.clientY;
+
+  // Check for swap conditions more frequently
+  const interval = 10; // Adjust this value as needed
+  for (let i = 0; i < Math.abs(lastY - clientY); i += interval) {
+      const newY = lastY < clientY ? lastY + i : lastY - i;
+      handleSwap(draggingElement, newY);
+  }
+  lastY = clientY;
+}, { passive: false });
 
 
-  export function showLightbulbPopup(currentPuzzle) {
-      const lightbulbPopup = document.getElementById('lightbulb-popup');
-      if (lightbulbPopup) {
-          if (isLightbulbPopupVisible) {
-              lightbulbPopup.style.display = 'none';
+
+function getDragAfterElement(container, y) {
+  const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging):not(.correct)')];
+  let closest = null;
+  let closestOffset = Number.POSITIVE_INFINITY; // Start with positive infinity to find the minimum absolute offset
+
+  draggableElements.forEach(child => {
+      const box = child.getBoundingClientRect();
+      const cent = (box.top + box.height / 2);
+      const offset = y - (box.top + box.height / 2); // Keep the sign of the offset
+      //console.log("Candidate:", child ? child.textContent : "None");
+      //console.log(y)
+      //console.log(cent)
+      //console.log(offset)
+      if (Math.abs(offset) < Math.abs(closestOffset)) { // Compare absolute values to find the closest
+          closest = child;
+          closestOffset = offset;
+      }
+  });
+  //console.log("Closest element:", closest ? closest.textContent : "None");
+  //console.log(closestOffset)
+  return closest;
+}
+
+function deactivateDraggable(draggable) {
+  draggable.removeEventListener('dragstart', handleDragStart);
+  draggable.removeEventListener('dragend', handleEnd);
+  draggable.removeEventListener('touchstart', handleTouchStart);
+  draggable.removeEventListener('touchend', handleEnd);
+  draggable.removeEventListener('touchmove', handleTouchMove);
+  draggable.setAttribute('draggable', 'false');
+}
+
+function checkOrder() {
+  const currentDraggables = document.querySelectorAll('.draggable');
+  const currentOrder = Array.from(currentDraggables).map(el => el.textContent.trim());
+  const reverseOrder = [...correctOrder].reverse(); // Create a reversed version of the correct order
+
+  if (JSON.stringify(currentOrder) === JSON.stringify(correctOrder) || JSON.stringify(currentOrder) === JSON.stringify(reverseOrder)) {
+      gameWon = true; // Set the gameWon flag to true
+  }
+}
+
+
+
+
+submitBtn.addEventListener('click', (e) => {
+  // Prevent default action and event propagation
+  e.preventDefault();
+  e.stopPropagation();
+
+  const currentDraggables = document.querySelectorAll('.draggable');
+  const currentOrder = Array.from(currentDraggables).map(el => el.textContent.trim()).join(', '); // Join the order as a string
+  const boardState = currentOrder.split(', ').map((word, index) => (word === correctOrder[index] ? '🟢' : '⚪'));
+
+  // Check if the current order has already been submitted
+  const isDuplicate = boardOrders.includes(currentOrder);
+
+  if (isDuplicate) {
+      // Show a popup with the message "You tried that already!"
+      Popups.showDuplicatePopup();
+  } else {
+      // Store the board state and order, then proceed with the game
+      boardStates.push(boardState);
+      boardOrders.push(currentOrder); // Store the current order as a string
+      animateDraggables(currentDraggables, () => {
+          checkOrder();
+          if (gameWon) {
+              setTimeout(() => {
+                  Popups.showWinPopup(boardStates, theme, currentPuzzle);
+              }, 900);
           } else {
-              lightbulbPopup.innerHTML = `<p><span style="font-size: larger;">Theme hint:<br><span style="font-size: larger;"><strong>${currentPuzzle.hint2}</strong></p>`;
-              lightbulbPopup.style.display = 'block';
-              lightbulbUsed = true;
+              // Re-enable the Submit button only if there is at least one circle remaining
+              const circles = document.querySelectorAll('.circle');
+              const usedCircles = circles.length - document.querySelectorAll('.circle.used').length;
+              if (usedCircles > 0) {
+                  submitBtn.disabled = false;
+              }
           }
-          isLightbulbPopupVisible = !isLightbulbPopupVisible;
-      }
+      }, currentOrder.split(', ')); // Convert the current order string back to an array
   }
-  
+});
 
-export function showDuplicatePopup() {
-    const duplicatePopup = document.createElement('div');
-    duplicatePopup.classList.add('popup', 'duplicate-popup');
-    duplicatePopup.innerHTML = '<p>You tried that already!</p>';
-    document.body.appendChild(duplicatePopup);
-    duplicatePopup.style.display = 'block';
 
-    // Set a timeout to remove the popup after 500 milliseconds
-    setTimeout(() => {
-        document.body.removeChild(duplicatePopup);
-    }, 700);
+
+
+
+function getTextWidth(text, fontSize, fontFamily) {
+  const canvas = document.createElement('canvas');
+  const context = canvas.getContext('2d');
+  context.font = `${fontSize} ${fontFamily}`;
+  const metrics = context.measureText(text);
+  return metrics.width;
 }
 
-export function showHelpPopup() {
-    const helpPopup = document.getElementById('help-popup');
-    if (helpPopup) {
-        if (isHelpPopupVisible) {
-            helpPopup.style.display = 'none';
-        } else {
-            helpPopup.innerHTML = `<p><span style="font-size: larger;">RULES:</span><br><br></p>
-                <p style="font-size: larger;">Arrange the items provided in the correct order within 5 guesses. The correct order is based on a hidden theme that's up to you to figure out.<br><br></p>
-                <p style="font-size: larger;">Tap/click and drag to rearrange items. Hit Submit to guess. When you hit Submit, any correctly placed items will turn green and lock in place.<br><br></p>
-                <p style="font-size: larger;">The game ends when you either find the correct order, or run out of guesses.<br><br></p>
-                <p style="font-size: larger;">A theme hint is provided at the top of your screen, and a second, bigger hint is available by tapping the lightbulb icon.<br><br></p>
-                <p style="font-size: larger;">If you submit a fully correct order in either direction, it will count as being correct. However, the Submit checker will only use a single solution direction when turning items green.<br><br></p>`;
-            helpPopup.style.display = 'block';
-        }
-        isHelpPopupVisible = !isHelpPopupVisible;
+function adjustFontSize(element) {
+  const parentWidth = element.parentNode.clientWidth;
+  const fontFamily = window.getComputedStyle(element, null).getPropertyValue('font-family');
+  let fontSize = parseFloat(window.getComputedStyle(element, null).getPropertyValue('font-size'));
+
+  let textWidth = getTextWidth(element.textContent, fontSize + 'px', fontFamily);
+
+  while (textWidth > parentWidth * 0.8 && fontSize > 10) {
+      fontSize -= 1;
+      textWidth = getTextWidth(element.textContent, fontSize + 'px', fontFamily);
+      element.style.fontSize = fontSize + 'px';
+  }
+}
+
+
+
+function animateDraggables(draggables, callback, currentOrder) {
+  // Check if the game is won before starting the animation
+  checkOrder();
+
+  let i = draggables.length - 1; // Start from the last element
+  setTimeout(() => { // Add a pause before the animation starts
+      const interval = setInterval(() => {
+          if (i < 0) { // Check if all elements have been animated
+              clearInterval(interval);
+              setTimeout(() => {
+                  // Remove a circle after the animation is done
+                  const circles = Array.from(document.querySelectorAll('.circle'));
+                  const usedCircles = circles.filter(circle => circle.classList.contains('used'));
+                  if (usedCircles.length < circles.length) {
+                      circles[circles.length - 1 - usedCircles.length].classList.add('used');
+                  }
+                  // Check for losing condition
+                  if (usedCircles.length + 1 === circles.length && !gameWon) {
+                      // Animate the losing draggables before showing the popup
+                      animateLosingDraggables(draggables, () => {
+                          // Show losing popup after the animation is complete
+                          Popups.showLosingPopup(boardStates, theme, currentPuzzle);
+                      });
+                  } else {
+                      // Call the callback function if provided
+                      if (callback) {
+                          callback();
+                      }
+                  }
+              }, 375); // Add a pause before the popup appears
+
+              return;
+          }
+
+          // Force reflow to reset the animation
+          draggables[i].style.animation = 'none';
+          void draggables[i].offsetWidth; // Trigger reflow
+
+          // Start the bulge animation
+          draggables[i].style.animation = 'bulge 0.375s ease'; // 25% faster animation
+
+          // Mark the draggable as correct if it's in the correct place or if the game is won
+          if (currentOrder[i] === correctOrder[i] || gameWon) {
+              draggables[i].classList.add('correct');
+          }
+
+          i--; // Move to the previous element
+      }, 120); // Start the next bulge sooner
+  }, 500); // Pause before the animation starts
+}
+
+
+
+function animateLosingDraggables(draggables, callback) {
+
+  Popups.showOhNoPopup()
+  // Deactivate all draggables immediately
+  draggables.forEach(deactivateDraggable);
+
+  setTimeout(() => { // Add a pause before the animation starts
+    draggables.forEach((draggable, index) => {
+      // Force reflow to reset the animation
+      draggable.style.animation = 'none';
+      void draggable.offsetWidth; // Trigger reflow
+
+      // Apply the bulge animation and update the background color and text simultaneously
+      draggable.style.animation = 'bulge 0.375s ease forwards';
+      draggable.style.backgroundColor = '#6c6c6c';
+      draggable.style.cursor = 'default';
+      if (!draggable.classList.contains('correct')) {
+        draggable.style.color = '#f0f0f0';
+      }
+      draggable.textContent = correctOrder[index];
+    });
+
+    setTimeout(() => {
+      // Call the callback function if provided
+      if (callback) {
+        callback();
+      }
+    }, 375 + 500); // Adjust the timing to wait for the animation to complete
+  }, 500); // Pause before the animation starts
+}
+
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.help-icon, .lightbulb-icon, .popup, .share-btn, .patreon-btn') && !event.target.closest('.popup')) {
+    document.querySelectorAll('.popup').forEach(popup => {
+      popup.style.display = "none";
+    });
+  }
+}
+
+
+
+window.togglePopup = Popups.togglePopup;  // Expose the function to the global scope for use in HTML
+
+window.onclick = function(event) {
+    if (!event.target.matches('.help-icon, .lightbulb-icon, .popup, .share-btn, .patreon-btn') && !event.target.closest('.popup')) {
+        Popups.closeAllPopups();
     }
 }
+
+window.ontouchstart = window.onclick; // Use the same handler for touchend
+
+document.addEventListener('DOMContentLoaded', () => {
+  const helpIcon = document.querySelector('.help-icon');
+  if (helpIcon) {
+      helpIcon.addEventListener('click', () => Popups.showHelpPopup());
+  }
+  const lightbulbIcon = document.querySelector('.lightbulb-icon');
+  if (lightbulbIcon) {
+      lightbulbIcon.addEventListener('click', () => Popups.showLightbulbPopup(currentPuzzle));
+  }
+
+});
