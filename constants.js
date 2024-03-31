@@ -17,11 +17,11 @@ export const puzzles = [
     },
     {
         id: 3,
-        solution: ["ONE DOLLAR BILL", "TWO DOLLAR BILL", "NICKEL", "TWENTY DOLLAR BILL", "PENNY", "FIFTY DOLLAR BILL", "DIME"],
-        initialOrderSequence: "4513276",
+        solution: ["DIME", "FIFTY DOLLAR BILL", "PENNY", "TWENTY DOLLAR BILL", "NICKEL", "TWO DOLLAR BILL", "ONE DOLLAR BILL"],
+        initialOrderSequence: "4375612",
         theme: "Money by president term order",
-        hint: "Face forward",
+        hint: "Face value",
         hint2: "Presidential procession"
-    },
+    }
     // Add more puzzles as needed
 ];
