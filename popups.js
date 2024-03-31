@@ -16,7 +16,7 @@ export function closeAllPopups() {
     isLightbulbPopupVisible = false;
 }
 
-export function showWinPopup(boardStates, theme) {
+export function showWinPopup(boardStates, theme, currentPuzzle) {
     const winPopup = document.createElement('div');
     winPopup.classList.add('popup', 'win-popup');
 
@@ -24,7 +24,7 @@ export function showWinPopup(boardStates, theme) {
     const emojiSequence = transposedStates.map(state => state.join('  ')).join('\n');
 
     winPopup.innerHTML = `<p style="font-size: .75em;">You solved Order Up<br>in ${boardStates.length} ${boardStates.length === 1 ? 'guess' : 'guesses'}!<br><br><p style="font-size: .75em;">Theme description:<br><strong>${theme}</strong></p><pre>${emojiSequence}</pre>`;
-    addButtons(winPopup, boardStates);
+    addButtons(winPopup, boardStates, currentPuzzle);
 
     document.body.appendChild(winPopup);
     winPopup.style.display = 'block';
@@ -36,7 +36,7 @@ export function showWinPopup(boardStates, theme) {
     };
 }
 
-export function showLosingPopup(boardStates, theme) {
+export function showLosingPopup(boardStates, theme, currentPuzzle) {
     // Set a timeout to display the losing popup after a delay
     setTimeout(() => {
         closeAllPopups();
@@ -47,14 +47,14 @@ export function showLosingPopup(boardStates, theme) {
         const emojiSequence = transposedStates.map(state => state.join(' ')).join('\n');
 
         losingPopup.innerHTML = `<p style="font-size: .75em;">Order Up got the<br>best of you today!</p><br><p style="font-size: .75em;">Theme description:<br><strong>${theme}</strong></p><pre>${emojiSequence}</pre>`;
-        addButtons(losingPopup, boardStates);
+        addButtons(losingPopup, boardStates, currentPuzzle);
 
         document.body.appendChild(losingPopup);
         losingPopup.style.display = 'block';
     }, 750); // Adjust the delay (in milliseconds) as needed
 }
 
-function addButtons(popup, boardStates) {
+function addButtons(popup, boardStates, currentPuzzle) {
     // Create a container for the buttons
     const buttonContainer = document.createElement('div');
     buttonContainer.classList.add('button-container');
@@ -65,8 +65,10 @@ function addButtons(popup, boardStates) {
     shareButton.textContent = 'Share';
     shareButton.classList.add('popup-button');
     shareButton.onclick = () => {
-        const shareText = 'Example share text';
-        console.log('Share button clicked');
+        const numberOfGuesses = gameWon ? boardStates.length : 'X';
+        const transposedBoardStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
+        const emojiBoard = transposedBoardStates.map(column => column.join('    ')).join('\n');
+        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5\n\n${emojiBoard}`;
     
         navigator.clipboard.writeText(shareText)
             .then(() => {
@@ -117,7 +119,6 @@ export function showOhNoPopup() {
     ohNoPopup.classList.add('popup', 'oh-no-popup');
     ohNoPopup.innerHTML = '<p>Oh no!</p>';
     document.body.appendChild(ohNoPopup);
-    ohNoPopup.style.maxWidth = '80px';
     ohNoPopup.style.display = 'block';
   
     ohNoPopup.onclick = function(event) {
@@ -142,4 +143,17 @@ export function showOhNoPopup() {
       }
   }
   
+
+export function showDuplicatePopup() {
+    const duplicatePopup = document.createElement('div');
+    duplicatePopup.classList.add('popup', 'duplicate-popup');
+    duplicatePopup.innerHTML = '<p>You tried that already!</p>';
+    document.body.appendChild(duplicatePopup);
+    duplicatePopup.style.display = 'block';
+
+    // Set a timeout to remove the popup after 500 milliseconds
+    setTimeout(() => {
+        document.body.removeChild(duplicatePopup);
+    }, 700);
+}
 
