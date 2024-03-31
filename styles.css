@@ -296,7 +296,7 @@ body {
     background-color: #f0f0f0;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 3vh;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1001; /* Ensure the popup is on top of other elements */
     text-align: center;
@@ -346,7 +346,18 @@ body {
     align-items: center; /* Center vertically */
 }
 
-#help-popup{
-    display: none;
+#help-popup {
+    position: fixed;
+    top: 48vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    font-size: 1.8vh; /* Adjust the font size as needed */
+    height: auto; /* Adjust height based on content */
+    padding: 10px; /* Add some padding for better appearance */
+    display: none; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
-
