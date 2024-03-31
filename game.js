@@ -3,7 +3,7 @@ import * as Popups from './popups.js';
 
 // Now you can use Popups.togglePopup, Popups.showOhNoPopup, etc.
 
-const currentPuzzleIndex = 1;
+const currentPuzzleIndex = 0;
 const currentPuzzle = puzzles[currentPuzzleIndex];
 const correctOrder = currentPuzzle.solution;
 const theme = currentPuzzle.theme;
@@ -21,6 +21,7 @@ let originalNextSibling = null;
 let lastAfterElement = null;
 let lastY = 0; // Initialize lastY outside of the function
 let boardStates = [];
+let boardOrders = [];
 
 function generateInitialOrder(puzzle) {
     const initialOrder = [];
@@ -230,52 +231,55 @@ function deactivateDraggable(draggable) {
 function checkOrder() {
   const currentDraggables = document.querySelectorAll('.draggable');
   const currentOrder = Array.from(currentDraggables).map(el => el.textContent.trim());
+  const reverseOrder = [...correctOrder].reverse(); // Create a reversed version of the correct order
 
-  if (JSON.stringify(currentOrder) === JSON.stringify(correctOrder)) {
+  if (JSON.stringify(currentOrder) === JSON.stringify(correctOrder) || JSON.stringify(currentOrder) === JSON.stringify(reverseOrder)) {
       gameWon = true; // Set the gameWon flag to true
-      submitBtn.disabled = true; // Disable the submit button
-      currentDraggables.forEach(draggable => {
-          if (currentOrder.indexOf(draggable.textContent.trim()) === correctOrder.indexOf(draggable.textContent.trim())) {
-              draggable.classList.add('correct'); // Mark as correct
-              deactivateDraggable(draggable); // Deactivate the correct draggable
-          }
-      });
   }
 }
+
+
+
 
 submitBtn.addEventListener('click', (e) => {
   // Prevent default action and event propagation
   e.preventDefault();
   e.stopPropagation();
 
-  // Disable the Submit button
-  submitBtn.disabled = true;
-
   const currentDraggables = document.querySelectorAll('.draggable');
-  const currentOrder = Array.from(currentDraggables).map(el => el.textContent.trim());
-  const boardState = currentOrder.map((word, index) => (word === correctOrder[index] ? '🟢' : '⚪'));
+  const currentOrder = Array.from(currentDraggables).map(el => el.textContent.trim()).join(', '); // Join the order as a string
+  const boardState = currentOrder.split(', ').map((word, index) => (word === correctOrder[index] ? '🟢' : '⚪'));
 
-  // Store the board state
-  boardStates.push(boardState);
+  // Check if the current order has already been submitted
+  const isDuplicate = boardOrders.includes(currentOrder);
 
-  // Animate the draggables and mark them as correct if they are in the correct place
-  animateDraggables(currentDraggables, () => {
-    // Check if the game is won after all animations are done
-    checkOrder();
-    if (gameWon) {
-      setTimeout(() => { // Add a pause before the popup appears
-        Popups.showWinPopup(boardStates, theme);
-      }, 900); // Adjust the timing as needed
-    } else {
-      // Re-enable the Submit button only if there is at least one circle remaining
-      const circles = document.querySelectorAll('.circle');
-      const usedCircles = circles.length - document.querySelectorAll('.circle.used').length;
-      if (usedCircles > 0) {
-        submitBtn.disabled = false;
-      }
-    }
-  }, currentOrder);
+  if (isDuplicate) {
+      // Show a popup with the message "You tried that already!"
+      Popups.showDuplicatePopup();
+  } else {
+      // Store the board state and order, then proceed with the game
+      boardStates.push(boardState);
+      boardOrders.push(currentOrder); // Store the current order as a string
+      animateDraggables(currentDraggables, () => {
+          checkOrder();
+          if (gameWon) {
+              setTimeout(() => {
+                  Popups.showWinPopup(boardStates, theme, currentPuzzle);
+              }, 900);
+          } else {
+              // Re-enable the Submit button only if there is at least one circle remaining
+              const circles = document.querySelectorAll('.circle');
+              const usedCircles = circles.length - document.querySelectorAll('.circle.used').length;
+              if (usedCircles > 0) {
+                  submitBtn.disabled = false;
+              }
+          }
+      }, currentOrder.split(', ')); // Convert the current order string back to an array
+  }
 });
+
+
+
 
 
 function getTextWidth(text, fontSize, fontFamily) {
@@ -301,57 +305,58 @@ function adjustFontSize(element) {
 }
 
 
-
-
-
-
 function animateDraggables(draggables, callback, currentOrder) {
-  let i = 0;
+  // Check if the game is won before starting the animation
+  checkOrder();
+
+  let i = draggables.length - 1; // Start from the last element
   setTimeout(() => { // Add a pause before the animation starts
-    const interval = setInterval(() => {
-      if (i >= draggables.length) {
-        clearInterval(interval);
-        setTimeout(() => {
-          // Remove a circle after the animation is done
-          const circles = Array.from(document.querySelectorAll('.circle'));
-          const usedCircles = circles.filter(circle => circle.classList.contains('used'));
-          if (usedCircles.length < circles.length) {
-            circles[circles.length - 1 - usedCircles.length].classList.add('used');
+      const interval = setInterval(() => {
+          if (i < 0) { // Check if all elements have been animated
+              clearInterval(interval);
+              setTimeout(() => {
+                  // Remove a circle after the animation is done
+                  const circles = Array.from(document.querySelectorAll('.circle'));
+                  const usedCircles = circles.filter(circle => circle.classList.contains('used'));
+                  if (usedCircles.length < circles.length) {
+                      circles[circles.length - 1 - usedCircles.length].classList.add('used');
+                  }
+                  // Check for losing condition
+                  if (usedCircles.length + 1 === circles.length && !gameWon) {
+                      // Animate the losing draggables before showing the popup
+                      animateLosingDraggables(draggables, () => {
+                          // Show losing popup after the animation is complete
+                          Popups.showLosingPopup(boardStates, theme, currentPuzzle);
+                      });
+                  } else {
+                      // Call the callback function if provided
+                      if (callback) {
+                          callback();
+                      }
+                  }
+              }, 375); // Add a pause before the popup appears
+
+              return;
           }
 
-          // Check for losing condition
-          if (usedCircles.length + 1 === circles.length && !gameWon) {
-            // Animate the losing draggables before showing the popup
-            animateLosingDraggables(draggables, () => {
-              // Show losing popup after the animation is complete
-              Popups.showLosingPopup(boardStates, theme);
-            });
-          } else {
-            // Call the callback function if provided
-            if (callback) {
-              callback();
-            }
+          // Force reflow to reset the animation
+          draggables[i].style.animation = 'none';
+          void draggables[i].offsetWidth; // Trigger reflow
+
+          // Start the bulge animation
+          draggables[i].style.animation = 'bulge 0.375s ease'; // 25% faster animation
+
+          // Mark the draggable as correct if it's in the correct place or if the game is won
+          if (currentOrder[i] === correctOrder[i] || gameWon) {
+              draggables[i].classList.add('correct');
           }
-        }, 375); // Add a pause before the popup appears
-        return;
-      }
 
-      // Force reflow to reset the animation
-      draggables[i].style.animation = 'none';
-      void draggables[i].offsetWidth; // Trigger reflow
-
-      // Start the bulge animation
-      draggables[i].style.animation = 'bulge 0.375s ease'; // 25% faster animation
-
-      // Mark the draggable as correct if it's in the correct place
-      if (currentOrder[i] === correctOrder[i]) {
-        draggables[i].classList.add('correct');
-      }
-
-      i++;
-    }, 120); // Start the next bulge sooner
+          i--; // Move to the previous element
+      }, 120); // Start the next bulge sooner
   }, 500); // Pause before the animation starts
 }
+
+
 
 function animateLosingDraggables(draggables, callback) {
 
