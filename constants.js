@@ -15,6 +15,13 @@ export const puzzles = [
         hint: "Natural extremes",
         hint2: "Go out on a limb"
     },
+    {
+        id: 3,
+        solution: ["ONE DOLLAR BILL", "TWO DOLLAR BILL", "NICKEL", "TWENTY DOLLAR BILL", "PENNY", "FIFTY DOLLAR BILL", "DIME"],
+        initialOrderSequence: "4513276",
+        theme: "Money by president term order",
+        hint: "Face forward",
+        hint2: "Presidential procession"
+    },
     // Add more puzzles as needed
 ];
-
