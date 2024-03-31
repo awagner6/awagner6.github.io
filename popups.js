@@ -14,6 +14,7 @@ export function closeAllPopups() {
         popup.style.display = "none";
     });
     isLightbulbPopupVisible = false;
+    isHelpPopupVisible = false;
 }
 
 export function showWinPopup(boardStates, theme, currentPuzzle) {
@@ -68,8 +69,9 @@ function addButtons(popup, boardStates, currentPuzzle) {
         const numberOfGuesses = gameWon ? boardStates.length : 'X';
         const transposedBoardStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
         const emojiBoard = transposedBoardStates.map(column => column.join('    ')).join('\n');
-        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5\n\n${emojiBoard}`;
-    
+        const lightbulbEmoji = lightbulbUsed ? '💡' : ''; // Add the lightbulb emoji if used
+        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5${lightbulbEmoji}\n\n${emojiBoard}`;
+
         navigator.clipboard.writeText(shareText)
             .then(() => {
                 console.log('Text copied to clipboard');
@@ -129,6 +131,9 @@ export function showOhNoPopup() {
   }
 
   let isLightbulbPopupVisible = false;
+  let isHelpPopupVisible = false;
+  let lightbulbUsed = false;
+
 
   export function showLightbulbPopup(currentPuzzle) {
       const lightbulbPopup = document.getElementById('lightbulb-popup');
@@ -138,6 +143,7 @@ export function showOhNoPopup() {
           } else {
               lightbulbPopup.innerHTML = `<p><span style="font-size: larger;">Theme hint:<br><span style="font-size: larger;"><strong>${currentPuzzle.hint2}</strong></p>`;
               lightbulbPopup.style.display = 'block';
+              lightbulbUsed = true;
           }
           isLightbulbPopupVisible = !isLightbulbPopupVisible;
       }
@@ -157,3 +163,20 @@ export function showDuplicatePopup() {
     }, 700);
 }
 
+export function showHelpPopup() {
+    const helpPopup = document.getElementById('help-popup');
+    if (helpPopup) {
+        if (isHelpPopupVisible) {
+            helpPopup.style.display = 'none';
+        } else {
+            helpPopup.innerHTML = `<p><span style="font-size: larger;">RULES:</span><br><br></p>
+                <p style="font-size: larger;">Arrange the items provided in the correct order within 5 guesses. The correct order is based on a hidden theme that's up to you to figure out.<br><br></p>
+                <p style="font-size: larger;">Tap/click and drag to rearrange items. Hit Submit to guess. When you hit Submit, any correctly placed items will turn green and lock in place.<br><br></p>
+                <p style="font-size: larger;">The game ends when you either find the correct order, or run out of guesses.<br><br></p>
+                <p style="font-size: larger;">A theme hint is provided at the top of your screen, and a second, bigger hint is available by tapping the lightbulb icon.<br><br></p>
+                <p style="font-size: larger;">If you submit a fully correct order in either direction, it will count as being correct. However, the Submit checker will only use a single solution direction when turning items green.<br><br></p>`;
+            helpPopup.style.display = 'block';
+        }
+        isHelpPopupVisible = !isHelpPopupVisible;
+    }
+}
