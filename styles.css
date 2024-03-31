@@ -285,12 +285,13 @@ body {
     background-color: #ccc;
   }
   
-.oh-no-popup {
+.oh-no-popup, .duplicate-popup {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     position: fixed;
     top: 10%; /* Adjust this value as needed */
     left: 50%;
+    width: max-content;
     transform: translate(-50%, -50%);
     background-color: #f0f0f0;
     padding: 20px;
@@ -300,6 +301,7 @@ body {
     z-index: 1001; /* Ensure the popup is on top of other elements */
     text-align: center;
     font-size: larger; /* Make the font a little bigger */
+    max-width: 80%;
   }
   
 .popup-button {
@@ -348,6 +350,3 @@ body {
     display: none;
 }
 
-
-
-  
