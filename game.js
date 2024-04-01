@@ -3,18 +3,18 @@ import * as Popups from './popups.js';
 
 // Now you can use Popups.togglePopup, Popups.showOhNoPopup, etc.
 
-const currentPuzzleIndex = 2;
+const currentPuzzleIndex = 3;
 const currentPuzzle = puzzles[currentPuzzleIndex];
 const correctOrder = currentPuzzle.solution;
 const theme = currentPuzzle.theme;
 const draggableContainer = document.querySelector('.draggable-container');
 const submitBtn = document.getElementById('submitBtn');
 const instructionsElement = document.getElementById('instructions');
-instructionsElement.innerHTML = `Put these items in order!<br><span style="font-size: smaller;">Theme: <strong>${currentPuzzle.hint}</strong></span>`;
-
+instructionsElement.innerHTML = `Put these items in order!<br><span>Theme: <strong>${currentPuzzle.hint}</strong></span>`;
 
 let lastOffset = Number.NEGATIVE_INFINITY;
 let gameWon = false;
+let reverseWon = false;
 let ghostElement = null;
 let originalParent = null;
 let originalNextSibling = null;
@@ -22,6 +22,30 @@ let lastAfterElement = null;
 let lastY = 0; // Initialize lastY outside of the function
 let boardStates = [];
 let boardOrders = [];
+let gameEnded = false;
+let resultsShown = false;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const playBtn = document.getElementById('playBtn');
+  const startScreen = document.querySelector('.start-screen');
+
+  playBtn.addEventListener('click', () => {
+      startScreen.style.display = 'none';
+  });
+
+  // Other event listeners...
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const puzzleNumberElement = document.getElementById('puzzleNumber');
+  if (puzzleNumberElement) {
+      puzzleNumberElement.textContent = currentPuzzleIndex + 1; // Add 1 to make it human-readable
+  }
+  
+  // Other event listeners and code...
+});
+
+
 
 function generateInitialOrder(puzzle) {
     const initialOrder = [];
@@ -112,10 +136,8 @@ function handleSwap(draggingElement, touchY) {
 
   const afterElementCenter = afterElement.getBoundingClientRect().top + afterElement.offsetHeight / 2;
   const offset = touchY - afterElementCenter;
-  //console.log(offset)
 
   if (lastOffset === null) {
-      //console.log("null issue")
       lastOffset = offset;
       return;
   }
@@ -205,17 +227,11 @@ function getDragAfterElement(container, y) {
       const box = child.getBoundingClientRect();
       const cent = (box.top + box.height / 2);
       const offset = y - (box.top + box.height / 2); // Keep the sign of the offset
-      //console.log("Candidate:", child ? child.textContent : "None");
-      //console.log(y)
-      //console.log(cent)
-      //console.log(offset)
       if (Math.abs(offset) < Math.abs(closestOffset)) { // Compare absolute values to find the closest
           closest = child;
           closestOffset = offset;
       }
   });
-  //console.log("Closest element:", closest ? closest.textContent : "None");
-  //console.log(closestOffset)
   return closest;
 }
 
@@ -235,6 +251,9 @@ function checkOrder() {
 
   if (JSON.stringify(currentOrder) === JSON.stringify(correctOrder) || JSON.stringify(currentOrder) === JSON.stringify(reverseOrder)) {
       gameWon = true; // Set the gameWon flag to true
+      if (JSON.stringify(currentOrder) === JSON.stringify(reverseOrder)){
+        reverseWon = true;
+      }
   }
 }
 
@@ -245,36 +264,52 @@ submitBtn.addEventListener('click', (e) => {
   // Prevent default action and event propagation
   e.preventDefault();
   e.stopPropagation();
-
-  const currentDraggables = document.querySelectorAll('.draggable');
-  const currentOrder = Array.from(currentDraggables).map(el => el.textContent.trim()).join(', '); // Join the order as a string
-  const boardState = currentOrder.split(', ').map((word, index) => (word === correctOrder[index] ? '🟢' : '⚪'));
-
-  // Check if the current order has already been submitted
-  const isDuplicate = boardOrders.includes(currentOrder);
-
-  if (isDuplicate) {
-      // Show a popup with the message "You tried that already!"
-      Popups.showDuplicatePopup();
+  if (gameEnded) {
+    if (!resultsShown) {
+        // Show results
+        if (gameWon) {
+            Popups.showWinPopup(boardStates, currentPuzzle, reverseWon);
+        } else {
+            Popups.showLosingPopup(boardStates, currentPuzzle);
+        }
+        resultsShown = true;
+        submitBtn.disabled = true; // Disable the button
+    }
   } else {
-      // Store the board state and order, then proceed with the game
-      boardStates.push(boardState);
-      boardOrders.push(currentOrder); // Store the current order as a string
-      animateDraggables(currentDraggables, () => {
-          checkOrder();
-          if (gameWon) {
-              setTimeout(() => {
-                  Popups.showWinPopup(boardStates, theme, currentPuzzle);
-              }, 900);
-          } else {
-              // Re-enable the Submit button only if there is at least one circle remaining
-              const circles = document.querySelectorAll('.circle');
-              const usedCircles = circles.length - document.querySelectorAll('.circle.used').length;
-              if (usedCircles > 0) {
-                  submitBtn.disabled = false;
-              }
-          }
-      }, currentOrder.split(', ')); // Convert the current order string back to an array
+
+    const currentDraggables = document.querySelectorAll('.draggable');
+    const currentOrder = Array.from(currentDraggables).map(el => el.textContent.trim()).join(', '); // Join the order as a string
+    const boardState = currentOrder.split(', ').map((word, index) => (word === correctOrder[index] ? '🟢' : '⚪'));
+
+    // Check if the current order has already been submitted
+    const isDuplicate = boardOrders.includes(currentOrder);
+
+    if (isDuplicate) {
+        // Show a popup with the message "You tried that already!"
+        Popups.showDuplicatePopup();
+    } else {
+        // Store the board state and order, then proceed with the game
+        boardStates.push(boardState);
+        boardOrders.push(currentOrder); // Store the current order as a string
+        animateDraggables(currentDraggables, () => {
+            checkOrder();
+            if (gameWon) {
+                gameEnded = true;
+                setTimeout(() => {
+                    Popups.showWinPopup(boardStates, currentPuzzle, reverseWon);
+                    resultsShown = true;
+                    submitBtn.textContent = 'Results';
+                }, 900);
+            } else {
+                // Re-enable the Submit button only if there is at least one circle remaining
+                const circles = document.querySelectorAll('.circle');
+                const usedCircles = circles.length - document.querySelectorAll('.circle.used').length;
+                if (usedCircles > 0) {
+                    submitBtn.disabled = false;
+                }
+            }
+        }, currentOrder.split(', ')); // Convert the current order string back to an array
+    }
   }
 });
 
@@ -327,7 +362,10 @@ function animateDraggables(draggables, callback, currentOrder) {
                       // Animate the losing draggables before showing the popup
                       animateLosingDraggables(draggables, () => {
                           // Show losing popup after the animation is complete
-                          Popups.showLosingPopup(boardStates, theme, currentPuzzle);
+                          gameEnded = true;
+                          Popups.showLosingPopup(boardStates, currentPuzzle);
+                          resultsShown = true;
+                          submitBtn.textContent = 'Results';
                       });
                   } else {
                       // Call the callback function if provided
@@ -407,6 +445,8 @@ window.togglePopup = Popups.togglePopup;  // Expose the function to the global s
 window.onclick = function(event) {
     if (!event.target.matches('.help-icon, .lightbulb-icon, .popup, .share-btn, .patreon-btn') && !event.target.closest('.popup')) {
         Popups.closeAllPopups();
+        resultsShown = false;
+        submitBtn.disabled = false; // Disable the button
     }
 }
 
