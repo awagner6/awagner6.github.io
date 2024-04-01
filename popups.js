@@ -17,14 +17,16 @@ export function closeAllPopups() {
     isHelpPopupVisible = false;
 }
 
-export function showWinPopup(boardStates, theme, currentPuzzle) {
+export function showWinPopup(boardStates, currentPuzzle, reverseWon) {
     const winPopup = document.createElement('div');
     winPopup.classList.add('popup', 'win-popup');
 
-    const transposedStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
-    const emojiSequence = transposedStates.map(state => state.join('  ')).join('\n');
+    // Construct the post-solve content
+    const postSolveContent = (reverseWon ? currentPuzzle.post_solve.slice().reverse() : currentPuzzle.post_solve)
+        .map(item => `<p style="font-size: .75em;">${item}</p>`)
+        .join('');
 
-    winPopup.innerHTML = `<p style="font-size: .75em;">You solved Order Up<br>in ${boardStates.length} ${boardStates.length === 1 ? 'guess' : 'guesses'}!<br><br><p style="font-size: .75em;">Theme description:<br><strong>${theme}</strong></p><pre>${emojiSequence}</pre>`;
+    winPopup.innerHTML = `<p style="font-size: .75em;">You solved Order Up<br>in ${boardStates.length} ${boardStates.length === 1 ? 'guess' : 'guesses'}!<br><br><p style="font-size: .75em;">Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}</div>`;
     addButtons(winPopup, boardStates, currentPuzzle);
 
     document.body.appendChild(winPopup);
@@ -37,22 +39,25 @@ export function showWinPopup(boardStates, theme, currentPuzzle) {
     };
 }
 
-export function showLosingPopup(boardStates, theme, currentPuzzle) {
+
+export function showLosingPopup(boardStates, currentPuzzle) {
     // Set a timeout to display the losing popup after a delay
-    setTimeout(() => {
-        closeAllPopups();
-        const losingPopup = document.createElement('div');
-        losingPopup.classList.add('popup', 'losing-popup');
+   
+    closeAllPopups();
+    const losingPopup = document.createElement('div');
+    losingPopup.classList.add('popup', 'losing-popup');
 
-        const transposedStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
-        const emojiSequence = transposedStates.map(state => state.join(' ')).join('\n');
+    // Construct the post-solve content
+    const postSolveContent = currentPuzzle.post_solve
+    .map(item => `<p style="font-size: .75em;">${item}</p>`)
+    .join('');
 
-        losingPopup.innerHTML = `<p style="font-size: .75em;">Order Up got the<br>best of you today!</p><br><p style="font-size: .75em;">Theme description:<br><strong>${theme}</strong></p><pre>${emojiSequence}</pre>`;
-        addButtons(losingPopup, boardStates, currentPuzzle);
+    losingPopup.innerHTML = `<p style="font-size: .75em;">Order Up got the<br>best of you today!</p><br><p style="font-size: .75em;">Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}</div>`;
+    addButtons(losingPopup, boardStates, currentPuzzle);
 
-        document.body.appendChild(losingPopup);
-        losingPopup.style.display = 'block';
-    }, 750); // Adjust the delay (in milliseconds) as needed
+    document.body.appendChild(losingPopup);
+    losingPopup.style.display = 'block';
+
 }
 
 function addButtons(popup, boardStates, currentPuzzle) {
@@ -180,3 +185,4 @@ export function showHelpPopup() {
         isHelpPopupVisible = !isHelpPopupVisible;
     }
 }
+
