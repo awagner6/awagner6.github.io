@@ -17,7 +17,7 @@ export const puzzles = [
     },
     {
         id: 3,
-        solution: ["DIME", "FIFTY DOLLAR BILL", "PENNY", "TWENTY DOLLAR BILL", "NICKEL", "TWO DOLLAR BILL", "ONE DOLLAR BILL"],
+        solution: ["ONE DOLLAR BILL", "NICKEL", "TWENTY DOLLAR BILL", "PENNY", "FIFTY DOLLAR BILL", "DIME", "HALF DOLLAR"],
         initialOrderSequence: "4375612",
         theme: "Money by president term order",
         hint: "Face value",
