@@ -5,7 +5,8 @@ export const puzzles = [
         initialOrderSequence: "6243175",
         theme: "ROYGBIV",
         hint: "Take a bow",
-        hint2: "Get colorful"
+        hint2: "Get colorful",
+        post_solve: ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
     },
     {
         id: 2,
@@ -13,15 +14,27 @@ export const puzzles = [
         initialOrderSequence: "6417235",
         theme: "Animals by limb count",
         hint: "Natural extremes",
-        hint2: "Go out on a limb"
+        hint2: "Go out on a limb",
+        post_solve: ["0", "4", "5", "6", "8", "10", "30 (not 100!)" ]
     },
     {
         id: 3,
         solution: ["ONE DOLLAR BILL", "NICKEL", "TWENTY DOLLAR BILL", "PENNY", "FIFTY DOLLAR BILL", "DIME", "HALF DOLLAR"],
         initialOrderSequence: "4375612",
-        theme: "Money by president term order",
+        theme: "Money in order of president",
         hint: "Face value",
-        hint2: "Presidential procession"
+        hint2: "Presidential procession",
+        post_solve: ["$1: Washington", "5¢: Jefferson", "$20: Jackson", "$5: Lincoln", "$50: Grant", "10¢: FDR", "50¢: JFK"]
+    },
+
+    {
+        id: 4,
+        solution: ["JANAE", "JACOBI", "JESSIE", "JODY", "JOEY", "JEFF", "JENJI"],
+        initialOrderSequence: "6451723",
+        theme: "Alphabetical letter homophone endings",
+        hint: "Behind your ear",
+        hint2: "Say the endings out loud",
+        post_solve: ["JANAE: A", "JACOBI: B", "JESSIE: C", "JODY: D", "JOEY: E", "JEFF: F", "JENJI: G"]
     }
     // Add more puzzles as needed
 ];
