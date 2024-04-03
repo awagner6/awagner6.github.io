@@ -46,6 +46,7 @@ let boardOrders = [];
 let gameEnded = false;
 let resultsShown = false;
 let lightbulbUsed = false;
+console.log(lightbulbUsed);
 let streakCount = 0;
 
 export function timeUntilNextRelease() {
@@ -83,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   }, 100); // Delay to ensure transition
               } else {
                   setTimeout(() => {
-                      Popups.showLosingPopup(savedState.boardStates, currentPuzzle, lightbulbUsed);
+                      Popups.showLosingPopup(savedState.boardStates, currentPuzzle, savedState.lightbulbUsed);
                   }, 100); // Delay to ensure transition
               }
           };
@@ -110,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
       boardStates = [];
       boardOrders = [];
       localStorage.removeItem('gameState');
-      lightbulbUsed = false;
   }
 
   playBtn.addEventListener('click', () => {
@@ -138,6 +138,7 @@ function restoreGameState() {
       return {
           ...gameState,
           latestBoardState: gameState.boardStates[gameState.boardStates.length - 1],
+          lightbulbUsed: gameState.lightbulbUsed || false,
           streakCount: gameState.streakCount || 0, // Default to 0 if winStreak is not in the saved state
       };
   }
@@ -173,52 +174,66 @@ function setupDraggables(puzzle) {
 
       draggableContainer.appendChild(draggableElement);
       requestAnimationFrame(() => adjustFontSize(draggableElement));
-      draggableElement.addEventListener('dragstart', handleDragStart, { passive: false });
-      draggableElement.addEventListener('dragend', handleEnd);
-      draggableElement.addEventListener('touchend', handleEnd);
-      draggableElement.addEventListener('touchstart', handleTouchStart, { passive: false });
-      draggableElement.addEventListener('touchmove', handleTouchMove, { passive: false });
+      draggableElement.addEventListener('mousedown', handleStart, { passive: false });
+      draggableElement.addEventListener('touchstart', handleStart, { passive: false });
+
   });
 
   document.body.classList.remove('hidden');
 }
 
-
-
-// Define the event handlers (handleDragStart, handleTouchStart, handleEnd, handleSwap, swap
-
-// Define the event handlers (handleDragStart, handleTouchStart, handleEnd, handleSwap, swap
-
-function handleDragStart(e) {
-  if (gameWon || e.target.classList.contains('correct')) {
-      e.preventDefault(); // Prevent the drag from starting
-      return;
-  }
-  e.target.classList.add('dragging', 'dragging-original');
-  originalParent = e.target.parentNode;
-  originalNextSibling = e.target.nextElementSibling;
-  lastY = e.clientY;
-}
-
-function handleTouchStart(e) {
+function handleStart(e) {
+  e.preventDefault();
+  e.stopPropagation(); 
   if (gameWon || e.target.classList.contains('correct')) return;
   const draggable = e.target;
   draggable.classList.add('dragging', 'dragging-original');
   originalParent = draggable.parentNode;
   originalNextSibling = draggable.nextElementSibling;
   ghostElement = draggable.cloneNode(true);
-  ghostElement.classList.remove('dragging', 'dragging-original','draggable.dragging');
+  ghostElement.classList.remove('dragging-original');
   ghostElement.classList.add('ghost');
   document.body.appendChild(ghostElement);
-  const touch = e.touches[0];
-  ghostElement.touchOffsetY = touch.clientY - draggable.getBoundingClientRect().top;
-  ghostElement.touchOffsetX = touch.clientX - draggable.getBoundingClientRect().left;
-  ghostElement.style.top = (touch.clientY - ghostElement.touchOffsetY) + 'px';
-  ghostElement.style.left = (touch.clientX - ghostElement.touchOffsetX) + 'px';
-  lastY = touch.clientY;
-  e.preventDefault();
+
+  const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+  const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+
+  ghostElement.offsetX = clientX - draggable.getBoundingClientRect().left;
+  ghostElement.offsetY = clientY - draggable.getBoundingClientRect().top;
+  ghostElement.style.top = (clientY - ghostElement.offsetY) + 'px';
+  ghostElement.style.left = (clientX - ghostElement.offsetX) + 'px';
+  lastY = clientY;
+
+  document.addEventListener('mousemove', handleMove);
+  document.addEventListener('mouseup', handleEnd);
+  document.addEventListener('touchmove', handleMove, { passive: false });
+  document.addEventListener('touchend', handleEnd);
 }
 
+function handleMove(e) {
+  console.log("moving!!!");
+  e.preventDefault();
+  e.stopPropagation(); 
+  if (e.target.classList.contains('correct')) return;
+  const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+  const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+  const draggingElement = document.querySelector('.dragging');
+
+  // Update the position of the ghost element
+  if (ghostElement) {
+      ghostElement.style.top = (clientY - ghostElement.offsetY) + 'px';
+      ghostElement.style.left = (clientX - ghostElement.offsetX) + 'px';
+  }
+
+  // Check for swap conditions more frequently
+  const interval = 10; // Adjust this value as needed
+  for (let i = 0; i < Math.abs(lastY - clientY); i += interval) {
+      const newY = lastY < clientY ? lastY + i : lastY - i;
+      //console.log(newY)
+      handleSwap(draggingElement, newY);
+  }
+  lastY = clientY;
+}
 
 function handleEnd(e) {
   if (e.target.classList.contains('correct')) return;
@@ -227,6 +242,11 @@ function handleEnd(e) {
       ghostElement.remove();
       ghostElement = null;
   }
+
+  document.removeEventListener('mousemove', handleMove);
+  document.removeEventListener('mouseup', handleEnd);
+  document.removeEventListener('touchmove', handleMove);
+  document.removeEventListener('touchend', handleEnd);
 }
 
 
@@ -234,7 +254,6 @@ function handleEnd(e) {
 
 function handleSwap(draggingElement, touchY) {
   const afterElement = getDragAfterElement(draggableContainer, touchY);
-
   if (!afterElement || afterElement.classList.contains('correct')) {
       // If there is no element to swap with or it is correct, do nothing
       //("correct - no swap")
@@ -243,15 +262,15 @@ function handleSwap(draggingElement, touchY) {
 
   const afterElementCenter = afterElement.getBoundingClientRect().top + afterElement.offsetHeight / 2;
   const offset = touchY - afterElementCenter;
+  //console.log(offset)
 
   if (lastOffset === null) {
+      //console.log("null issue")
       lastOffset = offset;
       return;
   }
-
   // Define a threshold for the offset change
   const threshold = 25; // You can adjust this value based on your needs
-
   // Check if the offset change is within the threshold
   if ((lastOffset < 0 && offset > 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold) ||
       (lastOffset > 0 && offset < 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold)) {
@@ -259,69 +278,27 @@ function handleSwap(draggingElement, touchY) {
       //console.log("swap!")
       swapElements(draggingElement, afterElement);
   }
-
   lastOffset = offset;
 }
-
 function swapElements(element1, element2) {
+  console.log('swap!!!');
   // Check if either element is marked as correct
   if (element1.classList.contains('correct') || element2.classList.contains('correct')) {
     return; // Do not perform the swap
   }
-
   // Remove any bulge animation before swapping
   element1.style.animation = 'none';
   element2.style.animation = 'none';
-
   // Create a temporary placeholder element
   const placeholder = document.createElement('div');
-
   // Replace element1 with the placeholder
   element1.replaceWith(placeholder);
-
   // Replace element2 with element1
   element2.replaceWith(element1);
-
   // Replace the placeholder with element2
   placeholder.replaceWith(element2);
 }
 
-function handleTouchMove(e) {
-  e.preventDefault();
-  if (e.target.classList.contains('correct')) return;
-  const touch = e.touches[0];
-  const draggingElement = document.querySelector('.dragging');
-
-  // Update the position of the ghost element
-  if (ghostElement) {
-      ghostElement.style.top = (touch.clientY - ghostElement.touchOffsetY) + 'px';
-      ghostElement.style.left = (touch.clientX - ghostElement.touchOffsetX) + 'px';
-  }
-
-  // Check for swap conditions more frequently
-  const interval = 10; // Adjust this value as needed
-  for (let i = 0; i < Math.abs(lastY - touch.clientY); i += interval) {
-      const newY = lastY < touch.clientY ? lastY + i : lastY - i;
-      handleSwap(draggingElement, newY);
-  }
-  lastY = touch.clientY;
-}
-
-
-draggableContainer.addEventListener('dragover', e => {
-  e.preventDefault();
-  if (e.target.classList.contains('correct')) return;
-  const draggingElement = document.querySelector('.dragging');
-  const clientY = e.clientY;
-
-  // Check for swap conditions more frequently
-  const interval = 10; // Adjust this value as needed
-  for (let i = 0; i < Math.abs(lastY - clientY); i += interval) {
-      const newY = lastY < clientY ? lastY + i : lastY - i;
-      handleSwap(draggingElement, newY);
-  }
-  lastY = clientY;
-}, { passive: false });
 
 
 
@@ -329,25 +306,31 @@ function getDragAfterElement(container, y) {
   const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging):not(.correct)')];
   let closest = null;
   let closestOffset = Number.POSITIVE_INFINITY; // Start with positive infinity to find the minimum absolute offset
-
   draggableElements.forEach(child => {
       const box = child.getBoundingClientRect();
       const cent = (box.top + box.height / 2);
       const offset = y - (box.top + box.height / 2); // Keep the sign of the offset
+      //console.log("Candidate:", child ? child.textContent : "None");
+      //console.log(y)
+      //console.log(cent)
+      //console.log(offset)
       if (Math.abs(offset) < Math.abs(closestOffset)) { // Compare absolute values to find the closest
           closest = child;
           closestOffset = offset;
       }
   });
+  //console.log("Closest element:", closest ? closest.textContent : "None");
+  //console.log(closestOffset)
   return closest;
 }
 
 function deactivateDraggable(draggable) {
-  draggable.removeEventListener('dragstart', handleDragStart);
-  draggable.removeEventListener('dragend', handleEnd);
-  draggable.removeEventListener('touchstart', handleTouchStart);
+  draggable.removeEventListener('mousedown', handleStart);
+  draggable.removeEventListener('mouseup', handleEnd);
+  draggable.removeEventListener('touchstart', handleStart);
   draggable.removeEventListener('touchend', handleEnd);
-  draggable.removeEventListener('touchmove', handleTouchMove);
+  draggable.removeEventListener('touchmove', handleMove);
+  draggable.removeEventListener('mousemove', handleMove);
   draggable.setAttribute('draggable', 'false');
 }
 
@@ -439,18 +422,19 @@ function getTextWidth(text, fontSize, fontFamily) {
 }
 
 function adjustFontSize(element) {
-  const parentWidth = element.parentNode.clientWidth;
+  const draggableWidth = element.getBoundingClientRect().width;
   const fontFamily = window.getComputedStyle(element, null).getPropertyValue('font-family');
   let fontSize = parseFloat(window.getComputedStyle(element, null).getPropertyValue('font-size'));
 
   let textWidth = getTextWidth(element.textContent, fontSize + 'px', fontFamily);
 
-  while (textWidth > parentWidth * 0.8 && fontSize > 10) {
+  while (textWidth > draggableWidth * 0.8 && fontSize > 10) {
       fontSize -= 1;
       textWidth = getTextWidth(element.textContent, fontSize + 'px', fontFamily);
       element.style.fontSize = fontSize + 'px';
   }
 }
+
 
 function animateDraggables(draggables, callback, currentOrder) {
   // Check if the game is won before starting the animation
@@ -545,7 +529,7 @@ function animateLosingDraggables(draggables, callback) {
   }, 500); // Pause before the animation starts
 }
 
-
+console.log(lightbulbUsed);
 
 window.onclick = function(event) {
   if (!event.target.matches('.help-icon, .lightbulb-icon, .popup, .share-btn, .patreon-btn') && !event.target.closest('.popup')) {
@@ -555,7 +539,7 @@ window.onclick = function(event) {
   }
 }
 
-
+console.log(lightbulbUsed);
 
 window.togglePopup = Popups.togglePopup;  // Expose the function to the global scope for use in HTML
 
@@ -567,6 +551,8 @@ window.onclick = function(event) {
     }
 }
 
+console.log(lightbulbUsed);
+
 window.ontouchstart = window.onclick; // Use the same handler for touchend
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -574,12 +560,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (helpIcon) {
       helpIcon.addEventListener('click', () => Popups.showHelpPopup());
   }
+  console.log(lightbulbUsed);
   const lightbulbIcon = document.querySelector('.lightbulb-icon');
   if (lightbulbIcon) {
-      lightbulbIcon.addEventListener('click', () => Popups.showLightbulbPopup(currentPuzzle));
-      lightbulbUsed = true;
-      saveGameState(boardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount);
       console.log(lightbulbUsed);
+      lightbulbIcon.addEventListener('click', () => Popups.showLightbulbPopup(currentPuzzle), lightbulbUsed = true);
+      console.log(lightbulbUsed);
+      saveGameState(boardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount);
   }
 
 });
