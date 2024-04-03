@@ -43,6 +43,10 @@ body {
     border-radius: 3vh;
 }
 
+.swap-animation {
+    transition: transform 0.075s ease;
+}
+
 
 .draggable.correct {
     cursor: default;
@@ -540,5 +544,8 @@ body {
     /* Add more styling as needed */
     font-family: sans-serif;
 }
+
+
+
 
 
