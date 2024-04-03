@@ -1,16 +1,37 @@
 import { puzzles } from './constants.js';
 import * as Popups from './popups.js';
+import { saveGameState} from './gameState.js';
 
-// Now you can use Popups.togglePopup, Popups.showOhNoPopup, etc.
 
-const currentPuzzleIndex = 3;
+
+// Assume puzzles are released daily at 6:30 PM PST
+const releaseTime = { hours: 18, minutes: 30 };
+
+// Calculate the current puzzle index based on the time
+function getCurrentPuzzleIndex() {
+    const now = new Date();
+    const releaseDateTime = new Date(now);
+    releaseDateTime.setHours(releaseTime.hours, releaseTime.minutes, 0, 0);
+
+    // Adjust for time zone (assuming PST)
+    const timezoneOffset = 8 * 60; // 8 hours in minutes
+    releaseDateTime.setMinutes(releaseDateTime.getMinutes() - timezoneOffset);
+
+    // Calculate the number of days since the start date (e.g., the launch date of the game)
+    const startDate = new Date('2024-03-29T18:30:00-07:00'); // Example start date
+    const daysSinceStart = Math.floor((now - startDate) / (1000 * 60 * 60 * 24));
+
+    // Use modulo to cycle through the puzzles if there are more days than puzzles
+    return daysSinceStart % puzzles.length;
+}
+
+let currentPuzzleIndex = getCurrentPuzzleIndex();
 const currentPuzzle = puzzles[currentPuzzleIndex];
 const correctOrder = currentPuzzle.solution;
 const theme = currentPuzzle.theme;
 const draggableContainer = document.querySelector('.draggable-container');
 const submitBtn = document.getElementById('submitBtn');
 const instructionsElement = document.getElementById('instructions');
-instructionsElement.innerHTML = `Put these items in order!<br><span>Theme: <strong>${currentPuzzle.hint}</strong></span>`;
 
 let lastOffset = Number.NEGATIVE_INFINITY;
 let gameWon = false;
@@ -24,26 +45,104 @@ let boardStates = [];
 let boardOrders = [];
 let gameEnded = false;
 let resultsShown = false;
+let lightbulbUsed = false;
+let streakCount = 0;
 
+export function timeUntilNextRelease() {
+    const now = new Date();
+    const releaseTime = new Date(now);
+    releaseTime.setHours(18, 30, 0, 0); // Set to 6:30 PM
+
+    // If the release time has already passed today, set it for the next day
+    if (now > releaseTime) {
+        releaseTime.setDate(releaseTime.getDate() + 1);
+    }
+
+    // Convert both times to UTC
+    const nowUTC = now.getTime() + (now.getTimezoneOffset() * 60000);
+    const releaseTimeUTC = releaseTime.getTime() + (releaseTime.getTimezoneOffset() * 60000);
+
+    return releaseTimeUTC - nowUTC; // Time remaining in milliseconds
+}
 document.addEventListener('DOMContentLoaded', () => {
+  const startInstructions = document.getElementById('start-instructions');
   const playBtn = document.getElementById('playBtn');
   const startScreen = document.querySelector('.start-screen');
+  const puzzleNumberElement = document.getElementById('puzzleNumber');
+
+  const savedState = restoreGameState();
+  if (savedState && getCurrentPuzzleIndex() === savedState.currentPuzzleIndex) {
+      if (savedState.gameEnded) {
+          startInstructions.innerHTML = "Welcome back!<br>You've already played today's puzzle.";
+          playBtn.textContent = "Results";
+          playBtn.onclick = () => { // Use onclick instead of addEventListener
+              startScreen.style.display = 'none';
+              if (savedState.gameWon) {
+                  setTimeout(() => {
+                      Popups.showWinPopup(savedState.boardStates, currentPuzzle, savedState.reverseWon, savedState.lightbulbUsed, savedState.streakCount);
+                  }, 100); // Delay to ensure transition
+              } else {
+                  setTimeout(() => {
+                      Popups.showLosingPopup(savedState.boardStates, currentPuzzle, lightbulbUsed);
+                  }, 100); // Delay to ensure transition
+              }
+          };
+      } else {
+          const correctDraggablesCount = savedState.boardStates.length > 0 ? savedState.boardStates[savedState.boardStates.length - 1].filter(state => state === '🟢').length : 0;
+          const guessesUsed = savedState.boardStates.length;
+          startInstructions.innerHTML = `Welcome back! You've used ${guessesUsed} ${guessesUsed === 1 ? 'guess' : 'guesses'}<br>and correctly ordered ${correctDraggablesCount} ${correctDraggablesCount === 1 ? 'item' : 'items'}.`;
+          playBtn.textContent = "Continue";
+      }
+
+      // Restore the game state for the current puzzle
+      boardStates = savedState.boardStates;
+      boardOrders = savedState.boardOrders;
+      gameWon = savedState.gameWon;
+      reverseWon = savedState.reverseWon;
+      gameEnded = savedState.gameEnded;
+      lightbulbUsed = savedState.lightbulbUsed;
+  } else {
+      // New puzzle or no saved state, start fresh
+      startInstructions.innerHTML = "Put a list of items in order<br>based on a hidden theme!";
+      gameWon = false;
+      reverseWon = false;
+      gameEnded = false;
+      boardStates = [];
+      boardOrders = [];
+      localStorage.removeItem('gameState');
+      lightbulbUsed = false;
+  }
 
   playBtn.addEventListener('click', () => {
       startScreen.style.display = 'none';
   });
 
-  // Other event listeners...
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const puzzleNumberElement = document.getElementById('puzzleNumber');
+  // Set up the current puzzle
+  const currentPuzzle = puzzles[currentPuzzleIndex];
   if (puzzleNumberElement) {
       puzzleNumberElement.textContent = currentPuzzleIndex + 1; // Add 1 to make it human-readable
   }
-  
-  // Other event listeners and code...
+  instructionsElement.innerHTML = `Put these items in order!<br><span>Theme: <strong>${currentPuzzle.hint}</strong></span>`;
+  setupDraggables(currentPuzzle);
+  if (savedState && savedState.gameEnded) {
+    submitBtn.textContent = 'Results';
+}
 });
+
+
+
+function restoreGameState() {
+  const gameStateString = localStorage.getItem('gameState');
+  if (gameStateString) {
+      const gameState = JSON.parse(gameStateString);
+      return {
+          ...gameState,
+          latestBoardState: gameState.boardStates[gameState.boardStates.length - 1],
+          streakCount: gameState.streakCount || 0, // Default to 0 if winStreak is not in the saved state
+      };
+  }
+  return null;
+}
 
 
 
@@ -56,21 +155,24 @@ function generateInitialOrder(puzzle) {
     return initialOrder;
 }
 
-function setupDraggables() {
-  const initialOrder = generateInitialOrder(currentPuzzle);
+function setupDraggables(puzzle) {
+  const orderToUse = boardOrders.length > 0 ? boardOrders[boardOrders.length - 1].split(', ') : generateInitialOrder(puzzle);
 
-  initialOrder.forEach(item => {
+  draggableContainer.innerHTML = ''; // Clear existing draggables
+
+  orderToUse.forEach((item, index) => {
       const draggableElement = document.createElement('p');
       draggableElement.classList.add('draggable');
       draggableElement.setAttribute('draggable', 'true');
       draggableElement.textContent = item;
+
+      // Check if the item was previously marked as correct
+      if (boardStates.length > 0 && boardStates[boardStates.length - 1][index] === '🟢') {
+          draggableElement.classList.add('correct');
+      }
+
       draggableContainer.appendChild(draggableElement);
-
-
-      // Defer the font size adjustment until after the next repaint
       requestAnimationFrame(() => adjustFontSize(draggableElement));
-
-      // Add event listeners to the newly created draggable element
       draggableElement.addEventListener('dragstart', handleDragStart, { passive: false });
       draggableElement.addEventListener('dragend', handleEnd);
       draggableElement.addEventListener('touchend', handleEnd);
@@ -78,52 +180,57 @@ function setupDraggables() {
       draggableElement.addEventListener('touchmove', handleTouchMove, { passive: false });
   });
 
-  // Make all content visible
   document.body.classList.remove('hidden');
 }
 
 
 
-// Call the setupDraggables function when the page loads
-window.addEventListener('DOMContentLoaded', setupDraggables);
+// Define the event handlers (handleDragStart, handleTouchStart, handleEnd, handleSwap, swap
 
+// Define the event handlers (handleDragStart, handleTouchStart, handleEnd, handleSwap, swap
 
 function handleDragStart(e) {
   if (gameWon || e.target.classList.contains('correct')) {
       e.preventDefault(); // Prevent the drag from starting
       return;
   }
-  e.target.classList.add('dragging');
+  e.target.classList.add('dragging', 'dragging-original');
   originalParent = e.target.parentNode;
   originalNextSibling = e.target.nextElementSibling;
   lastY = e.clientY;
 }
 
-
 function handleTouchStart(e) {
   if (gameWon || e.target.classList.contains('correct')) return;
   const draggable = e.target;
-  draggable.classList.add('dragging');
+  draggable.classList.add('dragging', 'dragging-original');
   originalParent = draggable.parentNode;
   originalNextSibling = draggable.nextElementSibling;
   ghostElement = draggable.cloneNode(true);
+  ghostElement.classList.remove('dragging', 'dragging-original','draggable.dragging');
   ghostElement.classList.add('ghost');
   document.body.appendChild(ghostElement);
   const touch = e.touches[0];
-  ghostElement.style.top = touch.clientY - ghostElement.offsetHeight / 2 + 'px';
-  ghostElement.style.left = touch.clientX - ghostElement.offsetWidth / 2 + 'px';
+  ghostElement.touchOffsetY = touch.clientY - draggable.getBoundingClientRect().top;
+  ghostElement.touchOffsetX = touch.clientX - draggable.getBoundingClientRect().left;
+  ghostElement.style.top = (touch.clientY - ghostElement.touchOffsetY) + 'px';
+  ghostElement.style.left = (touch.clientX - ghostElement.touchOffsetX) + 'px';
   lastY = touch.clientY;
   e.preventDefault();
 }
 
+
 function handleEnd(e) {
   if (e.target.classList.contains('correct')) return;
-  e.target.classList.remove('dragging');
+  e.target.classList.remove('dragging', 'dragging-original');
   if (ghostElement) {
       ghostElement.remove();
       ghostElement = null;
   }
 }
+
+
+
 
 function handleSwap(draggingElement, touchY) {
   const afterElement = getDragAfterElement(draggableContainer, touchY);
@@ -187,19 +294,19 @@ function handleTouchMove(e) {
 
   // Update the position of the ghost element
   if (ghostElement) {
-      ghostElement.style.top = touch.clientY - ghostElement.offsetHeight / 2 + 'px';
-      ghostElement.style.left = touch.clientX - ghostElement.offsetWidth / 2 + 'px';
+      ghostElement.style.top = (touch.clientY - ghostElement.touchOffsetY) + 'px';
+      ghostElement.style.left = (touch.clientX - ghostElement.touchOffsetX) + 'px';
   }
 
   // Check for swap conditions more frequently
   const interval = 10; // Adjust this value as needed
   for (let i = 0; i < Math.abs(lastY - touch.clientY); i += interval) {
       const newY = lastY < touch.clientY ? lastY + i : lastY - i;
-      //console.log(newY)
       handleSwap(draggingElement, newY);
   }
   lastY = touch.clientY;
 }
+
 
 draggableContainer.addEventListener('dragover', e => {
   e.preventDefault();
@@ -251,67 +358,73 @@ function checkOrder() {
 
   if (JSON.stringify(currentOrder) === JSON.stringify(correctOrder) || JSON.stringify(currentOrder) === JSON.stringify(reverseOrder)) {
       gameWon = true; // Set the gameWon flag to true
+      gameEnded = true;
       if (JSON.stringify(currentOrder) === JSON.stringify(reverseOrder)){
         reverseWon = true;
       }
   }
 }
 
-
-
-
 submitBtn.addEventListener('click', (e) => {
   // Prevent default action and event propagation
   e.preventDefault();
   e.stopPropagation();
+
   if (gameEnded) {
-    if (!resultsShown) {
-        // Show results
-        if (gameWon) {
-            Popups.showWinPopup(boardStates, currentPuzzle, reverseWon);
-        } else {
-            Popups.showLosingPopup(boardStates, currentPuzzle);
-        }
-        resultsShown = true;
-        submitBtn.disabled = true; // Disable the button
-    }
+      if (!resultsShown) {
+          // Show results
+          if (gameWon) {
+              Popups.showWinPopup(boardStates, currentPuzzle, reverseWon, lightbulbUsed, streakCount);
+          } else {
+              Popups.showLosingPopup(boardStates, currentPuzzle, lightbulbUsed);
+          }
+          resultsShown = true;
+          submitBtn.disabled = true; // Disable the button
+      }
   } else {
+      const currentDraggables = document.querySelectorAll('.draggable');
+      const currentOrder = Array.from(currentDraggables).map(el => el.textContent.trim()).join(', '); // Join the order as a string
+      const boardState = currentOrder.split(', ').map((word, index) => (word === correctOrder[index] ? '🟢' : '⚪'));
 
-    const currentDraggables = document.querySelectorAll('.draggable');
-    const currentOrder = Array.from(currentDraggables).map(el => el.textContent.trim()).join(', '); // Join the order as a string
-    const boardState = currentOrder.split(', ').map((word, index) => (word === correctOrder[index] ? '🟢' : '⚪'));
+      // Check if the current order has already been submitted
+      const isDuplicate = boardOrders.includes(currentOrder);
 
-    // Check if the current order has already been submitted
-    const isDuplicate = boardOrders.includes(currentOrder);
-
-    if (isDuplicate) {
-        // Show a popup with the message "You tried that already!"
-        Popups.showDuplicatePopup();
-    } else {
-        // Store the board state and order, then proceed with the game
-        boardStates.push(boardState);
-        boardOrders.push(currentOrder); // Store the current order as a string
-        animateDraggables(currentDraggables, () => {
-            checkOrder();
-            if (gameWon) {
-                gameEnded = true;
-                setTimeout(() => {
-                    Popups.showWinPopup(boardStates, currentPuzzle, reverseWon);
-                    resultsShown = true;
-                    submitBtn.textContent = 'Results';
-                }, 900);
-            } else {
-                // Re-enable the Submit button only if there is at least one circle remaining
-                const circles = document.querySelectorAll('.circle');
-                const usedCircles = circles.length - document.querySelectorAll('.circle.used').length;
-                if (usedCircles > 0) {
-                    submitBtn.disabled = false;
-                }
-            }
-        }, currentOrder.split(', ')); // Convert the current order string back to an array
-    }
+      if (isDuplicate) {
+          // Show a popup with the message "You tried that already!"
+          Popups.showDuplicatePopup();
+      } else {
+          // Store the board state and order, then proceed with the game
+          boardStates.push(boardState);
+          boardOrders.push(currentOrder); // Store the current order as a string
+          animateDraggables(currentDraggables, () => {
+              checkOrder();
+              if (gameWon) {
+                  gameEnded = true; // Set gameEnded flag immediately after winning
+                  setTimeout(() => {
+                      streakCount = streakCount + 1;
+                      saveGameState(boardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount); // Save the gameEnded state
+                      Popups.showWinPopup(boardStates, currentPuzzle, reverseWon, lightbulbUsed, streakCount);
+                      resultsShown = true;
+                      submitBtn.textContent = 'Results';
+                  }, 900);
+              } else {
+                  saveGameState(boardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount); // Save the gameEnded state
+                  // Re-enable the Submit button only if there is at least one circle remaining
+                  const circles = document.querySelectorAll('.circle');
+                  const usedCircles = circles.length - document.querySelectorAll('.circle.used').length;
+                  if (usedCircles > 0) {
+                      submitBtn.disabled = false;
+                  } else {
+                      gameEnded = true;
+                      streakCount = 0;
+                  }
+              }
+          }, currentOrder.split(', ')); // Convert the current order string back to an array
+      }
   }
 });
+
+
 
 
 
@@ -338,8 +451,6 @@ function adjustFontSize(element) {
       element.style.fontSize = fontSize + 'px';
   }
 }
-
-
 
 function animateDraggables(draggables, callback, currentOrder) {
   // Check if the game is won before starting the animation
@@ -382,13 +493,19 @@ function animateDraggables(draggables, callback, currentOrder) {
           draggables[i].style.animation = 'none';
           void draggables[i].offsetWidth; // Trigger reflow
 
-          // Start the bulge animation
-          draggables[i].style.animation = 'bulge 0.375s ease'; // 25% faster animation
-
-          // Mark the draggable as correct if it's in the correct place or if the game is won
           if (currentOrder[i] === correctOrder[i] || gameWon) {
-              draggables[i].classList.add('correct');
-          }
+            // Start the bulge animation
+            draggables[i].style.animation = 'correct-bulge 0.375s'; // 25% faster animation
+            // Add an event listener for the end of the animation
+            draggables[i].addEventListener('animationend', function animationEndHandler() {
+                this.classList.add('correct');
+                // Remove the event listener to avoid adding the class multiple times
+                this.removeEventListener('animationend', animationEndHandler);
+            });
+        } else {
+            draggables[i].style.animation = 'bulge 0.375s ease';
+        }        
+        
 
           i--; // Move to the previous element
       }, 120); // Start the next bulge sooner
@@ -460,6 +577,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightbulbIcon = document.querySelector('.lightbulb-icon');
   if (lightbulbIcon) {
       lightbulbIcon.addEventListener('click', () => Popups.showLightbulbPopup(currentPuzzle));
+      lightbulbUsed = true;
+      saveGameState(boardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount);
+      console.log(lightbulbUsed);
   }
 
 });
