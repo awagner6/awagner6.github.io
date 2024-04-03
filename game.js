@@ -236,11 +236,13 @@ function handleMove(e) {
 }
 
 function handleEnd(e) {
-  if (e.target.classList.contains('correct')) return;
-  e.target.classList.remove('dragging', 'dragging-original');
-  if (ghostElement) {
+  const draggable = document.querySelector('.dragging');
+  if (draggable && !draggable.classList.contains('correct')) {
+    draggable.classList.remove('dragging', 'dragging-original');
+    if (ghostElement) {
       ghostElement.remove();
       ghostElement = null;
+    }
   }
 
   document.removeEventListener('mousemove', handleMove);
