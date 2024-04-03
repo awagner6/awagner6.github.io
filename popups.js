@@ -1,4 +1,5 @@
-
+import { timeUntilNextRelease } from './game.js';
+import { saveGameState } from './gameState.js';
 
 export function togglePopup(popupId) {
     var popup = document.getElementById(popupId);
@@ -17,7 +18,8 @@ export function closeAllPopups() {
     isHelpPopupVisible = false;
 }
 
-export function showWinPopup(boardStates, currentPuzzle, reverseWon) {
+export function showWinPopup(boardStates, currentPuzzle, reverseWon, lightbulbUsed, streakCount) {
+    console.log(streakCount);
     const winPopup = document.createElement('div');
     winPopup.classList.add('popup', 'win-popup');
 
@@ -26,21 +28,23 @@ export function showWinPopup(boardStates, currentPuzzle, reverseWon) {
         .map(item => `<p style="font-size: .75em;">${item}</p>`)
         .join('');
 
-    winPopup.innerHTML = `<p style="font-size: .75em;">You solved Order Up<br>in ${boardStates.length} ${boardStates.length === 1 ? 'guess' : 'guesses'}!<br><br><p style="font-size: .75em;">Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}</div>`;
-    addButtons(winPopup, boardStates, currentPuzzle);
+    updateCountdownClock();
+
+    winPopup.innerHTML = `<p style="font-size: .75em;">You solved Order Up<br>in ${boardStates.length} ${boardStates.length === 1 ? 'guess' : 'guesses'}!<br><br><p style="font-size: .75em;">Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><p style="font-size: .75em;">Streak: ${streakCount}<br><br><div id="countdown-clock"></div>`;
+    addButtons(winPopup, boardStates, currentPuzzle, lightbulbUsed, streakCount);
 
     document.body.appendChild(winPopup);
     winPopup.style.display = 'block';
 
-    winPopup.onclick = function(event) {
-        if (event.target === winPopup) {
-            document.body.removeChild(winPopup);
-        }
-    };
+    // Update the countdown clock every second
+    const countdownInterval = setInterval(updateCountdownClock, 1000);
+    updateCountdownClock(); // Initial update
+
+    
 }
 
 
-export function showLosingPopup(boardStates, currentPuzzle) {
+export function showLosingPopup(boardStates, currentPuzzle, lightbulbUsed) {
     // Set a timeout to display the losing popup after a delay
    
     closeAllPopups();
@@ -52,15 +56,19 @@ export function showLosingPopup(boardStates, currentPuzzle) {
     .map(item => `<p style="font-size: .75em;">${item}</p>`)
     .join('');
 
-    losingPopup.innerHTML = `<p style="font-size: .75em;">Order Up got the<br>best of you today!</p><br><p style="font-size: .75em;">Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}</div>`;
-    addButtons(losingPopup, boardStates, currentPuzzle);
+    losingPopup.innerHTML = `<p style="font-size: .75em;">Order Up got the<br>best of you today!</p><br><p style="font-size: .75em;">Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><div id="countdown-clock"></div>`;
+    addButtons(losingPopup, boardStates, currentPuzzle, lightbulbUsed, streakCount);
 
     document.body.appendChild(losingPopup);
     losingPopup.style.display = 'block';
 
+    // Update the countdown clock every second
+    const countdownInterval = setInterval(updateCountdownClock, 1000);
+    updateCountdownClock(); // Initial update
+
 }
 
-function addButtons(popup, boardStates, currentPuzzle) {
+function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, streakCount) {
     // Create a container for the buttons
     const buttonContainer = document.createElement('div');
     buttonContainer.classList.add('button-container');
@@ -137,7 +145,6 @@ export function showOhNoPopup() {
 
   let isLightbulbPopupVisible = false;
   let isHelpPopupVisible = false;
-  let lightbulbUsed = false;
 
 
   export function showLightbulbPopup(currentPuzzle) {
@@ -148,7 +155,6 @@ export function showOhNoPopup() {
           } else {
               lightbulbPopup.innerHTML = `<p><span style="font-size: larger;">Theme hint:<br><span style="font-size: larger;"><strong>${currentPuzzle.hint2}</strong></p>`;
               lightbulbPopup.style.display = 'block';
-              lightbulbUsed = true;
           }
           isLightbulbPopupVisible = !isLightbulbPopupVisible;
       }
@@ -174,7 +180,7 @@ export function showHelpPopup() {
         if (isHelpPopupVisible) {
             helpPopup.style.display = 'none';
         } else {
-            helpPopup.innerHTML = `<p><span style="font-size: larger;">RULES:</span><br><br></p>
+            helpPopup.innerHTML = `<p><span style="font-size: larger;">How to play:</span><br><br></p>
                 <p style="font-size: larger;">Arrange the items provided in the correct order within 5 guesses. The correct order is based on a hidden theme that's up to you to figure out.<br><br></p>
                 <p style="font-size: larger;">Tap/click and drag to rearrange items. Hit Submit to guess. When you hit Submit, any correctly placed items will turn green and lock in place.<br><br></p>
                 <p style="font-size: larger;">The game ends when you either find the correct order, or run out of guesses.<br><br></p>
@@ -185,4 +191,21 @@ export function showHelpPopup() {
         isHelpPopupVisible = !isHelpPopupVisible;
     }
 }
+
+function updateCountdownClock() {
+    const countdownElement = document.getElementById('countdown-clock');
+    if (countdownElement) {
+        const timeRemaining = timeUntilNextRelease();
+        const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+        countdownElement.innerHTML = `<p style="font-size: .75em;">Next puzzle in<br>${hours}h ${minutes}m ${seconds}s</p>`;
+    }
+}
+
+
+
+setInterval(updateCountdownClock, 1000);
+
+
 
