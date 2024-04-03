@@ -9,7 +9,7 @@ body {
 }
 
 .draggable.dragging {
-    opacity: 0.75;
+    opacity: 1;
 }
 
 .instructions {
@@ -43,9 +43,11 @@ body {
     border-radius: 3vh;
 }
 
+
 .draggable.correct {
-    background-color: #0edc9e !important;
     cursor: default;
+    background-color: #0edc9e;
+    animation: bulge;
 }
 
 .hidden {
@@ -61,7 +63,6 @@ body {
     }
 
     .draggable {
-        
         font-size: 3vh; /* Adjust for smaller screens if needed */
         margin-bottom: 1vh;
     }
@@ -142,10 +143,14 @@ body {
     margin: 0;
 }
 
+.dragging-original {
+    visibility: hidden;
+}
+
 .ghost {
     position: fixed;
     pointer-events: none;
-    opacity: 0.75;
+    opacity: 1; /* Ensure the ghost is visible */
     z-index: 999;
 }
   
@@ -158,6 +163,20 @@ body {
     }
     100% {
       transform: scale(1);
+    }
+  }
+
+  @keyframes correct-bulge {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Adjust the scale value as needed */
+        background-color: #0edc9e;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #0edc9e;
     }
   }
 
@@ -187,7 +206,7 @@ body {
   }
   
 .win-popup, .losing-popup {
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif, 'Open Sans';
     position: fixed;
     top: 44vh;
     left: 50%;
@@ -370,11 +389,17 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0edc9e;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    background: #0edc9e;
+    background-size: 100% 200%;
+  }
+  
+  
+  
+  
+  
 
 .start-content {
     display: flex;
@@ -382,6 +407,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
+    background-color: transparent;
     text-align: center;
 }
 
@@ -390,6 +416,7 @@ body {
     color: #131212;
     margin-top: 4vh;
     font-weight: bold;
+    z-index: 2;
 }
 
 .logo-container {
@@ -406,8 +433,6 @@ body {
     margin-bottom: 1vh;
 }
 
-
-
 .mini-draggable {
     padding: 0px;
     width: 100%;
@@ -417,31 +442,43 @@ body {
     margin-right: auto;
     margin-bottom: .01vh;
     background-color: #f0f0f0;
-    border: 2px solid #131212; /* Add a white border */
+    border: 2px solid #131212;
     cursor: pointer;
     user-select: none;
     touch-action: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3.25vh; /* Adjust this value as needed */
+    font-size: 3.25vh;
     font-weight: bold;
     border-radius: 3vh;
 }
 
+@keyframes minibulge {
+    0%, 6.25%, 100% { transform: scale(1); }
+    3.125% { transform: scale(1.05); } /* Quick bulge at the start */
+}
+
 .mini-draggable-top {
-    background-color: #f0f0f0; /* Darker grey */
-    margin-bottom: -2px; /* Negative margin to overlap the border */
+    background-color: #f0f0f0;
+    margin-bottom: -2px;
+    animation: minibulge 6.75s ease-in-out infinite; /* Total duration including delay */
+    animation-delay: 5.4s; /* Delay before the first bulge */
 }
 
 .mini-draggable-center {
-    background-color: #0edc9e; /* Normal draggable color */
-    margin-bottom: -2px; /* Negative margin to overlap the border */
+    background-color: #0edc9e;
+    margin-bottom: -2px;
+    animation: minibulge 6.75s ease-in-out infinite;
+    animation-delay: 5.2s; /* Delay before the first bulge */
 }
 
 .mini-draggable-bottom {
-    background-color: #f0f0f0; /* Correct green color */
+    background-color: #f0f0f0;
+    animation: minibulge 6.75s ease-in-out infinite;
+    animation-delay: 5s;
 }
+
 
 
 .game-logo {
@@ -450,6 +487,7 @@ body {
     font-weight: 900;
     margin: 2vh 0; /* Adjust the vertical margin as needed */
     margin-bottom: 0;
+    z-index: 2;
 }
 
 .start-instructions {
@@ -457,29 +495,37 @@ body {
     margin: 2vh 0; /* Adjust the vertical margin as needed */
     color: #333;
     margin-bottom: 1vh;
+    z-index: 2;
 }
 
 .play-button {
-    width: 15vh;
-    height: 4vh; /* Match the height of the draggable */
-    margin: 2vh 0; /* Adjust the vertical margin as needed */
-    background-color: #131212; /* Match the background color of the draggable */
-    color: #f0f0f0;
+    padding: 0px;
+    width: 80%;
+    max-width: 280px; /* Maximum width of 500px */
+    height: 7vh;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    background-color: #f0f0f0;
+    border: 1px solid #131212;
     cursor: pointer;
+    user-select: none;
+    touch-action: none;
     display: flex;
-    border: none;
     align-items: center;
     justify-content: center;
-    font-size: 2vh; /* Match the font size of the draggable */
+    font-size: 2.4vh; /* Adjust this value as needed */
     font-weight: bold;
-    border-radius: 3vh; /* Match the border-radius of the draggable */
+    border-radius: 3vh;
 }
+
 
 
 /* Adjustments for smaller screens */
 @media (max-width: 480px) {
     .play-button {
-        font-size: 2vh; /* Adjust for smaller screens if needed */
+        font-size: 2.4vh; /* Adjust for smaller screens if needed */
         margin-bottom: 1vh;
     }
 }
@@ -487,4 +533,12 @@ body {
 .play-button:active {
     background-color: #555;
 }
+
+.countdown-clock {
+    font-size: 1.5em; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */
+    /* Add more styling as needed */
+    font-family: sans-serif;
+}
+
 
