@@ -6,7 +6,7 @@ export const puzzles = [
         theme: "ROYGBIV",
         hint: "Take a bow",
         hint2: "Get colorful",
-        post_solve: ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
+        post_solve: ["Fire truck: Red", "Pumpkin: Orange", "Blonde: Yellow", "Crocodile: Green", "Sky: Blue", "Denim: Indigo", "Lavender: Violet"]
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const puzzles = [
         theme: "Animals by limb count",
         hint: "Natural extremes",
         hint2: "Go out on a limb",
-        post_solve: ["0", "4", "5", "6", "8", "10", "30 (not 100!)" ]
+        post_solve: ["SNAKE: 0", "FROG: 4", "STARFISH: 5", "ANT: 6", "SPIDER: 8", "CRAB: 10", "CENTIPEDE: ~30 (not 100!)" ]
     },
     {
         id: 3,
@@ -35,6 +35,16 @@ export const puzzles = [
         hint: "Behind your ear",
         hint2: "Say the endings out loud",
         post_solve: ["JANAE: A", "JACOBI: B", "JESSIE: C", "JODY: D", "JOEY: E", "JEFF: F", "JENJI: G"]
-    }
+    },
     // Add more puzzles as needed
+
+    {
+        id: 5,
+        solution: ["8 BALL", "CREDIT CARD", "ARMY CORPORAL", "NEAPOLITAN ICE CREAM", "RAINBOW", "AMERICAN FLAG", "ZEBRA"],
+        initialOrderSequence: "5316274",
+        theme: "Stripe count",
+        hint: "What's my line?",
+        hint2: "Solids' counterparts",
+        post_solve: ["8 BALL: 0", "CREDIT CARD: 1", "ARMY CORPORAL: 2", "NEAPOLITAN ICE CREAM: 3", "RAINBOW: 7", "AMERICAN FLAG: 13", "ZEBRA: Many"]
+    }
 ];
