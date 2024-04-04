@@ -50,7 +50,7 @@ export const puzzles = [
     {
         id: 6,
         solution: [ "JANITOR", "FEBREZE", "MARBLE", "APRICOT", "MAYANS", "JUNK", "JULIENNED"],
-        initialOrderSequence: "6374132",
+        initialOrderSequence: "6374152",
         theme: "Starts with a month abbr.",
         hint: "Ahead of time",
         hint2: "On the calendar",
