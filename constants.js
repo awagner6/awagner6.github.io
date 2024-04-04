@@ -57,7 +57,7 @@ export const puzzles = [
         post_solve: [ "(Jan)itor", "(Mar)ble", "(May)onnaise", "(Jul)ienned", "(Aug)mentation", "(Oct)opus", "(Dec)ision"]
     },
     {
-        id: 6,
+        id: 7,
         solution: [ "DR. NO", "ALIENS", "DIE HARD WITH A VENGEANCE", "SHREK FOREVER AFTER", "MISSION: IMPOSSIBLE - ROGUE NATION", "ROCKY BALBOA", "STAR WARS: THE FORCE AWAKENS"],
         initialOrderSequence: "7436152",
         theme: "Movie installment<br>within its franchise",
