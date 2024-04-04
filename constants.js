@@ -48,12 +48,12 @@ export const puzzles = [
         post_solve: ["8 BALL: 0", "CREDIT CARD: 1", "ARMY CORPORAL: 2", "NEAPOLITAN ICE CREAM: 3", "RAINBOW: 7", "AMERICAN FLAG: 13", "ZEBRA: Many"]
     },
     {
-        id: 6,
-        solution: [ "JANITOR", "FEBREZE", "MARBLE", "APRICOT", "MAYANS", "JUNK", "JULIENNED"],
-        initialOrderSequence: "6374152",
-        theme: "Starts with a month abbr.",
-        hint: "Ahead of time",
-        hint2: "On the calendar",
-        post_solve: ["(JAN)ITOR", "(FEB)REZE", "(MAR)BLE", "(APR)ICOT", "(MAY)ANS", "(JUN)K", "(JUL)IENNED"]
+        id: 7,
+        solution: [ "PLAIN JANE", "SAN MARZANO", "SRIRACHA MAYO", "MINT JULEP", "HIGH OCTANE", "BOSSA NOVA", "ART DECO"],
+        initialOrderSequence: "4231675",
+        theme: "2nd word starts with a 31-day month",
+        hint: "317",
+        hint2: "Ending ahead of time",
+        post_solve: ["PLAIN (JAN)E", "SAN (MAR)ZANO", "SRIRACHA (MAY)O", "MINT (JUL)EP", "HIGH (OCT)ANE", "BOSSA (NOV)A", "ART (DEC)O"]
     }
 ];
