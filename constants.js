@@ -63,7 +63,8 @@ export const puzzles = [
         theme: "Movie installment<br>within its franchise",
         hint: "Installments",
         hint2: "Franchise additions",
-        post_solve: ["Dr. No: 1st (Bond)", "Aliens: 2nd", "Die Hard With A Vengeance: 3rd", "Shrek Forever After: 4th", "Mission: Impossible - Rogue Nation: 5th", "Rocky Balboa: 6th", "Star Wars: The Force Awakens: 7th"]
+        post_solve: ["James Bond 1", "Alien 2", "Die Hard 3", "Shrek 4", "M:I 5", "Rocky 6", "Star Wars 7"]
+
     }
     
 ];
