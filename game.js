@@ -254,7 +254,7 @@ function handleEnd(e) {
 
 
 
-function handleSwap(draggingElement, touchY) {
+function handleSwap(draggingElement, ghostElement, touchY) {
   const afterElement = getDragAfterElement(draggableContainer, touchY);
   if (!afterElement || afterElement.classList.contains('correct')) {
       // If there is no element to swap with or it is correct, do nothing
@@ -263,7 +263,9 @@ function handleSwap(draggingElement, touchY) {
   }
 
   const afterElementCenter = afterElement.getBoundingClientRect().top + afterElement.offsetHeight / 2;
-  const offset = touchY - afterElementCenter;
+  const draggingElementCenter = ghostElement.getBoundingClientRect().top + draggingElement.offsetHeight / 2;
+  const offset = draggingElementCenter - afterElementCenter;
+  console.log(offset);
 
   if (lastOffset === null) {
       //console.log("null issue")
