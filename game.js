@@ -273,7 +273,7 @@ function handleSwap(draggingElement, ghostElement, touchY) {
       return;
   }
   // Define a threshold for the offset change
-  const threshold = 15; // You can adjust this value based on your needs
+  const threshold = 10; // You can adjust this value based on your needs
   // Check if the offset change is within the threshold
   if ((lastOffset < 0 && offset > 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold) ||
       (lastOffset > 0 && offset < 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold)) {
