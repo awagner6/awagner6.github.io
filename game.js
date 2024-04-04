@@ -229,7 +229,7 @@ function handleMove(e) {
   for (let i = 0; i < Math.abs(lastY - clientY); i += interval) {
       const newY = lastY < clientY ? lastY + i : lastY - i;
       //console.log(newY)
-      handleSwap(draggingElement, newY);
+      handleSwap(draggingElement, ghostElement, newY);
   }
   lastY = clientY;
 }
