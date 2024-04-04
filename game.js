@@ -265,7 +265,6 @@ function handleSwap(draggingElement, ghostElement, touchY) {
   const afterElementCenter = afterElement.getBoundingClientRect().top + afterElement.offsetHeight / 2;
   const draggingElementCenter = ghostElement.getBoundingClientRect().top + draggingElement.offsetHeight / 2;
   const offset = draggingElementCenter - afterElementCenter;
-  console.log(offset);
 
   if (lastOffset === null) {
       //console.log("null issue")
@@ -273,7 +272,7 @@ function handleSwap(draggingElement, ghostElement, touchY) {
       return;
   }
   // Define a threshold for the offset change
-  const threshold = 10; // You can adjust this value based on your needs
+  const threshold = 25; // You can adjust this value based on your needs
   // Check if the offset change is within the threshold
   if ((lastOffset < 0 && offset > 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold) ||
       (lastOffset > 0 && offset < 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold)) {
