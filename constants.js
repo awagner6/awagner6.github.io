@@ -46,5 +46,14 @@ export const puzzles = [
         hint: "What's my line?",
         hint2: "Solids' counterparts",
         post_solve: ["8 BALL: 0", "CREDIT CARD: 1", "ARMY CORPORAL: 2", "NEAPOLITAN ICE CREAM: 3", "RAINBOW: 7", "AMERICAN FLAG: 13", "ZEBRA: Many"]
+    },
+    {
+        id: 6,
+        solution: [ "JANITOR", "FEBREZE", "MARBLE", "APRICOT", "MAYANS", "JUNK", "JULIENNED"],
+        initialOrderSequence: "6374132",
+        theme: "Starts with a month abbr.",
+        hint: "Ahead of time",
+        hint2: "On the calendar",
+        post_solve: ["(JAN)ITOR", "(FEB)REZE", "(MAR)BLE", "(APR)ICOT", "(MAY)ANS", "(JUN)K", "(JUL)IENNED"]
     }
 ];
