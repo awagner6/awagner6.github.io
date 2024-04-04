@@ -44,7 +44,7 @@ body {
 }
 
 .swap-animation {
-    transition: transform 0.075s ease;
+    transition: transform .75s ease;
 }
 
 
@@ -130,6 +130,7 @@ body {
     }
 }
 
+
 .popup {
     display: none;
     position: absolute;
@@ -211,12 +212,12 @@ body {
   
 .win-popup, .losing-popup {
     font-family: sans-serif, 'Open Sans';
-    position: fixed;
-    top: 44vh;
+    position: center;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.25em;
     background-color: #f0f0f0;
     padding: 25px;
     border: 1px solid #ccc;
@@ -546,6 +547,8 @@ body {
 }
 
 
-
-
-
+.post-solve-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
