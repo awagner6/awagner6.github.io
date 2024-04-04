@@ -52,8 +52,8 @@ export const puzzles = [
         solution: [ "PLAIN JANE", "SAN MARZANO", "SRIRACHA MAYO", "MINT JULEP", "HIGH OCTANE", "BOSSA NOVA", "ART DECO"],
         initialOrderSequence: "4231675",
         theme: "2nd word starts with a 31-day month",
-        hint: "31/7",
-        hint2: "Ending ahead of time",
+        hint: "3/31",
+        hint2: "Cal Train",
         post_solve: ["PLAIN (JAN)E", "SAN (MAR)ZANO", "SRIRACHA (MAY)O", "MINT (JUL)EP", "HIGH (OCT)ANE", "BOSSA (NOV)A", "ART (DEC)O"]
     }
 ];
