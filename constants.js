@@ -49,11 +49,21 @@ export const puzzles = [
     },
     {
         id: 7,
-        solution: [ "PLAIN JANE", "SAN MARZANO", "SRIRACHA MAYO", "MINT JULEP", "HIGH OCTANE", "BOSSA NOVA", "ART DECO"],
-        initialOrderSequence: "4231675",
-        theme: "2nd word starts with a 31-day month",
-        hint: "3/31",
+        solution: [ "JANITOR", "MARBLE", "MAYONNAISE", "JULIENNED", "AUGMENTATION", "OCTOPUS", "DECISION"],
+        initialOrderSequence: "7413625",
+        theme: "Starts with a 31-day month abbr.",
+        hint: "Thirty-ones",
         hint2: "Cal Train",
-        post_solve: ["PLAIN (JAN)E", "SAN (MAR)ZANO", "SRIRACHA (MAY)O", "MINT (JUL)EP", "HIGH (OCT)ANE", "BOSSA (NOV)A", "ART (DEC)O"]
+        post_solve: [ "(Jan)itor", "(Mar)ble", "(May)onnaise", "(Jul)ienned", "(Aug)mentation", "(Oct)opus", "(Dec)ision"]
+    },
+    {
+        id: 8,
+        solution: [ "DR. NO", "ALIENS", "DIE HARD WITH A VENGEANCE", "SHREK FOREVER AFTER", "MISSION: IMPOSSIBLE - ROGUE NATION", "ROCKY BALBOA", "STAR WARS: THE FORCE AWAKENS"],
+        initialOrderSequence: "7436152",
+        theme: "Movie installment<br>within its franchise",
+        hint: "Installments",
+        hint2: "Franchise additions",
+        post_solve: ["Dr. No: 1st (Bond)", "Aliens: 2nd", "Die Hard With A Vengeance: 3rd", "Shrek Forever After: 4th", "Mission: Impossible - Rogue Nation: 5th", "Rocky Balboa: 6th", "Star Wars: The Force Awakens: 7th"]
     }
+    
 ];
