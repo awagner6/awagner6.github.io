@@ -25,12 +25,12 @@ export function showWinPopup(boardStates, currentPuzzle, reverseWon, lightbulbUs
 
     // Construct the post-solve content
     const postSolveContent = (reverseWon ? currentPuzzle.post_solve.slice().reverse() : currentPuzzle.post_solve)
-        .map(item => `<p style="font-size: .75em;">${item}</p>`)
+        .map(item => `<p>${item}</p>`)
         .join('');
 
     updateCountdownClock();
 
-    winPopup.innerHTML = `<p style="font-size: .75em;">You solved Order Up<br>in ${boardStates.length} ${boardStates.length === 1 ? 'guess' : 'guesses'}!<br><br><p style="font-size: .75em;">Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><p style="font-size: .75em;">Streak: ${streakCount}<br><br><div id="countdown-clock"></div>`;
+    winPopup.innerHTML = `<p>You solved Order Up<br>in ${boardStates.length} ${boardStates.length === 1 ? 'guess' : 'guesses'}!<br><br><p>Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><p>Streak: ${streakCount}<br><br><div id="countdown-clock"></div>`;
     addButtons(winPopup, boardStates, currentPuzzle, lightbulbUsed, streakCount);
 
     document.body.appendChild(winPopup);
@@ -42,6 +42,8 @@ export function showWinPopup(boardStates, currentPuzzle, reverseWon, lightbulbUs
 
     
 }
+
+
 
 
 export function showLosingPopup(boardStates, currentPuzzle, lightbulbUsed) {
@@ -151,12 +153,13 @@ export function showOhNoPopup() {
       const lightbulbPopup = document.getElementById('lightbulb-popup');
       if (lightbulbPopup) {
           if (isLightbulbPopupVisible) {
-              lightbulbPopup.style.display = 'none';
+                lightbulbPopup.style.display = 'none';
           } else {
-              lightbulbPopup.innerHTML = `<p><span style="font-size: larger;">Theme hint:<br><span style="font-size: larger;"><strong>${currentPuzzle.hint2}</strong></p>`;
-              lightbulbPopup.style.display = 'block';
+                lightbulbPopup.style.display = 'block';
+                lightbulbPopup.innerHTML = `<p><span style="font-size: larger;">Theme hint:<br><span style="font-size: larger;"><strong>${currentPuzzle.hint2}</strong></p>`;
           }
           isLightbulbPopupVisible = !isLightbulbPopupVisible;
+
       }
   }
   
@@ -192,6 +195,7 @@ export function showHelpPopup() {
     }
 }
 
+
 function updateCountdownClock() {
     const countdownElement = document.getElementById('countdown-clock');
     if (countdownElement) {
@@ -199,13 +203,16 @@ function updateCountdownClock() {
         const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-        countdownElement.innerHTML = `<p style="font-size: .75em;">Next puzzle in<br>${hours}h ${minutes}m ${seconds}s</p>`;
+        countdownElement.innerHTML = `<p>Next puzzle in<br>${hours}h ${minutes}m ${seconds}s</p>`;
     }
 }
 
 
+  // Resize the element when the window is resized.
+  window.addEventListener("resize", function() {
+    resizeToFit(element);
+  });
+
 
 setInterval(updateCountdownClock, 1000);
-
-
 
