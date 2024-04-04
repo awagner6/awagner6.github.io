@@ -212,7 +212,7 @@ function handleStart(e) {
 
 function handleMove(e) {
   e.preventDefault();
-  e.stopPropagation(); 
+  e.stopPropagation();
   if (e.target.classList.contains('correct')) return;
   const clientX = e.touches ? e.touches[0].clientX : e.clientX;
   const clientY = e.touches ? e.touches[0].clientY : e.clientY;
@@ -220,18 +220,20 @@ function handleMove(e) {
 
   // Update the position of the ghost element
   if (ghostElement) {
-      ghostElement.style.top = (clientY - ghostElement.offsetY) + 'px';
-      ghostElement.style.left = (clientX - ghostElement.offsetX) + 'px';
+    ghostElement.style.top = (clientY - ghostElement.offsetY) + 'px';
+    ghostElement.style.left = (clientX - ghostElement.offsetX) + 'px';
   }
+
+  // Calculate the center of the ghost element
+  const ghostElementCenter = ghostElement.getBoundingClientRect().top + ghostElement.offsetHeight / 2;
 
   // Check for swap conditions more frequently
   const interval = 10; // Adjust this value as needed
-  for (let i = 0; i < Math.abs(lastY - clientY); i += interval) {
-      const newY = lastY < clientY ? lastY + i : lastY - i;
-      //console.log(newY)
-      handleSwap(draggingElement, ghostElement, newY);
+  for (let i = 0; i < Math.abs(lastY - ghostElementCenter); i += interval) {
+    const newY = lastY < ghostElementCenter ? lastY + i : lastY - i;
+    handleSwap(draggingElement, newY);
   }
-  lastY = clientY;
+  lastY = ghostElementCenter; // Update lastY to be the center of the ghost element
 }
 
 function handleEnd(e) {
@@ -252,9 +254,7 @@ function handleEnd(e) {
 
 
 
-
-
-function handleSwap(draggingElement, ghostElement, touchY) {
+function handleSwap(draggingElement, touchY) {
   const afterElement = getDragAfterElement(draggableContainer, touchY);
   if (!afterElement || afterElement.classList.contains('correct')) {
       // If there is no element to swap with or it is correct, do nothing
@@ -263,8 +263,7 @@ function handleSwap(draggingElement, ghostElement, touchY) {
   }
 
   const afterElementCenter = afterElement.getBoundingClientRect().top + afterElement.offsetHeight / 2;
-  const draggingElementCenter = ghostElement.getBoundingClientRect().top + draggingElement.offsetHeight / 2;
-  const offset = draggingElementCenter - afterElementCenter;
+  const offset = touchY - afterElementCenter;
 
   if (lastOffset === null) {
       //console.log("null issue")
@@ -272,7 +271,7 @@ function handleSwap(draggingElement, ghostElement, touchY) {
       return;
   }
   // Define a threshold for the offset change
-  const threshold = 25; // You can adjust this value based on your needs
+  const threshold = 15; // You can adjust this value based on your needs
   // Check if the offset change is within the threshold
   if ((lastOffset < 0 && offset > 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold) ||
       (lastOffset > 0 && offset < 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold)) {
@@ -284,6 +283,7 @@ function handleSwap(draggingElement, ghostElement, touchY) {
 }
 
 function swapElements(element1, element2) {
+  console.log("swap!");
   // Check if either element is marked as correct
   if (element1.classList.contains('correct') || element2.classList.contains('correct')) {
     return; // Do not perform the swap
