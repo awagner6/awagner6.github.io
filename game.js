@@ -45,9 +45,8 @@ let boardStates = [];
 let boardOrders = [];
 let gameEnded = false;
 let resultsShown = false;
-let lightbulbUsed = false;
-console.log(lightbulbUsed);
 let streakCount = 0;
+let lightbulbUsed = false;
 
 export function timeUntilNextRelease() {
     const now = new Date();
@@ -110,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
       gameEnded = false;
       boardStates = [];
       boardOrders = [];
+      lightbulbUsed = false;
       localStorage.removeItem('gameState');
   }
 
@@ -211,7 +211,6 @@ function handleStart(e) {
 }
 
 function handleMove(e) {
-  console.log("moving!!!");
   e.preventDefault();
   e.stopPropagation(); 
   if (e.target.classList.contains('correct')) return;
@@ -254,6 +253,7 @@ function handleEnd(e) {
 
 
 
+
 function handleSwap(draggingElement, touchY) {
   const afterElement = getDragAfterElement(draggableContainer, touchY);
   if (!afterElement || afterElement.classList.contains('correct')) {
@@ -264,7 +264,6 @@ function handleSwap(draggingElement, touchY) {
 
   const afterElementCenter = afterElement.getBoundingClientRect().top + afterElement.offsetHeight / 2;
   const offset = touchY - afterElementCenter;
-  //console.log(offset)
 
   if (lastOffset === null) {
       //console.log("null issue")
@@ -272,7 +271,7 @@ function handleSwap(draggingElement, touchY) {
       return;
   }
   // Define a threshold for the offset change
-  const threshold = 25; // You can adjust this value based on your needs
+  const threshold = 15; // You can adjust this value based on your needs
   // Check if the offset change is within the threshold
   if ((lastOffset < 0 && offset > 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold) ||
       (lastOffset > 0 && offset < 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold)) {
@@ -282,24 +281,33 @@ function handleSwap(draggingElement, touchY) {
   }
   lastOffset = offset;
 }
+
 function swapElements(element1, element2) {
-  console.log('swap!!!');
   // Check if either element is marked as correct
   if (element1.classList.contains('correct') || element2.classList.contains('correct')) {
     return; // Do not perform the swap
   }
-  // Remove any bulge animation before swapping
-  element1.style.animation = 'none';
-  element2.style.animation = 'none';
-  // Create a temporary placeholder element
-  const placeholder = document.createElement('div');
-  // Replace element1 with the placeholder
-  element1.replaceWith(placeholder);
-  // Replace element2 with element1
-  element2.replaceWith(element1);
-  // Replace the placeholder with element2
-  placeholder.replaceWith(element2);
+
+  // Calculate the vertical distance between the elements
+  const distance = element2.getBoundingClientRect().top - element1.getBoundingClientRect().top;
+
+  // Apply the transition to element2 to make it slide into place
+  element2.style.transition = 'transform 0.3s ease';
+  element2.style.transform = `translateY(${-distance}px)`;
+
+  // Swap the elements in the DOM
+  setTimeout(() => {
+    const placeholder = document.createElement('div');
+    element1.replaceWith(placeholder);
+    element2.replaceWith(element1);
+    placeholder.replaceWith(element2);
+
+    // Reset the transition and transform properties after the animation completes
+    element2.style.transition = '';
+    element2.style.transform = '';
+  },75); // Match the duration of the transition
 }
+
 
 
 
@@ -531,7 +539,6 @@ function animateLosingDraggables(draggables, callback) {
   }, 500); // Pause before the animation starts
 }
 
-console.log(lightbulbUsed);
 
 window.onclick = function(event) {
   if (!event.target.matches('.help-icon, .lightbulb-icon, .popup, .share-btn, .patreon-btn') && !event.target.closest('.popup')) {
@@ -541,7 +548,6 @@ window.onclick = function(event) {
   }
 }
 
-console.log(lightbulbUsed);
 
 window.togglePopup = Popups.togglePopup;  // Expose the function to the global scope for use in HTML
 
@@ -553,12 +559,14 @@ window.onclick = function(event) {
     }
 }
 
-console.log(lightbulbUsed);
 
 window.ontouchstart = window.onclick; // Use the same handler for touchend
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const helpIcon = document.querySelector('.help-icon');
+  
   if (helpIcon) {
       helpIcon.addEventListener('click', () => Popups.showHelpPopup());
   }
@@ -566,9 +574,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightbulbIcon = document.querySelector('.lightbulb-icon');
   if (lightbulbIcon) {
       console.log(lightbulbUsed);
-      lightbulbIcon.addEventListener('click', () => Popups.showLightbulbPopup(currentPuzzle), lightbulbUsed = true);
-      console.log(lightbulbUsed);
-      saveGameState(boardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount);
+      lightbulbIcon.addEventListener('click', () => {
+          Popups.showLightbulbPopup(currentPuzzle);
+          lightbulbUsed = true;
+          console.log(lightbulbUsed);
+          saveGameState(boardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount);
+      });
   }
-
 });
+
