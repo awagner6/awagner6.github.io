@@ -48,7 +48,7 @@ export const puzzles = [
         post_solve: ["8 BALL: 0", "CREDIT CARD: 1", "ARMY CORPORAL: 2", "NEAPOLITAN ICE CREAM: 3", "RAINBOW: 7", "AMERICAN FLAG: 13", "ZEBRA: Many"]
     },
     {
-        id: 7,
+        id: 6,
         solution: [ "JANITOR", "MARBLE", "MAYONNAISE", "JULIENNED", "AUGMENTATION", "OCTOPUS", "DECISION"],
         initialOrderSequence: "7413625",
         theme: "Starts with a 31-day month abbr.",
@@ -57,7 +57,7 @@ export const puzzles = [
         post_solve: [ "(Jan)itor", "(Mar)ble", "(May)onnaise", "(Jul)ienned", "(Aug)mentation", "(Oct)opus", "(Dec)ision"]
     },
     {
-        id: 8,
+        id: 6,
         solution: [ "DR. NO", "ALIENS", "DIE HARD WITH A VENGEANCE", "SHREK FOREVER AFTER", "MISSION: IMPOSSIBLE - ROGUE NATION", "ROCKY BALBOA", "STAR WARS: THE FORCE AWAKENS"],
         initialOrderSequence: "7436152",
         theme: "Movie installment<br>within its franchise",
