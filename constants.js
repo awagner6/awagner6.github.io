@@ -65,6 +65,32 @@ export const puzzles = [
         hint2: "Franchise additions",
         post_solve: ["James Bond 1", "Alien 2", "Die Hard 3", "Shrek 4", "M:I 5", "Rocky 6", "Star Wars 7"]
 
+    },
+    {
+        id: 8,
+        solution: ["SCRUNCHED", "BREAKTHROUGH", "STRAIGHTFORWARD", "ACKNOWLEDGEMENT", "ENTREPRENEURSHIP", "UNRECOGNIZABLE", "CONFIDENTIALITY"],
+        initialOrderSequence: "3624175",
+        theme: "Number of syllables",
+        hint: "What a mouthful!",
+        hint2: "Count sounds",
+        post_solve: ["SCRUNCHED: 1", "BREAKTHROUGH: 2", "STRAIGHTFORWARD: 3", "ACKNOWLEDGEMENT: 4", "ENTREPRENEURSHIP: 5", "UNRECOGNIZABLE: 6", "CONFIDENTIALITY: 7"]
+    },
+    {
+        id: 9,
+        solution: ["WAITING GAME", "OROGENY", "CALAMARI", "CASCADE", "CASSAVA", "CABERNET FRANC", "CAYUGA"],
+        initialOrderSequence: "2614573",
+        theme: "West <-> East U.S. states by latitudes",
+        hint: "Coast to coast",
+        hint2: "First two, last two",
+        post_solve: ["(WA)ITING GA(ME)", "(OR)OGE(NY)", "(CA)LAMA(RI)", "(CA)SCA(DE)", "(CA)SSA(VA)", "(CA)BERNET FRA(NC)", "(CA)YU(GA)"]
+    },
+    {
+        id: 10,
+        solution: ["EIGHTIES", "CENTS", "CHEERS", "SEASONS", "SENSES", "FLAGS", "SEAS"],
+        initialOrderSequence: "2614573",
+        theme: "Preceded by a number",
+        hint: "Figures out",
+        hint2: "Missing numbers",
+        post_solve: ["(ONE) EIGHTIES", "(TWO) CENTS", "(THREE) CHEERS", "(FOUR) SEASONS", "(FIVE) SENSES", "(SIX) FLAGS", "(SEVEN) SEAS"]
     }
-    
 ];
