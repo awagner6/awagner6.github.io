@@ -180,6 +180,18 @@ function setupDraggables(puzzle) {
   });
 
   document.body.classList.remove('hidden');
+
+  const guessesCircles = document.querySelectorAll('.circle');
+  const guessesUsed = boardStates.length;
+  const totalGuesses = guessesCircles.length;
+
+  guessesCircles.forEach((circle, index) => {
+    if (index >= totalGuesses - guessesUsed) {
+        circle.classList.add('used');
+    } else {
+        circle.classList.remove('used');
+    }
+  });
 }
 
 function handleStart(e) {
@@ -458,6 +470,9 @@ function animateDraggables(draggables, callback, currentOrder) {
               clearInterval(interval);
               setTimeout(() => {
                   // Remove a circle after the animation is done
+                  draggables.forEach(draggable => {
+                    draggable.style.animation = 'none';
+                  });
                   const circles = Array.from(document.querySelectorAll('.circle'));
                   const usedCircles = circles.filter(circle => circle.classList.contains('used'));
                   if (usedCircles.length < circles.length) {
