@@ -52,8 +52,8 @@ export const puzzles = [
         solution: [ "JANITOR", "MARBLE", "MAYONNAISE", "JULIENNED", "AUGMENTATION", "OCTOPUS", "DECISION"],
         initialOrderSequence: "7413625",
         theme: "Starts with a 31-day month abbr.",
-        hint: "Thirty-ones",
-        hint2: "Cal Train",
+        hint: "Ahead of time",
+        hint2: "Cal train",
         post_solve: [ "(Jan)itor", "(Mar)ble", "(May)onnaise", "(Jul)ienned", "(Aug)mentation", "(Oct)opus", "(Dec)ision"]
     },
     {
