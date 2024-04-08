@@ -101,5 +101,14 @@ export const puzzles = [
         hint: "So edgy!",
         hint2: "Shapes",
         post_solve: ["DORITO: 3", "CHESSBOARD: 4", "FLAG OF NEPAL: 5", "HONEYCOMB CELL: 6", "STOP SIGN: 8", "LOONIE: 11", "GLOBE: 20 (not quite round!)"]
+    },
+    {
+        id: 12,
+        solution: ["HELLO", "BONJOUR", "GUTEN TAG", "BUONGIORNO", "TUDO BEM", "HOLA", "HEJ"],
+        initialOrderSequence: "2637514",
+        theme: "E.U. languages<br>alphabetically (exonyms)",
+        hint: "Linguistic ABCs",
+        hint2: "Languages A-to-Z",
+        post_solve: ["Hello: English", "Bonjour: French", "Guten tag: German", "Buongiorno: Italian","Tudo bem: Portuguese", "Hola: Spanish", "Hej: Swedish"]
     }
 ];
