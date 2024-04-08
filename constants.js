@@ -92,5 +92,14 @@ export const puzzles = [
         hint: "Figures out",
         hint2: "Missing numbers",
         post_solve: ["(ONE) EIGHTIES", "(TWO) CENTS", "(THREE) CHEERS", "(FOUR) SEASONS", "(FIVE) SENSES", "(SIX) FLAGS", "(SEVEN) SEAS"]
+    },
+    {
+        id: 11,
+        solution: ["DORITO", "CHESSBOARD", "FLAG OF NEPAL", "HONEYCOMB CELL", "STOP SIGN", "CANADIAN LOONIE", "GLOBE THEATRE"],
+        initialOrderSequence: "6527143",
+        theme: "Number of sides",
+        hint: "So edgy!",
+        hint2: "Shapes",
+        post_solve: ["DORITO: 3", "CHESSBOARD: 4", "FLAG OF NEPAL: 5", "HONEYCOMB CELL: 6", "STOP SIGN: 8", "LOONIE: 11", "GLOBE: 20 (not quite round!)"]
     }
 ];
