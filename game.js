@@ -307,8 +307,8 @@ function swapElements(element1, element2) {
   // Apply the transition to element2 to make it slide into place
   element2.style.transition = 'transform 0.3s ease';
   element2.style.transform = `translateY(${-distance}px)`;
-  if (navigator.vibrate) {
-    navigator.vibrate(50);
+  if (Boolean(window.navigator.vibrate)) {
+    window.navigator.vibrate(50);
   }
   console.log("haptic!");
   // Swap the elements in the DOM
