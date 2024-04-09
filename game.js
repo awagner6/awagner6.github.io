@@ -32,6 +32,7 @@ const theme = currentPuzzle.theme;
 const draggableContainer = document.querySelector('.draggable-container');
 const submitBtn = document.getElementById('submitBtn');
 const instructionsElement = document.getElementById('instructions');
+const checkedOrder = [];
 
 let lastOffset = Number.NEGATIVE_INFINITY;
 let gameWon = false;
@@ -42,6 +43,8 @@ let originalNextSibling = null;
 let lastAfterElement = null;
 let lastY = 0; // Initialize lastY outside of the function
 let boardStates = [];
+let revBoardStates = [];
+let revSolve = null;
 let boardOrders = [];
 let gameEnded = false;
 let resultsShown = false;
@@ -64,11 +67,13 @@ export function timeUntilNextRelease() {
 
     return releaseTimeUTC - nowUTC; // Time remaining in milliseconds
 }
+
 document.addEventListener('DOMContentLoaded', () => {
   const startInstructions = document.getElementById('start-instructions');
   const playBtn = document.getElementById('playBtn');
   const startScreen = document.querySelector('.start-screen');
   const puzzleNumberElement = document.getElementById('puzzleNumber');
+  submitBtn.textContent = 'Submit';
 
   const savedState = restoreGameState();
   if (savedState && getCurrentPuzzleIndex() === savedState.currentPuzzleIndex) {
@@ -79,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
               startScreen.style.display = 'none';
               if (savedState.gameWon) {
                   setTimeout(() => {
-                      Popups.showWinPopup(savedState.boardStates, currentPuzzle, savedState.reverseWon, savedState.lightbulbUsed, savedState.streakCount);
+                      Popups.showWinPopup(savedState.boardStates, savedState.revBoardStates, currentPuzzle, savedState.reverseWon, savedState.lightbulbUsed, savedState.streakCount);
                   }, 100); // Delay to ensure transition
               } else {
                   setTimeout(() => {
@@ -88,19 +93,23 @@ document.addEventListener('DOMContentLoaded', () => {
               }
           };
       } else {
-          const correctDraggablesCount = savedState.boardStates.length > 0 ? savedState.boardStates[savedState.boardStates.length - 1].filter(state => state === '🟢').length : 0;
-          const guessesUsed = savedState.boardStates.length;
-          startInstructions.innerHTML = `Welcome back! You've used ${guessesUsed} ${guessesUsed === 1 ? 'guess' : 'guesses'}<br>and correctly ordered ${correctDraggablesCount} ${correctDraggablesCount === 1 ? 'item' : 'items'}.`;
-          playBtn.textContent = "Continue";
+        const revSolve = savedState.revSolve;
+        const correctDraggablesCount = savedState.boardStates.length > 0 ? (revSolve ? savedState.revBoardStates[savedState.revBoardStates.length - 1].filter(state => state === '🟢').length : savedState.boardStates[savedState.boardStates.length - 1].filter(state => state === '🟢').length) : 0;
+        const guessesUsed = savedState.boardStates.length;
+        startInstructions.innerHTML = `Welcome back! You've used ${guessesUsed} ${guessesUsed === 1 ? 'guess' : 'guesses'}<br>and correctly ordered ${correctDraggablesCount} ${correctDraggablesCount === 1 ? 'item' : 'items'}.`;
+        playBtn.textContent = "Continue";
       }
 
       // Restore the game state for the current puzzle
       boardStates = savedState.boardStates;
+      revBoardStates = savedState.revBoardStates;
       boardOrders = savedState.boardOrders;
       gameWon = savedState.gameWon;
       reverseWon = savedState.reverseWon;
+      revSolve = savedState.revSolve;
       gameEnded = savedState.gameEnded;
       lightbulbUsed = savedState.lightbulbUsed;
+      streakCount = savedState.streakCount || 0;
   } else {
       // New puzzle or no saved state, start fresh
       startInstructions.innerHTML = "Put a list of items in order<br>based on a hidden theme!";
@@ -108,9 +117,14 @@ document.addEventListener('DOMContentLoaded', () => {
       reverseWon = false;
       gameEnded = false;
       boardStates = [];
+      revBoardStates = [];
       boardOrders = [];
       lightbulbUsed = false;
+      revSolve = null;
       localStorage.removeItem('gameState');
+      if (savedState){
+        streakCount = savedState.streakCount || 0;
+      }
   }
 
   playBtn.addEventListener('click', () => {
@@ -123,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       puzzleNumberElement.textContent = currentPuzzleIndex + 1; // Add 1 to make it human-readable
   }
   instructionsElement.innerHTML = `Put these items in order!<br><span>Theme: <strong>${currentPuzzle.hint}</strong></span>`;
-  setupDraggables(currentPuzzle);
+  setupDraggables(currentPuzzle, revSolve);
   if (savedState && savedState.gameEnded) {
     submitBtn.textContent = 'Results';
 }
@@ -156,7 +170,7 @@ function generateInitialOrder(puzzle) {
     return initialOrder;
 }
 
-function setupDraggables(puzzle) {
+function setupDraggables(puzzle, revSolve) {
   const orderToUse = boardOrders.length > 0 ? boardOrders[boardOrders.length - 1].split(', ') : generateInitialOrder(puzzle);
 
   draggableContainer.innerHTML = ''; // Clear existing draggables
@@ -168,7 +182,8 @@ function setupDraggables(puzzle) {
       draggableElement.textContent = item;
 
       // Check if the item was previously marked as correct
-      if (boardStates.length > 0 && boardStates[boardStates.length - 1][index] === '🟢') {
+      const correctItem = revSolve ? correctOrder[correctOrder.length - 1 - index] : correctOrder[index];
+      if (boardStates.length > 0 && item === correctItem) {
           draggableElement.classList.add('correct');
       }
 
@@ -176,7 +191,6 @@ function setupDraggables(puzzle) {
       requestAnimationFrame(() => adjustFontSize(draggableElement));
       draggableElement.addEventListener('mousedown', handleStart, { passive: false });
       draggableElement.addEventListener('touchstart', handleStart, { passive: false });
-
   });
 
   document.body.classList.remove('hidden');
@@ -186,13 +200,14 @@ function setupDraggables(puzzle) {
   const totalGuesses = guessesCircles.length;
 
   guessesCircles.forEach((circle, index) => {
-    if (index >= totalGuesses - guessesUsed) {
-        circle.classList.add('used');
-    } else {
-        circle.classList.remove('used');
-    }
+      if (index >= totalGuesses - guessesUsed) {
+          circle.classList.add('used');
+      } else {
+          circle.classList.remove('used');
+      }
   });
 }
+
 
 function handleStart(e) {
   e.preventDefault();
@@ -278,7 +293,6 @@ function handleSwap(draggingElement, touchY) {
   const offset = touchY - afterElementCenter;
 
   if (lastOffset === null) {
-      //console.log("null issue")
       lastOffset = offset;
       return;
   }
@@ -288,14 +302,12 @@ function handleSwap(draggingElement, touchY) {
   if ((lastOffset < 0 && offset > 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold) ||
       (lastOffset > 0 && offset < 0 && Math.abs(lastOffset) < threshold && Math.abs(offset) < threshold)) {
       // If the offset changes sign within the threshold, initiate a swap
-      //console.log("swap!")
       swapElements(draggingElement, afterElement);
   }
   lastOffset = offset;
 }
 
 function swapElements(element1, element2) {
-  console.log("swap!");
   // Check if either element is marked as correct
   if (element1.classList.contains('correct') || element2.classList.contains('correct')) {
     return; // Do not perform the swap
@@ -305,13 +317,9 @@ function swapElements(element1, element2) {
   const distance = element2.getBoundingClientRect().top - element1.getBoundingClientRect().top;
 
   // Apply the transition to element2 to make it slide into place
+  element2.style.zIndex = '1';
   element2.style.transition = 'transform 0.3s ease';
   element2.style.transform = `translateY(${-distance}px)`;
-  if ('vibrate' in navigator) {
-      window.navigator.vibrate(100);
-      console.log("haptics!");
-  }
-  
   // Swap the elements in the DOM
   setTimeout(() => {
     const placeholder = document.createElement('div');
@@ -322,7 +330,7 @@ function swapElements(element1, element2) {
     // Reset the transition and transform properties after the animation completes
     element2.style.transition = '';
     element2.style.transform = '';
-  },75); // Match the duration of the transition
+  },100); // Match the duration of the transition
 }
 
 
@@ -337,17 +345,11 @@ function getDragAfterElement(container, y) {
       const box = child.getBoundingClientRect();
       const cent = (box.top + box.height / 2);
       const offset = y - (box.top + box.height / 2); // Keep the sign of the offset
-      //console.log("Candidate:", child ? child.textContent : "None");
-      //console.log(y)
-      //console.log(cent)
-      //console.log(offset)
       if (Math.abs(offset) < Math.abs(closestOffset)) { // Compare absolute values to find the closest
           closest = child;
           closestOffset = offset;
       }
   });
-  //console.log("Closest element:", closest ? closest.textContent : "None");
-  //console.log(closestOffset)
   return closest;
 }
 
@@ -376,63 +378,82 @@ function checkOrder() {
 }
 
 submitBtn.addEventListener('click', (e) => {
-  // Prevent default action and event propagation
   e.preventDefault();
   e.stopPropagation();
 
   if (gameEnded) {
-      if (!resultsShown) {
-          // Show results
-          if (gameWon) {
-              Popups.showWinPopup(boardStates, currentPuzzle, reverseWon, lightbulbUsed, streakCount);
-          } else {
-              Popups.showLosingPopup(boardStates, currentPuzzle, lightbulbUsed);
-          }
-          resultsShown = true;
-          submitBtn.disabled = true; // Disable the button
-      }
-  } else {
-      const currentDraggables = document.querySelectorAll('.draggable');
-      const currentOrder = Array.from(currentDraggables).map(el => el.textContent.trim()).join(', '); // Join the order as a string
-      const boardState = currentOrder.split(', ').map((word, index) => (word === correctOrder[index] ? '🟢' : '⚪'));
-
-      // Check if the current order has already been submitted
-      const isDuplicate = boardOrders.includes(currentOrder);
-
-      if (isDuplicate) {
-          // Show a popup with the message "You tried that already!"
-          Popups.showDuplicatePopup();
+    if (!resultsShown) {
+      // Show results
+      if (gameWon) {
+        Popups.showWinPopup(boardStates, revBoardStates, currentPuzzle, reverseWon, lightbulbUsed, streakCount);
       } else {
-          // Store the board state and order, then proceed with the game
-          boardStates.push(boardState);
-          boardOrders.push(currentOrder); // Store the current order as a string
-          animateDraggables(currentDraggables, () => {
-              checkOrder();
-              if (gameWon) {
-                  gameEnded = true; // Set gameEnded flag immediately after winning
-                  setTimeout(() => {
-                      streakCount = streakCount + 1;
-                      saveGameState(boardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount); // Save the gameEnded state
-                      Popups.showWinPopup(boardStates, currentPuzzle, reverseWon, lightbulbUsed, streakCount);
-                      resultsShown = true;
-                      submitBtn.textContent = 'Results';
-                  }, 900);
-              } else {
-                  saveGameState(boardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount); // Save the gameEnded state
-                  // Re-enable the Submit button only if there is at least one circle remaining
-                  const circles = document.querySelectorAll('.circle');
-                  const usedCircles = circles.length - document.querySelectorAll('.circle.used').length;
-                  if (usedCircles > 0) {
-                      submitBtn.disabled = false;
-                  } else {
-                      gameEnded = true;
-                      streakCount = 0;
-                  }
-              }
-          }, currentOrder.split(', ')); // Convert the current order string back to an array
+        Popups.showLosingPopup(boardStates, currentPuzzle, lightbulbUsed);
       }
+      resultsShown = true;
+      submitBtn.disabled = true; // Disable the button
+    }
+  } else {
+    const currentDraggables = document.querySelectorAll('.draggable');
+    const currentOrder = Array.from(currentDraggables).map(el => el.textContent.trim()).join(', '); // Join the order as a string
+    const boardState = currentOrder.split(', ').map((word, index) => (word === correctOrder[index] ? '🟢' : '⚪'));
+    const reverseOrder = [...correctOrder].reverse(); // Create a reversed version of the correct order
+    const revBoardState = currentOrder.split(', ').map((word, index) => (word === reverseOrder[index] ? '🟢' : '⚪'));
+
+            // Set revSolve only if it's null
+    if (revSolve === null) {
+        const normalCorrect = boardState.filter(state => state === '🟢').length;
+        const reverseCorrect = revBoardState.filter(state => state === '🟢').length;
+
+        // Check for edge cases
+        if (normalCorrect === 0 && reverseCorrect === 0) {
+            // Leave revSolve as null
+        } else if (normalCorrect === 1 && reverseCorrect === 1 && boardState[3] === '🟢' && revBoardState[3] === '🟢') {
+            // Leave revSolve as null
+        } else {
+            // Set revSolve based on which direction has more correct answers
+            revSolve = reverseCorrect > normalCorrect;
+        }
+    }
+
+    // Check if the current order has already been submitted
+    const isDuplicate = boardOrders.includes(currentOrder);
+
+    if (isDuplicate) {
+      // Show a popup with the message "You tried that already!"
+      Popups.showDuplicatePopup();
+    } else {
+      // Store the board state and order, then proceed with the game
+      boardStates.push(boardState);
+      revBoardStates.push(revBoardState);
+      boardOrders.push(currentOrder); // Store the current order as a string
+      animateDraggables(currentDraggables, revSolve, () => {
+        checkOrder();
+        if (gameWon) {
+          gameEnded = true; // Set gameEnded flag immediately after winning
+          setTimeout(() => {
+            streakCount = streakCount + 1;
+            saveGameState(boardStates, revBoardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount, revSolve); // Save the gameEnded state
+            Popups.showWinPopup(boardStates, revBoardStates, currentPuzzle, reverseWon, lightbulbUsed, streakCount);
+            resultsShown = true;
+            submitBtn.textContent = 'Results';
+          }, 900);
+        } else {
+          saveGameState(boardStates, revBoardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount, revSolve); // Save the gameEnded state
+          // Re-enable the Submit button only if there is at least one circle remaining
+          const circles = document.querySelectorAll('.circle');
+          const usedCircles = circles.length - document.querySelectorAll('.circle.used').length;
+          if (usedCircles > 0) {
+            submitBtn.disabled = false;
+          } else {
+            gameEnded = true;
+            streakCount = 0;
+          }
+        }
+      }, currentOrder.split(', ')); // Convert the current order string back to an array
+    }
   }
 });
+
 
 
 
@@ -463,9 +484,10 @@ function adjustFontSize(element) {
 }
 
 
-function animateDraggables(draggables, callback, currentOrder) {
+function animateDraggables(draggables, revSolve, callback, currentOrder) {
   // Check if the game is won before starting the animation
   checkOrder();
+  const checkedOrder = revSolve ? [...correctOrder].reverse() : correctOrder;
 
   let i = draggables.length - 1; // Start from the last element
   setTimeout(() => { // Add a pause before the animation starts
@@ -507,7 +529,7 @@ function animateDraggables(draggables, callback, currentOrder) {
           draggables[i].style.animation = 'none';
           void draggables[i].offsetWidth; // Trigger reflow
 
-          if (currentOrder[i] === correctOrder[i] || gameWon) {
+          if (currentOrder[i] === checkedOrder[i] || gameWon) {
             // Start the bulge animation
             draggables[i].style.animation = 'correct-bulge 0.375s'; // 25% faster animation
             // Add an event listener for the end of the animation
@@ -590,15 +612,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (helpIcon) {
       helpIcon.addEventListener('click', () => Popups.showHelpPopup());
   }
-  console.log(lightbulbUsed);
   const lightbulbIcon = document.querySelector('.lightbulb-icon');
   if (lightbulbIcon) {
-      console.log(lightbulbUsed);
       lightbulbIcon.addEventListener('click', () => {
           Popups.showLightbulbPopup(currentPuzzle);
           lightbulbUsed = true;
-          console.log(lightbulbUsed);
-          saveGameState(boardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount);
+          saveGameState(boardStates, revBoardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount, revSolve);
       });
   }
 });
