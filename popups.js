@@ -96,7 +96,6 @@ function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, streakCoun
                 await navigator.share({
                     title: 'Order Up',
                     text: shareText,
-                    url: window.location.href,
                 });
                 console.log('Successfully shared');
             } catch (error) {
