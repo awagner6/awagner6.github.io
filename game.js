@@ -309,9 +309,8 @@ function swapElements(element1, element2) {
   element2.style.transform = `translateY(${-distance}px)`;
   if (navigator.vibrate) {
     navigator.vibrate(50);
-    console.log("haptic!");
   }
-
+  console.log("haptic!");
   // Swap the elements in the DOM
   setTimeout(() => {
     const placeholder = document.createElement('div');
