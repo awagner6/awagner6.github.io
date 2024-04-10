@@ -19,19 +19,17 @@ export function closeAllPopups() {
 }
 
 export function showWinPopup(boardStates, revBoardStates, currentPuzzle, reverseWon, lightbulbUsed, streakCount) {
-    console.log(currentPuzzle);
 
     const winPopup = document.createElement('div');
     winPopup.classList.add('popup', 'win-popup');
 
     // Use the appropriate board state based on whether the game was won in reverse
     const finalBoardStates = reverseWon ? revBoardStates : boardStates;
-    console.log('finalBoardStates:', finalBoardStates);
 
 
     // Construct the post-solve content
     const postSolveContent = (reverseWon ? currentPuzzle.post_solve.slice().reverse() : currentPuzzle.post_solve)
-        .map(item => `<p>${item}</p>`)
+        .map(item => `<p style="font-size: 1em;">${item}</p>`)
         .join('');
 
     winPopup.innerHTML = `<p>You solved Order Up<br>in ${finalBoardStates.length} ${finalBoardStates.length === 1 ? 'guess' : 'guesses'}!<br><br>Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><p>Streak: ${streakCount}</p><br><div id="countdown-clock"></div>`;
@@ -49,20 +47,25 @@ export function showWinPopup(boardStates, revBoardStates, currentPuzzle, reverse
 
 
 
-export function showLosingPopup(boardStates, currentPuzzle, lightbulbUsed) {
+export function showLosingPopup(boardStates, revBoardStates, currentPuzzle, lightbulbUsed, revSolve) {
     // Set a timeout to display the losing popup after a delay
-   
     closeAllPopups();
     const losingPopup = document.createElement('div');
     losingPopup.classList.add('popup', 'losing-popup');
 
     // Construct the post-solve content
     const postSolveContent = currentPuzzle.post_solve
-    .map(item => `<p style="font-size: .75em;">${item}</p>`)
-    .join('');
+        .map(item => `<p style="font-size: 1em;">${item}</p>`)
+        .join('');
 
-    losingPopup.innerHTML = `<p style="font-size: .75em;">Order Up got the<br>best of you today!</p><br><p style="font-size: .75em;">Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><div id="countdown-clock"></div>`;
-    addButtons(losingPopup, boardStates, currentPuzzle, lightbulbUsed, false);
+    const directionIndicator = revSolve ? 'v' : '^'; // Add "v" if revSolve is true, "^" otherwise
+    const chosenBoardStates = revSolve ? revBoardStates : boardStates;
+    const transposedBoardStates = chosenBoardStates[0].map((_, colIndex) => chosenBoardStates.map(row => row[colIndex]));
+    const emojiBoard = transposedBoardStates.map(column => column.join('    ')).join('\n');
+    const lightbulbEmoji = lightbulbUsed ? '💡' : ''; // Add the lightbulb emoji if used
+
+    losingPopup.innerHTML = `<p>Order Up got the<br>best of you today!</p><br><p>Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><div id="countdown-clock"></div>`;
+    addButtons(losingPopup, chosenBoardStates, currentPuzzle, lightbulbUsed, revSolve);
 
     document.body.appendChild(losingPopup);
     losingPopup.style.display = 'block';
@@ -70,8 +73,8 @@ export function showLosingPopup(boardStates, currentPuzzle, lightbulbUsed) {
     // Update the countdown clock every second
     const countdownInterval = setInterval(updateCountdownClock, 1000);
     updateCountdownClock(); // Initial update
-
 }
+
 
 function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, streakCount) {
     // Create a container for the buttons
@@ -85,10 +88,12 @@ function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, streakCoun
     shareButton.classList.add('popup-button');
     shareButton.onclick = async () => {
         const numberOfGuesses = gameWon ? boardStates.length : 'X';
+        const directionIndicator = revSolve ? '^' : 'v'; // Add "v" if revSolve is true, "^" otherwise
         const transposedBoardStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
         const emojiBoard = transposedBoardStates.map(column => column.join('    ')).join('\n');
         const lightbulbEmoji = lightbulbUsed ? '💡' : ''; // Add the lightbulb emoji if used
-        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5${lightbulbEmoji}\n\n${emojiBoard}`;
+        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5  ${directionIndicator}${lightbulbEmoji}\n\n${emojiBoard}`;
+
 
         if (navigator.share) {
             // Use the Web Share API for mobile devices
@@ -96,6 +101,7 @@ function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, streakCoun
                 await navigator.share({
                     title: 'Order Up',
                     text: shareText,
+                    url: window.location.href,
                 });
                 console.log('Successfully shared');
             } catch (error) {
@@ -215,15 +221,22 @@ export function showHelpPopup() {
 
 
 function updateCountdownClock() {
-    const countdownElement = document.getElementById('countdown-clock');
-    if (countdownElement) {
-        const timeRemaining = timeUntilNextRelease();
+    const countdownClock = document.getElementById('countdown-clock');
+    if (!countdownClock) return;
+
+    const timeRemaining = timeUntilNextRelease();
+
+    if (timeRemaining <= 0) {
+        countdownClock.innerHTML = "Refresh for a new puzzle!";
+    } else {
         const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-        countdownElement.innerHTML = `<p>Next puzzle in<br>${hours}h ${minutes}m ${seconds}s</p>`;
+
+        countdownClock.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
     }
 }
+
 
 
 
