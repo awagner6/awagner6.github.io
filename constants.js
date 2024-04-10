@@ -110,5 +110,14 @@ export const puzzles = [
         hint: "Linguistic ABCs",
         hint2: "Languages A-to-Z",
         post_solve: ["Hello: English", "Bonjour: French", "Guten tag: German", "Buongiorno: Italian","Tudo bem: Portuguese", "Hola: Spanish", "Hej: Swedish"]
+    },
+    {
+        id: 13,
+        solution: ["GHOST OF SLEEPY HOLLOW", "MARBLE BUST", "CATDOG", "CERBERUS", "MOUNT RUSHMORE", "HYDRA", "EASTER ISLAND"],
+        initialOrderSequence: "3715462",
+        theme: "Head count",
+        hint: "Bean counter",
+        hint2: "Head count",
+        post_solve: ["Headless Horseman: 0", "Marble bust: 1", "CatDog: 2", "Cerberus: 3", "Mount Rushmore: 4", "Hyrdra: 9", "Easter Island: 1,043"],        
     }
 ];
