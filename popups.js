@@ -86,29 +86,20 @@ function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, streakCoun
     const shareButton = document.createElement('button');
     shareButton.textContent = 'Share';
     shareButton.classList.add('popup-button');
-    shareButton.onclick = async () => {
+    shareButton.onclick = () => {
         const numberOfGuesses = gameWon ? boardStates.length : 'X';
-        const directionIndicator = revSolve ? '^' : 'v'; // Add "v" if revSolve is true, "^" otherwise
         const transposedBoardStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
         const emojiBoard = transposedBoardStates.map(column => column.join('    ')).join('\n');
         const lightbulbEmoji = lightbulbUsed ? '💡' : ''; // Add the lightbulb emoji if used
-        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5  ${directionIndicator}${lightbulbEmoji}\n\n${emojiBoard}`;
-
+        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5${lightbulbEmoji}\n\n${emojiBoard}`;
 
         if (navigator.share) {
-            // Use the Web Share API for mobile devices
-            try {
-                await navigator.share({
-                    title: 'Order Up',
-                    text: shareText,
-                    url: window.location.href,
-                });
-                console.log('Successfully shared');
-            } catch (error) {
-                console.error('Error sharing:', error);
-            }
+            // Use Web Share API on supported devices
+            navigator.share({
+                text: shareText
+            });
         } else {
-            // Fallback for browsers that don't support the Web Share API
+            // Fallback for browsers that do not support the Web Share API
             navigator.clipboard.writeText(shareText)
                 .then(() => {
                     console.log('Text copied to clipboard');
@@ -116,16 +107,16 @@ function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, streakCoun
                     copiedPopup.classList.add('copied-popup');
                     copiedPopup.textContent = 'Copied';
                     document.body.appendChild(copiedPopup);
-
+        
                     const buttonRect = shareButton.getBoundingClientRect();
-                    copiedPopup.style.left = `${buttonRect.left + (buttonRect.width / 5)}px`;
-
+                    copiedPopup.style.left = `${buttonRect.left + (buttonRect.width/5)}px`;
+        
                     // Move the popup higher above the button
                     const popupOffset = 10; // Adjust this value as needed
-                    copiedPopup.style.top = `${buttonRect.top - copiedPopup.offsetHeight - (3 * popupOffset)}px`;
-
+                    copiedPopup.style.top = `${buttonRect.top - copiedPopup.offsetHeight - (3*popupOffset)}px`;
+        
                     copiedPopup.style.display = 'block';
-
+        
                     setTimeout(() => {
                         copiedPopup.style.display = 'none';
                         document.body.removeChild(copiedPopup);
@@ -136,7 +127,7 @@ function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, streakCoun
                 });
         }
     };
-
+    
     // Add Patreon button
     const patreonButton = document.createElement('button');
     patreonButton.textContent = 'Patreon';
@@ -152,6 +143,7 @@ function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, streakCoun
     // Append the container to the popup
     popup.appendChild(buttonContainer);
 }
+
 
 
 
