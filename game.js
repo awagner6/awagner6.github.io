@@ -33,6 +33,7 @@ const draggableContainer = document.querySelector('.draggable-container');
 const submitBtn = document.getElementById('submitBtn');
 const instructionsElement = document.getElementById('instructions');
 const checkedOrder = [];
+submitBtn.textContent = 'Submit';
 
 let lastOffset = Number.NEGATIVE_INFINITY;
 let gameWon = false;
@@ -88,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   }, 100); // Delay to ensure transition
               } else {
                   setTimeout(() => {
-                      Popups.showLosingPopup(savedState.boardStates, currentPuzzle, savedState.lightbulbUsed);
+                      Popups.showLosingPopup(savedState.boardStates, savedState.revBoardStates, currentPuzzle, savedState.lightbulbUsed, savedState.revSolve);
                   }, 100); // Delay to ensure transition
               }
           };
@@ -98,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const guessesUsed = savedState.boardStates.length;
         startInstructions.innerHTML = `Welcome back! You've used ${guessesUsed} ${guessesUsed === 1 ? 'guess' : 'guesses'}<br>and correctly ordered ${correctDraggablesCount} ${correctDraggablesCount === 1 ? 'item' : 'items'}.`;
         playBtn.textContent = "Continue";
+        submitBtn.textContent = 'Submit'; // Reset the submit button text
       }
 
       // Restore the game state for the current puzzle
@@ -125,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (savedState){
         streakCount = savedState.streakCount || 0;
       }
+      submitBtn.textContent = 'Submit'; // Reset the submit button text
   }
 
   playBtn.addEventListener('click', () => {
@@ -137,10 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
       puzzleNumberElement.textContent = currentPuzzleIndex + 1; // Add 1 to make it human-readable
   }
   instructionsElement.innerHTML = `Put these items in order!<br><span>Theme: <strong>${currentPuzzle.hint}</strong></span>`;
-  setupDraggables(currentPuzzle, revSolve);
-  if (savedState && savedState.gameEnded) {
-    submitBtn.textContent = 'Results';
-}
+  setupDraggables(currentPuzzle, revSolve, gameEnded, gameWon);
 });
 
 
@@ -170,8 +170,10 @@ function generateInitialOrder(puzzle) {
     return initialOrder;
 }
 
-function setupDraggables(puzzle, revSolve) {
+
+function setupDraggables(puzzle, revSolve, gameEnded, gameWon) {
   const orderToUse = boardOrders.length > 0 ? boardOrders[boardOrders.length - 1].split(', ') : generateInitialOrder(puzzle);
+  const correctOrderToShow = revSolve ? [...correctOrder].reverse() : correctOrder;
 
   draggableContainer.innerHTML = ''; // Clear existing draggables
 
@@ -181,16 +183,36 @@ function setupDraggables(puzzle, revSolve) {
       draggableElement.setAttribute('draggable', 'true');
       draggableElement.textContent = item;
 
-      // Check if the item was previously marked as correct
-      const correctItem = revSolve ? correctOrder[correctOrder.length - 1 - index] : correctOrder[index];
-      if (boardStates.length > 0 && item === correctItem) {
-          draggableElement.classList.add('correct');
+      // If the game is won, use the win state (reversed if the win was reversed)
+      if (gameWon) {
+          if (item === correctOrderToShow[index]) {
+              draggableElement.classList.add('correct');
+          }
+          deactivateDraggable(draggableElement);
+      }
+      // If the game is lost, set up based on the final state of the board
+      else if (gameEnded && !gameWon) {
+          if (item === correctOrderToShow[index]) {
+              draggableElement.classList.add('correct');
+          }
+          deactivateDraggable(draggableElement);
+      }
+      // For an existing game, set up based on the save state (including whether it's revSolve)
+      else if (boardStates.length > 0) {
+          if (item === correctOrderToShow[index]) {
+              draggableElement.classList.add('correct');
+          }
+          draggableElement.addEventListener('mousedown', handleStart, { passive: false });
+          draggableElement.addEventListener('touchstart', handleStart, { passive: false });
+      }
+      // For a new game, set up based on the order in constants.js
+      else {
+          draggableElement.addEventListener('mousedown', handleStart, { passive: false });
+          draggableElement.addEventListener('touchstart', handleStart, { passive: false });
       }
 
       draggableContainer.appendChild(draggableElement);
       requestAnimationFrame(() => adjustFontSize(draggableElement));
-      draggableElement.addEventListener('mousedown', handleStart, { passive: false });
-      draggableElement.addEventListener('touchstart', handleStart, { passive: false });
   });
 
   document.body.classList.remove('hidden');
@@ -207,6 +229,13 @@ function setupDraggables(puzzle, revSolve) {
       }
   });
 }
+
+
+
+
+
+
+
 
 
 function handleStart(e) {
@@ -380,6 +409,8 @@ function checkOrder() {
 submitBtn.addEventListener('click', (e) => {
   e.preventDefault();
   e.stopPropagation();
+  const draggables = document.querySelectorAll('.draggable');
+  draggables.forEach(deactivateDraggable);
 
   if (gameEnded) {
     if (!resultsShown) {
@@ -387,7 +418,7 @@ submitBtn.addEventListener('click', (e) => {
       if (gameWon) {
         Popups.showWinPopup(boardStates, revBoardStates, currentPuzzle, reverseWon, lightbulbUsed, streakCount);
       } else {
-        Popups.showLosingPopup(boardStates, currentPuzzle, lightbulbUsed);
+        Popups.showLosingPopup(boardStates, revBoardStates, currentPuzzle, lightbulbUsed, revSolve);
       }
       resultsShown = true;
       submitBtn.disabled = true; // Disable the button
@@ -444,9 +475,19 @@ submitBtn.addEventListener('click', (e) => {
           const usedCircles = circles.length - document.querySelectorAll('.circle.used').length;
           if (usedCircles > 0) {
             submitBtn.disabled = false;
+            draggables.forEach(draggable => {
+              draggable.style.animation = 'none';
+              if (!draggable.classList.contains('correct')) {
+                  // Re-enable the draggable if it's not marked as correct
+                  draggable.addEventListener('mousedown', handleStart, { passive: false });
+                  draggable.addEventListener('touchstart', handleStart, { passive: false });
+                  draggable.setAttribute('draggable', 'true');
+              }
+            });
           } else {
             gameEnded = true;
             streakCount = 0;
+            saveGameState(boardStates, revBoardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount, revSolve); // Save the gameEnded state
           }
         }
       }, currentOrder.split(', ')); // Convert the current order string back to an array
@@ -506,15 +547,18 @@ function animateDraggables(draggables, revSolve, callback, currentOrder) {
                   }
                   // Check for losing condition
                   if (usedCircles.length + 1 === circles.length && !gameWon) {
-                      // Animate the losing draggables before showing the popup
-                      animateLosingDraggables(draggables, () => {
-                          // Show losing popup after the animation is complete
-                          gameEnded = true;
-                          Popups.showLosingPopup(boardStates, currentPuzzle);
-                          resultsShown = true;
-                          submitBtn.textContent = 'Results';
-                      });
-                  } else {
+                    // Show the "Oh no" popup
+                    draggables.forEach(deactivateDraggable);
+                    Popups.showOhNoPopup();
+                    // Set a timeout to delay the appearance of the losing popup
+                    setTimeout(() => {
+                        gameEnded = true;
+                        saveGameState(boardStates, revBoardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount, revSolve); // Save the gameEnded state
+                        Popups.showLosingPopup(boardStates, revBoardStates, currentPuzzle, lightbulbUsed, revSolve);
+                        resultsShown = true;
+                        submitBtn.textContent = 'Results';
+                    }, 500); // Adjust the delay time as needed (e.g., 1500 milliseconds = 1.5 seconds)
+                } else {
                       // Call the callback function if provided
                       if (callback) {
                           callback();
@@ -550,36 +594,8 @@ function animateDraggables(draggables, revSolve, callback, currentOrder) {
 
 
 
-function animateLosingDraggables(draggables, callback) {
 
-  Popups.showOhNoPopup()
-  // Deactivate all draggables immediately
-  draggables.forEach(deactivateDraggable);
 
-  setTimeout(() => { // Add a pause before the animation starts
-    draggables.forEach((draggable, index) => {
-      // Force reflow to reset the animation
-      draggable.style.animation = 'none';
-      void draggable.offsetWidth; // Trigger reflow
-
-      // Apply the bulge animation and update the background color and text simultaneously
-      draggable.style.animation = 'bulge 0.375s ease forwards';
-      draggable.style.backgroundColor = '#6c6c6c';
-      draggable.style.cursor = 'default';
-      if (!draggable.classList.contains('correct')) {
-        draggable.style.color = '#f0f0f0';
-      }
-      draggable.textContent = correctOrder[index];
-    });
-
-    setTimeout(() => {
-      // Call the callback function if provided
-      if (callback) {
-        callback();
-      }
-    }, 375 + 500); // Adjust the timing to wait for the animation to complete
-  }, 500); // Pause before the animation starts
-}
 
 
 window.onclick = function(event) {
