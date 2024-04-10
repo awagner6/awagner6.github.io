@@ -11,6 +11,5 @@ export function saveGameState(boardStates, revBoardStates, boardOrders, gameWon,
         streakCount: streakCount,
         revSolve: revSolve
     };
-    console.log(gameState)
     localStorage.setItem('gameState', JSON.stringify(gameState));
 }
