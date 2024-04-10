@@ -33,7 +33,6 @@ const draggableContainer = document.querySelector('.draggable-container');
 const submitBtn = document.getElementById('submitBtn');
 const instructionsElement = document.getElementById('instructions');
 const checkedOrder = [];
-submitBtn.textContent = 'Submit';
 
 let lastOffset = Number.NEGATIVE_INFINITY;
 let gameWon = false;
@@ -83,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
           playBtn.textContent = "Results";
           playBtn.onclick = () => { // Use onclick instead of addEventListener
               startScreen.style.display = 'none';
+              submitBtn.textContent = 'Results';
               if (savedState.gameWon) {
                   setTimeout(() => {
                       Popups.showWinPopup(savedState.boardStates, savedState.revBoardStates, currentPuzzle, savedState.reverseWon, savedState.lightbulbUsed, savedState.streakCount);
