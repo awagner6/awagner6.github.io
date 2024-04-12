@@ -128,6 +128,15 @@ export const puzzles = [
         hint: "SIzes",
         hint2: "Prefixes of magnitude",
         post_solve: ["Tera: trillion", "Giga: billion", "Mega: million", "Kilo: thousand", "Micro: millionth", "Nano: billionth", "Pico: trillionth"]
+    },
+    {
+        id: 15,
+        solution: ["BIRTHDAY", "BLUE MOON", "WORLD CUP", "US CENSUS", "CICADA EMERGENCE", "ROYAL JUBILEE", "HALLEY'S COMET FLYBY"],
+        initialOrderSequence: "2735164",
+        theme: "Frequencies:<br>happens every...",
+        hint: "Often times",
+        hint2: "Frequencies",
+        post_solve: ["Birthday: Every year", "Blue moon: 2-3 years", "World cup: 4 years", "US Census: 10 years", "Cicada emergence: 13 or 17 years", "Royal Jubilee: 25 years", "Halley's Comet flyby: 75-79 years"]
     }
         
 ];
