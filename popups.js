@@ -33,7 +33,7 @@ export function showWinPopup(boardStates, revBoardStates, currentPuzzle, reverse
         .join('');
 
     winPopup.innerHTML = `<p>You solved Order Up<br>in ${finalBoardStates.length} ${finalBoardStates.length === 1 ? 'guess' : 'guesses'}!<br><br>Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><p>Streak: ${streakCount}</p><br><div id="countdown-clock"></div>`;
-    addButtons(winPopup, finalBoardStates, currentPuzzle, lightbulbUsed, streakCount);
+    addButtons(winPopup, finalBoardStates, currentPuzzle, lightbulbUsed, reverseWon);
 
     document.body.appendChild(winPopup);
     winPopup.style.display = 'block';
@@ -52,20 +52,15 @@ export function showLosingPopup(boardStates, revBoardStates, currentPuzzle, ligh
     closeAllPopups();
     const losingPopup = document.createElement('div');
     losingPopup.classList.add('popup', 'losing-popup');
+    const finalBoardStates = revSolve ? revBoardStates : boardStates;
 
-    // Construct the post-solve content
-    const postSolveContent = currentPuzzle.post_solve
+    
+    const postSolveContent = (revSolve ? currentPuzzle.post_solve.slice().reverse() : currentPuzzle.post_solve)
         .map(item => `<p style="font-size: 1em;">${item}</p>`)
         .join('');
 
-    const directionIndicator = revSolve ? 'v' : '^'; // Add "v" if revSolve is true, "^" otherwise
-    const chosenBoardStates = revSolve ? revBoardStates : boardStates;
-    const transposedBoardStates = chosenBoardStates[0].map((_, colIndex) => chosenBoardStates.map(row => row[colIndex]));
-    const emojiBoard = transposedBoardStates.map(column => column.join('    ')).join('\n');
-    const lightbulbEmoji = lightbulbUsed ? '💡' : ''; // Add the lightbulb emoji if used
-
     losingPopup.innerHTML = `<p>Order Up got the<br>best of you today!</p><br><p>Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><div id="countdown-clock"></div>`;
-    addButtons(losingPopup, chosenBoardStates, currentPuzzle, lightbulbUsed, revSolve);
+    addButtons(losingPopup, finalBoardStates, currentPuzzle, lightbulbUsed, revSolve);
 
     document.body.appendChild(losingPopup);
     losingPopup.style.display = 'block';
@@ -76,11 +71,13 @@ export function showLosingPopup(boardStates, revBoardStates, currentPuzzle, ligh
 }
 
 
-function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, streakCount) {
+function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, revSolve) {
     // Create a container for the buttons
     const buttonContainer = document.createElement('div');
     buttonContainer.classList.add('button-container');
     const gameWon = popup.classList.contains('win-popup');
+    const directionIndicator = revSolve ? 'v' : '^'; // Add "v" if revSolve is true, "^" otherwise
+
 
     // Add Share button
     const shareButton = document.createElement('button');
@@ -91,7 +88,7 @@ function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, streakCoun
         const transposedBoardStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
         const emojiBoard = transposedBoardStates.map(column => column.join('    ')).join('\n');
         const lightbulbEmoji = lightbulbUsed ? '💡' : ''; // Add the lightbulb emoji if used
-        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5${lightbulbEmoji}\n\n${emojiBoard}`;
+        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5${lightbulbEmoji}${directionIndicator}\n\n${emojiBoard}`;
 
         if (navigator.share) {
             // Use Web Share API on supported devices
