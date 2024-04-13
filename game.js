@@ -58,7 +58,7 @@ export function timeUntilNextRelease() {
 
     // If the release time has already passed today, set it for the next day
     if (now > releaseTime) {
-        releaseTime.setDate(releaseTime.getDate() + 1);
+        return 0;
     }
 
     // Convert both times to UTC
