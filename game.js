@@ -94,12 +94,18 @@ document.addEventListener('DOMContentLoaded', () => {
               }
           };
       } else {
-        const revSolve = savedState.revSolve;
-        const correctDraggablesCount = savedState.boardStates.length > 0 ? (revSolve ? savedState.revBoardStates[savedState.revBoardStates.length - 1].filter(state => state === '🟢').length : savedState.boardStates[savedState.boardStates.length - 1].filter(state => state === '🟢').length) : 0;
-        const guessesUsed = savedState.boardStates.length;
+        revSolve = savedState.revSolve;
+        let correctDraggablesCount = savedState.boardStates.length > 0 ? (revSolve ? savedState.revBoardStates[savedState.revBoardStates.length - 1].filter(state => state === '🟢').length : savedState.boardStates[savedState.boardStates.length - 1].filter(state => state === '🟢').length) : 0;
+        let guessesUsed = savedState.boardStates.length;
         startInstructions.innerHTML = `Welcome back! You've used ${guessesUsed} ${guessesUsed === 1 ? 'guess' : 'guesses'}<br>and correctly ordered ${correctDraggablesCount} ${correctDraggablesCount === 1 ? 'item' : 'items'}.`;
         playBtn.textContent = "Continue";
         submitBtn.textContent = 'Submit'; // Reset the submit button text
+        lightbulbUsed = savedState.lightbulbUsed;
+        boardStates = savedState.boardStates;
+        revBoardStates = savedState.revBoardStates;
+        boardOrders = savedState.boardOrders;
+        gameWon = savedState.gameWon;
+        streakCount = savedState.streakCount;
       }
 
       // Restore the game state for the current puzzle
@@ -149,12 +155,13 @@ function restoreGameState() {
   const gameStateString = localStorage.getItem('gameState');
   if (gameStateString) {
       const gameState = JSON.parse(gameStateString);
-      return {
-          ...gameState,
-          latestBoardState: gameState.boardStates[gameState.boardStates.length - 1],
-          lightbulbUsed: gameState.lightbulbUsed || false,
-          streakCount: gameState.streakCount || 0, // Default to 0 if winStreak is not in the saved state
-      };
+      const currentPuzzleIndex = getCurrentPuzzleIndex();
+
+        // Check if the last played puzzle is not the previous one
+        if (gameState.currentPuzzleIndex !== currentPuzzleIndex - 1) {
+            gameState.streakCount = 0; // Reset the streak count
+        }
+      return gameState;
   }
   return null;
 }
@@ -448,10 +455,21 @@ submitBtn.addEventListener('click', (e) => {
 
     // Check if the current order has already been submitted
     const isDuplicate = boardOrders.includes(currentOrder);
+    submitBtn.disabled = false;
+            draggables.forEach(draggable => {
+              draggable.style.animation = 'none';
+              if (!draggable.classList.contains('correct')) {
+                  // Re-enable the draggable if it's not marked as correct
+                  draggable.addEventListener('mousedown', handleStart, { passive: false });
+                  draggable.addEventListener('touchstart', handleStart, { passive: false });
+                  draggable.setAttribute('draggable', 'true');
+              }
+            });
 
     if (isDuplicate) {
       // Show a popup with the message "You tried that already!"
       Popups.showDuplicatePopup();
+      
     } else {
       // Store the board state and order, then proceed with the game
       boardStates.push(boardState);
