@@ -434,7 +434,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    left: 50%;
     gap: 0vh; /* Adjust the gap between mini-draggables */
     width: 15vh; /* Ensure the logo container takes up the full width */
     height: 12vh;
@@ -449,8 +448,6 @@ body {
     width: 100%;
     height: 33%;
     margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: .01vh;
     background-color: #f0f0f0;
     border: 2px solid #131212;
@@ -515,8 +512,6 @@ body {
     max-width: 280px; /* Maximum width of 500px */
     height: 7vh;
     margin-top: 2vh;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 1vh;
     background-color: #f0f0f0;
     border: 1px solid #131212;
