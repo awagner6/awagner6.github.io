@@ -137,6 +137,15 @@ export const puzzles = [
         hint: "Often times",
         hint2: "Frequencies",
         post_solve: ["Birthday: Every year", "Blue moon: 2-3 years", "World cup: 4 years", "US Census: 10 years", "Cicada emergence: 13 or 17 years", "Royal Jubilee: 25 years", "Halley's Comet flyby: 75-79 years"]
+    },
+    {
+        id: 16,
+        solution: ["DODO", "PREREQUISITE", "PANTOMIMING", "DO YOURSELF A FAVOR", "MISO SOUP", "MALALA", "PETITION"],
+        initialOrderSequence: "3461572",
+        theme: "Hidden doubled musical scale",
+        hint: "Duly noted",
+        hint2: "The Sound of Music x2",
+        post_solve: ["(Dodo)", "P(rere)quisite", "Panto(mimi)ng", "Do yoursel(f a fa)vor", "Mi(so so)up", "Ma(lala)", "Pe(titi)on"]
     }
         
 ];
