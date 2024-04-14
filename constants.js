@@ -143,7 +143,7 @@ export const puzzles = [
         solution: ["SUMO", "SOCCER", "HOCKEY", "AMERICAN FOOTBALL", "BASEBALL", "BOWLING", "GOLF"],
         initialOrderSequence: "7135426",
         theme: "Number of subdivisions in a game",
-        hint: "Pro sports divisions",
+        hint: "Game breaks",
         hint2: "Quarters, periods, innings...",
         post_solve: ["Sumo: 1 bout", "Soccer: 2 halves", "Hockey: 3 periods", "American football: 4 quarters", "Baseball: 9 innings", "Bowling: 10 frames", "Golf: 18 holes"]
     },
