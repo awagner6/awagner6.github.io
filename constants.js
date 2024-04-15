@@ -155,6 +155,24 @@ export const puzzles = [
         hint: "Duly noted",
         hint2: "The Sound of Music x2",
         post_solve: ["(Dodo)", "P(rere)quisite", "Panto(mimi)ng", "Do yoursel(f a fa)vor", "Mi(so so)up", "Ma(lala)", "Pe(titi)on"]
+    },
+    {
+        id: 18,
+        solution: ["ERHU", "UKELELE", "GUITAR", "MANDOLIN", "SITAR", "CONCERT HARP", "GRAND PIANO"],
+        initialOrderSequence: "5621473",
+        theme: "Instrument string count",
+        hint: "Plucky numbers",
+        hint2: "Strings together",
+        post_solve: ["Erhu: 2", "Ukelele: 4", "Guitar: 6", "Mandolin: 8", "Sitar: 18-21", "Concert harp: 47", "Grand piano: ~230"]
+    },
+    {
+        id: 19,
+        solution: ["HAT TRICK", "DOZEN", "BAKER'S DOZEN", "SCORE", "CENTURY", "GROSS", "GRAND"],
+        initialOrderSequence: "3516472",
+        theme: "Non-numerical<br>number words",
+        hint: "Word counts",
+        hint2: "Non-number number words",
+        post_solve: ["Hat trick: 3", "Dozen: 12", "Baker's dozen: 13", "Score: 20", "Century: 100", "Gross: 144", "Grand: 1000"]
     }
         
 ];
