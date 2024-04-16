@@ -180,7 +180,7 @@ export const puzzles = [
         initialOrderSequence: "4517362",
         theme: "Average amounts in the human body",
         hint: "Sum body",
-        hint2: "Average amounts per body",
+        hint2: "Average amounts in the human body",
         post_solve: ["Feet: 2", "Brain lobes: 6", "Fingers: 10", "Ribs: 24", "Teeth: 32", "Vertebrae: 33", "Chromosomes: 46"]       
     }
         
