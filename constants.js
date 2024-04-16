@@ -173,6 +173,15 @@ export const puzzles = [
         hint: "Word counts",
         hint2: "Non-number number words",
         post_solve: ["Hat trick: 3", "Dozen: 12", "Baker's dozen: 13", "Score: 20", "Century: 100", "Gross: 144", "Grand: 1000"]
+    },
+    {
+        id: 20,
+        solution: ["FEET", "BRAIN LOBES", "FINGERS", "RIBS", "TEETH", "VERTEBRAE", "CHROMOSOMES"],
+        initialOrderSequence: "4517362",
+        theme: "Average amounts in the human body",
+        hint: "Sum body",
+        hint2: "Average amounts per body",
+        post_solve: ["Feet: 2", "Brain lobes: 6", "Fingers: 10", "Ribs: 24", "Teeth: 32", "Vertebrae: 33", "Chromosomes: 46"]       
     }
         
 ];
