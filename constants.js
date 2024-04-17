@@ -182,6 +182,15 @@ export const puzzles = [
         hint: "Sum body",
         hint2: "Average amounts in the human body",
         post_solve: ["Feet: 2", "Brain lobes: 6", "Fingers: 10", "Ribs: 24", "Teeth: 32", "Vertebrae: 33", "Chromosomes: 46"]       
+    },
+    {
+        id: 21,
+        solution: ["8", "4", "9", "1", "6", "10", "0"],
+        initialOrderSequence: "7425136",
+        theme: "Numbers, alphabetically",
+        hint: "Numberheads",
+        hint2: "First letters",
+        post_solve: ["Eight", "Four", "Nine", "One", "Six", "Ten", "Zero"]
     }
         
 ];
