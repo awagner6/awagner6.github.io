@@ -191,6 +191,24 @@ export const puzzles = [
         hint: "Numberheads",
         hint2: "First letters",
         post_solve: ["Eight", "Four", "Nine", "One", "Six", "Ten", "Zero"]
+    },
+    {
+        id: 22,
+        solution: ["WORD", "GAME", "ANIMAL", "HOUSE", "PLANT", "FOOD", "CHAIN"],
+        initialOrderSequence: "5374261",
+        theme: "Word chain from 'Word' to 'Chain'",
+        hint: "Before and after",
+        hint2: "2-word pairs",
+        post_solve: ["Word game", "Game animal", "Animal house", "House plant", "Plant food", "Food chain"]
+    },
+    {
+        id: 23,
+        solution: ["MEXICO", "GUATEMALA", "HONDURAS", "NICARAGUA", "COSTA RICA", "PANAMA", "COLOMBIA"],
+        initialOrderSequence: "4721653",
+        theme: "North to South America",
+        hint: "On the map",
+        hint2: "North to South",
+        post_solve: ["Mexico", "Guatemala", "Honduras", "Nicaragua", "Costa Rica", "Panama", "Colombia"]
     }
         
 ];
