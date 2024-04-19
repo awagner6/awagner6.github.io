@@ -209,6 +209,15 @@ export const puzzles = [
         hint: "On the map",
         hint2: "North to South",
         post_solve: ["Mexico", "Guatemala", "Honduras", "Nicaragua", "Costa Rica", "Panama", "Colombia"]
+    },
+    {
+        id: 24,
+        solution: ["BAGEL", "NOSE", "BOWLING BALL", "POOL TABLE", "WIFFLE BALL", "CROC SHOE", "SPONGE"],
+        initialOrderSequence: "4726315",
+        theme: "Holes/pockets/cavities",
+        hint: "The pits",
+        hint2: "W-hole numbers",
+        post_solve: ["Bagel: 1", "Nose: 2", "Bowling ball: 3", "Pool table: 6", "Wiffle ball: 8", "Croc shoe: 13", "Sponge: many"]        
     }
         
 ];
