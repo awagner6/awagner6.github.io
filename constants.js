@@ -266,6 +266,15 @@ export const puzzles = [
     },
     {
         id: 30,
+        solution: ["BELL", "POBLANO", "JALAPEÑO", "SERRANO", "CAYENNE", "HABANERO", "GHOST"],
+        initialOrderSequence: "2561473",
+        theme: "Peppers by Scoville heat level",
+        hint: "Spice it up",
+        hint2: "Scoville scale",
+        post_solve: ["Bell: 0", "Poblano: ~1,500", "Jalapeño: ~3,500", "Serrano: ~15,000", "Cayenne: ~40,000", "Habanero: ~250,000", "Ghost: ~1,000,000"]        
+    },
+    {
+        id: 31,
         solution: ["ACE", "CONDOR", "ALBATROSS", "EAGLE", "BIRDIE", "PAR", "BOGEY"],
         initialOrderSequence: "2715346",
         theme: "Golf scores by stroke count",
