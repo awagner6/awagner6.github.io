@@ -263,5 +263,14 @@ export const puzzles = [
         hint: "MLB ballpark estimates",
         hint2: "Baseball counts",
         post_solve: ["Players per team: 26-28", "Bat length: 35-37 in.", "Outs per game: 54 (or 51)", "Feet between bases: 90", "Avg game length: 158 min", "Games per season per team: 162", "Avg. stadium capacity: ~45,000"]
-    }   
+    },
+    {
+        id: 30,
+        solution: ["ACE", "CONDOR", "ALBATROSS", "EAGLE", "BIRDIE", "PAR", "BOGEY"],
+        initialOrderSequence: "2715346",
+        theme: "Golf scores by stroke count",
+        hint: "Course numbers",
+        hint2: "Golf scores",
+        post_solve: ["Ace: hole in 1", "Condor: 4 under par", "Albatross: 3 under par", "Eagle: 2 under par", "Birdie: 1 under par", "Par", "Bogey: one over par"]        
+    }
 ];
