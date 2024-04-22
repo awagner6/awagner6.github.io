@@ -109,7 +109,7 @@ export const puzzles = [
         theme: "E.U. languages<br>alphabetically (exonyms)",
         hint: "Linguistic ABCs",
         hint2: "Languages A-to-Z",
-        post_solve: ["Hello: English", "Bonjour: French", "Guten tag: German", "Buongiorno: Italian","Tudo bem: Portuguese", "Hola: Spanish", "Hej: Swedish"]
+        post_solve: ["Hello: English", "Bonjour: French", "Guten tag: German", "Buongiorno: Italian", "Tudo bem: Portuguese", "Hola: Spanish", "Hej: Swedish"]
     },
     {
         id: 13,
@@ -226,13 +226,13 @@ export const puzzles = [
         theme: "Chronological ages by beginning",
         hint: "Eras tour",
         hint2: "Ages of history",
-        post_solve: ["Stone age: ~3.4 million BCE", "Bronze age: ~3000 BCE", "Iron age: ~1200 BCE", "Middle ages: ~500 CE", "Machine age: ~1880 CE", "Atomic age: 1945 CE", "Information: ~1970s"]
+        post_solve: ["Stone age: ~3.4 million BCE", "Bronze age: ~3000 BCE", "Iron age: ~1200 BCE", "Middle ages: ~500 CE", "Machine age: ~1880 CE", "Atomic age: 1945 CE", "Information age: ~1970s"]
     },
     {
         id: 26,
         solution: ["EVERGREEN NEEDLE", "SLEEVELESS TEE", "RENDER SPEECHLESS", "BEST KEPT SECRET", "CRESCENT WRENCH", "STRESS TEST", "STRENGTHS"],
         initialOrderSequence: "2761534",
-        theme: "Only 'E' words by word count",
+        theme: "Only-E words by word count",
         hint: "County census",
         hint2: "Check the vowels",
         post_solve: ["Evergreen needle: 7", "Sleeveless tee: 6", "Render speechless: 5", "Best kept secret: 4", "Crescent wrench: 3", "Stress test: 2", "Strengths: 1"]
@@ -241,7 +241,7 @@ export const puzzles = [
         id: 27,
         solution: ["NO HEAVEN", "YOU TRY", "BELOW US", "ONLY SKY", "THE PEOPLE", "FOR TODAY", "OOOOOOH"],
         initialOrderSequence: "2657413",
-        theme: "Line-ending lyrics of 'Imagine'",
+        theme: "Line-ending lyrics of Imagine",
         hint: "Imagine that!",
         hint2: "Lennon lyrics",
         post_solve: ["Imagine there's NO HEAVEN", "It's easy if YOU TRY", "No hell BELOW US", "Above us, ONLY SKY", "Imagine all THE PEOPLE", "Living FOR TODAY", "OOOOOOH"]
@@ -263,7 +263,5 @@ export const puzzles = [
         hint: "MLB ballpark estimates",
         hint2: "Baseball counts",
         post_solve: ["Players per team: 26-28", "Bat length: 35-37 in.", "Outs per game: 54 (or 51)", "Feet between bases: 90", "Avg game length: 158 min", "Games per season per team: 162", "Avg. stadium capacity: ~45,000"]
-    }
-    
-        
+    }   
 ];
