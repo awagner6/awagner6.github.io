@@ -467,19 +467,25 @@ submitBtn.addEventListener('click', (e) => {
 
             // Set revSolve only if it's null
     if (revSolve === null) {
-        const normalCorrect = boardState.filter(state => state === '🟢').length;
-        const reverseCorrect = revBoardState.filter(state => state === '🟢').length;
-
-        // Check for edge cases
-        if (normalCorrect === 0 && reverseCorrect === 0) {
-            // Leave revSolve as null
-        } else if (normalCorrect === 1 && reverseCorrect === 1 && boardState[3] === '🟢' && revBoardState[3] === '🟢') {
-            // Leave revSolve as null
-        } else {
-            // Set revSolve based on which direction has more correct answers
-            revSolve = reverseCorrect > normalCorrect;
-        }
-    }
+      if (currentPuzzle.revAllowed) {
+          const normalCorrect = boardState.filter(state => state === '🟢').length;
+          const reverseCorrect = revBoardState.filter(state => state === '🟢').length;
+  
+          // Check for edge cases
+          if (normalCorrect === 0 && reverseCorrect === 0) {
+              // Leave revSolve as null
+          } else if (normalCorrect === 1 && reverseCorrect === 1 && boardState[3] === '🟢' && revBoardState[3] === '🟢') {
+              // Leave revSolve as null
+          } else {
+              // Set revSolve based on which direction has more correct answers
+              revSolve = reverseCorrect > normalCorrect;
+          }
+      } else {
+          // Set revSolve to false if reverse solving is not allowed
+          revSolve = false;
+      }
+  }
+          
 
     // Check if the current order has already been submitted
     const isDuplicate = boardOrders.includes(currentOrder);
