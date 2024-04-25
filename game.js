@@ -8,7 +8,7 @@ import { saveGameState} from './gameState.js';
 const releaseTime = { hours: 18, minutes: 30 };
 
 // Calculate the current puzzle index based on the time
-function getCurrentPuzzleIndex() {
+export function getCurrentPuzzleIndex() {
     const now = new Date();
     const releaseDateTime = new Date(now);
     releaseDateTime.setHours(releaseTime.hours, releaseTime.minutes, 0, 0);
@@ -50,23 +50,44 @@ let gameEnded = false;
 let resultsShown = false;
 let streakCount = 0;
 let lightbulbUsed = false;
+// Flag to track if an interaction is already in progress
+let interactionInProgress = false;
 
 export function timeUntilNextRelease() {
-    const now = new Date();
-    const releaseTime = new Date(now);
-    releaseTime.setHours(18, 30, 0, 0); // Set to 6:30 PM
+  const now = new Date();
+  const releaseTime = new Date(); // Create a new Date object based on the current date.
 
-    // If the release time has already passed today, set it for the next day
-    if (now > releaseTime) {
-        return 0;
-    }
+  releaseTime.setHours(18, 30, 0, 0); // Set to 6:30 PM.
 
-    // Convert both times to UTC
-    const nowUTC = now.getTime() + (now.getTimezoneOffset() * 60000);
-    const releaseTimeUTC = releaseTime.getTime() + (releaseTime.getTimezoneOffset() * 60000);
+  // Assuming you have a function getCurrentPuzzleIndex() that returns the current puzzle index
+  // And a function getSavedPuzzleIndex() that retrieves the index of the puzzle saved in the game state
+  const currentPuzzleIndex = getCurrentPuzzleIndex();
+  const savedPuzzleIndex = getSavedPuzzleIndex();
 
-    return releaseTimeUTC - nowUTC; // Time remaining in milliseconds
+  // If the release time has already passed today, check if the saved puzzle is the most recent
+  if (now > releaseTime) {
+      if (savedPuzzleIndex < currentPuzzleIndex) {
+          return 0; // Return 0 if the saved puzzle is not the most recent
+      }
+      releaseTime.setDate(releaseTime.getDate() + 1); // Otherwise, set release time to the next day
+  }
+
+  // The time until next release is the difference between releaseTime and now.
+  const timeUntilRelease = releaseTime - now; // Difference in milliseconds.
+
+  return timeUntilRelease; // Time remaining in milliseconds.
 }
+
+export function getSavedPuzzleIndex() {
+  // Implement your method to retrieve the saved puzzle index from storage
+  const gameStateString = localStorage.getItem('gameState');
+  if (gameStateString) {
+      const gameState = JSON.parse(gameStateString);
+      return gameState.currentPuzzleIndex;
+  }
+  return -1; // Default value indicating no saved puzzle index
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const startInstructions = document.getElementById('start-instructions');
@@ -240,12 +261,13 @@ function setupDraggables(puzzle, revSolve, gameEnded, gameWon) {
 
 
 
-
-
-
-
-
 function handleStart(e) {
+  if (interactionInProgress) {
+    e.preventDefault();
+    return; // Exit if another interaction is in progress
+  }
+  interactionInProgress = true; // Set flag to indicate interaction has started
+
   e.preventDefault();
   e.stopPropagation(); 
   if (gameWon || e.target.classList.contains('correct')) return;
@@ -273,6 +295,9 @@ function handleStart(e) {
   document.addEventListener('touchend', handleEnd);
 }
 
+
+
+
 function handleMove(e) {
   e.preventDefault();
   e.stopPropagation();
@@ -299,7 +324,10 @@ function handleMove(e) {
   lastY = ghostElementCenter; // Update lastY to be the center of the ghost element
 }
 
+
 function handleEnd(e) {
+  interactionInProgress = false; // Reset flag when interaction ends
+
   const draggable = document.querySelector('.dragging');
   if (draggable && !draggable.classList.contains('correct')) {
     draggable.classList.remove('dragging', 'dragging-original');
