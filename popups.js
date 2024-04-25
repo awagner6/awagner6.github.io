@@ -1,4 +1,4 @@
-import { timeUntilNextRelease } from './game.js';
+import { timeUntilNextRelease, getCurrentPuzzleIndex, getSavedPuzzleIndex } from './game.js';
 import { saveGameState } from './gameState.js';
 
 export function togglePopup(popupId) {
