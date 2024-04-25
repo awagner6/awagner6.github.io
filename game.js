@@ -179,7 +179,7 @@ function restoreGameState() {
       const currentPuzzleIndex = getCurrentPuzzleIndex();
 
         // Check if the last played puzzle is not the previous one
-        if (gameState.currentPuzzleIndex !== currentPuzzleIndex - 1) {
+        if (gameState.currentPuzzleIndex < currentPuzzleIndex - 1) {
             gameState.streakCount = 0; // Reset the streak count
         }
       return gameState;
