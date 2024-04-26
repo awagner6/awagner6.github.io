@@ -304,12 +304,12 @@ export const puzzles = [
     },
     {
         id: 31,
-        solution: ["WEDDING CEREMONY", "RINGLING BROS. CIRCUS", "AUDI LOGO", "OLYMPIC FLAG", "ARIANA GRANDE SONG", "DANTE'S INFERNO", "URANUS"],
+        solution: ["RINGLING BROS. CIRCUS", "AUDI LOGO", "OLYMPIC FLAG", "ARIANA GRANDE SONG", "DANTE'S INFERNO", "ARCHERY TARGET", "URANUS"],
         initialOrderSequence: "6451732",
         theme: "Rings / Circles",
         hint: "Ring 'em up",
         hint2: "Ring counts",
-        post_solve: ["Wedding ceremony: 2", "Ringling bros.: 3", "Audi logo: 4", "Olympic flag: 5", "Ariana Grande song: 7", "Dante's Inferno: 9", "Uranus: 13 (known)"],
+        post_solve: ["Ringling bros.: 3", "Audi logo: 4", "Olympic flag: 5", "Ariana Grande song: 7", "Dante's Inferno: 9", "Archery target: 11", "Uranus: 13 (known)"],
         revAllowed: true
     }
     
