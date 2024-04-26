@@ -1,22 +1,23 @@
 export const puzzles = [
+    
     {
         id: 1,
-        solution: ["FIRE TRUCK", "PUMPKIN", "BLONDE", "CROCODILE", "SKY", "DENIM", "LAVENDER"],
-        initialOrderSequence: "6243175",
-        theme: "ROYGBIV",
-        hint: "Take a bow",
-        hint2: "Get colorful",
-        post_solve: ["Fire truck: Red", "Pumpkin: Orange", "Blonde: Yellow", "Crocodile: Green", "Sky: Blue", "Denim: Indigo", "Lavender: Violet"],
-        revAllowed: true
-    },
-    {
-        id: 2,
         solution: ["SNAKE", "FROG", "STARFISH", "ANT", "SPIDER", "CRAB", "CENTIPEDE"],
         initialOrderSequence: "6417235",
         theme: "Animals by limb count",
         hint: "Natural extremes",
         hint2: "Go out on a limb",
         post_solve: ["SNAKE: 0", "FROG: 4", "STARFISH: 5", "ANT: 6", "SPIDER: 8", "CRAB: 10", "CENTIPEDE: ~30 (not 100!)" ],
+        revAllowed: true
+    },
+    {
+        id: 2,
+        solution: ["FIRE TRUCK", "PUMPKIN", "BLONDE", "CROCODILE", "SKY", "DENIM", "LAVENDER"],
+        initialOrderSequence: "6243175",
+        theme: "ROYGBIV",
+        hint: "Take a bow",
+        hint2: "Get colorful",
+        post_solve: ["Fire truck: Red", "Pumpkin: Orange", "Blonde: Yellow", "Crocodile: Green", "Sky: Blue", "Denim: Indigo", "Lavender: Violet"],
         revAllowed: true
     },
     {
@@ -40,8 +41,6 @@ export const puzzles = [
         post_solve: ["JANAE: A", "JACOBI: B", "JESSIE: C", "JODY: D", "JOEY: E", "JEFF: F", "JENJI: G"],
         revAllowed: false
     },
-    // Add more puzzles as needed
-
     {
         id: 5,
         solution: ["8 BALL", "CREDIT CARD", "ARMY CORPORAL", "NEAPOLITAN ICE CREAM", "RAINBOW", "AMERICAN FLAG", "ZEBRA"],
@@ -85,13 +84,13 @@ export const puzzles = [
     },
     {
         id: 9,
-        solution: ["WAITING GAME", "OROGENY", "CALAMARI", "CASCADE", "CASSAVA", "CABERNET FRANC", "CAYUGA"],
-        initialOrderSequence: "2614573",
-        theme: "West <-> East U.S. states by latitudes",
-        hint: "Coast to coast",
-        hint2: "First two, last two",
-        post_solve: ["(WA)ITING GA(ME)", "(OR)OGE(NY)", "(CA)LAMA(RI)", "(CA)SCA(DE)", "(CA)SSA(VA)", "(CA)BERNET FRA(NC)", "(CA)YU(GA)"],
-        revAllowed: false
+        solution: ["ACE", "CONDOR", "ALBATROSS", "EAGLE", "BIRDIE", "PAR", "BOGEY"],
+        initialOrderSequence: "2715346",
+        theme: "Golf scores by stroke count",
+        hint: "Course numbers",
+        hint2: "Golf scores",
+        post_solve: ["Ace: hole in 1", "Condor: 4 under par", "Albatross: 3 under par", "Eagle: 2 under par", "Birdie: 1 under par", "Par", "Bogey: one over par"],
+        revAllowed: true        
     },
     {
         id: 10,
@@ -305,12 +304,13 @@ export const puzzles = [
     },
     {
         id: 31,
-        solution: ["ACE", "CONDOR", "ALBATROSS", "EAGLE", "BIRDIE", "PAR", "BOGEY"],
-        initialOrderSequence: "2715346",
-        theme: "Golf scores by stroke count",
-        hint: "Course numbers",
-        hint2: "Golf scores",
-        post_solve: ["Ace: hole in 1", "Condor: 4 under par", "Albatross: 3 under par", "Eagle: 2 under par", "Birdie: 1 under par", "Par", "Bogey: one over par"],
-        revAllowed: true        
+        solution: ["WEDDING CEREMONY", "RINGLING BROS. CIRCUS", "AUDI LOGO", "OLYMPIC FLAG", "ARIANA GRANDE SONG", "DANTE'S INFERNO", "URANUS"],
+        initialOrderSequence: "6451732",
+        theme: "Rings / Circles",
+        hint: "Ring 'em up",
+        hint2: "Ring counts",
+        post_solve: ["Wedding ceremony: 2", "Ringling bros.: 3", "Audi logo: 4", "Olympic flag: 5", "Ariana Grande song: 7", "Dante's Inferno: 9", "Uranus: 13 (known)"],
+        revAllowed: true
     }
+    
 ];
