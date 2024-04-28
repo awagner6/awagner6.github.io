@@ -352,6 +352,17 @@ export const puzzles = [
         hint2: "Water in gallons",
         post_solve: ["10-minute shower: ~20-25", "Olympic swimming pool: 660,000", "Niagara falls per second: ~700,000", "Georgia Aquarium: 11 million", "Central Park Reservoir: 1 billion", "Hurricane avg. daily rainfall: 2.4 trillion", "Lake Tahoe: 39 trillion"],
         revAllowed: true
-    }
+    },
+    {
+        id: 36,
+        solution: ["TIC-TAC-TOE", "CHESS", "SUDOKU", "STRATEGO", "SCRABBLE", "GO", "NEW YORK TIMES SUNDAY CROSSWORD"],
+        initialOrderSequence: "7513264",
+        theme: "Square game boards by size",
+        hint: "Squaring off",
+        hint2: "Board dimensions",
+        post_solve: ["Tic-Tac-Toe: 3x3", "Chess: 8x8", "Sudoku: 9x9", "Stratego: 10x10", "Scrabble: 15x15", "Go: 19x19", "NY Times Sunday Crossword: ~21x21"],
+        revAllowed: true        
+    },
+    
     
 ];
