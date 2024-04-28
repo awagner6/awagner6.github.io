@@ -5,8 +5,8 @@ export const puzzles = [
         solution: ["SNAKE", "FROG", "STARFISH", "ANT", "SPIDER", "CRAB", "CENTIPEDE"],
         initialOrderSequence: "6417235",
         theme: "Animals by limb count",
-        hint: "Natural extremes",
-        hint2: "Go out on a limb",
+        hint: "Out on a limb",
+        hint2: "An arm and a leg",
         post_solve: ["SNAKE: 0", "FROG: 4", "STARFISH: 5", "ANT: 6", "SPIDER: 8", "CRAB: 10", "CENTIPEDE: ~30 (not 100!)" ],
         revAllowed: true
     },
@@ -22,6 +22,16 @@ export const puzzles = [
     },
     {
         id: 3,
+        solution: ["8 BALL", "CREDIT CARD", "ARMY CORPORAL", "NEAPOLITAN ICE CREAM", "RAINBOW", "AMERICAN FLAG", "ZEBRA"],
+        initialOrderSequence: "5316274",
+        theme: "Stripe count",
+        hint: "What's my line?",
+        hint2: "Solids' counterparts",
+        post_solve: ["8 BALL: 0", "CREDIT CARD: 1", "ARMY CORPORAL: 2", "NEAPOLITAN ICE CREAM: 3", "RAINBOW: 7", "AMERICAN FLAG: 13", "ZEBRA: Many"],
+        revAllowed: true
+    },
+    {
+        id: 4,
         solution: ["ONE DOLLAR BILL", "NICKEL", "TWENTY DOLLAR BILL", "PENNY", "FIFTY DOLLAR BILL", "DIME", "HALF DOLLAR"],
         initialOrderSequence: "4375612",
         theme: "Money in order of president",
@@ -32,7 +42,7 @@ export const puzzles = [
     },
 
     {
-        id: 4,
+        id: 5,
         solution: ["JANAE", "JACOBI", "JESSIE", "JODY", "JOEY", "JEFF", "JENJI"],
         initialOrderSequence: "6451723",
         theme: "Alphabetical letter homophone endings",
@@ -42,27 +52,7 @@ export const puzzles = [
         revAllowed: false
     },
     {
-        id: 5,
-        solution: ["8 BALL", "CREDIT CARD", "ARMY CORPORAL", "NEAPOLITAN ICE CREAM", "RAINBOW", "AMERICAN FLAG", "ZEBRA"],
-        initialOrderSequence: "5316274",
-        theme: "Stripe count",
-        hint: "What's my line?",
-        hint2: "Solids' counterparts",
-        post_solve: ["8 BALL: 0", "CREDIT CARD: 1", "ARMY CORPORAL: 2", "NEAPOLITAN ICE CREAM: 3", "RAINBOW: 7", "AMERICAN FLAG: 13", "ZEBRA: Many"],
-        revAllowed: true
-    },
-    {
         id: 6,
-        solution: [ "JANITOR", "MARBLE", "MAYONNAISE", "JULIENNED", "AUGMENTATION", "OCTOPUS", "DECISION"],
-        initialOrderSequence: "7413625",
-        theme: "Starts with a 31-day month abbr.",
-        hint: "Ahead of time",
-        hint2: "Cal train",
-        post_solve: [ "(Jan)itor", "(Mar)ble", "(May)onnaise", "(Jul)ienned", "(Aug)mentation", "(Oct)opus", "(Dec)ision"],
-        revAllowed: true
-    },
-    {
-        id: 7,
         solution: [ "DR. NO", "ALIENS", "DIE HARD WITH A VENGEANCE", "SHREK FOREVER AFTER", "MISSION: IMPOSSIBLE - ROGUE NATION", "ROCKY BALBOA", "STAR WARS: THE FORCE AWAKENS"],
         initialOrderSequence: "7436152",
         theme: "Movie installment<br>within its franchise",
@@ -73,7 +63,7 @@ export const puzzles = [
 
     },
     {
-        id: 8,
+        id: 7,
         solution: ["SCRUNCHED", "BREAKTHROUGH", "STRAIGHTFORWARD", "ACKNOWLEDGEMENT", "ENTREPRENEURSHIP", "UNRECOGNIZABLE", "CONFIDENTIALITY"],
         initialOrderSequence: "3624175",
         theme: "Number of syllables",
@@ -83,7 +73,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 9,
+        id: 8,
         solution: ["ACE", "CONDOR", "ALBATROSS", "EAGLE", "BIRDIE", "PAR", "BOGEY"],
         initialOrderSequence: "2715346",
         theme: "Golf scores by stroke count",
@@ -93,7 +83,7 @@ export const puzzles = [
         revAllowed: true        
     },
     {
-        id: 10,
+        id: 9,
         solution: ["EIGHTIES", "CENTS", "CHEERS", "SEASONS", "SENSES", "FLAGS", "SEAS"],
         initialOrderSequence: "2614573",
         theme: "Preceded by a number",
@@ -103,7 +93,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 11,
+        id: 10,
         solution: ["DORITO", "CHESSBOARD", "FLAG OF NEPAL", "HONEYCOMB CELL", "STOP SIGN", "CANADIAN LOONIE", "GLOBE THEATRE"],
         initialOrderSequence: "6527143",
         theme: "Number of sides",
@@ -112,6 +102,17 @@ export const puzzles = [
         post_solve: ["DORITO: 3", "CHESSBOARD: 4", "FLAG OF NEPAL: 5", "HONEYCOMB CELL: 6", "STOP SIGN: 8", "LOONIE: 11", "GLOBE: 20 (not quite round!)"],
         revAllowed: true
     },
+    {
+        id: 11,
+        solution: [ "JANITOR", "MARBLE", "MAYONNAISE", "JULIENNED", "AUGMENTATION", "OCTOPUS", "DECISION"],
+        initialOrderSequence: "7413625",
+        theme: "Starts with a 31-day month abbr.",
+        hint: "Ahead of time",
+        hint2: "Cal train",
+        post_solve: [ "(Jan)itor", "(Mar)ble", "(May)onnaise", "(Jul)ienned", "(Aug)mentation", "(Oct)opus", "(Dec)ision"],
+        revAllowed: true
+    },
+    
     {
         id: 12,
         solution: ["HELLO", "BONJOUR", "GUTEN TAG", "BUONGIORNO", "TUDO BEM", "HOLA", "HEJ"],
@@ -310,6 +311,46 @@ export const puzzles = [
         hint: "Ring 'em up",
         hint2: "Ring counts",
         post_solve: ["Ringling bros.: 3", "Audi logo: 4", "Olympic flag: 5", "Ariana Grande song: 7", "Dante's Inferno: 9", "Archery target: 11", "Uranus: 13 (known)"],
+        revAllowed: true
+    },
+    {
+        id: 32,
+        solution: ["LA PAZ, BOLIVIA", "NAIROBI, KENYA", "KATHMANDU, NEPAL", "CANBERRA, AUSTRALIA", "NEW DELHI, INDIA", "OTTAWA, CANADA", "AMSTERDAM, THE NETHERLANDS"],
+        initialOrderSequence: "3475162",
+        theme: "Natl. capitals by elevation",
+        hint: "Highs and lows",
+        hint2: "Capital elevations",
+        post_solve: ["La Paz: 11,942", "Nairobi: 5,889", "Kathmandu: 4,593", "Canberra: 1,985", "New Delhi: 689", "Ottawa: 243", "Amsterdam: -7"],
+        revAllowed: false
+    },
+    {
+        id: 33,
+        solution: ["MESSENGER GOD", "GOD OF LOVE", "GOD OF WAR", "KING OF THE GODS", "GOD OF THE HARVEST", "GOD OF THE SEA", "GOD OF THE HEAVENS"],
+        initialOrderSequence: "5231764",
+        theme: "Planets by namesake deity",
+        hint: "Heavenly bodies",
+        hint2: "Planets by god",
+        post_solve: ["Messenger: Mercury", "Love: Venus", "War: Mars", "King: Jupiter", "Harvest: Saturn", "Sea: Neptune", "Heavens: Uranus"],
+        revAllowed: true
+    },
+    {
+        id: 34,
+        solution: ["NORMAL CONVERSATION", "HAIRDRYER", "FIRETRUCK SIREN", "SEATTLE SEAHAWKS CROWD RECORD", "JET ENGINE", "KRAKATOA ERUPTION", "SPERM WHALE CLICK"],
+        initialOrderSequence: "2734156",
+        theme: "Sounds by decibel level",
+        hint: "Volume one",
+        hint2: "Decibel scale",
+        post_solve: ["Normal conversation: ~60 dB", "Hairdryer: 80-90 dB", "Firetruck siren: ~120 dB", "Seahawks crowd record: 137.6 dB(!)", "Jet Engine: 140 dB", "Krakatoa eruption: 180 dB", "Sperm whale click: 230 dB(!!!)"],
+        revAllowed: true        
+    },
+    {
+        id: 35,
+        solution: ["10-MINUTE SHOWER", "OLYMPIC SWIMMING POOL", "NIAGARA FALLS PER SECOND", "GEORGIA AQUARIUM", "CENTRAL PARK RESERVOIR", "HURRICANE AVG. DAILY RAINFALL", "LAKE TAHOE"],
+        initialOrderSequence: "5176342",
+        theme: "Water volumes in gallons",
+        hint: "Volume two",
+        hint2: "Water in gallons",
+        post_solve: ["10-minute shower: ~20-25", "Olympic swimming pool: 660,000", "Niagara falls per second: ~700,000", "Georgia Aquarium: 11 million", "Central Park Reservoir: 1 billion", "Hurricane avg. daily rainfall: 2.4 trillion", "Lake Tahoe: 39 trillion"],
         revAllowed: true
     }
     
