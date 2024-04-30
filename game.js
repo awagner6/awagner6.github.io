@@ -48,7 +48,7 @@ let revSolve = null;
 let boardOrders = [];
 let gameEnded = false;
 let resultsShown = false;
-let streakCount = null;
+let streakCount = 0;
 let lightbulbUsed = false;
 // Flag to track if an interaction is already in progress
 let interactionInProgress = false;
