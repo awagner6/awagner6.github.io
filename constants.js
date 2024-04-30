@@ -321,7 +321,7 @@ export const puzzles = [
         hint: "Highs and lows",
         hint2: "Capital elevations",
         post_solve: ["La Paz: 11,942", "Nairobi: 5,889", "Kathmandu: 4,593", "Canberra: 1,985", "New Delhi: 689", "Ottawa: 243", "Amsterdam: -7"],
-        revAllowed: false
+        revAllowed: true
     },
     {
         id: 33,
