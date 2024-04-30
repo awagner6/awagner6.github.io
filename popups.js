@@ -16,6 +16,7 @@ export function closeAllPopups() {
     });
     isLightbulbPopupVisible = false;
     isHelpPopupVisible = false;
+    isInfoPopupVisible = false;
 }
 
 export function showWinPopup(boardStates, revBoardStates, currentPuzzle, reverseWon, lightbulbUsed, streakCount) {
@@ -160,6 +161,7 @@ export function showOhNoPopup() {
 
   let isLightbulbPopupVisible = false;
   let isHelpPopupVisible = false;
+  let isInfoPopupVisible = false;
 
 
   export function showLightbulbPopup(currentPuzzle) {
@@ -201,13 +203,29 @@ export function showHelpPopup() {
                 <p style="font-size: larger;">Tap/click and drag to rearrange items. Hit Submit to guess. When you hit Submit, any correctly placed items will turn green and lock in place.<br><br></p>
                 <p style="font-size: larger;">The game ends when you either find the correct order, or run out of guesses.<br><br></p>
                 <p style="font-size: larger;">A theme hint is provided at the top of your screen, and a second, bigger hint is available by tapping the lightbulb icon.<br><br></p>
-                <p style="font-size: larger;">If you submit a fully correct order in either direction, it will count as being correct. However, the Submit checker will only use a single solution direction when turning items green.<br><br></p>`;
+                <p style="font-size: larger;">If you submit a fully correct order in either direction, it will count as being correct.<br><br></p>`;
             helpPopup.style.display = 'block';
         }
         isHelpPopupVisible = !isHelpPopupVisible;
     }
 }
 
+export function showInfoPopup() {
+    const infoPopup = document.getElementById('info-popup');
+    if (infoPopup) {
+        if (isInfoPopupVisible) {
+            infoPopup.style.display = 'none';
+        } else {
+            infoPopup.innerHTML = `<p><span style="font-size: larger;">Info</span><br><br></p>
+                <p style="font-size: larger;">Created by: Adam Wagner<br><br></p>
+                <p style="font-size: larger;">Developed by: Adam Wagner<br><br></p>
+                <p style="font-size: larger;">Special thanks: Anna Wagner<br><br></p>
+                <p style="font-size: larger;">Contact: info@OrderUp.com<br><br></p>`;
+            infoPopup.style.display = 'block';
+        }
+        isInfoPopupVisible = !isInfoPopupVisible;
+    }
+}
 
 function updateCountdownClock() {
     const countdownClock = document.getElementById('countdown-clock');
@@ -230,4 +248,6 @@ function updateCountdownClock() {
 
 
 setInterval(updateCountdownClock, 1000);
+
+
 
