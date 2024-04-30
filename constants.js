@@ -315,7 +315,7 @@ export const puzzles = [
     },
     {
         id: 32,
-        solution: ["LA PAZ, BOLIVIA", "NAIROBI, KENYA", "KATHMANDU, NEPAL", "CANBERRA, AUSTRALIA", "NEW DELHI, INDIA", "OTTAWA, CANADA", "AMSTERDAM, THE NETHERLANDS"],
+        solution: ["LA PAZ BOLIVIA", "NAIROBI KENYA", "KATHMANDU NEPAL", "CANBERRA AUSTRALIA", "NEW DELHI INDIA", "OTTAWA CANADA", "AMSTERDAM THE NETHERLANDS"],
         initialOrderSequence: "3475162",
         theme: "Natl. capitals by elevation",
         hint: "Highs and lows",
