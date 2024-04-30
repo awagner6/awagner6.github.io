@@ -107,7 +107,7 @@ body {
     max-width: 400px;
 }
 
-.help-icon, .lightbulb-icon {
+.help-icon, .lightbulb-icon, .info-icon {
     max-width: 400px;
     display: inline-block;
     width: 5vh;
@@ -122,8 +122,13 @@ body {
     font-size: 2.5vh; /* Optional: Adjust the font size if needed */
 }
 
+.info-icon {
+    font-weight: 550;
+}
+
+
 @media (max-width: 480px) {
-    .help-icon, .lightbulb-icon {
+    .help-icon, .lightbulb-icon, .info-icon {
         width: 3.5vh;
         height: 3.5vh;
         line-height: 3.5vh; /* Adjusted for vertical alignment */
@@ -392,6 +397,23 @@ body {
     z-index: 1000;
 }
 
+#info-popup {
+    position: fixed;
+    top: 48vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    font-size: 1.8vh; /* Adjust the font size as needed */
+    height: auto; /* Adjust height based on content */
+    padding: 10px; /* Add some padding for better appearance */
+    display: none; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000;
+}
+
 .start-screen {
     position: fixed;
     top: 0;
@@ -553,3 +575,4 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
