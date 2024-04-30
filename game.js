@@ -671,17 +671,6 @@ window.onclick = function(event) {
         Popups.closeAllPopups();
         resultsShown = false;
         submitBtn.disabled = false; // Re-enable the submit button
-
-        // Reactivate all draggables not labeled as correct if the game is not over
-        if (!gameEnded) {
-            const draggables = document.querySelectorAll('.draggable:not(.correct)');
-            draggables.forEach(draggable => {
-                // Ensure draggable elements are interactive
-                draggable.setAttribute('draggable', 'true');
-                draggable.addEventListener('mousedown', handleStart, { passive: false });
-                draggable.addEventListener('touchstart', handleStart, { passive: false });
-            });
-        }
     }
 }
 
