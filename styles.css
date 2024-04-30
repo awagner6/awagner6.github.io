@@ -254,7 +254,7 @@ body {
     height: 6vh;
     width: 12vh;
     padding: 10px 20px; /* Adjust padding as needed */
-    border-radius: 3vh; /* Adjust border-radius as needed */
+    border-radius: 2vh; /* Adjust border-radius as needed */
     cursor: pointer;
     background-color: #ffffff; /* Change to white */
     border: 1px solid #b8b7b7; /* Make border solid black and slightly thicker */
