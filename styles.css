@@ -24,7 +24,7 @@ body {
 .draggable {
     padding: 0px;
     width: 90%;
-    max-width: 400px; /* Maximum width of 500px */
+    max-width: 480px; /* Maximum width of 500px */
     height: 7vh;
     margin-top: 0px;
     margin-left: auto;
