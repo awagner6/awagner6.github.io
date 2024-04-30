@@ -48,6 +48,7 @@ let revSolve = null;
 let boardOrders = [];
 let gameEnded = false;
 let resultsShown = false;
+let streakCount = null;
 let lightbulbUsed = false;
 // Flag to track if an interaction is already in progress
 let interactionInProgress = false;
@@ -125,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         revBoardStates = savedState.revBoardStates;
         boardOrders = savedState.boardOrders;
         gameWon = savedState.gameWon;
-        let streakCount = savedState.streakCount;
+        streakCount = savedState.streakCount;
       }
 
       // Restore the game state for the current puzzle
@@ -137,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
       revSolve = savedState.revSolve;
       gameEnded = savedState.gameEnded;
       lightbulbUsed = savedState.lightbulbUsed;
-      let streakCount = savedState.streakCount || 0;
+      streakCount = savedState.streakCount || 0;
   } else {
       // New puzzle or no saved state, start fresh
       startInstructions.innerHTML = "Put a list of items in order<br>based on a hidden theme!";
@@ -151,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
       revSolve = null;
       localStorage.removeItem('gameState');
       if (savedState){
-        let streakCount = savedState.streakCount || 0;
+        streakCount = savedState.streakCount || 0;
       }
       submitBtn.textContent = 'Submit'; // Reset the submit button text
   }
@@ -261,6 +262,11 @@ function setupDraggables(puzzle, revSolve, gameEnded, gameWon) {
 
 
 function handleStart(e) {
+  if (Popups.isLightbulbPopupVisible || Popups.isInfoPopupVisible || Popups.isHelpPopupVisible){
+    e.preventDefault();
+    Popups.closeAllPopups();
+    return
+  }
   if (interactionInProgress) {
     e.preventDefault();
     return; // Exit if another interaction is in progress
@@ -270,8 +276,8 @@ function handleStart(e) {
   e.preventDefault();
   e.stopPropagation(); 
   if (gameWon || e.target.classList.contains('correct')){
-      interactionInProgress = false;
-      return;
+    interactionInProgress = false;
+    return;
   }
   const draggable = e.target;
   draggable.classList.add('dragging', 'dragging-original');
@@ -303,9 +309,9 @@ function handleStart(e) {
 function handleMove(e) {
   e.preventDefault();
   e.stopPropagation();
-  if (e.target.classList.contains('correct')){ 
-      interactionInProgress = false;
-      return;
+  if (gameWon || e.target.classList.contains('correct')){
+    interactionInProgress = false;
+    return;
   }
   const clientX = e.touches ? e.touches[0].clientX : e.clientX;
   const clientY = e.touches ? e.touches[0].clientY : e.clientY;
@@ -655,13 +661,6 @@ function animateDraggables(draggables, revSolve, callback, currentOrder) {
 
 
 
-window.onclick = function(event) {
-  if (!event.target.matches('.help-icon, .lightbulb-icon, .info-icon, .popup, .share-btn, .patreon-btn') && !event.target.closest('.popup')) {
-    document.querySelectorAll('.popup').forEach(popup => {
-      popup.style.display = "none";
-    });
-  }
-}
 
 
 window.togglePopup = Popups.togglePopup;  // Expose the function to the global scope for use in HTML
@@ -669,8 +668,17 @@ window.togglePopup = Popups.togglePopup;  // Expose the function to the global s
 window.onclick = function(event) {
     if (!event.target.matches('.help-icon, .lightbulb-icon, .info-icon, .popup, .share-btn, .patreon-btn') && !event.target.closest('.popup')) {
         Popups.closeAllPopups();
+        if (!gameEnded) {
+          const draggables = document.querySelectorAll('.draggable:not(.correct)');
+          draggables.forEach(draggable => {
+              // Ensure draggable elements are interactive
+              draggable.setAttribute('draggable', 'true');
+              draggable.addEventListener('mousedown', handleStart, { passive: false });
+              draggable.addEventListener('touchstart', handleStart, { passive: false });
+          });
+      }
         resultsShown = false;
-        submitBtn.disabled = false; // Re-enable the submit button
+        submitBtn.disabled = false; // Disable the button
     }
 }
 
@@ -699,6 +707,3 @@ document.addEventListener('DOMContentLoaded', () => {
       infoIcon.addEventListener('click', () => Popups.showInfoPopup());
   }
 });
-
-
-
