@@ -269,7 +269,10 @@ function handleStart(e) {
 
   e.preventDefault();
   e.stopPropagation(); 
-  if (gameWon || e.target.classList.contains('correct')) return;
+  if (gameWon || e.target.classList.contains('correct')){
+      interactionInProgress = false;
+      return;
+  }
   const draggable = e.target;
   draggable.classList.add('dragging', 'dragging-original');
   originalParent = draggable.parentNode;
@@ -300,7 +303,10 @@ function handleStart(e) {
 function handleMove(e) {
   e.preventDefault();
   e.stopPropagation();
-  if (e.target.classList.contains('correct')) return;
+  if (e.target.classList.contains('correct')){ 
+      interactionInProgress = false;
+      return;
+  }
   const clientX = e.touches ? e.touches[0].clientX : e.clientX;
   const clientY = e.touches ? e.touches[0].clientY : e.clientY;
   const draggingElement = document.querySelector('.dragging');
