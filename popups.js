@@ -220,7 +220,7 @@ export function showInfoPopup() {
                 <p style="font-size: larger;">Created by: Adam Wagner<br><br></p>
                 <p style="font-size: larger;">Developed by: Adam Wagner<br><br></p>
                 <p style="font-size: larger;">Special thanks: Anna Wagner<br><br></p>
-                <p style="font-size: larger;">Contact: info@OrderUp.com<br><br></p>`;
+                <p style="font-size: larger;">To ask questions, get support, report a bug, or submit a puzzle idea, reach out at: info@OrderUp.games<br><br></p>`;
             infoPopup.style.display = 'block';
         }
         isInfoPopupVisible = !isInfoPopupVisible;
