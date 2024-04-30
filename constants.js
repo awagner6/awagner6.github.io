@@ -5,7 +5,7 @@ export const puzzles = [
         solution: ["SNAKE", "FROG", "STARFISH", "ANT", "SPIDER", "CRAB", "CENTIPEDE"],
         initialOrderSequence: "6417235",
         theme: "Animals by limb count",
-        hint: "Out on a limb",
+        hint: "Life and limb",
         hint2: "An arm and a leg",
         post_solve: ["SNAKE: 0", "FROG: 4", "STARFISH: 5", "ANT: 6", "SPIDER: 8", "CRAB: 10", "CENTIPEDE: ~30 (not 100!)" ],
         revAllowed: true
