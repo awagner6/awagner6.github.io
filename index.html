@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Order Up</title>
+    <title>Order up!</title>
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="Favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
@@ -32,13 +32,16 @@
     <div class="menu-bar">
         <div class="game-title">Order Up</div>
         <div class="icon-container">
-            <div class="help-icon" onclick="togglePopup('help-popup')">?</div>
             <div class="lightbulb-icon" onclick="togglePopup('lightbulb-popup')">💡</div>
+            <div class="help-icon" onclick="togglePopup('help-popup')">?</div>
+            <div class="info-icon" onclick="togglePopup('info-popup')">i</div>
         </div>
     </div>    
     <div class="popup" id="help-popup">
     </div>
     <div class="popup" id="lightbulb-popup">
+    </div>
+    <div class="popup" id="info-popup">
     </div>
     <div class="container" id="container">
         <div class="instructions">
@@ -63,3 +66,4 @@
 <script type="module" src="game.js"></script>
 </body>
 </html>
+
