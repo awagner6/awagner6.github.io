@@ -48,7 +48,6 @@ let revSolve = null;
 let boardOrders = [];
 let gameEnded = false;
 let resultsShown = false;
-let streakCount = null;
 let lightbulbUsed = false;
 // Flag to track if an interaction is already in progress
 let interactionInProgress = false;
@@ -126,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         revBoardStates = savedState.revBoardStates;
         boardOrders = savedState.boardOrders;
         gameWon = savedState.gameWon;
-        streakCount = savedState.streakCount;
+        let streakCount = savedState.streakCount;
       }
 
       // Restore the game state for the current puzzle
@@ -138,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       revSolve = savedState.revSolve;
       gameEnded = savedState.gameEnded;
       lightbulbUsed = savedState.lightbulbUsed;
-      streakCount = savedState.streakCount || 0;
+      let streakCount = savedState.streakCount || 0;
   } else {
       // New puzzle or no saved state, start fresh
       startInstructions.innerHTML = "Put a list of items in order<br>based on a hidden theme!";
@@ -152,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
       revSolve = null;
       localStorage.removeItem('gameState');
       if (savedState){
-        streakCount = savedState.streakCount || 0;
+        let streakCount = savedState.streakCount || 0;
       }
       submitBtn.textContent = 'Submit'; // Reset the submit button text
   }
