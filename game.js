@@ -48,7 +48,7 @@ let revSolve = null;
 let boardOrders = [];
 let gameEnded = false;
 let resultsShown = false;
-let streakCount = 0;
+let streakCount = null;
 let lightbulbUsed = false;
 // Flag to track if an interaction is already in progress
 let interactionInProgress = false;
@@ -651,7 +651,7 @@ function animateDraggables(draggables, revSolve, callback, currentOrder) {
 
 
 window.onclick = function(event) {
-  if (!event.target.matches('.help-icon, .lightbulb-icon, .popup, .share-btn, .patreon-btn') && !event.target.closest('.popup')) {
+  if (!event.target.matches('.help-icon, .lightbulb-icon, .info-icon, .popup, .share-btn, .patreon-btn') && !event.target.closest('.popup')) {
     document.querySelectorAll('.popup').forEach(popup => {
       popup.style.display = "none";
     });
@@ -662,7 +662,7 @@ window.onclick = function(event) {
 window.togglePopup = Popups.togglePopup;  // Expose the function to the global scope for use in HTML
 
 window.onclick = function(event) {
-    if (!event.target.matches('.help-icon, .lightbulb-icon, .popup, .share-btn, .patreon-btn') && !event.target.closest('.popup')) {
+    if (!event.target.matches('.help-icon, .lightbulb-icon, .info-icon, .popup, .share-btn, .patreon-btn') && !event.target.closest('.popup')) {
         Popups.closeAllPopups();
         resultsShown = false;
         submitBtn.disabled = false; // Disable the button
@@ -688,5 +688,12 @@ document.addEventListener('DOMContentLoaded', () => {
           saveGameState(boardStates, revBoardStates, boardOrders, gameWon, reverseWon, currentPuzzleIndex, gameEnded, lightbulbUsed, streakCount, revSolve);
       });
   }
+  const infoIcon = document.querySelector('.info-icon');
+
+  if (infoIcon){
+      infoIcon.addEventListener('click', () => Popups.showInfoPopup());
+  }
 });
+
+
 
