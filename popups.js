@@ -159,9 +159,9 @@ export function showOhNoPopup() {
     };
   }
 
-  let isLightbulbPopupVisible = false;
-  let isHelpPopupVisible = false;
-  let isInfoPopupVisible = false;
+export let isLightbulbPopupVisible = false;
+export let isHelpPopupVisible = false;
+export let isInfoPopupVisible = false;
 
 
   export function showLightbulbPopup(currentPuzzle) {
@@ -220,7 +220,7 @@ export function showInfoPopup() {
                 <p style="font-size: larger;">Created by: Adam Wagner<br><br></p>
                 <p style="font-size: larger;">Developed by: Adam Wagner<br><br></p>
                 <p style="font-size: larger;">Special thanks: Anna Wagner<br><br></p>
-                <p style="font-size: larger;">Contact: info@OrderUp.games<br><br></p>`;
+                <p style="font-size: larger;">Contact: info@OrderUp.com<br><br></p>`;
             infoPopup.style.display = 'block';
         }
         isInfoPopupVisible = !isInfoPopupVisible;
@@ -248,6 +248,4 @@ function updateCountdownClock() {
 
 
 setInterval(updateCountdownClock, 1000);
-
-
 
