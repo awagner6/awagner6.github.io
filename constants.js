@@ -12,12 +12,12 @@ export const puzzles = [
     },
     {
         id: 2,
-        solution: ["CREDIT CARD", "ARMY CORPORAL", "NEAPOLITAN ICE CREAM", "THE CAT IN THE HAT'S HAT",  "RAINBOW", "AMERICAN FLAG", "ZEBRA"],
-        initialOrderSequence: "3162754",
+        solution: ["8 BALL", "CREDIT CARD", "ARMY CORPORAL", "ADIDAS LOGO", "THE CAT IN THE HAT'S HAT", "AMERICAN FLAG", "ZEBRA"],
+        initialOrderSequence: "3162745",
         theme: "Stripe count",
         hint: "What's my line?",
         hint2: "Stripe count",
-        post_solve: ["CREDIT CARD: 1", "ARMY CORPORAL: 2", "NEAPOLITAN ICE CREAM: 3", "THE CAT IN THE HAT'S HAT: 5", "RAINBOW: 7", "AMERICAN FLAG: 13", "ZEBRA: ~80"],
+        post_solve: ["8 BALL: 0", "CREDIT CARD: 1", "ARMY CORPORAL: 2", "ADIDAS LOGO: 3", "THE CAT IN THE HAT'S HAT: 5", "AMERICAN FLAG: 13", "ZEBRA: many"],
         revAllowed: true
     },
     {
@@ -37,7 +37,7 @@ export const puzzles = [
         theme: "ROYGBIV",
         hint: "Take a bow",
         hint2: "Get colorful",
-        post_solve: ["Fire truck: Red", "Pumpkin: Orange", "Blonde: Yellow", "Crocodile: Green", "Sky: Blue", "Denim: Indigo", "Lavender: Violet"],
+        post_solve: ["Fire truck: Red", "Pumpkin: Orange", "Blonde: Yellow", "Crocodile: Green", "Sky: Blue", "Denim: Indigo", "Eggplant: Violet"],
         revAllowed: true
     },
     {
