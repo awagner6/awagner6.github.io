@@ -77,8 +77,7 @@ function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, revSolve) 
     const buttonContainer = document.createElement('div');
     buttonContainer.classList.add('button-container');
     const gameWon = popup.classList.contains('win-popup');
-    const directionIndicator = revSolve ? '⬇️' : '⬆️'; // Add "v" if revSolve is true, "^" otherwise
-
+    const directionIndicator = revSolve ? '⬆️' : '⬇️';
 
     // Add Share button
     const shareButton = document.createElement('button');
