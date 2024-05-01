@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (puzzleNumberElement) {
       puzzleNumberElement.textContent = currentPuzzleIndex + 1; // Add 1 to make it human-readable
   }
-  instructionsElement.innerHTML = `Put these items in order!<br><span>Theme: <strong>${currentPuzzle.hint}</strong></span>`;
+  instructionsElement.innerHTML = `Put these items in order<br><span>Theme: <strong>${currentPuzzle.hint}</strong></span>`;
   setupDraggables(currentPuzzle, revSolve, gameEnded, gameWon);
 });
 
