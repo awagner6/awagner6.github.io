@@ -25,7 +25,7 @@ export const puzzles = [
         solution: ["ONE DOLLAR BILL", "NICKEL", "TWENTY DOLLAR BILL", "PENNY", "FIFTY DOLLAR BILL", "DIME", "HALF DOLLAR"],
         initialOrderSequence: "4375612",
         theme: "Money in order of president",
-        hint: "Face value",
+        hint: "Face forward",
         hint2: "Presidential procession",
         post_solve: ["$1: Washington", "5¢: Jefferson", "$20: Jackson", "$5: Lincoln", "$50: Grant", "10¢: FDR", "50¢: JFK"],
         revAllowed: true
