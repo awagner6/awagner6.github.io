@@ -33,7 +33,7 @@ export function showWinPopup(boardStates, revBoardStates, currentPuzzle, reverse
         .map(item => `<p style="font-size: 1em;">${item}</p>`)
         .join('');
 
-    winPopup.innerHTML = `<p>You solved Order Up<br>in ${finalBoardStates.length} ${finalBoardStates.length === 1 ? 'guess' : 'guesses'}!<br><br>Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><p>Streak: ${streakCount}</p><br><div id="countdown-clock"></div>`;
+    winPopup.innerHTML = `<p>You solved Order Up<br>in ${finalBoardStates.length} ${finalBoardStates.length === 1 ? 'guess' : 'guesses'}!<br><br>Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><p>Streak: ${streakCount}</p><br><p>Next Order Up in:</p><div id="countdown-clock"></div>`;
     addButtons(winPopup, finalBoardStates, currentPuzzle, lightbulbUsed, reverseWon);
 
     document.body.appendChild(winPopup);
@@ -60,7 +60,7 @@ export function showLosingPopup(boardStates, revBoardStates, currentPuzzle, ligh
         .map(item => `<p style="font-size: 1em;">${item}</p>`)
         .join('');
 
-    losingPopup.innerHTML = `<p>Order Up got the<br>best of you today!</p><br><p>Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><div id="countdown-clock"></div>`;
+    losingPopup.innerHTML = `<p>Order Up got the<br>best of you today!</p><br><p>Theme description:<br><strong>${currentPuzzle.theme}</strong><br><br></p><div class="post-solve">${postSolveContent}<br></div><p>Next Order Up in:</p><div id="countdown-clock"></div>`;
     addButtons(losingPopup, finalBoardStates, currentPuzzle, lightbulbUsed, revSolve);
 
     document.body.appendChild(losingPopup);
