@@ -12,12 +12,12 @@ export const puzzles = [
     },
     {
         id: 2,
-        solution: ["8 BALL", "CREDIT CARD", "ARMY CORPORAL", "NEAPOLITAN ICE CREAM", "RAINBOW", "AMERICAN FLAG", "ZEBRA"],
+        solution: ["CREDIT CARD", "ARMY CORPORAL", "NEAPOLITAN ICE CREAM", "THE CAT IN THE HAT'S HAT",  "RAINBOW", "AMERICAN FLAG", "ZEBRA"],
         initialOrderSequence: "5316274",
         theme: "Stripe count",
         hint: "What's my line?",
-        hint2: "Solids' counterparts",
-        post_solve: ["8 BALL: 0", "CREDIT CARD: 1", "ARMY CORPORAL: 2", "NEAPOLITAN ICE CREAM: 3", "RAINBOW: 7", "AMERICAN FLAG: 13", "ZEBRA: Many"],
+        hint2: "Stripe count",
+        post_solve: ["CREDIT CARD: 1", "ARMY CORPORAL: 2", "NEAPOLITAN ICE CREAM: 3", "THE CAT IN THE HAT'S HAT: 5", "RAINBOW: 7", "AMERICAN FLAG: 13", "ZEBRA: Many"],
         revAllowed: true
     },
     {
