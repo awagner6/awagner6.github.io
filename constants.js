@@ -17,7 +17,7 @@ export const puzzles = [
         theme: "Stripe count",
         hint: "What's my line?",
         hint2: "Stripe count",
-        post_solve: ["CREDIT CARD: 1", "ARMY CORPORAL: 2", "NEAPOLITAN ICE CREAM: 3", "THE CAT IN THE HAT'S HAT: 5", "RAINBOW: 7", "AMERICAN FLAG: 13", "ZEBRA: Many"],
+        post_solve: ["CREDIT CARD: 1", "ARMY CORPORAL: 2", "NEAPOLITAN ICE CREAM: 3", "THE CAT IN THE HAT'S HAT: 5", "RAINBOW: 7", "AMERICAN FLAG: 13", "ZEBRA: ~80"],
         revAllowed: true
     },
     {
