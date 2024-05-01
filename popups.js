@@ -89,7 +89,7 @@ function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, revSolve) 
         const transposedBoardStates = boardStates[0].map((_, colIndex) => boardStates.map(row => row[colIndex]));
         const emojiBoard = transposedBoardStates.map(column => column.join('    ')).join('\n');
         const lightbulbEmoji = lightbulbUsed ? '💡' : ''; // Add the lightbulb emoji if used
-        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5${lightbulbEmoji}${directionIndicator}\n\n${emojiBoard}`;
+        const shareText = `Order Up ${currentPuzzle.id}\n${numberOfGuesses}/5 ${lightbulbEmoji} ${directionIndicator}\n\n${emojiBoard}`;
 
         if (navigator.share) {
             // Use Web Share API on supported devices
