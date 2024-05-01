@@ -18,7 +18,7 @@ export function getCurrentPuzzleIndex() {
     releaseDateTime.setMinutes(releaseDateTime.getMinutes() - timezoneOffset);
 
     // Calculate the number of days since the start date (e.g., the launch date of the game)
-    const startDate = new Date('2024-03-29T18:30:00-07:00'); // Example start date
+    const startDate = new Date('2024-04-30T18:30:00-07:00'); // Example start date
     const daysSinceStart = Math.floor((now - startDate) / (1000 * 60 * 60 * 24));
 
     // Use modulo to cycle through the puzzles if there are more days than puzzles
