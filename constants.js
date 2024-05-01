@@ -13,7 +13,7 @@ export const puzzles = [
     {
         id: 2,
         solution: ["CREDIT CARD", "ARMY CORPORAL", "NEAPOLITAN ICE CREAM", "THE CAT IN THE HAT'S HAT",  "RAINBOW", "AMERICAN FLAG", "ZEBRA"],
-        initialOrderSequence: "5316274",
+        initialOrderSequence: "3162754",
         theme: "Stripe count",
         hint: "What's my line?",
         hint2: "Stripe count",
