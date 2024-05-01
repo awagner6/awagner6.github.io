@@ -130,7 +130,7 @@ function addButtons(popup, boardStates, currentPuzzle, lightbulbUsed, revSolve) 
     patreonButton.textContent = 'Patreon';
     patreonButton.classList.add('popup-button');
     patreonButton.onclick = () => {
-        window.open('https://www.patreon.com/anigrams', '_blank');
+        window.open('https://www.patreon.com/adamwagner', '_blank');
     };
 
     // Append buttons to the container
