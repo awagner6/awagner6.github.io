@@ -12,16 +12,6 @@ export const puzzles = [
     },
     {
         id: 2,
-        solution: ["FIRE TRUCK", "PUMPKIN", "BLONDE", "CROCODILE", "SKY", "DENIM", "LAVENDER"],
-        initialOrderSequence: "6243175",
-        theme: "ROYGBIV",
-        hint: "Take a bow",
-        hint2: "Get colorful",
-        post_solve: ["Fire truck: Red", "Pumpkin: Orange", "Blonde: Yellow", "Crocodile: Green", "Sky: Blue", "Denim: Indigo", "Lavender: Violet"],
-        revAllowed: true
-    },
-    {
-        id: 3,
         solution: ["8 BALL", "CREDIT CARD", "ARMY CORPORAL", "NEAPOLITAN ICE CREAM", "RAINBOW", "AMERICAN FLAG", "ZEBRA"],
         initialOrderSequence: "5316274",
         theme: "Stripe count",
@@ -31,7 +21,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 4,
+        id: 3,
         solution: ["ONE DOLLAR BILL", "NICKEL", "TWENTY DOLLAR BILL", "PENNY", "FIFTY DOLLAR BILL", "DIME", "HALF DOLLAR"],
         initialOrderSequence: "4375612",
         theme: "Money in order of president",
@@ -40,7 +30,16 @@ export const puzzles = [
         post_solve: ["$1: Washington", "5¢: Jefferson", "$20: Jackson", "$5: Lincoln", "$50: Grant", "10¢: FDR", "50¢: JFK"],
         revAllowed: true
     },
-
+    {
+        id: 4,
+        solution: ["FIRE ENGINE", "PUMPKIN", "BLONDE", "CROCODILE", "SKY", "DENIM", "EGGPLANT"],
+        initialOrderSequence: "6243175",
+        theme: "ROYGBIV",
+        hint: "Take a bow",
+        hint2: "Get colorful",
+        post_solve: ["Fire truck: Red", "Pumpkin: Orange", "Blonde: Yellow", "Crocodile: Green", "Sky: Blue", "Denim: Indigo", "Lavender: Violet"],
+        revAllowed: true
+    },
     {
         id: 5,
         solution: ["JANAE", "JACOBI", "JESSIE", "JODY", "JOEY", "JEFF", "JENJI"],
