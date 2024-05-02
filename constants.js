@@ -32,13 +32,13 @@ export const puzzles = [
     },
     {
         id: 4,
-        solution: ["FIRE ENGINE", "PUMPKIN", "BLONDE", "CROCODILE", "SKY", "DENIM", "EGGPLANT"],
-        initialOrderSequence: "6243175",
-        theme: "ROYGBIV",
-        hint: "Take a bow",
-        hint2: "Get colorful",
-        post_solve: ["Fire truck: Red", "Pumpkin: Orange", "Blonde: Yellow", "Crocodile: Green", "Sky: Blue", "Denim: Indigo", "Eggplant: Violet"],
-        revAllowed: true
+        solution: ["MARINARA SAUCE", "KUMQUAT", "POLENTA", "BRUSSELS SPROUTS", "GORGONZOLA VEINS", "FORBIDDEN RICE", "UBE ICE CREAM"],
+        initialOrderSequence: "4237516",
+        theme: "Colorful foods in ROY G BIV order",
+        hint: "Taste the rainbow",
+        hint2: "ROY G BIV order",
+        post_solve: ["Marinara sauce: Red", "Kumquat: Orange", "Polenta: Yellow", "Brussels sprouts: Green", "Gorgonzola veins: Blue", "Forbidden rice: Indigo", "Ube ice cream: Violet"],
+        revAllowed: false
     },
     {
         id: 5,
