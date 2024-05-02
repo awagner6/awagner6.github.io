@@ -22,6 +22,16 @@ export const puzzles = [
     },
     {
         id: 3,
+        solution: ["MARINARA SAUCE", "KUMQUAT", "POLENTA", "BRUSSELS SPROUTS", "GORGONZOLA VEINS", "FORBIDDEN RICE", "UBE ICE CREAM"],
+        initialOrderSequence: "4153726",
+        theme: "Colorful foods in ROY G BIV order",
+        hint: "Taste the rainbow",
+        hint2: "ROY G BIV order",
+        post_solve: ["Marinara sauce: Red", "Kumquat: Orange", "Polenta: Yellow", "Brussels sprouts: Green", "Gorgonzola veins: Blue", "Forbidden rice: Indigo", "Ube ice cream: Violet"],
+        revAllowed: true
+    },
+    {
+        id: 4,
         solution: ["ONE DOLLAR BILL", "NICKEL", "TWENTY DOLLAR BILL", "PENNY", "FIFTY DOLLAR BILL", "DIME", "HALF DOLLAR"],
         initialOrderSequence: "4375612",
         theme: "Money in order of president",
@@ -30,28 +40,9 @@ export const puzzles = [
         post_solve: ["$1: Washington", "5¢: Jefferson", "$20: Jackson", "$5: Lincoln", "$50: Grant", "10¢: FDR", "50¢: JFK"],
         revAllowed: true
     },
-    {
-        id: 4,
-        solution: ["MARINARA SAUCE", "KUMQUAT", "POLENTA", "BRUSSELS SPROUTS", "GORGONZOLA VEINS", "FORBIDDEN RICE", "UBE ICE CREAM"],
-        initialOrderSequence: "4237516",
-        theme: "Colorful foods in ROY G BIV order",
-        hint: "Taste the rainbow",
-        hint2: "ROY G BIV order",
-        post_solve: ["Marinara sauce: Red", "Kumquat: Orange", "Polenta: Yellow", "Brussels sprouts: Green", "Gorgonzola veins: Blue", "Forbidden rice: Indigo", "Ube ice cream: Violet"],
-        revAllowed: true
-    },
+
     {
         id: 5,
-        solution: ["JANAE", "JACOBI", "JESSIE", "JODY", "JOEY", "JEFF", "JENJI"],
-        initialOrderSequence: "6451723",
-        theme: "Alphabetical letter homophone endings",
-        hint: "Behind your ear",
-        hint2: "Say the endings out loud",
-        post_solve: ["JANAE: A", "JACOBI: B", "JESSIE: C", "JODY: D", "JOEY: E", "JEFF: F", "JENJI: G"],
-        revAllowed: false
-    },
-    {
-        id: 6,
         solution: [ "DR. NO", "ALIENS", "DIE HARD WITH A VENGEANCE", "SHREK FOREVER AFTER", "MISSION: IMPOSSIBLE - ROGUE NATION", "ROCKY BALBOA", "STAR WARS: THE FORCE AWAKENS"],
         initialOrderSequence: "7436152",
         theme: "Movie installment<br>within its franchise",
@@ -60,60 +51,9 @@ export const puzzles = [
         post_solve: ["James Bond 1", "Alien 2", "Die Hard 3", "Shrek 4", "M:I 5", "Rocky 6", "Star Wars 7"],
         revAllowed: true
 
-    },
+    },    
     {
-        id: 7,
-        solution: ["SCRUNCHED", "BREAKTHROUGH", "STRAIGHTFORWARD", "ACKNOWLEDGEMENT", "ENTREPRENEURSHIP", "UNRECOGNIZABLE", "CONFIDENTIALITY"],
-        initialOrderSequence: "3624175",
-        theme: "Number of syllables",
-        hint: "What a mouthful!",
-        hint2: "Count sounds",
-        post_solve: ["SCRUNCHED: 1", "BREAKTHROUGH: 2", "STRAIGHTFORWARD: 3", "ACKNOWLEDGEMENT: 4", "ENTREPRENEURSHIP: 5", "UNRECOGNIZABLE: 6", "CONFIDENTIALITY: 7"],
-        revAllowed: true
-    },
-    {
-        id: 8,
-        solution: ["ACE", "CONDOR", "ALBATROSS", "EAGLE", "BIRDIE", "PAR", "BOGEY"],
-        initialOrderSequence: "2715346",
-        theme: "Golf scores by stroke count",
-        hint: "Course numbers",
-        hint2: "Golf scores",
-        post_solve: ["Ace: hole in 1", "Condor: 4 under par", "Albatross: 3 under par", "Eagle: 2 under par", "Birdie: 1 under par", "Par", "Bogey: one over par"],
-        revAllowed: true        
-    },
-    {
-        id: 9,
-        solution: ["EIGHTIES", "CENTS", "CHEERS", "SEASONS", "SENSES", "FLAGS", "SEAS"],
-        initialOrderSequence: "2614573",
-        theme: "Preceded by a number",
-        hint: "Figures out",
-        hint2: "Missing numbers",
-        post_solve: ["(ONE) EIGHTIES", "(TWO) CENTS", "(THREE) CHEERS", "(FOUR) SEASONS", "(FIVE) SENSES", "(SIX) FLAGS", "(SEVEN) SEAS"],
-        revAllowed: true
-    },
-    {
-        id: 10,
-        solution: ["DORITO", "CHESSBOARD", "FLAG OF NEPAL", "HONEYCOMB CELL", "STOP SIGN", "CANADIAN LOONIE", "GLOBE THEATRE"],
-        initialOrderSequence: "6527143",
-        theme: "Number of sides",
-        hint: "So edgy!",
-        hint2: "Shapes",
-        post_solve: ["DORITO: 3", "CHESSBOARD: 4", "FLAG OF NEPAL: 5", "HONEYCOMB CELL: 6", "STOP SIGN: 8", "LOONIE: 11", "GLOBE: 20 (not quite round!)"],
-        revAllowed: true
-    },
-    {
-        id: 11,
-        solution: [ "JANITOR", "MARBLE", "MAYONNAISE", "JULIENNED", "AUGMENTATION", "OCTOPUS", "DECISION"],
-        initialOrderSequence: "7413625",
-        theme: "Starts with a 31-day month abbr.",
-        hint: "Ahead of time",
-        hint2: "Cal train",
-        post_solve: [ "(Jan)itor", "(Mar)ble", "(May)onnaise", "(Jul)ienned", "(Aug)mentation", "(Oct)opus", "(Dec)ision"],
-        revAllowed: true
-    },
-    
-    {
-        id: 12,
+        id: 6,
         solution: ["HELLO", "BONJOUR", "GUTEN TAG", "BUONGIORNO", "TUDO BEM", "HOLA", "HEJ"],
         initialOrderSequence: "2637514",
         theme: "E.U. languages<br>alphabetically (exonyms)",
@@ -123,7 +63,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 13,
+        id: 7,
         solution: ["GHOST OF SLEEPY HOLLOW", "MARBLE BUST", "CATDOG", "CERBERUS", "MOUNT RUSHMORE", "HYDRA", "EASTER ISLAND"],
         initialOrderSequence: "3715462",
         theme: "Head count",
@@ -133,7 +73,7 @@ export const puzzles = [
         revAllowed: true        
     },
     {
-        id: 14,
+        id: 8,
         solution: ["TERA", "GIGA", "MEGA", "KILO", "MICRO", "NANO", "PICO"],
         initialOrderSequence: "5361724",
         theme: "Prefixes of magnitude",
@@ -143,7 +83,17 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 15,
+        id: 9,
+        solution: ["DORITO", "CHESSBOARD", "FLAG OF NEPAL", "UTAH", "STOP SIGN", "CANADIAN LOONIE", "GLOBE THEATRE"],
+        initialOrderSequence: "6527143",
+        theme: "Number of sides",
+        hint: "So edgy!",
+        hint2: "Shapes",
+        post_solve: ["DORITO: 3", "CHESSBOARD: 4", "FLAG OF NEPAL: 5", "UTAH: 6", "STOP SIGN: 8", "LOONIE: 11", "GLOBE: 20 (not quite round!)"],
+        revAllowed: true
+    },
+    {
+        id: 10,
         solution: ["BIRTHDAY", "BLUE MOON", "WORLD CUP", "US CENSUS", "CICADA EMERGENCE", "ROYAL JUBILEE", "HALLEY'S COMET FLYBY"],
         initialOrderSequence: "2735164",
         theme: "Frequencies:<br>happens every...",
@@ -153,7 +103,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 16,
+        id: 11,
         solution: ["SUMO", "SOCCER", "HOCKEY", "AMERICAN FOOTBALL", "BASEBALL", "BOWLING", "GOLF"],
         initialOrderSequence: "7135426",
         theme: "Number of subdivisions in a game",
@@ -163,7 +113,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 17,
+        id: 12,
         solution: ["DODO", "PREREQUISITE", "PANTOMIMING", "DO YOURSELF A FAVOR", "MISO SOUP", "MALALA", "PETITION"],
         initialOrderSequence: "3461572",
         theme: "Hidden doubled musical scale",
@@ -173,7 +123,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 18,
+        id: 13,
         solution: ["ERHU", "UKELELE", "GUITAR", "MANDOLIN", "SITAR", "CONCERT HARP", "GRAND PIANO"],
         initialOrderSequence: "5621473",
         theme: "Instrument string count",
@@ -183,7 +133,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 19,
+        id: 14,
         solution: ["HAT TRICK", "DOZEN", "BAKER'S DOZEN", "SCORE", "CENTURY", "GROSS", "GRAND"],
         initialOrderSequence: "3516472",
         theme: "Non-numerical<br>number words",
@@ -193,7 +143,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 20,
+        id: 15,
         solution: ["FEET", "BRAIN LOBES", "FINGERS", "RIBS", "TEETH", "VERTEBRAE", "CHROMOSOMES"],
         initialOrderSequence: "4517362",
         theme: "Average amounts in the human body",
@@ -203,7 +153,7 @@ export const puzzles = [
         revAllowed: true       
     },
     {
-        id: 21,
+        id: 16,
         solution: ["8", "4", "9", "1", "6", "10", "0"],
         initialOrderSequence: "7425136",
         theme: "Numbers, alphabetically",
@@ -213,7 +163,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 22,
+        id: 17,
         solution: ["WORD", "GAME", "ANIMAL", "HOUSE", "PLANT", "FOOD", "CHAIN"],
         initialOrderSequence: "5374261",
         theme: "Word chain from 'Word' to 'Chain'",
@@ -223,7 +173,7 @@ export const puzzles = [
         revAllowed: false
     },
     {
-        id: 23,
+        id: 18,
         solution: ["MEXICO", "GUATEMALA", "HONDURAS", "NICARAGUA", "COSTA RICA", "PANAMA", "COLOMBIA"],
         initialOrderSequence: "4721653",
         theme: "North to South America",
@@ -233,7 +183,7 @@ export const puzzles = [
         revAllowed: false
     },
     {
-        id: 24,
+        id: 19,
         solution: ["BAGEL", "NOSE", "BOWLING BALL", "POOL TABLE", "WIFFLE BALL", "CROC SHOE", "SPONGE"],
         initialOrderSequence: "4726315",
         theme: "Holes/pockets/cavities",
@@ -243,7 +193,7 @@ export const puzzles = [
         revAllowed: true        
     },
     {
-        id: 25,
+        id: 20,
         solution: ["STONE", "BRONZE", "IRON", "MIDDLE", "MACHINE", "ATOMIC", "INFORMATION"],
         initialOrderSequence: "5241736",
         theme: "Chronological ages by beginning",
@@ -253,17 +203,17 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 26,
+        id: 21,
         solution: ["EVERGREEN NEEDLE", "SLEEVELESS TEE", "RENDER SPEECHLESS", "BEST KEPT SECRET", "CRESCENT WRENCH", "STRESS TEST", "STRENGTHS"],
         initialOrderSequence: "2761534",
-        theme: "Only-E words by word count",
-        hint: "County census",
+        theme: "Only-E words by E count",
+        hint: "Counties",
         hint2: "Check the vowels",
         post_solve: ["Evergreen needle: 7", "Sleeveless tee: 6", "Render speechless: 5", "Best kept secret: 4", "Crescent wrench: 3", "Stress test: 2", "Strengths: 1"],
         revAllowed: true
     },
     {
-        id: 27,
+        id: 22,
         solution: ["NO HEAVEN", "YOU TRY", "BELOW US", "ONLY SKY", "THE PEOPLE", "FOR TODAY", "OOOOOOH"],
         initialOrderSequence: "2657413",
         theme: "Line-ending lyrics of Imagine",
@@ -273,7 +223,7 @@ export const puzzles = [
         revAllowed: false
     },
     {
-        id: 28,
+        id: 23,
         solution: ["SNICKERS", "TWIX", "HOSTESS HOHOS", "KITKAT", "STARBURSTS", "MENTOS", "SKITTLES"],
         initialOrderSequence: "4261735",
         theme: "Snack food items per package",
@@ -283,7 +233,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 29,
+        id: 24,
         solution: ["Players per team roster", "Bat length in inches", "Outs per standard game", "Feet between bases", "Avg game length in minutes", "Games per season per team", "Avg. stadium seating capacity"],
         initialOrderSequence: "6274135",
         theme: "MLB stat counts",
@@ -293,7 +243,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 30,
+        id: 25,
         solution: ["BELL", "POBLANO", "JALAPEÑO", "SERRANO", "CAYENNE", "HABANERO", "GHOST"],
         initialOrderSequence: "2561473",
         theme: "Peppers by Scoville heat level",
@@ -303,7 +253,7 @@ export const puzzles = [
         revAllowed: true        
     },
     {
-        id: 31,
+        id: 26,
         solution: ["RINGLING BROS. CIRCUS", "AUDI LOGO", "OLYMPIC FLAG", "ARIANA GRANDE SONG", "DANTE'S INFERNO", "ARCHERY TARGET", "URANUS"],
         initialOrderSequence: "6451732",
         theme: "Rings / Circles",
@@ -313,7 +263,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 32,
+        id: 27,
         solution: ["LA PAZ BOLIVIA", "NAIROBI KENYA", "KATHMANDU NEPAL", "CANBERRA AUSTRALIA", "NEW DELHI INDIA", "OTTAWA CANADA", "AMSTERDAM THE NETHERLANDS"],
         initialOrderSequence: "3475162",
         theme: "Natl. capitals by elevation (ft)",
@@ -323,7 +273,7 @@ export const puzzles = [
         revAllowed: false
     },
     {
-        id: 33,
+        id: 28,
         solution: ["MESSENGER GOD", "GOD OF LOVE", "GOD OF WAR", "KING OF THE GODS", "GOD OF THE HARVEST", "GOD OF THE SEA", "GOD OF THE HEAVENS"],
         initialOrderSequence: "5231764",
         theme: "Planets by namesake deity",
@@ -333,7 +283,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 34,
+        id: 29,
         solution: ["NORMAL CONVERSATION", "HAIRDRYER", "FIRETRUCK SIREN", "SEATTLE SEAHAWKS CROWD RECORD", "JET ENGINE", "KRAKATOA ERUPTION", "SPERM WHALE CLICK"],
         initialOrderSequence: "2734156",
         theme: "Sounds by decibel level",
@@ -343,7 +293,7 @@ export const puzzles = [
         revAllowed: true        
     },
     {
-        id: 35,
+        id: 30,
         solution: ["10-MINUTE SHOWER", "OLYMPIC SWIMMING POOL", "NIAGARA FALLS PER SECOND", "GEORGIA AQUARIUM", "CENTRAL PARK RESERVOIR", "HURRICANE AVG. DAILY RAINFALL", "LAKE TAHOE"],
         initialOrderSequence: "5176342",
         theme: "Water volumes in gallons",
@@ -353,7 +303,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 36,
+        id: 31,
         solution: ["TIC-TAC-TOE", "CHESS", "SUDOKU", "STRATEGO", "SCRABBLE", "GO", "NEW YORK TIMES SUNDAY CROSSWORD"],
         initialOrderSequence: "7513264",
         theme: "Square game boards by size",
