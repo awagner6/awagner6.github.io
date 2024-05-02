@@ -38,7 +38,7 @@ export const puzzles = [
         hint: "Taste the rainbow",
         hint2: "ROY G BIV order",
         post_solve: ["Marinara sauce: Red", "Kumquat: Orange", "Polenta: Yellow", "Brussels sprouts: Green", "Gorgonzola veins: Blue", "Forbidden rice: Indigo", "Ube ice cream: Violet"],
-        revAllowed: false
+        revAllowed: true
     },
     {
         id: 5,
