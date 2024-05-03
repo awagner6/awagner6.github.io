@@ -322,5 +322,5 @@ export const puzzles = [
         post_solve: ["James Bond 1", "Alien 2", "Die Hard 3", "Shrek 4", "M:I 5", "Rocky 6", "Star Wars 7"],
         revAllowed: true
 
-    },    
+    },
 ];
