@@ -37,43 +37,31 @@ export const puzzles = [
         theme: "Money in order of president",
         hint: "Face forward",
         hint2: "Presidential procession",
-        post_solve: ["$1: Washington", "5¢: Jefferson", "$20: Jackson", "$5: Lincoln", "$50: Grant", "10¢: FDR", "50¢: JFK"],
+        post_solve: ["$1: Washington (1st)", "5¢: Jefferson (3rd)", "$20: Jackson (7th)", "$5: Lincoln (16th)", "$50: Grant (18th)", "10¢: FDR (32nd)", "50¢: JFK (35th)"],
         revAllowed: true
     },
-
     {
         id: 5,
-        solution: [ "DR. NO", "ALIENS", "DIE HARD WITH A VENGEANCE", "SHREK FOREVER AFTER", "MISSION: IMPOSSIBLE - ROGUE NATION", "ROCKY BALBOA", "STAR WARS: THE FORCE AWAKENS"],
-        initialOrderSequence: "7436152",
-        theme: "Movie installment<br>within its franchise",
-        hint: "Installments",
-        hint2: "Franchise additions",
-        post_solve: ["James Bond 1", "Alien 2", "Die Hard 3", "Shrek 4", "M:I 5", "Rocky 6", "Star Wars 7"],
-        revAllowed: true
-
-    },    
-    {
-        id: 6,
-        solution: ["HELLO", "BONJOUR", "GUTEN TAG", "BUONGIORNO", "TUDO BEM", "HOLA", "HEJ"],
+        solution: ["HELLO", "BONJOUR", "GUTEN TAG", "TUDO BEM", "HOLA", "JAMBO", "XIN CHÀO"],
         initialOrderSequence: "2637514",
-        theme: "E.U. languages<br>alphabetically (exonyms)",
+        theme: "Languages alphabetically (exonyms)",
         hint: "Linguistic ABCs",
         hint2: "Languages A-to-Z",
-        post_solve: ["Hello: English", "Bonjour: French", "Guten tag: German", "Buongiorno: Italian", "Tudo bem: Portuguese", "Hola: Spanish", "Hej: Swedish"],
+        post_solve: ["Hello: English", "Bonjour: French", "Guten tag: German", "Tudo bem: Portuguese", "Hola: Spanish", "Jambo: Swahili", "Xin chào: Vietnamese"],
         revAllowed: true
     },
     {
-        id: 7,
-        solution: ["GHOST OF SLEEPY HOLLOW", "MARBLE BUST", "CATDOG", "CERBERUS", "MOUNT RUSHMORE", "HYDRA", "EASTER ISLAND"],
+        id: 6,
+        solution: ["GHOST OF SLEEPY HOLLOW", "STATUE OF LIBERTY", "CATDOG", "CERBERUS", "MOUNT RUSHMORE", "HYDRA", "EASTER ISLAND"],
         initialOrderSequence: "3715462",
         theme: "Head count",
         hint: "Bean counter",
         hint2: "Head count",
-        post_solve: ["Headless Horseman: 0", "Marble bust: 1", "CatDog: 2", "Cerberus: 3", "Mount Rushmore: 4", "Hyrdra: 9", "Easter Island: 1,043"],
+        post_solve: ["Headless Horseman: 0", "Statue of Liberty: 1", "CatDog: 2", "Cerberus: 3", "Mount Rushmore: 4", "Hyrdra: 9", "Easter Island: 1,043"],
         revAllowed: true        
     },
     {
-        id: 8,
+        id: 7,
         solution: ["TERA", "GIGA", "MEGA", "KILO", "MICRO", "NANO", "PICO"],
         initialOrderSequence: "5361724",
         theme: "Prefixes of magnitude",
@@ -83,18 +71,18 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 9,
+        id: 8,
         solution: ["DORITO", "CHESSBOARD", "FLAG OF NEPAL", "UTAH", "STOP SIGN", "CANADIAN LOONIE", "GLOBE THEATRE"],
         initialOrderSequence: "6527143",
         theme: "Number of sides",
         hint: "So edgy!",
         hint2: "Shapes",
-        post_solve: ["DORITO: 3", "CHESSBOARD: 4", "FLAG OF NEPAL: 5", "UTAH: 6", "STOP SIGN: 8", "LOONIE: 11", "GLOBE: 20 (not quite round!)"],
+        post_solve: ["Dorito: 3", "Chessboard: 4", "Flag of Nepal: 5", "Utah: 6", "Stop sign: 8", "Loonie: 11", "Globe: 20 (not quite round!)"],
         revAllowed: true
     },
     {
-        id: 10,
-        solution: ["BIRTHDAY", "BLUE MOON", "WORLD CUP", "US CENSUS", "CICADA EMERGENCE", "ROYAL JUBILEE", "HALLEY'S COMET FLYBY"],
+        id: 9,
+        solution: ["BIRTHDAY", "BLUE MOON", "WORLD CUP", "US CENSUS", "CICADA EMERGENCE CYCLE", "ROYAL JUBILEE", "HALLEY'S COMET FLYBY"],
         initialOrderSequence: "2735164",
         theme: "Frequencies:<br>happens every...",
         hint: "Often times",
@@ -103,13 +91,23 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 11,
+        id: 10,
         solution: ["SUMO", "SOCCER", "HOCKEY", "AMERICAN FOOTBALL", "BASEBALL", "BOWLING", "GOLF"],
         initialOrderSequence: "7135426",
         theme: "Number of subdivisions in a game",
         hint: "Game breaks",
         hint2: "Quarters, periods, innings...",
         post_solve: ["Sumo: 1 bout", "Soccer: 2 halves", "Hockey: 3 periods", "American football: 4 quarters", "Baseball: 9 innings", "Bowling: 10 frames", "Golf: 18 holes"],
+        revAllowed: true
+    },
+    {
+        id: 11,
+        solution: ["TEXAS COUNTRY WESTERN DANCE", "ALCOHOLICS ANONYMOUS", "HITCHCOCK MOVIE TITLE", "ROCKY MONTAGE STAIRS", "LEGO EIFFEL TOWER INSTRUCTION BOOK", "EIFFEL TOWER", "DAILY WALKING GOAL"],
+        initialOrderSequence: "3761542",
+        theme: "Step counts",
+        hint: "Step it up",
+        hint2: "Counting paces",
+        post_solve: ["Texas: two-step", "AA: twelve steps", "Hitchcock: 39 Steps", "Rocky montage: 72 steps", "LEGO Eiffel Tower instructions: 692 steps", "Eiffel Tower: 1665 steps", "Daily walking goal: 10000 steps"],
         revAllowed: true
     },
     {
@@ -167,7 +165,7 @@ export const puzzles = [
         solution: ["WORD", "GAME", "ANIMAL", "HOUSE", "PLANT", "FOOD", "CHAIN"],
         initialOrderSequence: "5374261",
         theme: "Word chain from 'Word' to 'Chain'",
-        hint: "Before and after",
+        hint: "Word chain",
         hint2: "2-word pairs",
         post_solve: ["Word game", "Game animal", "Animal house", "House plant", "Plant food", "Food chain"],
         revAllowed: false
@@ -282,6 +280,7 @@ export const puzzles = [
         post_solve: ["Messenger: Mercury", "Love: Venus", "War: Mars", "King: Jupiter", "Harvest: Saturn", "Sea: Neptune", "Heavens: Uranus"],
         revAllowed: true
     },
+    
     {
         id: 29,
         solution: ["NORMAL CONVERSATION", "HAIRDRYER", "FIRETRUCK SIREN", "SEATTLE SEAHAWKS CROWD RECORD", "JET ENGINE", "KRAKATOA ERUPTION", "SPERM WHALE CLICK"],
@@ -312,16 +311,16 @@ export const puzzles = [
         post_solve: ["Tic-Tac-Toe: 3x3", "Chess: 8x8", "Sudoku: 9x9", "Stratego: 10x10", "Scrabble: 15x15", "Go: 19x19", "NY Times Sunday Crossword: ~21x21"],
         revAllowed: true
     },
+    
     {
         id: 32,
-        solution: ["TEXAS COUNTRY DANCE", "ALCOHOLICS ANONYMOUS", "HITCHCOCK MOVIE TITLE", "ROCKY MONTAGE STAIRS", "LEGO EIFFEL TOWER INSTRUCTION BOOK", "EIFFEL TOWER", "DAILY WALKING GOAL"],
-        initialOrderSequence: "3761542",
-        theme: "Step counts",
-        hint: "Step it up",
-        hint2: "Counting paces",
-        post_solve: ["Texas: two-step", "AA: twelve steps", "Hitchcock: 39 Steps", "Rocky montage: 72 steps", "LEGO Eiffel Tower instructions: 692 steps", "Eiffel Tower: 1665 steps", "Daily walking goal: 10000 steps"],
+        solution: [ "DR. NO", "ALIENS", "DIE HARD WITH A VENGEANCE", "SHREK FOREVER AFTER", "MISSION: IMPOSSIBLE - ROGUE NATION", "ROCKY BALBOA", "STAR WARS: THE FORCE AWAKENS"],
+        initialOrderSequence: "7436152",
+        theme: "Movie installment<br>within its franchise",
+        hint: "Installments",
+        hint2: "Franchise additions",
+        post_solve: ["James Bond 1", "Alien 2", "Die Hard 3", "Shrek 4", "M:I 5", "Rocky 6", "Star Wars 7"],
         revAllowed: true
-    }
-    
-    
+
+    },    
 ];
