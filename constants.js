@@ -323,4 +323,17 @@ export const puzzles = [
         revAllowed: true
 
     },
+
+    {
+        id: 33,
+        solution: [ "FILM CRITIC SCOTT", "STEAK SAUCE", "LEATHER FLIGHT JACKET", "EU LETTER-SIZED PAPER", "UMASS SPORTS CONFERENCE", "\"MIDSOMMAR\" FILM STUDIO", "LIL WAYNE SONG" ],
+        initialOrderSequence: "2461375",
+        theme: "A + number",
+        hint: "Accounting",
+        hint2: "A + number",
+        post_solve: ["Film critic Scott: A.O.", "Steak sauce: A.1.", "Leather flight jacket: A-2", "EU letter-sized paper: A4", "Sports conference: A 10", "Film studio: A24", "Lil Wayne song: A milli (million)"],
+        revAllowed: true
+    },
+    
+
 ];
