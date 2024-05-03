@@ -33,7 +33,7 @@ export const puzzles = [
     {
         id: 4,
         solution: ["ONE DOLLAR BILL", "NICKEL", "TWENTY DOLLAR BILL", "PENNY", "FIFTY DOLLAR BILL", "DIME", "HALF DOLLAR"],
-        initialOrderSequence: "4375612",
+        initialOrderSequence: "3475612",
         theme: "Money in order of president",
         hint: "Face forward",
         hint2: "Presidential procession",
