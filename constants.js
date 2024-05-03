@@ -254,12 +254,12 @@ export const puzzles = [
     },
     {
         id: 26,
-        solution: ["RINGLING BROS. CIRCUS", "AUDI LOGO", "OLYMPIC FLAG", "ARIANA GRANDE SONG", "DANTE'S INFERNO", "ARCHERY TARGET", "URANUS"],
+        solution: ["FRODO BAGGINS", "RINGLING BROS. CIRCUS", "OLYMPIC FLAG", "ARIANA GRANDE SONG", "DANTE'S INFERNO", "OLYMPIC ARCHERY TARGET", "URANUS"],
         initialOrderSequence: "6451732",
         theme: "Rings / Circles",
         hint: "Ring 'em up",
         hint2: "Ring counts",
-        post_solve: ["Ringling bros.: 3", "Audi logo: 4", "Olympic flag: 5", "Ariana Grande song: 7", "Dante's Inferno: 9", "Archery target: 11", "Uranus: 13 (known)"],
+        post_solve: ["Frodo Baggins: 1", "Ringling bros.: 3", "Olympic flag: 5", "Ariana Grande song: 7", "Dante's Inferno: 9", "Olympic archery target: 10", "Uranus: 13 (known)"],
         revAllowed: true
     },
     {
@@ -310,8 +310,18 @@ export const puzzles = [
         hint: "Squaring off",
         hint2: "Board dimensions",
         post_solve: ["Tic-Tac-Toe: 3x3", "Chess: 8x8", "Sudoku: 9x9", "Stratego: 10x10", "Scrabble: 15x15", "Go: 19x19", "NY Times Sunday Crossword: ~21x21"],
-        revAllowed: true        
+        revAllowed: true
     },
+    {
+        id: 32,
+        solution: ["TEXAS COUNTRY DANCE", "ALCOHOLICS ANONYMOUS", "HITCHCOCK MOVIE TITLE", "ROCKY MONTAGE STAIRS", "LEGO EIFFEL TOWER INSTRUCTION BOOK", "EIFFEL TOWER", "DAILY WALKING GOAL"],
+        initialOrderSequence: "3761542",
+        theme: "Step counts",
+        hint: "Step it up",
+        hint2: "Counting paces",
+        post_solve: ["Texas: two-step", "AA: twelve steps", "Hitchcock: 39 Steps", "Rocky montage: 72 steps", "LEGO Eiffel Tower instructions: 692 steps", "Eiffel Tower: 1665 steps", "Daily walking goal: 10000 steps"],
+        revAllowed: true
+    }
     
     
 ];
