@@ -232,7 +232,7 @@ export const puzzles = [
     },
     {
         id: 24,
-        solution: ["Players per team roster", "Bat length in inches", "Outs per standard game", "Feet between bases", "Avg game length in minutes", "Games per season per team", "Avg. stadium seating capacity"],
+        solution: ["Players per team roster", "Bat length in inches", "Outs per standard game", "Feet between bases", "Avg. game length in minutes", "Games per season per team", "Avg. stadium seating capacity"],
         initialOrderSequence: "6274135",
         theme: "MLB stat counts",
         hint: "MLB ballpark estimates",
