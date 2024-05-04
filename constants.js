@@ -52,26 +52,6 @@ export const puzzles = [
     },
     {
         id: 6,
-        solution: ["GHOST OF SLEEPY HOLLOW", "STATUE OF LIBERTY", "CATDOG", "CERBERUS", "MOUNT RUSHMORE", "HYDRA", "EASTER ISLAND"],
-        initialOrderSequence: "3715462",
-        theme: "Head count",
-        hint: "Bean counter",
-        hint2: "Head count",
-        post_solve: ["Headless Horseman: 0", "Statue of Liberty: 1", "CatDog: 2", "Cerberus: 3", "Mount Rushmore: 4", "Hyrdra: 9", "Easter Island: 1,043"],
-        revAllowed: true        
-    },
-    {
-        id: 7,
-        solution: ["TERA", "GIGA", "MEGA", "KILO", "MICRO", "NANO", "PICO"],
-        initialOrderSequence: "5361724",
-        theme: "Prefixes of magnitude",
-        hint: "SIzes",
-        hint2: "Prefixes of magnitude",
-        post_solve: ["Tera: trillion", "Giga: billion", "Mega: million", "Kilo: thousand", "Micro: millionth", "Nano: billionth", "Pico: trillionth"],
-        revAllowed: true
-    },
-    {
-        id: 8,
         solution: ["BIRTHDAY", "BLUE MOON", "WORLD CUP", "US CENSUS", "CICADA EMERGENCE CYCLE", "ROYAL JUBILEE", "HALLEY'S COMET FLYBY"],
         initialOrderSequence: "2735164",
         theme: "Frequencies:<br>happens every...",
@@ -81,7 +61,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 9,
+        id: 7,
         solution: ["HELLO", "BONJOUR", "GUTEN TAG", "TUDO BEM", "HOLA", "JAMBO", "XIN CHÀO"],
         initialOrderSequence: "2637514",
         theme: "Languages alphabetically (exonyms)",
@@ -91,13 +71,33 @@ export const puzzles = [
         revAllowed: false
     },
     {
-        id: 10,
+        id: 8,
         solution: ["SUMO", "SOCCER", "HOCKEY", "AMERICAN FOOTBALL", "BASEBALL", "BOWLING", "GOLF"],
         initialOrderSequence: "7135426",
         theme: "Number of subdivisions in a game",
         hint: "Game breaks",
         hint2: "Quarters, periods, innings...",
         post_solve: ["Sumo: 1 bout", "Soccer: 2 halves", "Hockey: 3 periods", "American football: 4 quarters", "Baseball: 9 innings", "Bowling: 10 frames", "Golf: 18 holes"],
+        revAllowed: true
+    },
+        {
+        id: 9,
+        solution: ["GHOST OF SLEEPY HOLLOW", "STATUE OF LIBERTY", "CATDOG", "CERBERUS", "MOUNT RUSHMORE", "HYDRA", "EASTER ISLAND"],
+        initialOrderSequence: "3715462",
+        theme: "Head count",
+        hint: "Bean counter",
+        hint2: "Head count",
+        post_solve: ["Headless Horseman: 0", "Statue of Liberty: 1", "CatDog: 2", "Cerberus: 3", "Mount Rushmore: 4", "Hyrdra: 9", "Easter Island: 1,043"],
+        revAllowed: true        
+    },
+    {
+        id: 10,
+        solution: ["TERA", "GIGA", "MEGA", "KILO", "MICRO", "NANO", "PICO"],
+        initialOrderSequence: "5361724",
+        theme: "Prefixes of magnitude",
+        hint: "SIzes",
+        hint2: "Prefixes of magnitude",
+        post_solve: ["Tera: trillion", "Giga: billion", "Mega: million", "Kilo: thousand", "Micro: millionth", "Nano: billionth", "Pico: trillionth"],
         revAllowed: true
     },
     {
