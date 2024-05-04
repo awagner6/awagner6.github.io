@@ -262,12 +262,12 @@ export const puzzles = [
     },
     {
         id: 27,
-        solution: ["LA PAZ BOLIVIA", "NAIROBI KENYA", "KATHMANDU NEPAL", "CANBERRA AUSTRALIA", "NEW DELHI INDIA", "OTTAWA CANADA", "AMSTERDAM THE NETHERLANDS"],
+        solution: ["MEXICO CITY MEXICO", "DENVER COLORADO", "KATHMANDU NEPAL", "NEW DELHI INDIA", "AMSTERDAM THE NETHERLANDS", "DEATH VALLEY", "DEAD SEA SHORES"],
         initialOrderSequence: "3475162",
         theme: "Natl. capitals by elevation (ft)",
         hint: "Highs and lows",
         hint2: "Capital elevations",
-        post_solve: ["La Paz: 11,942", "Nairobi: 5,889", "Kathmandu: 4,593", "Canberra: 1,985", "New Delhi: 689", "Ottawa: 243", "Amsterdam: -7"],
+        post_solve: ["Mexico City: 7,349", "Denver: 5,280", "Kathmandu: 4,593", "New Delhi: 689", "Amsterdam: -7", "Death Valley: -282", "Dead Sea shores: -1,412"],
         revAllowed: false
     },
     {
@@ -335,12 +335,12 @@ export const puzzles = [
     },
     {
         id: 34,
-        solution: ["NFL FOOTBALL FIELD", "WHITE HOUSE GROUNDS", "WINNIE THE POOH'S FOREST", "VATICAN CITY", "CENTRAL PARK", "RHODE ISLAND", "THE MOON"],
+        solution: ["NFL FOOTBALL FIELD", "WHITE HOUSE GROUNDS", "WINNIE THE POOH'S FOREST", "VATICAN CITY", "DISNEY LAND (CALIFORNIA)", "CENTRAL PARK", "DISNEY WORLD (FLORIDA)"],
         initialOrderSequence: "5274136",
         theme: "Acres of land",
         hint: "Acres and acres",
         hint2: "Total area",
-        post_solve: ["NFL field: 1.3 acres", "White House grounds: 18 acres", "Winnie the Pooh's forest: 100 acres", "Vatican City: 120 acres", "Central Park: 842 acres", "Yosemite: 750K acres", "The Moon: 9 billion acres"],
+        post_solve: ["NFL field: 1.3 acres", "White House grounds: 18 acres", "Winnie the Pooh's forest: 100 acres", "Vatican City: 120 acres", "Disney Land: 500 acres", "Central Park: 842 acres", "Disney World: 25 thousand acres"],
         revAllowed: true
     }
     
