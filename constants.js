@@ -323,7 +323,6 @@ export const puzzles = [
         revAllowed: true
 
     },
-
     {
         id: 33,
         solution: [ "FILM CRITIC SCOTT", "STEAK SAUCE", "LEATHER FLIGHT JACKET", "EU LETTER-SIZED PAPER", "UMASS SPORTS CONFERENCE", "\"MIDSOMMAR\" FILM STUDIO", "LIL WAYNE SONG" ],
@@ -334,6 +333,16 @@ export const puzzles = [
         post_solve: ["Film critic Scott: A.O.", "Steak sauce: A.1.", "Leather flight jacket: A-2", "EU letter-sized paper: A4", "Sports conference: A 10", "Film studio: A24", "Lil Wayne song: A milli (million)"],
         revAllowed: true
     },
+    {
+        id: 34,
+        solution: ["NFL FOOTBALL FIELD", "WHITE HOUSE GROUNDS", "WINNIE THE POOH'S FOREST", "VATICAN CITY", "CENTRAL PARK", "RHODE ISLAND", "THE MOON"],
+        initialOrderSequence: "5274136",
+        theme: "Acres of land",
+        hint: "Acres and acres",
+        hint2: "Total area",
+        post_solve: ["NFL field: 1.3 acres", "White House grounds: 18 acres", "Winnie the Pooh's forest: 100 acres", "Vatican City: 120 acres", "Central Park: 842 acres", "Yosemite: 750K acres", "The Moon: 9 billion acres"],
+        revAllowed: true
+    }
     
 
 ];
