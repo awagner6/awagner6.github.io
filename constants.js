@@ -42,12 +42,12 @@ export const puzzles = [
     },
     {
         id: 5,
-        solution: ["HELLO", "BONJOUR", "GUTEN TAG", "TUDO BEM", "HOLA", "JAMBO", "XIN CHÀO"],
-        initialOrderSequence: "2637514",
-        theme: "Languages alphabetically (exonyms)",
-        hint: "Linguistic ABCs",
-        hint2: "Languages A-to-Z",
-        post_solve: ["Hello: English", "Bonjour: French", "Guten tag: German", "Tudo bem: Portuguese", "Hola: Spanish", "Jambo: Swahili", "Xin chào: Vietnamese"],
+        solution: ["DORITO", "CHESSBOARD", "FLAG OF NEPAL", "UTAH", "STOP SIGN", "CANADIAN LOONIE", "GLOBE THEATRE"],
+        initialOrderSequence: "6527143",
+        theme: "Number of sides",
+        hint: "So edgy!",
+        hint2: "Shapes",
+        post_solve: ["Dorito: 3", "Chessboard: 4", "Flag of Nepal: 5", "Utah: 6", "Stop sign: 8", "Loonie: 11", "Globe: 20 (not quite round!)"],
         revAllowed: true
     },
     {
@@ -72,16 +72,6 @@ export const puzzles = [
     },
     {
         id: 8,
-        solution: ["DORITO", "CHESSBOARD", "FLAG OF NEPAL", "UTAH", "STOP SIGN", "CANADIAN LOONIE", "GLOBE THEATRE"],
-        initialOrderSequence: "6527143",
-        theme: "Number of sides",
-        hint: "So edgy!",
-        hint2: "Shapes",
-        post_solve: ["Dorito: 3", "Chessboard: 4", "Flag of Nepal: 5", "Utah: 6", "Stop sign: 8", "Loonie: 11", "Globe: 20 (not quite round!)"],
-        revAllowed: true
-    },
-    {
-        id: 9,
         solution: ["BIRTHDAY", "BLUE MOON", "WORLD CUP", "US CENSUS", "CICADA EMERGENCE CYCLE", "ROYAL JUBILEE", "HALLEY'S COMET FLYBY"],
         initialOrderSequence: "2735164",
         theme: "Frequencies:<br>happens every...",
@@ -89,6 +79,16 @@ export const puzzles = [
         hint2: "Frequencies",
         post_solve: ["Birthday: Every year", "Blue moon: 2-3 years", "World cup: 4 years", "US Census: 10 years", "Cicada emergence: 13 or 17 years", "Royal Jubilee: 25 years", "Halley's Comet flyby: 75-79 years"],
         revAllowed: true
+    },
+    {
+        id: 5,
+        solution: ["HELLO", "BONJOUR", "GUTEN TAG", "TUDO BEM", "HOLA", "JAMBO", "XIN CHÀO"],
+        initialOrderSequence: "2637514",
+        theme: "Languages alphabetically (exonyms)",
+        hint: "Linguistic ABCs",
+        hint2: "Languages A-to-Z",
+        post_solve: ["Hello: English", "Bonjour: French", "Guten tag: German", "Tudo bem: Portuguese", "Hola: Spanish", "Jambo: Swahili", "Xin chào: Vietnamese"],
+        revAllowed: false
     },
     {
         id: 10,
