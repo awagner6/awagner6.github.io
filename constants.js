@@ -81,7 +81,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 5,
+        id: 9,
         solution: ["HELLO", "BONJOUR", "GUTEN TAG", "TUDO BEM", "HOLA", "JAMBO", "XIN CHÀO"],
         initialOrderSequence: "2637514",
         theme: "Languages alphabetically (exonyms)",
