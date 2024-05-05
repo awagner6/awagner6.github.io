@@ -22,6 +22,8 @@ export function getCurrentPuzzleIndex() {
     const daysSinceStart = Math.floor((now - startDate) / (1000 * 60 * 60 * 24));
 
     // Use modulo to cycle through the puzzles if there are more days than puzzles
+    console.log(now);
+    console.log(daysSinceStart % puzzles.length);
     return daysSinceStart % puzzles.length;
 }
 
