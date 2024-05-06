@@ -333,9 +333,18 @@ export const puzzles = [
         post_solve: ["Fez: head", "Grillz: teeth", "Cravat: neck", "Camisole: torso", "Cummerbund: waist", "Petticoat: legs", "Clogs: feet"],
         revAllowed: false
     },
-    
     {
         id: 34,
+        solution: ["MARBLE", "NBA BASKETBALL", "WORLD RECORD RUBBER BAND BALL", "TIMES SQUARE BALL DROP BALL", "EPCOT'S SPACESHIP EARTH", "VEGAS SPHERE"],
+        theme: "Balls/spheres by diameter",
+        hint: "Snowballing",
+        hint2: "Spheres by size",
+        post_solve: ["Marble: <1 inch", "NBA Basketball: 9.5 inches", "Record rubber band ball: 7 feet", "Times Square ball drop ball: 12 feet", "Spaceship Earth: 165 feet", "Vegas Sphere: 516 feet"],
+        revAllowed: true
+    },
+    
+    {
+        id: 35,
         solution: [ "FILM CRITIC SCOTT", "STEAK SAUCE", "LEATHER FLIGHT JACKET", "EU LETTER-SIZED PAPER", "UMASS SPORTS CONFERENCE", "\"MIDSOMMAR\" FILM STUDIO", "LIL WAYNE SONG" ],
         initialOrderSequence: "2461375",
         theme: "A + number",
@@ -345,7 +354,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 35,
+        id: 36,
         solution: ["NFL FOOTBALL FIELD", "WHITE HOUSE GROUNDS", "WINNIE THE POOH'S FOREST", "VATICAN CITY", "DISNEY LAND (CALIFORNIA)", "CENTRAL PARK", "DISNEY WORLD (FLORIDA)"],
         initialOrderSequence: "5274136",
         theme: "Acres of land",
