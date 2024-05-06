@@ -325,6 +325,17 @@ export const puzzles = [
     },
     {
         id: 33,
+        solution: ["FEZ", "GRILLZ", "CRAVAT", "CAMISOLE", "CUMMERBUND", "PETTICOAT", "CLOGS"],
+        initialOrderSequence: "3712465",
+        theme: ["Clothing from head to toe"],
+        hint: "Dress down",
+        hint2: "Head to toe",
+        post_solve: ["Fez: head", "Grillz: teeth", "Cravat: neck", "Camisole: torso", "Cummerbund: waist", "Petticoat: legs", "Clogs: feet"],
+        revAllowed: false
+    },
+    
+    {
+        id: 34,
         solution: [ "FILM CRITIC SCOTT", "STEAK SAUCE", "LEATHER FLIGHT JACKET", "EU LETTER-SIZED PAPER", "UMASS SPORTS CONFERENCE", "\"MIDSOMMAR\" FILM STUDIO", "LIL WAYNE SONG" ],
         initialOrderSequence: "2461375",
         theme: "A + number",
@@ -334,7 +345,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 34,
+        id: 35,
         solution: ["NFL FOOTBALL FIELD", "WHITE HOUSE GROUNDS", "WINNIE THE POOH'S FOREST", "VATICAN CITY", "DISNEY LAND (CALIFORNIA)", "CENTRAL PARK", "DISNEY WORLD (FLORIDA)"],
         initialOrderSequence: "5274136",
         theme: "Acres of land",
@@ -342,7 +353,8 @@ export const puzzles = [
         hint2: "Total area",
         post_solve: ["NFL field: 1.3 acres", "White House grounds: 18 acres", "Winnie the Pooh's forest: 100 acres", "Vatican City: 120 acres", "Disney Land: 500 acres", "Central Park: 842 acres", "Disney World: 25 thousand acres"],
         revAllowed: true
-    }
+    },
+    
     
 
 ];
