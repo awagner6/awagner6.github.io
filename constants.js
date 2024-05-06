@@ -363,6 +363,16 @@ export const puzzles = [
         post_solve: ["NFL field: 1.3 acres", "White House grounds: 18 acres", "Winnie the Pooh's forest: 100 acres", "Vatican City: 120 acres", "Disney Land: 500 acres", "Central Park: 842 acres", "Disney World: 25 thousand acres"],
         revAllowed: true
     },
+    {
+        id: 37,
+        solution: ["JANITOR", "FEBREZE", "MARZIPAN", "APRICOT", "MAYANS", "JUNK", "JULIENNED"],
+        initialOrderSequence: "4523716",
+        theme: "Starts with a month abbr.",
+        hint: "Puzzle of the year",
+        hint2: "First three letters",
+        post_solve: ["JANitor", "FEBreze", "MARzipan", "APRicot", "MAYans", "JUNk", "JULienned"],
+        revAllowed: true
+    },
     
     
 
