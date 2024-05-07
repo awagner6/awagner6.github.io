@@ -382,6 +382,16 @@ export const puzzles = [
         hint2: "Word counts",
         post_solve: ["English Wikipedia: 4.5 billion", "King James Bible: 783 thousand", "Lord of the Rings Trilogy: 480 thousand", "Pride and Prejudice: 122 thousand", "I Have A Dream Speech: 1664", "American Pie lyrics: 868", "Star Wars crawl: 83"],
         revAllowed: true
+    },
+    {
+        id: 39,
+        solution: ["HALF COURT SHOT", "RUGBY TRY", "TOUCHDOWN", "SCRABBLE X TILE", "BOXING ROUND", "DARTS INNER BULLSEYE", "BOWLING TURKEY"],
+        initialOrderSequence: "6125374",
+        theme: "Points",
+        hint: "Points around",
+        hint2: "Point scores",
+        post_solve: ["Half court shot: 3", "Rugby try: 5", "Scrabble X tile: 8", "Boxing round: 10", "Darts inner bullseye: 50", "Bowling turkey: 60+"],
+        revAllowed: true
     }
     
     
