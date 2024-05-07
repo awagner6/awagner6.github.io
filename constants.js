@@ -373,6 +373,16 @@ export const puzzles = [
         post_solve: ["JANitor", "FEBreze", "MARzipan", "APRicot", "MAYans", "JUNk", "JULienned"],
         revAllowed: true
     },
+    {
+        id: 38,
+        solution: ["ENGLISH WIKIPEDIA", "KING JAMES BIBLE", "LORD OF THE RINGS TRILOGY", "PRIDE AND PREJUDICE", "I HAVE A DREAM SPEECH", "AMERICAN PIE LYRICS", "ORIGINAL STAR WARS OPENING CRAWL"],
+        initialOrderSequence: "5724163",
+        theme: "Word counts",
+        hint: "I have words",
+        hint2: "Word counts",
+        post_solve: ["English Wikipedia: 4.5 billion", "King James Bible: 783 thousand", "Lord of the Rings Trilogy: 480 thousand", "Pride and Prejudice: 122 thousand", "I Have A Dream Speech: 1664", "American Pie lyrics: 868", "Star Wars crawl: 83"],
+        revAllowed: true
+    }
     
     
 
