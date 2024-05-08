@@ -82,7 +82,7 @@ export const puzzles = [
     },
         {
         id: 9,
-        solution: ["GHOST OF SLEEPY HOLLOW", "STATUE OF LIBERTY", "CATDOG", "CERBERUS", "MOUNT RUSHMORE", "HYDRA", "EASTER ISLAND"],
+        solution: ["SLEEPY HOLLOW HORSEMAN", "STATUE OF LIBERTY", "CATDOG", "CERBERUS", "MOUNT RUSHMORE", "HYDRA", "EASTER ISLAND"],
         initialOrderSequence: "3715462",
         theme: "Head count",
         hint: "Bean counter",
