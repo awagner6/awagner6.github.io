@@ -413,7 +413,24 @@ export const puzzles = [
         post_solve: ["Adele: 1 person", "OutKast: 2 people", "Nirvana: 3 people", "The Beatles: 4 people", "The Spice Girls: 5 people", "Wu-Tang Clan: 9 people", "Tabernacle Choir: 360 people"],
         revAllowed: true
     },
-    
-    
-
+    {
+        id: 42,
+        solution: ["ANIMALIA", "CHORDATA", "MAMMALIA", "PRIMATES", "HOMINIDAE", "HOMO", "SAPIENS"],
+        initialOrderSequence: "4761325",
+        theme: "Human taxonomy",
+        hint: "Personal bio",
+        hint2: "Kingdom, phylum... genus, species",
+        post_solve: ["Kingdom: Animalia", "Phylum: Chordata", "Class: Mammalia", "Order: Primates", "Family: Hominidae", "Genus: Homo", "Species: Sapiens"],
+        revAllowed: true
+    },
+    {
+        id: 43,
+        solution: ["ROADSIDE ASSISTANCE", "CONSUMER WATCHDOG", "\"SO DELICIOUS!\"", "AWAY FROM WORK", "URL STARTER", "BOWLING TURKEY", "SNORING SOUND"],
+        initialOrderSequence: "5271346",
+        theme: "Triple letters",
+        hint: "In triplicate",
+        hint2: "Three letters in a row",
+        post_solve: ["Roadside assistance: AAA", "Consumer watchdog: BBB", "\"So delicious!\": MMM", "Away from work: OOO", "URL starter: WWW", "Bowling turkey: XXX", "Snoring sound: ZZZ"],
+        revAllowed: true
+    }
 ];
