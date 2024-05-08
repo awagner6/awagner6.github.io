@@ -392,7 +392,27 @@ export const puzzles = [
         hint2: "Point scores",
         post_solve: ["Half court shot: 3", "Rugby try: 5", "Scrabble X tile: 8", "Boxing round: 10", "Darts inner bullseye: 50", "Bowling turkey: 60+"],
         revAllowed: true
-    }
+    },
+    {
+        id: 40,
+        solution: ["JUNETEENTH", "TET", "KWANZAA", "HANUKKAH", "CHINESE NEW YEAR", "RAMADAN", "LENT"],
+        initialOrderSequence: "4715362",
+        theme: "Holidays by length",
+        hint: "So long!",
+        hint2: "Holiday lengths",
+        post_solve: ["Juneteenth: 1 day", "Tet: 3 days", "Kwanzaa: 7 days", "Hanukkah: 8 days/nights", "Chinese New Year: 15-16 days", "Ramadan: 29-30 days", "Lent: 40 days"],
+        revAllowed: true
+    },
+    {
+        id: 41,
+        solution: ["ADELE", "OUTKAST", "NIRVANA", "THE BEATLES", "THE SPICE GIRLS", "WU-TANG CLAN", "MORMON TABERNACLE CHOIR"],
+        initialOrderSequence: "3641275",
+        theme: "Bands/artists by group size",
+        hint: "Music groups",
+        hint2: "Number of people",
+        post_solve: ["Adele: 1 person", "OutKast: 2 people", "Nirvana: 3 people", "The Beatles: 4 people", "The Spice Girls: 5 people", "Wu-Tang Clan: 9 people", "Tabernacle Choir: 360 people"],
+        revAllowed: true
+    },
     
     
 
