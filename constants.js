@@ -452,5 +452,16 @@ export const puzzles = [
         hint2: "State nicknames north to south",
         post_solve: ["The Pine Tree State: Maine", "The Bay State: Massachusetts", "The Empire State: New York", "The Old Dominion State: Virginia", "The Peach State: Georgia", "The Sunshine State: Florida"],
         revAllowed: false 
+    },
+    {
+        id: 46,
+        solution: ["\"LONELY BOY\" BAND", "UBS LOGO", "STENO MACHINE", "WESTERN SHEET MUSIC", "TYPEWRITER", "PIANO", "FLORIDA"],
+        initialOrderSequence: "5276314",
+        theme: "Key counts",
+        hint: "Keyed up",
+        hint2: "Number of keys",
+        post_solve: ["Black Keys: 2 (members)", "UBS logo: 3", "Steno machine: 23", "Western sheet music: 30", "Typewriter: 44", "Piano: 88", "Florida: ~800"],
+        revAllowed: true
     }
+    
 ];
