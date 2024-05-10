@@ -432,5 +432,25 @@ export const puzzles = [
         hint2: "Three letters in a row",
         post_solve: ["Roadside assistance: AAA", "Consumer watchdog: BBB", "\"So delicious!\": MMM", "Away from work: OOO", "URL starter: WWW", "Bowling turkey: XXX", "Snoring sound: ZZZ"],
         revAllowed: true
+    },
+    {
+        id: 44,
+        solution: ["O'DOUL'S", "GUINNESS", "BUDWEISER", "CHAMPAGNE", "SAKE", "JACK DANIEL'S BLACK LABEL", "EVERCLEAR"],
+        initialOrderSequence: "6524713",
+        theme: "Beverages by alcohol by volume",
+        hint: "Burden of proof",
+        hint2: "Alcohol by volume",
+        post_solve: ["O'Doul's: 0%", "Guinness: 4.2%", "Budweiser: 5%", "Champagne: ~11-13%", "Sake: ~15-20%", "Jack Daniel's Black Label: 40%", "Everclear: 60-90%"],
+        revAllowed: true
+    },
+    {
+        id: 45,
+        solution: ["Pine Tree", "Bay", "Empire", "Old Dominion", "Peach", "Sunshine"],
+        initialOrderSequence: "2745136",
+        theme: "East Coast state nicknames<br>north to south",
+        hint: "Down the coast",
+        hint2: "State nicknames north to south",
+        post_solve: ["The Pine Tree State: Maine", "The Bay State: Massachusetts", "The Empire State: New York", "The Old Dominion State: Virginia", "The Peach State: Georgia", "The Sunshine State: Florida"],
+        revAllowed: false 
     }
 ];
