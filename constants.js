@@ -132,12 +132,12 @@ export const puzzles = [
     },
     {
         id: 14,
-        solution: ["HAT TRICK", "DOZEN", "BAKER'S DOZEN", "SCORE", "CENTURY", "GROSS", "GRAND"],
+        solution: ["HAT TRICK", "BAKER'S DOZEN", "SCORE", "CENTURY", "LONG HUNDRED", "GROSS", "GRAND"],
         initialOrderSequence: "3516472",
         theme: "Non-numerical<br>number words",
         hint: "Word counts",
         hint2: "Non-number number words",
-        post_solve: ["Hat trick: 3", "Dozen: 12", "Baker's dozen: 13", "Score: 20", "Century: 100", "Gross: 144", "Grand: 1000"],
+        post_solve: ["Hat trick: 3", "Baker's dozen: 13", "Score: 20", "Century: 100", "Long hundred: 120", "Gross: 144", "Grand: 1000"],
         revAllowed: true
     },
     {
