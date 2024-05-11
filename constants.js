@@ -462,6 +462,26 @@ export const puzzles = [
         hint2: "Number of keys",
         post_solve: ["Black Keys: 2 (members)", "UBS logo: 3", "Steno machine: 23", "Western sheet music: 30", "Typewriter: 44", "Piano: 88", "Florida: ~800"],
         revAllowed: true
+    },
+    {
+        id: 47,
+        solution: ["FLAG MAKER ROSS", "HAPPY LITTLE TREES PAINTER ROSS", "DISCO QUEEN ROSS", "MAMET PLAY WITH ROSS IN TITLE", "UNIV. OF ___ ROSS BUSINESS SCHOOL", "RAPPER ROSS"],
+        initialOrderSequence: "2651734",
+        theme: "Rosses, alphabetically",
+        hint: "Rosses A-Z",
+        hint2: "Alphabetical order",
+        post_solve: ["Flag maker: Betsy Ross", "Painter: Bob Ross", "Disco queen: Diana Ross", "Mamet play: Glengarry Glen Ross", "Ross business school university: Michigan", "Rapper: Rick Ross"],
+        revAllowed: false
+    },
+    {
+        id: 48,
+        solution: ["SUPREME COURT JUSTICES", "SMITHSONIANS", "CONSTITUTIONAL AMENDMENTS", "WHITE HOUSE BATHROOMS", "LINCOLN MEMORIAL COLUMNS", "VOTING MEMBERS OF CONGRESS", "WASHINGTON MONUMENT HEIGHT (FEET)"],
+        initialOrderSequence: "5361472",
+        theme: "Washington D.C. counts",
+        hint: "D.C. ranks",
+        hint2: "Numbers by size",
+        post_solve: ["Justices: 3", "Smithsonians: 17 (+3 outside DC)", "Amendments: 27", "White House bathrooms: 35", "Lincoln Memorial columns: 36", "Voting members of Congress: 535", "Washington Monument height: 555 ft"],
+        revAllowed: true
     }
     
 ];
