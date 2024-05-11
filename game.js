@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
       streakCount = savedState.streakCount || 0;
   } else {
       // New puzzle or no saved state, start fresh
-      startInstructions.innerHTML = "Put a list of items in order<br>based on a hidden theme!";
+      startInstructions.innerHTML = "Put a list of items in order<br>based on a daily theme!";
       gameWon = false;
       reverseWon = false;
       gameEnded = false;
