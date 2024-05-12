@@ -122,12 +122,12 @@ export const puzzles = [
     },
     {
         id: 13,
-        solution: ["ERHU", "UKELELE", "GUITAR", "MANDOLIN", "SITAR", "CONCERT HARP", "GRAND PIANO"],
+        solution: ["DIDDLEY BOW", "UKELELE", "GUITAR", "MANDOLIN", "SITAR", "CONCERT HARP", "GRAND PIANO"],
         initialOrderSequence: "5621473",
         theme: "Instrument string count",
         hint: "Plucky numbers",
         hint2: "Strings together",
-        post_solve: ["Erhu: 2", "Ukelele: 4", "Guitar: 6", "Mandolin: 8", "Sitar: 18-21", "Concert harp: 47", "Grand piano: ~230"],
+        post_solve: ["Diddley bow: 1", "Ukelele: 4", "Guitar: 6", "Mandolin: 8", "Sitar: 18-21", "Concert harp: 47", "Grand piano: ~230"],
         revAllowed: true
     },
     {
