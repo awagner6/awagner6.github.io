@@ -492,6 +492,16 @@ export const puzzles = [
         hint2: "Count the dots",
         post_solve: ["Bindi: 1", "Umlaut: 2", "Domino's logo: 3", "\"Morse code\" in Morse code: 11", "\"Braille\" in Braille: 17", "All die faces: 21", "Seurat's Sunday Afternoon: ~220 thousand"],
         revAllowed: true        
+    },
+    {
+        id: 50,
+        solution: ["THERMOSPHERE", "MESOSPHERE", "STRATOSPHERE", "TROPOSPHERE", "CRUST", "MANTLE", "CORE"],
+        initialOrderSequence: "3645172",
+        theme: "Layers of Earth<br>and atmosphere",
+        hint: "Layering",
+        hint2: "Earth and atmosphere",
+        post_solve: ["Thermosphere: 50-440 miles up", "Mesosphere: 30-50 miles up", "Stratosphere: 7-30 miles up", "Troposphere: 0-7 miles up", "Crust: 5-25 miles down", "Mantle: 25-1800 miles down", "Core: 1800-4000 miles down"],
+        revAllowed: true
     }
     
 ];
