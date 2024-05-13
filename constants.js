@@ -482,6 +482,16 @@ export const puzzles = [
         hint2: "Numbers by size",
         post_solve: ["Justices: 3", "Smithsonians: 17 (+3 outside DC)", "Amendments: 27", "White House bathrooms: 35", "Lincoln Memorial columns: 36", "Voting members of Congress: 535", "Washington Monument height: 555 ft"],
         revAllowed: true
+    },
+    {
+        id: 49,
+        solution: ["BINDI", "UMLAUT", "DOMINO'S LOGO", "\"MORSE CODE\" IN MORSE CODE", "\"BRAILLE\" IN BRAILLE", "ALL FACES OF A DIE COMBINED", "SEURAT'S SUNDAY AFTERNOON PAINTING"],
+        initialOrderSequence: "4512736",
+        theme: "Dot counts",
+        hint: "Dot games",
+        hint2: "Count the dots",
+        post_solve: ["Bindi: 1", "Umlaut: 2", "Domino's logo: 3", "\"Morse code\" in Morse code: 11", "\"Braille\" in Braille: 17", "All die faces: 21", "Seurat's Sunday Afternoon: ~220 thousand"],
+        revAllowed: true        
     }
     
 ];
