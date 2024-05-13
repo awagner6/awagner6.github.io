@@ -158,7 +158,7 @@ export const puzzles = [
         hint: "Numberheads",
         hint2: "First letters",
         post_solve: ["Eight", "Four", "Nine", "One", "Six", "Ten", "Zero"],
-        revAllowed: true
+        revAllowed: false
     },
     {
         id: 17,
@@ -445,7 +445,7 @@ export const puzzles = [
     },
     {
         id: 45,
-        solution: ["Pine Tree", "Bay", "Empire", "Old Dominion", "Peach", "Sunshine"],
+        solution: ["PINE TREE", "BAY", "EMPIRE", "OLD DOMINION", "PEACH", "SUNSHINE"],
         initialOrderSequence: "2745136",
         theme: "East Coast state nicknames<br>north to south",
         hint: "Down the coast",
