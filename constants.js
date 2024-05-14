@@ -502,6 +502,15 @@ export const puzzles = [
         hint2: "Earth and atmosphere",
         post_solve: ["Thermosphere: 50-440 miles up", "Mesosphere: 30-50 miles up", "Stratosphere: 7-30 miles up", "Troposphere: 0-7 miles up", "Crust: 5-25 miles down", "Mantle: 25-1800 miles down", "Core: 1800-4000 miles down"],
         revAllowed: true
-    }
-    
+    },
+    {
+        id: 51,
+        solution: ["TUNING PEGS", "NUT", "FRETS", "SOUND HOLE", "PICK GUARD", "SADDLE", "BRIDGE PINS"],
+        initialOrderSequence: "4517263",
+        theme: "Guitar top to bottom",
+        hint: "On the guitar",
+        hint2: "Top to bottom",
+        post_solve: ["Tuning pegs: head", "Nut: neck", "Frets: neck", "Sound hole: body", "Pick guard: body", "Saddle: bridge", "Bridge pins: bridge"],
+        revAllowed: false
+    }    
 ];
