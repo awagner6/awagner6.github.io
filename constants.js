@@ -512,5 +512,15 @@ export const puzzles = [
         hint2: "Top to bottom",
         post_solve: ["Tuning pegs: head", "Nut: neck", "Frets: neck", "Sound hole: body", "Pick guard: body", "Saddle: bridge", "Bridge pins: bridge"],
         revAllowed: false
-    }    
+    },
+    {
+        id: 52,
+        solution: ["MARATHON", "AQUATHLON", "IRON MAN RACE", "TRACK AND FIELD RELAY", "OLYMPIC SAILING REGATTA", "THE AMAZING RACE", "TOUR DE FRANCE"],
+        initialOrderSequence: "3417625",
+        theme: "Races by number of<br>legs or stages",
+        hint: "This puzzle has legs",
+        hint2: "Race legs and stages",
+        post_solve: ["Marathon: 1 (run)", "Aquathlon: 2 (swim run)", "Iron Man: 3 (swim bike run)", "Relay: 4 (run)", "Olympic regatta: ~9 (sail)", "Amazing Race: 11-12 (varied)", "Tour de France: 21 stages (bike)"],
+        revAllowed: true
+    },
 ];
