@@ -523,4 +523,14 @@ export const puzzles = [
         post_solve: ["Marathon: 1 (run)", "Aquathlon: 2 (swim run)", "Iron Man: 3 (swim bike run)", "Relay: 4 (run)", "Olympic regatta: ~9 (sail)", "Amazing Race: 11-12 (varied)", "Tour de France: 21 stages (bike)"],
         revAllowed: true
     },
+    {
+        id: 53,
+        solution: ["GRAMMYS", "OSCARS", "PULITZERS", "TONYS", "ESPYS", "EMMYS", "NOBELS"],
+        initialOrderSequence: "4175362",
+        theme: "Awards calendar",
+        hint: "Awards calendar <br> (outside of COVID times)",
+        hint2: "When throughout the year",
+        post_solve: ["Grammys: Jan-Feb", "Oscars: Feb-Mar", "Pulitzers: May", "Tonys: June", "Espys: July", "Emmys: September", "Nobels: December"],
+        revAllowed: true
+    }
 ];
