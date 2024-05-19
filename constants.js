@@ -390,7 +390,7 @@ export const puzzles = [
         theme: "Points",
         hint: "Points around",
         hint2: "Point scores",
-        post_solve: ["Half court shot: 3", "Rugby try: 5", "Scrabble X tile: 8", "Boxing round: 10", "Darts inner bullseye: 50", "Bowling turkey: 60+"],
+        post_solve: ["Half court shot: 3", "Rugby try: 5", "Touchdown: 6", "Scrabble X tile: 8", "Boxing round: 10", "Darts inner bullseye: 50", "Bowling turkey: 60+"],
         revAllowed: true
     },
     {
