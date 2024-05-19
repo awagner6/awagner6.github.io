@@ -528,9 +528,39 @@ export const puzzles = [
         solution: ["GRAMMYS", "OSCARS", "PULITZERS", "TONYS", "ESPYS", "EMMYS", "NOBELS"],
         initialOrderSequence: "4175362",
         theme: "Awards calendar",
-        hint: "Awards calendar <br> (outside of COVID times)",
+        hint: "Awards calendar<br>(outside of COVID times)",
         hint2: "When throughout the year",
         post_solve: ["Grammys: Jan-Feb", "Oscars: Feb-Mar", "Pulitzers: May", "Tonys: June", "Espys: July", "Emmys: September", "Nobels: December"],
         revAllowed: true
-    }
+    },
+    {
+        id: 54,
+        solution: ["BRITISH BATHROOM", "SIDE OF THE HIGHWAY", "BABY BOTTLE PART", "CIGARETTE REMAINS", "HINDER", "BABY COW", "TWELVE INCHES"],
+        initialOrderSequence: "6417325",
+        theme: "Body parts head to toe",
+        hint: "Body language",
+        hint2: "From top to bottom",
+        post_solve: ["British bathroom: head", "Side of the road: shoulder", "Baby bottle part: nipple", "Cigarette remains: butt", "Hinder: kneecap", "Baby cow: calf", "Twelve inches: foot"],
+        revAllowed: false
+    },
+    {
+        id: 55,
+        solution: ["MEMORY", "MISTER CELLOPHANE", "MATCHMAKER", "MY SHOT", "MASTER OF THE HOUSE", "MAMA WHO BORE ME", "MARIA"],
+        initialOrderSequence: "7241536",
+        theme: "Songs by alphabetical musical",
+        hint: "M-usicals A to Z",
+        hint2: "Name each song's musical",
+        post_solve: ["Memory: Cats", "Mister Cellophane: Chicago", "Matchmaker: Fiddler on the Roof", "My Shot: Hamilton", "Master of the House: Les Misérables", "Mama who bore me: Spring Awakening", "Maria: West Side Story"],
+        revAllowed: false               
+    },
+    {
+        id: 56,
+        solution: ["BURJ KHALIFA", "TAIPEI 101", "PETRONAS TOWERS", "SEARS TOWER", "WORLD TRADE CENTER NORTH TOWER", "EMPIRE STATE BUILDING", "CHRYSLER BUILDING"],
+        initialOrderSequence: "7423165",
+        theme: "World's tallest building record holders",
+        hint: "New heights",
+        hint2: "Tallest buildings of history",
+        post_solve: ["Burj Khalifa: 2010-present", "Taipei 101: 2004-2010", "Petronas Towers: 1996-2004", "Sears Tower: 1974-1996","World Trade Center: 1972-1974", "Empire State Building: 1931-1972", "Chrysler Building: 1930-1931"],
+        revAllowed: true
+    }    
 ];
