@@ -562,5 +562,15 @@ export const puzzles = [
         hint2: "Tallest buildings of history",
         post_solve: ["Burj Khalifa: 2010-present", "Taipei 101: 2004-2010", "Petronas Towers: 1996-2004", "Sears Tower: 1974-1996","World Trade Center: 1972-1974", "Empire State Building: 1931-1972", "Chrysler Building: 1930-1931"],
         revAllowed: true
-    }    
+    },
+    {
+        id: 57,
+        solution: ["TRIVIAL PURSUIT PIECE", "TRADITIONAL PIZZA PIE", "ZODIAC WHEEL", "TWISTER SPINNER", "DARTBOARD", "WHEEL OF FORTUNE WHEEL", "ROULETTE WHEEL"],
+        initialOrderSequence: "2753164",
+        theme: "Number of slices",
+        hint: "However you slice it",
+        hint2: "Circles by slice count",
+        post_solve: ["Trivial Pursuit piece: 6", "Pizza pie: 8", "Zodiac wheel: 12", "Twister spinner: 16", "Dartboard: 20", "Wheel of Fortune wheel: 24", "Roulette wheel: 38 (37 in E.U.)"],
+        REVALLOWED: true
+    }
 ];
