@@ -528,7 +528,7 @@ export const puzzles = [
         solution: ["GRAMMYS", "OSCARS", "PULITZERS", "TONYS", "ESPYS", "EMMYS", "NOBELS"],
         initialOrderSequence: "4175362",
         theme: "Awards calendar",
-        hint: "Awards calendar<br>(outside of COVID times)",
+        hint: "Awards calendar",
         hint2: "When throughout the year",
         post_solve: ["Grammys: Jan-Feb", "Oscars: Feb-Mar", "Pulitzers: May", "Tonys: June", "Espys: July", "Emmys: September", "Nobels: December"],
         revAllowed: true
