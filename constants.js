@@ -591,5 +591,15 @@ export const puzzles = [
         hint2: "In the cards",
         post_solve: ["Lemniscate rhyme: 8", "Musical based on a Fellini film: Nine", "Debut Pearl Jam album: Ten", "Device for lifting heavy objects: Jack", "Bohemian Rhapsody band: Queen", "Checkers piece: King", "Unreturned serve: Ace"],
         revAllowed: true
+    },
+    {
+        id: 60,
+        solution: ["BRIEFS", "BOY SHORTS", "BERMUDA SHORTS", "PEDAL PUSHERS", "CAPRIS", "CHINOS", "STIRRUP LEGGINGS"],
+        initialOrderSequence: "2653174",
+        theme: "Legwear by where it ends",
+        hint: "Legends",
+        hint2: "Pant leg lengths",
+        post_solve: ["Briefs: crotch", "Boy shorts: thigh", "Bermuda shorts: just above knee", "Pedal pushers: just below knee", "Capris: calf", "Chinos: ankle", "Stirrup leggings: under foot"],
+        revAllowed: false
     }
 ];
