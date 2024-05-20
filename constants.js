@@ -342,7 +342,6 @@ export const puzzles = [
         post_solve: ["Marble: <1 inch", "NBA Basketball: 9.5 inches", "Record rubber band ball: 7 feet", "Times Square ball drop ball: 12 feet", "Spaceship Earth: 165 feet", "Vegas Sphere: 516 feet"],
         revAllowed: true
     },
-    
     {
         id: 35,
         solution: [ "FILM CRITIC SCOTT", "STEAK SAUCE", "LEATHER FLIGHT JACKET", "EU LETTER-SIZED PAPER", "UMASS SPORTS CONFERENCE", "\"MIDSOMMAR\" FILM STUDIO", "LIL WAYNE SONG" ],
