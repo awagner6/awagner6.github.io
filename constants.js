@@ -601,5 +601,15 @@ export const puzzles = [
         hint2: "Pant leg lengths",
         post_solve: ["Briefs: crotch", "Boy shorts: thigh", "Bermuda shorts: just above knee", "Pedal pushers: just below knee", "Capris: calf", "Chinos: ankle", "Stirrup leggings: under foot"],
         revAllowed: false
+    },
+    {
+        id: 61,
+        solution: ["CHAIN", "SAW", "HORSE", "POWER", "BAR", "CODE", "WORD"],
+        initialOrderSequence: "7164253",
+        theme: "Word chain from Chain to Word",
+        hint: "Chain-word word chain",
+        hint2: "Two-word phrases",
+        post_solve: ["Chain saw", "Saw horse", "Horse power", "Power bar", "Bar code", "Code word"],
+        revAllowed: false
     }
 ];
