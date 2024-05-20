@@ -565,12 +565,32 @@ export const puzzles = [
     },
     {
         id: 57,
+        solution: ["SIMONE BILES", "MOTHER THERESA", "NAPOLEON BONAPARTE", "TAYLOR SWIFT", "DANIEL DAY-LEWIS", "ABRAHAM LINCOLN", "LEBRON JAMES"],
+        initialOrderSequence: "6531274",
+        theme: "People by height",
+        hint: "New heights pt. 2",
+        hint2: "People by height",
+        post_solve: ["Simone Biles: 4' 8\"", "Mother Theresa: 5' 0\"", "Napoleon Bonaparte: 5' 6\"", "Taylor Swift: 5' 11\"", "Daniel Day-Lewis: 6' 2\"", "Abraham Lincoln: 6' 4\"", "Lebron James: 6' 9\""],
+        revAllowed: true
+    },
+    {
+        id: 58,
         solution: ["TRIVIAL PURSUIT PIECE", "TRADITIONAL PIZZA PIE", "ZODIAC WHEEL", "TWISTER SPINNER", "DARTBOARD", "WHEEL OF FORTUNE WHEEL", "ROULETTE WHEEL"],
         initialOrderSequence: "2753164",
         theme: "Number of slices",
         hint: "However you slice it",
         hint2: "Circles by slice count",
         post_solve: ["Trivial Pursuit piece: 6", "Pizza pie: 8", "Zodiac wheel: 12", "Twister spinner: 16", "Dartboard: 20", "Wheel of Fortune wheel: 24", "Roulette wheel: 38 (37 in E.U.)"],
-        REVALLOWED: true
+        revAllowed: true
+    },
+    {
+        id: 59,
+        solution: ["APT RHYME OF LEMNISCATE", "MUSICAL BASED ON A FELLINI FILM", "DEBUT ALBUM BY PEARL JAM", "DEVICE FOR LIFTING HEAVY OBJECTS", "BOHEMIAN RHAPSODY BAND", "DOUBLE-STACKED CHECKERS PIECE", "UNRETURNED TENNIS SERVE"],
+        initialOrderSequence: "2537146",
+        theme: "Seven-card straight",
+        hint: "Deck hand",
+        hint2: "In the cards",
+        post_solve: ["Lemniscate rhyme: 8", "Musical based on a Fellini film: Nine", "Debut Pearl Jam album: Ten", "Device for lifting heavy objects: Jack", "Bohemian Rhapsody band: Queen", "Checkers piece: King", "Unreturned serve: Ace"],
+        revAllowed: true
     }
 ];
