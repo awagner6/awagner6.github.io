@@ -621,5 +621,15 @@ export const puzzles = [
         hint2: "Number homophones",
         post_solve: ["Was victorious: won (one)", "Also: too (two)", "Not opposed: for (four)", "Unleashes a dog (on): sics (six)", "Had food: ate (eight)", "German 'no': nein (nine)", "Knoxville's st.: Tenn. (ten)"],
         revAllowed: true
+    },
+    {
+        id: 63,
+        solution: ["VINYL RECORD", "GOLF CLUB FACE", "ESCALATOR STEP", "TIRE TREAD", "ROMAN AQUEDUCT", "ERIE CANAL", "GRAND CANYON"],
+        initialOrderSequence: "4726153",
+        theme: "Grooved things by depth of grooves",
+        hint: "Deep in the groove",
+        hint2: "Grooves/channels by depth",
+        post_solve: ["Vinyl record: .0011 inches", "Golf club face: .022 inches", "Escalator step: ~.15-.23 inches", "Tire tread: .31-.34 inches", "Roman aqueduct: ~80 inches", "Erie Canal: 144 inches", "Grand Canyon: 48000 inches"],
+        revAllowed: true
     }
 ];
