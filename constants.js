@@ -631,5 +631,15 @@ export const puzzles = [
         hint2: "Grooves/channels by depth",
         post_solve: ["Vinyl record: .0011 inches", "Golf club face: .022 inches", "Escalator step: ~.15-.23 inches", "Tire tread: .31-.34 inches", "Roman aqueduct: ~80 inches", "Erie Canal: 144 inches", "Grand Canyon: 48000 inches"],
         revAllowed: true
+    },
+    {
+        id: 64,
+        solution: ["YVES KLEIN PAINTING IKB 79", "GOOGLE LOGO", "SEYCHELLES FLAG", "RUBIK'S CUBE", "RAINBOW", "FULL LEGO BLOCK COLOR PALETTE", "LARGEST CRAYOLA CRAYON BOX"],
+        initialOrderSequence: "4261573",
+        theme: "Number of hues/colors/shades",
+        hint: "But hues counting?",
+        hint2: "Number of hues/colors/shades",
+        post_solve: ["IKB 79: 1 color", "Google logo: 4 colors", "Seychelles flag: 5 colors", "Rubik's cube: 6 colors", "Rainbow: 7 colors", "Full LEGO palette: 73 colors (currently in use)", "Largest Crayola crayon box: 120 colors"],
+        revAllowed: true
     }
 ];
