@@ -611,5 +611,15 @@ export const puzzles = [
         hint2: "Two-word phrases",
         post_solve: ["Chain saw", "Saw horse", "Horse power", "Power bar", "Bar code", "Code word"],
         revAllowed: false
+    },
+    {
+        id: 62,
+        solution: ["WAS VICTORIOUS", "ALSO", "NOT OPPOSED", "UNLEASHES A DOG (ON)", "HAD FOOD", "GERMAN 'NO'", "KNOXVILLE'S ST."],
+        initialOrderSequence: "2531764",
+        theme: "Number homophones",
+        hint: "Sound data",
+        hint2: "Number homophones",
+        post_solve: ["Was victorious: won (one)", "Also: too (two)", "Not opposed: for (four)", "Unleashes a dog (on): sics (six)", "Had food: ate (eight)", "German 'no': nein (nine)", "Knoxville's st.: Tenn. (ten)"],
+        revAllowed: true
     }
 ];
