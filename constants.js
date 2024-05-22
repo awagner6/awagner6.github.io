@@ -641,5 +641,25 @@ export const puzzles = [
         hint2: "Number of hues/colors/shades",
         post_solve: ["IKB 79: 1 color", "Google logo: 4 colors", "Seychelles flag: 5 colors", "Rubik's cube: 6 colors", "Rainbow: 7 colors", "Full LEGO palette: 73 colors (currently in use)", "Largest Crayola crayon box: 120 colors"],
         revAllowed: true
+    },
+    {
+        id: 65,
+        solution: ["SILK CHIFFON", "SILK SATIN", "LINEN", "T-SHIRT COTTON", "MERINO WOOL", "UPHOLSTERY TWEED", "DENIM"],
+        initialOrderSequence: "4512673",
+        theme: "Fabrics by weight<br>(gsm: grams per square meter)",
+        hint: "It'll weigh on you",
+        hint2: "Fabrics by weight",
+        post_solve: ["Silk chiffon: 25-40 gsm", "Silk satin: 50-100 gsm", "Linen: 100-150 gsm", "T-shirt cotton: 160-200 gsm", "Merino wool: 200-250 gsm", "Upholstery tweed: 350-400 gsm", "Denim: 400-600 gsm"],
+        revAllowed: true
+    },
+    {
+        id: 66,
+        solution: ["CANADIAN INTERJECTION", "HONEY PRODUCER", "VISUALIZE", "ACTIVIST RUBY", "DOLPHIN SOUND", "WORST POSSIBLE GRADE", "\"HUH!\""],
+        initialOrderSequence: "6572413",
+        theme: "Letter homophones",
+        hint: "Outspoken characters",
+        hint2: "Letter homophones",
+        post_solve: ["Canadian interjection: eh (A)", "Honey producer: bee (B)", "Visualize: see (C)", "Activist Ruby: Dee (D)", "Dolphin sound: eee! (E)", "Worst grade: F (F), "\"HUH!\: gee (G)"],
+        revAllowed: true   
     }
 ];
