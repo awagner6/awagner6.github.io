@@ -607,7 +607,7 @@ export const puzzles = [
         solution: ["CHAIN", "SAW", "HORSE", "POWER", "BAR", "CODE", "WORD"],
         initialOrderSequence: "7164253",
         theme: "Word chain from Chain to Word",
-        hint: "Chain-word word chain",
+        hint: "Chain->word word chain",
         hint2: "Two-word phrases",
         post_solve: ["Chain saw", "Saw horse", "Horse power", "Power bar", "Bar code", "Code word"],
         revAllowed: false
@@ -654,12 +654,22 @@ export const puzzles = [
     },
     {
         id: 66,
-        solution: ["CANADIAN INTERJECTION", "HONEY PRODUCER", "VISUALIZE", "ACTIVIST RUBY", "DOLPHIN SOUND", "WORST POSSIBLE GRADE", "\"HUH!\""],
+        solution: ["TUNING FORK", "AMERICAN GOTHIC PITCHFORK", "STAR OF DAVID", "STATUE OF LIBERTY'S CROWN", "LIONFISH", "PRAGUE'S NICKNAME", "PORCUPINE"],
+        initialOrderSequence: "5241763",
+        theme: "Number of pointy bits",
+        hint: "Points of interest",
+        hint2: "Points, spikes, prongs, spines, etc",
+        post_solve: ["Tuning fork: 2 prongs", "American Gothic pitchfork: 3 prongs", "Star of David: 6 points", "Statue of Liberty's crown: 7 spikes", "Lionfish: 18 spines", "Prague's nickname: (city of) 100 spires", "Porcupine: 30,000+ quills"],
+        revAllowed: true
+    },
+    {
+        id: 67,
+        solution: ["CANADIAN INTERJECTION", "HONEY PRODUCER", "VISUALIZE", "ACTIVIST RUBY", "SPANISH \"AND\"", "WORST POSSIBLE GRADE", "\"HUH!\""],
         initialOrderSequence: "6572413",
         theme: "Letter homophones",
         hint: "Outspoken characters",
         hint2: "Letter homophones",
-        post_solve: ["Canadian interjection: eh (A)", "Honey producer: bee (B)", "Visualize: see (C)", "Activist Ruby: Dee (D)", "Dolphin sound: eee! (E)", "Worst grade: F (F)", "\"HUH!\: gee (G)"],
+        post_solve: ["Canadian interjection: eh (A)", "Honey producer: bee (B)", "Visualize: see (C)", "Activist Ruby: Dee (D)", "Spanish \"and\": y (E)", "Worst grade: F (F)", "\"HUH!\: gee (G)"],
         revAllowed: true   
-    }
+    },
 ];
