@@ -659,7 +659,7 @@ export const puzzles = [
         theme: "Letter homophones",
         hint: "Outspoken characters",
         hint2: "Letter homophones",
-        post_solve: ["Canadian interjection: eh (A)", "Honey producer: bee (B)", "Visualize: see (C)", "Activist Ruby: Dee (D)", "Dolphin sound: eee! (E)", "Worst grade: F (F), "\"HUH!\: gee (G)"],
+        post_solve: ["Canadian interjection: eh (A)", "Honey producer: bee (B)", "Visualize: see (C)", "Activist Ruby: Dee (D)", "Dolphin sound: eee! (E)", "Worst grade: F (F)", "\"HUH!\: gee (G)"],
         revAllowed: true   
     }
 ];
