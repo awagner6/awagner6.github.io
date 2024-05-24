@@ -664,6 +664,16 @@ export const puzzles = [
     },
     {
         id: 67,
+        solution: ["ANACONDA", "JAGUAR", "CAIMAN", "WATERFOWL", "SPIDER", "ANT", "TREE"],
+        initialOrderSequence: "5436271",
+        theme: "Rainforest food chain",
+        hint: "Rainforest cafe",
+        hint2: "Food chain",
+        post_solve: ["Anaconda: apex predator", "Jaguar: quinary consumer", "Caiman: quaternary consumer", "Waterfowl: tertiary consumer", "Spider: secondary consumer", "Ant: primary consumer", "Tree: producer"],
+        revAllowed: true    
+    },
+    {
+        id: 68,
         solution: ["CANADIAN INTERJECTION", "HONEY PRODUCER", "VISUALIZE", "ACTIVIST RUBY", "SPANISH \"AND\"", "WORST POSSIBLE GRADE", "\"HUH!\""],
         initialOrderSequence: "6572413",
         theme: "Letter homophones",
