@@ -674,6 +674,16 @@ export const puzzles = [
     },
     {
         id: 68,
+        solution: ["PETRA", "COLOSSEUM", "CHICHÉN ITZÁ", "MACHU PICCHU", "GREAT WALL OF CHINA (BADALING)", "TAJ MAHAL", "CHRIST THE REDEEMER"],
+        initialOrderSequence: "2164735",
+        theme: "When the 7 Wonders were built",
+        hint: "Wonder years",
+        hint2: "When they were built",
+        post_solve: ["Petra: ~300 BC", "Colosseum: 80 CE", "Chichén Itzá: ~1000 CE", "Machu Picchu: ~1450 (we think!)", "Great Wall (Badalang): 1501", "Taj Mahal: 1648", "Christ the Redeemer: 1931"],
+        revAllowed: true
+    },
+    {
+        id: 69,
         solution: ["CANADIAN INTERJECTION", "HONEY PRODUCER", "VISUALIZE", "ACTIVIST RUBY", "SPANISH \"AND\"", "WORST POSSIBLE GRADE", "\"HUH!\""],
         initialOrderSequence: "6572413",
         theme: "Letter homophones",
