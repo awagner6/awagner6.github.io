@@ -711,5 +711,15 @@ export const puzzles = [
         hint2: "Salt percentages by weight",
         post_solve: ["Distilled water: 0%", "Bottled water: .2-.3%", "Campbell's Chicken Noodle Soup: .7%", "Sweat: .9%", "Ocean water: 3.5%", "Great Salt Lake: 5-27% (big range!)", "Dead Sea: 34%"],
         revAllowed: true        
+    },
+    {
+        id: 72,
+        solution: ["THE __: BABA O'RILEY BAND", "RESIDES", "CURRENTLY FASHIONABLE", "GOOD GRADE", "HAWAIIAN PIZZA TOPPING", "ANESTHETIZED", "THE OLD MAN AND ___: HEMINGWAY NOVEL"],
+        initialOrderSequence: "7314265",
+        theme: "SpongeBob SquarePants theme lyrics",
+        hint: "Ocean song",
+        hint2: "SpongeBob SquarePants",
+        post_solve: ["Baba O'Riley band: WHO", "Resides: LIVES", "Fashionable: IN", "Good grade: A", "Hawaiian topping: PINEAPPLE", "Anesthetized: UNDER", The Old Man and ___: THE SEA"],
+        revAllowed: false
     }
 ];
