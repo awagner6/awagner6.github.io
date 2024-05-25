@@ -584,12 +584,12 @@ export const puzzles = [
     },
     {
         id: 59,
-        solution: ["APT RHYME OF LEMNISCATE", "MUSICAL BASED ON A FELLINI FILM", "DEBUT ALBUM BY PEARL JAM", "DEVICE FOR LIFTING HEAVY OBJECTS", "BOHEMIAN RHAPSODY BAND", "DOUBLE-STACKED CHECKERS PIECE", "UNRETURNED TENNIS SERVE"],
+        solution: ["FIGURE SKATING SHAPE", "MUSICAL BASED ON A FELLINI FILM", "DEBUT ALBUM BY PEARL JAM", "DEVICE FOR LIFTING HEAVY OBJECTS", "BOHEMIAN RHAPSODY BAND", "DOUBLE-STACKED CHECKERS PIECE", "UNRETURNED TENNIS SERVE"],
         initialOrderSequence: "2537146",
         theme: "Seven-card straight",
         hint: "Deck hand",
         hint2: "In the cards",
-        post_solve: ["Lemniscate rhyme: 8", "Musical based on a Fellini film: Nine", "Debut Pearl Jam album: Ten", "Device for lifting heavy objects: Jack", "Bohemian Rhapsody band: Queen", "Checkers piece: King", "Unreturned serve: Ace"],
+        post_solve: ["Figure skating shape: 8", "Musical based on a Fellini film: Nine", "Debut Pearl Jam album: Ten", "Device for lifting heavy objects: Jack", "Bohemian Rhapsody band: Queen", "Checkers piece: King", "Unreturned serve: Ace"],
         revAllowed: true
     },
     {
