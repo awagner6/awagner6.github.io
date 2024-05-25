@@ -701,5 +701,15 @@ export const puzzles = [
         hint2: "How long things take",
         post_solve: ["Sneeze to go 1 ft: .06 seconds", "Blink of an eye: .1 seconds", "Heartbeat: .8 seconds", "Breath: 3-5 seconds", "Digestion: 1-3 days", "Hair to grow 1 in: 8 weeks", "Human gestation: 40 weeks"],
         revAllowed: true
+    },
+    {
+        id: 71,
+        solution: ["DISTILLED WATER", "BOTTLED WATER", "CAMPBELL'S CHICKEN NOODLE SOUP", "SWEAT", "OCEAN WATER", "GREAT SALT LAKE", "DEAD SEA"],
+        initialOrderSequence: "6513724",
+        theme: "Salinity percentage",
+        hint: "Getting salty",
+        hint2: "Salt percentages by weight",
+        post_solve: ["Distilled water: 0%", "Bottled water: .2-.3%", "Campbell's Chicken Noodle Soup: .7%", "Sweat: .9%", "Ocean water: 3.5%", "Great Salt Lake: 5-27% (big range!)", "Dead Sea: 34%"],
+        revAllowed: true        
     }
 ];
