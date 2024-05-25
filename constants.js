@@ -719,7 +719,7 @@ export const puzzles = [
         theme: "SpongeBob SquarePants theme lyrics",
         hint: "Ocean song",
         hint2: "SpongeBob SquarePants",
-        post_solve: ["Baba O'Riley band: WHO", "Resides: LIVES", "Fashionable: IN", "Good grade: A", "Hawaiian topping: PINEAPPLE", "Anesthetized: UNDER", The Old Man and ___: THE SEA"],
+        post_solve: ["Baba O'Riley band: WHO", "Resides: LIVES", "Fashionable: IN", "Good grade: A", "Hawaiian topping: PINEAPPLE", "Anesthetized: UNDER", "The Old Man and ___: THE SEA"],
         revAllowed: false
     }
 ];
