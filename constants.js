@@ -283,12 +283,12 @@ export const puzzles = [
     
     {
         id: 29,
-        solution: ["NORMAL CONVERSATION", "HAIRDRYER", "FIRETRUCK SIREN", "SEATTLE SEAHAWKS CROWD RECORD", "JET ENGINE", "KRAKATOA ERUPTION", "SPERM WHALE CLICK"],
+        solution: ["NORMAL CONVERSATION", "HAIRDRYER", "FIRETRUCK SIREN", "SEATTLE SEAHAWKS CROWD RECORD", "JET ENGINE", "SPERM WHALE CLICK", "KRAKATOA ERUPTION"],
         initialOrderSequence: "2734156",
         theme: "Sounds by decibel level",
         hint: "Volume one",
         hint2: "Decibel scale",
-        post_solve: ["Normal conversation: ~60 dB", "Hairdryer: 80-90 dB", "Firetruck siren: ~120 dB", "Seahawks crowd record: 137.6 dB(!)", "Jet Engine: 140 dB", "Krakatoa eruption: 180 dB", "Sperm whale click: 230 dB(!!!)"],
+        post_solve: ["Normal conversation: ~60 dB", "Hairdryer: 80-90 dB", "Firetruck siren: ~120 dB", "Seahawks crowd record: 137.6 dB(!)", "Jet Engine: 140 dB", "Sperm whale click: 230 dB(!!)", "Krakatoa eruption: 310 db(!!!)"],
         revAllowed: true        
     },
     {
