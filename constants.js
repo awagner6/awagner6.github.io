@@ -692,4 +692,14 @@ export const puzzles = [
         post_solve: ["Canadian interjection: eh (A)", "Honey producer: bee (B)", "Visualize: see (C)", "Activist Ruby: Dee (D)", "Spanish \"and\": y (E)", "Worst grade: F (F)", "\"HUH!\: gee (G)"],
         revAllowed: true   
     },
+    {
+        id: 70,
+        solution: ["TIME FOR SNEEZE TO TRAVEL ONE FOOT", "BLINK OF AN EYE DURATION", "SINGLE HEARTBEAT DURATION", "RESTING BREATH DURATION", "FULL DIGESTION DURATION", "TIME FOR HAIR TO GROW ONE INCH", "HUMAN GESTATION PERIOD"],
+        initialOrderSequence: "5134726",
+        theme: "Biological durations",
+        hint: "Just my speed",
+        hint2: "How long things take",
+        post_solve: ["Sneeze to go 1 ft: .06 seconds", "Blink of an eye: .1 seconds", "Heartbeat: .8 seconds", "Breath: 3-5 seconds", "Digestion: 1-3 days", "Hair to grow 1 in: 8 weeks", "Human gestation: 40 weeks"],
+        revAllowed: true
+    }
 ];
