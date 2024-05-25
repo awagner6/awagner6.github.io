@@ -267,7 +267,7 @@ export const puzzles = [
         theme: "Elevations (ft)",
         hint: "Highs and lows",
         hint2: "Elevations",
-        post_solve: ["Mexico City: 7,349", "Denver: 5,280", "Kathmandu: 4,593", "New Delhi: 689", "Amsterdam: -7", "Death Valley: -282", "Dead Sea shores: -1,412"],
+        post_solve: ["Mexico City: 7\,349", "Denver: 5\,280", "Kathmandu: 4\,593", "New Delhi: 689", "Amsterdam: -7", "Death Valley: -282", "Dead Sea shores: -1\,412"],
         revAllowed: false
     },
     {
