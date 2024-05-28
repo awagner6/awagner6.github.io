@@ -272,12 +272,12 @@ export const puzzles = [
     },
     {
         id: 28,
-        solution: ["MESSENGER GOD", "GOD OF LOVE", "GOD OF WAR", "KING OF THE GODS", "GOD OF THE HARVEST", "GOD OF THE SEA", "GOD OF THE HEAVENS"],
+        solution: ["MESSENGER GOD", "GOD OF LOVE", "GOD OF WAR", "KING OF THE GODS", "GOD OF THE HARVEST", "GOD OF THE HEAVENS", "GOD OF THE SEA"],
         initialOrderSequence: "5231764",
         theme: "Planets by namesake deity",
         hint: "Heavenly bodies",
         hint2: "Planets by god",
-        post_solve: ["Messenger: Mercury", "Love: Venus", "War: Mars", "King: Jupiter", "Harvest: Saturn", "Sea: Neptune", "Heavens: Uranus"],
+        post_solve: ["Messenger: Mercury", "Love: Venus", "War: Mars", "King: Jupiter", "Harvest: Saturn", "Heavens: Uranus", "Sea: Neptune"],
         revAllowed: true
     },
     
