@@ -754,6 +754,16 @@ export const puzzles = [
     },
     {
         id: 76,
+        solution: ["BLACK MAMBA", "HUMAN", "RACEHORSE", "OSTRICH", "SWORDFISH", "CHEETAH", "PEREGRINE FALCON"],
+        initialOrderSequence: "6127435",
+        theme: "Animals by top speed",
+        hint: "Life comes at you fast",
+        hint2: "Animals by top speed",
+        post_solve: ["Black mamba: 14 mph", "Human: 29.5 mph", "Racehorse: 55 mph", "Ostrich: 56 mph", "Swordfish: 60 mph", "Cheetah: 75 mph", "Peregrine falcon: 242 mph"],
+        revAllowed: true
+    },
+    {
+        id: 77,
         solution: ["KOALA'S BRAIN", "GREETING CARD", "CLASSIC PUFF PASTRY", "MAX. FOLDS IN HALF FOR PRINTER PAPER", "U.S. MILITARY FLAG TRIANGLE", "ORIGAMI CRANE", "CHEF'S TOQUE"],
         initialOrderSequence: "5614273",
         theme: "Number of folds",
@@ -761,5 +771,5 @@ export const puzzles = [
         hint2: "Number of folds",
         post_solve: ["Koala's brain: 0 folds", "Greeting card: ~1 fold", "Classic puff pastry: 6 folds", "Max. folds in half for printer paper: 7", "Flag triangle: 13 folds", "Origami crane: 16 folds", "Chef's toque: 100 folds"],
         revAllowed: true
-    }
+    },
 ];
