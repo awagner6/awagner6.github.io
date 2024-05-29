@@ -667,7 +667,7 @@ export const puzzles = [
         solution: ["ANACONDA", "JAGUAR", "CAIMAN", "WATERFOWL", "SPIDER", "ANT", "TREE"],
         initialOrderSequence: "5436271",
         theme: "Rainforest food chain",
-        hint: "Rainforest cafe",
+        hint: "Up the chain",
         hint2: "Food chain",
         post_solve: ["Anaconda: apex predator", "Jaguar: quinary consumer", "Caiman: quaternary consumer", "Waterfowl: tertiary consumer", "Spider: secondary consumer", "Ant: primary consumer", "Tree: producer"],
         revAllowed: true    
@@ -694,7 +694,7 @@ export const puzzles = [
     },
     {
         id: 70,
-        solution: ["TIME FOR SNEEZE TO TRAVEL ONE FOOT", "BLINK OF AN EYE DURATION", "SINGLE HEARTBEAT DURATION", "RESTING BREATH DURATION", "FULL DIGESTION DURATION", "TIME FOR HAIR TO GROW ONE INCH", "HUMAN GESTATION PERIOD"],
+        solution: ["TIME FOR SNEEZE TO TRAVEL ONE FOOT", "BLINK OF AN EYE", "SINGLE HEARTBEAT", "RESTING INHALE + EXHALE", "FULL DIGESTION", "TIME FOR HAIR TO GROW ONE INCH", "HUMAN GESTATION PERIOD"],
         initialOrderSequence: "5134726",
         theme: "Biological durations",
         hint: "Just my speed",
@@ -727,9 +727,19 @@ export const puzzles = [
         solution: ["THE __: BABA O'RILEY BAND", "RESIDES", "CURRENTLY FASHIONABLE", "GOOD GRADE", "HAWAIIAN PIZZA TOPPING", "ANESTHETIZED", "THE OLD MAN AND ___: HEMINGWAY NOVEL"],
         initialOrderSequence: "7314265",
         theme: "SpongeBob SquarePants theme lyrics",
-        hint: "Ocean song",
+        hint: "Sea shanty",
         hint2: "SpongeBob SquarePants",
         post_solve: ["Baba O'Riley band: WHO", "Resides: LIVES", "Fashionable: IN", "Good grade: A", "Hawaiian topping: PINEAPPLE", "Anesthetized: UNDER", "The Old Man and ___: THE SEA"],
-        revAllowed: false
-    }
+        revAllowed: true
+    },
+    {
+        id: 74,
+        solution: ["AFGHAN GIRL", "VJ DAY IN TIMES SQUARE", "68 OLYMPICS BLACK POWER SALUTE", "MIGRANT MOTHER", "RAISING THE FLAG ON IWO JIMA", "LUNCH ATOP A SKYSCRAPER", "ELLEN DEGENERES OSCARS SELFIE"],
+        initialOrderSequence: "3761425",
+        theme: "Number of subjects in iconic photos",
+        hint: "Human subjects",
+        hint2: "Main characters",
+        post_solve: ["Afghan Girl: 1", "VJ Day in Times Square: 2", "68 Black Power Salute: 3", "Migrant Mother: 4", "Iwo Jima: 6", "Skyscraper lunch: 11", "Ellen selfie: 12 (11 + half of Jared Leto)"],
+        revAllowed: true
+    },
 ];
