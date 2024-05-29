@@ -772,4 +772,14 @@ export const puzzles = [
         post_solve: ["Koala's brain: 0 folds", "Greeting card: ~1 fold", "Classic puff pastry: 6 folds", "Max. folds in half for printer paper: 7", "Flag triangle: 13 folds", "Origami crane: 16 folds", "Chef's toque: 100 folds"],
         revAllowed: true
     },
+    {
+        id: 78,
+        solution: ["YOUTUBE", "AMAZON (SMILE)", "SNAPCHAT", "SPOTIFY", "FACEBOOK", "DISCORD", "YAHOO!"],
+        initialOrderSequence: "6741325",
+        theme: "ROYGBIV tech icon colors",
+        hint: "Tech-nicolor rainbow",
+        hint2: "ROYGBIV logo colors",
+        post_solve: ["YouTube: red", "Amazon smile: orange", "Snapchat: yellow", "Spotify: green", "Facebook: blue", "Discord: indigo ('blurple')", "Yahoo!: violet"],
+        revAllowed: true
+    }
 ];
