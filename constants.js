@@ -704,6 +704,16 @@ export const puzzles = [
     },
     {
         id: 71,
+        solution: ["HEEL BUN", "CHEESE", "LOWER PATTY", "CLUB BUN", "UPPER PATTY", "PICKLES", "CROWN BUN"],
+        initalOrderSequence: "4173526",
+        theme: "Big Mac stack",
+        hint: "McPuzzle",
+        hint2: "Big Mac assembly",
+        post_solve: ["Crown bun: top", "Pickles", "Upper patty", "Club bun: middle", "Lower patty", "Cheese", "Heel bun: bottom"],
+        revAllowed: true
+    },
+    {
+        id: 72,
         solution: ["DISTILLED WATER", "BOTTLED WATER", "CAMPBELL'S CHICKEN NOODLE SOUP", "SWEAT", "OCEAN WATER", "GREAT SALT LAKE", "DEAD SEA"],
         initialOrderSequence: "6513724",
         theme: "Salinity percentage",
@@ -713,7 +723,7 @@ export const puzzles = [
         revAllowed: true        
     },
     {
-        id: 72,
+        id: 73,
         solution: ["THE __: BABA O'RILEY BAND", "RESIDES", "CURRENTLY FASHIONABLE", "GOOD GRADE", "HAWAIIAN PIZZA TOPPING", "ANESTHETIZED", "THE OLD MAN AND ___: HEMINGWAY NOVEL"],
         initialOrderSequence: "7314265",
         theme: "SpongeBob SquarePants theme lyrics",
