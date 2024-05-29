@@ -742,4 +742,24 @@ export const puzzles = [
         post_solve: ["Afghan Girl: 1", "VJ Day in Times Square: 2", "68 Black Power Salute: 3", "Migrant Mother: 4", "Iwo Jima: 6", "Skyscraper lunch: 11", "Ellen selfie: 12 (11 + half of Jared Leto)"],
         revAllowed: true
     },
+    {
+        id: 75,
+        solution: ["\"FOOL'S MATE\" CHESS GAME", "TYPICAL SYMPHONY", "TOTAL CHECKERS OPENINGS", "THE MACARENA", "LONGEST OPTIMAL RUBIK'S CUBE SOLVE", "SHORTEST KLONDIKE SOLITAIRE WIN", "TAI CHI"],
+        initialOrderSequence: "4536172",
+        theme: "Moves and movements",
+        hint: "Making moves",
+        hint2: "Number of moves+movements",
+        post_solve: ["Fool's mate: 2 moves", "Typical symphony: 4 movements", "Checkers openings: 7 possible moves", "The Macarena: 14 moves", "Longest optimal Rubik's solve: 20", "Shortest solitaire victory (Klondike): 60", "Tai chi: 108"],
+        revAllowed: true
+    },
+    {
+        id: 76,
+        solution: ["KOALA'S BRAIN", "GREETING CARD", "CLASSIC PUFF PASTRY", "MAX. FOLDS IN HALF FOR PRINTER PAPER", "U.S. MILITARY FLAG TRIANGLE", "ORIGAMI CRANE", "CHEF'S TOQUE"],
+        initialOrderSequence: "5614273",
+        theme: "Number of folds",
+        hint: "Know when to fold 'em",
+        hint2: "Number of folds",
+        post_solve: ["Koala's brain: 0 folds", "Greeting card: ~1 fold", "Classic puff pastry: 6 folds", "Max. folds in half for printer paper: 7", "Flag triangle: 13 folds", "Origami crane: 16 folds", "Chef's toque: 100 folds"],
+        revAllowed: true
+    }
 ];
