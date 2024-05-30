@@ -791,5 +791,15 @@ export const puzzles = [
         hint2: "Number of teams",
         post_solve: ["Formula 1: 10 teams", "WNBA: 12 teams", "Big Ten: 14 teams (lol)", "Premier League: 20 teams", "MLB: 30 teams", "NFL: 32 teams", "March Madness: 68 teams"],
         revAllowed: true
+    },
+    {
+        id: 80,
+        solution: ["HIGHEST MICHELIN GUIDE RATING", "HIGHEST MILITARY RANK", "SUBARU LOGO", "BIG DIPPER", "VAN GOGH'S STARRY NIGHT", "AMERICAN FLAG", "HOLLYWOOD WALK OF FAME"],
+        initialOrderSequence: "3754162",
+        theme: "Number of stars",
+        hint: "Seeing stars",
+        hint2: "Number of stars",
+        post_solve: ["Highest Michelin rating: 3", "Highest military rank: 5", "Subaru logo: 6", "Big Dipper: 7", "Starry Night: 10 (plus the moon and Venus)", "American flag: 50", "Walk of Fame: 2781"],
+        revAllowed: true
     }
 ];
