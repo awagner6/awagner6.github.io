@@ -781,5 +781,15 @@ export const puzzles = [
         hint2: "ROYGBIV logo colors",
         post_solve: ["YouTube: red", "Amazon smile: orange", "Snapchat: yellow", "Spotify: green", "Facebook: blue", "Discord: indigo ('blurple')", "Yahoo!: violet"],
         revAllowed: true
+    },
+    {
+        id: 79,
+        solution: ["FORMULA 1", "WNBA", "BIG TEN CONFERENCE", "PREMIER LEAGUE", "MLB", "NFL", "MARCH MADNESS"],
+        initialOrderSequence: "5741326",
+        theme: "Number of teams",
+        hint: "Team up",
+        hint2: "Number of teams",
+        post_solve: ["Formula 1: 10 teams", "WNBA: 12 teams", "Big Ten: 14 teams (lol)", "Premier League: 20 teams", "MLB: 30 teams", "NFL: 32 teams", "March Madness: 68 teams"],
+        revAllowed: true
     }
 ];
