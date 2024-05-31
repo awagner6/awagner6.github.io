@@ -801,5 +801,15 @@ export const puzzles = [
         hint2: "Number of stars",
         post_solve: ["Highest Michelin rating: 3", "Highest military rank: 5", "Subaru logo: 6", "Big Dipper: 7", "Starry Night: 10 (plus the moon and Venus)", "American flag: 50", "Walk of Fame: 2781"],
         revAllowed: true
-    }
+    },
+    {
+        id: 81,
+        solution: ["SHY", "MEDIC", "FOOLISH", "IRRITABLE", "CHIPPER", "LETHARGIC", "HAVING A TICKLY NOSE"],
+        initialOrderSequence: "4723615",
+        theme: "Seven Dwarves alphabetically",
+        hint: "Disney shorts A-Z",
+        hint2: "Seven Dwarves",
+        post_solve: ["Shy: Bashful", "Medic: Doc", "Foolish: Dopey", "Irritable: Grumpy", "Chipper: Happy", "Lethargic: Sleepy", "Having a tickly nose: Sneezy"],
+        revAllowed: true
+    },
 ];
