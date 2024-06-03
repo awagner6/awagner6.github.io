@@ -813,4 +813,14 @@ export const puzzles = [
         post_solve: ["Shy: Bashful", "Medic: Doc", "Foolish: Dopey", "Irritable: Grumpy", "Chipper: Happy", "Lethargic: Sleepy", "Having a tickly nose: Sneezy"],
         revAllowed: true
     },
+    {
+        id: 82,
+        solution: ["HUMAN BODY", "HOTTEST DAY EVER RECORDED ON EARTH", "COOKED CHICKEN (MINIMUM INTERNAL)", "FINNISH SAUNA", "CAMPFIRE", "SURFACE OF THE SUN", "BOLT OF LIGHTNING"],
+        initialOrderSequence: "4132765",
+        theme: "Temperatures",
+        hint: "So hot right now",
+        hint2: "Temperatures (shown in Farenheit)",
+        post_solve: ["Human body: ~98.6°", "Hottest day ever: ~134.1°", "Cooked chicken: <165°", "Finnish sauna: 175-200°", "Campfire: 900-1500°", "Surface of the sun: 10\,000°", "Lightning bolt: 50\,000°"],
+        revAllowed: true
+    },
 ];
