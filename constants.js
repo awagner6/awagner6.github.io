@@ -335,11 +335,12 @@ export const puzzles = [
     },
     {
         id: 34,
-        solution: ["MARBLE", "NBA BASKETBALL", "WORLD RECORD RUBBER BAND BALL", "TIMES SQUARE BALL DROP BALL", "EPCOT'S SPACESHIP EARTH", "VEGAS SPHERE"],
+        solution: ["MARBLE", "NBA BASKETBALL", "WORLD RECORD RUBBER BAND BALL", "TIMES SQUARE BALL DROP BALL", "EPCOT'S SPACESHIP EARTH", "VEGAS SPHERE", "PLUTO"],
+        initialOrderSequence: "3461257",
         theme: "Balls/spheres by diameter",
         hint: "Snowballing",
-        hint2: "Spheres by size",
-        post_solve: ["Marble: <1 inch", "NBA Basketball: 9.5 inches", "Record rubber band ball: 7 feet", "Times Square ball drop ball: 12 feet", "Spaceship Earth: 165 feet", "Vegas Sphere: 516 feet"],
+        hint2: "Spheres by diameter",
+        post_solve: ["Marble: <1 inch", "NBA Basketball: 9.5 inches", "Record rubber band ball: 7 feet", "Times Square ball drop ball: 12 feet", "Spaceship Earth: 165 feet", "Vegas Sphere: 516 feet", "Pluto: ~8 million feet"],
         revAllowed: true
     },
     {
