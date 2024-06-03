@@ -823,4 +823,13 @@ export const puzzles = [
         post_solve: ["Human body: ~98.6°", "Hottest day ever: ~134.1°", "Cooked chicken: <165°", "Finnish sauna: 175-200°", "Campfire: 900-1500°", "Surface of the sun: 10\,000°", "Lightning bolt: 50\,000°"],
         revAllowed: true
     },
+    {
+        id: 83,
+        solution: ["RHINO BEETLE HORN", "RHINO HORN", "WALRUS TUSK", "MOOSE ANTLERS SPAN", "ELEPHANT TUSK", "TEXAS LONGHORN HORN SPAN", "NARWHAL HORN"],
+        initialOrderSequence: "2163754",
+        theme: "Average adult horn/antler/tusk lengths",
+        hint: "A horny puzzle",
+        post_solve: ["Rhino beetle horn: <6 inches", "Rhino horn: <2 feet", "Walrus tusk: <3 feet", "Moose antler span: <6 feet", "Elephant tusk: <8 feet", "Texas Longhorn horn span: <9 feet", "Narwhal horn: <10 feet"],
+        revAllowed: true
+    },
 ];
