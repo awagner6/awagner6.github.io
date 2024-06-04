@@ -829,7 +829,19 @@ export const puzzles = [
         initialOrderSequence: "2163754",
         theme: "Average adult horn/antler/tusk lengths",
         hint: "A horny puzzle",
+        hint2: "Horn/antler/tusk lengths",
         post_solve: ["Rhino beetle horn: <6 inches", "Rhino horn: <2 feet", "Walrus tusk: <3 feet", "Moose antler span: <6 feet", "Elephant tusk: <8 feet", "Texas Longhorn horn span: <9 feet", "Narwhal horn: <10 feet"],
         revAllowed: true
     },
+    {
+        id: 84,
+        solution: ["UNDERGRAD DEGREE", "TOY GUN AMMO", "ANCIENT TIME INDICATOR", "\"STAYIN' ALIVE\" BANDMATE", "\"ARMPIT SMELL", "HOGWASH", "BAY STATE SCHOOL"],
+        initialOrderSequence: "6312574",
+        theme: "B + letter\, alphabetically",
+        hint: "B plus",
+        hint2: "B + letter\, alphabetically",
+        post_solve: ["Undergrad degree: B.A.", "Toy gun ammo: BB", "Ancient time indicator: B.C.", "Stayin' Alive band member: Bee Gee", "Armpit smell: B.O.", "Hogwash: B.S.", "Bay State School: B.U."],
+        revAllowed: true        
+    },
+    
 ];
