@@ -862,6 +862,15 @@ export const puzzles = [
         hint2: "Age when accomplishment happened",
         post_solve: ["Romero summits Everest: 13", "Bieber releases 'Baby': 14", "Braille invents Braille: 15", "Thunberg sails Atlantic: 16", "Joan of Arc at Orléans: 17", "Shelley writes 'Frankenstein': 18", "Ruth joins MLB: 19"],
         revAllowed: true        
-    }
-    
+    },
+    {
+        id: 87,
+        solution: ["YARD", "METER", "FURLONG", "MILE", "NAUTICAL MILE", "LEAGUE", "PARSEC"],
+        initialOrderSequence: "4521736",
+        theme: "Units of length by length",
+        hint: "So long!",
+        hint2: "Length units by length",
+        post_solve: ["Yard: 3 feet", "Meter: 3.2 feet", "Furlong: 660 feet", "Mile: 5280 feet", "Nautical mile: 6080 feet", "League: 18\,263.52 feet", "Parsec: 1.01 x 10^17 feet"],
+        revAllowed: true
+    }    
 ];
