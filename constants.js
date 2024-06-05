@@ -843,5 +843,15 @@ export const puzzles = [
         post_solve: ["Undergrad degree: B.A.", "Toy gun ammo: BB", "Ancient time indicator: B.C.", "Stayin' Alive band member: Bee Gee", "Armpit smell: B.O.", "Hogwash: B.S.", "Bay State School: B.U."],
         revAllowed: true        
     },
+    {
+        id: 85,
+        solution: ["LUMIÉRE (BEAUTY AND THE BEAST)", "ADVENT WREATH", "KWANZAA KINARA", "HANUKKIAH", "CANDLEPIN BOWLING LANE", "JOHN HUGHES MOVIE", "CHINESE LANTERN FESTIVAL"],
+        initialOrderSequence: "6143275",
+        theme: "Numbers of candles",
+        hint: "Wicked puzzle",
+        hint2: "Candle count",
+        post_solve: ["Lumiére: 3 candles", "Advent wreath: 4-5 candles", "Kwanzaa kinara: 7 candles", "Hanukkiah: 9 candles", "Candlepin bowling: 10 candlepins", "Lantern festival: many candles"],
+        revAllowed: true
+    }
     
 ];
