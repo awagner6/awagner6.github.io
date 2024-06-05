@@ -852,6 +852,16 @@ export const puzzles = [
         hint2: "Candle count",
         post_solve: ["Lumiére: 3 candles", "Advent wreath: 4-5 candles", "Kwanzaa kinara: 7 candles", "Hanukkiah: 9 candles", "Candlepin bowling: 10 candlepins", "Lantern festival: many candles"],
         revAllowed: true
+    },
+    {
+        id: 86,
+        solution: ["JORDAN ROMERO SUMMITS EVEREST", "JUSTIN BIEBER RELEASES 'BABY'", "LOUIS BRAILLE INVENTS BRAILLE", "GRETA THUNBERG SAILS THE ATLANTIC", "JOAN OF ARC LEADS AT ORLÉANS", "MARY SHELLEY WRITES 'FRANKENSTEIN'", "BABE RUTH JOINS MLB"],
+        initialOrderSequence: "4267153",
+        theme: "Age when accomplishment happened",
+        hint: "Teen ages",
+        hint2: "Age when accomplishment happened",
+        post_solve: ["Romero summits Everest: 13", "Bieber releases 'Baby': 14", "Braille invents Braille: 15", "Thunberg sails Atlantic: 16", "Joan of Arc at Orléans: 17", "Shelley writes 'Frankenstein': 18", "Ruth joins MLB: 19"],
+        revAllowed: true        
     }
     
 ];
