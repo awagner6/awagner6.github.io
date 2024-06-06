@@ -872,5 +872,15 @@ export const puzzles = [
         hint2: "Length units by length",
         post_solve: ["Yard: 3 feet", "Meter: 3.2 feet", "Furlong: 660 feet", "Mile: 5280 feet", "Nautical mile: 6080 feet", "League: 18\,263.52 feet", "Parsec: 1.01 x 10^17 feet"],
         revAllowed: true
-    }    
+    },
+    {
+        id: 88,
+        solution: ["BACK (BOTTOM) OF AN LP RECORD", "LAST CAR OF A TRAIN", "BUTT MUSCLE", "LAST GREEK LETTER", "BACK PART OF A SHIP", "THE 'BOOT' OF A CAR", "BACK OF A PAINTING"],
+        initialOrderSequence: "2561743",
+        theme: "Backs and bottoms, A to Z",
+        hint: "I'm back! (A to Z)",
+        hint2: "Backs and bottoms alphabetically",
+        post_solve: ["Back of an LP: B-side", "Last train car: Caboose", "Butt muscle: Gluteus maximus", "Last Greek letter: Omega", "Back of a ship: Stern", "'Boot' of a car: Trunk", "Back of a painting: Verso"],
+        revAllowed: true
+    },
 ];
