@@ -890,7 +890,7 @@ export const puzzles = [
         theme: "Number of balloons",
         hint: "Inflation data",
         hint2: "Number of balloons",
-        post_solve: ["Pennywise: 1 balloon", "Mario Kart battle: 3 balloons", "Lawnchair Larry flight: 42 balloons", "2023 Macy's parade: 49 balloons", "Nena song: 99 luftballoons", "ABQ balloon fest: ~700 balloons", "'Up' house: 20\,622 balloons"],
+        post_solve: ["Pennywise: 1 balloon", "Mario Kart battle: 3 balloons", "Lawnchair Larry flight: 42 balloons", "2023 Macy's parade: 49 balloons", "Nena song: 99 luftballoons", "ABQ balloon fest: ~700 hot air balloons", "'Up' house: 20\,622 balloons"],
         revAllowed: true
     },
 ];
