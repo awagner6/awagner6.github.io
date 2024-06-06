@@ -885,7 +885,7 @@ export const puzzles = [
     },
     {
         id: 89,
-        solution: ["'IT' CLOWN PENNYWISE", "ORIGINAL MARIO KART BATTLE KART", "LAWNCHAIR LARRY WALTERS FLIGHT", "2023 MACY'S THANKSGIVING PARADE", "NENA SONG", "ALBUQUERQUE BALLOON FESTIVAL", "HOUSE FROM 'UP'"],
+        solution: ["'IT' CLOWN PENNYWISE", "ORIGINAL MARIO KART BATTLE KART", "LAWNCHAIR LARRY WALTERS FLIGHT", "2023 MACY'S THANKSGIVING PARADE", "NENA SONG", "ANNUAL ALBUQUERQUE FESTIVAL", "HOUSE FROM 'UP'"],
         initialOrderSequence: "5321746",
         theme: "Number of balloons",
         hint: "Inflation data",
