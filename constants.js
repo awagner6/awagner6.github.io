@@ -883,4 +883,14 @@ export const puzzles = [
         post_solve: ["Back of an LP: B-side", "Last train car: Caboose", "Butt muscle: Gluteus maximus", "Last Greek letter: Omega", "Back of a ship: Stern", "'Boot' of a car: Trunk", "Back of a painting: Verso"],
         revAllowed: true
     },
+    {
+        id: 89,
+        solution: ["'IT' CLOWN PENNYWISE", "ORIGINAL MARIO KART BATTLE KART", "LAWNCHAIR LARRY WALTERS FLIGHT", "2023 MACY'S THANKSGIVING PARADE", "NENA SONG", "ALBUQUERQUE BALLOON FESTIVAL", "HOUSE FROM 'UP'"],
+        initialOrderSequence: "5321746",
+        theme: "Number of balloons",
+        hint: "Inflation data",
+        hint2: "Number of balloons",
+        post_solve: ["Pennywise: 1 balloon", "Mario Kart battle: 3 balloons", "Lawnchair Larry flight: 42 balloons", "2023 Macy's parade: 49 balloons", "Nena song: 99 luftballoons", "ABQ balloon fest: ~700 balloons", "'Up' house: 20\,622 balloons"],
+        revAllowed: true
+    },
 ];
