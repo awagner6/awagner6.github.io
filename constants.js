@@ -471,7 +471,7 @@ export const puzzles = [
         hint: "Rosses A-Z",
         hint2: "Alphabetical order",
         post_solve: ["Flag maker: Betsy Ross", "Painter: Bob Ross", "Disco queen: Diana Ross", "Mamet play: Glengarry Glen Ross", "Ross business school university: Michigan", "Rapper: Rick Ross"],
-        revAllowed: false
+        revAllowed: true
     },
     {
         id: 48,
@@ -551,7 +551,7 @@ export const puzzles = [
         hint: "M-usicals A to Z",
         hint2: "Name each song's musical",
         post_solve: ["Memory: Cats", "Mister Cellophane: Chicago", "Matchmaker: Fiddler on the Roof", "My Shot: Hamilton", "Master of the House: Les Misérables", "Mama who bore me: Spring Awakening", "Maria: West Side Story"],
-        revAllowed: false               
+        revAllowed: true               
     },
     {
         id: 56,
@@ -608,7 +608,7 @@ export const puzzles = [
         solution: ["CHAIN", "SAW", "HORSE", "POWER", "BAR", "CODE", "WORD"],
         initialOrderSequence: "7164253",
         theme: "Word chain from Chain to Word",
-        hint: "Chain->word word chain",
+        hint: "Chain -> Word word chain (⬇️)",
         hint2: "Two-word phrases",
         post_solve: ["Chain saw", "Saw horse", "Horse power", "Power bar", "Bar code", "Code word"],
         revAllowed: false
