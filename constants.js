@@ -445,12 +445,12 @@ export const puzzles = [
     },
     {
         id: 45,
-        solution: ["PINE TREE", "BAY", "EMPIRE", "OLD DOMINION", "PEACH", "SUNSHINE"],
+        solution: ["PINE TREE", "BAY", "EMPIRE", "GARDEN", "OLD DOMINION", "PEACH", "SUNSHINE"],
         initialOrderSequence: "2745136",
-        theme: "East Coast state nicknames<br>north to south",
+        theme: "East Coast state<br>nicknames down the coast",
         hint: "Down the coast",
-        hint2: "State nicknames north to south",
-        post_solve: ["The Pine Tree State: Maine", "The Bay State: Massachusetts", "The Empire State: New York", "The Old Dominion State: Virginia", "The Peach State: Georgia", "The Sunshine State: Florida"],
+        hint2: "State nicknames",
+        post_solve: ["The Pine Tree State: Maine", "The Bay State: Massachusetts", "The Empire State: New York", "The Garden State: New Jersey", "The Old Dominion State: Virginia", "The Peach State: Georgia", "The Sunshine State: Florida"],
         revAllowed: false 
     },
     {
