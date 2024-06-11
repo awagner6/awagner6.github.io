@@ -893,4 +893,14 @@ export const puzzles = [
         post_solve: ["Pennywise: 1 balloon", "Mario Kart battle: 3 balloons", "Lawnchair Larry flight: 42 balloons", "2023 Macy's parade: 49 balloons", "Nena song: 99 luftballoons", "ABQ balloon fest: ~700 hot air balloons", "'Up' house: 20\,622 balloons"],
         revAllowed: true
     },
+    {
+        id: 90,
+        solution: ["ANTARCTICA", "SOUTH AMERICA", "OCEANIA", "NORTH AMERICA", "EUROPE", "ASIA", "AFRICA"],
+        initialOrderSequence: "4257631",
+        theme: "Number of countries",
+        hint: "United nations",
+        hint2: "Number of countries",
+        post_solve: ["Antarctica: 0", "South America: 12", "Oceania: 16", "North America: 23", "Europe: 45", "Asia: 48", "Africa: 54"],
+        revAllowed: true
+    }
 ];
