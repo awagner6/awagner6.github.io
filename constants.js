@@ -875,7 +875,7 @@ export const puzzles = [
     },
     {
         id: 88,
-        solution: ["BACK (BOTTOM) OF AN LP RECORD", "LAST CAR OF A TRAIN", "BUTT MUSCLE", "LAST GREEK LETTER", "BACK PART OF A SHIP", "THE 'BOOT' OF A CAR", "BACK OF A PAINTING"],
+        solution: ["BACK OF AN LP RECORD", "LAST CAR OF A TRAIN", "BUTT MUSCLE", "LAST GREEK LETTER", "BACK PART OF A SHIP", "THE 'BOOT' OF A CAR", "BACK OF A PAINTING"],
         initialOrderSequence: "2561743",
         theme: "Backs and bottoms, A to Z",
         hint: "I'm back! (A to Z)",
@@ -911,6 +911,16 @@ export const puzzles = [
         hint: "United states",
         hint2: "States, provinces, etc",
         post_solve: ["US: 50 states", "Japan: 47 prefectures", "Nigeria: 36 states", "Mexico: 31 states", "Canada: 11 provinces", "UAE: 7 emirates", "Australia: 6 states"],
+        revAllowed: true
+    },
+    {
+        id: 92,
+        solution: ["FREAKS AND GEEKS", "SUCCESSION", "THE WIRE", "GAME OF THRONES", "GREY'S ANATOMY", "THE SIMPSONS", "SATURDAY NIGHT LIVE"],
+        initialOrderSequence: "3265417",
+        theme: "Number of seasons",
+        hint: "Seasons",
+        hint2: "Number of seasons",
+        post_solve: ["Freaks and Geeks: 1 season", "Succession: 4", "The Wire: 5", "Game of Thrones: 8", "Grey's Anatomy: 20 (so far)", "The Simpsons: 34 (so far)", "SNL: 49 (so far)"],
         revAllowed: true
     }
 ];
