@@ -465,12 +465,12 @@ export const puzzles = [
     },
     {
         id: 47,
-        solution: ["FLAG MAKER ROSS", "HAPPY LITTLE TREES PAINTER ROSS", "DISCO QUEEN ROSS", "MAMET PLAY WITH ROSS IN TITLE", "UNIV. OF ___ ROSS BUSINESS SCHOOL", "RAPPER ROSS"],
+        solution: ["FLAG MAKER ROSS", "HAPPY LITTLE TREES PAINTER ROSS", "DISCO QUEEN ROSS", "\"FRIENDS\" ROSS SURNAME", "MAMET PLAY WITH ROSS IN TITLE", "UNIV. OF ___ ROSS BUSINESS SCHOOL", "RAPPER ROSS"],
         initialOrderSequence: "2651734",
         theme: "Rosses, alphabetically",
         hint: "Rosses A-Z",
         hint2: "Alphabetical order",
-        post_solve: ["Flag maker: Betsy Ross", "Painter: Bob Ross", "Disco queen: Diana Ross", "Mamet play: Glengarry Glen Ross", "Ross business school university: Michigan", "Rapper: Rick Ross"],
+        post_solve: ["Flag maker: Betsy Ross", "Painter: Bob Ross", "Disco queen: Diana Ross", "\"Friends\" Ross surname: Ross Geller", "Mamet play: Glengarry Glen Ross", "Ross business school university: Michigan", "Rapper: Rick Ross"],
         revAllowed: true
     },
     {
