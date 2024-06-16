@@ -540,7 +540,7 @@ export const puzzles = [
         theme: "Body parts head to toe",
         hint: "Body language",
         hint2: "From top to bottom",
-        post_solve: ["British bathroom: head", "Side of the road: shoulder", "Baby bottle part: nipple", "Cigarette remains: butt", "Hinder: kneecap", "Baby cow: calf", "Twelve inches: foot"],
+        post_solve: ["British bathroom: head", "Side of the road: shoulder", "Baby bottle part: nipple", "Cigarette remains: butt", "Hinder: kneecap or hamstring", "Baby cow: calf", "Twelve inches: foot"],
         revAllowed: false
     },
     {
