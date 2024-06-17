@@ -922,5 +922,15 @@ export const puzzles = [
         hint2: "Number of seasons",
         post_solve: ["Freaks and Geeks: 1 season", "Succession: 4", "The Wire: 5", "Game of Thrones: 8", "Grey's Anatomy: 20 (so far)", "The Simpsons: 34 (so far)", "SNL: 49 (so far)"],
         revAllowed: true
+    },
+    {
+        id: 93,
+        solution: ["BRITISH PM'S OFFICE", "JUMP STREET CHAPEL", "NBC STUDIOS IN NYC", "'P SHERMAN' (FINDING NEMO)", "ERNIE AND BERT'S APARTMENT", "SHERLOCK HOLMES'S FLAT", "THE WHITE HOUSE"],
+        initialOrderSequence: "6471325",
+        theme: "Addresses numerically",
+        hint: "Addresses",
+        hint2: "Addresses numerically",
+        post_solve: ["PM's office: 10 Downing Street", "Jump Street Chapel: 21 Jump Street", "NBC Studios: 30 Rockefeller Plaza", "P. Sherman: 42 Wallaby Way", "Ernie and Bert: 123 Sesame Street", "Sherlock Holmes: 221B Baker Street", "White House: 1600 Pennsylvania Avenue"],
+        revAllowed: true
     }
 ];
