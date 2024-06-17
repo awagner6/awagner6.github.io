@@ -480,7 +480,7 @@ export const puzzles = [
         theme: "Washington D.C. counts",
         hint: "D.C. ranks",
         hint2: "Numbers by size",
-        post_solve: ["Justices: 3", "Smithsonians: 17 (+3 outside DC)", "Amendments: 27", "White House bathrooms: 35", "Lincoln Memorial columns: 36", "Voting members of Congress: 535", "Washington Monument height: 555 ft"],
+        post_solve: ["Justices: 9", "Smithsonians: 17 (+3 outside DC)", "Amendments: 27", "White House bathrooms: 35", "Lincoln Memorial columns: 36", "Voting members of Congress: 535", "Washington Monument height: 555 ft"],
         revAllowed: true
     },
     {
