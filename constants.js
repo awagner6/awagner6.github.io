@@ -932,5 +932,15 @@ export const puzzles = [
         hint2: "Addresses numerically",
         post_solve: ["PM's office: 10 Downing Street", "Jump Street Chapel: 21 Jump Street", "NBC Studios: 30 Rockefeller Plaza", "P. Sherman: 42 Wallaby Way", "Ernie and Bert: 123 Sesame Street", "Sherlock Holmes: 221B Baker Street", "White House: 1600 Pennsylvania Avenue"],
         revAllowed: true
+    },
+    {
+        id: 94,
+        solution: ["BUTTERFINGER BARS PER PACKAGE", "PEACE SIGN", "SMALLEST MCDONALD'S CHICKEN SELECTS", "MARGE SIMPSON'S HAND", "STATUE OF DAVID'S HAND", "INIGO MONTOYA'S NEMESIS' HAND", "FINGER LAKES"],
+        initialOrderSequence: "5371624",
+        theme: "Finger counts",
+        hint: "Count on your fingers",
+        hint2: "Number of fingers",
+        post_solve: ["Butterfingers: 1 per package", "Peace sign: 2 fingers", "Smallest chicken selects: 3 fingers", "Marge Simpson's hand: 4 fingers", "David's hand: 5 fingers", "Inigo Montoya's nemesis: 6 fingers", "Finger lakes: 11"],
+        revAllowed: true
     }
 ];
