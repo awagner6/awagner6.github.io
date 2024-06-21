@@ -945,6 +945,16 @@ export const puzzles = [
     },
     {
         id: 95,
+        solution: ["BELUGA", "BEAR", "SWAN", "GOOSE", "KANGAROO", "FERRET", "BAT"],
+        initialOrderSequence: "5312674",
+        theme: "Baby animal names\, alphabetically",
+        hint: "Baby names (A-Z)",
+        hint2: "Names of baby animals",
+        post_solve: ["Beluga: calf", "Bear: cub", "Swan: cygnet", "Goose: gosling", "Kangaroo: joey", "Ferret: kit", "Bat: pup"],
+        revAllowed: true
+    },
+    {
+        id: 96,
         solution: ["CAIRO (IL, EGYPT)", "VENICE (CA, ITALY)", "ATHENS (GA, GREECE)", "ST PETERSBURG (FL, RUSSIA)", "ROME (GA, ITALY)", "PARIS (TX, FRANCE)", "BIRMINGHAM (AL, ENGLAND)"],
         initialOrderSequence: "7431652",
         theme: "Distance between same-name cities",
