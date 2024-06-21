@@ -942,5 +942,15 @@ export const puzzles = [
         hint2: "Number of fingers",
         post_solve: ["Butterfingers: 1 per package", "Peace sign: 2 fingers", "Smallest chicken selects: 3 fingers", "Marge Simpson's hand: 4 fingers", "David's hand: 5 fingers", "Inigo Montoya's nemesis: 6 fingers", "Finger lakes: 11"],
         revAllowed: true
+    },
+    {
+        id: 95,
+        solution: ["CAIRO (IL, EGYPT)", "VENICE (CA, ITALY)", "ATHENS (GA, GREECE)", "ST PETERSBURG (FL, RUSSIA)", "ROME (GA, ITALY)", "PARIS (TX, FRANCE)", "BIRMINGHAM (AL, ENGLAND)"],
+        initialOrderSequence: "7431652",
+        theme: "Distance between same-name cities",
+        hint: "So close yet so far",
+        hint2: "Distance between cities",
+        post_solve: ["Cairos: 10\,314 mi", "Venices: 9\,891 mi", "Athenses: 9\,008 mi", "St Petersburgs: 8\,364 miles mi", "Romes: 8\,105 mi", "Parises: 7\,782 mi", "Birminghams: 6\,795 mi"],
+        revAllowed: true
     }
 ];
