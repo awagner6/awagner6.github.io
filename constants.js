@@ -905,12 +905,12 @@ export const puzzles = [
     },
     {
         id: 91,
-        solution: ["US - STATES", "JAPAN - PREFECTURES", "NIGERIA - STATES", "MEXICO - STATES", "CANADA - PROVINCES", "UAE - EMIRATES", "AUSTRALIA - STATES"],
+        solution: ["AUSTRALIA - STATES", "UAE - EMIRATES", "CANADA - PROVINCES", "MEXICO - STATES", "NIGERIA - STATES", "JAPAN - PREFECTURES", "US - STATES"],
         initialOrderSequence: "5143672",
         theme: "Number of<br>states/provinces/etc",
         hint: "United states",
         hint2: "States, provinces, etc",
-        post_solve: ["US: 50 states", "Japan: 47 prefectures", "Nigeria: 36 states", "Mexico: 31 states", "Canada: 11 provinces", "UAE: 7 emirates", "Australia: 6 states"],
+        post_solve: ["Australia: 6 states", "UAE: 7 emirates", "Canada: 11 provinces", "Mexico: 31 states", "Nigeria: 36 states", "Japan: 47 prefectures", "US: 50 states"],
         revAllowed: true
     },
     {
