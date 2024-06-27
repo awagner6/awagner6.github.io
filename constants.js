@@ -962,5 +962,15 @@ export const puzzles = [
         hint2: "Distance between cities",
         post_solve: ["Cairos: 10\,314 mi", "Venices: 9\,891 mi", "Athenses: 9\,008 mi", "St Petersburgs: 8\,364 miles mi", "Romes: 8\,105 mi", "Parises: 7\,782 mi", "Birminghams: 6\,795 mi"],
         revAllowed: true
-    }
+    },
+    {
+        id: 97,
+        solution: ["SHOHEI OHTANI LA DODGERS CONTRACT", "TAYLOR SWIFT ERAS TOUR", "THE LION KING ON BROADWAY", "\"AVATAR\" (2009) BOX OFFICE", "\"HARRY POTTER\" BOOKS", "SPACE INVADERS GAME", "APPLE ANNUAL REVENUE"],
+        initialOrderSequence: "4256173",
+        theme: "Total revenue earned",
+        hint: "Gross!",
+        hint2: "Total (gross) revenue",
+        post_solve: ["Shohei Ohtani contract: $700 million", "Eras tour: $1 billion", "\"The Lion King\" on Bway: $1.9 billion", "\"Avatar\" box office: $2.9 billion", "\"Harry Potter\" books: $7.7 billion", "Space Invaders: $13 billion ($30B+ with inflation!)", "Apple annual revenue: $383 billion"],
+        revAllowed: true
+    },
 ];
