@@ -973,4 +973,14 @@ export const puzzles = [
         post_solve: ["Shohei Ohtani contract: $700 million", "Eras tour: $1 billion", "\"The Lion King\" on Bway: $1.9 billion", "\"Avatar\" box office: $2.9 billion", "\"Harry Potter\" books: $7.7 billion", "Space Invaders: $13 billion ($30B+ with inflation!)", "Apple annual revenue: $383 billion"],
         revAllowed: true
     },
+    {
+        id: 98,
+        solution: ["STANDARD RESIDENTIAL WINDOW", "MONA LISA PROTECTIVE CASE", "GRAND CANYON SKYWALK", "INTL. SPACE STATION WINDOW", "U.S. PRESIDENT'S LIMO WINDOW", "DEEP-SEA SUBMARINE WINDOW", "GEORGIA AQUARIUM GALLERY"],
+        initialOrderSequence: "6153274",
+        theme: "Glass thicknesses",
+        hint: "Through thick and thin",
+        hint2: "Glass thicknesses",
+        post_solve: ["Residential window: .1 inches", "Mona Lisa case: 1.5 inches", "Grand Canyon skywalk: 2.5 inches", "Space Station window: ~5 inches (4 1-inch panes + gaps)", "President's limo window: 5.1 inches", "Submarine window: 7.8 inches", "Georgia Aquarium gallery: 24 inches(!)"],
+        revAllowed: true
+    }
 ];
