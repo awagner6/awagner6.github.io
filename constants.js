@@ -982,5 +982,5 @@ export const puzzles = [
         hint2: "Glass thicknesses",
         post_solve: ["Residential window: .1 inches", "Mona Lisa case: 1.5 inches", "Grand Canyon skywalk: 2.5 inches", "Space Station window: ~5 inches (4 1-inch panes + gaps)", "President's limo window: 5.1 inches", "Submarine window: 7.8 inches", "Georgia Aquarium gallery: 24 inches(!)"],
         revAllowed: true
-    }
+    },
 ];
