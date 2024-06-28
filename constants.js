@@ -992,5 +992,15 @@ export const puzzles = [
         hint2: "NASA missions by year",
         post_solve: ["Mercury: 1961-63", "Gemini: 1965-66", "Apollo: 1968-72", "Skylab: 1973-74", "Space Shuttle: 1981-2011", "ISS: 1998- (ongoing)", "Artemis: 2025 (planned)"],
         revAllowed: true
+    },
+    {
+        id: 100,
+        solution: ["\!", "\@", "\#", "\$", "\%", "\^", "\&"],
+        initialOrderSequence: "6241375",
+        theme: "Keyboard number row symbols",
+        hint: "Keyboard (no peeking!)",
+        hint2: "Number row symbols",
+        post_solve: ["\!: 1", "\@: 2", "\#: 3", "\$: 4", "\%: 5", "\^: 6", "\&: 7"],
+        revAllowed: true
     }
 ];
