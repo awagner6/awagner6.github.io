@@ -983,4 +983,14 @@ export const puzzles = [
         post_solve: ["Residential window: .1 inches", "Mona Lisa case: 1.5 inches", "Grand Canyon skywalk: 2.5 inches", "Space Station window: ~5 inches (4 1-inch panes + gaps)", "President's limo window: 5.1 inches", "Submarine window: 7.8 inches", "Georgia Aquarium gallery: 24 inches(!)"],
         revAllowed: true
     },
+    {
+        id: 99,
+        solution: ["MERCURY", "GEMINI", "APOLLO", "SKYLAB", "SPACE SHUTTLE", "INTL SPACE STATION", "ARTEMIS"],
+        initialOrderSequence: "5417423",
+        theme: "NASA missions by first launch",
+        hint: "NASA launches",
+        hint2: "NASA missions by year",
+        post_solve: ["Mercury: 1961-63", "Gemini: 1965-66", "Apollo: 1968-72", "Skylab: 1973-74", "Space Shuttle: 1981-2011", "ISS: 1998- (ongoing)", "Artemis: 2025 (planned)"],
+        revAllowed: true
+    }
 ];
