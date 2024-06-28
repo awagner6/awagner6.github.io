@@ -1002,5 +1002,15 @@ export const puzzles = [
         hint2: "Number row symbols",
         post_solve: ["\!: 1", "\@: 2", "\#: 3", "\$: 4", "\%: 5", "\^: 6", "\&: 7"],
         revAllowed: true
+    },
+    {
+        id: 101,
+        solution: ["TYPICAL BATHROOM STALL", "MONICA'S DOOR IN 'FRIENDS'", "SAMSON'S HAIRCUT", "PANAMA CANAL", "OCTUPLE SCULL (OARLOCKS)", "SCOTLAND (LOCHS)", "PARIS LOVERS' BRIDGE CIRCA 2014"],
+        initialOrderSequence: "3175624",
+        theme: "Lock counts",
+        hint: "Lock it in",
+        hint2: "Number of locks",
+        post_solve: ["Typical bathroom stall: 1 lock", "Monica's door: 3 locks", "Samson's haircut: 7 locks of hair", "Panama Canal: 12 canal locks (6 pairs)", "Octuple rowing scull: 16 oarlocks", "Scotland: ~31,460", "Paris bridge (until 2014): 700,000+ padlocks"],
+        revAllowed: true,
     }
 ];
