@@ -1015,12 +1015,22 @@ export const puzzles = [
     },
     {
         id: 102,
-        solution: ["HINDU CHUDAKARANA (FIRST HAIRCUT)", "CATHOLIC FIRST COMMUNION", "JEWISH B'NAI MITZVAH", "MEXICAN/LATIN QUINCEAÑERA", "AMISH RUMSPRINGA", "PHILIPPINE DEBUT", "KOREAN HWANGAP"],
+        solution: ["HINDU CHUDAKARANA (FIRST HAIRCUT)", "CATHOLIC FIRST COMMUNION", "JEWISH B'NAI MITZVAH", "MEXICAN/LATIN QUINCEAÑERA", "AMISH RUMSPRINGA", "PHILIPPINE DEBUT", "KOREAN HWANGAP (MAJOR BIRTHDAY)"],
         initialOrderSequence: "4271635",
         theme: "Rites by age",
         hint: "That's rite!",
         hint2: "Rites by age",
         post_solve: ["Chudakarana: 1-7", "First communion: 7-12", "B'nai mitzvah: 13", "Quinceañera: 15", "Rumspringa: 16", "Philippine debut: 18", "Hwangap: 60"],
+        revAllowed: true
+    },
+    {
+        id: 103,
+        solution: ["THREE-WAY INTERSECTION", "HORSESHOE", "BIRD FLIGHT FORMATION", "SHRUG", "OPEN SCISSORS", "TUNING FORK", "LIGHTNING BOLT"],
+        initialOrderSequence: "5417263",
+        theme: "Letter shapes T-Z",
+        hint: "20-26",
+        hint2: "Letter shapes T-Z",
+        post_solve: ["Three-way intersection: T", "Horseshoe: U", "Bird formation: V", "Shrug: W", "Open scissors: X", "Tuning fork: Y", "Lightning bolt: Z"],
         revAllowed: true
     }
 ];
