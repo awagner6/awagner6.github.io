@@ -1012,5 +1012,15 @@ export const puzzles = [
         hint2: "Number of locks",
         post_solve: ["Typical bathroom stall: 1 lock", "Monica's door: 3 locks", "Samson's haircut: 7 locks of hair", "Panama Canal: 12 canal locks (6 pairs)", "Octuple rowing scull: 16 oarlocks", "Scotland: ~31,460", "Paris bridge (until 2014): 700,000+ padlocks"],
         revAllowed: true,
+    },
+    {
+        id: 102,
+        solution: ["HINDU CHUDAKARANA (FIRST HAIRCUT)", "CATHOLIC FIRST COMMUNION", "JEWISH B'NAI MITZVAH", "MEXICAN/LATIN QUINCEAÑERA", "AMISH RUMSPRINGA", "PHILIPPINE DEBUT", "KOREAN HWANGAP"],
+        initialOrderSequence: "4271635",
+        theme: "Rites by age",
+        hint: "That's rite!",
+        hint2: "Rites by age",
+        post_solve: ["Chudakarana: 1-7", "First communion: 7-12", "B'nai mitzvah: 13", "Quinceañera: 15", "Rumspringa: 16", "Philippine debut: 18", "Hwangap: 60"],
+        revAllowed: true
     }
 ];
