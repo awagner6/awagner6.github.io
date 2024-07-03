@@ -1042,5 +1042,15 @@ export const puzzles = [
         hint2: "Steepnesses by angle",
         post_solve: ["ADA wheelchair access ramp: <5 degrees", "SF Lombard Street: 27 degrees", "Olympic ski jump in-run: 37 degrees", "Giza pyramid face: 52 degrees", "Coney Island Cyclone drop: 58.6 degrees", "Letter V: 71 degrees", "Transamerica pyramid: 85 degrees"],
         revAllowed: true
+    },
+    {
+        id: 105,
+        solution: ["DIANA TAURASI", "MIA HAMM", "PELÉ", "TOM BRADY", "MICHAEL JORDAN", "JACKIE ROBINSON", "WAYNE GRETZKY"],
+        initialOrderSequence: "3627154",
+        theme: "Jersey numbers",
+        hint: "Well-worn numbers",
+        hint2: "Jersey numbers",
+        post_solve: ["Diana Taurasi: 3", "Mia Hamm: 9", "Pelé: 10", "Tom Brady: 12", "Michael Jordan: 23", "Jackie Robinson: 42", "Wayne Gretzky: 99"],
+        revAllowed: true
     }
 ];
