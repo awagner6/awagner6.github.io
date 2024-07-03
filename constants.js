@@ -1032,5 +1032,15 @@ export const puzzles = [
         hint2: "Letter shapes T-Z",
         post_solve: ["Three-way intersection: T", "Horseshoe: U", "Bird formation: V", "Shrug: W", "Open scissors: X", "Tuning fork: Y", "Lightning bolt: Z"],
         revAllowed: true
+    },
+    {
+        id: 104,
+        solution: ["ADA WHEELCHAIR ACCESS RAMP", "SF LOMBARD STREET", "OLYMPIC SKI JUMP IN-RUN", "GIZA PYRAMID FACE", "CONEY ISLAND CYCLONE DROP", "LETTER V IN THIS FONT", "SF TRANSAMERICA PYRAMID FACE"],
+        initialOrderSequence: "2164735",
+        theme: "Steepnesses by angle",
+        hint: "A bit steep",
+        hint2: "Steepnesses by angle",
+        post_solve: ["ADA wheelchair access ramp: <5 degrees", "SF Lombard Street: 27 degrees", "Olympic ski jump in-run: 37 degrees", "Giza pyramid face: 52 degrees", "Coney Island Cyclone drop: 58.6 degrees", "Letter V: 71 degrees", "Transamerica pyramid: 85 degrees"],
+        revAllowed: true
     }
 ];
