@@ -1052,5 +1052,15 @@ export const puzzles = [
         hint2: "Jersey numbers",
         post_solve: ["Diana Taurasi: 3", "Mia Hamm: 9", "Pelé: 10", "Tom Brady: 12", "Michael Jordan: 23", "Jackie Robinson: 42", "Wayne Gretzky: 99"],
         revAllowed: true
+    },
+    {
+        id: 106,
+        solution: ["MILE", "THINGS I HATE ABOUT YOU", "DRESSES", "DAYS LATER", "FIRST DATES", "DALMATIANS", "DAYS OF SUMMER"],
+        initialOrderSequence: "3741526",
+        theme: "Movie titles missing a number",
+        hint: "Movie magic numbers",
+        hint2: "Movie titles missing a number",
+        post_solve: ["8 MILE", "10 THINGS I HATE ABOUT YOU", "27 DRESSES", "28 DAYS LATER", "50 FIRST DATES", "101 DALMATIANS", "(500) DAYS OF SUMMER"],
+        revAllowed: true
     }
 ];
