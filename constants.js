@@ -1062,5 +1062,15 @@ export const puzzles = [
         hint2: "Movie titles missing a number",
         post_solve: ["8 MILE", "10 THINGS I HATE ABOUT YOU", "27 DRESSES", "28 DAYS LATER", "50 FIRST DATES", "101 DALMATIANS", "(500) DAYS OF SUMMER"],
         revAllowed: true
+    },
+    {
+        id: 107,
+        solution: ["CONFECTIONER'S SUGAR", "COCONUT SUGAR", "TURBINADO SUGAR", "GRANULATED SUGAR", "BROWN SUGAR (PACKED)", "MAPLE SYRUP", "HONEY"],
+        initialOrderSequence: "2143765",
+        theme: "Sweeteners by weight\n(grams per cup)",
+        hint: "Sweet grams",
+        hint2: "Sweeteners by weight",
+        post_solve: ["Confectioner's sugar: 115g", "Cocunut sugar: 154g", "Turbinado sugar: 180g", "Granulated sugar: 200g", "Brown sugar: 230g", "Maple syrup: 312g", "Honey: 336g"],
+        revAllowed: true
     }
 ];
