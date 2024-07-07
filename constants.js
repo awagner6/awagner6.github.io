@@ -1072,5 +1072,15 @@ export const puzzles = [
         hint2: "Sweeteners by weight",
         post_solve: ["Confectioner's sugar: 115g", "Cocunut sugar: 154g", "Turbinado sugar: 180g", "Granulated sugar: 200g", "Brown sugar: 230g", "Maple syrup: 312g", "Honey: 336g"],
         revAllowed: true
+    },
+    {
+        id: 108,
+        solution: ["SUPERMAN", "BATMAN", "CAPTAIN AMERICA", "WONDER WOMAN", "SPIDER-MAN", "STORM (X-MEN)", "SAILOR MOON"],
+        initialOrderSequence: "6517423",
+        theme: "Superhero debut years",
+        hint: "Super debuts",
+        hint2: "Superheroes by debut year",
+        post_solve: ["Superman: 1938", "Batman: 1939", "Captain America: 1940", "Wonder Woman: 1941", "Spider-man: 1962", "Storm: 1975", "Sailor Moon: 1992"],
+        revAllowed: true
     }
 ];
