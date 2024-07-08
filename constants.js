@@ -1093,4 +1093,14 @@ export const puzzles = [
         post_solve: ["(WA)ITING GA(ME)", "(OR)OGE(NY)", "(CA)LAMA(RI)", "(CA)SCA(DE)", "(CA)SSA(VA)", "(CA)BERNET FRA(NC)", "(CA)YU(GA)"],
         revAllowed: false
     },
+    {
+        id: 110,
+        solution: ["MARCH MADNESS BRACKET ANNOUNCED", "BOSTON MARATHON", "ELECTION DAY", "PINK DAY IN \"MEAN GIRLS\"", "THANKSGIVING", "\"ALOHA\" DAY", "COLLEGE FOOTBALL GAMES PLAYED"],
+        initialOrderSequence: "5132476",
+        theme: "Days of the week",
+        hint: "Week-minded (S->S)",
+        hint2: "Sunday thru Saturday",
+        post_solve: ["March Madness bracket announced: Selection Sunday", "Boston Marathon: always on a Monday", "Election Day: Tuesday", "Mean Girls: 'on Wednesdays we wear pink'", "Thanksgiving: Thursday", "\"Aloha\" day: Casual/Aloha Friday", "College Football: Saturday"],
+        revAllowed: true
+    }
 ];
