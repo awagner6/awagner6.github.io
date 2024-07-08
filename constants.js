@@ -1082,5 +1082,15 @@ export const puzzles = [
         hint2: "Superheroes by debut year",
         post_solve: ["Superman: 1938", "Batman: 1939", "Captain America: 1940", "Wonder Woman: 1941", "Spider-man: 1962", "Storm: 1975", "Sailor Moon: 1992"],
         revAllowed: true
-    }
+    },
+    {
+        id: 109,
+        solution: ["WAITING GAME", "OROGENY", "CALAMARI", "CASCADE", "CASSAVA", "CABERNET FRANC", "CAYUGA"],
+        initialOrderSequence: "2614573",
+        theme: "West <-> East U.S. states by latitudes",
+        hint: "Coast to coast",
+        hint2: "First two, last two",
+        post_solve: ["(WA)ITING GA(ME)", "(OR)OGE(NY)", "(CA)LAMA(RI)", "(CA)SCA(DE)", "(CA)SSA(VA)", "(CA)BERNET FRA(NC)", "(CA)YU(GA)"],
+        revAllowed: false
+    },
 ];
