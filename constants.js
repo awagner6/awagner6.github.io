@@ -1089,7 +1089,7 @@ export const puzzles = [
         initialOrderSequence: "2614573",
         theme: "West <-> East U.S. states by latitudes",
         hint: "Coast to coast",
-        hint2: "First two, last two",
+        hint2: "First two / last two letters",
         post_solve: ["(WA)ITING GA(ME)", "(OR)OGE(NY)", "(CA)LAMA(RI)", "(CA)SCA(DE)", "(CA)SSA(VA)", "(CA)BERNET FRA(NC)", "(CA)YU(GA)"],
         revAllowed: false
     },
