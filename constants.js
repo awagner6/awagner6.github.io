@@ -1103,4 +1103,14 @@ export const puzzles = [
         post_solve: ["March Madness bracket announced: Selection Sunday", "Boston Marathon: always on a Monday", "Election Day: Tuesday", "Mean Girls: 'on Wednesdays we wear pink'", "Thanksgiving: Thursday", "\"Aloha\" day: Casual/Aloha Friday", "College Football: Saturday"],
         revAllowed: true
     },
+    {
+        id: 111,
+        solution: ["PAPER", "WOOD", "TIN", "CRYSTAL", "PORCELAIN", "SILVER", "PEARL"],
+        initialOrderSequence: "3251764",
+        theme: "Classic anniversary gifts",
+        hint: "Reveling revolutions",
+        hint2: "Anniversary gifts",
+        post_solve: ["Paper: 1st", "Wood: 5th", "Tin: 10th", "Crystal: 15th", "Porcelain: 20th", "Silver: 25th", "Pearl: 30th"],
+        revAllowed: true
+    }
 ];
