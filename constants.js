@@ -1112,5 +1112,15 @@ export const puzzles = [
         hint2: "Anniversary gifts",
         post_solve: ["Paper: 1st", "Wood: 5th", "Tin: 10th", "Crystal: 15th", "Porcelain: 20th", "Silver: 25th", "Pearl: 30th"],
         revAllowed: true
+    },
+    {
+        id: 112,
+        solution: ["THE", "BE", "TO", "OF", "AND", "A", "IN"],
+        initialOrderSequence: "5147263",
+        theme: "Most common English words",
+        hint: "Popular language",
+        hint2: "Most common words",
+        post_solve: ["The: 1", "Be: 2", "To: 3", "Of: 4", "And: 5", "A: 6", "In: 7"],
+        revAllowed: true
     }
 ];
