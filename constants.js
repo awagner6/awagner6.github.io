@@ -1122,5 +1122,15 @@ export const puzzles = [
         hint2: "Most common words",
         post_solve: ["The: 1", "Be: 2", "To: 3", "Of: 4", "And: 5", "A: 6", "In: 7"],
         revAllowed: true
-    }
+    },
+    {
+        id: 113,
+        solution: ["USA", "GERMANY", "MEXICO", "BRAZIL", "INDIA", "SOUTH KOREA", "JAPAN"],
+        initialOrderSequence: "5137264",
+        theme: "National currencies A-Z",
+        hint: "Currency ABCs",
+        hint2: "Alphabetical by currency",
+        post_solve: ["USA: Dollar", "Germany: Euro", "Mexico: Peso", "Brazil: Real", "India: Rupee", "South Korea: Won", "Japan: Yen"],
+        revAllowed: true
+    },
 ];
