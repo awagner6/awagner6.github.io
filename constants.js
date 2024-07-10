@@ -706,7 +706,7 @@ export const puzzles = [
     {
         id: 71,
         solution: ["HEEL BUN", "CHEESE", "LOWER PATTY", "CLUB BUN", "UPPER PATTY", "PICKLES", "CROWN BUN"],
-        initalOrderSequence: "4173526",
+        initialOrderSequence: "4173526",
         theme: "Big Mac stack",
         hint: "McPuzzle",
         hint2: "Big Mac assembly",
@@ -1102,5 +1102,5 @@ export const puzzles = [
         hint2: "Sunday thru Saturday",
         post_solve: ["March Madness bracket announced: Selection Sunday", "Boston Marathon: always on a Monday", "Election Day: Tuesday", "Mean Girls: 'on Wednesdays we wear pink'", "Thanksgiving: Thursday", "\"Aloha\" day: Casual/Aloha Friday", "College Football: Saturday"],
         revAllowed: true
-    }
+    },
 ];
