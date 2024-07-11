@@ -1133,4 +1133,14 @@ export const puzzles = [
         post_solve: ["USA: Dollar", "Germany: Euro", "Mexico: Peso", "Brazil: Real", "India: Rupee", "South Korea: Won", "Japan: Yen"],
         revAllowed: true
     },
+    {
+        id: 114,
+        solution: ["THE DEPARTED", "THE GODFATHER", "AVENGERS ENDGAME", "TITANIC", "LORD OF THE RINGS RETURN OF THE KING", "LAWRENCE OF ARABIA", "GONE WITH THE WIND"],
+        initialOrderSequence: "6412735",
+        theme: "Movies by runtime",
+        hint: "It's a long story",
+        hint2: "Movies by runtime",
+        post_solve: ["The Departed: 2h 31m", "The Godfather: 2h 55m", "Avengers Endgame: 3h 2m", "Titanic: 3h 15m", "LOTR ROTK: 3h 21m", "Lawrence Of Arabia: 3h 42m", "Gone With The Wind: 3h 58m"],
+        revAllowed: true
+    }
 ];
