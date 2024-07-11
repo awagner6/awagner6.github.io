@@ -1135,6 +1135,16 @@ export const puzzles = [
     },
     {
         id: 114,
+        solution: ["CHEVRON SHAPE", "THE MARK OF ZORRO", "THE FLASH LOGO", "CONFOUNDED FACE EMOJI MOUTH", "PIKACHU'S TAIL", "SF LOMBARD STREET", "OLYMPIC SLALOM SKI GATES"],
+        initialOrderSequence: "4261735",
+        theme: "Number of kinks/turns",
+        hint: "Getting kinky",
+        hint2: "Number of kinks/turns",
+        post_solve: ["Chevron: 1 kink", "Mark of Zorro (Z): 2 kinks", "The Flash logo: 4 kinks", "Confounded emoji mouth: 5 kinks", "Pikachu's tail: 6 kinks", "SF Lombard St: 8 turns", "Olympic Slalom gates: 40-75"],
+        revAllowed: true
+    },
+    {
+        id: 115,
         solution: ["THE DEPARTED", "THE GODFATHER", "AVENGERS ENDGAME", "TITANIC", "LORD OF THE RINGS RETURN OF THE KING", "LAWRENCE OF ARABIA", "GONE WITH THE WIND"],
         initialOrderSequence: "6412735",
         theme: "Movies by runtime",
@@ -1142,5 +1152,5 @@ export const puzzles = [
         hint2: "Movies by runtime",
         post_solve: ["The Departed: 2h 31m", "The Godfather: 2h 55m", "Avengers Endgame: 3h 2m", "Titanic: 3h 15m", "LOTR ROTK: 3h 21m", "Lawrence Of Arabia: 3h 42m", "Gone With The Wind: 3h 58m"],
         revAllowed: true
-    }
+    },
 ];
