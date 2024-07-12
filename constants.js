@@ -1153,4 +1153,14 @@ export const puzzles = [
         post_solve: ["The Departed: 2h 31m", "The Godfather: 2h 55m", "Avengers Endgame: 3h 2m", "Titanic: 3h 15m", "LOTR ROTK: 3h 21m", "Lawrence Of Arabia: 3h 42m", "Gone With The Wind: 3h 58m"],
         revAllowed: true
     },
+    {
+        id: 116,
+        solution: ["\"FABULOUS!\"", "WEST COAST STATE\, JOCULARLY", "EASILY BROKEN", "SUFFIX WITH 'IDEAL'", "2000s WINDOWS OS", "COMEDIAN WONG", "CANINE LOLCATS EQUIVALENTS"],
+        initialOrderSequence: "3256174",
+        theme: "Mary Poppins lyric",
+        hint: "Musical pop ins",
+        hint2: "Mary Poppins lyric",
+        post_solve: ["\"Fabulous!\": Super", "West coast state\, jocularly: Cali", "Easily broken: Fragile", "Suffix with 'ideal': -Istic", "2000s Windows OS: XP", "Comedian Wong: Ali", "Canine LOLcats equivalents: Doges"],
+        revAllowed: true
+    },
 ];
