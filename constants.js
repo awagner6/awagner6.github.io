@@ -1163,4 +1163,14 @@ export const puzzles = [
         post_solve: ["\"Fabulous!\": Super", "West coast state\, jocularly: Cali", "Easily broken: Fragile", "Suffix with 'ideal': -Istic", "2000s Windows OS: XP", "Comedian Wong: Ali", "Canine LOLcats equivalents: Doges"],
         revAllowed: true
     },
+    {
+        id: 117,
+        solution: ["NEAPOLITAN ICE CREAM", "ORIGINAL STARBURSTS PACK", "ORIGINAL SKITTLES BAG", "KFC (HERBS AND SPICES)", "DR PEPPER (RECIPE BLEND)", "BASKIN ROBBINS SLOGAN", "\"OFFICIAL\" JELLY BELLY"],
+        initialOrderSequence: "4137625",
+        theme: "Number of flavors",
+        hint: "Flavortown",
+        hint2: "Number of flavors",
+        post_solve: ["Neapolitan: 3 flavors", "Starbursts: 4 flavors", "Skittles: 5 flavors", "KFC: 11 herbs/spices", "Dr Pepper: 23-flavor blend", "Baskin Robbins slogan: 31 (tho 1400+ IRL)", "'Official' Jelly Belly: 50 (tho 150+ total)"],
+        revAllowed: true        
+    }
 ];
