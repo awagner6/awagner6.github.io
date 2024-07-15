@@ -1180,7 +1180,7 @@ export const puzzles = [
         theme: "Musical artist rainbow",
         hint: "Artists palette",
         hint2: "Musical artist rainbow",
-        post_solve: "Californication: RED Hot Chili Peppers", "Pluto Projector: Rex ORANGE County", "Ocean Avenue: YELLOWcard", "American Idiot: GREEN Day", "(Don't Fear) The Reaper: BLUE Öyster Cult", "Closer To Fine: The INDIGO Girls", "Smoke On The Water: Deep PURPLE (violet)",
+        post_solve: ["Californication: RED Hot Chili Peppers", "Pluto Projector: Rex ORANGE County", "Ocean Avenue: YELLOWcard", "American Idiot: GREEN Day", "(Don't Fear) The Reaper: BLUE Öyster Cult", "Closer To Fine: The INDIGO Girls", "Smoke On The Water: Deep PURPLE (violet)"],
         revAllowed: true
     }
 ];
