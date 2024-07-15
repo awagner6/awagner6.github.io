@@ -1172,5 +1172,15 @@ export const puzzles = [
         hint2: "Number of flavors",
         post_solve: ["Neapolitan: 3 flavors", "Starbursts: 4 flavors", "Skittles: 5 flavors", "KFC: 11 herbs/spices", "Dr Pepper: 23-flavor blend", "Baskin Robbins slogan: 31 (tho 1400+ IRL)", "'Official' Jelly Belly: 50 (tho 150+ total)"],
         revAllowed: true        
+    },
+    {
+        id: 118,
+        solution: ["CALIFORNICATION", "PLUTO PROJECTOR", "OCEAN AVENUE", "AMERICAN IDIOT", "(DON'T FEAR) THE REAPER", "CLOSER TO FINE", "SMOKE ON THE WATER"],
+        initialOrderSequence: "5142673",
+        theme: "Musical artist rainbow",
+        hint: "Artists palette",
+        hint2: "Musical artist rainbow",
+        post_solve: "Californication: RED Hot Chili Peppers", "Pluto Projector: Rex ORANGE County", "Ocean Avenue: YELLOWcard", "American Idiot: GREEN Day", "(Don't Fear) The Reaper: BLUE Öyster Cult", "Closer To Fine: The INDIGO Girls", "Smoke On The Water: Deep PURPLE (violet)",
+        revAllowed: true
     }
 ];
