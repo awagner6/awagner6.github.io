@@ -1182,5 +1182,15 @@ export const puzzles = [
         hint2: "Musical artist rainbow",
         post_solve: ["Californication: RED Hot Chili Peppers", "Pluto Projector: Rex ORANGE County", "Ocean Avenue: YELLOWcard", "American Idiot: GREEN Day", "(Don't Fear) The Reaper: BLUE Öyster Cult", "Closer To Fine: The INDIGO Girls", "Smoke On The Water: Deep PURPLE (violet)"],
         revAllowed: true
+    },
+    {
+        id: 119,
+        solution: ["10 / 10", "NATURAL LOG OF 10", "10", "10 + 10", "10 x 10", "10!", "10 ^ 10"],
+        initialOrderSequence: "3651472",
+        theme: "Smallest to largest",
+        hint: "Do the math",
+        hint2: "Smallest to largest",
+        post_solve: ["10/10 = 1", "ln(10) ~ 2.3", "10", "10 + 10 = 20", "10 x 10 = 100", "10! ~ 3.6 million", "10 ^ 10 = 10 trillion"],
+        revAllowed: true
     }
 ];
