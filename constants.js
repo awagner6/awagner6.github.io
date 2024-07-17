@@ -1192,5 +1192,15 @@ export const puzzles = [
         hint2: "Smallest to largest",
         post_solve: ["10/10 = 1", "ln(10) ~ 2.3", "10", "10 + 10 = 20", "10 x 10 = 100", "10! ~ 3.6 million", "10 ^ 10 = 10 trillion"],
         revAllowed: true
-    }
+    },
+    {
+        id: 120,
+        solution: ["THE SON OF MAN (MAGRITTE PAINTING)", "MIKE WAZOWSKI (MONSTERS\, INC)", "CAPTAIN HOOK", "BLINKY THE FISH (THE SIMPSONS)", "HONEYBEE", "TARANTULA", "ARGUS (GREEK MYTHOLOGY)"],
+        initialOrderSequence: "6251743",
+        theme: "Number of eyes",
+        hint: "Eye to eye",
+        hint2: "Number of eyes",
+        post_solve: ["The Son Of Man: 0", "Mike Wazowski: 1", "Captain Hook: 2 (no eyepatch!)", "Blinky the fish: 3", "Honeybee: 5(?!)", "Tarantula: 8", "Argus: 100"],
+        revAllowed: true
+    },
 ];
