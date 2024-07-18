@@ -1203,4 +1203,14 @@ export const puzzles = [
         post_solve: ["The Son Of Man: 0", "Mike Wazowski: 1", "Captain Hook: 2 (no eyepatch!)", "Blinky the fish: 3", "Honeybee: 5(?!)", "Tarantula: 8", "Argus: 100"],
         revAllowed: true
     },
+    {
+        id: 121,
+        solution: ["PERSON", "TREE", "ROLLER COASTER", "FERRIS WHEEL", "DAM", "RADIO TOWER", "BUILDING"],
+        initialOrderSequence: "3715426",
+        theme: "World's tallest-ever...",
+        hint: "World's tallest-ever...",
+        hint2: "Height records",
+        post_solve: ["Person: Robert Wadlow 8' 11\"", "Tree: Hyperion 379.1'", "Roller Coaster: Kingda Ka 456'", "Ferris Wheel: Ain Dubai 820'", "Dam: Jinping-I 1001'", "Radio Tower: Warsaw mast 2121'", "Building: Burj Khalifa 2722'"],
+        revAllowed: true
+    }
 ];
