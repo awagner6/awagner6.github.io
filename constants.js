@@ -1212,5 +1212,15 @@ export const puzzles = [
         hint2: "Height records",
         post_solve: ["Person: Robert Wadlow 8' 11\"", "Tree: Hyperion 379.1'", "Roller Coaster: Kingda Ka 456'", "Ferris Wheel: Ain Dubai 820'", "Dam: Jinping-I 1001'", "Radio Tower: Warsaw mast 2121'", "Building: Burj Khalifa 2722'"],
         revAllowed: true
+    },
+    {
+        id: 122,
+        solution: ["NOSE", "COCKPIT", "PASSENGER ENTRY", "TURBINES", "WING FLAPS", "STABILIZERS", "EXHAUST"],
+        initialOrderSequence: "3472516",
+        theme: "737 front to back",
+        hint: "On a 737",
+        hint2: "737 front to back",
+        post_solve: ["Nose: front", "Cockpit: front", "Passenger entry: fuselage", "Turbines: front of wings", "Flaps: back of wings", "Stabilizers: tail", "Exhaust: tail"],
+        revAllowed: true
     }
 ];
