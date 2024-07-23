@@ -835,7 +835,7 @@ export const puzzles = [
     },
     {
         id: 84,
-        solution: ["UNDERGRAD DEGREE", "TOY GUN AMMO", "ANCIENT TIME INDICATOR", "\"STAYIN' ALIVE\" BANDMATE", "\"ARMPIT SMELL", "HOGWASH", "BAY STATE SCHOOL"],
+        solution: ["UNDERGRAD DEGREE", "TOY GUN AMMO", "ANCIENT TIME INDICATOR", "\"STAYIN' ALIVE\" BANDMATE", "ARMPIT SMELL", "HOGWASH", "BAY STATE SCHOOL"],
         initialOrderSequence: "6312574",
         theme: "B + letter\, alphabetically",
         hint: "B plus",
