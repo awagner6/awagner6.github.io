@@ -850,7 +850,7 @@ export const puzzles = [
         theme: "Numbers of candles",
         hint: "Wicked puzzle",
         hint2: "Candle count",
-        post_solve: ["Lumiére: 3 candles", "Advent wreath: 4-5 candles", "Kwanzaa kinara: 7 candles", "Hanukkiah: 9 candles", "Candlepin bowling: 10 candlepins", "Lantern festival: many candles"],
+        post_solve: ["Lumiére: 3 candles", "Advent wreath: 4-5 candles", "Kwanzaa kinara: 7 candles", "Hanukkiah: 9 candles", "Candlepin bowling: 10 candlepins", "Hughes movie: Sixteen Candles", "Lantern festival: many candles"],
         revAllowed: true
     },
     {
