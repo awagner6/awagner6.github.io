@@ -1222,5 +1222,15 @@ export const puzzles = [
         hint2: "737 front to back",
         post_solve: ["Nose: front", "Cockpit: front", "Passenger entry: fuselage", "Turbines: front of wings", "Flaps: back of wings", "Stabilizers: tail", "Exhaust: tail"],
         revAllowed: true
+    },
+    {
+        id: 123,
+        solution: ["VICE PRESIDENT", "SPEAKER OF THE HOUSE", "SENATE PRESIDENT PRO TEM", "SECRETARY OF STATE", "SECRETARY OF THE TREASURY", "SECRETARY OF DEFENSE", "ATTORNEY GENERAL"],
+        initialOrderSequence: "4651273",
+        theme: "Presidential succession",
+        hint: "Get in line",
+        hint2: "Presidential succession",
+        post_solve: ["Vice president: 1st in line", "Speaker of the House: 2nd", "Senate president pro tem: 3rd", "Sec of State: 4th", "Sec of Treasury: 5th", "Sec of Defense: 6th", "Atty Gen: 7th"],
+        revAllowed: true
     }
 ];
