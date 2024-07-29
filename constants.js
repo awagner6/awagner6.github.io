@@ -1232,5 +1232,15 @@ export const puzzles = [
         hint2: "Presidential succession",
         post_solve: ["Vice president: 1st in line", "Speaker of the House: 2nd", "Senate president pro tem: 3rd", "Sec of State: 4th", "Sec of Treasury: 5th", "Sec of Defense: 6th", "Atty Gen: 7th"],
         revAllowed: true
+    },
+    {
+        id: 124,
+        solution: ["THE FISH", "THE RAM", "THE BULL", "THE CRAB", "THE LION", "THE SCORPION", "THE GOAT"],
+        initialOrderSequence: "2613754",
+        theme: "Zodiac animals chronologically",
+        hint: "Animal signs (start date)",
+        hint2: "Zodiac animals chronologically",
+        post_solve: ["The Fish: Feb/March (Pisces)", "The Ram: March/April (Aries)", "The Bull: April/May (Taurus)", "The Crab: June/July (Cancer)", "The Lion: July/August (Leo)", "The Scorpion: October/November (Scorpio)", "The Goat: December/January (Capricorn)"],
+        revAllowed: true
     }
 ];
