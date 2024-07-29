@@ -1245,7 +1245,7 @@ export const puzzles = [
     },
     {
         id: 125,
-        solution: ["ANTS", "SEAGULLS", "CROWS", "OWLS, "DOLPHINS", "LIONS", "BEES"],
+        solution: ["ANTS", "SEAGULLS", "CROWS", "OWLS", "DOLPHINS", "LIONS", "BEES"],
         initialOrderSequence: "5127463",
         theme: "Groups of animals A-Z",
         hint: "A group of... (A-Z)",
