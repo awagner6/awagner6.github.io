@@ -910,7 +910,7 @@ export const puzzles = [
         theme: "Number of<br>states/provinces/etc",
         hint: "United states",
         hint2: "States, provinces, etc",
-        post_solve: ["Australia: 6 states", "UAE: 7 emirates", "Canada: 11 provinces", "Mexico: 31 states", "Nigeria: 36 states", "Japan: 47 prefectures", "US: 50 states"],
+        post_solve: ["Australia: 6 states", "UAE: 7 emirates", "Canada: 10 provinces", "Mexico: 31 states", "Nigeria: 36 states", "Japan: 47 prefectures", "US: 50 states"],
         revAllowed: true
     },
     {
