@@ -955,7 +955,7 @@ export const puzzles = [
     },
     {
         id: 96,
-        solution: ["CAIRO (IL, EGYPT)", "VENICE (CA, ITALY)", "ATHENS (GA, GREECE)", "ST PETERSBURG (FL, RUSSIA)", "ROME (GA, ITALY)", "PARIS (TX, FRANCE)", "BIRMINGHAM (AL, ENGLAND)"],
+        solution: ["CAIRO (IL\, EGYPT)", "VENICE (CA\, ITALY)", "ATHENS (GA\, GREECE)", "ST PETERSBURG (FL\, RUSSIA)", "ROME (GA\, ITALY)", "PARIS (TX\, FRANCE)", "BIRMINGHAM (AL\, ENGLAND)"],
         initialOrderSequence: "7431652",
         theme: "Distance between same-name cities",
         hint: "So close yet so far",
