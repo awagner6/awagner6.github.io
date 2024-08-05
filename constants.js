@@ -1252,5 +1252,14 @@ export const puzzles = [
         hint2: "Animal groups",
         post_solve: ["Ants: Colony (or Army)", "Seagulls: Flock", "Crows: Murder", "Owls: Parliament", "Dolphins: Pod", "Lions: Pride", "Bees: Swarm"],
         revAllowed: true
+    },
+    {
+        id: 126,
+        solution: ["U", "MAROON", "EVE", "MATCHBOX", "SUM", "BLINK", "ANDRÉ"],
+        initialOrderSequence: "4136275",
+        theme: "Number bands numerically",
+        hint: "Musical numbers",
+        post_solve: ["U2", "Maroon 5", "Eve 6", "Matchbox Twenty", "Sum 41", "Blink-182", "André 3000"],
+        revAllowed: true
     }
 ];
