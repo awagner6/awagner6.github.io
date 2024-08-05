@@ -1259,6 +1259,7 @@ export const puzzles = [
         initialOrderSequence: "4136275",
         theme: "Number bands numerically",
         hint: "Musical numbers",
+        hint2: "Number bands numerically",
         post_solve: ["U2", "Maroon 5", "Eve 6", "Matchbox Twenty", "Sum 41", "Blink-182", "André 3000<br>Puzzle by Rebecca Goldstein!"],
         revAllowed: true
     }
