@@ -1262,5 +1262,15 @@ export const puzzles = [
         hint2: "Number bands numerically",
         post_solve: ["U2", "Maroon 5", "Eve 6", "Matchbox Twenty", "Sum 41", "Blink-182", "André 3000<br>Puzzle by Rebecca Goldstein!"],
         revAllowed: true
+    },
+    {    
+        id: 127,
+        solution: ["DELAWARE", "OHIO", "FLORIDA", "CALIFORNIA", "ARIZONA", "ALASKA", "HAWAII"],
+        initialOrderSequence: "6517342",
+        theme: "States by admission to union",
+        hint: "Unionized",
+        hint2: "Date of admission",
+        post_solve: ["Delaware: 1st", "Ohio: 17th", "Florida: 27th", "California: 31st", "Arizona: 48th", "Alaska: 49th", "Hawaii: 50th"],
+        revAllowed: true         
     }
 ];
