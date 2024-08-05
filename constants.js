@@ -1272,5 +1272,15 @@ export const puzzles = [
         hint2: "Date of admission",
         post_solve: ["Delaware: 1st", "Ohio: 17th", "Florida: 27th", "California: 31st", "Arizona: 48th", "Alaska: 49th", "Hawaii: 50th"],
         revAllowed: true         
+    },
+    {
+        id: 128,
+        solution: ["SALTO FORWARD TUCKED", "ARABIAN SALTO TUCKED", "WHIP WITH FULL TWIST", "DOUBLE SALTO BACKWARD PIKED", "DOUBLE ARABIAN SALTO TUCKED", "BILES I (2X LAYOUT HALF-OUT)", "BILES II (2X SALTO BACKWARD TUCKED 3X TWIST)"],
+        initialOrderSequence: "5136472",
+        theme: "Women's gymnastics floor<br>tumbles by difficulty",
+        hint: "Tumbling toughness",
+        hint2: "Floor moves by difficulty",
+        post_solve: ["Salto forward tucked: A", "Arabian Salto Tucked: B", "Whip with full twist: C", "Double salto backward piked: D", "Double Arabian salto tucked: E", "Biles I: G", "Biles II: J(!!!)"],
+        revAllowed: true
     }
 ];
