@@ -986,7 +986,7 @@ export const puzzles = [
     {
         id: 99,
         solution: ["MERCURY", "GEMINI", "APOLLO", "SKYLAB", "SPACE SHUTTLE", "INTL SPACE STATION", "ARTEMIS"],
-        initialOrderSequence: "5417423",
+        initialOrderSequence: "5417623",
         theme: "NASA missions by first launch",
         hint: "NASA launches",
         hint2: "NASA missions by year",
