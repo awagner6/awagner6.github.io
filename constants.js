@@ -1282,5 +1282,15 @@ export const puzzles = [
         hint2: "Floor moves by difficulty",
         post_solve: ["Salto forward tucked: A", "Arabian Salto Tucked: B", "Whip with full twist: C", "Double salto backward piked: D", "Double Arabian salto tucked: E", "Biles I: G", "Biles II: J(!!!)"],
         revAllowed: true
-    }
+    },
+    {
+        id: 129,
+        solution: ["AARON BURR", "HANNIBAL HAMLIN", "SPIRO AGNEW", "WALTER MONDALE", "DAN QUAYLE", "AL GORE", "MIKE PENCE"],
+        initialOrderSequence: "5436172",
+        theme: "Non-prez VPs in order",
+        hint: "Always a VP never a POTUS",
+        hint2: "Non-prez VPs in order",
+        post_solve: ["Aaron Burr: 3rd (Jefferson)", "Hannibal Hamlin: 15th (Lincoln)", "Spiro Agnew: 39th (Nixon)", "Walter Mondale: 42nd (Carter)", "Dan Quayle: 44th (H.W. Bush)", "Al Gore: 45 (Clinton)", "Mike Pence: 48 (Trump)"],
+        revAllowed: true
+    },
 ];
