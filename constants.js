@@ -1293,4 +1293,14 @@ export const puzzles = [
         post_solve: ["Aaron Burr: 3rd (Jefferson)", "Hannibal Hamlin: 15th (Lincoln)", "Spiro Agnew: 39th (Nixon)", "Walter Mondale: 42nd (Carter)", "Dan Quayle: 44th (H.W. Bush)", "Al Gore: 45 (Clinton)", "Mike Pence: 48 (Trump)"],
         revAllowed: true
     },
+    {
+        id: 130,
+        solution: ["AP TEST", "SINGLE GYMNASTICS ROUTINE (PRE 2006)", "SINGLE DARTS ROUND (3 THROWS)", "BOWLING GAME", "SAT SCORE (CURRENT FORMAT)", "JEOPARDY! GAME (DOLLARS)", "PACMAN"],
+        initialOrderSequence: "6152734",
+        theme: "Perfect scores",
+        hint: "Flawless victory",
+        hint2: "Perfect scores",
+        post_solve: ["AP test: 5", "Single gymnastics routine (pre '06): 10 (now higher)", "Single darts round: 180 (3 triple 20s)", "Bowling game: 300 (12 strikes)", "Jeopardy!: $566,400", "SAT score: 1600 (prev 2400)", "Pacman: 3,333,360"],
+        revAllowed: true
+    }
 ];
