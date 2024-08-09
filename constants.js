@@ -1302,5 +1302,15 @@ export const puzzles = [
         hint2: "Perfect scores",
         post_solve: ["AP test: 5", "Single gymnastics routine (pre '06): 10 (now higher)", "Single darts round: 180 (3 triple 20s)", "Bowling game: 300 (12 strikes)", "Jeopardy!: $566,400", "SAT score: 1600 (prev 2400)", "Pacman: 3,333,360"],
         revAllowed: true
+    },
+    {
+        id: 131,
+        solution: ["BUZZCUT", "CREW CUT", "PIXIE CUT", "BOB", "LOB", "MERMAID HAIR", "RAPUNZEL"],
+        initialOrderSequence: "5724136",
+        theme: "Hairstyle lengths",
+        hint: "Off the top of my head",
+        hint2: "Hairstyle lengths",
+        post_solve: ["Buzzcut: shaved head", "Crew cut: a little on top", "Pixie cut: ~ear length", "Bob: jawline", "Lob (long bob): ~collarbone", "Mermaid hair: chest", "Rapunzel: castle height"],
+        revAllowed: true
     }
 ];
