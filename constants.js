@@ -1312,5 +1312,15 @@ export const puzzles = [
         hint2: "Hairstyle lengths",
         post_solve: ["Buzzcut: shaved head", "Crew cut: a little on top", "Pixie cut: ~ear length", "Bob: jawline", "Lob (long bob): ~collarbone", "Mermaid hair: chest", "Rapunzel: castle height"],
         revAllowed: true
+    },
+    {
+        id: 132,
+        solution: ["TABLE TENNIS HIT", "CRICKET BOWL", "BASEBALL PITCH", "HOCKEY SHOT", "SOCCER SHOT", "TENNIS SERVE", "BADMINTON SMASH"],
+        initialOrderSequence: "6431725",
+        theme: "The fastest-ever...",
+        hint: "The fastest-ever...",
+        hint2: "Top speeds",
+        post_solve: ["Table tennis hit: 72 mph (116 kph)", "100 mph (161 kph)", "Baseball pitch: 105 mph (169 kph)", "Hockey shot: 114 mph (183 kph)", "Soccer shot: 137 mph (221 kph)", "Tennis serve: 163 mph (262 kph)", "Badminton smash: 351 mph (565 kph)"],
+        revAllowed: true
     }
 ];
