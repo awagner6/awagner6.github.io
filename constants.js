@@ -1332,5 +1332,15 @@ export const puzzles = [
         hint2: "Wheel counts",
         post_solve: ["Hovercraft: 0 wheels", "Unicycle: 1 wheel", "Segway: 2 wheels", "Motorcycle w/ sidecar: 3 wheels", "Car: 4 wheels", "Mars curiosity rover: 6 wheels", "Semi truck: ~18 wheels"],
         revAllowed: true
+    },
+    {
+        id: 134,
+        solution: ["HAVARTI", "STILTON", "BRIE", "FETA", "GORGONZOLA", "MANCHEGO", "GRUYÉRE"],
+        initialOrderSequence: "6472513",
+        theme: "European cheese by alphabetical country",
+        hint: "Euro cheese whiz (A-Z)",
+        hint2: "European cheese by country (A-Z)",
+        post_solve: ["Havarti: Denmark", "Stilton: England", "Brie: France", "Feta: Greece", "Gorgonzola: Italy", "Manchego: Spain", "Gruyére: Switzerland"],
+        revAllowed: true
     }
 ];
