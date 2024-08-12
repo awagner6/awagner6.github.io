@@ -1342,5 +1342,15 @@ export const puzzles = [
         hint2: "European cheese by country (A-Z)",
         post_solve: ["Havarti: Denmark", "Stilton: England", "Brie: France", "Feta: Greece", "Gorgonzola: Italy", "Manchego: Spain", "Gruyére: Switzerland"],
         revAllowed: true
+    },
+    {
+        id: 135,
+        solution: ["HURRICANE CATEGORY SCALE", "KINSEY SCALE", "MAJ. MUSIC SCALE (# OF NOTES)", "RICHTER SCALE", "BEAUFORT WIND SCALE", "PH SCALE", "GOLD PURITY SCALE (MAX KARATS)"],
+        initialOrderSequence: "2751436",
+        theme: "Scale maximums",
+        hint: "Scaling peaks",
+        hint2: "A scale from 0/1 to...",
+        post_solve: ["Saffir-Simpson hurricane scale: Category 5", "Kinsey sexuality scale: Max 6", "Maj. music scale: 8 notes", "Richter scale: max 9.9", "Beaufort wind scale: max 12", "pH scale: max 14", "Gold purity: max 24 karats"],
+        revAllowed: true
     }
 ];
