@@ -1158,7 +1158,7 @@ export const puzzles = [
         solution: ["\"FABULOUS!\"", "WEST COAST STATE\, JOCULARLY", "EASILY BROKEN", "SUFFIX WITH 'IDEAL'", "2000s WINDOWS OS", "COMEDIAN WONG", "CANINE LOLCATS EQUIVALENTS"],
         initialOrderSequence: "3256174",
         theme: "Mary Poppins lyric",
-        hint: "Musical pop ins",
+        hint: "Mary Poppins",
         hint2: "Mary Poppins lyric",
         post_solve: ["\"Fabulous!\": Super", "West coast state\, jocularly: Cali", "Easily broken: Fragile", "Suffix with 'ideal': -Istic", "2000s Windows OS: XP", "Comedian Wong: Ali", "Canine LOLcats equivalents: Doges"],
         revAllowed: true
