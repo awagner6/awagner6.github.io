@@ -1322,5 +1322,15 @@ export const puzzles = [
         hint2: "Top speeds",
         post_solve: ["Table tennis hit: 72 mph (116 kph)", "100 mph (161 kph)", "Baseball pitch: 105 mph (169 kph)", "Hockey shot: 114 mph (183 kph)", "Soccer shot: 137 mph (221 kph)", "Tennis serve: 163 mph (262 kph)", "Badminton smash: 351 mph (565 kph)"],
         revAllowed: true
+    },
+    {
+        id: 133,
+        solution: ["HOVERCRAFT", "UNICYCLE", "SEGWAY", "MOTORCYCLE WITH SIDECAR", "CAR", "MARS CURIOSITY ROVER", "SEMI TRUCK WITH RIG"],
+        initialOrderSequence: "3512746",
+        theme: "Wheel counts",
+        hint: "Wheely good puzzle",
+        hint2: "Wheel counts",
+        post_solve: ["Hovercraft: 0 wheels", "Unicycle: 1 wheel", "Segway: 2 wheels", "Motorcycle w/ sidecar: 3 wheels", "Car: 4 wheels", "Mars curiosity rover: 6 wheels", "Semi truck: ~18 wheels"],
+        revAllowed: true
     }
 ];
