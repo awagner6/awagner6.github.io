@@ -1373,4 +1373,14 @@ export const puzzles = [
         post_solve: ["Alexander the Great: 336-323 BCE", "Cleopatra: 51-30 BCE", "Genghis Khan: 1206-1227", "King Henry VIII: 1509-1547", "King Louis XIV: 1643-1715", "Catherine the Great: 1762-1796", "Queen Elizabeth: 1952-2022"],
         revAllowed: true
     },
+    {
+        id: 138,
+        solution: ["ARCHERY", "BASKETBALL", "JUDO", "TABLE TENNIS", "BEACH VOLLEYBALL", "SURFING", "BREAKING (DANCE)"],
+        initialOrderSequence: "5127364",
+        theme: "Olympic debut years",
+        hint: "Olympic debuts",
+        hint2: "Olympic debuts by year",
+        post_solve: ["Archery: 1900", "Basketball: 1936", "Judo: 1964", "Table Tennis: 1988", "Beach Volleyball: 1996", "Surfing: 2020", "Breaking (dance): 2024"],
+        revAllowed: true
+    }
 ];
