@@ -1363,4 +1363,14 @@ export const puzzles = [
         post_solve: ["Starbucks: Seattle WA", "Nike: Beaverton (Portland) OR", "Salesforce: San Francisco CA", "Apple: Cupertino (Silicon Valley) CA", "Warner Bros. Discovery: Burbank CA", "Mattel: El Segundo (LA) CA", "PetCo: San Diego CA"],
         revAllowed: true
     },
+    {
+        id: 137,
+        solution: ["ALEXANDER THE GREAT", "CLEOPATRA", "GENGHIS KHAN", "KING HENRY VIII", "KING LOUIS XIV", "CATHERINE THE GREAT", "QUEEN ELIZABETH II"],
+        initialOrderSequence: "4632175",
+        theme: "Monarchs chronologically by reign",
+        hint: "History rules!",
+        hint2: "Reigns through history",
+        post_solve: ["Alexander the Great: 336-323 BCE", "Cleopatra: 51-30 BCE", "Genghis Khan: 1206-1227", "King Henry VIII: 1509-1547", "King Louis XIV: 1643-1715", "Catherine the Great: 1762-1796", "Queen Elizabeth: 1952-2022"],
+        revAllowed: true
+    },
 ];
