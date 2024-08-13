@@ -1325,7 +1325,7 @@ export const puzzles = [
     },
     {
         id: 133,
-        solution: ["HOVERCRAFT", "UNICYCLE", "SEGWAY", "MOTORCYCLE WITH SIDECAR", "CAR", "MARS CURIOSITY ROVER", "SEMI TRUCK WITH RIG"],
+        solution: ["HOVERCRAFT", "UNICYCLE", "SEGWAY", "MOTORCYCLE WITH SIDECAR", "SEDAN", "MARS CURIOSITY ROVER", "SEMI TRUCK WITH RIG"],
         initialOrderSequence: "3512746",
         theme: "Wheel counts",
         hint: "Wheely good puzzle",
