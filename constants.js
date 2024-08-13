@@ -1352,5 +1352,15 @@ export const puzzles = [
         hint2: "A scale from 0/1 to...",
         post_solve: ["Saffir-Simpson hurricane scale: Category 5", "Kinsey sexuality scale: Max 6", "Maj. music scale: 8 notes", "Richter scale: max 9.9", "Beaufort wind scale: max 12", "pH scale: max 14", "Gold purity: max 24 karats"],
         revAllowed: true
-    }
+    },
+    {
+        id: 136,
+        solution: ["STARBUCKS", "NIKE", "SALESFORCE", "APPLE", "WARNER BROS. DISCOVERY", "MATTEL", "PETCO"],
+        initialOrderSequence: "5416372",
+        theme: "West Coast corporate HQs on the map",
+        hint: "HQ Trivia",
+        hint2: "Corporate HQs North to South",
+        post_solve: ["Starbucks: Seattle WA", "Nike: Beaverton (Portland) OR", "Salesforce: San Francisco CA", "Apple: Cupertino (Silicon Valley) CA", "Warner Bros. Discovery: Burbank CA", "Mattel: El Segundo (LA) CA", "PetCo: San Diego CA"],
+        revAllowed: true
+    },
 ];
