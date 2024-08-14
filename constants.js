@@ -1413,4 +1413,14 @@ export const puzzles = [
         post_solve: ["Flyweight: 108-112 lb", "Bantamweight: 115-118lb", "Featherweight: 122-126 lb", "Lightweight: 130-135 lb", "Welterweight: 140-147 lb", "Middleweight: 154-160 lb", "Heavyweight: 200+ lb"],
         revAllowed: true        
     },
+    {
+        id: 142,
+        solution: ["STANDARD TENNIS BALL TUBE", "BASEBALL WALK", "NEWTON'S CRADLE", "IKEA MEATBALLS PER SERVING", "SKEEBALL ROUND", "STANDARD POOL TABLE", "BINGO"],
+        initialOrderSequence: "6517243",
+        theme: "Ball counts",
+        hint: "Balls",
+        hint2: "Number of balls",
+        post_solve: ["Tennis ball tube: 3", "Baseball walk: 4", "Newton's cradle: 5", "IKEA meatballs per serving: 8", "Skeeball round: 9", "Pool table: 16", "Bingo: 75 (US) or 90 (UK)"],
+        revAllowed: true
+    }
 ];
