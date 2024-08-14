@@ -1395,6 +1395,16 @@ export const puzzles = [
     },
     {
         id: 140,
+        solution: ["REFRIGERATOR", "ICE (FREEZING POINT)", "DRY ICE (FREEZING POINT)", "LOWEST EARTH SURFACE TEMP. EVER", "LIQUID NITROGEN", "OUTER SPACE", "ABSOLUTE ZERO"],
+        initialOrderSequence: "5126734",
+        theme: "Coldnesses",
+        hint: "Brr!",
+        hint2: "Temperatures by coldness",
+        post_solve: ["Refrigerator: 40° F\, 4.44° C", "Ice (freezing point): 32° F\, 0° C", "Dry ice (freezing point): -109.3° F\, -78.5° C", "Lowest Earth surface temp. ever: -128.6° F\, -89.2° C", "Liquid Nitrogen: -321° F\, -196° C", "Outer space: -454° F\, -270° C", "Absolute zero: -459.67° F\, -273.15° C"],
+        revAllowed: true
+    },
+    {
+        id: 141,
         solution: ["FLYWEIGHT", "BANTAMWEIGHT", "FEATHERWEIGHT", "LIGHTWEIGHT", "WELTERWEIGHT", "MIDDLEWEIGHT", "HEAVYWEIGHT"],
         initialOrderSequence: "5417623",
         theme: "Boxing weight classes",
