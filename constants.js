@@ -1375,6 +1375,16 @@ export const puzzles = [
     },
     {
         id: 138,
+        solution: ["AID", "FIDDLE", "EYE BLIND", "WALL", "ELEMENT", "SENSE", "HEAVEN"],
+        initialOrderSequence: "5361274",
+        theme: "Preceded by ordinal rank",
+        hint: "Ordinal Up!",
+        hint2: "First, second, third, etc...",
+        post_solve: ["First aid", "Second fiddle", "Third Eye Blind", "Fourth wall", "(The) Fifth Element", "(The) Sixth Sense", "Seventh Heaven"],
+        revAllowed: true
+    },
+    {
+        id: 139,
         solution: ["ARCHERY", "BASKETBALL", "JUDO", "TABLE TENNIS", "BEACH VOLLEYBALL", "SURFING", "BREAKING (DANCE)"],
         initialOrderSequence: "5127364",
         theme: "Olympic debut years",
