@@ -1392,5 +1392,15 @@ export const puzzles = [
         hint2: "Olympic debuts by year",
         post_solve: ["Archery: 1900", "Basketball: 1936", "Judo: 1964", "Table Tennis: 1988", "Beach Volleyball: 1996", "Surfing: 2020", "Breaking (dance): 2024"],
         revAllowed: true
-    }
+    },
+    {
+        id: 140,
+        solution: ["FLYWEIGHT", "BANTAMWEIGHT", "FEATHERWEIGHT", "LIGHTWEIGHT", "WELTERWEIGHT", "MIDDLEWEIGHT", "HEAVYWEIGHT"],
+        initialOrderSequence: "5417623",
+        theme: "Boxing weight classes",
+        hint: "Pound for pounding",
+        hint2: "Boxing weight classes",
+        post_solve: ["Flyweight: 108-112 lb", "Bantamweight: 115-118lb", "Featherweight: 122-126 lb", "Lightweight: 130-135 lb", "Welterweight: 140-147 lb", "Middleweight: 154-160 lb", "Heavyweight: 200+ lb"],
+        revAllowed: true        
+    },
 ];
