@@ -1115,7 +1115,7 @@ export const puzzles = [
     },
     {
         id: 112,
-        solution: ["THE", "BE", "TO", "OF", "AND", "A", "IN"],
+        solution: ["THE", "BE (ALL CONJUGATIONS)", "TO", "OF", "AND", "A", "IN"],
         initialOrderSequence: "5147263",
         theme: "Most common English words",
         hint: "Popular language",
