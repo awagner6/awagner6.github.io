@@ -1422,5 +1422,15 @@ export const puzzles = [
         hint2: "Number of balls",
         post_solve: ["Tennis ball tube: 3", "Baseball walk: 4", "Newton's cradle: 5", "IKEA meatballs per serving: 8", "Skeeball round: 9", "Pool table: 16", "Bingo: 75 (US) or 90 (UK)"],
         revAllowed: true
-    }
+    },
+    {
+        id: 143,
+        solution: ["QUEEN FRONTMAN FREDDIE", "TENNIS STAR WILLIAMS", "SOIL", "CHOCOLATE/CARAMEL/NOUGAT BAR", "DROPS OF ___: TRAIN SONG", "90s SEGA CONSOLE", "NUCLEAR POWER ELEMENT NAMESAKE"],
+        initialOrderSequence: "World tour",
+        theme: "First seven planets",
+        hint: "World tour",
+        hint2: "First seven planets",
+        post_solve: ["Queen frontman: Freddie Mercury", "Tennis star: Venus Williams", "Chocolate/caramel/nougat bar: Mars Bar", "Train song: Drops of Jupiter", "90s console: Sega Saturn", "Uranium namesake: Uranus"],
+        revAllowed: true
+    },
 ];
