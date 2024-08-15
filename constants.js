@@ -1433,4 +1433,13 @@ export const puzzles = [
         post_solve: ["Queen frontman: Freddie Mercury", "Tennis star: Venus Williams", "Chocolate/caramel/nougat bar: Mars Bar", "Train song: Drops of Jupiter", "90s console: Sega Saturn", "Uranium namesake: Uranus"],
         revAllowed: true
     },
+    {
+        id: 144,
+        solution: ["KALEY CUOCO \"BIG BANG THEORY\" ROLE", "ELEMENT IN EARTH'S CORE", "PERFECT FOOTBALL PASS\, SLANGILY", "FRENCH ___: NOLA AREA", "TYPE OF PANCAKE", "HIT LIN MANUEL MIRANDA MUSICAL", "FORMER UK PM DISRAELI"],
+        theme: "Money nicknames",
+        hint: "Coining nicknames",
+        hint2: "Money nicknames",
+        post_solve: ["Kaley Cuoco role: Penny (1c)", "Element in Earth's core: Nickel (5c)", "Perfect football pass: Dime (10c)", "NOLA area French ___: Quarter (25c)", "Type of pancake: Silver dollar ($1)", "Lin musical: Hamilton ($10)", "PM Disraeli: Benjamin ($100)"],
+        revAllowed: true
+    }
 ];
