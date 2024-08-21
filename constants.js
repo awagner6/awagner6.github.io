@@ -1453,4 +1453,14 @@ export const puzzles = [
         post_solve: ["Beijing Grand Bridge: 30 miles (48 km)", "The Causeway: 24 miles (38 km)", "Golden Gate Bridge: 1.7 miles (2.7 km)", "Brooklyn Bridge: 1.1 miles (1.8 km)", "London Tower Bridge: 940 ft (290 m)", "Golden Bridge: 490 ft (150 m)", "Ponte di Rialto: 104.3 ft (31.8 m)"],
         revAllowed: true
     },
+    {
+        id: 146,
+        solution: ["TYPE OF MARKETING TEST", "DISK IN A JEWEL CASE", "50TH STATE POSTAL CODE", "\"WHIPLASH\" ACTOR SIMMONS", "TERSE REFUSAL", "CODE FOR ACCESSING A MENU\, MAYBE", "LIGHT THAT CAUSES SUNBURNS"],
+        initialOrderSequence: "6725314",
+        theme: "Consecutive alphabet pairs",
+        hint: "Neighbors",
+        hint2: "Consecutive alphabet pairs",
+        post_solve: ["Type of marketing test: AB", "Disk in a jewel case: CD", "50th state postal code: HI", "Actor Simmons: J.K.", "Terse refusal: NO", "Code for accessing a menu: QR", "Light that causes sunburn: UV"],
+        revAllowed: true
+    },
 ];
