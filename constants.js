@@ -1426,7 +1426,7 @@ export const puzzles = [
     {
         id: 143,
         solution: ["QUEEN FRONTMAN FREDDIE", "TENNIS STAR WILLIAMS", "SOIL", "CHOCOLATE/CARAMEL/NOUGAT BAR", "DROPS OF ___: TRAIN SONG", "90s SEGA CONSOLE", "NUCLEAR POWER ELEMENT NAMESAKE"],
-        initialOrderSequence: "World tour",
+        initialOrderSequence: "5361724",
         theme: "First seven planets",
         hint: "World tour",
         hint2: "First seven planets",
@@ -1442,5 +1442,15 @@ export const puzzles = [
         hint2: "Money nicknames",
         post_solve: ["Kaley Cuoco role: Penny (1c)", "Element in Earth's core: Nickel (5c)", "Perfect football pass: Dime (10c)", "NOLA area French ___: Quarter (25c)", "Type of pancake: Silver dollar ($1)", "Lin musical: Hamilton ($10)", "PM Disraeli: Benjamin ($100)"],
         revAllowed: true
-    }
+    },
+    {
+        id: 145,
+        solution: ["BEIJING GRAND BRIDGE", "LAKE PONTCHARTRAIN CAUSEWAY", "GOLDEN GATE BRIDGE", "BROOKLYN BRIDGE", "LONDON TOWER BRIDGE", "GOLDEN BRIDGE (VIETNAM)", "PONTE DI RIALTO"],
+        initialOrderSequence: "6372145",
+        theme: "Bridges by length",
+        hint: "Span-ish puzzle",
+        hint2: "Bridges by length",
+        post_solve: ["Beijing Grand Bridge: 30 miles (48 km)", "The Causeway: 24 miles (38 km)", "Golden Gate Bridge: 1.7 miles (2.7 km)", "Brooklyn Bridge: 1.1 miles (1.8 km)", "London Tower Bridge: 940 ft (290 m)", "Golden Bridge: 490 ft (150 m)", "Ponte di Rialto: 104.3 ft (31.8 m)"],
+        revAllowed: true
+    },
 ];
