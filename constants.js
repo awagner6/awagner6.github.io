@@ -1436,6 +1436,7 @@ export const puzzles = [
     {
         id: 144,
         solution: ["KALEY CUOCO \"BIG BANG THEORY\" ROLE", "ELEMENT IN EARTH'S CORE", "PERFECT FOOTBALL PASS\, SLANGILY", "FRENCH ___: NOLA AREA", "TYPE OF PANCAKE", "HIT LIN MANUEL MIRANDA MUSICAL", "FORMER UK PM DISRAELI"],
+        initialOrderSequence: "5126734",
         theme: "Money nicknames",
         hint: "Coining nicknames",
         hint2: "Money nicknames",
