@@ -1473,4 +1473,14 @@ export const puzzles = [
         post_solve: ["Radio waves: .5-10 meters", "Microwaves: 1 cm", "Infrared: 10 micrometers", "Visible light: 500-1000 nanometers", "UV: 50-100 nm", "X-rays: 1 nm", "Gamma rays: .01 nm"],
         revAllowed: true
     },
+    {
+        id: 148,
+        solution: ["CLIFFORD", "SLINKY DOG (TOY STORY)", "ODIE", "ASTRO JETSON'S COLLAR", "BLUEY", "STIMPY'S NOSE (NOT FUR!)", "DINO FLINTSTONE"],
+        initialOrderSequence: "5261374",
+        theme: "Animated dog colors",
+        hint: "Hue let the dogs out",
+        hint2: "Animated dogs by ROYGBIV color",
+        post_solve: ["Clifford: red", "Slink: orange", "Odie: yellow", "Astro's collar: green", "Bluey: ...blue", "Stimpy's nose: indigo", "Dino: violet"],
+        revAllowed: true
+    },
 ];
