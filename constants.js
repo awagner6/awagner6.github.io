@@ -1493,4 +1493,14 @@ export const puzzles = [
         post_solve: ["Shire horse: up to 219 cm!", "Clydesdale: up to 183 cm", "Fresian: up to 173 cm", "Arabian horse: up to 155 cm", "Icelandic horse: up to 142 cm", "Shetland horse: up to 107 cm", "Falabella: up to 86 cm"],
         revAllowed: true
     },
+    {
+        id: 150,
+        solution: ["NETFLIX SHOW ABOUT A STALKER", "METAL SODA CONTAINER", "OPPOSITE OF GIVE", "I ALTERNATIVE", "VERY POPULAR", "DUMB AND DUMBER __: 2O14 SEQUEL", "CHINESE BOARD GAME"],
+        initialOrderSequence: "5127364",
+        theme: "HOT TO GO lyric",
+        hint: "H-O-T-T-O-G-O...",
+        hint2: "Chappell Roan lyric",
+        post_solve: ["Netflix show about a stalker: You", "Metal soda container: Can", "Opposite of give: Take", "I alternative: Me", "Very popular: Hot", "Dumb and Dumber To", "Chinese board game: Go"],
+        revAllowed: true        
+    }
 ];
