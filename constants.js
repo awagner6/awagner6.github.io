@@ -1463,4 +1463,14 @@ export const puzzles = [
         post_solve: ["Type of marketing test: AB", "Disk in a jewel case: CD", "50th state postal code: HI", "Actor Simmons: J.K.", "Terse refusal: NO", "Code for accessing a menu: QR", "Light that causes sunburn: UV"],
         revAllowed: true
     },
+    {
+        id: 147,
+        solution: ["RADIO WAVES", "MICROWAVES", "INFRARED", "VISIBLE LIGHT", "ULTRAVIOLET", "X-RAYS", "GAMMA RAYS"],
+        initialOrderSequence: "6251473",
+        theme: "Light spectrum",
+        hint: "Light it up",
+        hint2: "Light spectrum by wavelength",
+        post_solve: ["Radio waves: .5-10 meters", "Microwaves: 1 cm", "Infrared: 10 micrometers", "Visible light: 500-1000 nanometers", "UV: 50-100 nm", "X-rays: 1 nm", "Gamma rays: .01 nm"],
+        revAllowed: true
+    },
 ];
