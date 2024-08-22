@@ -1502,5 +1502,15 @@ export const puzzles = [
         hint2: "Chappell Roan lyric",
         post_solve: ["Netflix show about a stalker: You", "Metal soda container: Can", "Opposite of give: Take", "I alternative: Me", "Very popular: Hot", "Dumb and Dumber To", "Chinese board game: Go"],
         revAllowed: true        
+    },
+    {
+        id: 151,
+        solution: ["AVG STONEHENGE STONE", "MOAI (EASTER ISLAND HEAD)", "STATUE OF DAVID", "AVG EGYPTIAN PYRAMID BLOCK", "ROSETTA STONE", "HEAVIEST COMPETITION ATLAS STONE", "DWAYNE 'THE ROCK' JOHNSON"],
+        initialOrderSequence: "5614723",
+        theme: "Heavy rocks",
+        hint: "Heavy rocks",
+        hint2: "Stone things by weight",
+        post_solve: ["Avg Stonehenge stone: ~55\,000 lbs (25\,000 kg)", "Moai (Easter Island head): ~30\,500 lbs (13\,800 kg)", "Statue of David: 12\,478 lbs (5\,661 kg)", "Avg Egyptian pyramid block: ~5\,500 lbs (2\,500 kg)", "Rosetta Stone: 1\,676 lbs (760 kg)", "Heaviest competition atlas stone: 462 lbs (210 kg)", "Dwayne 'The Rock' Johnson: ~260 lbs (118 kg)"],
+        revAllowed: true
     }
 ];
