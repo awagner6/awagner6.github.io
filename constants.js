@@ -1512,5 +1512,15 @@ export const puzzles = [
         hint2: "Stone things by weight",
         post_solve: ["Avg Stonehenge stone: ~55\,000 lbs (25\,000 kg)", "Moai (Easter Island head): ~30\,500 lbs (13\,800 kg)", "Statue of David: 12\,478 lbs (5\,661 kg)", "Avg Egyptian pyramid block: ~5\,500 lbs (2\,500 kg)", "Rosetta Stone: 1\,676 lbs (760 kg)", "Heaviest competition atlas stone: 462 lbs (210 kg)", "Dwayne 'The Rock' Johnson: ~260 lbs (118 kg)"],
         revAllowed: true
-    }
+    },
+    {
+        id: 152,
+        solution: ["VATICAN CITY", "MONACO", "NAURU", "TUVALU", "SAN MARINO", "LIECHTENSTEIN", "MARSHALL ISLANDS"],
+        initialOrderSequence: "6152473",
+        theme: "Smallest countries",
+        hint: "A little geography quiz",
+        hint2: "Smallest countries by land area",
+        post_solve: ["Vatican City: .19 sq mi", "Monaco: .77 sq mi", "Nauru: 8 sq mi", "Tuvalu: 10 sq mi", "San Marino: 24 sq mi", "Liechtenstein: 62 sq mi", "Marshall Islands: 70 sq mi"],
+        revAllowed: true
+    },
 ];
