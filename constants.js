@@ -1533,4 +1533,14 @@ export const puzzles = [
         post_solve: ["Toy Story: 1995", "Monsters\, Inc.: 2001", "Finding Nemo: 2003", "The Incredibles: 2004", "Ratatouille: 2007", "Inside Out: 2015", "Coco: 2017"],
         revAllowed: true        
     },
+    {
+        id: 154,
+        solution: ["SAN FRANCISCO TOTAL NAMED HILLS", "COUNTIES IN TEXAS HILL COUNTRY", "LAURYN HILL GRAMMYS", "ROME NICKNAME", "'THE HILLS' TV SHOW SEASONS", "WINSTON CHURCHILL P.M. TERMS SERVED", "'___ TREE HILL': CW SHOW"],
+        initialOrderSequence: "5237164",
+        theme: "Hill-related numbers",
+        hint: "Head for the hills",
+        hint2: "Hill-related numbers",
+        post_solve: ["SF named hills: 48", "Counties in Texas Hill Country: 25", "Lauryn Hill Grammys: 8", "Rome nickname: City of 7 hills", "'The Hills' seasons: 6", "Churchill P.M. terms: 2", "'___ Tree Hill': One"],
+        revAllowed: true
+    },
 ];
