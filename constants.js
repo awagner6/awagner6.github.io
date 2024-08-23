@@ -1523,4 +1523,14 @@ export const puzzles = [
         post_solve: ["Vatican City: .19 sq mi", "Monaco: .77 sq mi", "Nauru: 8 sq mi", "Tuvalu: 10 sq mi", "San Marino: 24 sq mi", "Liechtenstein: 62 sq mi", "Marshall Islands: 70 sq mi"],
         revAllowed: true
     },
+    {
+        id: 153,
+        solution: ["TOY STORY", "MONSTERS\, INC", "FINDING NEMO", "THE INCREDIBLES", "RATATOUILLE", "INSIDE OUT", "COCO"],
+        initialOrderSequence: "6341275",
+        theme: "Pixar movies by release year",
+        hint: "Pixar progression",
+        hint2: "Pixar movies by year",
+        post_solve: ["Toy Story: 1995", "Monsters\, Inc.: 2001", "Finding Nemo: 2003", "The Incredibles: 2004", "Ratatouille: 2007", "Inside Out: 2015", "Coco: 2017"],
+        revAllowed: true        
+    },
 ];
