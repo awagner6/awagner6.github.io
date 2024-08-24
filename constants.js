@@ -1155,7 +1155,7 @@ export const puzzles = [
     },
     {
         id: 116,
-        solution: ["\"FABULOUS!\"", "WEST COAST STATE\, JOCULARLY", "EASILY BROKEN", "SUFFIX WITH 'IDEAL'", "2000s WINDOWS OS", "COMEDIAN WONG", "CANINE LOLCATS EQUIVALENTS"],
+        solution: ["\"FABULOUS!\"", "WEST COAST STATE JOCULARLY", "EASILY BROKEN", "SUFFIX WITH 'IDEAL'", "2000s WINDOWS OS", "COMEDIAN WONG", "CANINE LOLCATS EQUIVALENTS"],
         initialOrderSequence: "3256174",
         theme: "Mary Poppins lyric",
         hint: "Mary Poppins",
