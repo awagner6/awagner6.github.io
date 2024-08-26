@@ -1563,4 +1563,14 @@ export const puzzles = [
         post_solve: ["BART: Bay Area", "The L: Chicago", "SEPTA: Philly", "The subway: NYC", "The T: Boston", "The Tube: London", "U-Bahn: Berlin"],
         revAllowed: true
     },
+    {
+        id: 157,
+        solution: ["FLUTE", "CLARINET", "TRUMPET", "ALTO SAX", "FRENCH HORN", "BASSOON", "TUBA"],
+        initialOrderSequence: "5471243",
+        theme: "Instruments by highest possible pitch",
+        hint: "On a high note",
+        hint2: "Instruments by high note",
+        post_solve: ["Flute", "Clarinet", "Trumpet", "Alto sax", "French horn", "Bassoon", "Tuba"],
+        revAllowed: true
+    }
 ];
