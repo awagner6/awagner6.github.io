@@ -1543,4 +1543,14 @@ export const puzzles = [
         post_solve: ["SF named hills: 48", "Counties in Texas Hill Country: 25", "Lauryn Hill Grammys: 8", "Rome nickname: City of 7 hills", "'The Hills' seasons: 6", "Churchill P.M. terms: 2", "'___ Tree Hill': One"],
         revAllowed: true
     },
+    {
+        id: 155,
+        solution: ["BART", "THE L", "SEPTA", "THE SUBWAY", "THE T", "THE TUBE", "UBAHN"],
+        initialOrderSequence: "4126735",
+        theme: "Transit system names West <-> East",
+        hint: "West <-> East transit",
+        hint2: "Cities' transit system names",
+        post_solve: ["BART: Bay Area", "The L: Chicago", "SEPTA: Philly", "The subway: NYC", "The T: Boston", "The Tube: London", "U-Bahn: Berlin"],
+        revAllowed: true
+    },
 ];
