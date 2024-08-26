@@ -1195,7 +1195,7 @@ export const puzzles = [
     },
     {
         id: 120,
-        solution: ["THE SON OF MAN (MAGRITTE PAINTING)", "MIKE WAZOWSKI (MONSTERS\, INC)", "CAPTAIN HOOK", "BLINKY THE FISH (THE SIMPSONS)", "HONEYBEE", "TARANTULA", "ARGUS (GREEK MYTHOLOGY)"],
+        solution: ["THE SON OF MAN (MAGRITTE PAINTING)", "MIKE WAZOWSKI (MONSTERS INC)", "CAPTAIN HOOK", "BLINKY THE FISH (THE SIMPSONS)", "HONEYBEE", "TARANTULA", "ARGUS (GREEK MYTHOLOGY)"],
         initialOrderSequence: "6251743",
         theme: "Number of eyes",
         hint: "Eye to eye",
@@ -1435,7 +1435,7 @@ export const puzzles = [
     },
     {
         id: 144,
-        solution: ["KALEY CUOCO \"BIG BANG THEORY\" ROLE", "ELEMENT IN EARTH'S CORE", "PERFECT FOOTBALL PASS\, SLANGILY", "FRENCH ___: NOLA AREA", "TYPE OF PANCAKE", "HIT LIN MANUEL MIRANDA MUSICAL", "FORMER UK PM DISRAELI"],
+        solution: ["KALEY CUOCO \"BIG BANG THEORY\" ROLE", "ELEMENT IN EARTH'S CORE", "PERFECT FOOTBALL PASS SLANGILY", "FRENCH ___: NOLA AREA", "TYPE OF PANCAKE", "HIT LIN MANUEL MIRANDA MUSICAL", "FORMER UK PM DISRAELI"],
         initialOrderSequence: "5126734",
         theme: "Money nicknames",
         hint: "Coining nicknames",
@@ -1525,7 +1525,7 @@ export const puzzles = [
     },
     {
         id: 153,
-        solution: ["TOY STORY", "MONSTERS\, INC", "FINDING NEMO", "THE INCREDIBLES", "RATATOUILLE", "INSIDE OUT", "COCO"],
+        solution: ["TOY STORY", "MONSTERS INC", "FINDING NEMO", "THE INCREDIBLES", "RATATOUILLE", "INSIDE OUT", "COCO"],
         initialOrderSequence: "6341275",
         theme: "Pixar movies by release year",
         hint: "Pixar progression",
