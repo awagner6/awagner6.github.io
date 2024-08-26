@@ -1545,22 +1545,22 @@ export const puzzles = [
     },
     {
         id: 155,
-        solution: ["BART", "THE L", "SEPTA", "THE SUBWAY", "THE T", "THE TUBE", "UBAHN"],
-        initialOrderSequence: "4126735",
-        theme: "Transit system names West <-> East",
-        hint: "West <-> East transit",
-        hint2: "Cities' transit system names",
-        post_solve: ["BART: Bay Area", "The L: Chicago", "SEPTA: Philly", "The subway: NYC", "The T: Boston", "The Tube: London", "U-Bahn: Berlin"],
-        revAllowed: true
-    },
-    {
-        id: 156,
         solution: ["MARVEL SUPERVILLAIN", "NBA GREAT ERVING", "SOFT DRINK SINCE 1885", "SEX THERAPIST WESTHEIMER", "THEODOR GEISEL", "KUBRICK COLD WAR SATIRE", "LONG-RUNNING BRITISH SCI-FI SHOW"],
         initialOrderSequence: "6351472",
         theme: "Doctors A to Z",
         hint: "Club Med (A-Z)",
         hint2: "Doctors A-Z",
         post_solve: ["Marvel supervillain: Dr. Doom", "NBA great Erving: Dr. J", "Soft drink since 1885: Dr. Pepper", "Sex therapist Westheimer: Dr. Ruth", "Theodor Geisel: Dr. Seuss", "Kubrick Cold War satire: Dr. Strangelove", "Long-running British sci-fi show: Doctor Who"],
+        revAllowed: true
+    },
+    {
+        id: 156,
+        solution: ["BART", "THE L", "SEPTA", "THE SUBWAY", "THE T", "THE TUBE", "UBAHN"],
+        initialOrderSequence: "4126735",
+        theme: "Transit system names West <-> East",
+        hint: "West <-> East transit",
+        hint2: "Cities' transit system names",
+        post_solve: ["BART: Bay Area", "The L: Chicago", "SEPTA: Philly", "The subway: NYC", "The T: Boston", "The Tube: London", "U-Bahn: Berlin"],
         revAllowed: true
     },
 ];
