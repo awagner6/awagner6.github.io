@@ -1566,11 +1566,21 @@ export const puzzles = [
     {
         id: 157,
         solution: ["PICCOLO", "CLARINET", "OBOE", "TRUMPET", "ALTO SAX", "FRENCH HORN", "TUBA"],
-        initialOrderSequence: "5471243",
+        initialOrderSequence: "5471263",
         theme: "Instruments by highest pitch",
         hint: "On a high note",
         hint2: "Instruments by high note",
         post_solve: ["Piccolo: ~4200 Hz", "Clarinet ~2000 Hz", "Oboe: ~1750 Hz", "Trumpet: ~1400 Hz", "Alto sax: ~900 Hz", "French horn ~700 Hz", "Tuba: ~350 Hz"],
+        revAllowed: true
+    },
+    {
+        id: 158,
+        solution: ["SHEETS PER REAM OF PAPER", "KIRKLAND TOILET PAPER SHEETS PER ROLL", "FOREVER STAMPS PER STANDARD SHEET", "SHEET MUSIC STAFF (NO. OF HORIZ. LINES)", "___ SHEETS TO THE WIND (DRUNK)", "STANDARD BED SHEET SET", "___ SHEET: ENTERTAINMENT SUMMARY"],
+        initialOrderSequence: "5236174",
+        theme: "Sheet counts",
+        hint: "This puzzle is the sheet",
+        hint2: "Sheet counts",
+        post_solve: ["Ream: 500 sheets", "Kirkland tp: ~380 sheets", "Stamps per sheet: 20", "Sheet music staff lines: 5", "___ sheets to the wind: 3", "Standard bed set: 2 sheets (top + fitted)", "___ sheet summary: 1"],
         revAllowed: true
     }
 ];
