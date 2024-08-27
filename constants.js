@@ -1565,12 +1565,12 @@ export const puzzles = [
     },
     {
         id: 157,
-        solution: ["FLUTE", "CLARINET", "TRUMPET", "ALTO SAX", "FRENCH HORN", "BASSOON", "TUBA"],
+        solution: ["PICCOLO", "CLARINET", "OBOE", "TRUMPET", "ALTO SAX", "FRENCH HORN", "TUBA"],
         initialOrderSequence: "5471243",
-        theme: "Instruments by highest possible pitch",
+        theme: "Instruments by highest pitch",
         hint: "On a high note",
         hint2: "Instruments by high note",
-        post_solve: ["Flute", "Clarinet", "Trumpet", "Alto sax", "French horn", "Bassoon", "Tuba"],
+        post_solve: ["Piccolo: ~4200 Hz", "Clarinet ~2000 Hz", "Oboe: ~1750 Hz", "Trumpet: ~1400 Hz", "Alto sax: ~900 Hz", "French horn ~700 Hz", "Tuba: ~350 Hz"],
         revAllowed: true
     }
 ];
