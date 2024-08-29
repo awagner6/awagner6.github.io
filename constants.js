@@ -1592,5 +1592,15 @@ export const puzzles = [
         hint2: "Unofficial US postal service motto",
         post_solve: ["Neither SNOW", "Nor RAIN", "Nor HEAT", "Nor GLOOM OF NIGHT", "Stays these COURIERS", "From the SWIFT COMPLETION", "Of their APPOINTED ROUNDS"],
         revAllowed: true
-    }
+    },
+    {
+        id: 160,
+        solution: ["ENGLISH", "MANDARIN CHINESE", "HINDI", "SPANISH", "MODERN STANDARD ARABIC", "BENGALI"],
+        initialOrderSequence: "6724135",
+        theme: "Languages by total speakers (as 1st and/or 2nd language)",
+        hint: "Common parlance",
+        hint2: "Most-spoken languages",
+        post_solve: ["English: 1.515 billion", "Mandarin Chinese: 1.140 billion", "Hindi: 609 million", "Spanish: 560 million", "Modern Standard Arabic: 332 million", "French: 312 million", "Bengali: 278 million"],
+        revAllowed: true 
+    },
 ];
