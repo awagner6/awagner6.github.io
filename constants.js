@@ -1582,5 +1582,15 @@ export const puzzles = [
         hint2: "Sheet counts",
         post_solve: ["Ream: 500 sheets", "Kirkland tp: ~380 sheets", "Stamps per sheet: 20", "Sheet music staff lines: 5", "___ sheets to the wind: 3", "Standard bed set: 2 sheets (top + fitted)", "___ sheet summary: 1"],
         revAllowed: true
+    },
+    {
+        id: 159,
+        solution: ["SNOW", "RAIN", "HEAT", "GLOOM OF NIGHT", "COURIERS", "SWIFT COMPLETION", "APPOINTED ROUNDS"],
+        initialOrderSequence: "6421735",
+        theme: "US Postal Service (unofficial) motto",
+        hint: "Mailing list",
+        hint2: "Unofficial US postal service motto",
+        post_solve: ["Neither SNOW", "Nor RAIN", "Nor HEAT", "Nor GLOOM OF NIGHT", "Stays these COURIERS", "From the SWIFT COMPLETION", "Of their APPOINTED ROUNDS"],
+        revAllowed: true
     }
 ];
