@@ -1455,7 +1455,7 @@ export const puzzles = [
     },
     {
         id: 146,
-        solution: ["TYPE OF MARKETING TEST", "DISK IN A JEWEL CASE", "50TH STATE POSTAL CODE", "\"WHIPLASH\" ACTOR SIMMONS", "TERSE REFUSAL", "CODE FOR ACCESSING A MENU\, MAYBE", "LIGHT THAT CAUSES SUNBURNS"],
+        solution: ["TYPE OF MARKETING TEST", "DISK IN A JEWEL CASE", "50TH STATE POSTAL CODE", "\"WHIPLASH\" ACTOR SIMMONS", "TERSE REFUSAL", "CODE FOR ACCESSING AN ONLINE MENU", "LIGHT THAT CAUSES SUNBURNS"],
         initialOrderSequence: "6725314",
         theme: "Consecutive alphabet pairs",
         hint: "Neighbors",
