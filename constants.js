@@ -1612,5 +1612,6 @@ export const puzzles = [
         hint2: "NYC venue capacities",
         post_solve: ["Citi Field: 41800", "MSG: 20789", "Barclays: 17732", "Radio City: 6013", "Met Opera: 3800", "Apollo Theater: 1538", "SoHo Playhouse: 178"],
         revAllowed: true
-    }
+    },
+    
 ];
