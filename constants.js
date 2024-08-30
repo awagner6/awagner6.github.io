@@ -1320,7 +1320,7 @@ export const puzzles = [
         theme: "The fastest-ever...",
         hint: "The fastest-ever...",
         hint2: "Top speeds",
-        post_solve: ["Table tennis hit: 72 mph (116 kph)", "100 mph (161 kph)", "Baseball pitch: 105 mph (169 kph)", "Hockey shot: 114 mph (183 kph)", "Soccer shot: 137 mph (221 kph)", "Tennis serve: 163 mph (262 kph)", "Badminton smash: 351 mph (565 kph)"],
+        post_solve: ["Table tennis hit: 72 mph (116 kph)", "Cricket bowl: 100 mph (161 kph)", "Baseball pitch: 105 mph (169 kph)", "Hockey shot: 114 mph (183 kph)", "Soccer shot: 137 mph (221 kph)", "Tennis serve: 163 mph (262 kph)", "Badminton smash: 351 mph (565 kph)"],
         revAllowed: true
     },
     {
@@ -1530,7 +1530,7 @@ export const puzzles = [
         theme: "Pixar movies by release year",
         hint: "Pixar progression",
         hint2: "Pixar movies by year",
-        post_solve: ["Toy Story: 1995", "Monsters\, Inc.: 2001", "Finding Nemo: 2003", "The Incredibles: 2004", "Ratatouille: 2007", "Inside Out: 2015", "Coco: 2017"],
+        post_solve: ["Toy Story: 1995", "Monsters Inc.: 2001", "Finding Nemo: 2003", "The Incredibles: 2004", "Ratatouille: 2007", "Inside Out: 2015", "Coco: 2017"],
         revAllowed: true        
     },
     {
@@ -1595,7 +1595,7 @@ export const puzzles = [
     },
     {
         id: 160,
-        solution: ["ENGLISH", "MANDARIN CHINESE", "HINDI", "SPANISH", "MODERN STANDARD ARABIC", "BENGALI"],
+        solution: ["ENGLISH", "MANDARIN CHINESE", "HINDI", "SPANISH", "MODERN STANDARD ARABIC", "FRENCH", "BENGALI"],
         initialOrderSequence: "6724135",
         theme: "Languages by total speakers (as 1st and/or 2nd language)",
         hint: "Common parlance",
