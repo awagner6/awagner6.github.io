@@ -1603,4 +1603,14 @@ export const puzzles = [
         post_solve: ["English: 1.515 billion", "Mandarin Chinese: 1.140 billion", "Hindi: 609 million", "Spanish: 560 million", "Modern Standard Arabic: 332 million", "French: 312 million", "Bengali: 278 million"],
         revAllowed: true 
     },
+    {
+        id: 161,
+        solution: ["CITI FIELD", "MADISON SQUARE GARDEN", "BARCLAYS CENTER", "RADIO CITY MUSIC HALL", "METROPOLITAN OPERA HOUSE", "APOLLO THEATER", "SOHO PLAYHOUSE"],
+        initialOrderSequence: "4635172",
+        theme: "NYC venue capacities",
+        hint: "Big Apple crowds",
+        hint2: "NYC venue capacities",
+        post_solve: ["Citi Field: 41800", "MSG: 20789", "Barclays: 17732", "Radio City: 6013", "Met Opera: 3800", "Apollo Theater: 1538", "SoHo Playhouse: 178"],
+        revAllowed: true
+    }
 ];
