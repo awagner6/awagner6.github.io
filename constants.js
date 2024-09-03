@@ -1613,5 +1613,15 @@ export const puzzles = [
         post_solve: ["Citi Field: 41800", "MSG: 20789", "Barclays: 17732", "Radio City: 6013", "Met Opera: 3800", "Apollo Theater: 1538", "SoHo Playhouse: 178"],
         revAllowed: true
     },
+    {
+        id: 162,
+        solution: ["YERBA MATE", "BLACK", "OOLONG", "GREEN", "WHITE", "DECAF", "HERBAL"],
+        initialOrderSequence: "5732146",
+        theme: "Teas by avg caffeine per cup (8 fl oz)",
+        hint: "Building buzz",
+        hint2: "Teas by caffeine content",
+        post_solve: ["Yerba mate: 150", "Black: 45-90 mg", "Oolong: ~40 mg", "Green: ~35 mg", "White: ~30", "Decaf: <5 mg", "Herbal: 0 mg"],
+        revAllowed: true
+    },
     
 ];
