@@ -1623,5 +1623,14 @@ export const puzzles = [
         post_solve: ["Yerba mate: 150", "Black: 45-90 mg", "Oolong: ~40 mg", "Green: ~35 mg", "White: ~30", "Decaf: <5 mg", "Herbal: 0 mg"],
         revAllowed: true
     },
-    
+    {
+        id: 163,
+        solution: ["MEDIEVAL", "RENAISSANCE", "BAROQUE", "ROMANTICISM", "IMPRESSIONISM", "SURREALISM", "OP ART"],
+        initialOrderSequence: "6521743",
+        theme: "Art movements chronologically",
+        hint: "Movements through history",
+        hint2: "Art movements chronologically",
+        post_solve: ["Medieval: 500-1400", "Renaissance: 1400-1600", "Baroque: 1600-1750", "Romanticism: 1780-1850", "Impressionism: 1865-1885", "Surrealism: 1920-1950", "Op Art: 1950-1970"],
+        revAllowed: true        
+    },
 ];
