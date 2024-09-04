@@ -1633,4 +1633,14 @@ export const puzzles = [
         post_solve: ["Medieval: 500-1400", "Renaissance: 1400-1600", "Baroque: 1600-1750", "Romanticism: 1780-1850", "Impressionism: 1865-1885", "Surrealism: 1920-1950", "Op Art: 1950-1970"],
         revAllowed: true        
     },
+    {
+        id: 164,
+        solution: ["NY PUBLIC LIBRARY MARBLE LIONS", "CADILLAC RANCH CADILLACS (TEXAS)", "CHARLES BRIDGE STATUES (PRAGUE)",  "ST PETER'S SQUARE STATUES (VATICAN CITY)", "MADAME TUSSAUD'S LONDON WAX FIGURES", "RAPA NUI MOAI (EASTER ISLAND HEADS)", "TERRACOTTA SOLDIERS OF QIN SHI HUANG"],
+        initialOrderSequence: "5741362",
+        theme: "Statue counts",
+        hint: "Figures figures",
+        hint2: "Numbers of statues",
+        post_solve: ["NY Public Library: 2 lions", "Cadillac Ranch: 10 Cadillacs", "Charles Bridge: 30 statues",  "St Peter's Square: 140 statues", "Madame Tussaud's London: 150+ wax figures", "Rapa Nui: 1043 Moai", "Terracotta Army: 8000+ soldiers"],
+        revAllowed: true
+    }
 ];
