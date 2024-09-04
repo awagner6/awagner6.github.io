@@ -1642,5 +1642,15 @@ export const puzzles = [
         hint2: "Numbers of statues",
         post_solve: ["NY Public Library: 2 lions", "Cadillac Ranch: 10 Cadillacs", "Charles Bridge: 30 statues",  "St Peter's Square: 140 statues", "Madame Tussaud's London: 150+ wax figures", "Rapa Nui: 1043 Moai", "Terracotta Army: 8000+ soldiers"],
         revAllowed: true
+    },
+    {
+        id: 165,
+        solution: ["WALMART", "MCDONALDS", "AMAZON", "GOOGLE", "APPLE", "META", "NETFLIX"],
+        initialOrderSequence: "6451372",
+        theme: "Companies by employee count",
+        hint: "The workforce",
+        hint2: "Number of employees",
+        post_solve: ["Walmart: 2.3 million", "McDonalds: 1.7 million", "Amazon: 1.5 million", "Google: 182 thousand", "Apple: 161 thousand", "Meta: 67 thousand", "Netflix: 13 thousand"],
+        revAllowed: true
     }
 ];
