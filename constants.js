@@ -1662,5 +1662,15 @@ export const puzzles = [
         hint2: "Probabilities",
         post_solve: ["Flipping heads: 1 in 2", "Rolling Yahtzee: 1 in 1296", "Finding a four leaf clover: 1 in 5 thousand", "Finding a pearl: 1 in 10 thousand", "Being hit by lightning ever: 1 in 15 thousand", "Catching a blue lobster: 1 in 2 million", "Winning Powerball jackpot: 1 in 292.2 million"],
         revAllowed: true
-    }
+    },
+    {
+        id: 167,
+        solution: ["NINTENDO ENTERTAINMENT SYSTEM", "GAME BOY", "SUPER NINTENDO", "N64", "GAMECUBE", "WII", "SWITCH"],
+        initialOrderSequence: "4627135",
+        theme: "Nintendo consoles chronologically",
+        hint: "Playtime",
+        hint2: "Nintendo consoles chronologically",
+        post_solve: ["NES: 1985", "Game Boy: 1989", "Super Nintendo: 1991", "Nintendo 64: 1996", "Gamecube: 2001", "Wii: 2006", "Switch: 2017"],
+        revAllowed: true
+    },
 ];
