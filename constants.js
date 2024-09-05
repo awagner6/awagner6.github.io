@@ -1652,5 +1652,15 @@ export const puzzles = [
         hint2: "Number of employees",
         post_solve: ["Walmart: 2.3 million", "McDonalds: 1.7 million", "Amazon: 1.5 million", "Google: 182 thousand", "Apple: 161 thousand", "Meta: 67 thousand", "Netflix: 13 thousand"],
         revAllowed: true
+    },
+    {
+        id: 166,
+        solution: ["FLIPPING HEADS", "ROLLING YAHTZEE (5 OF A KIND)", "FINDING A FOUR LEAF CLOVER", "FINDING A PEARL IN AN OYSTER", "BEING HIT BY LIGHTNING IN LIFETIME", "CATCHING A BLUE LOBSTER", "WINNING POWERBALL JACKPOT"],
+        initialOrderSequence: "5236174",
+        theme: "Likelihoods",
+        hint: "What are the odds?",
+        hint2: "Probabilities",
+        post_solve: ["Flipping heads: 1 in 2", "Rolling Yahtzee: 1 in 1296", "Finding a four leaf clover: 1 in 5 thousand", "Finding a pearl: 1 in 10 thousand", "Being hit by lightning ever: 1 in 15 thousand", "Catching a blue lobster: 1 in 2 million", "Winning Powerball jackpot: 1 in 292.2 million"],
+        revAllowed: true
     }
 ];
