@@ -1300,7 +1300,7 @@ export const puzzles = [
         theme: "Perfect scores",
         hint: "Flawless victory",
         hint2: "Perfect scores",
-        post_solve: ["AP test: 5", "Single gymnastics routine (pre '06): 10 (now higher)", "Single darts round: 180 (3 triple 20s)", "Bowling game: 300 (12 strikes)", "Jeopardy!: $566,400", "SAT score: 1600 (prev 2400)", "Pacman: 3,333,360"],
+        post_solve: ["AP test: 5", "Single gymnastics routine (pre '06): 10 (now higher)", "Single darts round: 180 (3 triple 20s)", "Bowling game: 300 (12 strikes)", "SAT score: 1600 (prev 2400)", "Jeopardy!: $566,400", "Pacman: 3,333,360"],
         revAllowed: true
     },
     {
