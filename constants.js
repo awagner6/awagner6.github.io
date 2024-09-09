@@ -1714,7 +1714,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 171,
+        id: 172,
         solution: ["C", "B", "A", "D", "G", "F", "E"],
         initialOrderSequence: "3214765",
         theme: "Smallest number that contains each letter",
