@@ -1567,7 +1567,7 @@ export const puzzles = [
         id: 157,
         solution: ["PICCOLO", "CLARINET", "OBOE", "TRUMPET", "ALTO SAX", "FRENCH HORN", "TUBA"],
         initialOrderSequence: "5471263",
-        theme: "Instruments by highest pitch",
+        theme: "Instruments by highest (reasonable) pitch",
         hint: "On a high note",
         hint2: "Instruments by high note",
         post_solve: ["Piccolo: ~4200 Hz", "Clarinet ~2000 Hz", "Oboe: ~1750 Hz", "Trumpet: ~1400 Hz", "Alto sax: ~900 Hz", "French horn ~700 Hz", "Tuba: ~350 Hz"],
@@ -1721,6 +1721,16 @@ export const puzzles = [
         hint: "Smallest whole number<br>to contain the letter...",
         hint2: "When letters first appear<br>in number names",
         post_solve: ["C: One octillion", "B: One billion", "A: One thousand", "D: One hundred", "G: Eight", "F: Four", "E: Zero"],
+        revAllowed: true
+    },
+    {
+        id: 173,
+        solution: ["CHEAPEST TOILET PAPER OPTION", "HUMAN SKIN (MAJOR LAYERS)", "EARTH (MAJOR LAYERS)", "EARTH'S AMOSPHERE", "RAINBOW CAKE", "__ LAYER DIP: SUPER BOWL SNACK", "RED ONION"],
+        initialOrderSequence: "5372164",
+        theme: "Number of layers",
+        hint: "A puzzle with layers",
+        hint2: "Number of layers",
+        post_solve: ["Cheapest toilet paper: 1 (single ply)", "Skin: 3 (epidermis dermis hypodermis)", "Earth: 4 (crust mantle inner/outer core)", "Atmosphere: 5 (tropo-/strato-/meso-/thermo-/exosphere)", "Rainbow cake: 6 (ROYGBV)", "Super bowl snack: 7 layer dip (beans guac sour cream salsa cheese olives green onion)", "Red onion: ~8-15+"],
         revAllowed: true
     }
 ];
