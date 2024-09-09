@@ -1693,4 +1693,14 @@ export const puzzles = [
         post_solve: ["Monopoly Chance cards: 16", "Clue total cards: 21", "Euchre deck: 24-32", "Standard playing cards deck: 52 (or 54 with jokers)", "Standard 'Magic: The Gathering' deck: 60", "Tarot deck: 78", "Uno deck: 108"],
         revAllowed: true
     },
+    {
+        id: 170,
+        solution: ["MOISTURIZER", "PRIMER", "FOUNDATION", "CONCEALER", "BLUSH", "LIPSTICK", "SETTING SPRAY"],
+        initialOrderSequence: "4612573",
+        theme: "L'Oréal-recommended makeup order",
+        hint: "Make a face (per L'Oréal)",
+        hint2: "Makeup steps",
+        post_solve: ["1. Moisturize + sunscreen", "2. Primer", "3. Foundation", "4. Concealer", "5. Face makeup: Blush/highligher/bronzer", "6. Lipstick", "7. Setting spray", "(Your mileage may vary!)"],
+        revAllowed: true        
+    }
 ];
