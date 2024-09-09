@@ -1702,5 +1702,15 @@ export const puzzles = [
         hint2: "Makeup steps",
         post_solve: ["1. Moisturize + sunscreen", "2. Primer", "3. Foundation", "4. Concealer", "5. Face makeup: Blush/highligher/bronzer", "6. Lipstick", "7. Setting spray", "(Your mileage may vary!)"],
         revAllowed: true        
+    },
+    {
+        id: 171,
+        solution: ["CREATE TIKTOK ACCOUNT", "COMPETE IN THE YOUTH OLYMPICS", "GET U.S. DRIVER'S LICENSE", "JOIN AARP", "DRINK IN THE U.S.", "BECOME U.S. PRESIDENT", "RECEIVE U.S. SOCIAL SECURITY BENEFITS"],
+        initialOrderSequence: "6351724",
+        theme: "Minimum ages",
+        hint: "Age in",
+        hint2: "Minimum ages",
+        post_solve: ["Create TikTok account: 13", "Compete in Youth Olympics: 15", "Get U.S. driver's license: 16 (in some states)", "Join AARP: 18 (not 50!)", "Drink in the U.S.: 21", "Become U.S. president: 35", "Receive soc. sec. benefits: 62"],
+        revAllowed: true
     }
 ];
