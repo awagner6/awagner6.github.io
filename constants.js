@@ -1732,5 +1732,14 @@ export const puzzles = [
         hint2: "Number of layers",
         post_solve: ["Cheapest toilet paper: 1 (single ply)", "Skin: 3 (epidermis dermis hypodermis)", "Earth: 4 (crust mantle inner/outer core)", "Atmosphere: 5 (tropo-/strato-/meso-/thermo-/exosphere)", "Rainbow cake: 6 (ROYGBV)", "Super bowl snack: 7 layer dip (beans guac sour cream salsa cheese olives green onion)", "Red onion: ~8-15+"],
         revAllowed: true
+    },
+    {
+        id: 174,
+        solution: ["___-TRACK MIND: FIXATION", "STANDARD CRIBBAGE BOARD", "POPULAR CASSETTE TAPE TYPE", "MICHAEL JACKSON'S 'THRILLER'", "FORMULA 1 TRACKS (2024)", "GRAND CENTRAL TERMINAL", "AUDIO CD (MAX POSSIBLE)"],
+        theme: "Number of tracks",
+        hint: "That tracks",
+        hint2: "Number of tracks",
+        post_solve: ["Fixation: One-track mind", "Cribbage board: 3 tracks (2-4)", "Popular cassette type: 8-track", "Michael Jackson's 'Thriller': 9 tracks", "Formula 1 (2024): 24 tracks/circuits", "Grand Central Terminal: 67 tracks", "Audio CD max: 99 tracks"],
+        revAllowed: true
     }
 ];
