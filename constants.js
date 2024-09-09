@@ -1673,4 +1673,14 @@ export const puzzles = [
         post_solve: ["NES: 1985", "Game Boy: 1989", "Super Nintendo: 1991", "Nintendo 64: 1996", "Gamecube: 2001", "Wii: 2006", "Switch: 2017"],
         revAllowed: true
     },
+    {
+        id: 168,
+        solution: ["STRANGER THINGS CHARACTER", "TAYLOR SWIFT SONG", "LONGEST-EVER NBA WIN STREAK", "UK COUNTRY CODE FOR INTL DIALING", "ROUTE __: AMERICA'S 'MOTHER ROAD'", "DEBUT TALKING HEADS ALBUM", "BROOKLYN ___: SITCOM"],
+        initialOrderSequence: "5721436",
+        theme: "Doubled-digit numbers",
+        hint: "Double digits",
+        hint2: "11, 22, 33, etc",
+        post_solve: ["Stranger Things character: Eleven", "Taylor Swift song: 22", "Longest NBA win streak: 33 ('71 Lakers)", "UK country code: +44", "America's 'Mother Road': Route 66", "Debut album: Talking Heads 77", "Sitcom: Brooklyn Nine-Nine"],
+        revAllowed: true
+    }
 ];
