@@ -1712,5 +1712,15 @@ export const puzzles = [
         hint2: "Minimum ages",
         post_solve: ["Create TikTok account: 13", "Compete in Youth Olympics: 15", "Get U.S. driver's license: 16 (in some states)", "Join AARP: 18 (not 50!)", "Drink in the U.S.: 21", "Become U.S. president: 35", "Receive soc. sec. benefits: 62"],
         revAllowed: true
+    },
+    {
+        id: 171,
+        solution: ["C", "B", "A", "D", "G", "F", "E"],
+        initialOrderSequence: "3214765",
+        theme: "Smallest number that contains each letter",
+        hint: "Smallest whole number<br>to contain the letter...",
+        hint2: "When letters first appear<br>in number names",
+        post_solve: ["C: One octillion", "B: One billion", "A: One thousand", "D: One hundred", "G: Eight", "F: Four", "E: Zero"],
+        revAllowed: true
     }
 ];
