@@ -1682,5 +1682,15 @@ export const puzzles = [
         hint2: "11, 22, 33, etc",
         post_solve: ["Stranger Things character: Eleven", "Taylor Swift song: 22", "Longest NBA win streak: 33 ('71 Lakers)", "UK country code: +44", "America's 'Mother Road': Route 66", "Debut album: Talking Heads 77", "Sitcom: Brooklyn Nine-Nine"],
         revAllowed: true
-    }
+    },
+    {
+        id: 169,
+        solution: ["MONOPOLY CHANCE CARDS", "CLUE TOTAL CARDS (SUSPECTS/WEAPONS/ROOMS)", "EUCHRE DECK", "DECK OF STANDARD PLAYING CARDS", "STANDARD 'MAGIC: THE GATHERING' DECK", "TAROT DECK", "UNO DECK"],
+        initialOrderSequence: "6745132",
+        theme: "Card amounts",
+        hint: "Counting cards",
+        hint2: "Card amounts",
+        post_solve: ["Monopoly Chance cards: 16", "Clue total cards: 21", "Euchre deck: 24-32", "Standard playing cards deck: 52 (or 54 with jokers)", "Standard 'Magic: The Gathering' deck: 60", "Tarot deck: 78", "Uno deck: 108"],
+        revAllowed: true
+    },
 ];
