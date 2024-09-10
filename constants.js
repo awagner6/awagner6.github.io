@@ -1743,4 +1743,14 @@ export const puzzles = [
         post_solve: ["Fixation: One-track mind", "Cribbage board: 3 tracks (2-4)", "Popular cassette type: 8-track", "Michael Jackson's 'Thriller': 9 tracks", "Formula 1 (2024): 24 tracks/circuits", "Grand Central Terminal: 67 tracks", "Audio CD max: 99 tracks"],
         revAllowed: true
     },
+    {
+        id: 175,
+        solution: ["PODCAST/SUDOKU", "GIF", "SELFIE", "VAPE", "POST-TRUTH", "VAX", "RIZZ"],
+        initialOrderSequence: "5417632",
+        theme: "Oxford Word of the Year by year",
+        hint: "Oxford Word of the Year",
+        hint2: "Word of the Year by year",
+        post_solve: ["Podcast/Sudoku: 2005", "GIF: 2012", "Selfie: 2013", "Vape: 2014", "Post-truth: 2016", "Vax: 2021", "Rizz: 2023"],
+        revAllowed: true
+    },
 ];
