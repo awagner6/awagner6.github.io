@@ -1430,7 +1430,7 @@ export const puzzles = [
         theme: "First seven planets",
         hint: "World tour",
         hint2: "First seven planets",
-        post_solve: ["Queen frontman: Freddie Mercury", "Tennis star: Venus Williams", "Chocolate/caramel/nougat bar: Mars Bar", "Train song: Drops of Jupiter", "90s console: Sega Saturn", "Uranium namesake: Uranus"],
+        post_solve: ["Queen frontman: Freddie Mercury", "Tennis star: Venus Williams", "Soil: Earth", "Chocolate/caramel/nougat bar: Mars Bar", "Train song: Drops of Jupiter", "90s console: Sega Saturn", "Uranium namesake: Uranus"],
         revAllowed: true
     },
     {
