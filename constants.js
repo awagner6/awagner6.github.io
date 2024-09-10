@@ -1753,4 +1753,14 @@ export const puzzles = [
         post_solve: ["Podcast/Sudoku: 2005", "GIF: 2012", "Selfie: 2013", "Vape: 2014", "Post-truth: 2016", "Vax: 2021", "Rizz: 2023"],
         revAllowed: true
     },
+    {
+        id: 176,
+        solution: ["CHARLES LINDBERGH", "QUEEN ELIZABETH II", "THE COMPUTER", "MARK ZUCKERBERG", "GRETA THUNBERG", "VOLODYMYR ZELENSKY", "TAYLOR SWIFT"],
+        initialOrderSequence: "4751623",
+        theme: "TIME Person of the Year",
+        hint: "TIME Person of the Year",
+        hint2: "Person of the Year by year",
+        post_solve: ["Charles Lindbergh: 1927 (first-ever)", "Queen Elizabeth II: 1952", "The Computer: 1982", "Mark Zuckerberg: 2010", "Greta Thunberg: 2019", "Volodymyr Zelensky: 2022", "Taylor Swift: 2023"],
+        revAllowed: true
+    },
 ];
