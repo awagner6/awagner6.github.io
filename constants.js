@@ -1773,4 +1773,14 @@ export const puzzles = [
         post_solve: ["Plain toast: 1 (bread)", "Grilled cheese: 2 (bread + cheese)", "PB and J: 3 (bread, peanut butter, jelly)", "BLT: 4 (Bread, bacon, lettuce, tomato)", "Reuben: 5 (Bread, corned beef, swiss cheese, sauerkraut, Thousand Island dressing)", "Basic club: 6 (bread, poultry, bacon, lettuce, tomato, mayo)", "Big Mac: 8 (sesame seeds, bun, beef, cheese, lettuce, pickles, onion, special sauce)"],
         revAllowed: true
     },
+    {
+        id: 178,
+        solution: ["UNITED STATES OF AMERICA", "UNITED KINGDOM", "UZBEKISTAN", "UKRAINE", "UGANDA", "UNITED ARAB EMIRATES", "URUGUAY"],
+        initialOrderSequence: "6251473",
+        theme: "Populations of the 7 'U' countries",
+        hint: "Pop-U-lation",
+        hint2: "U countries by population",
+        post_solve: ["USA: 335.8 million", "UK: 67.5 million", "Uzbekistan: 36.9 million", "Ukraine: 36.7 million", "Uganda: 45.9 million", "UAE: 10.2 million", "Uruguay: 3.4 million"],
+        revAllowed: true
+    },
 ];
