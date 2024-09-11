@@ -1765,7 +1765,7 @@ export const puzzles = [
     },
     {
         id: 177,
-        solution: {"PLAIN TOAST", "GRILLED CHEESE", "PB AND J", "BLT", "REUBEN", "BASIC CLUB SANDWICH", "BIG MAC"},
+        solution: ["PLAIN TOAST", "GRILLED CHEESE", "PB AND J", "BLT", "REUBEN", "BASIC CLUB SANDWICH", "BIG MAC"],
         initialOrderSequence: "5736124",
         theme: "Basic ingredient count",
         hint: "Basic ingredients",
