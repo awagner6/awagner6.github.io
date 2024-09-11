@@ -1763,4 +1763,14 @@ export const puzzles = [
         post_solve: ["Charles Lindbergh: 1927 (first-ever)", "Queen Elizabeth II: 1952", "The Computer: 1982", "Mark Zuckerberg: 2010", "Greta Thunberg: 2019", "Volodymyr Zelensky: 2022", "Taylor Swift: 2023"],
         revAllowed: true
     },
+    {
+        id: 177,
+        solution: {"PLAIN TOAST", "GRILLED CHEESE", "PB AND J", "BLT", "REUBEN", "BASIC CLUB SANDWICH", "BIG MAC"},
+        initialOrderSequence: "5736124",
+        theme: "Basic ingredient count",
+        hint: "Basic ingredients",
+        hint2: "Basic ingredient count",
+        post_solve: ["Plain toast: 1 (bread)", "Grilled cheese: 2 (bread + cheese)", "PB and J: 3 (bread, peanut butter, jelly)", "BLT: 4 (Bread, bacon, lettuce, tomato)", "Reuben: 5 (Bread, corned beef, swiss cheese, sauerkraut, Thousand Island dressing)", "Basic club: 6 (bread, poultry, bacon, lettuce, tomato, mayo)", "Big Mac: 8 (sesame seeds, bun, beef, cheese, lettuce, pickles, onion, special sauce)"],
+        revAllowed: true
+    },
 ];
