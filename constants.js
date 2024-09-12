@@ -1735,16 +1735,6 @@ export const puzzles = [
     },
     {
         id: 174,
-        solution: ["___-TRACK MIND: FIXATION", "STANDARD CRIBBAGE BOARD", "POPULAR CASSETTE TAPE TYPE", "MICHAEL JACKSON'S 'THRILLER'", "FORMULA 1 TRACKS (2024)", "GRAND CENTRAL TERMINAL", "AUDIO CD (MAX POSSIBLE)"],
-        initialOrderSequence: "4613725",
-        theme: "Number of tracks",
-        hint: "That tracks",
-        hint2: "Number of tracks",
-        post_solve: ["Fixation: One-track mind", "Cribbage board: 3 tracks (2-4)", "Popular cassette type: 8-track", "Michael Jackson's 'Thriller': 9 tracks", "Formula 1 (2024): 24 tracks/circuits", "Grand Central Terminal: 67 tracks", "Audio CD max: 99 tracks"],
-        revAllowed: true
-    },
-    {
-        id: 175,
         solution: ["PODCAST/SUDOKU", "GIF", "SELFIE", "VAPE", "POST-TRUTH", "VAX", "RIZZ"],
         initialOrderSequence: "5417632",
         theme: "Oxford Word of the Year by year",
@@ -1754,7 +1744,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 176,
+        id: 175,
         solution: ["CHARLES LINDBERGH", "QUEEN ELIZABETH II", "THE COMPUTER", "MARK ZUCKERBERG", "GRETA THUNBERG", "VOLODYMYR ZELENSKY", "TAYLOR SWIFT"],
         initialOrderSequence: "4751623",
         theme: "TIME Person of the Year",
@@ -1764,7 +1754,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 177,
+        id: 176,
         solution: ["PLAIN TOAST", "GRILLED CHEESE", "PB AND J", "BLT", "REUBEN", "BASIC CLUB SANDWICH", "BIG MAC"],
         initialOrderSequence: "5736124",
         theme: "Basic ingredient count",
@@ -1774,7 +1764,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 178,
+        id: 177,
         solution: ["UNITED STATES OF AMERICA", "UNITED KINGDOM", "UZBEKISTAN", "UKRAINE", "UGANDA", "UNITED ARAB EMIRATES", "URUGUAY"],
         initialOrderSequence: "6251473",
         theme: "Populations of the 7 'U' countries",
@@ -1782,5 +1772,25 @@ export const puzzles = [
         hint2: "U countries by population",
         post_solve: ["USA: 335.8 million", "UK: 67.5 million", "Uzbekistan: 36.9 million", "Ukraine: 36.7 million", "Uganda: 45.9 million", "UAE: 10.2 million", "Uruguay: 3.4 million"],
         revAllowed: true
+    },
+    {
+        id: 178,
+        solution: ["___-TRACK MIND: FIXATION", "STANDARD CRIBBAGE BOARD", "POPULAR CASSETTE TAPE TYPE", "MICHAEL JACKSON'S 'THRILLER'", "FORMULA 1 TRACKS (2024)", "GRAND CENTRAL TERMINAL", "AUDIO CD (MAX POSSIBLE)"],
+        initialOrderSequence: "4613725",
+        theme: "Number of tracks",
+        hint: "That tracks",
+        hint2: "Number of tracks",
+        post_solve: ["Fixation: One-track mind", "Cribbage board: 3 tracks (2-4)", "Popular cassette type: 8-track", "Michael Jackson's 'Thriller': 9 tracks", "Formula 1 (2024): 24 tracks/circuits", "Grand Central Terminal: 67 tracks", "Audio CD max: 99 tracks"],
+        revAllowed: true
+    },
+    {
+        id: 179,
+        solution: ["ASIA", "SOUTH AMERICA", "NORTH AMERICA", "AFRICA", "EUROPE", "ANTARCTICA", "OCEANIA"],
+        initialOrderSequence: "4615732",
+        theme: "Continents by highest peak (meters)",
+        hint: "Highest high points",
+        hint2: "Continents by highest peak height",
+        post_solve: ["Asia: Mt. Everest (8\,850 m)", "South America: Aconcagua (6\,962 m)", "North America: Denali (6\,190 m)", "Africa: Kilimanjaro (5\,895 m)", "Europe: Mt. Elbrus (5\,642 m)", "Antarctica: Mt. Vinson (4\,892 m)", "Oceania: Puncak Jaya (4\,884 m)"],
+        revAllowed: true        
     },
 ];
