@@ -1793,4 +1793,14 @@ export const puzzles = [
         post_solve: ["Asia: Mt. Everest (8\,850 m)", "South America: Aconcagua (6\,962 m)", "North America: Denali (6\,190 m)", "Africa: Kilimanjaro (5\,895 m)", "Europe: Mt. Elbrus (5\,642 m)", "Antarctica: Mt. Vinson (4\,892 m)", "Oceania: Puncak Jaya (4\,884 m)"],
         revAllowed: true        
     },
+    {
+        id: 180,
+        solution: ["START A POKER POT", "TALK SMACK ABOUT", "SET A PRECEDENT", "INTENDED", "PUT ON TV", "ACTOR MCKELLEN OR MCSHANE", "BELIEF SYSTEM"],
+        initialOrderSequence: "5624173",
+        theme: "Antidisestablishmentarianism",
+        hint: "28-letter word",
+        hint2: "Famously long English word",
+        post_solve: ["Start a poker pot: Ante", "Talk smack about: Diss", "Set a precedent: Establish", "Intended: Meant", "Put on TV: Air", "Actor McKellen or McShane: Ian", "Belief system: Ism"],
+        revAllowed: true
+    },
 ];
