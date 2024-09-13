@@ -1795,12 +1795,22 @@ export const puzzles = [
     },
     {
         id: 180,
-        solution: ["START A POKER POT", "TALK SMACK ABOUT", "SET A PRECEDENT", "INTENDED", "PUT ON TV", "ACTOR MCKELLEN OR MCSHANE", "BELIEF SYSTEM"],
+        solution: ["2016 RIHANNA ALBUM", "TALK SMACK ABOUT", "SET A PRECEDENT", "INTENDED", "PUT ON TV", "ACTOR MCKELLEN OR MCSHANE", "BELIEF SYSTEM"],
         initialOrderSequence: "5624173",
         theme: "Antidisestablishmentarianism",
         hint: "28-letter word",
         hint2: "Famously long English word",
-        post_solve: ["Start a poker pot: Ante", "Talk smack about: Diss", "Set a precedent: Establish", "Intended: Meant", "Put on TV: Air", "Actor McKellen or McShane: Ian", "Belief system: Ism"],
+        post_solve: ["Rihanna album: Anti", "Talk smack about: Diss", "Set a precedent: Establish", "Intended: Meant", "Put on TV: Air", "Actor McKellen or McShane: Ian", "Belief system: Ism"],
+        revAllowed: true
+    },
+    {
+        id: 181,
+        solution: ["GATEWAY ARCH (MO)", "AMERICAN SAMOA", "ACADIA (ME)", "ZION (UT)", "YOSEMITE (CA)", "YELLOWSTONE (WY)", "DENALI (AK)"],
+        initialOrderSequence: "4735126",
+        theme: "National parks by size",
+        hint: "Park-ing spaces",
+        hint2: "National parks by size",
+        post_solve: ["Gateway Arch: 192.8 acres (smallest in U.S!)", "American Samoa: 8\,256.7 acres", "Acadia: 49\,071.4 acres", "Zion: 147\,242.7 acres", "Yosemite: 761\,747.5 acres", "Yellowstone: 2\,219\,790.7 acres", "Denali: 4\,740\, 911.2 acres"],
         revAllowed: true
     },
 ];
