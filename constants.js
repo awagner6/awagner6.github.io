@@ -1813,4 +1813,24 @@ export const puzzles = [
         post_solve: ["Gateway Arch: 192.8 acres (smallest in U.S!)", "American Samoa: 8\,256.7 acres", "Acadia: 49\,071.4 acres", "Zion: 147\,242.7 acres", "Yosemite: 761\,747.5 acres", "Yellowstone: 2\,219\,790.7 acres", "Denali: 4\,740\, 911.2 acres"],
         revAllowed: true
     },
+    {
+        id: 182,
+        solution: ["DIAMOND", "MASONRY DRILL BIT", "WINDOW GLASS", "COPPER", "HUMAN FINGERNAIL", "PENCIL GRAPHITE", "TALC"],
+        initialOrderSequence: "5612473",
+        theme: "Mohs hardness scale (1 to 10)",
+        hint: "How hard could it be?",
+        hint2: "Mohs hardness scale",
+        post_solve: ["Diamond: 10", "Drill bit: 8.5 (tungsten carbide)", "Window glass: 5.5", "Copper: 3", "Human fingernail: 2.5", "Pencil graphite: 1-2", "Talc: 1"],
+        revAllowed: true
+    },
+    {
+        id: 183,
+        solution: ["___ TROMBONES: 'THE MUSIC MAN' SONG", "BUGLES (GM SNACK FOOD) PER SERVING", "DARTH MAUL (STAR WARS: EPISODE I)", "U.S. FIRE CHIEF BADGE (BUGLES)", "TRICERATOPS", "IBEX", "SOMALIA (GEOGRAPHICALLY)"],
+        initialOrderSequence: "3671245",
+        theme: "Horns/bugles",
+        hint: "By the horns",
+        hint2: "Horns/bugles/trombones/etc",
+        post_solve: ["Music Man song: 76 trombones", "GM snack serving: ~37 Bugles", "Darth Maul (Star Wars): 10 horns", "Fire chief badge: 5 bugles", "Triceratops: 3 horns", "Ibex: 2 horns", "Somalia: 1 horn (of Africa)"],
+        revAllowed: true
+    }
 ];
