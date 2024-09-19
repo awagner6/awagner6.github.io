@@ -1832,5 +1832,15 @@ export const puzzles = [
         hint2: "Horns/bugles/trombones/etc",
         post_solve: ["Music Man song: 76 trombones", "GM snack serving: ~37 Bugles", "Darth Maul (Star Wars): 10 horns", "Fire chief badge: 5 bugles", "Triceratops: 3 horns", "Ibex: 2 horns", "Somalia: 1 horn (of Africa)"],
         revAllowed: true
-    }
+    },
+    {
+        id: 184,
+        solution: ["SOFI STADIUM 'INFINITY SCREEN' (L.A.)", "MARRIOTT MARQUIS TIMES SQ BILLBOARD", "WORLD'S LARGEST IMAX SCREEN", "SAMSUNG TVS (FULL RANGE)", "TESLA CYBERTRUCK FRONT DISPLAY", "NINTENDO SWITCH", "APPLE WATCH"],
+        initialOrderSequence: "4163275",
+        theme: "Screen sizes",
+        hint: "Screen test",
+        hint2: "Screen sizes",
+        post_solve: ["SoFi Stadium 'Infinity Screen': 70,000 sq. ft.", "Marriott Marquis Times Sq. Billboard: 26,000 sq. ft.", "Largest IMAX (Stuttgart, Germany): 9,000 sq. ft.", "Samsung TV: 437.6-4103.8 sq. in.", "Tesla Cybertruck: 123.5 sq. in.", "Nintendo Switch: 16.4 sq. in.", "Apple Watch: 1.5 sq. in."],
+        revAllowed: true        
+    },
 ];
