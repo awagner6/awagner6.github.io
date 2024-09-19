@@ -1570,7 +1570,7 @@ export const puzzles = [
         theme: "Instruments by highest (reasonable) pitch",
         hint: "On a high note",
         hint2: "Instruments by high note",
-        post_solve: ["Piccolo: ~4200 Hz", "Clarinet ~2000 Hz", "Oboe: ~1750 Hz", "Trumpet: ~1400 Hz", "Alto sax: ~900 Hz", "French horn ~700 Hz", "Tuba: ~350 Hz"],
+        post_solve: ["Piccolo: ~4200 Hz", "Clarinet: ~2000 Hz", "Oboe: ~1750 Hz", "Trumpet: ~1400 Hz", "Alto sax: ~900 Hz", "French horn ~700 Hz", "Tuba: ~350 Hz"],
         revAllowed: true
     },
     {
@@ -1842,5 +1842,15 @@ export const puzzles = [
         hint2: "Screen sizes",
         post_solve: ["SoFi Stadium 'Infinity Screen': 70,000 sq. ft.", "Marriott Marquis Times Sq. Billboard: 26,000 sq. ft.", "Largest IMAX (Stuttgart, Germany): 9,000 sq. ft.", "Samsung TV: 437.6-4103.8 sq. in.", "Tesla Cybertruck: 123.5 sq. in.", "Nintendo Switch: 16.4 sq. in.", "Apple Watch: 1.5 sq. in."],
         revAllowed: true        
+    },
+    {
+        id: 185,
+        solution: ["PERSON (ALL-TIME)", "PERSON IN SPACE", "EVEREST SUMMITER", "INAUGURATED U.S. PRESIDENT", "PERSON TO GIVE BIRTH", "OLYMPIC GYMNAST", "DOG"],
+        initialOrderSequence: "3567214",
+        theme: "Age of the oldest-ever...",
+        hint: "Age of the oldest-ever...",
+        hint2: "Age record holders",
+        post_solve: ["Person (all-time): 122 (Jeanne Calment, 1997)", "Person in space: 90 (Ed Dwight, 2024)", "Everest summiter: 80 (Yūichirō Miura, 2013)", "Inaugurated U.S. prez: 78 (Joe Biden, 2021)", "Person to give birth: 73 (Erramatti Mangamma, 2019)", "Olympic gymnast: 41  (Oksana Chusovitina, 2016)", "Dog: 29 ('Bluey' died 1929)"],
+        revAllowed: true
     },
 ];
