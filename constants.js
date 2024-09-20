@@ -1863,4 +1863,14 @@ export const puzzles = [
         post_solve: ["April Fools Day: 1st (Apr)", "Groundhog Day: 2nd (Feb)", "Guy Fawkes Night: 5th (Nov)", "Valentine's Day: 14th (Feb)", "St. Patrick's Day: 17th (Mar)", "Earth Day: 22nd (Apr)", "Halloween: 31st (Oct)"],
         revAllowed: true        
     },
+    {
+        id: 187,
+        solution: ["VEGAS STRIP LENGTH (MILES)", "LUXOR STEEPNESS (DEGREES)", "VEGAS WELCOME SIGN LIGHT BULBS", "BELLAGIO FOUNTAINS", "YEAR VEGAS WAS FOUNDED", "MGM GRAND HOTEL ROOMS", "LARGEST SLOTS JACKPOT EVER (DOLLARS)"],
+        initialOrderSequence: "5763142",
+        theme: "Vegas trivia",
+        hint: "What happens in Vegas",
+        hint2: "Vegas trivia",
+        post_solve: ["Strip length: ~4.2 miles", "Luxor steepness: 39 degrees", "Welcome Sign light bulbs: 89", "Bellagio: 1\,214 fountains", "Year Vegas was founded: 1905", "MGM Grand rooms: 6\,852", "Largest-ever slots jackpot: $39 million"],
+        revAllowed: true    
+    }
 ];
