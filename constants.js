@@ -1853,4 +1853,14 @@ export const puzzles = [
         post_solve: ["Person (all-time): 122 (Jeanne Calment, 1997)", "Person in space: 90 (Ed Dwight, 2024)", "Everest summiter: 80 (Yūichirō Miura, 2013)", "Inaugurated U.S. prez: 78 (Joe Biden, 2021)", "Person to give birth: 73 (Erramatti Mangamma, 2019)", "Olympic gymnast: 41  (Oksana Chusovitina, 2016)", "Dog: 29 ('Bluey' died 1929)"],
         revAllowed: true
     },
+    {
+        id: 186,
+        solution: ["APRIL FOOLS DAY", "GROUNDHOG DAY", "GUY FAWKES NIGHT", "VALENTINE'S DAY", "ST. PATRICK'S DAY", "EARTH DAY", "HALLOWEEN"],
+        initialOrderSequence: "2451673",
+        theme: "Day within its month",
+        hint: "Day not month",
+        hint2: "Day within its month",
+        post_solve: ["April Fools Day: 1st (Apr)", "Groundhog Day: 2nd (Feb)", "Guy Fawkes Night: 5th (Nov)", "Valentine's Day: 14th (Feb)", "St. Patrick's Day: 17th (Mar)", "Earth Day: 22nd (Apr)", "Halloween: 31st (Oct)"],
+        revAllowed: true        
+    },
 ];
