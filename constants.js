@@ -1872,5 +1872,15 @@ export const puzzles = [
         hint2: "Vegas trivia",
         post_solve: ["Strip length: ~4.2 miles", "Luxor steepness: 39 degrees", "Welcome Sign light bulbs: 89", "Bellagio: 1\,214 fountains", "Year Vegas was founded: 1905", "MGM Grand rooms: 6\,852", "Largest-ever slots jackpot: $39 million"],
         revAllowed: true    
+    },
+    {
+        id: 188,
+        solution: ["LUST", "GLUTTONY", "GREED", "SLOTH", "WRATH", "ENVY", "PRIDE"],
+        initialOrderSequence: "3614725",
+        theme: "Deadly sins in order of severity per Pope Gregory I",
+        hint: "Deadly sins by severity",
+        hint2: "Increasing severity per Pope Gregory I",
+        post_solve: ["Lust: least serious", "Gluttony", "Greed", "Sloth", "Wrath", "Envy", "Pride: worst of all evils"],
+        revAllowed: true
     }
 ];
