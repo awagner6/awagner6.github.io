@@ -1878,7 +1878,7 @@ export const puzzles = [
         solution: ["LUST", "GLUTTONY", "GREED", "SLOTH", "WRATH", "ENVY", "PRIDE"],
         initialOrderSequence: "3614725",
         theme: "Deadly sins in order of severity (per Pope Gregory I)",
-        hint: "Deadly sins by severity",
+        hint: "Deadly sins by classical severity",
         hint2: "Increasing severity per Pope Gregory I",
         post_solve: ["Lust: least serious", "Gluttony", "Greed", "Sloth", "Wrath", "Envy", "Pride: worst of all evils"],
         revAllowed: true
