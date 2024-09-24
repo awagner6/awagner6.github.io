@@ -1882,5 +1882,15 @@ export const puzzles = [
         hint2: "Increasing severity per Pope Gregory I",
         post_solve: ["Lust: least serious", "Gluttony", "Greed", "Sloth", "Wrath", "Envy", "Pride: worst of all evils"],
         revAllowed: true
-    }
+    },
+    {
+        id: 189,
+        solution: ["BEATLES GREATEST HITS ALBUM", "BOXING PUNCH COMBO", "___ INNING: PITCHER'S GOAL", "FEIST SONG", "ZIPCODE FOR SCHENECTADY NY", "MOST POPULAR (UNSAFE!) PASSWORD", "SESAME ST 'PINBALL NUMBER COUNT' LYRIC"],
+        initialOrderSequence: "4617253",
+        theme: "Consecutive number sequences",
+        hint: "The count",
+        hint2: "Consecutive sequences (1, 12, 123...)",
+        post_solve: ["Beatles greatest hits album: 1", "Boxing combo: 1-2 punch", "Pitcher's goal: 123 inning", "Feist song: 1234", "Zipcode for Schenectady NY: 12345", "Most popular password: 123456", "'Pinball Number Count' lyric: 123456789101112"],
+        revAllowed: true      
+    },
 ];
