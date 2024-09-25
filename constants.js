@@ -1893,4 +1893,14 @@ export const puzzles = [
         post_solve: ["Beatles greatest hits album: 1", "Boxing combo: 1-2 punch", "Pitcher's goal: 123 inning", "Feist song: 1234", "Zipcode for Schenectady NY: 12345", "Most popular password: 123456", "'Pinball Number Count' lyric: 123456789101112"],
         revAllowed: true      
     },
+    {
+        id: 190,
+        solution: ["STEVE ALLEN", "JACK PAAR", "JOHNNY CARSON", "JAY LENO (FIRST TENURE)", "CONAN O'BRIEN", "JAY LENO (SECOND TENURE)", "JIMMY FALLON"],
+        initialOrderSequence: "5624173",
+        theme: "Tonight Show hosts",
+        hint: "The story of Tonight",
+        hint2: "Tonight Show hosts",
+        post_solve: ["Steve Allen: 1954-1957", "Jack Paar: 1957-1962", "Johnny Carson: 1962-1992", "Jay Leno (first tenure): 1992-2009", "Conan O'Brien: 2009 :\( ", "Jay Leno (second tenure): 2010-2014", "Jimmy Fallon: 2014-present"],
+        revAllowed: true
+    },
 ];
