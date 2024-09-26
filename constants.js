@@ -1485,12 +1485,12 @@ export const puzzles = [
     },
     {
         id: 149,
-        solution: ["SHIRE HORSE", "CYLDESDALE", "FRESIAN", "ARABIAN HORSE", "ICELANDIC HORSE", "SHETLAND PONY", "FALABELLA"],
+        solution: ["SHIRE HORSE", "CYLDESDALE", "FRIESIAN", "ARABIAN HORSE", "ICELANDIC HORSE", "SHETLAND PONY", "FALABELLA"],
         initialOrderSequence: "3216475",
         theme: "Horse breeds by max height",
         hint: "High horse",
         hint2: "Horse breeds by max height",
-        post_solve: ["Shire horse: up to 219 cm!", "Clydesdale: up to 183 cm", "Fresian: up to 173 cm", "Arabian horse: up to 155 cm", "Icelandic horse: up to 142 cm", "Shetland horse: up to 107 cm", "Falabella: up to 86 cm"],
+        post_solve: ["Shire horse: up to 219 cm!", "Clydesdale: up to 183 cm", "Friesian: up to 173 cm", "Arabian horse: up to 155 cm", "Icelandic horse: up to 142 cm", "Shetland horse: up to 107 cm", "Falabella: up to 86 cm"],
         revAllowed: true
     },
     {
