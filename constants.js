@@ -1485,7 +1485,7 @@ export const puzzles = [
     },
     {
         id: 149,
-        solution: ["SHIRE HORSE", "CYLDESDALE", "FRIESIAN", "ARABIAN HORSE", "ICELANDIC HORSE", "SHETLAND PONY", "FALABELLA"],
+        solution: ["SHIRE HORSE", "CLYDESDALE", "FRIESIAN", "ARABIAN HORSE", "ICELANDIC HORSE", "SHETLAND PONY", "FALABELLA"],
         initialOrderSequence: "3216475",
         theme: "Horse breeds by max height",
         hint: "High horse",
