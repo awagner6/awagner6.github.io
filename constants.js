@@ -1903,4 +1903,14 @@ export const puzzles = [
         post_solve: ["Steve Allen: 1954-1957", "Jack Paar: 1957-1962", "Johnny Carson: 1962-1992", "Jay Leno (first tenure): 1992-2009", "Conan O'Brien: 2009 :\( ", "Jay Leno (second tenure): 2010-2014", "Jimmy Fallon: 2014-present"],
         revAllowed: true
     },
+    {
+        id: 191,
+        solution: ["MOST EXPENSIVE WINE EVER SOLD", "MOST EXPENIVE WHITE TRUFFLE EVER SOLD", "ONE POUND OF ALMAS BELUGA CAVIAR", "ONE POUND OF SAFFRON", "ONE POUND OF A5 KOBE BEEF", "ONE POUND OF MADAGASCAR VANILLA BEANS", "ONE GALLON OF WHOLE MILK"],
+        initialOrderSequence: "6413725",
+        theme: "Food/drink by cost",
+        hint: "Expensive taste",
+        hint2: "Food/drink items by cost",
+        post_solve: ["Most expensive wine ever: $500K", "Most expensive white truffle ever: $330K", "1lb Almas beluga caviar: $15K", "1lb saffron: $5K", "1lb A5 Kobe beef: $480-700", "1lb Madagascar vanilla beans: $150-200", "1 gal whole milk: $3-6"],
+        revAllowed: true
+    },
 ];
