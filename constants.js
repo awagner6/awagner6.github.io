@@ -1913,4 +1913,14 @@ export const puzzles = [
         post_solve: ["Most expensive wine ever: $500K", "Most expensive white truffle ever: $330K", "1lb Almas beluga caviar: $15K", "1lb saffron: $5K", "1lb A5 Kobe beef: $480-700", "1lb Madagascar vanilla beans: $150-200", "1 gal whole milk: $3-6"],
         revAllowed: true
     },
+    {
+        id: 192,
+        solution: ["FARENHEIT ___ (BRADBURY)", "___ YEARS OF SOLITUDE (GARCÍA MÁRQUEZ)", "___ SHADES OF GREY (JAMES)", "CATCH-___ (HELLER)", "SLAUGHTERHOUSE-___ (VONNEGUT)", "READY PLAYER ___ (CLINE)", "AND THEN THERE WERE ___ (CHRISTIE)"],
+        initialOrderSequence: "5623174",
+        theme: "Book title numbers",
+        hint: "Reading writing and arithmetic",
+        hint2: "Book title numbers",
+        post_solve: ["Bradbury: Farenheit 451", "García Márquez: One Hundred Years of Solitude", "James: Fifty Shades of Grey", "Heller: Catch-22", "Vonnegut: Slaughterhouse-Five", "Cline: Ready Player One (+ Two)", "Christie: And Then There Were None"],
+        revAllowed: true
+    }
 ];
