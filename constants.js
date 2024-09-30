@@ -1915,12 +1915,12 @@ export const puzzles = [
     },
     {
         id: 192,
-        solution: ["FARENHEIT ___ (BRADBURY)", "___ YEARS OF SOLITUDE (GARCÍA MÁRQUEZ)", "___ SHADES OF GREY (JAMES)", "CATCH-___ (HELLER)", "___ REASONS WHY (ASHER)", "SLAUGHTERHOUSE-___ (VONNEGUT)", "___ FOR THE MONEY (EVANOVICH)"],
+        solution: ["FARENHEIT ___ (BRADBURY)", "THE ___ DALMATIONS (SMITH)", "___ YEARS OF SOLITUDE (GARCÍA MÁRQUEZ)", "___ SHADES OF GREY (JAMES)", "CATCH-___ (HELLER)", "___ REASONS WHY (ASHER)", "SLAUGHTERHOUSE-___ (VONNEGUT)"],
         initialOrderSequence: "5623174",
         theme: "Book title numbers",
         hint: "Reading writing and arithmetic",
         hint2: "Book title numbers",
-        post_solve: ["Bradbury: Farenheit 451", "García Márquez: One Hundred Years of Solitude", "James: Fifty Shades of Grey", "Heller: Catch-22", "Asher: Thirteen Reasons Why", "Vonnegut: Slaughterhouse-Five", "Evanovich: One For The Money"],
+        post_solve: ["Bradbury: Farenheit 451", "Smith: The Hundred and One Dalmatians", "García Márquez: One Hundred Years of Solitude", "James: Fifty Shades of Grey", "Heller: Catch-22", "Asher: Thirteen Reasons Why", "Vonnegut: Slaughterhouse-Five"],
         revAllowed: true
     }
 ];
