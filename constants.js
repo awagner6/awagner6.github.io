@@ -1922,5 +1922,15 @@ export const puzzles = [
         hint2: "Book title numbers",
         post_solve: ["Bradbury: Farenheit 451", "Smith: The Hundred and One Dalmatians", "García Márquez: One Hundred Years of Solitude", "James: Fifty Shades of Grey", "Heller: Catch-22", "Asher: Thirteen Reasons Why", "Vonnegut: Slaughterhouse-Five"],
         revAllowed: true
-    }
+    },
+    {
+        id: 193,
+        solution: ["THINK DIFFERENT", "HAVE IT YOUR WAY", "A DIAMOND IS FOREVER", "BECAUSE YOU'RE WORTH IT", "I'M LOVING IT", "JUST DO IT", "TASTE THE RAINBOW"],
+        initialOrderSequence: "5614273",
+        theme: "Slogans alphabetically by brand",
+        hint: "Sloganeers A-Z",
+        hint2: "Alphabetically by brand",
+        post_solve: ["Think Different: Apple", "Have It Your Way: Burger King", "A Diamond Is Forever: De Beers", "Because You're Worth It: L'Oréal Paris", "I'm Loving It: McDonald's", "Just Do It: Nike", "Taste The Rainbow: Skittles"],
+        revAllowed: true
+    },
 ];
