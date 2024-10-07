@@ -1943,4 +1943,14 @@ export const puzzles = [
         post_solve: ["P: Lips (bilabial)", "F: Lips + teeth (labio-dental)", "TH (as in 'the'): Teeth (interdental)", "D: Front of palate (alveolar)", "Y (as in 'yes'): mid-palate (palatal)", "K: back of palate (velar)", "H: throat (glottal)", "Theme idea: Jacob Klein"],
         revAllowed: true  
     },
+    {
+        id: 195,
+        solution: ["ROSE", "CALIFORNIA POPPY", "SUNFLOWER", "BELLS OF IRELAND", "FORGET-ME-NOT", "SIBERIAN IRIS", "VIOLET"],
+        initialOrderSequence: "5236174",
+        theme: "Flower colors ROYGBIV",
+        hint: "Rainbow bouquet",
+        hint2: "Flowers by ROYGBIV",
+        post_solve: ["Rose: red", "California poppy: orange", "Sunflower: yellow", "Bells of Ireland: green (technically white w/ green calyx)", "Forget-me-not: blue", "Siberian iris: indigo", "Violet"],
+        revAllowed: true
+    },
 ];
