@@ -1933,4 +1933,14 @@ export const puzzles = [
         post_solve: ["Think Different: Apple", "Have It Your Way: Burger King", "A Diamond Is Forever: De Beers", "Because You're Worth It: L'Oréal Paris", "I'm Loving It: McDonald's", "Just Do It: Nike", "Taste The Rainbow: Skittles"],
         revAllowed: true
     },
+    {
+        id: 194,
+        solution: ["P (AS IN PAN)", "F (AS IN FAN)", "TH (AS IN THE)", "D (AS IN DAD)", "Y (AS IN YES)", "K (AS IN KING)", "H (AS IN HAPPY)"],
+        initialOrderSequence: "4276135",
+        theme: "Where in the mouth sounds are made",
+        hint: "Sound origins (Lips <-> Throat)",
+        hint2: "Where in the mouth sounds are made",
+        post_solve: ["P: Lips (bilabial)", "F: Lips + teeth (labio-dental)", "TH (as in 'the'): Teeth (interdental)", "D: Front of palate (alveolar)", "Y (as in 'yes'): mid-palate (palatal)", "K: back of palate (velar)", "H: throat (glottal)", "Theme idea: Jacob Klein"],
+        revAllowed: true  
+    },
 ];
