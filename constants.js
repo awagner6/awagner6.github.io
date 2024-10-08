@@ -1955,6 +1955,16 @@ export const puzzles = [
     },
     {
         id: 196,
+        solution: ["NFL FOOTBALL FIELD LENGTH (YARDS)", "'FIELD OF DREAMS' MOVIE RUNTIME (MINS)", "PLACES NAMED SPRINGFIELD IN US", "OLYMPIC TRACK AND FIELD EVENTS", "FIELDS MEDAL (MATH AWARD) MAX AGE", "FIELD HOCKEY PLAYERS PER TEAM", "SALLY FIELD OSCARS"],
+        initialOrderSequence: "6351274",
+        theme: "Fields",
+        hint: "Field day",
+        hint2: "Field-related numbers",
+        post_solve: ["NFL football field length: 120 yards", "'Field of Dreams' runtime: 102 minutes", "Places named Springfield in U.S.: 67", "Olympic track and field events: 48 (in 2024)", "Fields medal max age: 40", "Field hockey players per team: 11", "Sally Field Oscars: 2"],
+        revAllowed: true
+    },
+    {
+        id: 197,
         solution: ["AFRICAN ELEPHANT", "SPERM WHALE", "HORSE", "HUMAN", "LION", "KANGAROO", "HAMSTER"],
         initialOrderSequence: "2673154",
         theme: "Mammal gestation periods",
