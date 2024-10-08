@@ -1953,4 +1953,14 @@ export const puzzles = [
         post_solve: ["Rose: red", "California poppy: orange", "Sunflower: yellow", "Bells of Ireland: green (technically white w/ green calyx)", "Forget-me-not: blue", "Siberian iris: indigo", "Violet"],
         revAllowed: true
     },
+    {
+        id: 196,
+        solution: ["AFRICAN ELEPHANT", "SPERM WHALE", "HORSE", "HUMAN", "LION", "KANGAROO", "HAMSTER"],
+        initialOrderSequence: "2673154",
+        theme: "Mammal gestation periods",
+        hint: "Guess the gestations",
+        hint2: "Mammals by gestation periods (pregnancy lengths)",
+        post_solve: ["African elephant: 93 weeks", "Sperm whale: 76 weeks", "Horse: 48 weeks", "Human: 40 weeks", "Lion: 15 weeks", "Kangaroo: 6 weeks", "Hamster: 3 weeks"],
+        revAllowed: true
+    },
 ];
