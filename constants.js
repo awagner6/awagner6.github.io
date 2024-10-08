@@ -1940,7 +1940,7 @@ export const puzzles = [
         theme: "Where in the mouth sounds are made",
         hint: "Sound origins (Lips <-> Throat)",
         hint2: "Where in the mouth sounds are made",
-        post_solve: ["P: Lips (bilabial)", "F: Lips + teeth (labio-dental)", "TH (as in 'the'): Teeth (interdental)", "D: Front of palate (alveolar)", "Y (as in 'yes'): mid-palate (palatal)", "K: back of palate (velar)", "H: throat (glottal)"<br>"Theme idea: Jacob Klein"],
+        post_solve: ["P: Lips (bilabial)", "F: Lips + teeth (labio-dental)", "TH (as in 'the'): Teeth (interdental)", "D: Front of palate (alveolar)", "Y (as in 'yes'): mid-palate (palatal)", "K: back of palate (velar)", "H: throat (glottal)<br>Theme idea: Jacob Klein"],
         revAllowed: true  
     },
     {
