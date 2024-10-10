@@ -1973,4 +1973,24 @@ export const puzzles = [
         post_solve: ["African elephant: 93 weeks", "Sperm whale: 76 weeks", "Horse: 48 weeks", "Human: 40 weeks", "Lion: 15 weeks", "Kangaroo: 6 weeks", "Hamster: 3 weeks"],
         revAllowed: true
     },
+    {
+        id: 198,
+        solution: ["ESPRESSO", "MACCHIATO", "CORTADO", "CAPPUCCINO", "MOCHA", "LATTE", "GLASS OF MILK"],
+        initialOrderSequence: "2761435",
+        theme: "Espresso drinks by percent espresso",
+        hint: "That's that me espresso ratio",
+        hint2: "Ratio of espresso to other ingredients",
+        post_solve: ["Espresso: 100% espresso", "Macchiato: 75-86% espresso, 14-25% foamed milk", "Cortado: 50% espresso, 50% steamed milk", "Cappuccino: 33% espresso, 66% steamed milk + foam", "Mocha: 25-33% espresso, 66-75% chocolate/steamed milk/foam", "Latte: 16-25% espresso, 75-84% steamed milk", "Glass of milk: 0% espresso, 100% milk"],
+        revAllowed: true
+    },
+    {
+        id: 199,
+        solution: ["SPHERE", "CONE", "CYLINDER", "TETRAHEDRON", "SQUARE PYRAMID", "CUBE", "DODECAHEDRON"],
+        initialOrderSequence: "4531276",
+        theme: "3D shapes by face count",
+        hint: "A game of faces",
+        hint2: "3D shapes by face count",
+        post_solve: ["Sphere: 1 face", "Cone: 2 faces", "Cylinder: 3 faces", "Tetrahedron: 4 faces", "Square pyramid: 5 faces", "Cube: 6 faces", "Dodecahedron: 12 faces"],
+        revAllowed: true
+    }
 ];
