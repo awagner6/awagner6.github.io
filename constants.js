@@ -1992,5 +1992,15 @@ export const puzzles = [
         hint2: "3D shapes by face count",
         post_solve: ["Sphere: 1 face", "Cone: 2 faces", "Cylinder: 3 faces", "Tetrahedron: 4 faces", "Square pyramid: 5 faces", "Cube: 6 faces", "Dodecahedron: 12 faces"],
         revAllowed: true
-    }
+    },
+    {
+        id: 200,
+        solution: ["100", "500", "1", "50", "1000", "5", "10"],
+        initialOrderSequence: "3674125",
+        theme: "Numbers alphabetically by Roman numeral",
+        hint: "Roman alphabet",
+        hint2: "Numbers alphabetically by Roman numeral",
+        post_solve: ["100: C", "500: D", "1: I", "50: L", "1000: M", "5: V", "10: X"],
+        revAllowed: true
+    },
 ];
