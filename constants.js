@@ -2003,4 +2003,14 @@ export const puzzles = [
         post_solve: ["100: C", "500: D", "1: I", "50: L", "1000: M", "5: V", "10: X"],
         revAllowed: true
     },
+    {
+        id: 201,
+        solution: ["FRANCE", "UNITED STATES", "AUSTRALIA", "CANADA", "BRAZIL", "SOUTH AFRICA", "CHINA"],
+        initialOrderSequence: "4165723",
+        theme: "Number of timezones (incl. territories)",
+        hint: "Timezone spans (incl. territories)",
+        hint2: "Number of timezones covered",
+        post_solve: ["France: 12", "United States: 11", "Australia: 9", "Canada: 6", "Brazil: 4", "South Africa: 2", "China: 1"],
+        revAllowed: true
+    },
 ];
