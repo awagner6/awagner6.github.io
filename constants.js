@@ -2023,4 +2023,14 @@ export const puzzles = [
         post_solve: ["Smokestacks: top of the ship", "Navigation bridge: above the boat deck", "First class promenade: A-deck", "Café Parisien: B-deck", "Crew's quarters: E-deck", "Squash courts: G-deck", "Turbine room: Tank top (lowest deck)"],
         revAllowed: true
     },
+    {
+        id: 203,
+        solution: ["HAIRSTYLE", "COUNTERPART TO 'AND'", "'___ PASS GO...': MONOPOLY INSTRUCTION", "'ALL DONE!'", "EXISTS", "'UH-UH'", "HAVE A GO AT"],
+        initialOrderSequence: "4516372",
+        theme: "Yoda quote",
+        hint: "Yoda-ism",
+        hint2: "Do or do not, there is no try",
+        post_solve: ["Hairstyle: DO", "Counterpart to 'and': OR", "'___ pass Go': DO NOT", "'All done!': THERE", "Exists: IS", "Uh-uh: NO", "Have a go at: TRY"],
+        revAllowed: true        
+    },
 ];
