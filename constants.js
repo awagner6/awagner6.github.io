@@ -2013,4 +2013,14 @@ export const puzzles = [
         post_solve: ["France: 12", "United States: 11", "Australia: 9", "Canada: 6", "Brazil: 4", "South Africa: 2", "China: 1"],
         revAllowed: true
     },
+    {
+        id: 202,
+        solution: ["SMOKESTACKS", "NAVIGATION BRIDGE", "FIRST CLASS PROMENADE", "CAFÉ PARISIEN", "CREW'S QUARTERS", "SQUASH COURTS", "TURBINE ROOM"],
+        initialOrderSequence: "5371246",
+        theme: "Titanic top to bottom",
+        hint: "To the depths below",
+        hin2: "Titanic top to bottom",
+        post_solve: ["Smokestacks: top of the ship", "Navigation bridge: above the boat deck", "First class promenade: A-deck", "Café Parisien: B-deck", "Crew's quarters: E-deck", "Squash courts: G-deck", "Turbine room: Tank top (lowest deck)"],
+        revAllowed: true
+    },
 ];
