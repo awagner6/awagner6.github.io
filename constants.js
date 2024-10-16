@@ -2033,4 +2033,14 @@ export const puzzles = [
         post_solve: ["Hairstyle: DO", "Counterpart to 'and': OR", "'___ pass Go': DO NOT", "'All done!': THERE", "Exists: IS", "Uh-uh: NO", "Have a go at: TRY"],
         revAllowed: true        
     },
+    {
+        id: 204,
+        solution: ["SILVERADO", "F-150", "CIVIC", "GRAND CHEROKEE", "OUTBACK", "MODEL X", "PRIUS"],
+        initialOrderSequence: "2715346",
+        theme: "Car models alphabetically by make",
+        hint: "Make alphabetical",
+        hint2: "Alphabetical automakers",
+        post_solve: ["Silverado: Chevy", "F-150: Ford", "Civic: Honda", "Grand Cherokee: Jeep", "Outback: Subaru", "Model X: Tesla", "Prius: Toyota"],
+        revAllowed: true
+    },
 ];
