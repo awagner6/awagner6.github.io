@@ -2025,7 +2025,7 @@ export const puzzles = [
     },
     {
         id: 203,
-        solution: ["HAIRSTYLE", "COUNTERPART TO 'AND'", "'___ PASS GO...': MONOPOLY INSTRUCTION", "'ALL DONE!'", "EXISTS", "'UH-UH'", "HAVE A GO AT"],
+        solution: ["HAIRSTYLE", "LOGICAL COUNTERPART TO 'AND'", "'___ PASS GO...': MONOPOLY INSTRUCTION", "'ALL DONE!'", "EXISTS", "'UH-UH'", "HAVE A GO AT"],
         initialOrderSequence: "4516372",
         theme: "Yoda quote",
         hint: "Yoda-ism",
@@ -2043,4 +2043,24 @@ export const puzzles = [
         post_solve: ["Silverado: Chevy", "F-150: Ford", "Civic: Honda", "Grand Cherokee: Jeep", "Outback: Subaru", "Model X: Tesla", "Prius: Toyota"],
         revAllowed: true
     },
+    {
+        id: 205,
+        solution: ["CARBON NANOTUBE", "BOBA STRAW", "RIGATONI NOODLE", "HUMAN AORTA", "TOILET PAPER ROLL TUBE", "NORD STREAM 1 GAS PIPELINE", "NYC MIDTOWN TUNNEL"],
+        initialOrderSequence: "4612573",
+        theme: "Tube diameters",
+        hint: "Tube diameters",
+        hint2: "Diameter, not length!",
+        post_solve: ["Carbon nanotube: .000002 mm", "Boba straw: ~8-12 mm", "Rigatoni noodle: ~16 mm", "Human aorta: ~32 mm", "Toilet paper roll tube: 38 mm", "Nord Stream 1: 1,153 mm", "NYC Midtown tunnel: 9,400"],
+        revAllowed: true
+    },
+    {
+        id: 206,
+        solution: ["SCIENTIST LOVELACE", "CREATE A SUM", "LEMONY SUMMER BEVERAGE", "MUCH __ ABOUT NOTHING: SHAKESPEARE", "BIG INITIALS IN HOME SECURITY", "GUEST HOUSE IN REALTOR LINGO", "WOODWORKING TOOL"],
+        initialOrderSequence: "6735142",
+        theme: "Ad + letter, alphabetically",
+        hint: "After a word from our sponsors...",
+        hint2: "Ad + letter, alphabetically",
+        post_solve: ["Scientist Lovelace: Ada (Ad + A)", "Create a sum: Add (Ad + D)", "Lemony summer beverage: Ade (Ad + E)", "Much __ About Nothing: Ado (Ad + O)", "Home security inits: ADT (Ad + T)", "Guest house: ADU (Ad + U)", "Woodworking tool: Adz (Ad + Z)"],
+        revAllowed: true
+    },    
 ];
