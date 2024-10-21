@@ -2062,5 +2062,15 @@ export const puzzles = [
         hint2: "Ad + letter, alphabetically",
         post_solve: ["Scientist Lovelace: Ada (Ad + A)", "Create a sum: Add (Ad + D)", "Lemony summer beverage: Ade (Ad + E)", "Much __ About Nothing: Ado (Ad + O)", "Home security inits: ADT (Ad + T)", "Guest house: ADU (Ad + U)", "Woodworking tool: Adz (Ad + Z)"],
         revAllowed: true
-    },    
+    },
+    {
+        id: 207,
+        solution: ["MICKEY MOUSE", "ALVIN AND THE CHIPMUNKS", "SPIDER-MAN", "MR AND MRS POTATO HEAD", "PIKACHU", "THE MINIONS", "MOANA"],
+        initialOrderSequence: "6371254",
+        theme: "Macy's Thanksgiving Day Parade balloon debuts",
+        hint: "Macy's Thanksgiving Parade balloon debuts",
+        hint2: "First year of each character balloon",
+        post_solve: ["Mickey Mouse: 1935", "Alvin and the Chipmunks: 1961", "Spider-Man: 1981", "Mr. and Mrs. Potato Head: 1985", "Pikachu: 2001", "The Minions: 2010", "Moana: 2022"],
+        revAllowed: true
+    },
 ];
