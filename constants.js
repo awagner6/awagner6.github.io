@@ -2064,6 +2064,16 @@ export const puzzles = [
         revAllowed: true
     },
     {
+        id: 207,
+        solution: ["DUTCH EAST INDIA COMPANY", "DISNEY", "APPLE", "AMAZON", "GENERAL MOTORS", "FACEBOOK (NOW META)", "ZOOM"],
+        initialOrderSequence: "5624713",
+        theme: "Companies by IPO date",
+        hint: "IPOs",
+        hint2: "Companies by IPO date",
+        post_solve: ["Dutch East India Company: 1602 (first-ever)", "Disney: 1957", "Apple: 1980", "Amazon: 1997", "General Motors: 2010", "Facebook (now Meta): 2012", "Zoom: 2019"],
+        revAllowed: true
+    },
+    {
         id: 212,
         solution: ["MICKEY MOUSE", "ALVIN AND THE CHIPMUNKS", "SPIDER-MAN", "MR AND MRS POTATO HEAD", "PIKACHU", "THE MINIONS", "MOANA"],
         initialOrderSequence: "6371254",
