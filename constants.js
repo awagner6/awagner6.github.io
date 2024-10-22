@@ -2084,6 +2084,16 @@ export const puzzles = [
         revAllowed: true
     },
     {
+        id: 209,
+        solution: ["GOOGOLPLEX", "CENTILLION", "GOOGOL", "VIGINTILLION", "NOVEMDECILLION", "UNDECILLION", "TRILLION", "MILLION"],
+        initialOrderSequence: "6513274",
+        theme: "Very large numbers",
+        hint: "Just numerical order, how hard could it be?",
+        hint2: "Very large numbers",
+        post_solve: ["Googolplex: 1 with a googol zeros", "Centillion: 1 with 303 zeros", "Googol: 1 with 100 zeros", "Vigintillion: 1 with 63 zeros", "Novemdecillion: 1 with 60 zeros", "Undecillion: 1 with 36 zeros", "Trillion: 1 with 12 zeros", "Million: 1 with 6 zeros"],
+        revAllowed: true
+    },
+    {
         id: 212,
         solution: ["MICKEY MOUSE", "ALVIN AND THE CHIPMUNKS", "SPIDER-MAN", "MR AND MRS POTATO HEAD", "PIKACHU", "THE MINIONS", "MOANA"],
         initialOrderSequence: "6371254",
