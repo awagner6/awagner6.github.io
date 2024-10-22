@@ -2074,6 +2074,16 @@ export const puzzles = [
         revAllowed: true
     },
     {
+        id: 208,
+        solution: ["SUNFLOWER HEAD", "POMEGRANATE IN JEWISH TRADITION", "MARCH MADNESS (LOWEST SEED)", "APPLE (SEED POCKETS)", "PEANUT", "AVOCADO", "COMMERCIALLY PRODUCED BANANA"],
+        initialOrderSequence: "6372154",
+        theme: "Number of seeds",
+        hint: "A seed of a puzzle idea",
+        hint2: "Number of seeds",
+        post_solve: ["Sunflower head: 1000+", "Pomegranate in Jewish tradition: 613", "March Madness lowest seed: 16", "Apple: 5 seed pockets", "Peanut: ~2 seeds", "Avocado: 1 seed", "Commercially produced banana: 0 seeds"],
+        revAllowed: true
+    },
+    {
         id: 212,
         solution: ["MICKEY MOUSE", "ALVIN AND THE CHIPMUNKS", "SPIDER-MAN", "MR AND MRS POTATO HEAD", "PIKACHU", "THE MINIONS", "MOANA"],
         initialOrderSequence: "6371254",
