@@ -1765,12 +1765,12 @@ export const puzzles = [
     },
     {
         id: 177,
-        solution: ["UNITED STATES OF AMERICA", "UNITED KINGDOM", "UZBEKISTAN", "UKRAINE", "UGANDA", "UNITED ARAB EMIRATES", "URUGUAY"],
+        solution: ["UNITED STATES OF AMERICA", "UNITED KINGDOM", "UGANDA", "UZBEKISTAN", "UKRAINE", "UNITED ARAB EMIRATES", "URUGUAY"],
         initialOrderSequence: "6251473",
         theme: "Populations of the 7 'U' countries",
         hint: "Pop-U-lation",
         hint2: "U countries by population",
-        post_solve: ["USA: 335.8 million", "UK: 67.5 million", "Uzbekistan: 36.9 million", "Ukraine: 36.7 million", "Uganda: 45.9 million", "UAE: 10.2 million", "Uruguay: 3.4 million"],
+        post_solve: ["USA: 335.8 million", "UK: 67.5 million",  "Uganda: 45.9 million", "Uzbekistan: 36.9 million", "Ukraine: 36.7 million", "UAE: 10.2 million", "Uruguay: 3.4 million"],
         revAllowed: true
     },
     {
