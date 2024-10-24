@@ -1841,7 +1841,7 @@ export const puzzles = [
         hint: "Scary story starter",
         hint2: "It was a dark and stormy night",
         solution: ["Stephen King evil clown novel: IT", "MLB's Nats on scoreboards: WAS", "Letter in 'The Scarlet Letter': A", "Not just dim: DARK", "Plus: AND", "___ Daniels: STORMY", "Sleeping time: NIGHT"],
-        revAllowed_true
+        revAllowed: true
     },
     {
         id: 185,
