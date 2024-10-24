@@ -1835,6 +1835,16 @@ export const puzzles = [
     },
     {
         id: 184,
+        solution: ["STEPHEN KING EVIL CLOWN NOVEL", "MLB'S NATIONALS ON SCOREBOARDS", "LETTER IN 'THE SCARLET LETTER'", "NOT JUST DIM", "PLUS", "___ DANIELS: POLITICAL SCANDAL FIGURE", "SLEEPING TIME"],
+        initialOrderSequence: "5361724",
+        theme: "Scary story starter",
+        hint: "Scary story starter",
+        hint2: "It was a dark and stormy night",
+        solution: ["Stephen King evil clown novel: IT", "MLB's Nats on scoreboards: WAS", "Letter in 'The Scarlet Letter': A", "Not just dim: DARK", "Plus: AND", "___ Daniels: STORMY", "Sleeping time: NIGHT"],
+        revAllowed_true
+    },
+    {
+        id: 185,
         solution: ["SOFI STADIUM 'INFINITY SCREEN' (L.A.)", "MARRIOTT MARQUIS TIMES SQ BILLBOARD", "WORLD'S LARGEST IMAX THEATER", "SAMSUNG TVS (FULL RANGE)", "TESLA CYBERTRUCK FRONT DISPLAY", "NINTENDO SWITCH", "APPLE WATCH"],
         initialOrderSequence: "4163275",
         theme: "Screen sizes",
@@ -1842,16 +1852,6 @@ export const puzzles = [
         hint2: "Screen sizes",
         post_solve: ["SoFi Stadium 'Infinity Screen': 70,000 sq. ft.", "Marriott Marquis Times Sq. Billboard: 26,000 sq. ft.", "Largest IMAX (Stuttgart, Germany): 9,000 sq. ft.", "Samsung TV: 437.6-4103.8 sq. in.", "Tesla Cybertruck: 123.5 sq. in.", "Nintendo Switch: 16.4 sq. in.", "Apple Watch: 1.5 sq. in."],
         revAllowed: true        
-    },
-    {
-        id: 185,
-        solution: ["PERSON (ALL-TIME)", "PERSON IN SPACE", "EVEREST SUMMITER", "INAUGURATED U.S. PRESIDENT", "PERSON TO GIVE BIRTH", "OLYMPIC GYMNAST", "DOG"],
-        initialOrderSequence: "3567214",
-        theme: "Age of the oldest-ever...",
-        hint: "Age of the oldest-ever...",
-        hint2: "Age record holders",
-        post_solve: ["Person (all-time): 122 (Jeanne Calment, 1997)", "Person in space: 90 (Ed Dwight, 2024)", "Everest summiter: 80 (Yūichirō Miura, 2013)", "Inaugurated U.S. prez: 78 (Joe Biden, 2021)", "Person to give birth: 73 (Erramatti Mangamma, 2019)", "Olympic gymnast: 41  (Oksana Chusovitina, 2016)", "Dog: 29 ('Bluey' died 1929)"],
-        revAllowed: true
     },
     {
         id: 186,
@@ -2094,6 +2094,26 @@ export const puzzles = [
         revAllowed: true
     },
     {
+        id: 210,
+        solution: ["PERSON (ALL-TIME)", "PERSON IN SPACE", "EVEREST SUMMITER", "INAUGURATED U.S. PRESIDENT", "PERSON TO GIVE BIRTH", "OLYMPIC GYMNAST", "DOG"],
+        initialOrderSequence: "3567214",
+        theme: "Age of the oldest-ever...",
+        hint: "Age of the oldest-ever...",
+        hint2: "Age record holders",
+        post_solve: ["Person (all-time): 122 (Jeanne Calment, 1997)", "Person in space: 90 (Ed Dwight, 2024)", "Everest summiter: 80 (Yūichirō Miura, 2013)", "Inaugurated U.S. prez: 78 (Joe Biden, 2021)", "Person to give birth: 73 (Erramatti Mangamma, 2019)", "Olympic gymnast: 41  (Oksana Chusovitina, 2016)", "Dog: 29 ('Bluey' died 1929)"],
+        revAllowed: true
+    },
+    {
+        id: 211,
+        solution: ["NUMBER OF BEATLES IN THE BAND 'WINGS'", "U.S. AVIATOR BADGE NUMBER OF WINGS", "HONEYBEE NUMBER OF WINGS", "SMALLEST BUFFALO WILD WINGS ORDER", "'THE WEST WING' SEASONS", "DETROIT RED WINGS STANLEY CUP WINS", "WIDEST-EVER ALBATROSS WINGSPAN (FEET)"],
+        initialOrderSequence: "3164752",
+        theme: "Number of wings/wing-related things",
+        hint: "Winging it",
+        hint2: "Number of wings/wing-related things",
+        post_solve: ["Number of Beatles in Wings: 1 (Paul)", "Aviator badge wings: 2", "Honeybee wings: 4", "Smallest Buffalo Wild Wings order: 6 wings", "'The West Wing' seasons: 7", "Detroit Red Wings Stanley Cups: 11", "Wandering albatross wingspan: 12 feet<br>Theme shoutout: Matthew Stock"],
+        revAllowed: true
+    },
+    {
         id: 212,
         solution: ["MICKEY MOUSE", "ALVIN AND THE CHIPMUNKS", "SPIDER-MAN", "MR AND MRS POTATO HEAD", "PIKACHU", "THE MINIONS", "MOANA"],
         initialOrderSequence: "6371254",
@@ -2103,4 +2123,5 @@ export const puzzles = [
         post_solve: ["Mickey Mouse: 1935", "Alvin and the Chipmunks: 1961", "Spider-Man: 1981", "Mr. and Mrs. Potato Head: 1985", "Pikachu: 2001", "The Minions: 2010", "Moana: 2022"],
         revAllowed: true
     },
+
 ];
