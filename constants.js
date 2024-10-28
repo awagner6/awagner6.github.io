@@ -2123,5 +2123,25 @@ export const puzzles = [
         post_solve: ["Mickey Mouse: 1935", "Alvin and the Chipmunks: 1961", "Spider-Man: 1981", "Mr. and Mrs. Potato Head: 1985", "Pikachu: 2001", "The Minions: 2010", "Moana: 2022"],
         revAllowed: true
     },
+    {
+        id: 213,
+        solution: ["BOX OF CHOCOLATES", "PEEPS", "HOT DOGS AND HAMBURGERS", "BAVARIAN PRETZEL", "CANDY CORN", "TURKEY", "CANDY CANE"],
+        initialOrderSequence: "4621573",
+        theme: "Food calendar",
+        hint: "Food calendar",
+        hint2: "When in the year foods are eaten",
+        post_solve: ["Box of chocolates: Valentine's Day", "Peeps: Easter", "Hot dogs and hamburgers: 4th of July", "Bavarian pretzel: Oktoberfest", "Candy Corn: Halloween", "Turkey: Thanksgiving", "Candy cane: Christmas"],
+        revAllowed: true
+    },
+    {
+        id: 214,
+        solution: ["PLEASE PLEASE ME", "HELP!", "REVOLVER", "SGT. PEPPER'S LONELY HEARTS CLUB BAND", "THE WHITE ALBUM", "ABBEY ROAD", "LET IT BE"],
+        initialOrderSequence: "6417523",
+        theme: "Beatles albums chronologically",
+        hint: "The Beatles through the years",
+        hint2: "Beatles albums chronologically",
+        post_solve: ["Please Please Me: 1963 (debut)", "Help!: 1965", "Revolver: 1966", "Sgt. Pepper: 1967", "The White Album: 1968", "Abbey Road: 1969", "Let It Be: 1970 (final)<br>Thanks for the suggestion dad!"],
+        revAllowed: true        
+    },
 
 ];
