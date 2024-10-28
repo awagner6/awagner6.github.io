@@ -2135,6 +2135,16 @@ export const puzzles = [
     },
     {
         id: 214,
+        solution: ["CLUE", "SRI", "CHIVE", "HEAVEN", "PINE GREEN", "PLENTY FINE", "DIRTY FUN"],
+        initialOrderSequence: "4673215",
+        theme: "Rhymes of prime numbers",
+        hint: "Prime rhymes",
+        hint2: "Rhymes of prime numbers",
+        post_solve: ["Clue: Two", "Sri: Three", "Chive: Five", "Heaven: Seven (or Eleven)", "Pine green: Nineteen", "Plenty fine: Twenty nine", "Dirty fun: Thirty one"],
+        revAllowed: true
+    },
+    {
+        id: 215,
         solution: ["PLEASE PLEASE ME", "HELP!", "REVOLVER", "SGT. PEPPER'S LONELY HEARTS CLUB BAND", "THE WHITE ALBUM", "ABBEY ROAD", "LET IT BE"],
         initialOrderSequence: "6417523",
         theme: "Beatles albums chronologically",
