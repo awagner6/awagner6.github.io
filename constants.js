@@ -2153,5 +2153,15 @@ export const puzzles = [
         post_solve: ["Please Please Me: 1963 (debut)", "Help!: 1965", "Revolver: 1966", "Sgt. Pepper: 1967", "The White Album: 1968", "Abbey Road: 1969", "Let It Be: 1970 (final)<br>Thanks for the suggestion dad!"],
         revAllowed: true        
     },
+    {
+        id: 216,
+        solution: ["OPINION (IN LINGO)", "ABBR OF STATE CLOSEST TO AFRICA", "ASLEEP", "OPPOSITE OF FRO", "NOT JUST 'A'", "GALA", "BOGGLE OR SCRABBLE"],
+        initialOrderSequence: "5241673",
+        theme: "Take me out to the ballgame",
+        hint: "Stadium song",
+        hint2: "Take me out to the ballgame",
+        post_solve: ["Opinion (in lingo): TAKE", "State closest to Africa: ME (Maine!)", "Asleep: OUT", "Opposite of fro: TO", "Not just 'a': THE", "Gala: BALL", "Boggle or Scrabble: GAME"],
+        revAllowed: true        
+    }
 
 ];
