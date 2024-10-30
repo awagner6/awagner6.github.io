@@ -2162,6 +2162,16 @@ export const puzzles = [
         hint2: "Take me out to the ballgame",
         post_solve: ["Opinion (in lingo): TAKE", "State closest to Africa: ME (Maine!)", "Asleep: OUT", "Opposite of fro: TO", "Not just 'a': THE", "Gala: BALL", "Boggle or Scrabble: GAME"],
         revAllowed: true        
-    }
+    },
+    {
+        id: 217,
+        solution: ["KNOCK: TYPE OF JOKE", "BEETLEJUICE: SUMMONING PHRASE", "MAD: '63 FILM 'IT'S A ___ WORLD'", "I DO: ABBA SONG TITLE", "OLE: SOCCER CHANT", "SHAKE: KC & THE SUNSHINE BAND LYRIC '___ YOUR BOOTY'", "BUFFALO: LONGEST VALID REPEATED-WORD SENTENCE"],
+        initialOrderSequence: "6721453",
+        theme: "Number of repetitions of repeated words",
+        hint: "Let me repeat... (2-8)",
+        hint2: "Number of repetitions of repeated words",
+        post_solve: ["Type of joke: Knock-knock (2)", "Summoning phrase: Beetlejuice Beetlejuice Beetlejuice (3)", "Film title: It's a Mad Mad Mad Mad World (4)", "ABBA song: I do, I do, I do, I do, I do (5)", "Soccer chant: Ole, ole ole ole, ole, ole (6)", "KC & the Sunshine Band lyric: Shake shake shake, shake shake shake, shake your booty (7)", "Repeated 'buffalo' sentence: Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo (8!)"],
+        revAllowed: true
+    },
 
 ];
