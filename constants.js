@@ -2173,5 +2173,15 @@ export const puzzles = [
         post_solve: ["Type of joke: Knock-knock (2)", "Summoning phrase: Beetlejuice Beetlejuice Beetlejuice (3)", "Film title: It's a Mad Mad Mad Mad World (4)", "ABBA song: I do, I do, I do, I do, I do (5)", "Soccer chant: Ole, ole ole ole, ole, ole (6)", "KC & the Sunshine Band lyric: Shake shake shake, shake shake shake, shake your booty (7)", "Repeated 'buffalo' sentence: Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo (8!)"],
         revAllowed: true
     },
+    {
+        id: 218,
+        solution: ["FORMER ROMANTIC PARTNER", "'ATLANTA' NETWORK", "LEFT ON A CLOCK FACE", "YOKED ANIMAL", "PRESCRIPTION ABBR", "LONE STAR STATE POSTAL CODE", "WEB DEVELOPER'S CONCERN"],
+        initialOrderSequence: "5724163",
+        theme: "Letter + X",
+        hint: "Before times",
+        hint2: "Letter + X",
+        post_solve: ["Former romantic partner: Ex", "'Atlanta' network: FX", "Left on a clock face: IX (9)", "Yoked animal: Ox", "Prescription abbr: Rx", "Lone Star state postal code: TX", "Web developer's concern: UX (user experience)"],
+        revAllowed: true
+    }
 
 ];
