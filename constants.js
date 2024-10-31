@@ -1,4 +1,4 @@
-to export const puzzles = [
+export const puzzles = [
     
     {
         id: 1,
