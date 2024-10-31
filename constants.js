@@ -2182,6 +2182,16 @@ export const puzzles = [
         hint2: "Letter + X",
         post_solve: ["Former romantic partner: Ex", "'Atlanta' network: FX", "Left on a clock face: IX (9)", "Yoked animal: Ox", "Prescription abbr: Rx", "Lone Star state postal code: TX", "Web developer's concern: UX (user experience)"],
         revAllowed: true
-    }
+    },
+    {
+        id: 219,
+        solution: ["SEMAPHORE SIGNALER", "NATL FLAGS FEATURING A UNION JACK", "U.S. THEME PARK BRAND", "TOTAL FLAGS PLANTED ON MOON", "VERSIONS OF U.S. FLAG SINCE 1777", "MOST PENALTIES EVER IN NFL GAME", "U.N. HEADQUARTERS EXTERIOR"],
+        initialOrderSequence: "3451762",
+        theme: "Number of flags",
+        hint: "Just flagging",
+        hint2: "Number of flags",
+        post_solve: ["Semaphore signaler: 2 flags", "Natl flags feat. Union Jack: 5 (UK, AUS, NZ, Tuvalu, Fiji)","U.S. theme park brand: 6 flags", "Total flags planted on moon: 7 (6 US 1 China)", "Versions of U.S. flag since 1777: 27", "Most NFL penalties in game: 37 flags", "U.N. HQ exterior: 195 flags"],
+        revAllowed: true        
+    },
 
 ];
