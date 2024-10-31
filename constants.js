@@ -1,4 +1,4 @@
-toexport const puzzles = [
+to export const puzzles = [
     
     {
         id: 1,
@@ -1835,7 +1835,7 @@ toexport const puzzles = [
     },
     {
         id: 184,
-        solution: ["STEPHEN KING EVIL CLOWN NOVEL", "MLB'S NATIONALS ON SCOREBOARDS", "LETTER IN 'THE SCARLET LETTER'", "NOT JUST DIM", "PLUS", "___ DANIELS (POLITICAL SCANDAL FIGURE)", "SLEEPING TIME"],
+        solution: ["STEPHEN KING EVIL CLOWN NOVEL", "MLB'S NATIONALS ON SCOREBOARDS", "LETTER IN THE SCARLET LETTER", "NOT JUST DIM", "PLUS", "___ DANIELS (POLITICAL SCANDAL FIGURE)", "SLEEPING TIME"],
         initialOrderSequence: "5361724",
         theme: "Scary story starter",
         hint: "Scary story starter",
