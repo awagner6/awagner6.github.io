@@ -2193,5 +2193,15 @@ export const puzzles = [
         post_solve: ["Semaphore signaler: 2 flags", "Natl flags feat. Union Jack: 5 (UK, AUS, NZ, Tuvalu, Fiji)","U.S. theme park brand: 6 flags", "Total flags planted on moon: 7 (6 US 1 China)", "Versions of U.S. flag since 1777: 27", "Most NFL penalties in game: 37 flags", "U.N. HQ exterior: 195 flags"],
         revAllowed: true        
     },
+    {
+        id: 220,
+        solution: ["DATING WARNING", "OUTLINE OF CYPRUS ON THE CYPRUS FLAG", "FOOTBALL PENALTY INDICATOR", "START OF AN AUTO RACE", "OCEANIC SUSTAINABILITY CERTIFICATION", "STRIPE REMOVED FROM PRIDE FLAGS IN 1979", "BEACH SAFETY FLAG FOR DANGEROUS MARINE LIFE"],
+        initialOrderSequence: "6751342",
+        theme: "Flag colors",
+        hint: "Flags pt. 2: ROYGBIV",
+        hint2: "Flag colors",
+        post_solve: ["Dating warning: Red flag", "Outline of Cyprus on Cyprus flag: Orange", "Football penalty: Yellow flag", "Start of an auto race: Green flag", "Oceanic sustainability cert: Blue flag", "Stripe removed from Pride flags: Indigo", "Dangerous marine life indicator: Purple flag"],
+        revAllowed: true
+    }
 
 ];
