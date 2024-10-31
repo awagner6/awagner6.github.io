@@ -1875,12 +1875,12 @@ export const puzzles = [
     },
     {
         id: 188,
-        solution: ["LUST", "GLUTTONY", "GREED", "SLOTH", "WRATH", "ENVY", "PRIDE"],
+        solution: ["SILVER STATE POSTAL CODE HOMOPHONE", "OVERCONSUMPTION", "'__ IS GOOD': 'WALL STREET' QUOTE", "'__ FOR LIFE': IGGY POP SONG", "GROUP OF LIONS", "'ZOOTOPIA' DMV EMPLOYEE ANIMAL", "'THE GRAPES OF __: STEINBECK NOVEL"],
         initialOrderSequence: "3614725",
-        theme: "Deadly sins in order of severity (per Pope Gregory I)",
-        hint: "Deadly sins by classical severity",
-        hint2: "Increasing severity per Pope Gregory I",
-        post_solve: ["Lust: least serious", "Gluttony", "Greed", "Sloth", "Wrath", "Envy", "Pride: worst of all evils"],
+        theme: "Seven deadly sins A-Z",
+        hint: "Deadly seven (A-Z)",
+        hint2: "Seven deadly sins (A-Z)",
+        post_solve: ["Silver state abbr homophone: Envy (NV)", "Overconsumption: Gluttony", "'Wall Street' quote: 'Greed (for lack of a better word) is good'", "Iggy Pop song: Lust for life", "Group of lions: Pride", "'Zootopia' DMV employee: Sloth", "Steinbeck novel: 'The Grapes of Wrath'"],
         revAllowed: true
     },
     {
