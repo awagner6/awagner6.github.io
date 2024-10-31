@@ -1,4 +1,4 @@
-export const puzzles = [
+toexport const puzzles = [
     
     {
         id: 1,
@@ -1840,7 +1840,7 @@ export const puzzles = [
         theme: "Scary story starter",
         hint: "Scary story starter",
         hint2: "It was a dark and stormy night",
-        solution: ["Stephen King evil clown novel: IT", "MLB's Nats on scoreboards: WAS", "Letter in 'The Scarlet Letter': A", "Not just dim: DARK", "Plus: AND", "___ Daniels: STORMY", "Sleeping time: NIGHT"],
+        post_solve: ["Stephen King evil clown novel: IT", "MLB's Nats on scoreboards: WAS", "Letter in 'The Scarlet Letter': A", "Not just dim: DARK", "Plus: AND", "___ Daniels: STORMY", "Sleeping time: NIGHT"],
         revAllowed: true
     },
     {
