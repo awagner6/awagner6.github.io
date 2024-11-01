@@ -2202,6 +2202,15 @@ export const puzzles = [
         hint2: "Flag colors",
         post_solve: ["Dating warning: Red flag", "Outline of Cyprus on Cyprus flag: Orange", "Football penalty: Yellow flag", "Start of an auto race: Green flag", "Oceanic sustainability cert: Blue flag", "Stripe removed from Pride flags: Indigo", "Dangerous marine life indicator: Purple flag"],
         revAllowed: true
-    }
-
+    },
+    {
+        id: 221,
+        solution: ["IN-N-OUT BURGER", "PAPA JOHN'S", "BURGER KING", "TACO BELL", "MCDONALD'S", "STARBUCKS", "SUBWAY"],
+        initialOrderSequence: "5762143",
+        theme: "Number of U.S. locations",
+        hint: "U.S. locations",
+        hint2: "Number of U.S. locations",
+        post_solve: ["In-N-Out Burger: 400\+", "Papa John's: 3,100\+", "Burger King: 6,700\+", "Taco Bell: 7,800\+", "McDonald's: 14,300\+", "Starbucks: 16,400\+", "Subway: 20,500\+"],
+        revAllowed: true
+    },
 ];
