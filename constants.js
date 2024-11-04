@@ -2213,4 +2213,14 @@ export const puzzles = [
         post_solve: ["In-N-Out Burger: 400\+", "Papa John's: 3,100\+", "Burger King: 6,700\+", "Taco Bell: 7,800\+", "McDonald's: 14,300\+", "Starbucks: 16,400\+", "Subway: 20,500\+"],
         revAllowed: true
     },
+    {
+        id: 222,
+        solution: ["HURON-IROQUOIS WORD FOR VILLAGE", "SIOUX WORD FOR FRIEND", "SIOUX WORD FOR FLAT WATER", "SO-CALLED 'PEOPLE OF THE SOUTH WIND'", "CHOCTAW WORDS FOR 'PEOPLE' AND 'RED'", "CADDO WORD FOR FRIEND (SPANISH SPELLING)", "NAHUATL PHRASE 'CENTER OF THE MOON LAKE'"],
+        initialOrderSequence: "6712435",
+        theme: "Etymologies from Canada to Mexico",
+        hint: "North to south etymology tour",
+        hint2: "Derivations of country/state names from Canada to Mexico",
+        post_solve: ["Huron-Iroquois word for village: Canada", "Sioux word for friend: (N+S) Dakota", "Sioux word for flat water: Nebraska", "People of the south wind: Kansas", "Choctaw 'red' + 'people': Oklahoma", "Spanish spelling of caddo 'friend': Texas", "Nahuatl 'center of the moon lake': Mexico"],
+        revAllowed: true
+    }
 ];
