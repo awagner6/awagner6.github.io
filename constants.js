@@ -2222,5 +2222,15 @@ export const puzzles = [
         hint2: "Derivations of country/state names from Canada to Mexico",
         post_solve: ["Huron-Iroquois word for village: Canada", "Sioux word for friend: (N+S) Dakota", "Sioux word for flat water: Nebraska", "People of the south wind: Kansas", "Choctaw 'red' + 'people': Oklahoma", "Spanish spelling of caddo 'friend': Texas", "Nahuatl 'center of the moon lake': Mexico"],
         revAllowed: true
-    }
+    },
+    {
+        id: 223,
+        solution: ["REFS IN THE RING", "FIGHTERS IN THE RING", "ROPES AROUND THE RING", "SECONDS DOWN FOR A KNOCKOUT", "MAX ROUNDS", "TOTAL WEIGHT CLASSES", "SECONDS BETWEEN ROUNDS"],
+        initialOrderSequence: "5246713",
+        theme: "Boxing-related numbers",
+        hint: "Box(ing) scores",
+        hint2: "Boxing-related numbers",
+        post_solve: ["Refs in the ring: 1", "Fighters in the ring: 2", "Ropes around the ring: 4", "Seconds down for a knockout: 10", "Max rounds: 12", "Total weight classes: 17", "Seconds between rounds: 60"],
+        revAllowed: true
+    },
 ];
