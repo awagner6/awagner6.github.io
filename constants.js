@@ -2233,4 +2233,14 @@ export const puzzles = [
         post_solve: ["Refs in the ring: 1", "Fighters in the ring: 2", "Ropes around the ring: 4", "Seconds down for a knockout: 10", "Max rounds: 12", "Total weight classes: 17", "Seconds between rounds: 60"],
         revAllowed: true
     },
+    {
+        id: 224,
+        solution: ["LOST GENERATION", "GREATEST GENERATION", "SILENT GENERATION", "BABY BOOMERS", "GEN X", "MILLENNIALS", "ZOOMERS"],
+        initialOrderSequence: "2645137",
+        theme: "Named generations",
+        hint: "People mover",
+        hint2: "Named generations",
+        post_solve: ["Lost generation: born 1883-1900", "Greatest generation: born 1901-1927", "Silent generation: born 1928-1945", "Baby boomers: born 1946-1964", "Gen X: born 1965-1980", "Millennial: 1981-1996", "Zoomers: 1997-2012"],
+        revAllowed: true
+    }
 ];
