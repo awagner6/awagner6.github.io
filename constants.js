@@ -1915,7 +1915,7 @@ export const puzzles = [
     },
     {
         id: 192,
-        solution: ["FARENHEIT ___ (BRADBURY)", "THE ___ DALMATIONS (SMITH)", "___ YEARS OF SOLITUDE (GARCÍA MÁRQUEZ)", "___ SHADES OF GREY (JAMES)", "CATCH-___ (HELLER)", "___ REASONS WHY (ASHER)", "SLAUGHTERHOUSE-___ (VONNEGUT)"],
+        solution: ["FAHRENHEIT ___ (BRADBURY)", "THE ___ DALMATIANS (SMITH)", "___ YEARS OF SOLITUDE (GARCÍA MÁRQUEZ)", "___ SHADES OF GREY (JAMES)", "CATCH-___ (HELLER)", "___ REASONS WHY (ASHER)", "SLAUGHTERHOUSE-___ (VONNEGUT)"],
         initialOrderSequence: "5623174",
         theme: "Book title numbers",
         hint: "Reading writing and arithmetic",
