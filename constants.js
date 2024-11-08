@@ -2242,5 +2242,15 @@ export const puzzles = [
         hint2: "Named generations",
         post_solve: ["Lost generation: born 1883-1900", "Greatest generation: born 1901-1927", "Silent generation: born 1928-1945", "Baby boomers: born 1946-1964", "Gen X: born 1965-1980", "Millennial: 1981-1996", "Zoomers: 1997-2012"],
         revAllowed: true
-    }
+    },
+    {
+        id: 225,
+        solution: ["SANDALS", "TOGA", "KIMONO", "WATCH", "THREE PIECE SUIT", "BLUE JEANS", "BIKINI"],
+        initialOrderSequence: "6724513",
+        theme: "When fashion items were invented",
+        hint: "The latest fashion",
+        hint2: "When fashion items were invented",
+        post_solve: ["Sandals: earliest record 8900 BCE (in Oregon!)", "Toga: 750 BCE", "Kimono: ~800 CE", "Watch: 1505 CE", "Three-piece suit: 1666 CE", "Blue jeans: 1873 CE", "Bikini: 1946 CE"],
+        revAllowed: true
+    },
 ];
