@@ -2292,5 +2292,15 @@ export const puzzles = [
         hint2: "Winemaking process",
         post_solve: ["Harvest: pick grapes", "Crush: Release juices", "Macerate: Let skins/seeds soak in juice", "Press: Remove skins/seeds", "Ferment: convert sugar to alcohol", "Clarify/filter: remove dead yeast/precipitates", "Age: let develop in a barrel/tank"],
         revAllowed: true
-    }
+    },
+    {
+        id: 230,
+        solution: ["STOCKPOT TOSS-IN", "PART OF THE EYE", "FINISHED", "SHARPEN", "UNLEAVENED CORNBREAD", "MUSCLE FIRMNESS", "SPECIFIED REGION"],
+        initialOrderSequence: "2365174",
+        theme: "Letter + 'one' (alphabetically)",
+        hint: "One plus one",
+        hint2: "Letter + 'one' A-Z",
+        post_solve: ["Stockpot toss-in: Bone", "Part of the eye: Cone", "Finished: Done", "Sharpen: Hone", "Unleavened cornbread: Pone", "Muscle firmness: Tone", "Specified region: Zone"],
+        revAllowed: true
+    },
 ];
