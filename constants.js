@@ -2262,5 +2262,15 @@ export const puzzles = [
         hint2: "'Cheers!' languages A-Z",
         post_solve: ["Santé!: French", "Prost!: German", "Yamas!: Greek", "L'chaim!: Hebrew", "Cin! Cin!: Italian", "Kanpai!: Japanese", "¡Salud!: Spanish"],
         revAllowed: true
+    },
+    {
+        id: 227,
+        solution: ["JACK-JACK (THE INCREDIBLES)", "LISA SIMPSON (THE SIMPSONS)", "KATNISS EVERDEEN (HUNGER GAMES)", "ELSA OF ARENDELLE (FROZEN)", "WALTER WHITE (BREAKING BAD)", "YODA (STAR WARS)", "GANDALF (LORD OF THE RINGS)"],
+        initialOrderSequence: "5732146",
+        theme: "Characters by age",
+        hint: "Age old characters",
+        hint2: "Characters by age",
+        post_solve: ["Jack-Jack: <1", "Lisa Simpson: 8", "Katniss Everdeen: 16", "Elsa: 21", "Walter White: 50", "Yoda: 900+", "Gandalf: 10,000+"],
+        revAllowed: true       
     }
 ];
