@@ -2283,4 +2283,14 @@ export const puzzles = [
         post_solve: ["Switchblade: <4 inches", "Rondel dagger: 12-20 inches", "US Navy cutlass: 24 7/8 inches", "Katana: <32 inches", "Olympic épée: 35 inches", "Longsword: <43 inches", "Scottish claymore: ~55 inches"],
         revAllowed: true        
     },
+    {
+        id: 229,
+        solution: ["HARVEST", "CRUSH", "PRESS", "FERMENT", "CLARIFY/FILTER", "AGE", "BOTTLE"],
+        initialOrderSequence: "5743126",
+        theme: "(Traditional) winemaking steps",
+        hint: "From vine to bottle",
+        hint2: "Winemaking process",
+        post_solve: ["Harvest: pick grapes", "Crush: Release juices", "Macerate: Let skins/seeds soak in juice", "Press: Remove skins/seeds", "Ferment: convert sugar to alcohol", "Clarify/filter: remove dead yeast/precipitates", "Age: let develop in a barrel/tank"],
+        revAllowed: true
+    }
 ];
