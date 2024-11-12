@@ -2272,5 +2272,15 @@ export const puzzles = [
         hint2: "Characters by age",
         post_solve: ["Jack-Jack: <1", "Lisa Simpson: 8", "Katniss Everdeen: 16", "Elsa: 21", "Walter White: 50", "Yoda: 900+", "Gandalf: 10,000+"],
         revAllowed: true       
-    }
+    },
+    {
+        id: 228,
+        solution: ["SWITCHBLADE", "RONDEL DAGGER", "US NAVY CUTLASS", "KATANA", "OLYMPIC ÉPÉE", "LONGSWORD", "SCOTTISH CLAYMORE"],
+        initialOrderSequence: "6241375",
+        theme: "Blades by blade length",
+        hint: "The cutting edge",
+        hint2: "Blades by length",
+        post_solve: ["Switchblade: <4 inches", "Rondel dagger: 12-20 inches", "US Navy cutlass: 24 7/8 inches", "Katana: <32 inches", "Olympic épée: 35 inches", "Longsword: <43 inches", "Scottish claymore: ~55 inches"],
+        revAllowed: true        
+    },
 ];
