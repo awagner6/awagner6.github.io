@@ -2253,4 +2253,14 @@ export const puzzles = [
         post_solve: ["Sandals: earliest record 8900 BCE (in Oregon!)", "Toga: 750 BCE", "Kimono: ~800 CE", "Watch: 1505 CE", "Three-piece suit: 1666 CE", "Blue jeans: 1873 CE", "Bikini: 1946 CE"],
         revAllowed: true
     },
+    {
+        id: 226,
+        solution: ["SANTÉ!", "PROST!", "YAMAS!", "L'CHAIM!", "CIN! CIN!", "KANPAI!", "¡SALUD!"],
+        initialOrderSequence: "3561274",
+        theme: "Cheers languages alphabetically",
+        hint: "Toasting languages A-Z",
+        hint2: "'Cheers!' languages A-Z",
+        post_solve: ["Santé!: French", "Prost!: German", "Yamas!: Greek", "L'chaim!: Hebrew", "Cin! Cin!: Italian", "Kanpai!: Japanese", "¡Salud!: Spanish"],
+        revAllowed: true
+    }
 ];
