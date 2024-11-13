@@ -2303,4 +2303,14 @@ export const puzzles = [
         post_solve: ["Stockpot toss-in: Bone", "Part of the eye: Cone", "Finished: Done", "Sharpen: Hone", "Unleavened cornbread: Pone", "Muscle firmness: Tone", "Specified region: Zone"],
         revAllowed: true
     },
+    {
+        id: 231,
+        solution: ["PARTRIDGE", "TURTLE DOVE", "FRENCH HEN", "CALLING BIRD", "GOLD RING", "GOOSE", "SWAN"],
+        initialOrderSequence: "6534172",
+        theme: "12 Days of Christmas",
+        hint: "True love's gifts",
+        hint2: "12 Days of Christmas",
+        post_solve: ["A partridge in a pear tree", "Two turtle doves", "Three French hens", "Four calling birds", "Five gold rings", "Six geese a-laying", "Seven swans a-singing"],
+        revAllowed: true
+    },
 ];
