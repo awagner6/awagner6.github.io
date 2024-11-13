@@ -2298,7 +2298,7 @@ export const puzzles = [
         solution: ["STOCKPOT TOSS-IN", "PART OF THE EYE", "FINISHED", "SHARPEN", "UNLEAVENED CORNBREAD", "MUSCLE FIRMNESS", "SPECIFIED REGION"],
         initialOrderSequence: "2365174",
         theme: "Letter + 'one' (alphabetically)",
-        hint: "One plus one",
+        hint: "One plus 'one'",
         hint2: "Letter + 'one' A-Z",
         post_solve: ["Stockpot toss-in: Bone", "Part of the eye: Cone", "Finished: Done", "Sharpen: Hone", "Unleavened cornbread: Pone", "Muscle firmness: Tone", "Specified region: Zone"],
         revAllowed: true
