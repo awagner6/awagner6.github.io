@@ -2313,4 +2313,14 @@ export const puzzles = [
         post_solve: ["A partridge in a pear tree", "Two turtle doves", "Three French hens", "Four calling birds", "Five gold rings", "Six geese a-laying", "Seven swans a-singing"],
         revAllowed: true
     },
+    {
+        id: 232,
+        solution: ["PUMPKIN", "GREEN SQUASH", "WATERMELON", "CABBAGE", "CARROT", "POTATO", "APPLE"],
+        initialOrderSequence: "3512764",
+        theme: "World record weights",
+        hint: "The heaviest-ever...",
+        hint2: "World record weights",
+        post_solve: ["Pumpkin: 2,749 lbs", "Green squash: 2,164 lbs", "Watermelon: 350.5 lbs", "Cabbage: 138.25 lbs", "Carrot: 22.44 lbs", "Potato: 11 lbs", "Apple: 4.06 lbs"],
+        revAllowed: true
+    },
 ];
