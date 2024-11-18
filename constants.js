@@ -2315,12 +2315,12 @@ export const puzzles = [
     },
     {
         id: 232,
-        solution: ["PUMPKIN", "GREEN SQUASH", "WATERMELON", "CABBAGE", "CARROT", "POTATO", "APPLE"],
+        solution: ["PUMPKIN", "GREEN SQUASH", "WATERMELON", "CABBAGE", "SWEET POTATO", "CARROT", "APPLE"],
         initialOrderSequence: "3512764",
         theme: "World record weights",
         hint: "The heaviest-ever...",
         hint2: "World record weights",
-        post_solve: ["Pumpkin: 2,749 lbs", "Green squash: 2,164 lbs", "Watermelon: 350.5 lbs", "Cabbage: 138.25 lbs", "Carrot: 22.44 lbs", "Potato: 11 lbs", "Apple: 4.06 lbs"],
+        post_solve: ["Pumpkin: 2,749 lbs", "Green squash: 2,164 lbs", "Watermelon: 350.5 lbs", "Cabbage: 138.25 lbs", "Sweet potato: 81.56 lbs", "Carrot: 22.44 lbs", "Apple: 4.06 lbs"],
         revAllowed: true
     },
 ];
