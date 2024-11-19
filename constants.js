@@ -2323,4 +2323,14 @@ export const puzzles = [
         post_solve: ["Pumpkin: 2,749 lbs", "Green squash: 2,164 lbs", "Watermelon: 350.5 lbs", "Cabbage: 138.25 lbs", "Sweet potato: 81.56 lbs", "Carrot: 22.44 lbs", "Apple: 4.06 lbs"],
         revAllowed: true
     },
+    {
+        id: 233,
+        solution: ["MANDIBLE", "CLAVICLE", "RIBS", "SACRUM", "FEMUR", "TIBIA", "METATARSALS"],
+        initialOrderSequence: "5734162",
+        theme: "Bones head to toe",
+        hint: "Head to toe, cranium to phalange",
+        hint2: "Bones from head to toe",
+        post_solve: ["Mandible: jaw", "Clavicle: collarbone/shoulder", "Ribs: torso", "Sacrum: lower back", "Femur: thigh", "Tibia: lower leg", "Metatarsals: feet"],
+        revAllowed: true
+    }
 ];
