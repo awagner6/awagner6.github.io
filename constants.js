@@ -2332,5 +2332,15 @@ export const puzzles = [
         hint2: "Bones from head to toe",
         post_solve: ["Mandible: jaw", "Clavicle: collarbone/shoulder", "Ribs: torso", "Sacrum: lower back", "Femur: thigh", "Tibia: lower leg", "Metatarsals: feet"],
         revAllowed: true
-    }
+    },
+    {
+        id: 234,
+        solution: ["___ GHANOUJ: EGGPLANT DIP", "SURREALIST ART MOVEMENT", "LADY ___: POP ARTIST", "LAUGH SYLLABLES", "___ LAND: 2016 MUSICAL", "'FAREWELL!'", "PHILLY-BASED CONVENIENCE CHAIN"],
+        initialOrderSequence: "6472531",
+        theme: "_A_A",
+        hint: "Double-As",
+        hint2: "Words of the form _A_A",
+        post_solve: ["Eggplant dip: BABA ghanouj", "Surrealist art movement: DADA", "Pop artist: Lady GAGA", "Laugh syllables: HAHA", "2016 musical: LA LA Land", "'Farewell!': 'TA-TA!'", "Philly-based convenience chain: WAWA"],
+        revAllowed: true
+    },
 ];
