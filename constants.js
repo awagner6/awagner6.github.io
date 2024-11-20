@@ -2343,4 +2343,14 @@ export const puzzles = [
         post_solve: ["Eggplant dip: BABA ghanouj", "Surrealist art movement: DADA", "Pop artist: Lady GAGA", "Laugh syllables: HAHA", "2016 musical: LA LA Land", "'Farewell!': 'TA-TA!'", "Philly-based convenience chain: WAWA"],
         revAllowed: true
     },
+    {
+        id: 235,
+        solution: ["Parentheses", "Exponents", "Logarithms", "Multiplication", "Division", "Addition", "Subtraction"],
+        initialOrderSequence: "4721653",
+        theme: "PE(L)MDAS",
+        hint: "Order (of operations) up!",
+        hint2: "Order math operations are evaluated",
+        post_solve: ["Parentheses: 1st tier", "Exponents: 2nd tier", "Logarithms: 2nd tier (after exponents)", "Multiplication: 3rd tier" "Division: 3rd tier (after multiplication)", "Addition: 4th tier", "Subtraction: 4th tier (after addition)"],
+        revAllowed: true   
+    },
 ];
