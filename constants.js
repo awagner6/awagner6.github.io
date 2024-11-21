@@ -2350,7 +2350,7 @@ export const puzzles = [
         theme: "PE(L)MDAS",
         hint: "Order (of operations) up!",
         hint2: "Order math operations are evaluated",
-        post_solve: ["Parentheses: 1st tier", "Exponents: 2nd tier", "Logarithms: 2nd tier (after exponents)", "Multiplication: 3rd tier" "Division: 3rd tier (after multiplication)", "Addition: 4th tier", "Subtraction: 4th tier (after addition)"],
+        post_solve: ["Parentheses: 1st tier", "Exponents: 2nd tier", "Logarithms: 2nd tier (after exponents)", "Multiplication: 3rd tier", "Division: 3rd tier (after multiplication)", "Addition: 4th tier", "Subtraction: 4th tier (after addition)"],
         revAllowed: true   
     },
 ];
