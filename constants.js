@@ -2353,4 +2353,14 @@ export const puzzles = [
         post_solve: ["Parentheses: 1st tier", "Exponents: 2nd tier", "Logarithms: 2nd tier (after exponents)", "Multiplication: 3rd tier", "Division: 3rd tier (after multiplication)", "Addition: 4th tier", "Subtraction: 4th tier (after addition)"],
         revAllowed: true   
     },
+    {
+        id: 236,
+        solution: ["PARIS METRO OPENS", "U.S. MILITARY REVEILLE", "NEW YORK STOCK EXCHANGE OPENS", "BUCKINGHAM PALACE CHANGING OF THE GUARD", "SPANISH SIESTA", "DISNEYWORLD FIREWORKS", "CURRENT DOOMSDAY CLOCK SETTING"],
+        initialOrderSequence: "2571634",
+        theme: "Times of day",
+        hint: "According to schedule",
+        hint2: "Times of day (local time)",
+        post_solve: ["Paris Metro opens: 5:30 am", "U.S. military reveille: 7 am", "NYSE opens: 9:30 am", "Buckingham palace changing of the guard: 10:45 am", "Spanish siesta: ~2-4 pm", "Disneyworld fireworks: ~9 pm", "Current doomsday clock setting: 11:58 pm"],
+        revAllowed: true
+    }
 ];
