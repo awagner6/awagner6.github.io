@@ -2384,7 +2384,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 239,
+        id: 246,
         solution: ["OUGHT", "LONG-LOST FRIEND E.G.", "RATHER __: CLEAN BANDIT SONG", "DIDN'T REMEMBER", "PLUS", "'WHEN PIGS FLY!'", "RUMINATED"],
         initialOrderSequence: "5627314",
         theme: "Auld Lang Syne lyrics",
