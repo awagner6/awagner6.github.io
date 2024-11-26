@@ -2362,5 +2362,15 @@ export const puzzles = [
         hint2: "Times of day (local time)",
         post_solve: ["Paris Metro opens: 5:30 am", "U.S. military reveille: 7 am", "NYSE opens: 9:30 am", "Buckingham palace changing of the guard: 10:45 am", "Spanish siesta: ~2-4 pm", "Disneyworld fireworks: ~9 pm", "Current doomsday clock setting: 11:58 pm"],
         revAllowed: true
+    },
+    {
+        id: 237,
+        solution: ["PIANO MIDDLE C", "SOUND THAT BREAKS GLASS", "MOSQUITO TONE (SOUND THAT ADULTS CAN'T HEAR)", "HIGHEST AUDIBLE SOUND", "DOG WHISTLE", "DOLPHIN ECHOLOCATION", "AM RADIO"],
+        initialOrderSequence, "5217643",
+        theme: "Soundwave frequencies/pitches in kiloHertz",
+        hint: "What's the Frequency, Kenneth?",
+        hint2: "Frequencies/pitches in kiloHertz",
+        post_solve: ["Piano middle C: .26 kHz", "Sound that breaks glass: .556 kHz", "Mosquito tone (sound adults can't hear): 18 kHz", "Highest audible sound: 20 kHz", "Dog whistle: 23-54 kHz", "Dolphin echolocation: <130 kHz", "AM radio: 540 - 1700 kHz"],
+        revAllowed: true
     }
 ];
