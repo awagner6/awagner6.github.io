@@ -2373,5 +2373,14 @@ export const puzzles = [
         post_solve: ["Piano middle C: .26 kHz", "Sound that breaks glass: .556 kHz", "Mosquito tone (sound adults can't hear): 18 kHz", "Highest audible sound: 20 kHz", "Dog whistle: 23-54 kHz", "Dolphin echolocation: <130 kHz", "AM radio: 540 - 1700 kHz"],
         revAllowed: true
     },
-    
+    {
+        id: 238,
+        solution: ["CUMULONIMBUS CLOUD (LIQUID WATER)", "HONEY", "WET CEMENT", "HUMAN BODY", "EARTH'S SURFACE", "MILK", "WATERMELON FLESH"],
+        initialOrderSequence: "6254173",
+        theme: "Percent water",
+        hint: "H2-ratiO",
+        hint2: "Percent water",
+        post_solve: ["Cumulonimbus cloud: <.05% liquid water (mostly just air)", "Honey: ~18%", "Wet cement: ~27-38%", "Human body: ~55-60%", "Earth's surface: ~71%", "Milk: 87%", "Watermelon flesh: 92% (more than milk!)"],
+        revAllowed: true
+    },    
 ];
