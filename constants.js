@@ -2384,6 +2384,16 @@ export const puzzles = [
         revAllowed: true
     },
     {
+        id: 239,
+        solution: ["DETERGENT BRAND", "SMALLEST ROMAN NUMERAL", "DESIRE", "TYPE OF PROGRAMMING LOOP", "YULE", "EXISTS", "SECOND PERSON PRONOUN"],
+        initialOrderSequence: "5741326",
+        theme: "All I Want For Christmas Is You",
+        hint: "Sing it Mariah!",
+        hint2: "All I Want For Christmas Is You",
+        post_solve: ["Detergent brand: ALL", "Smallest Roman numeral: I", "Desire: WANT", "Programming loop: FOR", "Yule: CHRISTMAS", "Exists: IS", "Second-person pronoun: YOU"],
+        revAllowed: true
+    },
+    {
         id: 246,
         solution: ["OUGHT", "LONG-LOST FRIEND E.G.", "RATHER __: CLEAN BANDIT SONG", "DIDN'T REMEMBER", "PLUS", "'WHEN PIGS FLY!'", "RUMINATED"],
         initialOrderSequence: "5627314",
