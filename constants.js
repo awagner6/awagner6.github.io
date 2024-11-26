@@ -2366,7 +2366,7 @@ export const puzzles = [
     {
         id: 237,
         solution: ["PIANO MIDDLE C", "SOUND THAT BREAKS GLASS", "MOSQUITO TONE (SOUND THAT ADULTS CAN'T HEAR)", "HIGHEST AUDIBLE SOUND", "DOG WHISTLE", "DOLPHIN ECHOLOCATION", "AM RADIO"],
-        initialOrderSequence, "5217643",
+        initialOrderSequence: "5217643",
         theme: "Soundwave frequencies/pitches in kiloHertz",
         hint: "What's the Frequency, Kenneth?",
         hint2: "Frequencies/pitches in kiloHertz",
