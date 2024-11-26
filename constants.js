@@ -2382,5 +2382,15 @@ export const puzzles = [
         hint2: "Percent water",
         post_solve: ["Cumulonimbus cloud: <.05% liquid water (mostly just air)", "Honey: ~18%", "Wet cement: ~27-38%", "Human body: ~55-60%", "Earth's surface: ~71%", "Milk: 87%", "Watermelon flesh: 92% (more than milk!)"],
         revAllowed: true
-    },    
+    },
+    {
+        id: 239,
+        solution: ["OUGHT", "LONG-LOST FRIEND E.G.", "RATHER __: CLEAN BANDIT SONG", "DIDN'T REMEMBER", "PLUS", "'WHEN PIGS FLY!'", "RUMINATED"],
+        initialOrderSequence: "5627314",
+        theme: "Auld Lang Syne lyrics",
+        hint: "Happy New Year!",
+        hint2: "Auld Lang Syne lyrics",
+        post_solve: ["Ought: SHOULD", "Long-lost friend e.g.: OLD ACQUAINTANCE", "Clean Bandit song: Rather BE", "Didn't remember: FORGOT", "Plus: AND", "'When pigs fly!': NEVER", "Ruminated: THOUGHT UPON"],
+        revAllowed: true
+    },
 ];
