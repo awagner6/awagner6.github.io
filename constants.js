@@ -2372,5 +2372,6 @@ export const puzzles = [
         hint2: "Frequencies/pitches in kiloHertz",
         post_solve: ["Piano middle C: .26 kHz", "Sound that breaks glass: .556 kHz", "Mosquito tone (sound adults can't hear): 18 kHz", "Highest audible sound: 20 kHz", "Dog whistle: 23-54 kHz", "Dolphin echolocation: <130 kHz", "AM radio: 540 - 1700 kHz"],
         revAllowed: true
-    }
+    },
+    
 ];
