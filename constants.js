@@ -2410,7 +2410,7 @@ export const puzzles = [
         theme: "Number of moons",
         hint: "Many moons",
         hint2: "Number of moons",
-        post_solve: ["Venus: 0", "Earth: 1", "Mars: 2", "Pluto: 5", "Uranus: 28", "Jupiter: 95", "Saturn: 146"],
+        post_solve: ["Venus: 0", "Earth: 1", "Mars: 2", "Pluto: 5", "Uranus: 28", "Jupiter: 95", "Saturn: 146", "Theme idea from Laura Cassellius"],
         revAllowed: true        
     },
 ];
