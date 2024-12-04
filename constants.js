@@ -2394,6 +2394,16 @@ export const puzzles = [
         revAllowed: true
     },
     {
+        id: 240,
+        solution: ["VENUS", "EARTH", "MARS", "PLUTO", "URANUS", "JUPITER", "SATURN"],
+        initialOrderSequence: "3724165",
+        theme: "Number of moons",
+        hint: "Many moons",
+        hint2: "Number of moons",
+        post_solve: ["Venus: 0", "Earth: 1", "Mars: 2", "Pluto: 5", "Uranus: 28", "Jupiter: 95", "Saturn: 146", "Theme idea from Laura Cassellius"],
+        revAllowed: true        
+    },
+    {
         id: 246,
         solution: ["OUGHT", "LONG-LOST FRIEND E.G.", "RATHER __: CLEAN BANDIT SONG", "DIDN'T REMEMBER", "PLUS", "'WHEN PIGS FLY!'", "RUMINATED"],
         initialOrderSequence: "5627314",
@@ -2403,14 +2413,5 @@ export const puzzles = [
         post_solve: ["Ought: SHOULD", "Long-lost friend e.g.: OLD ACQUAINTANCE", "Clean Bandit song: Rather BE", "Didn't remember: FORGOT", "Plus: AND", "'When pigs fly!': NEVER", "Ruminated: THOUGHT UPON"],
         revAllowed: true
     },
-    {
-        id: 247,
-        solution: ["VENUS", "EARTH", "MARS", "PLUTO", "URANUS", "JUPITER", "SATURN"],
-        initialOrderSequence: "3724165",
-        theme: "Number of moons",
-        hint: "Many moons",
-        hint2: "Number of moons",
-        post_solve: ["Venus: 0", "Earth: 1", "Mars: 2", "Pluto: 5", "Uranus: 28", "Jupiter: 95", "Saturn: 146", "Theme idea from Laura Cassellius"],
-        revAllowed: true        
-    },
+    
 ];
