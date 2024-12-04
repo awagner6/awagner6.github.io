@@ -2404,6 +2404,16 @@ export const puzzles = [
         revAllowed: true        
     },
     {
+        id: 241,
+        solution: ["SOCCER PITCH", "AMERICAN FOOTBALL FIELD", "HOCKEY RINK", "BASKETBALL COURT", "TENNIS COURT", "BOXING RING", "TABLE TENNIS TABLE"],
+        initialOrderSequence: "4632175",
+        theme: "Pro field/court/rink sizes",
+        hint: "Play areas",
+        hint2: "Field/court/rink sizes",
+        post_solve: ["Soccer pitch: 76,590 sq ft", "American football field: 57,600 sq ft", "Hockey rink: 17,000 sq ft", "Basketball court: 4,700 sq ft", "Tennis court: 2,106 sq ft (2,808 with doubles alleys)", "Boxing ring: 256-576 sq ft", "Table tennis table: 45 sq ft"],
+        revAllowed: true
+    },
+    {
         id: 246,
         solution: ["OUGHT", "LONG-LOST FRIEND E.G.", "RATHER __: CLEAN BANDIT SONG", "DIDN'T REMEMBER", "PLUS", "'WHEN PIGS FLY!'", "RUMINATED"],
         initialOrderSequence: "5627314",
