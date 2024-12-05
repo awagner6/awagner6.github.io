@@ -2414,6 +2414,16 @@ export const puzzles = [
         revAllowed: true
     },
     {
+        id: 242,
+        solution: ["WEEK (BARENAKED LADIES)", "LITTLE BIRDS (BOB MARLEY)", "RINGS (ARIANA GRANDE)", "DAYS A WEEK (THE BEATLES)", "YEARS GONE (LED ZEPPELIN)", "GUNS (GREEN DAY)", "WAYS TO LEAVE YOUR LOVER (PAUL SIMON)"],
+        initialOrderSequence: "6271354",
+        theme: "Numbers at the start of song titles",
+        hint: "Opening numbers",
+        hint2: "Numbers at the start of song titles",
+        post_solve: ["Barenaked Ladies: One Week", "Bob Marley and the Wailers: Three Little Birds", "Ariana Grande: 7 Rings", "The Beatles: 8 Days a Week", "Led Zeppelin: Ten Years Gone", "Green Day: 21 Guns", "Paul Simon: 50 Ways to Leave Your Lover"],
+        revAllowed: true
+    },
+    {
         id: 246,
         solution: ["OUGHT", "LONG-LOST FRIEND E.G.", "RATHER __: CLEAN BANDIT SONG", "DIDN'T REMEMBER", "PLUS", "'WHEN PIGS FLY!'", "RUMINATED"],
         initialOrderSequence: "5627314",
