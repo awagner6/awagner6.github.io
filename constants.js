@@ -2424,6 +2424,16 @@ export const puzzles = [
         revAllowed: true
     },
     {
+        id: 243,
+        solution: ["CAMPARI", "MIMOSA", "LIMONCELLO", "MATCHA", "ELECTRIC LEMONADE", "ELDERBERRY CORDIAL", "GRAPE FANTA"],
+        initialOrderSequence: "4617325",
+        theme: "Beverage rainbow ROYGBIV",
+        hint: "Rainbow flight",
+        hint2: "Beverage rainbow ROYGBIV",
+        post_solve: ["Campari: red", "Mimosa: orange", "Limoncello: yellow", "Matcha: green", "Electric lemonade: blue", "Elderberry cordial: indigo", "Grape Fanta: violet"],
+        revAllowed: true
+    },
+    {
         id: 246,
         solution: ["OUGHT", "LONG-LOST FRIEND E.G.", "RATHER __: CLEAN BANDIT SONG", "DIDN'T REMEMBER", "PLUS", "'WHEN PIGS FLY!'", "RUMINATED"],
         initialOrderSequence: "5627314",
