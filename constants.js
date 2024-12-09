@@ -2472,5 +2472,15 @@ export const puzzles = [
         hint2: "Constellations by number of major stars",
         post_solve: ["The Solar System: 1", "Gemini namesake: 2 (Castor & Pollux, 'Gemini' is Latin for 'twins')", "Orion's Belt: 3 (Alnitak, Alnilam, and Mintaka)", "Southern Cross: 4 (Acrux, Mimosa, Gacrux, Imai)", "Cassiopeia: 5", "The Big Dipper: 7", "Centaurus: 288 (most of any constellation!)"],
         revAllowed: true        
-    }    
+    },
+    {
+        id: 248,
+        solution: ["HIGHEST-EVER SKYDIVE", "HIGHEST-EVER BASE JUMP", "LONGEST-EVER COMPETITION SKI JUMP", "LONGEST BUNGEE JUMP (FROM A FIXED STRUCTURE)", "OLYMPIC HIGH DIVE PLATFORM", "HIGH JUMP RECORD", "STANDING JUMP RECORD"],
+        initialOrderSequence: "3754162",
+        theme: "Jump heights",
+        hint: "Jumping off points",
+        hint2: "Jump heights",
+        post_solve: ["Highest-ever skydive: 135,890 ft", "Highest altitude BASE jump: 25,300 ft", "Longest competition ski jump: 832 ft", "Longest bungee jump: 652.6 ft (max cord length)", "Olmpic high dive: 32.8 ft", "High jump record: 8 ft", "Standing jump record: 5.6 feet"],
+        revAllowed: true
+    },
 ];
