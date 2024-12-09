@@ -2503,4 +2503,15 @@ export const puzzles = [
         post_solve: ["World-record parking lot (capacity): 20,000 cars", "Longest-ever freight train: 685 cars", "Longest-ever passenger train: 100 cars", "U.S. presidential motorcade: 40-50 cars", "Indy 500: 33 cars", "'Cars' franchise: 3 movies", "U.S. household: 1.8 cars (avg)"],
         revAllowed: true
     },
+    {
+        id: 251,
+        solution: ["JUDI DENCH 'BOND' ROLE", "PARENTAL NICKNAME", "DAMAGE", "RED PLANET", "WETLAND", "SENATOR BLACKBURN", "FIRE CHIEF"],
+        initialOrderSequence: "7412653",
+        theme: "Building the word MARSHAL",
+        hint: "Building marshal",
+        hint2: "Building the word MARSHAL",
+        post_solve: ["Judi Dench 'Bond' role: M", "Parental nickname: MA", "Damage: MAR", "Red planet: MARS", "Wetland: MARSH", "Senator Blackburn: MARSHA", "Fire chief: MARSHAL"],
+        revAllowed: true
+    },
+    
 ];
