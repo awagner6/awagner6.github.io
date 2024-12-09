@@ -2493,4 +2493,14 @@ export const puzzles = [
         post_solve: ["The Tonight Show: 70 years", "Jeopardy: 60 years", "Days of Our Lives: 59 years", "60 minutes: 56 years", "Sesame Street (55 years)", "Monday Night Football: 54 years", "Saturday Night Live: 50 years"],
         revAllowed: true        
     },
+    {
+        id: 250,
+        solution: ["WORLD-RECORD PARKING LOT (CAPACITY)", "LONGEST-EVER FREIGHT TRAIN", "LONGEST-EVER PASSENGER TRAIN", "U.S. PRESIDENTIAL MOTORCADE", "INDY 500", "'CARS' FRANCHISE (TOTAL MOVIES)", "AVERAGE U.S. HOUSEHOLD (CARS OWNED)"],
+        initialOrderSequence: "4273615",
+        theme: "Numbers of cars",
+        hint: "Counting cars",
+        hint2: "Number of cars",
+        post_solve: ["World-record parking lot (capacity): 20,000 cars", "Longest-ever freight train: 685 cars", "Longest-ever passenger train: 100 cars", "U.S. presidential motorcade: 40-50 cars", "Indy 500: 33 cars", "'Cars' franchise: 3 movies", "U.S. household: 1.8 cars (avg)"],
+        revAllowed: true
+    },
 ];
