@@ -2434,6 +2434,26 @@ export const puzzles = [
         revAllowed: true
     },
     {
+        id: 244,
+        solution: ["SEAN CONNERY", "GEORGE LAZENBY", "SEAN CONNERY (REPRISAL)", "ROGER MOORE", "TIMOTHY DALTON", "PIERCE BROSNAN", "DANIEL CRAIG"],
+        initialOrderSequence: "3652174",
+        theme: "James Bond portrayers chronologically",
+        hint: "7 007s",
+        hint2: "James Bond portrayers",
+        post_solve: ["Sean Connery: '62-'67 (5 films)", "George Lazenby: '69 (1 film)", "Sean Connery (reprisal): '71 (1 film)", "Roger Moore: '73-'85 (7 films)", "Timothy Dalton: '87-'89 (2 films)", "Pierce Brosnan: '95-'02 (5 films)", "Daniel Craig: '06-'21 (5 films)"],
+        revAllowed: true
+    },
+    {
+        id: 245,
+        solution: ["DINGO", "SHAR PEI", "BASSET HOUND", "DACHSHUND", "AKITA", "CHIHUAHUA", "SAINT BERNARD"],
+        initialOrderSequence: "5721463",
+        theme: "Alphabetical country of origin of dog breeds",
+        hint: "Where breeds were born (A-Z countries)",
+        hint2: "Dog breed country of origin alphabetically",
+        post_solve: ["Dingo: Australia", "Shar Pei: China", "Basset Hound: France" , "Dachshund: Germany", "Akita: Japan", "Chihuahua: Mexico", "Saint Bernard: Switzerland"],
+        revAllowed: true
+    },
+    {
         id: 246,
         solution: ["OUGHT", "LONG-LOST FRIEND E.G.", "RATHER __: CLEAN BANDIT SONG", "DIDN'T REMEMBER", "PLUS", "'WHEN PIGS FLY!'", "RUMINATED"],
         initialOrderSequence: "5627314",
