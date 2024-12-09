@@ -2463,5 +2463,14 @@ export const puzzles = [
         post_solve: ["Ought: SHOULD", "Long-lost friend e.g.: OLD ACQUAINTANCE", "Clean Bandit song: Rather BE", "Didn't remember: FORGOT", "Plus: AND", "'When pigs fly!': NEVER", "Ruminated: THOUGHT UPON"],
         revAllowed: true
     },
-    
+    {
+        id: 247,
+        solution: ["THE SOLAR SYSTEM", "GEMINI (NAMESAKE STARS)", "ORION'S BELT", "SOUTHERN CROSS (JUST THE CROSS)", "CASSIOPEIA", "THE BIG DIPPER", "CENTAURUS"],
+        initialOrderSequence: "6731425",
+        theme: "Constellations by number of major stars",
+        hint: "Count-stellations",
+        hint2: "Constellations by number of major stars",
+        post_solve: ["The Solar System: 1", "Gemini namesake: 2 (Castor & Pollux, 'Gemini' is Latin for 'twins')", "Orion's Belt: 3 (Alnitak, Alnilam, and Mintaka)", "Southern Cross: 4 (Acrux, Mimosa, Gacrux, Imai)", "Cassiopeia: 5", "The Big Dipper: 7", "Centaurus: 288 (most of any constellation!)"],
+        revAllowed: true        
+    }    
 ];
