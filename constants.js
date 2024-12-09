@@ -2483,4 +2483,14 @@ export const puzzles = [
         post_solve: ["Highest-ever skydive: 135,890 ft", "Highest altitude BASE jump: 25,300 ft", "Longest competition ski jump: 832 ft", "Longest bungee jump: 652.6 ft (max cord length)", "Olmpic high dive: 32.8 ft", "High jump record: 8 ft", "Standing jump record: 5.6 feet"],
         revAllowed: true
     },
+    {
+        id: 249,
+        solution: ["THE TONIGHT SHOW", "JEOPARDY", "DAYS OF OUR LIVES", "60 MINUTES", "SESAME STREET", "MONDAY NIGHT FOOTBALL", "SATURDAY NIGHT LIVE"],
+        initialOrderSequence: "6351274",
+        theme: "Long-running shows by run length",
+        hint: "The long run (years not seasons)",
+        hint2: "Long-running shows by run length",
+        post_solve: ["The Tonight Show: 70 years", "Jeopardy: 60 years", "Days of Our Lives: 59 years", "60 minutes: 56 years", "Sesame Street (55 years)", "Monday Night Football: 54 years", "Saturday Night Live: 50 years"],
+        revAllowed: true        
+    },
 ];
