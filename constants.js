@@ -2513,5 +2513,14 @@ export const puzzles = [
         post_solve: ["Judi Dench 'Bond' role: M", "Parental nickname: MA", "Damage: MAR", "Red planet: MARS", "Wetland: MARSH", "Senator Blackburn: MARSHA", "Fire chief: MARSHAL"],
         revAllowed: true
     },
-    
+    {
+        id: 252,
+        solution: ["U.S. CAPITAL CITY", "CAPITAL OF MISSOURI", "CAPITAL OF WISCONSIN", "CAPITAL OF MISSISSIPPI", "CAPITAL OF NEBRASKA", "HOME OF THE NBA'S CAVALIERS", "DAM ON THE NEVADA ARIZONA BORDER"],
+        initialOrderSequence: "5274136",
+        theme: "Places in order of namesake president",
+        hint: "POTUS places",
+        hint2: "Places in order of namesake president",
+        post_solve: ["U.S. Capital: Washington DC (1st POTUS)", "Capital of Missouri: Jefferson City (3rd)", "Capital of Wisconsin: Madison (4th)", "Capital of Mississippi: Jackson (7th)", "Capital of Nebraska: Lincoln (16)", "Home of the NBA's Cavaliers: Cleveland (22nd and 24th)", "Dam on the Nevada Arizona border: Hoover Dam (31st)"],
+        revAllowed: true
+    }
 ];
