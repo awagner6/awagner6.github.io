@@ -2522,5 +2522,15 @@ export const puzzles = [
         hint2: "Places in order of namesake president",
         post_solve: ["U.S. Capital: Washington DC (1st POTUS)", "Capital of Missouri: Jefferson City (3rd)", "Capital of Wisconsin: Madison (4th)", "Capital of Mississippi: Jackson (7th)", "Capital of Nebraska: Lincoln (16)", "Home of the NBA's Cavaliers: Cleveland (22nd and 24th)", "Dam on the Nevada Arizona border: Hoover Dam (31st)"],
         revAllowed: true
-    }
+    },
+    {
+        id: 253,
+        solution: ["SPIDER-MAN'S MASK", "THE THING (FANTASTIC FOUR)", "WOLVERINE'S MASK (X-MEN COMICS)", "THE INCREDIBLE HULK", "CAPTAIN AMERICA'S MASK", "NEBULA'S SUIT", "THANOS"],
+        initialOrderSequence: "2641735",
+        theme: "ROYGBIV of Marvel characters",
+        hint: "Marvelous rainbow",
+        hint2: "ROYGBIV of Marvel characters",
+        post_solve: ["Spider-Man's mask: Red", "The Thing: Orange", "Wolverine's mask: Yellow", "The Incredible Hulk: Green", "Captain America's mask: Blue", "Nebula's suit: Indigo", "Thanos: Violet"],
+        revAllowed: true
+    },
 ];
