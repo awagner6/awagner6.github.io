@@ -2533,4 +2533,14 @@ export const puzzles = [
         post_solve: ["Spider-Man's mask: Red", "The Thing: Orange", "Wolverine's mask: Yellow", "The Incredible Hulk: Green", "Captain America's mask: Blue", "Nebula's suit: Indigo", "Thanos: Violet"],
         revAllowed: true
     },
+    {
+        id: 254,
+        solution: ["CHOCOLATE CHIP COOKIE DOUGH", "CHERRY GARCIA", "CHUNKY MONKEY", "PHISH FOOD", "HALF BAKED", "STEPHEN COLBERT'S AMERICONE DREAM", "THE TONIGHT DOUGH STARRING JIMMY FALLON"],
+        initialOrderSequence: "5417362",
+        theme: "Ben & Jerry's flavor debut timeline",
+        hint: "Ben & Jerry's debuts",
+        hint2: "Ben & Jerry's flavor debut timeline",
+        post_solve: ["Chocolate Chip Cookie Dough: 1984", "Cherry Garcia: 1987", "Chunky Monkey: 1988", "Phish Food: 1997", "Half Baked: 2000", "Americone Dream: 2007", "The Tonight Dough: 2015"],
+        revAllowed: true        
+    },
 ];
