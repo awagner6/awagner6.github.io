@@ -2543,4 +2543,14 @@ export const puzzles = [
         post_solve: ["Chocolate Chip Cookie Dough: 1984", "Cherry Garcia: 1987", "Chunky Monkey: 1988", "Phish Food: 1997", "Half Baked: 2000", "Americone Dream: 2007", "The Tonight Dough: 2015"],
         revAllowed: true        
     },
+    {
+        id: 255,
+        solution: ["BERKELEY E.G.", "MAJOR ISLAND NATION", "INTL ORG BASED IN NYC", "PIXAR FILM WITH A DOG NAMED DUG", "ANCIENT 'ROYAL' BOARD GAME", "BEEHIVE STATE POSTAL CODE", "TYPE OF RADIATION"],
+        initialOrderSequence: "2671354",
+        theme: "U + letter",
+        hint: "After you",
+        hint2: "U + letter",
+        post_solve: ["Berkeley, e.g.: UC", "Major island nation: UK", "Intl. org. based in NYC: UN", "Pixar film with 'Dug': UP", "Ancient 'royal' board game: UR", "Beehive State postal code: UT", "Type of radiation: UV"],
+        revAllowed: true
+    },
 ];
