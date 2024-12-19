@@ -2563,4 +2563,24 @@ export const puzzles = [
         post_solve: ["___'s lace (wild carrot): QUEEN ANNE", "'Single Ladies' singer nickname: QUEEN BEY", "Longest-reigning British monarch: QUEEN ELIZABETH II", "Artist/actress Dana Elaine Owens: QUEEN LATIFAH", "Dominique McElligott role on 'The Boys': QUEEN MAEVE", "Angela Bassett role in 'Black Panther': QUEEN RAMONDA", "Oprah Winfrey Network show: QUEEN SUGAR"],
         revAllowed: true
     },
+    {
+        id: 257,
+        solution: ["___ FLOUR: BAKING AISLE STAPLE", "___ AND THE LIZARD WIZARD: ROCK BAND", "ENGLISH MONARCH WHO MARRIED SIX TIMES", "NICKNAME FOR LEBRON OF THE NBA", "'GOLDEN TOUCH' VICTIM OF PARABLE", "2021 FILM ABOUT THE WILLIAMS SISTERS' FATHER", "BOY MONARCH OF EGYPT"],
+        initialOrderSequence: "3162754",
+        theme: "Kings A-Z",
+        hint: "Leading men",
+        hint2: "Kings A-Z",
+        post_solve: ["Baking aisle staple: KING ARTHUR flour", "Rock band: KING GIZZARD and the Lizard Wizard", "English monarch who married six times: KING HENRY VIII", "Nickname for Lebron: KING JAMES", "'Golden Touch' victim of parable: KING MIDAS", "2021 film about the Williams sisters' father: KING RICHARD", "Boy monarch of Egypt: KING TUT"],
+        revAllowed: true
+    },
+    {
+        id: 258,
+        solution: ["NOTED TAYLOR SWIFT PRODUCER/COLLABORATOR", "'SCHOOL OF ROCK' STAR", "FOUNDER OF TWITTER", "'BANANA PANCAKES' SINGER-SONGWRITER", "'ON THE ROAD' AUTHOR", "'THE SHINING' STAR", "'THE WHITE STRIPES' FRONTMAN"],
+        initialOrderSequence: "2754136",
+        theme: "Jacks A-Z",
+        hint: "Jacks",
+        hint2: "Jacks A-Z",
+        post_solve: ["Taylor Swift producer/collaborator: JACK ANTONOFF", "'School of Rock' star: JACK BLACK", "Founder of Twitter: JACK DORSEY", "'Banana Pancakes' singer-songwriter: JACK JOHNSON", "'On the Road' author: JACK KEROUAC", "'The Shining' star: JACK NICHOLSON", "'The White Stripes' frontman: JACK WHITE"],
+        revAllowed: true
+    },
 ];
