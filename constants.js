@@ -2553,4 +2553,14 @@ export const puzzles = [
         post_solve: ["Berkeley, e.g.: UC", "Major island nation: UK", "Intl. org. based in NYC: UN", "Pixar film with 'Dug': UP", "Ancient 'royal' board game: UR", "Beehive State postal code: UT", "Type of radiation: UV"],
         revAllowed: true
     },
+    {
+        id: 256,
+        solution: ["___'S LACE (WILD CARROT)", "'SINGLE LADIES' SINGER NICKNAME", "LONGEST-REIGNING BRITISH MONARCH EVER", "ARTIST/ACTRESS DANA ELAINE OWENS", "DOMINIQUE MCELLIGOTT ROLE ON 'THE BOYS'", "ANGELA BASSETT ROLE IN 'BLACK PANTHER'", "OPRAH WINFREY NETWORK SHOW SET ON A FARM"],
+        initialOrderSequence: "6735142",
+        theme: "Queens A-Z",
+        hint: "Leading ladies",
+        hint2: "Queens A-Z",
+        post_solve: ["___'s lace (wild carrot): QUEEN ANNE", "'Single Ladies' singer nickname: QUEEN BEY", "Longest-reigning British monarch: QUEEN ELIZABETH II", "Artist/actress Dana Elaine Owens: QUEEN LATIFAH", "Dominique McElligott role on 'The Boys': QUEEN MAEVE", "Angela Bassett role in 'Black Panther': QUEEN RAMONDA", "Oprah Winfrey Network show: QUEEN SUGAR"],
+        revAllowed: true
+    },
 ];
