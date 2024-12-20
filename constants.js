@@ -2583,4 +2583,15 @@ export const puzzles = [
         post_solve: ["Taylor Swift producer/collaborator: JACK ANTONOFF", "'School of Rock' star: JACK BLACK", "Founder of Twitter: JACK DORSEY", "'Banana Pancakes' singer-songwriter: JACK JOHNSON", "'On the Road' author: JACK KEROUAC", "'The Shining' star: JACK NICHOLSON", "'The White Stripes' frontman: JACK WHITE"],
         revAllowed: true
     },
+    {
+        id: 259,
+        solution: ["USA", "BRAZIL", "THE EU", "CHINA", "NEW ZEALAND", "PANAMA", "PUERTO RICO"],
+        initialOrderSequence: "4651372",
+        theme: "Flags by number of stars",
+        hint: "Flying stars",
+        hint2: "Flags by number of stars",
+        post_solve: ["USA: 50", "Brazil: 27", "The EU: 12", "China: 5", "New Zealand: 4", "Panama: 2", "Puerto Rico: 1", "Puzzle by Gabe Antell-Proulx"],
+        revAllowed: true
+    },
+    
 ];
