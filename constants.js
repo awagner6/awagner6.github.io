@@ -2530,7 +2530,7 @@ export const puzzles = [
         theme: "ROYGBIV of Marvel characters",
         hint: "Marvelous rainbow",
         hint2: "ROYGBIV of Marvel characters",
-        post_solve: ["Spider-Man's mask: Red", "The Thing: Orange", "Wolverine's mask: Yellow", "The Incredible Hulk: Green", "Captain America's mask: Blue", "Nebula's suit: Indigo", "Thanos: Violet"],
+        post_solve: ["Spider-Man's mask: Red", "The Thing: Orange", "Wolverine's mask: Yellow", "The Incredible Hulk: Green", "Captain America's mask: Blue", "Nebula's suit: Indigo", "Thanos: Violet", "Theme inspo from Alex Wein"],
         revAllowed: true
     },
     {
