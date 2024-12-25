@@ -2605,6 +2605,16 @@ export const puzzles = [
     },
     {
         id: 261,
+        solution: ["MORNING CLOCK ABBR", "PRIVATE INSTAGRAM COMMUNICATION", "HIGHER-FREQUENCY RADIO FORMAT", "OWNER OF CHEVROLET", "APPROX .62 MILES", "COPYRIGHT PROTECTION LETTERS", "SATELLITE RADIO COMPANY THAT MERGED WITH SIRIUS"],
+        initialOrderSequence: "2751364",
+        theme: "Letter + M",
+        hint: "Before the half",
+        hint2: "Letter + M",
+        post_solve: ["Morning clock abbr: AM", "Private Instagram communication: DM", "Higher-frequency radio format: FM", "Owner of Chevrolet: GM", "Approx .62 miles: KM", "Copyright protection letters: TM", "Satellite radio company: XM"],
+        revAllowed: true
+    },
+    {
+        id: 262,
         solution: ["RIHANNA", "SHAKIRA + JENNIFER LOPEZ", "LADY GAGA", "KATY PERRY", "BEYONCÉ", "MADONNA", "DIANA ROSS"],
         initialOrderSequence: "6174253",
         theme: "Super Bowl halftime show headlining ladies",
