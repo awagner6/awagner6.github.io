@@ -2593,5 +2593,25 @@ export const puzzles = [
         post_solve: ["USA: 50", "Brazil: 27", "The EU: 12", "China: 5", "New Zealand: 4", "Panama: 2", "Puerto Rico: 1", "Puzzle by Gabe Antell-Proulx"],
         revAllowed: true
     },
+    {
+        id: 260,
+        solution: ["'JINGLE BELLS' SLEIGH", "RUSSIAN TROIKA", "BIBLICAL APOCALYPSE", "VALUE OF A CAVALRY PIECE IN RISK", "THE MANE ___: 'MY LITTLE PONY' PROTAGONISTS", "BUDWEISER WAGON", "U.S. TRIPLE CROWN WINNERS (EVER)"],
+        initialOrderSequence: "2613754",
+        theme: "Horse counts",
+        hint: "Hold your horses",
+        hint2: "Horse counts",
+        post_solve: ["'Jingle Bells' sleigh: 1", "Russian troika: 3", "Biblical apocalypse: 4", "Risk cavalry piece value: 5", "'My Little Pony' protagonists: The Mane Six", "Budweiser wagon: 8 Clydesdales", "U.S. Triple Crown winners (ever): 13"],
+        revAllowed: true
+    },
+    {
+        id: 261,
+        solution: ["RIHANNA", "SHAKIRA + JENNIFER LOPEZ", "LADY GAGA", "KATY PERRY", "BEYONCÉ", "MADONNA", "DIANA ROSS"],
+        initialOrderSequence: "6174253",
+        theme: "Super Bowl halftime show headlining ladies",
+        hint: "Halftime headliners",
+        hint2: "Super Bowl halftime show headlining ladies",
+        post_solve: ["Rihanna: LVII (2023)", "Shakira and J. Lo: LIV (2020)", "Lady Gaga: LI (2017)", "Katy Perry: XLIX (2015)", "Beyoncé: XLVII (2013)", "Madonna: XLVI (2012)", "Diana Ross: XXX (1996)"],
+        revAllowed: true
+    },
     
 ];
