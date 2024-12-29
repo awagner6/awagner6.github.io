@@ -2585,6 +2585,16 @@ export const puzzles = [
     },
     {
         id: 259,
+        solution: ["THE LITTLE MERMAID", "SLEEPING BEAUTY", "BEAUTY AND THE BEAST", "ALADDIN", "BRAVE", "TANGLED", "THE PRINCESS AND THE FROG"],
+        initialOrderSequence: "2164735",
+        theme: "Disney movies by alphabetical princess",
+        hint: "Princesses A-Z",
+        hint2: "Disney movies by alphabetical princess",
+        post_solve: ["The Little Mermaid: Ariel", "Sleeping Beauty: Aurora", "Beauty and the Beast: Belle", "Aladdin: Jasmine", "Brave: Merida", "Tangled: Rapunzel", "The Pricness and the Frog: Tiana"],
+        revAllowed: true
+    },
+    {
+        id: 260,
         solution: ["USA", "BRAZIL", "THE EU", "CHINA", "NEW ZEALAND", "PANAMA", "PUERTO RICO"],
         initialOrderSequence: "4651372",
         theme: "Flags by number of stars",
@@ -2594,7 +2604,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 260,
+        id: 261,
         solution: ["'JINGLE BELLS' SLEIGH", "RUSSIAN TROIKA", "BIBLICAL APOCALYPSE", "VALUE OF A CAVALRY PIECE IN RISK", "THE MANE ___: 'MY LITTLE PONY' PROTAGONISTS", "BUDWEISER WAGON", "U.S. TRIPLE CROWN WINNERS (EVER)"],
         initialOrderSequence: "2613754",
         theme: "Horse counts",
@@ -2604,7 +2614,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 261,
+        id: 262,
         solution: ["MORNING CLOCK ABBR", "PRIVATE INSTAGRAM COMMUNICATION", "HIGHER-FREQUENCY RADIO FORMAT", "OWNER OF CHEVROLET", "APPROX .62 MILES", "COPYRIGHT PROTECTION LETTERS", "SATELLITE RADIO COMPANY THAT MERGED WITH SIRIUS"],
         initialOrderSequence: "2751364",
         theme: "Letter + M",
@@ -2614,7 +2624,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 262,
+        id: 263,
         solution: ["RIHANNA", "SHAKIRA + JENNIFER LOPEZ", "LADY GAGA", "KATY PERRY", "BEYONCÉ", "MADONNA", "DIANA ROSS"],
         initialOrderSequence: "6174253",
         theme: "Super Bowl halftime show headlining ladies",
