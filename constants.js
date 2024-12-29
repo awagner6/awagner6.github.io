@@ -2590,7 +2590,7 @@ export const puzzles = [
         theme: "Disney movies by alphabetical princess",
         hint: "Princesses A-Z",
         hint2: "Disney movies by alphabetical princess",
-        post_solve: ["The Little Mermaid: Ariel", "Sleeping Beauty: Aurora", "Beauty and the Beast: Belle", "Aladdin: Jasmine", "Brave: Merida", "Tangled: Rapunzel", "The Pricness and the Frog: Tiana"],
+        post_solve: ["The Little Mermaid: Ariel", "Sleeping Beauty: Aurora", "Beauty and the Beast: Belle", "Aladdin: Jasmine", "Brave: Merida", "Tangled: Rapunzel", "The Pricness and the Frog: Tiana", "Theme by Mallory Kanterman"],
         revAllowed: true
     },
     {
@@ -2631,6 +2631,16 @@ export const puzzles = [
         hint: "Halftime headliners",
         hint2: "Super Bowl halftime show headlining ladies",
         post_solve: ["Rihanna: LVII (2023)", "Shakira and J. Lo: LIV (2020)", "Lady Gaga: LI (2017)", "Katy Perry: XLIX (2015)", "Beyoncé: XLVII (2013)", "Madonna: XLVI (2012)", "Diana Ross: XXX (1996)"],
+        revAllowed: true
+    },
+    {
+        id: 264,
+        solution: ["SMALLPOX", "TETANUS", "INFLUENZA", "POLIO", "CHICKENPOX", "MALARIA", "COVID"],
+        initialOrderSequence: "6143752",
+        theme: "Vaccine invention timeline",
+        hint: "Vaccinventions",
+        hint2: "Vaccine invention timeline",
+        post_solve: ["Smallpox: 1796", "Tetanus: 1924", "Influenza: 1945", "Polio: 1955", "Chickenpox: 1995", "HPV: 2006", "COVID: 2020", "Thanks for the idea mom!"],
         revAllowed: true
     },
     
