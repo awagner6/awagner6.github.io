@@ -2643,5 +2643,15 @@ export const puzzles = [
         post_solve: ["Smallpox: 1796", "Tetanus: 1924", "Influenza: 1945", "Polio: 1955", "Chickenpox: 1995", "HPV: 2006", "COVID: 2020", "Thanks for the idea mom!"],
         revAllowed: true
     },
+    {
+        id: 265,
+        solution: ["MARY POPPINS / MARY POPPINS RETURNS", "TOP GUN / TOP GUN: MAVERICK", "BLADE RUNNER / BLADE RUNNER 2049", "TWISTER / TWISTERS", "DUMB AND DUMBER / DUMB AND DUMBER TO", "THE INCREDIBLES / THE INCREDIBLES 2", "AVATAR / AVATAR: THE WAY OF WATER"],
+        initialOrderSequence: "2613574",
+        theme: "Lengths of gaps between movies and sequels",
+        hint: "Wait times",
+        hint2: "Lengths of gaps between movies and sequels",
+        post_solve: ["Mary Poppins / Mary Poppins Returns: 54 years (1964-2018)", "Top Gun / Top Gun: Maverick: 36 years (1986-2022)",  "Blade Runner / Blade Runner 2049: 35 years (1982-2017)", "Twister / Twisters: 28 years (1996-2024)", "Dumb and Dumber / Dumb and Dumber To: 20 years (1994-2014)", "The Incredibles / The Incredibles 2: 14 years (2004-2018)", "Avatar / Avatar: The Way of Water: 13 years (2009-2022)"],
+        revAllowed: true
+    }
     
 ];
