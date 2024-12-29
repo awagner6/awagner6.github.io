@@ -2650,7 +2650,7 @@ export const puzzles = [
         theme: "Lengths of gaps between movies and sequels",
         hint: "Wait times",
         hint2: "Lengths of gaps between movies and sequels",
-        post_solve: ["Mary Poppins / Mary Poppins Returns: 54 years (1964-2018)", "Top Gun / Top Gun: Maverick: 36 years (1986-2022)",  "Blade Runner / Blade Runner 2049: 35 years (1982-2017)", "Twister / Twisters: 28 years (1996-2024)", "Dumb and Dumber / Dumb and Dumber To: 20 years (1994-2014)", "The Incredibles / The Incredibles 2: 14 years (2004-2018)", "Avatar / Avatar: The Way of Water: 13 years (2009-2022)"],
+        post_solve: ["Mary Poppins / Mary Poppins Returns: 54 years (1964-2018)", "Top Gun / Top Gun: Maverick: 36 years (1986-2022)",  "Blade Runner / Blade Runner 2049: 35 years (1982-2017)", "Twister / Twisters: 28 years (1996-2024)", "Dumb and Dumber / Dumb and Dumber To: 20 years (1994-2014)", "The Incredibles / The Incredibles 2: 14 years (2004-2018)", "Avatar / Avatar: The Way of Water: 13 years (2009-2022)", "Theme by Anna Wagner (thanks bub!)"],
         revAllowed: true
     }
     
