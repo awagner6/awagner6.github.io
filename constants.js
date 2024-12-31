@@ -2652,6 +2652,16 @@ export const puzzles = [
         hint2: "Lengths of gaps between movies and sequels",
         post_solve: ["Mary Poppins / Mary Poppins Returns: 54 years (1964-2018)", "Top Gun / Top Gun: Maverick: 36 years (1986-2022)",  "Blade Runner / Blade Runner 2049: 35 years (1982-2017)", "Twister / Twisters: 28 years (1996-2024)", "Dumb and Dumber / Dumb and Dumber To: 20 years (1994-2014)", "The Incredibles / The Incredibles 2: 14 years (2004-2018)", "Avatar / Avatar: The Way of Water: 13 years (2009-2022)", "Theme by Anna Wagner (thanks bub!)"],
         revAllowed: true
-    }
+    },
+    {
+        id: 266,
+        solution: ["PIZZERIA ___", "___ EQUIS BEER", "___ LECHES CAKE", "____ DE MAYO", "THE ___: ESPN SHOW FOR OBSCURE SPORTS", "NFL NICKNAME CHAD ____ JOHNSON", "___ AÑOS DE SOLEDAD: MÁRQUEZ NOVEL"],
+        initialOrderSequence: "6524713",
+        theme: "Spanish numbers",
+        hint: "Más o menos",
+        hint2: "Spanish numbers",
+        post_solve: ["Pizzeria UNO", "DOS Equis beer", "TRES leches cake", "CINCO de Mayo", "ESPN 8: The OCHO", "Chad OCHOCINCO Johnson", "CIEN Años de Soledad"],
+        revAllowed: true
+    },
     
 ];
