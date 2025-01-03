@@ -2673,4 +2673,14 @@ export const puzzles = [
         post_solve: ["First person pronoun: I (1)", "Medical fluid delivery process: IV (4)", "Bird formation: Flying V (5)", "Bowling turkey: XXX (30)", "Loop in on an email: CC (200)", "Hush-hush: on the DL (550)", "Dench/Fiennes 'Bond' role: M (1000)"],
         revAllowed: true
     },
+    {
+        id: 268,
+        solution: ["MALALA YOUSAFZAI", "NELSON MANDELA", "ELIE WIESEL", "MOTHER TERESA", "MARTIN LUTHER KING JR", "JANE ADDAMS", "THEODORE ROOSEVELT"],
+        initialOrderSequence: "3615274",
+        theme: "Nobel Peace Prize recipients",
+        hint: "Laureates of peace",
+        hint2: "Laureates of peace",
+        post_solve: ["Malala Yousafzai: 2014", "Nelson Mandela: 1993", "Elie Wiesel: 1986", "Mother Teresa: 1979", "MLK Jr: 1964", "Jane Addams: 1931", "Theodore Roosevelt: 1906"],
+        revAllowed: true
+    }
 ];
