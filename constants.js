@@ -2645,12 +2645,12 @@ export const puzzles = [
     },
     {
         id: 265,
-        solution: ["MARY POPPINS / MARY POPPINS RETURNS", "TOP GUN / TOP GUN: MAVERICK", "BLADE RUNNER / BLADE RUNNER 2049", "TWISTER / TWISTERS", "DUMB AND DUMBER / DUMB AND DUMBER TO", "THE INCREDIBLES / THE INCREDIBLES 2", "AVATAR / AVATAR: THE WAY OF WATER"],
+        solution: ["MARY POPPINS / MARY POPPINS RETURNS", "TOP GUN / TOP GUN: MAVERICK", "BLADE RUNNER / BLADE RUNNER 2049", "TWISTER / TWISTERS", "DUMB AND DUMBER / DUMB AND DUMBER TO", "THE INCREDIBLES / THE INCREDIBLES 2", "KILL BILL: VOLUME 1 / KILL BILL: VOLUME 2"],
         initialOrderSequence: "2613574",
         theme: "Lengths of gaps between movies and sequels",
         hint: "Wait times",
         hint2: "Lengths of gaps between movies and sequels",
-        post_solve: ["Mary Poppins / Mary Poppins Returns: 54 years (1964-2018)", "Top Gun / Top Gun: Maverick: 36 years (1986-2022)",  "Blade Runner / Blade Runner 2049: 35 years (1982-2017)", "Twister / Twisters: 28 years (1996-2024)", "Dumb and Dumber / Dumb and Dumber To: 20 years (1994-2014)", "The Incredibles / The Incredibles 2: 14 years (2004-2018)", "Avatar / Avatar: The Way of Water: 13 years (2009-2022)", "Theme by Anna Wagner (thanks bub!)"],
+        post_solve: ["Mary Poppins / Mary Poppins Returns: 54 years (1964-2018)", "Top Gun / Top Gun: Maverick: 36 years (1986-2022)",  "Blade Runner / Blade Runner 2049: 35 years (1982-2017)", "Twister / Twisters: 28 years (1996-2024)", "Dumb and Dumber / Dumb and Dumber To: 20 years (1994-2014)", "The Incredibles / The Incredibles 2: 14 years (2004-2018)", "Kill Bill Volume 1 / Volume 2: 1 year (2003-2004)", "Theme by Anna Wagner (thanks bub!)"],
         revAllowed: true
     },
     {
@@ -2682,5 +2682,15 @@ export const puzzles = [
         hint2: "Laureates of peace",
         post_solve: ["Malala Yousafzai: 2014", "Nelson Mandela: 1993", "Elie Wiesel: 1986", "Mother Teresa: 1979", "MLK Jr: 1964", "Jane Addams: 1931", "Theodore Roosevelt: 1906"],
         revAllowed: true
-    }
+    },
+    {
+        id: 269,
+        solution: ["MOTORCYCLE", "INTERNATIONAL SPACE STATION", "DOUBLE-DECKER BUS", "AIRBUS A380", "WORLD'S BIGGEST PASSENGER TRAIN", "NIMITZ-CLASS U.S. NAVY AIRCRAFT CARRIER", "'ICON OF THE SEAS' CRUISE SHIP"],
+        initialOrderSequence: "2745163",
+        theme: "Vehicle capacities",
+        hint: "All aboard!",
+        hint2: "Vehicle capacities",
+        post_solve: ["Motorcycle: 1-2", "International Space Station: 6 crew members", "Double-decker bus: 70-100 passengers", "Airbus A380: 853 passengers", "Largest train (Swiss Rhaetian Railway): 4,550 passengers", "Nimitz-class aircraft carrier: 5,200 crew members", "'Icon of the Seas' cruise ship: 7,600 passengers + 2,350 crew"],
+        revAllowed: true
+    },
 ];
