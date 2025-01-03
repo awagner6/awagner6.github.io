@@ -2663,5 +2663,14 @@ export const puzzles = [
         post_solve: ["Pizzeria UNO", "DOS Equis beer", "TRES leches cake", "CINCO de Mayo", "ESPN 8: The OCHO", "Chad OCHOCINCO Johnson", "CIEN Años de Soledad"],
         revAllowed: true
     },
-    
+    {
+        id: 267,
+        solution: ["FIRST PERSON PRONOUN", "MEDICAL FLUID DELIVERY PROCESS", "FLYING ___: BIRD FORMATION", "BOWLING TURKEY", "LOOP IN ON AN EMAIL", "ON THE ___: HUSH-HUSH", "'BOND' ROLE FOR JUDI DENCH AND RALPH FIENNES"],
+        initialOrderSequence: "2751364",
+        theme: "Roman numerals",
+        hint: "As the Romans do",
+        hint2: "Roman numerals",
+        post_solve: ["First person pronoun: I (1)", "Medical fluid delivery process: IV (4)", "Bird formation: Flying V (5)", "Bowling turkey: XXX (30)", "Loop in on an email: CC (200)", "Hush-hush: on the DL (550)", "Dench/Fiennes 'Bond' role: M (1000)"],
+        revAllowed: true
+    },
 ];
