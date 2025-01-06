@@ -2695,6 +2695,16 @@ export const puzzles = [
     },
     {
         id: 270,
+        solution: ["ROMAN NUMBERAL 1900", "HEBREW LETTER BEFORE NUN", "STUDIO WITH A FAMOUS LION", "PYRAMID SCHEME INITS", "'DELICIOUS!'", "___ JEANS: PARENTAL FASHION", "HUSH-HUSH"],
+        initialOrderSequence: "5437126",
+        theme: "M_M",
+        hint: "Bothsidesism",
+        hint2: "M_M",
+        post_solve: ["Roman numeral 1900: MCM", "Hebrew letter before nun: MEM", "Studio with a famous lion: MGM", "Pyramid scheme inits: MLM (multi-level marketing)", "'Delicious!': 'mmm!'", "Parental fashion: MOM jeans", "Hush-hush: MUM"],
+        revAllowed: true
+    },
+    {
+        id: 271,
         solution: ["ELMO", "ERNIE", "BIG BIRD", "KERMIT THE FROG", "COOKIE MONSTER", "GONZO", "COUNT VON COUNT"],
         initialOrderSequence: "2654713",
         theme: "ROYGBIV Muppets",
@@ -2704,7 +2714,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 271,
+        id: 272,
         solution: ["CHICAGO NFL", "CINCINNATI NFL", "CHICAGO NHL", "WINNIPEG CFL", "MILWAUKEE MLB", "MILWAUKEE NBA", "CHICAGO NBA"],
         initialOrderSequence: "6571324",
         theme: "B teams A-Z",
