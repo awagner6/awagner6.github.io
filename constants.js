@@ -2693,4 +2693,14 @@ export const puzzles = [
         post_solve: ["Motorcycle: 1-2", "International Space Station: 6 crew members", "Double-decker bus: 70-100 passengers", "Airbus A380: 853 passengers", "Largest train (Swiss Rhaetian Railway): 4,550 passengers", "Nimitz-class aircraft carrier: 5,200 crew members", "'Icon of the Seas' cruise ship: 7,600 passengers + 2,350 crew"],
         revAllowed: true
     },
+    {
+        id: 270,
+        solution: ["ELMO", "ERNIE", "BIG BIRD", "KERMIT THE FROG", "COOKIE MONSTER", "GONZO", "COUNT VON COUNT"],
+        initialOrderSequence: "2654713",
+        theme: "ROYGBIV Muppets",
+        hint: "Rainbow Connection",
+        hint2: "ROYGBIV Muppets",
+        post_solve: ["Elmo: red", "Ernie: orange", "Big Bird: yellow", "Kermit the frog: green", "Cookie monster: blue", "Gonzo: indigo", "Count Von Count: violet"],
+        revAllowed: true
+    },
 ];
