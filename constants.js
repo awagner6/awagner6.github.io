@@ -2703,4 +2703,14 @@ export const puzzles = [
         post_solve: ["Elmo: red", "Ernie: orange", "Big Bird: yellow", "Kermit the frog: green", "Cookie monster: blue", "Gonzo: indigo", "Count Von Count: violet"],
         revAllowed: true
     },
+    {
+        id: 271,
+        solution: ["CHICAGO NFL", "CINCINNATI NFL", "CHICAGO NHL", "WINNIPEG CFL", "MILWAUKEE MLB", "MILWAUKEE NBA", "CHICAGO NBA"],
+        initialOrderSequence: "6571324",
+        theme: "B teams A-Z",
+        hint: "B teams (A-Z)",
+        hint2: "Alphabetical teams",
+        post_solve: ["Chicago NFL: Bears", "Cincinnati NFL: Bengals", "Chicago NHL: Blackhawks", "Winnipeg CFL: Blue Bombers", "Milwaukee MLB: Brewers", "Chicago NBA: Bulls"],
+        revAllowed: true
+    },
 ];
