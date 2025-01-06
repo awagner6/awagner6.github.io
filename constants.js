@@ -2723,4 +2723,14 @@ export const puzzles = [
         post_solve: ["Chicago NFL: Bears", "Cincinnati NFL: Bengals", "Chicago NHL: Blackhawks", "Winnipeg CFL: Blue Bombers", "Milwaukee MLB: Brewers", "Chicago NBA: Bulls"],
         revAllowed: true
     },
+    {
+        id: 273,
+        solution: ["OYSTERS ON THE ___ SHELL", "TURTLE", "TACO BELL CHEESY GORDITA CRUNCH (TACO SHELLS)", "MARIO KART REVOLVING RED SHELLS", "OLYMPIC ROWING FINALS (TOTAL BOATS AKA SHELLS)", "BANDOLIER (AMMO BELT) SHOTGUN SHELLS", "SANIBEL ISLAND FLORIDA SEASHELL SPECIES"],
+        initialOrderSequence: "2645173",
+        theme: "Number of shells",
+        hint: "Shelling out",
+        hint2: "Number of shells",
+        post_solve: ["Oysters on the ___ shell: Half", "Turtle: 1 shell", "Cheesy Gordita Crunch: 2 shells (flatbread + crispy tortilla)", "Mario Kart revolving red shells: 3", "Olympic rowing finals: 6 shells (boats)", "Bandolier shotgun shells: ~30-60", "Sanibel Island seashell species: 250+"],
+        revAllowed: true
+    },
 ];
