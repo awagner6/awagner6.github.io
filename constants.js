@@ -2763,4 +2763,14 @@ export const puzzles = [
         post_solve: ["Palindromic kitchen brand: OXO = 0", "Most common lumber plank: 2x4 = 8", "In N Out Triple Triple burger on menus: 3x3 = 9", "Four wheel drive vehicle: 4x4 = 16", "Standard U.S. printer paper: 8.5 x 11 = 93.5", "1080p resolution: 16 x 9 = 144", "Shortest Olympic relay: 4 x 100 = 400"],
         revAllowed: true
     },
+    {
+        id: 277,
+        solution: ["HYDROGEN'S ATOMIC NUMBER", "DNA BASES", "CAT'S PROVERBIAL LIVES", "PAWNS ON A CHESSBOARD", "CHRISTMAS DAY", "HIGHEST NUMBER ON A U.S. ROULETTE WHEEL", "CALIFORNIA PRO SPORTS TEAM"],
+        initialOrderSequence: "6345172",
+        theme: "Perfect squares",
+        hint: "Squares",
+        hint2: "Perfect squares",
+        post_solve: ["Hydrogen's atomic number: 1", "DNA bases: 4", "Cat's proverbial lives: 9", "Pawns on a chessboard: 16", "Christmas day: 25", "Highest number on a U.S. roulette wheel: 36", "CA pro sports team: 49ers"],
+        revAllowed: true
+    },
 ];
