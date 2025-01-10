@@ -2733,4 +2733,34 @@ export const puzzles = [
         post_solve: ["Oysters on the ___ shell: Half", "Turtle: 1 shell", "Cheesy Gordita Crunch: 2 shells (flatbread + crispy tortilla)", "Mario Kart revolving red shells: 3", "Olympic rowing finals: 6 shells (boats)", "Bandolier shotgun shells: ~30-60", "Sanibel Island seashell species: 250+"],
         revAllowed: true
     },
+    {
+        id: 274,
+        solution: ["LONDON LANDMARK", "1984 VILLIAN WHO'S 'WATCHING YOU'", "URSA MAJOR CONSTELLATION", "COEN BROTHERS MOVIE STARRING JEFF BRIDGES", "2000 JAY-Z SONG", "MONTANA NICKNAME", "SCENIC COASTAL CALIFORNIA DESTINATION"],
+        initialOrderSequence: "6157324",
+        theme: "Big ___ (A-Z)",
+        hint: "Kind of a big deal",
+        hint2: "Big ___ (A-Z)",
+        post_solve: ["London landmark: Big Ben", "1984 villain: Big Brother", "Ursa Major constellation: Big Dipper", "Coen Brothers movie: Big Lebowski", "2000 Jay-Z song: Big Pimpin'", "Montana nickname: Big Sky", "Scenic California destination: Big Sur"],
+        revAllowed: true        
+    },
+    {
+        id: 275,
+        solution: ["SITE OF CUSTER'S LAST STAND", "NYC NEIGHBORHOOD BETWEEN THE BOWERY AND TRIBECA", "ROBIN HOOD COMPANION", "'UNDER THE SEA' DISNEY MOVIE", "'GOOD GOLLY MISS MOLLY' SINGER", "CAPITAL OF ARKANSAS", "LOUISA MAY ALCOTT NOVEL"],
+        initialOrderSequence: "2573164",
+        theme: "Little ___ (A-Z)",
+        hint: "A little something",
+        hint2: "Little ___ (A-Z)",
+        post_solve: ["Site of Custer's last stand: Little Bighorn", "NYC neighborhood: Little Italy", "Robin Hood companion: Little John", "Disney movie: Little Mermaid", "'Good Golly Miss Molly' singer: Little Richard", "Capital of Arkansas: Little Rock", "Louisa May Alcott novel: Little Women"],
+        revAllowed: true
+    },
+    {
+        id: 276,
+        solution: ["PALINDROMIC KITCHEN BRAND", "MOST COMMON LUMBER PLANK DIMENSIONS", "IN N OUT TRIPLE TRIPLE BURGER ON MENUS", "FOUR WHEEL DRIVE VEHICLE", "STANDARD U.S. PRINTER PAPER SIZE", "STANDARD 1080P SCREEN RESOLUTION", "SHORTEST OLYMPIC RELAY"],
+        initialOrderSequence: "3761425",
+        theme: "A x B products",
+        hint: "Products",
+        hint2: "A x B products",
+        post_solve: ["Palindromic kitchen brand: OXO = 0", "Most common lumber plank: 2x4 = 8", "In N Out Triple Triple burger on menus: 3x3 = 9", "Four wheel drive vehicle: 4x4 = 16", "Standard U.S. printer paper: 8.5 x 11 = 93.5", "1080p resolution: 16 x 9 = 144", "Shortest Olympic relay: 4 x 100 = 400"],
+        revAllowed: true
+    },
 ];
