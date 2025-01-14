@@ -2773,4 +2773,14 @@ export const puzzles = [
         post_solve: ["Hydrogen's atomic number: 1", "DNA bases: 4", "Cat's proverbial lives: 9", "Pawns on a chessboard: 16", "Christmas day: 25", "Highest number on a U.S. roulette wheel: 36", "CA pro sports team: 49ers"],
         revAllowed: true
     },
+    {
+        id: 278,
+        solution: ["GREENLAND", "NEW GUINEA", "MADAGASCAR", "GREAT BRITAIN", "ICELAND", "SRI LANKA", "BIG ISLAND OF HAWAII"],
+        initialOrderSequence: "2167354",
+        theme: "Islands by size",
+        hint: "Big-isles",
+        hint2: "Islands by size",
+        post_solve: ["Greenland: 836,330 sq. miles", "New Guinea: 303,381 sq. miles", "Madagascar: 587,041 sq. miles", "Great Britain: 80,823 sq. miles", "Iceland: 39,315 sq. miles", "Sri Lanka: 25,332 sq. miles", "Big island of Hawaii: 4,028 sq. miles"],
+        revAllowed: true        
+    },
 ];
