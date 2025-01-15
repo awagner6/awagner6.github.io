@@ -2745,6 +2745,16 @@ export const puzzles = [
     },
     {
         id: 275,
+        solution: ["HAWAII BIG ISLAND MAX ELEVATION", "BIG BEN TOWER HEIGHT", "BIG RIG LENGTH", "BIG BERTHA (WWI CANNON) LENGTH", "BIGGEST-EVER BIGEYE TUNA LENGTH", "BIG BIRD HEIGHT", "NOTORIOUS B.I.G. HEIGHT"],
+        initialOrderSequence: "5617423",
+        theme: "'Big' things by size",
+        hint: "Kind of a big deal pt. 2",
+        hint2: "'Big' things by size",
+        post_solve: ["Big Island max elevation: 13,803 ft (Mauna Kea)", "Big Ben tower height: 315'", "Big Rig length: ~70-80'", "Big Bertha length: 33'", "Biggest ever bigeye tuna length: 8' 2\" (250 cm!)", "Big Bird height: 8' 2\" (249 cm!)", "Notorious B.I.G. height: 6' 3\""],
+        revAllowed: true
+    },
+    {
+        id: 276,
         solution: ["SITE OF CUSTER'S LAST STAND", "NYC NEIGHBORHOOD BETWEEN THE BOWERY AND TRIBECA", "ROBIN HOOD COMPANION", "'UNDER THE SEA' DISNEY MOVIE", "'GOOD GOLLY MISS MOLLY' SINGER", "CAPITAL OF ARKANSAS", "LOUISA MAY ALCOTT NOVEL"],
         initialOrderSequence: "2573164",
         theme: "Little ___ (A-Z)",
@@ -2754,7 +2764,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 276,
+        id: 277,
         solution: ["PALINDROMIC KITCHEN BRAND", "MOST COMMON LUMBER PLANK DIMENSIONS", "IN N OUT TRIPLE TRIPLE BURGER ON MENUS", "FOUR WHEEL DRIVE VEHICLE", "STANDARD U.S. PRINTER PAPER SIZE", "STANDARD 1080P SCREEN RESOLUTION", "SHORTEST OLYMPIC RELAY"],
         initialOrderSequence: "3761425",
         theme: "A x B products",
@@ -2764,7 +2774,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 277,
+        id: 278,
         solution: ["HYDROGEN'S ATOMIC NUMBER", "DNA BASES", "CAT'S PROVERBIAL LIVES", "PAWNS ON A CHESSBOARD", "CHRISTMAS DAY", "HIGHEST NUMBER ON A U.S. ROULETTE WHEEL", "CALIFORNIA PRO SPORTS TEAM"],
         initialOrderSequence: "6345172",
         theme: "Perfect squares",
@@ -2774,7 +2784,7 @@ export const puzzles = [
         revAllowed: true
     },
     {
-        id: 278,
+        id: 279,
         solution: ["GREENLAND", "NEW GUINEA", "MADAGASCAR", "GREAT BRITAIN", "ICELAND", "SRI LANKA", "BIG ISLAND OF HAWAII"],
         initialOrderSequence: "2167354",
         theme: "Islands by size",
