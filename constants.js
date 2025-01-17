@@ -2803,4 +2803,14 @@ export const puzzles = [
         solution: ["ATM PIN: 4 digits", "Zip code: 5 digits", "Social security number: 9 digits", "US phone number: 10 digits (11 w/ country code)", "Credit card number: 16 digits (15 for Amex)", "Human body: 20 (fingers and toes)", "Pi: infinitely many digits"],
         revAllowed: true
     },
+    {
+        id: 281,
+        solution: ["___ PAN OF NEVERLAND", "FLAUTIST", "CHOSE", "POKE FROM A CHICKEN", "'__ COURSE!': RESOUNDING YES", "FERMENTED", "JALAPEÑOS AND HABANEROS"],
+        initialOrderSequence: "5174263",
+        theme: "Peter Piper tongue twister",
+        hint: "Untwist the tongue twister",
+        hint2: "Peter Piper tongue twister",
+        solution: ["___ Pan of Neverland: Peter", "Flautist: Piper", "Chose: Picked", "Poke from a chicken: (a) Peck", "__ course!: resounding yes: Of", "Fermented: Pickled", "Jalapeños and habaneros: Peppers"],
+        revAllowed: true
+    },
 ];
