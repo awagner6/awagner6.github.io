@@ -2788,9 +2788,19 @@ export const puzzles = [
         solution: ["GREENLAND", "NEW GUINEA", "MADAGASCAR", "GREAT BRITAIN", "ICELAND", "SRI LANKA", "BIG ISLAND OF HAWAII"],
         initialOrderSequence: "2167354",
         theme: "Islands by size",
-        hint: "Big-isles",
+        hint: "The big-isled",
         hint2: "Islands by size",
         post_solve: ["Greenland: 836,330 sq. miles", "New Guinea: 303,381 sq. miles", "Madagascar: 587,041 sq. miles", "Great Britain: 80,823 sq. miles", "Iceland: 39,315 sq. miles", "Sri Lanka: 25,332 sq. miles", "Big island of Hawaii: 4,028 sq. miles"],
         revAllowed: true        
+    },
+    {
+        id: 280,
+        solution: ["ATM PIN", "ZIP CODE", "SOCIAL SECURITY NUMBER", "US TELEPHONE NUMBER", "CREDIT CARD NUMBER", "HUMAN BODY", "PI"],
+        initialOrderSequence: "6517423",
+        theme: "Number of digits",
+        hint: "Can you digit?",
+        hint2: "Number of digits",
+        solution: ["ATM PIN: 4 digits", "Zip code: 5 digits", "Social security number: 9 digits", "US phone number: 10 digits (11 w/ country code)", "Credit card number: 16 digits (15 for Amex)", "Human body: 20 (fingers and toes)", "Pi: infinitely many digits"],
+        revAllowed: true
     },
 ];
