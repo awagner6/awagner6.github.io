@@ -2640,7 +2640,7 @@ export const puzzles = [
         theme: "Vaccine invention timeline",
         hint: "Vaccinventions",
         hint2: "Vaccine invention timeline",
-        post_solve: ["Smallpox: 1796", "Tetanus: 1924", "Influenza: 1945", "Polio: 1955", "Chickenpox: 1995", "HPV: 2006", "COVID: 2020", "Thanks for the idea mom!"],
+        post_solve: ["Smallpox: 1796", "Tetanus: 1924", "Influenza: 1945", "Polio: 1955", "Chickenpox: 1995", "Malaria: 2015", "COVID: 2020", "Thanks for the idea mom!"],
         revAllowed: true
     },
     {
