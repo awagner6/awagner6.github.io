@@ -2805,7 +2805,7 @@ export const puzzles = [
     },
     {
         id: 281,
-        solution: ["___ PAN OF NEVERLAND", "FLAUTIST", "CHOSE", "POKE FROM A CHICKEN", "'__ COURSE!': RESOUNDING YES", "FERMENTED", "JALAPEÑOS AND HABANEROS"],
+        solution: ["___ PAN OF NEVERLAND", "FLAUTIST", "CHOSE", "(A) POKE FROM A CHICKEN", "'__ COURSE!': RESOUNDING YES", "FERMENTED", "JALAPEÑOS AND HABANEROS"],
         initialOrderSequence: "5174263",
         theme: "Peter Piper tongue twister",
         hint: "Untwist the tongue twister",
