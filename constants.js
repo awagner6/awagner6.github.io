@@ -2813,4 +2813,24 @@ export const puzzles = [
         solution: ["___ Pan of Neverland: Peter", "Flautist: Piper", "Chose: Picked", "Poke from a chicken: (a) Peck", "__ course!: resounding yes: Of", "Fermented: Pickled", "Jalapeños and habaneros: Peppers"],
         revAllowed: true
     },
+    {
+        id: 282,
+        solution: ["NBA PLAYER JOHN WALL", "WASHINGTON D.C. VIETNAM VETS MEMORIAL WALL", "BERLIN WALL", "SEATTLE CHEWING GUM WALL", "GREAT WALL OF CHINA (AVERAGE HEIGHT)", "FENWAY PARK GREEN MONSTER", "JERSUALEM WESTERN WALL"],
+        initialOrderSequence: "6312754",
+        theme: "Wall heights",
+        hint: "Up a wall",
+        hint2: "Wall heights",
+        solution: ["NBA player John Wall: 6' 3\"", "Vietnam vets memorial wall: 10' 1.5\"", "Berlin Wall: 12'", "Seattle chewing gum wall: <15'", "Great Wall of China (avg): 25.6'", "Fenway Park Green Monster: 37' 2\"", "Jerusalem Western Wall: 62'"],
+        revAllowed: true    
+    },
+    {
+        id: 283,
+        solution: ["KENTUCKY DERBY", "HEAD OF THE CHARLES REGATTA", "MARATHON", "OLYMPIC TRIATHLON", "MONACO GRAND PRIX", "IDITAROD", "TOUR DE FRANCE"],
+        initialOrderSequence: "2654173",
+        theme: "Race lengths",
+        hint: "Start to finish",
+        hint2: "Race lengths",
+        solution: ["Kentucky Derby: 1.25 miles", "Head of the Charles Regatta: 3 miles", "Marathon: 26.2 miles", "Olympic Triathlon: 32 miles", "Monaco Grand Prix: 174.16", "Iditarod: 1,049 miles", "Tour de France: ~2,200 miles"],
+        revAllowed: true
+    }
 ];
