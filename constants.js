@@ -2853,4 +2853,14 @@ export const puzzles = [
         solution: ["New York: NYC (8.2 million)", "California: LA (3.8 million)", "Illinois: Chicago (2.6 million)", "Texas: Houston (2.3 million)", "Arizona: Phoenix (1.6 million)", "Pennsylvania: Philadelphia (1.5 million)", "Florida: Jacksonville (985 thousand)"],
         revAllowed: true        
     },
+    {
+        id: 286,
+        solution: ["HUMAN-MADE HOLE", "OCEAN TRENCH", "OIL WELL (FROM SEA BED)", "MINE", "CAVE", "LAKE", "POOL"],
+        initialOrderSequence: "6512743",
+        theme: "World's deepest depths (ft below surface)",
+        hint: "The world's deepest...",
+        hint2: "World's deepest depths",
+        solution: ["Human made hole: 40,230 ft (Kola Superdeep Borehole - Russia)", "Ocean trench: 36,201 ft (Mariana trench)", "Oil well: 35,056 (Tiber well - Gulf of Mexico)", "Mine: 12,800 ft (TauTona Mine - South Africa)", "Cave: 7,231 ft (Veryovkina - Georgia)", "Lake: 5,387 ft (Baikal - Russia)", "Pool: 197 feet (Deep Dive Dubai)"],
+        revAllowed: true
+    },
 ];
