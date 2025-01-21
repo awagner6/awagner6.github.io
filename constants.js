@@ -2832,5 +2832,15 @@ export const puzzles = [
         hint2: "Race lengths",
         solution: ["Kentucky Derby: 1.25 miles", "Head of the Charles Regatta: 3 miles", "Marathon: 26.2 miles", "Olympic Triathlon: 32 miles", "Monaco Grand Prix: 174.16", "Iditarod: 1,049 miles", "Tour de France: ~2,200 miles"],
         revAllowed: true
-    }
+    },
+    {
+        id: 284,
+        solution: ["'FANTASTIC!'", "GENETIC MATERIAL", "BIG AND BULKY", "BRUTAL AND GRAPHIC", "LACKING COMPANIONSHIP", "MÉNAGE À TROIS", "TROUBLING"],
+        initialOrderSequence: "2645173",
+        theme: "___some A-Z",
+        hint: "And then some (A-Z)",
+        hint2: "___some A-Z",
+        solution: ["'Fantastic!': Awesome", "Genetic material: Chromosome", "Big and bulky: Cumbersome", "Brutal and graphic: Gruesome", "Lacking companionship: Lonesome", "Ménage à trois: Threesome", "Troubling: Worrisome"],
+        revAllowed: true
+    },
 ];
