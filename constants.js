@@ -2843,4 +2843,14 @@ export const puzzles = [
         solution: ["'Fantastic!': Awesome", "Genetic material: Chromosome", "Big and bulky: Cumbersome", "Brutal and graphic: Gruesome", "Lacking companionship: Lonesome", "Ménage à trois: Threesome", "Troubling: Worrisome"],
         revAllowed: true
     },
+    {
+        id: 285,
+        solution: ["NEW YORK", "CALIFORNIA", "ILLINOIS", "TEXAS", "ARIZONA", "PENNSYLVANIA", "FLORIDA"],
+        initialOrderSequence: "5273164",
+        theme: "States by largest city population",
+        hint: "Biggest biggest cities",
+        hint2: "States by largest city population",
+        solution: ["New York: NYC (8.2 million)", "California: LA (3.8 million)", "Illinois: Chicago (2.6 million)", "Texas: Houston (2.3 million)", "Arizona: Phoenix (1.6 million)", "Pennsylvania: Philadelphia (1.5 million)", "Florida: Jacksonville (985 thousand)"],
+        revAllowed: true        
+    },
 ];
