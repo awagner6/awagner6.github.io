@@ -2863,4 +2863,14 @@ export const puzzles = [
         solution: ["Human made hole: 40,230 ft (Kola Superdeep Borehole - Russia)", "Ocean trench: 36,201 ft (Mariana trench)", "Oil well: 35,056 (Tiber well - Gulf of Mexico)", "Mine: 12,800 ft (TauTona Mine - South Africa)", "Cave: 7,231 ft (Veryovkina - Georgia)", "Lake: 5,387 ft (Baikal - Russia)", "Pool: 197 feet (Deep Dive Dubai)"],
         revAllowed: true
     },
+    {
+        id: 287,
+        solution: ["AVATAR", "AVENGERS: ENDGAME", "TITANIC", "STAR WARS: THE FORCE AWAKENS", "INSIDE OUT 2", "JURASSIC WORLD", "THE LION KING (2019)"],
+        initialOrderSequence: "2651734",
+        theme: "High-grossing movies",
+        hint: "Box office smashes",
+        hint2: "High-grossing movies",
+        solution: ["Avatar: $2.9B", "Avengers: Endgame: $2.7B", "Titanic: $2.2B", "Star Wars: The Force Awakens: $2.0B", "Inside Out 2: $1.69B (and counting!)", "Jurassic World: $1.67B", "The Lion King (2019): $1.65B"],
+        revAllowed: true
+    },
 ];
