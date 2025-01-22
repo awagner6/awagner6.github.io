@@ -2873,4 +2873,14 @@ export const puzzles = [
         solution: ["Avatar: $2.9B", "Avengers: Endgame: $2.7B", "Titanic: $2.2B", "Star Wars: The Force Awakens: $2.0B", "Inside Out 2: $1.69B (and counting!)", "Jurassic World: $1.67B", "The Lion King (2019): $1.65B"],
         revAllowed: true
     },
+    {
+        id: 288,
+        solution: ["REASONS: LADY GAGA SONG", "BAR: CHOCOLATE CANDY", "MANIACS: ALT ROCK BAND", "MILES: VANESSA CARLTON SONG", "ACRE WOOD: WINNIE THE POOH HOME", "GALLON HAT: COWBOY ATTIRE", "DIRECTION: BOY BAND"],
+        initialOrderSequence: "6142753",
+        theme: "Powers of 10",
+        hint: "Tenfold",
+        hint2: "Powers of 10",
+        solution: ["Lady Gaga song: Million reasons (1,000,000)", "Chocolate candy: 100 Grand Bar (100,000)", "Alt rock band: Ten thousand maniacs (10,000)", "Vanessa Carlton song: A thousand miles (1,000)", "Winnie the Pooh home: Hundred acre wood (100)", "Cowboy attire: Ten gallon hat (10)", "Boy Band: One Direction (1)"],
+        revAllowed: true
+    }
 ];
