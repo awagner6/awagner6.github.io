@@ -2882,5 +2882,15 @@ export const puzzles = [
         hint2: "Powers of 10",
         solution: ["Lady Gaga song: Million reasons (1,000,000)", "Chocolate candy: 100 Grand Bar (100,000)", "Alt rock band: Ten thousand maniacs (10,000)", "Vanessa Carlton song: A thousand miles (1,000)", "Winnie the Pooh home: Hundred acre wood (100)", "Cowboy attire: Ten gallon hat (10)", "Boy Band: One Direction (1)"],
         revAllowed: true
+    },
+    {
+        id: 289,
+        solution: ["COLLECTIVE PRONOUN", "CONTAIN", "THE ONES OVER HERE", "PROVEN FACTS", "OPPOSITE OF 'FROM'", "'__ OUR GUEST': 'BEAUTY AND THE BEAST' SONG", "INNATELY OBVIOUS"],
+        initialOrderSequence: "4253176",
+        theme: "Declaration of Independence quote",
+        hint: "Declaration declaration",
+        hint2: "Declaration of Independence quote",
+        solution: ["Collective pronoun: We", "Contain: Hold", "The ones over here: These", "Proven facts: Truths", "Opposite of 'from': To", "__ Our Guest: Be", "Innately obvious: Self-evident"],
+        revAllowed: true 
     }
 ];
