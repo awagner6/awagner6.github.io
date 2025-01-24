@@ -2892,5 +2892,15 @@ export const puzzles = [
         hint2: "Declaration of Independence quote",
         solution: ["Collective pronoun: We", "Contain: Hold", "The ones over here: These", "Proven facts: Truths", "Opposite of 'from': To", "__ Our Guest: Be", "Innately obvious: Self-evident"],
         revAllowed: true 
-    }
+    },
+    {
+        id: 290,
+        solution: ["STANDARD SOCCER BALL PANELS", "CHICKEN MCNUGGETS", "PLATONIC SOLIDS", "CHESS PIECES", "TETRIS PIECES", "U.S. ROAD SIGNS", "PASTA"],
+        initialOrderSequence: "5374216",
+        theme: "Number of different shapes",
+        hint: "All different shapes",
+        hint2: "Number of different shapes",
+        solution: ["Soccer ball panels: 2 (hexagon + pentagon)", "Chicken McNuggets: 4 (bell, bone, boot, ball)", "Platonic solids: 5 (tetrahedron, cube, octahedron, dodecahedron, icosahedron)", "Chess pieces: 6 (pawn, rook, knight, bishop, queen, king)", "Tetris pieces: 7", "US road sign shapes: 9", "Pasta shapes: 350+"],
+        revAllowed: true    
+    },
 ];
