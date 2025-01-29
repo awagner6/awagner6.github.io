@@ -2913,4 +2913,14 @@ export const puzzles = [
         solution: ["ISS: ~250 miles (low Earth orbit)", "GPS satellites: 12,550 miles (medium Earth orbit)", "Satellite TV satellites: 22,000 miles (geosynchronous orbit)", "The moon: 283,000 miles", "The sun: 93 million miles", "Pluto: 3.36 billion miles", "Voyager 1: 15.5 billion miles"],
         revAllowed: true
     },
+    {
+        id: 292,
+        solution: ["FORMER 'DAILY SHOW' CORRESPONDENT OLIVIA", "SMALLEST PRIME NUMBER", "GOT MARRIED", "RIGHT ___: 2003 CHINGY SONG", "COOK IN OIL", "USED A CHAIR", "MALE CHILD"],
+        initialOrderSequence: "5742613",
+        theme: "Day-of-week abbreviation soundalikes",
+        hint: "M-S word",
+        hint2: "Day-of-week abbreviation soundalikes",
+        solution: ["'Daily Show' correspondent Olivia: Munn (MON)", "Smallest prime: Two (TUE)", "Got married: Wed (WED)", "Chingy song: Right Thurr (THUR)", "Cook in oil: Fry (FRI)", "Used a chair: Sat (SAT)", "Male child: Son (SUN)"],
+        revAllowed: true
+    },
 ];
