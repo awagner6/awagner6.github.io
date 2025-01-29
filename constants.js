@@ -2923,4 +2923,14 @@ export const puzzles = [
         solution: ["'Daily Show' correspondent Olivia: Munn (MON)", "Smallest prime: Two (TUE)", "Got married: Wed (WED)", "Chingy song: Right Thurr (THUR)", "Cook in oil: Fry (FRI)", "Used a chair: Sat (SAT)", "Male child: Son (SUN)"],
         revAllowed: true
     },
+    {
+        id: 293,
+        solution: ["THE HARPERS (2 AND A HALF MEN)", "THE BUNDYS (MARRIED... WITH CHILDREN)", "THE EVANSES (GOOD TIMES)", "THE \[NO LAST NAME\]S (MALCOLM IN THE MIDDLE)", "THE PARTRIDGES (THE PARTRIDGE FAMILY)", "THE BRADYS (THE BRADY BUNCH)", "THE CAMDENS (7TH HEAVEN)"],
+        initialOrderSequence: "6521473",
+        theme: "Number of children in TV families",
+        hint: "Think of the children! (as of season 1)",
+        hint2: "Number of children of TV families",
+        solution: ["2 and a half men: 1 (Jake)", "Married... with Children: 2 (Kelly and Bud)", "Good Times: 3 (J.J., Thelma, and Michael)", "Malcolm in the Middle: 4 (Francis, Reese, Malcolm, and Dewey)", "The Partridge Family: 5 (Keith, Laurie, Danny, Chris, and Tracy)", "The Brady Bunch: 6 (Marcia, Greg, Jan, Peter, Cindy, and Bobby)", "7th Heaven: 7 (Matt, Mary, Lucy, Simon, Ruthie, Sam, and David)"],
+        revAllowed: true        
+    },
 ];
