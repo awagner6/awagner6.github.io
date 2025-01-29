@@ -2903,4 +2903,14 @@ export const puzzles = [
         solution: ["Soccer ball panels: 2 (hexagon + pentagon)", "Chicken McNuggets: 4 (bell, bone, boot, ball)", "Platonic solids: 5 (tetrahedron, cube, octahedron, dodecahedron, icosahedron)", "Chess pieces: 6 (pawn, rook, knight, bishop, queen, king)", "Tetris pieces: 7", "US road sign shapes: 9", "Pasta shapes: 350+"],
         revAllowed: true    
     },
+    {
+        id: 291,
+        solution: ["INTERNATIONAL SPACE STATION", "GPS SATELLITES", "SATELLITE TV SATELLITES", "THE MOON", "THE SUN", "PLUTO", "VOYAGER 1"],
+        initialOrderSequence: "3541672",
+        theme: "Distance from Earth",
+        hint: "Far from home",
+        hint2: "Distance from Earth",
+        solution: ["ISS: ~250 miles (low Earth orbit)", "GPS satellites: 12,550 miles (medium Earth orbit)", "Satellite TV satellites: 22,000 miles (geosynchronous orbit)", "The moon: 283,000 miles", "The sun: 93 million miles", "Pluto: 3.36 billion miles", "Voyager 1: 15.5 billion miles"],
+        revAllowed: true
+    },
 ];
