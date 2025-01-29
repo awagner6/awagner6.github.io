@@ -2933,4 +2933,14 @@ export const puzzles = [
         solution: ["2 and a half men: 1 (Jake)", "Married... with Children: 2 (Kelly and Bud)", "Good Times: 3 (J.J., Thelma, and Michael)", "Malcolm in the Middle: 4 (Francis, Reese, Malcolm, and Dewey)", "The Partridge Family: 5 (Keith, Laurie, Danny, Chris, and Tracy)", "The Brady Bunch: 6 (Marcia, Greg, Jan, Peter, Cindy, and Bobby)", "7th Heaven: 7 (Matt, Mary, Lucy, Simon, Ruthie, Sam, and David)"],
         revAllowed: true        
     },
+    {
+        id: 294,
+        solution: ["BRA", "SHELL GAME", "TEAM USA WOMEN'S WORLD CUP SOCCER WINS", "STARBUCKS CUP SIZES", "BEER PONG SETUP (ONE SIDE)", "COMPETITIVE CUP STACKING SETUP", "ONE GALLON"],
+        initialOrderSequence: "5261734",
+        theme: "Cups",
+        hint: "Cup up",
+        hint2: "Cup counts",
+        solution: ["Bra: 2 cups", "Shell game: 3 cups", "Team USA Women's World Cup wins: 4", "Starbucks cup sizes: 5 (Short, Tall, Grande, Venti, Trenta)", "Beer pong setup: 10 cups per side", "Competitive cup stacking setup: 12 cups", "One gallon: 16 cups"],
+        revAllowed: true
+    },
 ];
