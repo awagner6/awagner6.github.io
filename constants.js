@@ -2735,12 +2735,12 @@ export const puzzles = [
     },
     {
         id: 274,
-        solution: ["LONDON LANDMARK", "1984 VILLIAN WHO'S 'WATCHING YOU'", "URSA MAJOR CONSTELLATION", "COEN BROTHERS MOVIE STARRING JEFF BRIDGES", "2000 JAY-Z SONG", "MONTANA NICKNAME", "SCENIC COASTAL CALIFORNIA DESTINATION"],
+        solution: ["LONDON LANDMARK", "'1984' VILLAIN WHO'S 'WATCHING YOU'", "URSA MAJOR CONSTELLATION", "COEN BROTHERS MOVIE STARRING JEFF BRIDGES", "2000 JAY-Z SONG", "MONTANA NICKNAME", "SCENIC COASTAL CALIFORNIA DESTINATION"],
         initialOrderSequence: "6157324",
         theme: "Big ___ (A-Z)",
         hint: "Kind of a big deal",
         hint2: "Big ___ (A-Z)",
-        post_solve: ["London landmark: Big Ben", "1984 villain: Big Brother", "Ursa Major constellation: Big Dipper", "Coen Brothers movie: Big Lebowski", "2000 Jay-Z song: Big Pimpin'", "Montana nickname: Big Sky", "Scenic California destination: Big Sur"],
+        post_solve: ["London landmark: Big Ben", "'1984' villain: Big Brother", "Ursa Major constellation: Big Dipper", "Coen Brothers movie: Big Lebowski", "2000 Jay-Z song: Big Pimpin'", "Montana nickname: Big Sky", "Scenic California destination: Big Sur"],
         revAllowed: true        
     },
     {
