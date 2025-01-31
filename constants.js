@@ -2943,4 +2943,14 @@ export const puzzles = [
         solution: ["Bra: 2 cups", "Shell game: 3 cups", "Team USA Women's World Cup wins: 4", "Starbucks cup sizes: 5 (Short, Tall, Grande, Venti, Trenta)", "Beer pong setup: 10 cups per side", "Competitive cup stacking setup: 12 cups", "One gallon: 16 cups"],
         revAllowed: true
     },
+    {
+        id: 295,
+        solution: ["AIRCRAFT WARNING LIGHT", "HIGHEST CORPORATE SUITES", "HIGHEST OBSERVATION DECK", "SITE OF 'MISSION: IMPOSSIBLE' CLIMBING STUNT", "HIGHEST RESIDENTIAL SUITES", "HIGHEST SWIMMING POOL", "MAIN LOBBY"],
+        initialOrderSequence: "3461752",
+        theme: "Burj Khalifa floorplan",
+        hint: "Scaling the Burj Khalifa",
+        hint2: "World's tallest building floorplan",
+        solution: ["Aircraft warning light: spire", "Highest corporate suites: 151st floor", "Highest observation deck: 148th floor", "'M:I' climbing stunt: 123-130th floors", "Highest residential suites: 108th floor", "Highest swimming pool: 76th floor", "Main lobby: ground floor"],
+        revAllowed: true
+    },
 ];
