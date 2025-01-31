@@ -2953,4 +2953,14 @@ export const puzzles = [
         solution: ["Aircraft warning light: spire", "Highest corporate suites: 151st floor", "Highest observation deck: 148th floor", "'M:I' climbing stunt: 123-130th floors", "Highest residential suites: 108th floor", "Highest swimming pool: 76th floor", "Main lobby: ground floor"],
         revAllowed: true
     },
+    {
+        id: 296,
+        solution: ["415", "310", "303", "312", "404", "202", "212"],
+        initialOrderSequence: "6732451",
+        theme: "U.S. area codes west<->east",
+        hint: "Code-st to coast",
+        hint2: "U.S. area codes west<->east",
+        solution: ["415: San Francisco", "310: Los Angeles", "303: Denver", "312: Chicago", "404: Atlanta", "202: Washington D.C.", "212: New York City"],
+        revAllowed: true
+    },
 ];
