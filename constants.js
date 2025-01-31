@@ -2973,4 +2973,14 @@ export const puzzles = [
         post_solve: ["415: San Francisco", "310: Los Angeles", "303: Denver", "312: Chicago", "404: Atlanta", "202: Washington D.C.", "212: New York City"],
         revAllowed: true
     },
+    {
+        id: 298,
+        solution: ["FLINTSTONES FAMILY (INCLUDING DINO!)", "ORIGINAL ROLLING STONES MEMBERS", "INFINITY STONES IN 'THE AVENGERS'", "CURLING STONES PER TEAM", "BIRTHSTONES (IN WESTERN TRADITION)", "POUNDS IN ONE STONE (WEIGHT MEASUREMENT)", "STONEHENGE STONES"],
+        initialOrderSequence: "4716352",
+        theme: "Stone counts",
+        hint: "A pile of stones",
+        hint2: "Stone counts",
+        post_solve: ["Flintstones family: 4 (Wilma, Fred, Pebbles + Dino)", "Rolling stones members: 5 (Mick, Keith, Brian, Bill, Charlie)", "Infinity stones in 'The Avengers': 6 (space, reality, power, mind, time, soul)", "Curling stones per team: 8", "Birthstones: 12", "Pounds in one stone of weight: 14", "Stonehenge stones: 83 remaining"],
+        revAllowed: true        
+    }
 ];
