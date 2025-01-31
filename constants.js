@@ -2800,7 +2800,7 @@ export const puzzles = [
         theme: "Number of digits",
         hint: "Can you digit?",
         hint2: "Number of digits",
-        solution: ["ATM PIN: 4 digits", "Zip code: 5 digits", "Social security number: 9 digits", "US phone number: 10 digits (11 w/ country code)", "Credit card number: 16 digits (15 for Amex)", "Human body: 20 (fingers and toes)", "Pi: infinitely many digits"],
+        post_solve: ["ATM PIN: 4 digits", "Zip code: 5 digits", "Social security number: 9 digits", "US phone number: 10 digits (11 w/ country code)", "Credit card number: 16 digits (15 for Amex)", "Human body: 20 (fingers and toes)", "Pi: infinitely many digits"],
         revAllowed: true
     },
     {
@@ -2810,7 +2810,7 @@ export const puzzles = [
         theme: "Peter Piper tongue twister",
         hint: "Untwist the tongue twister",
         hint2: "Peter Piper tongue twister",
-        solution: ["___ Pan of Neverland: Peter", "Flautist: Piper", "Chose: Picked", "Poke from a chicken: (a) Peck", "__ course!: resounding yes: Of", "Fermented: Pickled", "Jalapeños and habaneros: Peppers"],
+        post_solve: ["___ Pan of Neverland: Peter", "Flautist: Piper", "Chose: Picked", "Poke from a chicken: (a) Peck", "__ course!: resounding yes: Of", "Fermented: Pickled", "Jalapeños and habaneros: Peppers"],
         revAllowed: true
     },
     {
@@ -2820,7 +2820,7 @@ export const puzzles = [
         theme: "Wall heights",
         hint: "Up a wall",
         hint2: "Wall heights",
-        solution: ["NBA player John Wall: 6' 3\"", "Vietnam vets memorial wall: 10' 1.5\"", "Berlin Wall: 12'", "Seattle chewing gum wall: <15'", "Great Wall of China (avg): 25.6'", "Fenway Park Green Monster: 37' 2\"", "Jerusalem Western Wall: 62'"],
+        post_solve: ["NBA player John Wall: 6' 3\"", "Vietnam vets memorial wall: 10' 1.5\"", "Berlin Wall: 12'", "Seattle chewing gum wall: <15'", "Great Wall of China (avg): 25.6'", "Fenway Park Green Monster: 37' 2\"", "Jerusalem Western Wall: 62'"],
         revAllowed: true    
     },
     {
@@ -2830,7 +2830,7 @@ export const puzzles = [
         theme: "Race lengths",
         hint: "Start to finish",
         hint2: "Race lengths",
-        solution: ["Kentucky Derby: 1.25 miles", "Head of the Charles Regatta: 3 miles", "Marathon: 26.2 miles", "Olympic Triathlon: 32 miles", "Monaco Grand Prix: 174.16", "Iditarod: 1,049 miles", "Tour de France: ~2,200 miles"],
+        post_solve: ["Kentucky Derby: 1.25 miles", "Head of the Charles Regatta: 3 miles", "Marathon: 26.2 miles", "Olympic Triathlon: 32 miles", "Monaco Grand Prix: 174.16", "Iditarod: 1,049 miles", "Tour de France: ~2,200 miles"],
         revAllowed: true
     },
     {
@@ -2840,7 +2840,7 @@ export const puzzles = [
         theme: "___some A-Z",
         hint: "And then some (A-Z)",
         hint2: "___some A-Z",
-        solution: ["'Fantastic!': Awesome", "Genetic material: Chromosome", "Big and bulky: Cumbersome", "Brutal and graphic: Gruesome", "Lacking companionship: Lonesome", "Ménage à trois: Threesome", "Troubling: Worrisome"],
+        post_solve: ["'Fantastic!': Awesome", "Genetic material: Chromosome", "Big and bulky: Cumbersome", "Brutal and graphic: Gruesome", "Lacking companionship: Lonesome", "Ménage à trois: Threesome", "Troubling: Worrisome"],
         revAllowed: true
     },
     {
@@ -2850,7 +2850,7 @@ export const puzzles = [
         theme: "States by largest city population",
         hint: "Biggest biggest cities",
         hint2: "States by largest city population",
-        solution: ["New York: NYC (8.2 million)", "California: LA (3.8 million)", "Illinois: Chicago (2.6 million)", "Texas: Houston (2.3 million)", "Arizona: Phoenix (1.6 million)", "Pennsylvania: Philadelphia (1.5 million)", "Florida: Jacksonville (985 thousand)"],
+        post_solve: ["New York: NYC (8.2 million)", "California: LA (3.8 million)", "Illinois: Chicago (2.6 million)", "Texas: Houston (2.3 million)", "Arizona: Phoenix (1.6 million)", "Pennsylvania: Philadelphia (1.5 million)", "Florida: Jacksonville (985 thousand)"],
         revAllowed: true        
     },
     {
@@ -2860,7 +2860,7 @@ export const puzzles = [
         theme: "World's deepest depths (ft below surface)",
         hint: "The world's deepest...",
         hint2: "World's deepest depths",
-        solution: ["Human made hole: 40,230 ft (Kola Superdeep Borehole - Russia)", "Ocean trench: 36,201 ft (Mariana trench)", "Oil well: 35,056 (Tiber well - Gulf of Mexico)", "Mine: 12,800 ft (TauTona Mine - South Africa)", "Cave: 7,231 ft (Veryovkina - Georgia)", "Lake: 5,387 ft (Baikal - Russia)", "Pool: 197 feet (Deep Dive Dubai)"],
+        post_solve: ["Human made hole: 40,230 ft (Kola Superdeep Borehole - Russia)", "Ocean trench: 36,201 ft (Mariana trench)", "Oil well: 35,056 (Tiber well - Gulf of Mexico)", "Mine: 12,800 ft (TauTona Mine - South Africa)", "Cave: 7,231 ft (Veryovkina - Georgia)", "Lake: 5,387 ft (Baikal - Russia)", "Pool: 197 feet (Deep Dive Dubai)"],
         revAllowed: true
     },
     {
@@ -2870,7 +2870,7 @@ export const puzzles = [
         theme: "High-grossing movies",
         hint: "Box office smashes",
         hint2: "High-grossing movies",
-        solution: ["Avatar: $2.9B", "Avengers: Endgame: $2.7B", "Titanic: $2.2B", "Star Wars: The Force Awakens: $2.0B", "Inside Out 2: $1.69B (and counting!)", "Jurassic World: $1.67B", "The Lion King (2019): $1.65B"],
+        post_solve: ["Avatar: $2.9B", "Avengers: Endgame: $2.7B", "Titanic: $2.2B", "Star Wars: The Force Awakens: $2.0B", "Inside Out 2: $1.69B (and counting!)", "Jurassic World: $1.67B", "The Lion King (2019): $1.65B"],
         revAllowed: true
     },
     {
@@ -2880,7 +2880,7 @@ export const puzzles = [
         theme: "Powers of 10",
         hint: "Tenfold",
         hint2: "Powers of 10",
-        solution: ["Lady Gaga song: Million reasons (1,000,000)", "Chocolate candy: 100 Grand Bar (100,000)", "Alt rock band: Ten thousand maniacs (10,000)", "Vanessa Carlton song: A thousand miles (1,000)", "Winnie the Pooh home: Hundred acre wood (100)", "Cowboy attire: Ten gallon hat (10)", "Boy Band: One Direction (1)"],
+        post_solve: ["Lady Gaga song: Million reasons (1,000,000)", "Chocolate candy: 100 Grand Bar (100,000)", "Alt rock band: Ten thousand maniacs (10,000)", "Vanessa Carlton song: A thousand miles (1,000)", "Winnie the Pooh home: Hundred acre wood (100)", "Cowboy attire: Ten gallon hat (10)", "Boy Band: One Direction (1)"],
         revAllowed: true
     },
     {
@@ -2890,7 +2890,7 @@ export const puzzles = [
         theme: "Declaration of Independence quote",
         hint: "Declaration declaration",
         hint2: "Declaration of Independence quote",
-        solution: ["Collective pronoun: We", "Contain: Hold", "The ones over here: These", "Proven facts: Truths", "Opposite of 'from': To", "__ Our Guest: Be", "Innately obvious: Self-evident"],
+        post_solve: ["Collective pronoun: We", "Contain: Hold", "The ones over here: These", "Proven facts: Truths", "Opposite of 'from': To", "__ Our Guest: Be", "Innately obvious: Self-evident"],
         revAllowed: true 
     },
     {
@@ -2900,7 +2900,7 @@ export const puzzles = [
         theme: "Number of different shapes",
         hint: "All different shapes",
         hint2: "Number of different shapes",
-        solution: ["Soccer ball panels: 2 (hexagon + pentagon)", "Chicken McNuggets: 4 (bell, bone, boot, ball)", "Platonic solids: 5 (tetrahedron, cube, octahedron, dodecahedron, icosahedron)", "Chess pieces: 6 (pawn, rook, knight, bishop, queen, king)", "Tetris pieces: 7", "US road sign shapes: 9", "Pasta shapes: 350+"],
+        post_solve: ["Soccer ball panels: 2 (hexagon + pentagon)", "Chicken McNuggets: 4 (bell, bone, boot, ball)", "Platonic solids: 5 (tetrahedron, cube, octahedron, dodecahedron, icosahedron)", "Chess pieces: 6 (pawn, rook, knight, bishop, queen, king)", "Tetris pieces: 7", "US road sign shapes: 9", "Pasta shapes: 350+"],
         revAllowed: true    
     },
     {
@@ -2910,7 +2910,7 @@ export const puzzles = [
         theme: "Distance from Earth",
         hint: "Far from home",
         hint2: "Distance from Earth",
-        solution: ["ISS: ~250 miles (low Earth orbit)", "GPS satellites: 12,550 miles (medium Earth orbit)", "Satellite TV satellites: 22,000 miles (geosynchronous orbit)", "The moon: 283,000 miles", "The sun: 93 million miles", "Pluto: 3.36 billion miles", "Voyager 1: 15.5 billion miles"],
+        post_solve: ["ISS: ~250 miles (low Earth orbit)", "GPS satellites: 12,550 miles (medium Earth orbit)", "Satellite TV satellites: 22,000 miles (geosynchronous orbit)", "The moon: 283,000 miles", "The sun: 93 million miles", "Pluto: 3.36 billion miles", "Voyager 1: 15.5 billion miles"],
         revAllowed: true
     },
     {
@@ -2920,7 +2920,7 @@ export const puzzles = [
         theme: "Day-of-week abbreviation soundalikes",
         hint: "M-S word",
         hint2: "Day-of-week abbreviation soundalikes",
-        solution: ["'Daily Show' correspondent Olivia: Munn (MON)", "Smallest prime: Two (TUE)", "Got married: Wed (WED)", "Chingy song: Right Thurr (THUR)", "Cook in oil: Fry (FRI)", "Used a chair: Sat (SAT)", "Male child: Son (SUN)"],
+        post_solve: ["'Daily Show' correspondent Olivia: Munn (MON)", "Smallest prime: Two (TUE)", "Got married: Wed (WED)", "Chingy song: Right Thurr (THUR)", "Cook in oil: Fry (FRI)", "Used a chair: Sat (SAT)", "Male child: Son (SUN)"],
         revAllowed: true
     },
     {
@@ -2930,7 +2930,7 @@ export const puzzles = [
         theme: "Number of children in TV families",
         hint: "Think of the children! (as of season 1)",
         hint2: "Number of children of TV families",
-        solution: ["2 and a half men: 1 (Jake)", "Married... with Children: 2 (Kelly and Bud)", "Good Times: 3 (J.J., Thelma, and Michael)", "Malcolm in the Middle: 4 (Francis, Reese, Malcolm, and Dewey)", "The Partridge Family: 5 (Keith, Laurie, Danny, Chris, and Tracy)", "The Brady Bunch: 6 (Marcia, Greg, Jan, Peter, Cindy, and Bobby)", "7th Heaven: 7 (Matt, Mary, Lucy, Simon, Ruthie, Sam, and David)"],
+        post_solve: ["2 and a half men: 1 (Jake)", "Married... with Children: 2 (Kelly and Bud)", "Good Times: 3 (J.J., Thelma, and Michael)", "Malcolm in the Middle: 4 (Francis, Reese, Malcolm, and Dewey)", "The Partridge Family: 5 (Keith, Laurie, Danny, Chris, and Tracy)", "The Brady Bunch: 6 (Marcia, Greg, Jan, Peter, Cindy, and Bobby)", "7th Heaven: 7 (Matt, Mary, Lucy, Simon, Ruthie, Sam, and David)"],
         revAllowed: true        
     },
     {
@@ -2940,7 +2940,7 @@ export const puzzles = [
         theme: "Cups",
         hint: "Cup up",
         hint2: "Cup counts",
-        solution: ["Bra: 2 cups", "Shell game: 3 cups", "Team USA Women's World Cup wins: 4", "Starbucks cup sizes: 5 (Short, Tall, Grande, Venti, Trenta)", "Beer pong setup: 10 cups per side", "Competitive cup stacking setup: 12 cups", "One gallon: 16 cups"],
+        post_solve: ["Bra: 2 cups", "Shell game: 3 cups", "Team USA Women's World Cup wins: 4", "Starbucks cup sizes: 5 (Short, Tall, Grande, Venti, Trenta)", "Beer pong setup: 10 cups per side", "Competitive cup stacking setup: 12 cups", "One gallon: 16 cups"],
         revAllowed: true
     },
     {
@@ -2950,17 +2950,27 @@ export const puzzles = [
         theme: "Burj Khalifa floorplan",
         hint: "Scaling the Burj Khalifa",
         hint2: "World's tallest building floorplan",
-        solution: ["Aircraft warning light: spire", "Highest corporate suites: 151st floor", "Highest observation deck: 148th floor", "'M:I' climbing stunt: 123-130th floors", "Highest residential suites: 108th floor", "Highest swimming pool: 76th floor", "Main lobby: ground floor"],
+        post_solve: ["Aircraft warning light: spire", "Highest corporate suites: 151st floor", "Highest observation deck: 148th floor", "'M:I' climbing stunt: 123-130th floors", "Highest residential suites: 108th floor", "Highest swimming pool: 76th floor", "Main lobby: ground floor"],
         revAllowed: true
     },
     {
         id: 296,
+        solution: ["ACTOR BALABAN", "STRUCTURE OF A WATER MOLECULE", "INTERNET CHUCKLE", "FAMILY MEMBER HONORED IN MAY", "TYPE OF MUSIC OR BEVERAGE", "MAYDAY CALL", "YOUNGIN'"],
+        initialOrderSequence: "5341762",
+        theme: "_O_ A-Z",
+        hint: "Around the circle",
+        hint2: "_O_ words A-Z",
+        post_solve: ["Actor Balaban: BOB", "Structure of a water molecule: HOH", "Internet chuckle: LOL", "Family member honored in May: MOM", "Type of music or beverage: POP", "Mayday call: SOS", "Youngin;: TOT"],
+        revAllowed: true
+    },
+    {
+        id: 297,
         solution: ["415", "310", "303", "312", "404", "202", "212"],
         initialOrderSequence: "6732451",
         theme: "U.S. area codes west<->east",
         hint: "Code-st to coast",
         hint2: "U.S. area codes west<->east",
-        solution: ["415: San Francisco", "310: Los Angeles", "303: Denver", "312: Chicago", "404: Atlanta", "202: Washington D.C.", "212: New York City"],
+        post_solve: ["415: San Francisco", "310: Los Angeles", "303: Denver", "312: Chicago", "404: Atlanta", "202: Washington D.C.", "212: New York City"],
         revAllowed: true
     },
 ];
