@@ -2765,12 +2765,12 @@ export const puzzles = [
     },
     {
         id: 277,
-        solution: ["PALINDROMIC KITCHEN BRAND", "MOST COMMON LUMBER PLANK DIMENSIONS", "IN N OUT TRIPLE TRIPLE BURGER ON MENUS", "FOUR WHEEL DRIVE VEHICLE", "STANDARD U.S. PRINTER PAPER SIZE", "STANDARD 1080P SCREEN RESOLUTION", "SHORTEST OLYMPIC RELAY"],
+        solution: ["PALINDROMIC KITCHEN BRAND", "MOST COMMON LUMBER PLANK DIMENSIONS", "IN N OUT TRIPLE TRIPLE BURGER ON MENUS", "FOUR WHEEL DRIVE VEHICLE", "STANDARD U.S. PRINTER PAPER SIZE", "STANDARD 1080P ASPECT RATIO", "SHORTEST OLYMPIC RELAY"],
         initialOrderSequence: "3761425",
         theme: "A x B products",
         hint: "Products",
         hint2: "A x B products",
-        post_solve: ["Palindromic kitchen brand: OXO = 0", "Most common lumber plank: 2x4 = 8", "In N Out Triple Triple burger on menus: 3x3 = 9", "Four wheel drive vehicle: 4x4 = 16", "Standard U.S. printer paper: 8.5 x 11 = 93.5", "1080p resolution: 16 x 9 = 144", "Shortest Olympic relay: 4 x 100 = 400"],
+        post_solve: ["Palindromic kitchen brand: OXO = 0", "Most common lumber plank: 2x4 = 8", "In N Out Triple Triple burger on menus: 3x3 = 9", "Four wheel drive vehicle: 4x4 = 16", "Standard U.S. printer paper: 8.5 x 11 = 93.5", "1080p aspect ratio: 16 x 9 = 144", "Shortest Olympic relay: 4 x 100 = 400"],
         revAllowed: true
     },
     {
