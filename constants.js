@@ -2790,7 +2790,7 @@ export const puzzles = [
         theme: "Islands by size",
         hint: "The big-isled",
         hint2: "Islands by size",
-        post_solve: ["Greenland: 836,330 sq. miles", "New Guinea: 303,381 sq. miles", "Madagascar: 587,041 sq. miles", "Great Britain: 80,823 sq. miles", "Iceland: 39,315 sq. miles", "Sri Lanka: 25,332 sq. miles", "Big island of Hawaii: 4,028 sq. miles"],
+        post_solve: ["Greenland: 836,330 sq. miles", "New Guinea: 303,381 sq. miles", "Madagascar: 226,658 sq. miles", "Great Britain: 80,823 sq. miles", "Iceland: 39,315 sq. miles", "Sri Lanka: 25,332 sq. miles", "Big island of Hawaii: 4,028 sq. miles"],
         revAllowed: true        
     },
     {
