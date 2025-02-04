@@ -2993,4 +2993,14 @@ export const puzzles = [
         post_solve: ["The Crossword: January 1996", "The Mini: August 2014", "Spelling Bee: 2018", "Tiles: 2019", "Wordle: February 2022", "Connections: June 2023", "Strands: March 2024"],
         revAllowed: true        
     },
+    {
+        id: 300,
+        solution: ["2006 MOVIE ABOUT SPARTAN SOLDIERS", "ALT ROCK BAND (OR NON-EMERGENCY PHONE NUMBER)", "PI DAY", "NUMBERS BEFORE 'BLASTOFF!'", "TYPE OF RIGHT TRIANGLE", "DEGREES IN A CIRCLE", "DAYS IN A YEAR"],
+        initialOrderSequence: "3614725",
+        theme: "3 followed by a number",
+        hint: "Puzzle 300!",
+        hint2: "3 followed by a number",
+        post_solve: ["2006 movie about Spartan soldiers: 300", "Alt rock band (or non emergency number): 311", "Pi day: 314", "Numbers before 'Blastoff!': 321", "Type of right triangle: 345", "Degrees in a circle: 360", "Days in a year: 365"],
+        revAllowed: true
+    },
 ];
