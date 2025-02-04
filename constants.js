@@ -3003,4 +3003,14 @@ export const puzzles = [
         post_solve: ["2006 movie about Spartan soldiers: 300", "Alt rock band (or non emergency number): 311", "Pi day: 314", "Numbers before 'Blastoff!': 321", "Type of right triangle: 345", "Degrees in a circle: 360", "Days in a year: 365"],
         revAllowed: true
     },
+    {
+        id: 301,
+        solution: ["BOOK: HIGH SCHOOL KEEPSAKE", "OF SUNDAYS: IDIOM MEANING A WHILE", "ENDER BAG: TYPE OF LUGGAGE", "TRIPPER: BEATLES SONG", "GLASS: TIMEKEEPER", "MAID: ORANGE JUICE BRAND", "CITY: CHICAGO NICKNAME"],
+        initialOrderSequence: "5372416",
+        theme: "Units of time",
+        hint: "Game time!",
+        hint2: "Units of time",
+        post_solve: ["High school keepsake: YEARbook", "Idiom meaning a while: MONTH of Sundays", "Type of luggage: WEEKender bag", "Beatles song: DAY Tripper", "Timekeeper: HOURglass", "Orange juice brand: MINUTE Maid", "Chicago nickname: SECOND City"],
+        revAllowed: true
+    },
 ];
