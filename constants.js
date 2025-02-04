@@ -2982,5 +2982,15 @@ export const puzzles = [
         hint2: "Stone counts",
         post_solve: ["Flintstones family: 4 (Wilma, Fred, Pebbles + Dino)", "Rolling stones members: 5 (Mick, Keith, Brian, Bill, Charlie)", "Infinity stones in 'The Avengers': 6 (space, reality, power, mind, time, soul)", "Curling stones per team: 8", "Birthstones: 12", "Pounds in one stone of weight: 14", "Stonehenge stones: 83 remaining"],
         revAllowed: true        
-    }
+    },
+    {
+        id: 299,
+        solution: ["THE CROSSWORD", "THE MINI", "SPELLING BEE", "TILES", "WORDLE", "CONNECTIONS", "STRANDS"],
+        initialOrderSequence: "2651743",
+        theme: "Digital NYT game releases chronologically",
+        hint: "Game time (online)",
+        hint2: "Digital NYT game releases chronologically",
+        post_solve: ["The Crossword: January 1996", "The Mini: August 2014", "Spelling Bee: 2018", "Tiles: 2019", "Wordle: February 2022", "Connections: June 2023", "Strands: March 2024"],
+        revAllowed: true        
+    },
 ];
