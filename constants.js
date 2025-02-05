@@ -3022,5 +3022,15 @@ export const puzzles = [
         hint2: "Teeth front <-> back",
         post_solve: ["Central incisor: front teeth", "Lateral incisor: next to front teeth", "Canine: cuspid/eye tooth/'pointy' tooth", "Bicuspid: premolar", "6 year molar: 1st molar", "12 year molar: 2nd molar", "Wisdom: 3rd molar"],
         revAllowed: true
-    },    
+    },
+    {
+        id: 303,
+        solution: ["PARIS", "LAUSANNE", "MILAN", "VENICE", "BELGRADE", "SOFIA", "ISTANBUL"],
+        initialOrderSequence: "5472613",
+        theme: "Stops along the Simplon Orient Express",
+        hint: "The Orient Express (Simplon)",
+        hint2: "Stops along the Simplon Orient Express",
+        post_solve: ["Paris: (France - terminus)", "Lausanne (France)", "Milan (Italy)", "Venice (Italy)", "Belgrade (Serbia)", "Sofia (Bulgaria)", "Istanbul (Turkey)"],
+        revAllowed: true
+    },
 ];
