@@ -3013,4 +3013,14 @@ export const puzzles = [
         post_solve: ["High school keepsake: YEARbook", "Idiom meaning a while: MONTH of Sundays", "Type of luggage: WEEKender bag", "Beatles song: DAY Tripper", "Timekeeper: HOURglass", "Orange juice brand: MINUTE Maid", "Chicago nickname: SECOND City"],
         revAllowed: true
     },
+    {
+        id: 302,
+        solution: ["CENTRAL INCISOR", "LATERAL INCISOR", "CANINE", "BICUSPID", "6-YEAR MOLAR", "12-YEAR MOLAR", "WISDOM TOOTH"],
+        initialOrderSequence: "3261574",
+        theme: "Teeth front <-> back",
+        hint: "A puzzle with teeth",
+        hint2: "Teeth front <-> back",
+        post_solve: ["Central incisor: front teeth", "Lateral incisor: next to front teeth", "Canine: cuspid/eye tooth/'pointy' tooth", "Bicuspid: premolar", "6 year molar: 1st molar", "12 year molar: 2nd molar", "Wisdom: 3rd molar"],
+        revAllowed: true
+    },    
 ];
