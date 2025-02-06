@@ -3033,4 +3033,14 @@ export const puzzles = [
         post_solve: ["Paris: (France - terminus)", "Lausanne (France)", "Milan (Italy)", "Venice (Italy)", "Belgrade (Serbia)", "Sofia (Bulgaria)", "Istanbul (Turkey)"],
         revAllowed: true
     },
+    {
+        id: 304,
+        solution: ["SCREW GAUGE", "US RULER", "YARDSTICK", "METER STICK", "STANDARD SEWING TAPE", "NFL CHAINS", "LONGEST-EVER TAPE MEASURE"],
+        initialOrderSequence: "6527143",
+        theme: "Measuring devices by max measurable distance",
+        hint: "Max measures",
+        hint2: "Measuring devices by max measurable distance",
+        post_solve: ["Screw gauge (aka micrometer): <6 in", "US ruler: 12 inches", "Yardstick: 36 inches (3 ft)", "Meter stick: 39.37 inches (1 meter)", "Sewing tape: 60 inches", "NFL chains: 360 in (10 yards)", "Longest-ever tape measure: 600 ft!"],
+        revAllowed: true
+    },
 ];
