@@ -3063,4 +3063,14 @@ export const puzzles = [
         post_solve: ["'Star Wars' droid: C-3PO (3)", "2010s 'Star Wars' droid: BB-8 (8)", "Doctor Who's companion: K-9 (9)", "Bender on 'Futurama': Bending unit 22 (22)", "'Terminator' model played by Arnold: T-800 (800)", "'The Wild Robot' robot: ROZZUM unit 7134 (7134)", "'2001: A Space Odyssey' AI: HAL 9000 (9000)"],
         revAllowed: true
     },
+    {
+        id: 307,
+        solution: ["'TOY STORY' ACTION FIGURE", "U.N. FORERUNNER", "DENVER NICKNAME", "UTILITY WORKER WHO CHECKS GAS/WATER/ELECTRIC SYSTEMS", "WIPEOUT IN SKI/SNOWBOARD SLANG", "SOCCER TO A BRIT", "CATERPILLAR NAMED FOR HOW IT MOVES"],
+        initialOrderSequence: "3764152",
+        theme: "Units of length",
+        hint: "Long names",
+        hint2: "Units of length",
+        post_solve: ["'Toy Story' action figure: Buzz LIGHTYEAR", "U.N. forerunner: LEAGUE of Nations (3 miles)", "Denver nickname: The MILE-high city", "Utility worker: METER reader", "Wipeout in ski/snowboard slang: YARD sale", "Soccer to a Brit: FOOTball", "Caterpillar named for how it moves: INCHworm"],
+        revAllowed: true
+    }
 ];
