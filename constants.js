@@ -3043,4 +3043,14 @@ export const puzzles = [
         post_solve: ["Screw gauge (aka micrometer): <6 in", "US ruler: 12 inches", "Yardstick: 36 inches (3 ft)", "Meter stick: 39.37 inches (1 meter)", "Sewing tape: 60 inches", "NFL chains: 360 in (10 yards)", "Longest-ever tape measure: 600 ft!"],
         revAllowed: true
     },
+    {
+        id: 305,
+        solution: ["NOOB (GAMING SLANG)", "NOTHING COMPARES TO U (SINÉAD O'CONNOR SONG)", "MEGAN (2023 HORROR MOVIE)", "GOOD FOR U (OLIVIA RODRIGO SONG)", "SEVEN (1995 THRILLER MOVIE)", "SKATER BOI (AVRIL LEVIGNE SONG)", "CANINE UNIT (POLICE DOGS)"],
+        initialOrderSequence: "5371642",
+        theme: "Names/titles stylized with numbers",
+        hint: "It's what's inside the counts",
+        hint2: "Names/titles stylized with numbers",
+        post_solve: ["Gaming slang: N00B (00)", "Sinéad O'Connor song: Nothing Compares 2 U (2)", "2023 horror movie: M3GAN (3)", "Olivia Rodrigo song: Good 4 U (4)", "1995 thriller movie: Se7en (7)", "Avril Levigne song: Sk8r Boi (8)", "Police dogs: K-9 unit (9)"],
+        revAllowed: true
+    },
 ];
