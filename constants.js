@@ -3053,4 +3053,14 @@ export const puzzles = [
         post_solve: ["Gaming slang: N00B (00)", "Sinéad O'Connor song: Nothing Compares 2 U (2)", "2023 horror movie: M3GAN (3)", "Olivia Rodrigo song: Good 4 U (4)", "1995 thriller movie: Se7en (7)", "Avril Levigne song: Sk8r Boi (8)", "Police dogs: K-9 unit (9)"],
         revAllowed: true
     },
+    {
+        id: 306,
+        solution: ["C-_PO: 'STAR WARS' DROID", "BB-_: 2010s 'STAR WARS' DROID", "K-_: DOCTOR WHO'S COMPANION", "BENDING UNIT __ AKA BENDER ON 'FUTURAMA'", "T-__: 'TERMINATOR' MODEL PLAYED BY ARNOLD", "ROZZUM UNIT ___: 'THE WILD ROBOT' ROBOT", "HAL ___: '2001: A SPACE ODYSSEY' AI"],
+        initialOrderSequence: "6351274",
+        theme: "Robots/AI of media by number",
+        hint: "Bot wait, there's more numbers!",
+        hint2: "Robots/AI of media by number",
+        post_solve: ["'Star Wars' droid: C-3PO (3)", "2010s 'Star Wars' droid: BB-8 (8)", "Doctor Who's companion: K-9 (9)", "Bender on 'Futurama': Bending unit 22 (22)", "'Terminator' model played by Arnold: T-800 (800)", "'The Wild Robot' robot: ROZZUM unit 7134 (7134)", "'2001: A Space Odyssey' AI: HAL 9000 (9000)"],
+        revAllowed: true
+    },
 ];
