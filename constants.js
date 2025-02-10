@@ -3062,7 +3062,7 @@ export const puzzles = [
         hint2: "Robots/AI of media by number",
         post_solve: ["'Star Wars' droid: C-3PO (3)", "2010s 'Star Wars' droid: BB-8 (8)", "Doctor Who's companion: K-9 (9)", "Bender on 'Futurama': Bending unit 22 (22)", "'Terminator' model played by Arnold: T-800 (800)", "'The Wild Robot' robot: ROZZUM unit 7134 (7134)", "'2001: A Space Odyssey' AI: HAL 9000 (9000)"],
         revAllowed: true
-    },
+    },breakingthesiteonpurpossseeeeeekdf,,,,fda,fdsafdsafdsa
     {
         id: 307,
         solution: ["'TOY STORY' ACTION FIGURE", "U.N. FORERUNNER", "DENVER NICKNAME", "UTILITY WORKER WHO CHECKS GAS/WATER/ELECTRIC SYSTEMS", "WIPEOUT IN SKI/SNOWBOARD SLANG", "SOCCER TO A BRIT", "CATERPILLAR NAMED FOR HOW IT MOVES"],
