@@ -3083,4 +3083,14 @@ export const puzzles = [
         post_solve: ["Keanu Reeves action movie: JOHN Wick", "Former 'Tonight Show' host: JAY Leno", "Baby Bear: CUB", "Catchy advertising tune: JINGLE", "Opposite of low: HIGH", "French word for ocean: MER", "'New Girl' character: SCHMIDT"],
         revAllowed: true
     },
+    {
+        id: 309,
+        solution: ["MIAMI", "NEW YORK", "SEATTLE", "DETROIT", "SAN FRANCISCO", "LOS ANGELES", "PHOENIX"],
+        initialOrderSequence: "5631724",
+        theme: "Amounts of rain annually",
+        hint: "Let it rain",
+        hint2: "Amounts of rain annually",
+        post_solve: ["Miami: 1,712 mm", "New York: 1,258 mm", "Seattle: 945 mm", "Detroit: 872 mm", "San Francisco: 501 mm", "Los Angeles: 362 mm", "Phoenix: 183 mm"],
+        revAllowed: true
+    },
 ];
