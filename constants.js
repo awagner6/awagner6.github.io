@@ -3112,5 +3112,15 @@ export const puzzles = [
         hint2: "Perfect cubes",
         post_solve: ["Any number to the 0th power: 1 (1 cubed)", "Number shaped like a lemniscate: 8 (2 cubed)", "Countries in the EU: 27 (3 cubed)", "Console before GameCube: Nintendo 64 (4 cubed)", "Apollo Theater home: 125th street (5 cubed)", "Cleveland Ohio area code: 216 (6 cubed)", "Studio that makes 'Halo': 343 Industries (7 cubed)"],
         revAllowed: true        
+    },
+    {
+        id: 312,
+        solution: ["WHERE FAHRENHEIT AND CELSIUS ARE EQUAL", "HARSH QUESTIONING", "SEPARATION IN A GAME TITLE", "GRAND MASTER TAEKWONDO BLACKBELT", "EARTH'S TILT ON ITS AXIS", "BOY BAND WITH NICK LACHEY", "COMPLETE CIRCLE"],
+        initialOrderSequence: "6341725",
+        theme: "Numbered degrees",
+        hint: "To a degree",
+        hint2: "Numbered degrees",
+        post_solve: ["Where Fahrenheit and Celsius are equal: -40 degrees", "Harsh questioning: the 3rd degree", "Separation in a game title: 6 degrees", "Grand master taekwondo blackbelt: 9th or 10th degree", "Earth's tilt on its axis: 23.5 degrees", "Boy band with Nick Lachey: 98 Degrees", "Complete circle: 360 degrees"],
+        revAllowed: true
     }
 ];
