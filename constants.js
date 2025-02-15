@@ -3093,4 +3093,24 @@ export const puzzles = [
         post_solve: ["Miami: 1,712 mm", "New York: 1,258 mm", "Seattle: 945 mm", "Detroit: 872 mm", "San Francisco: 501 mm", "Los Angeles: 362 mm", "Phoenix: 183 mm"],
         revAllowed: true
     },
+    {
+        id: 310,
+        solution: ["CASINO DIE", "STANDARD RUBIK'S CUBE", "KLEENEX BOX", "NINTENDO GAMECUBE", "MINECRAFT BLOCK (IN-GAME SCALE)", "THE KAABA (MECCA HOLY SITE)", "THE BORG CUBE (IN STAR TREK UNIVERSE)"],
+        initialOrderSequence: "3725164",
+        theme: "Cubes by size",
+        hint: "Cubes",
+        hint2: "Cubes by size",
+        post_solve: ["Casino die: 19mm cubed", "Rubik's cube: 5.6 cm cubed", "Kleenex box: 11.4 x 11.4 x 12.7 cm", "Nintendo GameCube: 15 cm x 11 cm x 16.1 cm", "Minecraft block: 1 m cubed", "The Kaaba: 15m x 12m x 10.5 m", "The Borg cube: 3 km cubed"],
+        revAllowed: true        
+    },
+    {
+        id: 311,
+        solution: ["ANY NUMBER TO THE ZEROTH POWER", "NUMBER SHAPED LIKE A LEMNISCATE", "COUNTRIES IN THE EU", "NINTENDO __: CONSOLE BEFORE GAMECUBE", "NYC STREET HOME TO THE APOLLO THEATER", "CLEVELAND OHIO AREA CODE", "___ INDUSTRIES: STUDIO THAT MAKES 'HALO' GAMES"],
+        initialOrderSequence: "3617425",
+        theme: "Perfect cubes",
+        hint: "Cubes part 2",
+        hint2: "Perfect cubes",
+        post_solve: ["Any number to the 0th power: 1 (1 cubed)", "Number shaped like a lemniscate: 8 (2 cubed)", "Countries in the EU: 27 (3 cubed)", "Console before GameCube: Nintendo 64 (4 cubed)", "Apollo Theater home: 125th street (5 cubed)", "Cleveland Ohio area code: 216 (6 cubed)", "Studio that makes 'Halo': 343 Industries (7 cubed)"],
+        revAllowed: true        
+    }
 ];
