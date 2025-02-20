@@ -3122,5 +3122,25 @@ export const puzzles = [
         hint2: "Numbered degrees",
         post_solve: ["Where Fahrenheit and Celsius are equal: -40 degrees", "Harsh questioning: the 3rd degree", "Separation in a game title: 6 degrees", "Grand master taekwondo blackbelt: 9th or 10th degree", "Earth's tilt on its axis: 23.5 degrees", "Boy band with Nick Lachey: 98 Degrees", "Complete circle: 360 degrees"],
         revAllowed: true
-    }
+    },
+    {
+        id: 313,
+        solution: ["STANDARD SHOT GLASS", "ONE CUP", "RED SOLO CUP", "VENTI STARBUCKS CUP", "7-ELEVEN BIG GULP", "STANLEY QUENCHER WATER BOTTLE (LARGEST)", "STANLEY CUP (NHL)"],
+        initialOrderSequence: "5247316",
+        theme: "Cups/bottles by size",
+        hint: "Cup-acity",
+        hint2: "Cups/bottles by size",
+        post_solve: ["Standard shot glass: 1.5 oz", "One cup: 8 oz", "Red Solo cup: 16 oz", "Venti Starbucks cup: 20 oz (24 for cold drinks)", "7-Eleven Original Big Gulp: 32 oz", "Stanley Quencher water bottle (largest): 40 oz", "Stanley Cup (NHL): 209 oz"],
+        revAllowed: true 
+    },
+    {
+        id: 314,
+        solution: ["___ AND WEAVE", "12PM", "POPULAR HONDA SEDAN", "___ MONTANA: RHYMING MILEY CYRUS CHARACTER", "FORMULA 1 AUTOMOBILE", "FANCIFULLY IMAGINED BIBLICAL GREETING TO EVE", "POETIC DESCRIPTION OF TEDDY ROOSEVELT"],
+        initialOrderSequence: "4613752",
+        theme: "Palindromes by length",
+        hint: "A long back and forth",
+        hint2: "Palindromes by length",
+        post_solve: ["___ and weave: BOB (3 letters)", "12pm: NOON (4 letters)", "Popular Honda sedan: CIVIC (5 letters)", "Miley Cyrus character Montana: HANNAH (6 letters)", "Formula 1 automobile: RACE CAR (7 letters)", "Fancifully imagined greeting to Eve: MADAM, I'M ADAM (10 letters)", "Poetic description of Teddy Roosevelt: A MAN A PLAN A CANAL PANAMA (21 letters)"],
+        revAllowed: true
+    },
 ];
