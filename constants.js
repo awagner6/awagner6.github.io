@@ -3143,4 +3143,14 @@ export const puzzles = [
         post_solve: ["___ and weave: BOB (3 letters)", "12pm: NOON (4 letters)", "Popular Honda sedan: CIVIC (5 letters)", "Miley Cyrus character Montana: HANNAH (6 letters)", "Formula 1 automobile: RACE CAR (7 letters)", "Fancifully imagined greeting to Eve: MADAM, I'M ADAM (10 letters)", "Poetic description of Teddy Roosevelt: A MAN A PLAN A CANAL PANAMA (21 letters)"],
         revAllowed: true
     },
+    {
+        id: 315,
+        solution: ["INSPECTOR ___: 80s CARTOON", "APPLIANCE ADJACENT TO A FRIDGE", "WORLD OF ___: VIDEO GAME FRANCHISE SINCE 2004", "ONE LOOKING UP AT THE NIGHT SKY", "POST-SIP MOUTH SENSATION", "MAGIC WORDS BEFORE 'ALAKAZAM'", "ECHOED"],
+        initialOrderSequence: "5176432",
+        theme: "Words typed only with the left hand by length",
+        hint: "Left hand only (by length)",
+        hint2: "Words typed only wiht the left hand by length",
+        post_solve: ["80s cartoon: Inspector GADGET (6 letters)", "Appliance adjacent to a fridge: FREEZER (7 letters)", "Video game franchise since 2004: World of WARCRAFT (8 letters)", "One looking up at the night sky: STARGAZER (9 letters)", "Post-sip mouth sensation: AFTERTASTE (10 letters)", "Magic words before 'alakazam': ABRACADABRA (11 letters)", "Echoed: REVERBERATED (12 letters)"],
+        revAllowed: true
+    },
 ];
