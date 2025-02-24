@@ -3163,4 +3163,14 @@ export const puzzles = [
         post_solve: ["Chappell Roan: RED Wine Supernova", "REM: ORANGE Crush", "The Beatles: YELLOW Submarine", "Lorde: GREEN Light", "Fleet Foxes: BLUE Ridge Mountains", "Sam Barber: INDIGO (feat. Avery Anna)", "Jimi Hendrix: PURPLE Haze"],
         revAllowed: true
     },
+    {
+        id: 317,
+        solution: ["MERCEDES BENZ LOGO", "GOOGLE GEMINI LOGO", "DALLAS COWBOYS LOGO", "STANDARD ASTERISK SYMBOL", "CALIFORNIA HIGHWAY PATROL BADGE", "SEATTLE MARINERS COMPASS ROSE", "FLAG OF MALAYSIA"],
+        initialOrderSequence: "6345172",
+        theme: "Stars by number of points",
+        hint: "Points of view",
+        hint2: "Stars by number of points",
+        post_solve: ["Mercedes Benz logo: 3", "Google Gemini logo: 4", "Dallas Cowboys logo: 5", "Standard asterisk symbol: 6", "California Highway Patrol badge: 7", "Seattle Mariners compass rose: 8", "Flag of Malaysia: 11"],
+        revAllowed: true        
+    },
 ];
