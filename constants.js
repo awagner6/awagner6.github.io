@@ -3153,4 +3153,14 @@ export const puzzles = [
         post_solve: ["80s cartoon: Inspector GADGET (6 letters)", "Appliance adjacent to a fridge: FREEZER (7 letters)", "Video game franchise since 2004: World of WARCRAFT (8 letters)", "One looking up at the night sky: STARGAZER (9 letters)", "Post-sip mouth sensation: AFTERTASTE (10 letters)", "Magic words before 'alakazam': ABRACADABRA (11 letters)", "Echoed: REVERBERATED (12 letters)"],
         revAllowed: true
     },
+    {
+        id: 316,
+        solution: ["WINE SUPERNOVA: CHAPPELL ROAN", "CRUSH: REM", "SUBMARINE: THE BEATLES", "LIGHT: LORDE", "RIDGE MOUNTAINS: FLEET FOXES", "(FEAT. AVERY ANNA): SAM BARBER", "HAZE: JIMI HENDRIX"],
+        initialOrderSequence: "2761435",
+        theme: "Colors in song titles",
+        hint: "Hear the rainbow",
+        hint2: "Colors in song titles",
+        post_solve: ["Chappell Roan: RED Wine Supernova", "REM: ORANGE Crush", "The Beatles: YELLOW Submarine", "Lorde: GREEN Light", "Fleet Foxes: BLUE Ridge Mountains", "Sam Barber: INDIGO (feat. Avery Anna)", "Jimi Hendrix: PURPLE Haze"],
+        revAllowed: true
+    },
 ];
