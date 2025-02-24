@@ -3173,4 +3173,14 @@ export const puzzles = [
         post_solve: ["Mercedes Benz logo: 3", "Google Gemini logo: 4", "Dallas Cowboys logo: 5", "Standard asterisk symbol: 6", "California Highway Patrol badge: 7", "Seattle Mariners compass rose: 8", "Flag of Malaysia: 11"],
         revAllowed: true        
     },
+    {
+        id: 318,
+        solution: ["ROMAN GOD OF WAR", "LATIN WORD FOR 'TO OPEN'", "GREEK GODDESS OF SPRING", "ROMAN GODDESS OF MARRIAGE", "ASSASSINATED ROMAN STATESMAN", "FIRST ROMAN EMPEROR", "ROMAN NUMBER SEVEN"],
+        initialOrderSequence: "6351724",
+        theme: "Spring/summer months by etymology",
+        hint: "Warmer half",
+        hint2: "Spring/summer months by etymology",
+        post_solve: ["Roman god of war: MARCH (Mars)", "Latin word for 'to open': APRIL (aperire)", "Greek goddess of spring: MAY (Maia)", "Roman goddess of marriage: JUNE (Juno)", "Assassinated Roman statesman: JULY (Julius Caesar)", "First Roman emperor: AUGUST (Augustus Caesar)", "Roman number seven: SEPTEMBER (septem)"],
+        revAllowed: true        
+    }
 ];
