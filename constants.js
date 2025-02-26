@@ -3182,5 +3182,15 @@ export const puzzles = [
         hint2: "Spring/summer months by etymology",
         post_solve: ["Roman god of war: MARCH (Mars)", "Latin word for 'to open': APRIL (aperire)", "Greek goddess of spring: MAY (Maia)", "Roman goddess of marriage: JUNE (Juno)", "Assassinated Roman statesman: JULY (Julius Caesar)", "First Roman emperor: AUGUST (Augustus Caesar)", "Roman number seven: SEPTEMBER (septem)"],
         revAllowed: true        
-    }
+    },
+    {
+        id: 319,
+        solution: ["HYDROGEN'S IS 1.008", "SOCIAL MEDIA SUFFIX WITH 'INSTA'", "UNIT WHOSE ABBR. ENDS IN A Z", "FIST BUMP", "NATO ALPHABET LETTER AFTER JULIET", "ACTRESS EMMA OR SHARON", "UNIT THAT CAN BE 'SHORT' OR 'LONG'"],
+        initialOrderSequence: "6735142",
+        theme: "Weight and mass units",
+        hint: "The weights of the world",
+        hint2: "Weight and mass units",
+        post_solve: ["Hydrogen's is 1.008: Atomic Mass (3.6 x 10^-27 lbs)", "Social media suffix with 'Insta': Gram (.002 lbs)", "Unit whose abbr. ends in a z: Ounce (.06 lbs)", "Fist bump: Pound (1 lb)", "NATO letter after Juliet: Kilo (2.2 lbs)", "Actress Emma or Sharon: Stone (14 lbs)", "Unit that can be 'short' or 'long': Ton (2000 lbs U.S.)"],
+        revAllowed: true
+    },
 ];
