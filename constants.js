@@ -3175,6 +3175,16 @@ export const puzzles = [
     },
     {
         id: 318,
+        solution: ["SYMBOLIC AMERICAN DESSERT", "BAND SUPERFAN", "60s ARCHETYPE ADVOCATING 'PEACE AND LOVE'", "WHAT SOMEONE WHO'S 'EATING CROW' IS 'EATING'", "BIRD CLOSELY RELATED TO CROWS", "HAT WORN BY BUSTER KEATON", "PERMANENT MARKER BRAND"],
+        initialOrderSequence: "5724136",
+        theme: "Pies A-Z",
+        hint: "Happy pi(e) day! (A<->Z)",
+        hint2: "___pie A<->Z",
+        post_solve: ["Symbolic American dessert: Apple pie", "Band superfan: Groupie", "60s archetype: Hippie", "'Eating crow' 'food': Humble pie", "Bird related to crows: Magpie", "Hat worn by Buster Keaton: Pork pie", "Permanent marker brand: Sharpie"],
+        revAllowed: true
+    },
+    {
+        id: 319,
         solution: ["ROMAN GOD OF WAR", "LATIN WORD FOR 'TO OPEN'", "GREEK GODDESS OF SPRING", "ROMAN GODDESS OF MARRIAGE", "ASSASSINATED ROMAN STATESMAN", "FIRST ROMAN EMPEROR", "ROMAN NUMBER SEVEN"],
         initialOrderSequence: "6351724",
         theme: "Spring/summer months by etymology",
@@ -3184,7 +3194,7 @@ export const puzzles = [
         revAllowed: true        
     },
     {
-        id: 319,
+        id: 320,
         solution: ["HYDROGEN'S IS 1.008", "SOCIAL MEDIA SUFFIX WITH 'INSTA'", "UNIT WHOSE ABBR. ENDS IN A Z", "FIST BUMP", "NATO ALPHABET LETTER AFTER JULIET", "ACTRESS EMMA OR SHARON", "UNIT THAT CAN BE 'SHORT' OR 'LONG'"],
         initialOrderSequence: "6735142",
         theme: "Weight and mass units",
