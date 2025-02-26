@@ -3195,6 +3195,16 @@ export const puzzles = [
     },
     {
         id: 320,
+        solution: ["SILENT FILM STAR CHAPLIN", "CAPULET PROTAGONIST OF SHAKESPEARE", "BOXER TYSON", "ACADEMY AWARD STATUE", "MONTAGUE PROTAGONIST OF SHAKESPEARE", "___ NEVADA: MOUNTAIN RANGE", "WINNER"],
+        initialOrderSequence: "5274316",
+        theme: "Proper names in the NATO phonetic alphabet",
+        hint: "NATO names",
+        hint2: "NATO alphabet names A<->Z",
+        post_solve: ["Silent film star Chaplin: Charlie", "Capulet protagonist of Shakespeare: Juliet(t)", "Boxer Tyson: Mike", "Academy Award statue: Oscar", "Montague protagonist of Shakespeare: Romeo", "___ Nevada mountain range: Sierra", "Winner: Victor"],
+        revAllowed: true        
+    },
+    {
+        id: 321,
         solution: ["HYDROGEN'S IS 1.008", "SOCIAL MEDIA SUFFIX WITH 'INSTA'", "UNIT WHOSE ABBR. ENDS IN A Z", "FIST BUMP", "NATO ALPHABET LETTER AFTER JULIET", "ACTRESS EMMA OR SHARON", "UNIT THAT CAN BE 'SHORT' OR 'LONG'"],
         initialOrderSequence: "6735142",
         theme: "Weight and mass units",
