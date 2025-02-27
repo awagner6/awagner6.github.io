@@ -3030,7 +3030,7 @@ export const puzzles = [
         theme: "Stops along the Simplon Orient Express",
         hint: "The Orient Express (Simplon)",
         hint2: "Stops along the Simplon Orient Express",
-        post_solve: ["Paris: (France - terminus)", "Lausanne (France)", "Milan (Italy)", "Venice (Italy)", "Belgrade (Serbia)", "Sofia (Bulgaria)", "Istanbul (Turkey)"],
+        post_solve: ["Paris: (France - terminus)", "Lausanne (Switzerland)", "Milan (Italy)", "Venice (Italy)", "Belgrade (Serbia)", "Sofia (Bulgaria)", "Istanbul (Turkey)"],
         revAllowed: true
     },
     {
