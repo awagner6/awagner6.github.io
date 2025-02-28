@@ -3213,4 +3213,14 @@ export const puzzles = [
         post_solve: ["Hydrogen's is 1.008: Atomic Mass (3.6 x 10^-27 lbs)", "Social media suffix with 'Insta': Gram (.002 lbs)", "Unit whose abbr. ends in a z: Ounce (.06 lbs)", "Fist bump: Pound (1 lb)", "NATO letter after Juliet: Kilo (2.2 lbs)", "Actress Emma or Sharon: Stone (14 lbs)", "Unit that can be 'short' or 'long': Ton (2000 lbs U.S.)"],
         revAllowed: true
     },
+    {
+        id: 322,
+        solution: ["SOLITAIRE", "SPIT", "SKAT", "HEARTS", "SHEEPSHEAD (WISCONSIN'S UNOFFICIAL STATE CARD GAME)", "STANDARD CASINO BLACKJACK TABLE MAXIMUM", "WORLD SERIES OF POKER FINAL TABLE"],
+        initialOrderSequence: "5612743",
+        theme: "Card games by number of players",
+        hint: "Card party",
+        hint2: "Card games by number of players",
+        post_solve: ["Solitaire: 1", "Spit: 2", "Skat: 3", "Hearts: 4", "Sheepshead: 5", "Standard casino blackjack table maximum: 7 (+ dealer)", "WSOP final table: 9"],
+        revAllowed: true        
+    }
 ];
