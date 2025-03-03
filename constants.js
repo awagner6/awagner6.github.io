@@ -3242,5 +3242,15 @@ export const puzzles = [
         hint2: "Middle initials A-Z",
         post_solve: ["CHESTER A. ARTHUR", "SUSAN B. ANTHONY", "JOHN C. CALHOUN", "JOHN D. ROCKEFELLER", "CHUCK E. CHEESE", "JOHN F. KENNEDY", "WARREN G. HARDING"],
         revAllowed: true
-    }
+    },
+    {
+        id: 325,
+        solution: ["BALDWIN", "MARTIN", "GOODMAN", "HANKS / HENRY", "CHASE", "WALKEN", "FEY / JOHANSSON / BARRYMORE / DEVITO / GOULD / MULANEY"],
+        initialOrderSequence: "5731624",
+        theme: "SNL appearances",
+        hint: "Live-from-New-Yorks",
+        hint2: "SNL host appearances",
+        post_solve: ["Alec Baldwin: 17 times", "Steve Martin: 16 times", "John Goodman: 13 times", "Tom Hanks / Buck Henry: 10 times", "Chevy Chase: 8 times", "Christopher Walken: 7 times", "Fey/Johansson/Barrymore/Devito/Gould/Mulaney: 6 times"],
+        revAllowed: true
+    },
 ];
