@@ -3263,4 +3263,14 @@ export const puzzles = [
         post_solve: ["Bob Hope: 19", "Billy Crystal: 9", "Johnny Carson: 5", "Whoopi Goldberg: 4", "Steve Martin: 3", "Ellen DeGeneres: 2", "Anne Hathaway: 1"],
         revAllowed: true        
     },
+    {
+        id: 327,
+        solution: ["DONKEY'S SOUND", "'BONKERS'", "SKIRMISH", "WHITE/BLACK MIX", "PRACTICE RELIGION", "AIRPLANE EATING SURFACE", "TYPE OF MEDICAL IMAGING"],
+        initialOrderSequence: "4613275",
+        theme: "Letter + 'ray'",
+        hint: "Ray array (A-Z)",
+        hint2: "Letter + 'ray'",
+        post_solve: ["Donkey's sound: Bray", "'Bonkers': Cray", "Skirmish: Fray", "White/black mix: Gray", "Practice religion: Pray", "Airplane eating surface: Tray", "Type of medical imaging: X-ray"],
+        revAllowed: true
+    },
 ];
