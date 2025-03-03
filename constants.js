@@ -3247,10 +3247,20 @@ export const puzzles = [
         id: 325,
         solution: ["BALDWIN", "MARTIN", "GOODMAN", "HANKS / HENRY", "CHASE", "WALKEN", "FEY / JOHANSSON / BARRYMORE / DEVITO / GOULD / MULANEY"],
         initialOrderSequence: "5731624",
-        theme: "SNL appearances",
+        theme: "SNL host appearances",
         hint: "Live-from-New-Yorks",
         hint2: "SNL host appearances",
         post_solve: ["Alec Baldwin: 17 times", "Steve Martin: 16 times", "John Goodman: 13 times", "Tom Hanks / Buck Henry: 10 times", "Chevy Chase: 8 times", "Christopher Walken: 7 times", "Fey/Johansson/Barrymore/Devito/Gould/Mulaney: 6 times"],
         revAllowed: true
+    },
+    {
+        id: 326,
+        solution: ["BOB HOPE", "BILLY CRYSTAL", "JOHNNY CARSON", "WHOOPI GOLDBERG", "STEVE MARTIN", "ELLEN DEGENERES", "ANNE HATHAWAY"],
+        initialOrderSequence: "2753164",
+        theme: "Oscar host appearances",
+        hint: "Live from the Dolby theater",
+        hint2: "Oscar host appearances",
+        post_solve: ["Bob Hope: 19", "Billy Crystal: 9", "Johnny Carson: 5", "Whoopi Goldberg: 4", "Steve Martin: 3", "Ellen DeGeneres: 2", "Anne Hathaway: 1"],
+        revAllowed: true        
     },
 ];
