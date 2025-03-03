@@ -3218,9 +3218,29 @@ export const puzzles = [
         solution: ["SOLITAIRE", "SPIT", "SKAT", "HEARTS", "SHEEPSHEAD (WISCONSIN'S UNOFFICIAL STATE CARD GAME)", "STANDARD CASINO BLACKJACK TABLE MAXIMUM", "WORLD SERIES OF POKER FINAL TABLE"],
         initialOrderSequence: "5612743",
         theme: "Card games by number of players",
-        hint: "Card party",
+        hint: "Card parties",
         hint2: "Card games by number of players",
         post_solve: ["Solitaire: 1", "Spit: 2", "Skat: 3", "Hearts: 4", "Sheepshead: 5", "Standard casino blackjack table maximum: 7 (+ dealer)", "WSOP final table: 9"],
         revAllowed: true        
+    },
+    {
+        id: 323,
+        solution: ["BLIND MAN'S BLUFF (FOREHEAD POKER)", "TEXAS HOLD 'EM", "KEMPS / KENT", "EUCHRE", "UNO", "GIN RUMMY", "HEARTS"],
+        initialOrderSequence: "6471532",
+        theme: "Card games by size of hand",
+        hint: "What's your deal?",
+        hint2: "Card games by size of hand",
+        post_solve: ["Blind Man's Bluff: 1 card", "Texas Hold 'Em: 2 cards", "Kemps/Kent: 4 cards", "Euchre: 5 cards", "Uno: 7 cards", "Gin Rummy: 10 cards", "Hearts: 13 cards"],
+        revAllowed: true        
+    },
+    {
+        id: 324,
+        solution: ["CHESTUR ARTHUR", "SUSAN ANTHONY", "JOHN CALHOUN", "JOHN ROCKEFELLER", "CHUCK CHEESE", "JOHN KENNEDY", "WARREN HARDING"],
+        initialOrderSequence: "2371465",
+        theme: "Middle initials A-Z",
+        hint: "Middle out",
+        hint2: "Middle initials A-Z",
+        post_solve: ["CHESTER A. ARTHUR", "SUSAN B. ANTHONY", "JOHN C. CALHOUN", "JOHN D. ROCKEFELLER", "CHUCK E. CHEESE", "JOHN F. KENNEDY", "WARREN G. HARDING"],
+        revAllowed: true
     }
 ];
