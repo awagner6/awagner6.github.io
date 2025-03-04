@@ -3273,4 +3273,14 @@ export const puzzles = [
         post_solve: ["Donkey's sound: Bray", "'Bonkers': Cray", "Skirmish: Fray", "White/black mix: Gray", "Practice religion: Pray", "Airplane eating surface: Tray", "Type of medical imaging: X-ray"],
         revAllowed: true
     },
+    {
+        id: 328,
+        solution: ["FUTURAMA", "STAR TREK (ORIGINAL SERIES)", "THE JETSONS", "STRANGER THINGS", "DOWNTON ABBEY", "SHOGUN", "THE FLINTSTONES"],
+        initialOrderSequence: "2641753",
+        theme: "TV shows by when they were set",
+        hint: "TV settings",
+        hint2: "TV shows by when they were set",
+        post_solve: ["Futurama: 3,000 CE", "Star Trek Original Series: 2266", "The Jetsons: 2062", "Stranger Things: 1980s", "Downton Abbey: 1910s-20s", "Shogun: ~1600", "The Flintstones: 10,000 BCE"],
+        revAllowed: true        
+    },
 ];
