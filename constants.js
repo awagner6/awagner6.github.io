@@ -3293,4 +3293,15 @@ export const puzzles = [
         post_solve: ["Isaac Newton beneath a tree: 1976", "Rainbow apple with word 'apple': 1977", "Rainbow apple: 1984", "Black monochrome apple (first time): 1998", "Glassy 'aqua version' apple: 2001", "Metallic 'chrome version' apple: 2007", "Grey monochrome apple: 2017"],
         revAllowed: true        
     },
+    {
+        id: 330,
+        solution: ["MARIO (HAT)", "YOSHI (SHOES)", "PRINCESS PEACH (HAIR)", "YOSHI (BODY)", "MARIO (PANTS)", "SHADOW MARIO (BODY)", "WALUIGI (HAT)"],
+        initialOrderSequence: "2641375",
+        theme: "Super Mario characters by ROYGBIV color",
+        hint: "Over the gamebow",
+        hint2: "Super Mario characters by ROYGBIV color",
+        post_solve: ["Mario (hat): Red", "Yoshi (shoes): Orange", "Princess Peach (hair): Yellow", "Yoshi (body): Green", "Mario (pants): Blue", "Shadow Mario (body): Indigo", "Waluigi (hat): Violet"],
+        revAllowed: true
+        
+    }
 ];
