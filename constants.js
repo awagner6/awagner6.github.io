@@ -3283,4 +3283,14 @@ export const puzzles = [
         post_solve: ["Futurama: 3,000 CE", "Star Trek Original Series: 2266", "The Jetsons: 2062", "Stranger Things: 1980s", "Downton Abbey: 1910s-20s", "Shogun: ~1600", "The Flintstones: 10,000 BCE"],
         revAllowed: true        
     },
+    {
+        id: 329,
+        solution: ["ISAAC NEWTON BENEATH A TREE", "RAINBOW APPLE WITH WORD 'APPLE'", "RAINBOW APPLE", "MONOCHROME APPLE (FIRST TIME: BLACK)", "GLASSY 'AQUA VERSION'", "METALLIC 'CHROME VERSION'", "MONOCHROME APPLE (SECOND TIME: GREY)"],
+        initialOrderSequence: "6254173",
+        theme: "Apple logos over time",
+        hint: "How you like them Apples?",
+        hint2: "Apple logos over time",
+        post_solve: ["Isaac Newton beneath a tree: 1976", "Rainbow apple with word 'apple': 1977", "Rainbow apple: 1984", "Black monochrome apple (first time): 1998", "Glassy 'aqua version' apple: 2001", "Metallic 'chrome version' apple: 2007", "Grey monochrome apple: 2017"],
+        revAllowed: true        
+    },
 ];
