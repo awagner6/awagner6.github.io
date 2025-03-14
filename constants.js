@@ -3302,6 +3302,15 @@ export const puzzles = [
         hint2: "Super Mario characters by ROYGBIV color",
         post_solve: ["Mario (hat): Red", "Yoshi (shoes): Orange", "Princess Peach (hair): Yellow", "Yoshi (body): Green", "Mario (pants): Blue", "Shadow Mario (body): Indigo", "Waluigi (hat): Violet"],
         revAllowed: true
-        
-    }
+    },
+    {
+        id: 331,
+        solution: ["___ RIDER: ALLMAN BROTHERS BAND", "__AM: MATCHBOX 20", "25 OR 6 TO __: CHICAGO", "__AM: LIL UZI VERT", "__ TO FIVE: DOLLY PARTON", "__ AM: INCUBUS", "HIGH ___: TEX RITTER"],
+        initialOrderSequence: "4763152",
+        theme: "Songs by time of morning in title",
+        hint: "Morning music",
+        hint2: "Songs by time of mroning in title",
+        post_solve: ["Allman Brothers Band: Midnight Rider", "Matchbox 20: 3AM", "Chicago: 25 or 6 to 4", "Lil Uzi Vert: 7am", "Dolly Parton: 9 to 5", "Incubus: 11 am", "Tex Ritter: High Noon"],
+        revAllowed: true
+    },
 ];
