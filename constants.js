@@ -3323,4 +3323,14 @@ export const puzzles = [
         post_solve: ["Descriptor for the super wealthy: The 1%", "Fat in reduced fat milk: 2%", "'Save __ or more by switching to Geico: 15%", "U.S. tipping standard for good service: 18-20%+", "Coin toss odds: 50%", "'Absolutely yes!': 100%", "Effort that athletes hyperbolically give: 110%"],
         revAllowed: true       
     },
+    {
+        id: 333,
+        solution: ["STRAWBERRIES", "CHERRIES/BLUEBERRIES", "PLUMS", "TOMATOES", "APPLES", "PUMPKINS", "CITRUS (BEGINNING OF SEASON!)"],
+        initialOrderSequence: "5724163",
+        theme: "Fruits/vegetables by beginning of peak season",
+        hint: "Season's greetings",
+        hint2: "Fruits/vegetables by beginning of peak season",
+        post_solve: ["Strawberries: season starts April", "Cherries/blueberries: season starts May", "Plums: season starts June", "Tomatoes: season starts July", "Apples: season starts August", "Pumpkins: season starts September", "Citrus: season starts ~December<br>Theme idea: Niki Lustig"],
+        revAllowed: true
+    },
 ];
