@@ -3333,4 +3333,14 @@ export const puzzles = [
         post_solve: ["Strawberries: season starts April", "Cherries/blueberries: season starts May", "Plums: season starts June", "Tomatoes: season starts July", "Apples: season starts August", "Pumpkins: season starts September", "Citrus: season starts ~December<br>Theme idea: Niki Lustig"],
         revAllowed: true
     },
+    {
+        id: 334,
+        solution: ["'BUTTERFLIES'", "'LITTLE RIBBONS'", "'QUILL / FEATHER WRITING IMPLEMENT'", "'TO WRAP' OR 'LITTLE TURNIP'", "'LITTLE WHEELS'", "'LITTLE STRINGS'", "'LITTLE WORMS'"],
+        initialOrderSequence: "3764152",
+        theme: "Etymologies of A<->Z pastas",
+        hint: "Pasta party A<->Z",
+        hint2: "Etymologies of A<->Z pastas",
+        post_solve: ["'Butterflies': Farfalle", "'Little ribbons': Fettucine", "'Quill / feather writing implement': Penne", "'To wrap' or 'little turnip': Ravioli", "'Little wheels': Rotelle", "'Little strings': Spaghetti", "'Little worms': Vermicelli"],
+        revAllowed: true
+    },
 ];
