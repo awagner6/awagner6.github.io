@@ -3313,4 +3313,14 @@ export const puzzles = [
         post_solve: ["Allman Brothers Band: Midnight Rider", "Matchbox 20: 3AM", "Chicago: 25 or 6 to 4", "Lil Uzi Vert: 7am", "Dolly Parton: 9 to 5", "Incubus: 11 am", "Tex Ritter: High Noon"],
         revAllowed: true
     },
+    {
+        id: 332,
+        solution: ["DESCRIPTOR FOR THE SUPER WEALTHY", "FAT IN REDUCED FAT MILK", "'SAVE ___ OR MORE BY SWITCHING TO GEICO: AD SLOGAN", "U.S. TIPPING STANDARD FOR GOOD SERVICE", "COIN TOSS ODDS", "'ABSOLUTELY YES!'", "EFFORT THAT ATHLETES HYPERBOLICALLY GIVE"],
+        initialOrderSequence: "4723516",
+        theme: "Numerical percentages",
+        hint: "Play the percentages",
+        hint2: "Numerical percentages",
+        post_solve: ["Descriptor for the super wealthy: The 1%", "Fat in reduced fat milk: 2%", "'Save __ or more by switching to Geico: 15%", "U.S. tipping standard for good service: 18-20%+", "Coin toss odds: 50%", "'Absolutely yes!': 100%", "Effort that athletes hyperbolically give: 110%"],
+        revAllowed: true       
+    },
 ];
