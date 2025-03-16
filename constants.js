@@ -3353,4 +3353,14 @@ export const puzzles = [
         post_solve: ["NBA: 370 (186-184 triple overtime)", "Ten pin bowling: 300 (perfect game)", "WNBA: 251 points (127-124)", "NFL: 113 points (72-41)", "MLB: 49 runs (26-23)", "NHL: 21 goals (12-9)", "FIFA WORLD CUP: 12 goals (7-5)"],
         revAllowed: true
     },
+    {
+        id: 336,
+        solution: ["FEDERAL RESERVE NOTE", "THE UNITED STATES OF AMERICA", "THIS NOTE IS LEGAL TENDER", "FOR ALL DEBTS PUBLIC AND PRIVATE", "WASHINGTON D.C.", "LOWER SERIAL NUMBER", "ONE DOLLAR"],
+        initialOrderSequence: "5634172",
+        theme: "Front of a dollar bill from top to bottom",
+        hint: "On the dollar (top <-> bottom)",
+        hint2: "Front of a dollar bill elements",
+        post_solve: ["FEDERAL RESERVE NOTE: upper border", "THE UNITED STATES OF AMERICA: top center", "This note is legal tender: upper left of portrait", "For all debts public and private: upper left of portrait", "Washington D.C.: center right of portrait", "Lower serial number: lower left of portrait", "ONE DOLLAR: bottom center"],
+        revAllowed: true        
+    },
 ];
