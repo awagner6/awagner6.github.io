@@ -3343,4 +3343,14 @@ export const puzzles = [
         post_solve: ["'Butterflies': Farfalle", "'Little ribbons': Fettucine", "'Quill / feather writing implement': Penne", "'To wrap' or 'little turnip': Ravioli", "'Little wheels': Rotelle", "'Little strings': Spaghetti", "'Little worms': Vermicelli"],
         revAllowed: true
     },
+    {
+        id: 335,
+        solution: ["NBA", "TEN PIN BOWLING", "WNBA", "NFL", "MLB", "NHL", "FIFA WORLD CUP"],
+        initialOrderSequence: "4627135",
+        theme: "All-time highest combined scores",
+        hint: "All-time high scores (combined)",
+        hint2: "All-time highest combined scores",
+        post_solve: ["NBA: 370 (186-184 triple overtime)", "Ten pin bowling: 300 (perfect game)", "WNBA: 251 points (127-124)", "NFL: 113 points (72-41)", "MLB: 49 runs (26-23)", "NHL: 21 goals (12-9)", "FIFA WORLD CUP: 12 goals (7-5)"],
+        revAllowed: true
+    },
 ];
