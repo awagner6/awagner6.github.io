@@ -3373,4 +3373,14 @@ export const puzzles = [
         post_solve: ["Drone propeller: 10,000-40,000 rpm", "Power drill high gear: 2,000 rpm", "Washing machine top speed: 800-1600 rpm", "Figure skater (world record): 342 rpm", "Black Hawk helicopter main rotor: 254 rpm", "LP record: 33 1/3 or 45 rpm"],
         revAllowed: true        
     },
+    {
+        id: 338,
+        solution: ["'THE' ALTERNATIVE", "STOMACH MUSCLE", "NETWORK THAT AIRS 'THE BACHELOR'", "'WHO WANTS TO BE A MILLIONAIRE' OPTIONS", "SCANTRON OPTIONS", "'___U': POP SONG BY GAYLE", "A NATURAL SCALE MUSICAL NOTES"],
+        initialOrderSequence: "2547136",
+        theme: "From A to ABCDEFG",
+        hint: "Alphabet runs",
+        hint2: "From A to ABCDEFG",
+        post_solve: ["'The' alternative: A", "Stomach muscle: AB", "Network that airs 'The Bachelor': ABC", "'Who Wants To Be A Millionaire' options: ABCD", "Scantron options: ABCDE", "___U (Gayle song): ABCDEF", "A natural scale musical notes: ABCDEFG"],
+        revAllowed: true        
+    },
 ];
