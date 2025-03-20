@@ -3235,7 +3235,7 @@ export const puzzles = [
     },
     {
         id: 324,
-        solution: ["CHESTUR ARTHUR", "SUSAN ANTHONY", "JOHN CALHOUN", "JOHN ROCKEFELLER", "CHUCK CHEESE", "JOHN KENNEDY", "WARREN HARDING"],
+        solution: ["CHESTER ARTHUR", "SUSAN ANTHONY", "JOHN CALHOUN", "JOHN ROCKEFELLER", "CHUCK CHEESE", "JOHN KENNEDY", "WARREN HARDING"],
         initialOrderSequence: "2371465",
         theme: "Middle initials A-Z",
         hint: "Middle out",
