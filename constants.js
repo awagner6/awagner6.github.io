@@ -3328,7 +3328,7 @@ export const puzzles = [
         solution: ["STRAWBERRIES", "CHERRIES/BLUEBERRIES", "PLUMS", "TOMATOES", "APPLES", "PUMPKINS", "CITRUS (BEGINNING OF SEASON!)"],
         initialOrderSequence: "5724163",
         theme: "Fruits/vegetables by beginning of peak season",
-        hint: "Season's greetings",
+        hint: "Season's greetings (CA)",
         hint2: "Fruits/vegetables by beginning of peak season",
         post_solve: ["Strawberries: season starts April", "Cherries/blueberries: season starts May", "Plums: season starts June", "Tomatoes: season starts July", "Apples: season starts August", "Pumpkins: season starts September", "Citrus: season starts ~December<br>Theme idea: Niki Lustig"],
         revAllowed: true
@@ -3402,5 +3402,15 @@ export const puzzles = [
         hint2: "Front of a dollar bill elements",
         post_solve: ["FEDERAL RESERVE NOTE: upper border", "THE UNITED STATES OF AMERICA: top center", "This note is legal tender: upper left of portrait", "For all debts public and private: upper left of portrait", "Washington D.C.: center right of portrait", "Lower serial number: lower left of portrait", "ONE DOLLAR: bottom center"],
         revAllowed: true        
+    },
+    {
+        id: 341,
+        solution: ["THE TORTURED POETS DEPARTMENT", "MIDNIGHTS", "EVERMORE/FOLKLORE", "LOVER", "REPUTATION", "1989", "RED"],
+        initialOrderSequence: "3641275",
+        theme: "Taylor Swift discography",
+        hint: "Swift releases",
+        hint2: "Taylor Swift's 7 most recent albums",
+        post_solve: ["The Tortured Poets Department: 2024", "Midnights: 2022", "Evermore/Folklore: 2020", "Lover: 2019", "Reputation: 2017", "1989: 2014", "Red: 2012"],
+        revAllowed: true
     },
 ];
