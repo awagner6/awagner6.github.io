@@ -3355,14 +3355,14 @@ export const puzzles = [
     },
     {
         id: 336,
-        solution: ["FEDERAL RESERVE NOTE", "THE UNITED STATES OF AMERICA", "THIS NOTE IS LEGAL TENDER", "FOR ALL DEBTS PUBLIC AND PRIVATE", "WASHINGTON D.C.", "LOWER SERIAL NUMBER", "ONE DOLLAR"],
-        initialOrderSequence: "5634172",
-        theme: "Front of a dollar bill from top to bottom",
-        hint: "On the dollar (top <-> bottom)",
-        hint2: "Front of a dollar bill elements",
-        post_solve: ["FEDERAL RESERVE NOTE: upper border", "THE UNITED STATES OF AMERICA: top center", "This note is legal tender: upper left of portrait", "For all debts public and private: upper left of portrait", "Washington D.C.: center right of portrait", "Lower serial number: lower left of portrait", "ONE DOLLAR: bottom center"],
-        revAllowed: true        
-    },
+        solution: ["R", "B", "A", "P", "C", "T", "Y"],
+        initialOrderSequence: "3621754",
+        theme: "Letters by alphabetical homophone",
+        hint: "Alphabetical homophones 😈",
+        hint2: "Letters by the first letter of their alphabetical homophone",
+        post_solve: ["R: Are (A)", "B: Bee (B)", "A: Eh (E)", "P: Pea/Pee (P)", "C: Sea/See (S)", "T: Tee/Tea (T)", "Y: Why (W)<br>Happy April Fools Day!"],
+        revAllowed: true
+    },    
     {
         id: 337,
         solution: ["DRONE PROPELLER", "POWER DRILL HIGH GEAR", "WASHING MACHINE TOP SPEED", "FIGURE SKATER (WORLD RECORD)", "BLACK HAWK HELICOPTER MAIN ROTOR", "LP RECORD", "EARTH"],
@@ -3381,6 +3381,26 @@ export const puzzles = [
         hint: "Alphabet runs",
         hint2: "From A to ABCDEFG",
         post_solve: ["'The' alternative: A", "Stomach muscle: AB", "Network that airs 'The Bachelor': ABC", "'Who Wants To Be A Millionaire' options: ABCD", "Scantron options: ABCDE", "___U (Gayle song): ABCDEF", "A natural scale musical notes: ABCDEFG"],
+        revAllowed: true        
+    },
+    {
+        id: 339,
+        solution: ["❤️", "😂", "🥑", "🧵", "🥺", "🏳️‍⚧️", "🫶"],
+        initialOrderSequence: "2516473",
+        theme: "Emojis by release date",
+        hint: "Release the emojis!",
+        hint2: "Emojis by release date",
+        post_solve: ["❤️: 1999", "😂: 2010", "🥑: 2016", "🧵: 2018", "🥺: 2019", "🏳️‍⚧️: 2020", "🫶: 2022"],
+        revAllowed: true        
+    },
+    {
+        id: 340,
+        solution: ["FEDERAL RESERVE NOTE", "THE UNITED STATES OF AMERICA", "THIS NOTE IS LEGAL TENDER", "FOR ALL DEBTS PUBLIC AND PRIVATE", "WASHINGTON D.C.", "LOWER SERIAL NUMBER", "ONE DOLLAR"],
+        initialOrderSequence: "5634172",
+        theme: "Front of a dollar bill from top to bottom",
+        hint: "On the dollar (top <-> bottom)",
+        hint2: "Front of a dollar bill elements",
+        post_solve: ["FEDERAL RESERVE NOTE: upper border", "THE UNITED STATES OF AMERICA: top center", "This note is legal tender: upper left of portrait", "For all debts public and private: upper left of portrait", "Washington D.C.: center right of portrait", "Lower serial number: lower left of portrait", "ONE DOLLAR: bottom center"],
         revAllowed: true        
     },
 ];
