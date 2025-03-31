@@ -3413,4 +3413,14 @@ export const puzzles = [
         post_solve: ["The Tortured Poets Department: 2024", "Midnights: 2022", "Evermore/Folklore: 2020", "Lover: 2019", "Reputation: 2017", "1989: 2014", "Red: 2012"],
         revAllowed: true
     },
+    {
+        id: 342,
+        solution: ["US STATES THAT CONTAIN THE WORD 'ISLAND'", "HAWAII (INHABITED)", "FRENCH POLYNESIA (INHABITED)", "GREECE (INHABITED)", "JAPAN (INHABITED)", "AMERICAN/CANADIAN SALAD DRESSING", "INDONESIA (INHABITED)"],
+        initialOrderSequence: "2473516",
+        theme: "Number of islands",
+        hint: "Island counts",
+        hint2: "Number of islands",
+        post_solve: ["US states that contain "island": 1 (Rhode Island)", "Hawaii: 7 inhabited (137 total)", "French Polynesia: 75 inhabited (121 total)", "Greece: 227 inhabited (~6k total)", "Japan: 260 inhabited (14k+ total)", "American/Canadian salad dressing: Thousand Island dressing", "Indonesia: ~6000 inhabited (17k+ total)"],
+        revAllowed: true        
+    }
 ];
