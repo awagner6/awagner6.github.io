@@ -3433,4 +3433,14 @@ export const puzzles = [
         post_solve: ["Chinese board game: GO", "Sea between Europe and Africa: Mediterranean", "Sea southeast of Sweden: Baltic", "Type of handwoven rug: Oriental", "Where Ben & Jerry's is headquartered: Vermont", "Yale's state: Connecticut", "Prison: Jail"],
         revAllowed: true
     },
+    {
+        id: 344,
+        solution: ["TYPE OF MEDICAL KIT", "VIP AIRPLANE SECTION", "NFL PLAY THAT 'MOVES THE CHAINS'", "MARTHA WASHINGTON OR MARY TODD LINCOLN", "CAPTAIN'S NEXT IN COMMAND", "LIKE THE PRONOUN 'I'", "FROSH"],
+        initialOrderSequence: "2541673",
+        theme: "Firsts",
+        hint: "First words (A<->Z)",
+        hint2: "First + word",
+        post_solve: ["Type of medical kit: First AID", "VIP airplane section: First CLASS", "NFL play that 'moves the chains': First DOWN", "Martha Washington or Mary Todd Lincoln: First LADY", "Captain's next in command: First MATE", "Like the pronoun 'I': First PERSON", "Frosh: First YEAR"],
+        revAllowed: true
+    },
 ];
