@@ -3443,4 +3443,14 @@ export const puzzles = [
         post_solve: ["Type of medical kit: First AID", "VIP airplane section: First CLASS", "NFL play that 'moves the chains': First DOWN", "Martha Washington or Mary Todd Lincoln: First LADY", "Captain's next in command: First MATE", "Like the pronoun 'I': First PERSON", "Frosh: First YEAR"],
         revAllowed: true
     },
+    {
+        id: 345,
+        solution: ["NAME OF A BOARD GAME OR CEREAL", "THIS ___ NOT A DRILL", "ENJOY", "__-FRAME: LETTER SHAPED ARCHITECTURAL STYLE", "FIGHT IN A RING", "JOAN __ ARC", "COCOA-BASED CONFECTIONS"],
+        initialOrderSequence: "4735162",
+        theme: "Forrest Gump quote",
+        hint: "You never know what you're gonna get",
+        hint2: "Forrest Gump quote",
+        post_solve: ["Name of a board game or cereal: LIFE", "This __ not a drill: IS", "Enjoy: LIKE", "__-Frame architectural style: A", "Fight in a ring: BOX", "Joan __ Arc: OF", "Cocoa-based confections: CHOCOLATES"],
+        revAllowed: true
+    },
 ];
