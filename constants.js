@@ -3420,7 +3420,7 @@ export const puzzles = [
         theme: "Number of islands",
         hint: "Island counts",
         hint2: "Number of islands",
-        post_solve: ["US states that contain "island": 1 (Rhode Island)", "Hawaii: 7 inhabited (137 total)", "French Polynesia: 75 inhabited (121 total)", "Greece: 227 inhabited (~6k total)", "Japan: 260 inhabited (14k+ total)", "American/Canadian salad dressing: Thousand Island dressing", "Indonesia: ~6000 inhabited (17k+ total)"],
+        post_solve: ["US states that contain 'island': 1 (Rhode Island)", "Hawaii: 7 inhabited (137 total)", "French Polynesia: 75 inhabited (121 total)", "Greece: 227 inhabited (~6k total)", "Japan: 260 inhabited (14k+ total)", "American/Canadian salad dressing: Thousand Island dressing", "Indonesia: ~6000 inhabited (17k+ total)"],
         revAllowed: true        
     }
 ];
