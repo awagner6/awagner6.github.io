@@ -3422,5 +3422,15 @@ export const puzzles = [
         hint2: "Number of islands",
         post_solve: ["US states that contain 'island': 1 (Rhode Island)", "Hawaii: 7 inhabited (137 total)", "French Polynesia: 75 inhabited (121 total)", "Greece: 227 inhabited (~6k total)", "Japan: 260 inhabited (14k+ total)", "American/Canadian salad dressing: Thousand Island dressing", "Indonesia: ~6000 inhabited (17k+ total)"],
         revAllowed: true        
-    }
+    },
+    {
+        id: 343,
+        solution: ["CHINESE BOARD GAME WITH A TWO-LETTER NAME", "SEA BETWEEN EUROPE AND AFRICA", "SEA SOUTHEAST OF SWEDEN", "TYPE OF HANDWOVEN RUG", "WHERE BEN & JERRY'S IS HEADQUARTERED", "YALE'S STATE", "PRISON"],
+        initialOrderSequence: "5264173",
+        theme: "Monopoly spaces along the opening side",
+        hint: "On the board",
+        hint2: "Monopoly spaces along the opening side",
+        post_solve: ["Chinese board game: GO", "Sea between Europe and Africa: Mediterranean", "Sea southeast of Sweden: Baltic", "Type of handwoven rug: Oriental", "Where Ben & Jerry's is headquartered: Vermont", "Yale's state: Connecticut", "Prison: Jail"],
+        revAllowed: true
+    },
 ];
