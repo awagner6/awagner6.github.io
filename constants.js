@@ -3370,7 +3370,7 @@ export const puzzles = [
         theme: "Spin speeds in revolutions per minute (RPM)",
         hint: "Spin speeds (RPM)",
         hint2: "Revolutions per minute",
-        post_solve: ["Drone propeller: 10,000-40,000 rpm", "Power drill high gear: 2,000 rpm", "Washing machine top speed: 800-1600 rpm", "Figure skater (world record): 342 rpm", "Black Hawk helicopter main rotor: 254 rpm", "LP record: 33 1/3 or 45 rpm"],
+        post_solve: ["Drone propeller: 10,000-40,000 rpm", "Power drill high gear: 2,000 rpm", "Washing machine top speed: 800-1600 rpm", "Figure skater (world record): 342 rpm", "Black Hawk helicopter main rotor: 254 rpm", "LP record: 33 1/3 or 45 rpm", "Earth: .00069 RPM (1 rotation per 24 hours)"],
         revAllowed: true        
     },
     {
