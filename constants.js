@@ -3483,4 +3483,14 @@ export const puzzles = [
         post_solve: ["Dave Matthews Band: Ants MARCHing", "Simon & Garfunkel: APRIL Come She Will", "Paul McCartney: MAYbe I'm Amazed", "Sufjan Stevens: Fourth of JULY", "Earth, Wind, and Fire: SEPTEMBER", "Guns 'N Roses: NOVEMBER Rain", "Counting Crows: A Long DECEMBER"],
         revAllowed: true
     },
+    {
+        id: 349,
+        solution: ["LETTUCE UNIT", "___BREAKER: HARD CANDY", "LITTLE___ CLAMS (NAMED FOR A LONG ISLAND TOWN)", "ARTICHOKE CENTER", "TYPE OF ORANGE WITH A 'BUTTON'", "FROG ___: CAJUN DELICACY", "___LONG: SUBWAY SANDWICH OPTION"],
+        initialOrderSequence: "5724136",
+        theme: "Head to toe of food",
+        hint: "Food for the body",
+        hint2: "Head to toe of food",
+        post_solve: ["HEAD of lettuce", "JAWbreaker", "LittleNECK clams", "Artichoke HEART", "NAVEL orange", "Frog LEGS", "FOOTlong sub"],
+        revAllowed: true
+    },
 ];
