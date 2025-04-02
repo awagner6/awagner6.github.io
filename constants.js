@@ -3493,4 +3493,14 @@ export const puzzles = [
         post_solve: ["HEAD of lettuce", "JAWbreaker", "LittleNECK clams", "Artichoke HEART", "NAVEL orange", "Frog LEGS", "FOOTlong sub"],
         revAllowed: true
     },
+    {
+        id: 350,
+        solution: ["LONGTIME AUDI SEDAN OR SIZE OF PAPER", "PYRIDOXINE (VITAMIN)", "CUBIC BOARD GAME ROLLER WITH PIPS (IN LINGO)", "KEYBOARD KEY WITH A MOON ICON ON MACS", "LUXURY PRIVATE JET IN A 2010 SONG", "POPULAR FRENCH TV CHANNEL OR BMW MODEL", "TYPE OF COMBUSTION ENGINE"],
+        initialOrderSequence: "2651743",
+        theme: "Letter + 6",
+        hint: "All 6s",
+        hint2: "Letter + 6",
+        post_solve: ["Longtime Audi sedan or paper size: A6", "Pyridoxine: Vitamin B6", "Cubic board game roller (in lingo): D6", "Keyboard key with a moon icon: F6", "Luxury private jet in a 2010 song: (Like a) G6", "Popular French TV channel or BMW model: M6", "Type of combustion engine: V6"],
+        revAllowed: true
+    },
 ];
