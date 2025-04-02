@@ -3503,4 +3503,14 @@ export const puzzles = [
         post_solve: ["Longtime Audi sedan or paper size: A6", "Pyridoxine: Vitamin B6", "Cubic board game roller (in lingo): D6", "Keyboard key with a moon icon: F6", "Luxury private jet in a 2010 song: (Like a) G6", "Popular French TV channel or BMW model: M6", "Type of combustion engine: V6"],
         revAllowed: true
     },
+    {
+        id: 351,
+        solution: ["ADAM WEST", "MICHAEL KEATON", "VAL KILMER", "GEORGE CLOONEY", "CHRISTIAN BALE", "BEN AFFLECK", "ROBERT PATTINSON"],
+        initialOrderSequence: "3612754",
+        theme: "Batman actors over the years",
+        hint: "Cavemen of history",
+        hint2: "Batman actors over the years",
+        post_solve: ["Adam West: 1966-68", "Michael Keaton: 1989-1992", "Val Kilmer: 1995", "George Clooney: 1997", "Christian Bale: 2005-2012", "Ben Affleck: 2016-2021", "Robert Pattinson: 2022-"],
+        revAllowed: true
+    },
 ];
