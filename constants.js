@@ -3366,7 +3366,7 @@ export const puzzles = [
     {
         id: 337,
         solution: ["DRONE PROPELLER", "POWER DRILL HIGH GEAR", "WASHING MACHINE TOP SPEED", "FIGURE SKATER (WORLD RECORD)", "BLACK HAWK HELICOPTER MAIN ROTOR", "LP RECORD", "EARTH"],
-        initalOrderSequence: "3674512",
+        initialOrderSequence: "3674512",
         theme: "Spin speeds in revolutions per minute (RPM)",
         hint: "Spin speeds (RPM)",
         hint2: "Revolutions per minute",
