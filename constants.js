@@ -3462,5 +3462,15 @@ export const puzzles = [
         hint2: "Final + word",
         post_solve: ["'Who Wants To Be A Millionaire' confirmation: Final ANSWER", "Arena rock song by Europe: (The) Final COUNTDOWN", "Apple video editing software: Final CUT", "Horror film franchise: Final DESTINATION", "Penultimate March Madness round: Final FOUR", "Star Trek description of space: (The) Final FRONTIER", "Last clue read by Ken Jennings: Final JEOPARDY"],
         revAllowed: true
-    }
+    },
+    {
+        id: 347,
+        solution: ["GRIDDY", "NAE NAE", "CHA CHA SLIDE", "MACARENA", "MOONWALK", "YMCA", "THE TWIST"],
+        initialOrderSequence: "2641753",
+        theme: "Dance craze timeline",
+        hint: "(Time)line dances",
+        hint2: "Dance craze timeline",
+        post_solve: ["Griddy: 2021", "Whip / Nae Nae: 2015", "Cha Cha Slide: 2000", "Macarena: 1996", "Moonwalk: 1983", "YMCA: 1979", "The Twist: 1960"],
+        revAllowed: true        
+    },
 ];
