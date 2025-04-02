@@ -3447,7 +3447,7 @@ export const puzzles = [
         id: 345,
         solution: ["TYPE OF MEDICAL KIT", "VIP AIRPLANE SECTION", "NFL PLAY THAT 'MOVES THE CHAINS'", "MARTHA WASHINGTON OR MARY TODD LINCOLN", "CAPTAIN'S NEXT IN COMMAND", "LIKE THE PRONOUN 'I'", "FROSH"],
         initialOrderSequence: "2541673",
-        theme: "Firsts",
+        theme: "Firsts alphabetically",
         hint: "First words (A<->Z)",
         hint2: "First + word",
         post_solve: ["Type of medical kit: First AID", "VIP airplane section: First CLASS", "NFL play that 'moves the chains': First DOWN", "Martha Washington or Mary Todd Lincoln: First LADY", "Captain's next in command: First MATE", "Like the pronoun 'I': First PERSON", "Frosh: First YEAR"],
@@ -3457,7 +3457,7 @@ export const puzzles = [
         id: 346,
         solution: ["'WHO WANTS TO BE A MILLIONAIRE' CONFIRMATION", "ARENA ROCK SONG BY EUROPE", "APPLE VIDEO EDITING SOFTWARE", "HORROR FILM FRANCHISE SINCE 2000", "PENULTIMATE MARCH MADNESS ROUND", "STAR TREK DESCRIPTION OF SPACE", "LAST CLUE READ BY KEN JENNINGS"],
         initialOrderSequence: "3627154",
-        theme: "Finals",
+        theme: "Finals alphabetically",
         hint: "Final words (A<->Z)",
         hint2: "Final + word",
         post_solve: ["'Who Wants To Be A Millionaire' confirmation: Final ANSWER", "Arena rock song by Europe: (The) Final COUNTDOWN", "Apple video editing software: Final CUT", "Horror film franchise: Final DESTINATION", "Penultimate March Madness round: Final FOUR", "Star Trek description of space: (The) Final FRONTIER", "Last clue read by Ken Jennings: Final JEOPARDY"],
@@ -3472,5 +3472,15 @@ export const puzzles = [
         hint2: "Dance craze timeline",
         post_solve: ["Griddy: 2021", "Whip / Nae Nae: 2015", "Cha Cha Slide: 2000", "Macarena: 1996", "Moonwalk: 1983", "YMCA: 1979", "The Twist: 1960"],
         revAllowed: true        
+    },
+    {
+        id: 348,
+        solution: ["ANTS ___ING: DAVE MATTHEWS BAND", "___ COME SHE WILL: SIMON & GARFUNKEL", "___BE I'M AMAZED: PAUL MCCARTNEY", "FOURTH OF ___: SUFJAN STEVENS", "____: EARTH WIND AND FIRE", "____ RAIN: GUNS 'N ROSES", "A LONG ____: COUNTING CROWS"],
+        initialOrderSequence: "3612754",
+        theme: "Music months",
+        hint: "The year in music",
+        hint2: "Hidden months",
+        post_solve: ["Dave Matthews Band: Ants MARCHing", "Simon & Garfunkel: APRIL Come She Will", "Paul McCartney: MAYbe I'm Amazed", "Sufjan Stevens: Fourth of JULY", "Earth, Wind, and Fire: SEPTEMBER", "Guns 'N Roses: NOVEMBER Rain", "Counting Crows: A Long DECEMBER"],
+        revAllowed: true
     },
 ];
