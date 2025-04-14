@@ -3513,4 +3513,14 @@ export const puzzles = [
         post_solve: ["Adam West: 1966-68", "Michael Keaton: 1989-1992", "Val Kilmer: 1995", "George Clooney: 1997", "Christian Bale: 2005-2012", "Ben Affleck: 2016-2021", "Robert Pattinson: 2022-"],
         revAllowed: true
     },
+    {
+        id: 352,
+        solution: ["POPULAR URL ENDER", "VIN DIESEL 'FAST AND FURIOUS' ROLE", "FAMILY MEMBER", "CUTESY EATING NOISE (WHEN TRIPLED)", "CHEERLEADING OBJECT (WHEN DOUBLED)", "ACTOR HARDY OR HIDDLESTON", "___ KIPPUR: JEWISH HOLIDAY"],
+        initialOrderSequence: "2517634",
+        theme: "Letter + om",
+        hint: "Premeditated",
+        hint2: "Letter + om",
+        post_solve: ["Popular URL ender: COM", "Vin Diesel 'Fast and Furious' role: DOM", "Family member: MOM", "Cutesy eating noise (when tripled): NOM", "Cheerleading object (when doubled): POM", "Actor Hardy or Hiddleston: TOM", "___ Kippur: Jewish holiday: YOM"],
+        revAllowed: true
+    },
 ];
