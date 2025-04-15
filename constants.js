@@ -3533,4 +3533,14 @@ export const puzzles = [
         post_solve: ["China: 14", "Brazil: 10", "India: 7", "South Africa: 6", "Mexico: 3", "USA: 2", "South Korea: 1"],
         revAllowed: true
     },
+    {
+        id: 354,
+        solution: ["TWILIGHT SEQUEL", "DREAMWORKS LOGO", "THE LETTER D", "DEBUT KID CUDI ALBUM COVER", "WEREWOLF TRANSFORMATION TRIGGER", "NFL PERIOD OF PLAY AFTER HALF TIME", "FLAG OF TURKEY"],
+        initialOrderSequence: "2641753",
+        theme: "Phases of the moon (starting with new)",
+        hint: "It's just a phase (new start)",
+        hint2: "Phases of the moon (starting with new)",
+        post_solve: ["Twilight sequel: New moon", "Dreamworks logo: waxing crescent", "The letter D: waxing half", "Debut Kid Cudi album cover: waxing gibbous", "Werewolf transformation trigger: full moon", "NFL period after half time: Third quarter (aka waning half)", "Flag of Turkey: waning crescent"],
+        revAllowed: true        
+    },
 ];
