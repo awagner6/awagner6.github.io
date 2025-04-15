@@ -3543,4 +3543,14 @@ export const puzzles = [
         post_solve: ["Twilight sequel: New moon", "Dreamworks logo: waxing crescent", "The letter D: waxing half", "Debut Kid Cudi album cover: waxing gibbous", "Werewolf transformation trigger: full moon", "NFL period after half time: Third quarter (aka waning half)", "Flag of Turkey: waning crescent"],
         revAllowed: true        
     },
+    {
+        id: 355,
+        solution: ["GREEK LETTER ETA", "MALE PRONOUN", "ACTION STAR JET", "EXIST", "3.0 GPA", "ROMAN NUMBERAL 100", "UP ON A COMPASS"],
+        initialOrderSequence: "6451723",
+        theme: "First seven periodic table element abbrs",
+        hint: "Table setting",
+        hint2: "First seven periodic table element abbrs",
+        post_solve: ["Greek letter eta: H (Hydrogen: 1)", "Male pronoun: He (Helium: 2)", "Action star Jet: Li (Lithium: 3)", "Exist: Be (Beryllium: 4)", "3.0 GPA: B (Boron: 5)", "Roman numeral 100: C (Carbon 6)", "Up on a compass: N (Nitrogen: 7)"],
+        revAllowed: true
+    },
 ];
