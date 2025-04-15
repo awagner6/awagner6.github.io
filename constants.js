@@ -3523,4 +3523,14 @@ export const puzzles = [
         post_solve: ["Popular URL ender: COM", "Vin Diesel 'Fast and Furious' role: DOM", "Family member: MOM", "Cutesy eating noise (when tripled): NOM", "Cheerleading object (when doubled): POM", "Actor Hardy or Hiddleston: TOM", "___ Kippur: Jewish holiday: YOM"],
         revAllowed: true
     },
+    {
+        id: 353,
+        solution: ["CHINA", "BRAZIL", "INDIA", "SOUTH AFRICA", "MEXICO", "USA", "SOUTH KOREA"],
+        initialOrderSequence: "5426173",
+        theme: "Number of land neighbors",
+        hint: "Land neighbors",
+        hint2: "Number of distinct land border neighbors",
+        post_solve: ["China: 14", "Brazil: 10", "India: 7", "South Africa: 6", "Mexico: 3", "USA: 2", "South Korea: 1"],
+        revAllowed: true
+    },
 ];
