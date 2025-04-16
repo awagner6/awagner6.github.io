@@ -3558,9 +3558,19 @@ export const puzzles = [
         solution: ["___ NIGHT: 'JOY TO THE WORLD' BAND", "BLUEY FAMILY", "IDITAROD TEAM", "QUEEN ELIZABETH II ROYAL CORGIS (1952-2022)", "NATHAN'S HOT DOG CONTEST RECORD (10 MINUTES)", "TITLE DISNEY DALMATIANS", "BREEDS RECOGNIZED BY THE AKC"],
         initialOrderSequence: "3615724",
         theme: "Dog numbers",
-        hint: "Pup up",
+        hint: "Order pup",
         hint2: "Dog numbers",
         post_solve: ["'Joy to the World' band: 3 Dog Night", "Bluey family: 4 dogs", "Iditarod team: 12-16 dogs", "Royal corgis: 30+ dogs", "Nathan's hot dog contest record: 76 dogs in 10 minutes", "Title Disney dalmatians: 101", "Breeds recognized by the AKC: 200"],
+        revAllowed: true
+    },
+    {
+        id: 357,
+        solution: ["PANELS IN A STANDARD GARFIELD COMIC", "NFL TEAMS WITH CAT NAMES", "PROVERBIAL CAT LIVES", "YEARS 'CATS' ORIGINALLY RAN ON BROADWAY", "WHISKERS ON A CAT'S FACE", "RECOGNIZED CAT BREEDS", "PERFECT MCAT SCORE"],
+        initialOrderSequence: "6523714",
+        theme: "Cat numbers",
+        hint: "Fe-lineup",
+        hint2: "Cat numbers",
+        post_solve: ["Panels in a Garfield comic: 3", "NFL teams with cat names: 4 (Lions, Bengals, Panthers, Jaguars)", "Proverbial cat lives: 9", "Years 'Cats' originally ran on Broadway: 18", "Whiskers on a cat's face: 24", "Recognized cat breeds: 45-73 (depending on authority)", "Perfect MCAT score: 528"],
         revAllowed: true
     },
 ];
