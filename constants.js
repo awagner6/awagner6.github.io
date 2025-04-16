@@ -3553,4 +3553,14 @@ export const puzzles = [
         post_solve: ["Greek letter eta: H (Hydrogen: 1)", "Male pronoun: He (Helium: 2)", "Action star Jet: Li (Lithium: 3)", "Exist: Be (Beryllium: 4)", "3.0 GPA: B (Boron: 5)", "Roman numeral 100: C (Carbon 6)", "Up on a compass: N (Nitrogen: 7)"],
         revAllowed: true
     },
+    {
+        id: 356,
+        solution: ["___ NIGHT: 'JOY TO THE WORLD' BAND", "BLUEY FAMILY", "IDITAROD TEAM", "QUEEN ELIZABETH II ROYAL CORGIS (1952-2022)", "NATHAN'S HOT DOG CONTEST RECORD (10 MINUTES)", "TITLE DISNEY DALMATIANS", "BREEDS RECOGNIZED BY THE AKC"],
+        initialOrderSequence: "3615724",
+        theme: "Dog numbers",
+        hint: "Pup up",
+        hint2: "Dog numbers",
+        post_solve: ["'Joy to the World' band: 3 Dog Night", "Bluey family: 4 dogs", "Iditarod team: 12-16 dogs", "Royal corgis: 30+ dogs", "Nathan's hot dog contest record: 76 dogs in 10 minutes", "Title Disney dalmatians: 101", "Breeds recognized by the AKC: 200"],
+        revAllowed: true
+    },
 ];
