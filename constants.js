@@ -3573,4 +3573,14 @@ export const puzzles = [
         post_solve: ["Panels in a Garfield comic: 3", "NFL teams with cat names: 4 (Lions, Bengals, Panthers, Jaguars)", "Proverbial cat lives: 9", "Years 'Cats' originally ran on Broadway: 18", "Whiskers on a cat's face: 24", "Recognized cat breeds: 45-73 (depending on authority)", "Perfect MCAT score: 528"],
         revAllowed: true
     },
+    {
+        id: 358,
+        solution: ["THE GHOST THREAT", "ASSAULT OF THE SIMULACRA", "KARMIC JUSTICE OF THE DARK FORCE WIELDERS", "A FRESH ASPIRATION", "THE DOMINION RETALIATES", "SECOND COMING OF THE LIGHT FORCE WIELDERS", "THE POWER ROUSES"],
+        initialOrderSequence: "4561237",
+        theme: "Star Wars episodes",
+        hint: "Stellar skirmishes episodes",
+        hint2: "Star Wars episodes",
+        post_solve: ["The Ghost Threat - Episode I: The Phantom Menace", "Assault of the Simulacra - Episode II: Attack of the Clones", "Karmic Justice of the Dark Force Wielders - Episode III: Revenge of the Sith", "A Fresh Aspiration - Episode IV: A New Hope", "The Dominion Retaliates - Episode V: The Empire Strikes Back", "Second Coming of the Light Force Wielders - Episode VI: Return of the Jedi", "The Power Rouses - Episode VII: The Force Awakens"],
+        revAllowed: true        
+    },
 ];
