@@ -3583,4 +3583,14 @@ export const puzzles = [
         post_solve: ["The Ghost Threat - Episode I: The Phantom Menace", "Assault of the Simulacra - Episode II: Attack of the Clones", "Karmic Justice of the Dark Force Wielders - Episode III: Revenge of the Sith", "A Fresh Aspiration - Episode IV: A New Hope", "The Dominion Retaliates - Episode V: The Empire Strikes Back", "Second Coming of the Light Force Wielders - Episode VI: Return of the Jedi", "The Power Rouses - Episode VII: The Force Awakens"],
         revAllowed: true        
     },
+    {
+        id: 359,
+        solution: ["B__A_ : CARB BAKED IN LOAVES", "__PH__A__: EARLY SETTING IN 'ANNIE'", "___S '__!': HOLLERS IN PAIN", "___TCH__: MICHIGAN GOV WHITMER", "__O_S_: LOOSE UPPER GARMENT", "___EN__US: NATIVE", "_____N_: PRONE TO HURTING OTHERS"],
+        initialOrderSequence: "3641275",
+        theme: "Missing ROYGBIV colors",
+        hint: "Colorless",
+        hint2: "Missing ROYGBIV colors",
+        post_solve: ["Carb baked in loaves: bREaD (red)", "Early setting in 'Annie': ORphANaGE (orange)", "Hollers in pain: YELLs 'OW!' (blue)", "Michigan gov Whitmer: GREtchEN (green)", "Loose upper garment: BLoUsE (blue)", "Native: INDIGenOus (indigo)", "Prone to hurting others: VIOLEnT (violet)"],
+        revAllowed: true
+    }
 ];
