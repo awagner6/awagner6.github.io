@@ -3592,5 +3592,15 @@ export const puzzles = [
         hint2: "Missing ROYGBIV colors",
         post_solve: ["Carb baked in loaves: bREaD (red)", "Early setting in 'Annie': ORphANaGE (orange)", "Hollers in pain: YELLs 'OW!' (blue)", "Michigan gov Whitmer: GREtchEN (green)", "Loose upper garment: BLoUsE (blue)", "Native: INDIGenOus (indigo)", "Prone to hurting others: VIOLEnT (violet)"],
         revAllowed: true
-    }
+    },
+    {
+        id: 360,
+        solution: ["SOUTH SUDAN", "SINGAPORE",  "ALGERIA", "ISRAEL", "INDIA", "AUSTRALIA", "USA"],
+        initialOrderSequence: "2651734",
+        theme: "Became a sovereign state",
+        hint: "Sovereignty",
+        hint2: "Became a sovereign state by date",
+        post_solve: ["South Sudan: 2011", "Singapore: 1965", "Algeria: 1962", "Israel: 1948", "India: 1947", "Australia: 1901", "USA: 1776"],
+        revAllowed: true
+    },
 ];
