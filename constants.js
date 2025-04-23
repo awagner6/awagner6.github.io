@@ -3603,4 +3603,14 @@ export const puzzles = [
         post_solve: ["South Sudan: 2011", "Singapore: 1965", "Algeria: 1962", "Israel: 1948", "India: 1947", "Australia: 1901", "USA: 1776"],
         revAllowed: true
     },
+    {
+        id: 361,
+        solution: ["__ IN BANGKOK: 80s POP HIT", "__ AT FREDDY'S: HORROR GAME", "ADAM SANDLER HANUKKAH MOVIE", "SHAKESPEARE COMEDY", "__ OF HALLOWEEN: OCTOBER TV BLOCK", "2002 ROMCOM ABOUT LENT", "ARABIAN FOLK ANTHOLOGY"],
+        initialOrderSequence: "6512473",
+        theme: "Number of nights",
+        hint: "Nights",
+        hint2: "Number of nights",
+        post_solve: ["80s pop hit: ONE NIGHT in Bangkok", "Horror game: FIVE NIGHTS at Freddy's", "Adam Sandler Hanukkah movie: 8 CRAZY NIGHTS", "Shakespeare comedy: TWELFTH NIGHT", "October TV block: 31 NIGHTS of Halloween", "2002 romcom about Lent: 40 days and 40 NIGHTS", "Arabian folk anthology: 1001 NIGHTS"],
+        revAllowed: true
+    },
 ];
