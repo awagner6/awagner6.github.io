@@ -3613,4 +3613,14 @@ export const puzzles = [
         post_solve: ["80s pop hit: ONE NIGHT in Bangkok", "Horror game: FIVE NIGHTS at Freddy's", "Adam Sandler Hanukkah movie: 8 CRAZY NIGHTS", "Shakespeare comedy: TWELFTH NIGHT", "October TV block: 31 NIGHTS of Halloween", "2002 romcom about Lent: 40 days and 40 NIGHTS", "Arabian folk anthology: 1001 NIGHTS"],
         revAllowed: true
     },
+    {
+        id: 362,
+        solution: ["___ MORE: SONG IN 'LES MISÉRABLES'", "___ OF THE CONDOR: ROBERT REDFORD THRILLER", "TIME PERIOD WHISPERED IN 'THE RING'", "___ A WEEK: BEATLES SONG", "HOW TO LOSE A GUY IN ___: 2003 ROMCOM", "___ LATER: 2002 ZOMBIE MOVIE", "___ OF SUMMER: 2009 ROMCOM"],
+        initialOrderSequence: "2651473",
+        theme: "Number of days",
+        hint: "...and Days",
+        hint2: "Number of days",
+        post_solve: ["Song in Les Misérables: ONE DAY More", "Robert Redford thriller: THREE DAYS of the Condor", "Time period whispered in 'The Ring': SEVEN DAYS", "Beatles song: EIGHT DAYS a Week", "2003 romcom: How to Lose a Guy in 10 DAYS", "2002 zombie movie: 28 DAYS Later", "2009 romcom: 500 DAYS of Summer"],
+        revAllowed: true
+    }
 ];
