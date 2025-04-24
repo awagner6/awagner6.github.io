@@ -3545,7 +3545,7 @@ export const puzzles = [
     },
     {
         id: 355,
-        solution: ["GREEK LETTER ETA", "MALE PRONOUN", "ACTION STAR JET", "EXIST", "3.0 GPA", "ROMAN NUMBERAL 100", "UP ON A COMPASS"],
+        solution: ["GREEK LETTER ETA", "MALE PRONOUN", "ACTION STAR JET", "EXIST", "3.0 GPA", "ROMAN NUMERAL 100", "UP ON A COMPASS"],
         initialOrderSequence: "6451723",
         theme: "First seven periodic table element abbrs",
         hint: "Table setting",
@@ -3590,7 +3590,7 @@ export const puzzles = [
         theme: "Missing ROYGBIV colors",
         hint: "Colorless",
         hint2: "Missing ROYGBIV colors",
-        post_solve: ["Carb baked in loaves: bREaD (red)", "Early setting in 'Annie': ORphANaGE (orange)", "Hollers in pain: YELLs 'OW!' (blue)", "Michigan gov Whitmer: GREtchEN (green)", "Loose upper garment: BLoUsE (blue)", "Native: INDIGenOus (indigo)", "Prone to hurting others: VIOLEnT (violet)"],
+        post_solve: ["Carb baked in loaves: bREaD (red)", "Early setting in 'Annie': ORphANaGE (orange)", "Hollers in pain: YELLs 'OW!' (yellow)", "Michigan gov Whitmer: GREtchEN (green)", "Loose upper garment: BLoUsE (blue)", "Native: INDIGenOus (indigo)", "Prone to hurting others: VIOLEnT (violet)"],
         revAllowed: true
     },
     {
@@ -3622,5 +3622,15 @@ export const puzzles = [
         hint2: "Number of days",
         post_solve: ["Song in Les Misérables: ONE DAY More", "Robert Redford thriller: THREE DAYS of the Condor", "Time period whispered in 'The Ring': SEVEN DAYS", "Beatles song: EIGHT DAYS a Week", "2003 romcom: How to Lose a Guy in 10 DAYS", "2002 zombie movie: 28 DAYS Later", "2009 romcom: 500 DAYS of Summer"],
         revAllowed: true
-    }
+    },
+    {
+        id: 363,
+        solution: ["___ INNING STRETCH", "MUSICAL NOTE AKA A QUAVER", "___ CIRCUIT: WEST COAST COURT OF APPEALS", "PLACE TO THE RIGHT OF A DECIMAL POINT", "LAST-SECOND 'HOUR'", "___ MAN: HOME CROWD NOISE AT A FOOTBALL GAME", "FLOOR SUPERSTITIOUSLY 'OMITTED' FROM BUILDINGS"],
+        initialOrderSequence: "4625173",
+        theme: "7th - 13th",
+        hint: "Ordinal Up (pt. 2)",
+        hint2: "7th - 13th",
+        post_solve: ["___ inning stretch: 7th", "Musical note AKA a quaver: 8th note", "West coast court of appeals: 9th circuit", "Place to the right of a decimal: 10ths place" , "Last-second hour: 11th hour", "Nickname for home crowd noise: 12th man", "Superstitiously 'omitted' floor: 13th"],
+        revAllowed: true
+    },
 ];
