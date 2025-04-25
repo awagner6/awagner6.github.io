@@ -3633,4 +3633,14 @@ export const puzzles = [
         post_solve: ["___ inning stretch: 7th", "Musical note AKA a quaver: 8th note", "West coast court of appeals: 9th circuit", "Place to the right of a decimal: 10ths place" , "Last-second hour: 11th hour", "Nickname for home crowd noise: 12th man", "Superstitiously 'omitted' floor: 13th"],
         revAllowed: true
     },
+    {
+        id: 364,
+        solution: ["THE NEW YORK TIMES", "NATIONAL GEOGRAPHIC", "THE WALL STREET JOURNAL", "TIME MAGAZINE", "THE NEW YORKER", "ROLLING STONE", "WIRED"],
+        initialOrderSequence: "2657314",
+        theme: "Age of publications",
+        hint: "Old <-> new media",
+        hint2: "Age of publications",
+        post_solve: ["The New York Times: 1851", "National Geographic: 1888", "The Wall Street Journal: 1889", "Time Magazine: 1921", "The New Yorker: 1925 (Happy 100th!)", "Rolling Stone: 1967", "Wired: 1993"],
+        revAllowed: true
+    },
 ];
