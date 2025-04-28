@@ -3650,7 +3650,7 @@ export const puzzles = [
         theme: "Numbers of years",
         hint: "A revolutionary puzzle",
         hint2: "Numbers of years",
-        post_solve: ["Bachelor's degree: 4 YEAR degree", "First permanent tooth to erupt: 6 YEAR molar", "Marilyn Monroe film: 7 YEAR Itch", "Led Zeppelin song: 10 YEARS Gone" ,"2013 Best Picture: 12 YEARS a Slave", "Typical home loan: 30 YEAR mortgage", "Medieval conflict from 1337-1453: 100 YEARS War"],
+        post_solve: ["Bachelor's degree: 4 YEAR degree", "First permanent tooth to erupt: 6 YEAR molar", "Marilyn Monroe film: 7 YEAR Itch", "Led Zeppelin song: 10 YEARS Gone" ,"2013 Best Picture: 12 YEARS a Slave", "Typical home loan: 30 YEAR mortgage", "Medieval conflict from 1337-1453: 100 YEARS War<br>🎉 Happy birthday Order Up!!! 🎉"],
         revAllowed: true
     }
 ];
