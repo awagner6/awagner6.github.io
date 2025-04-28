@@ -3643,4 +3643,14 @@ export const puzzles = [
         post_solve: ["The New York Times: 1851", "National Geographic: 1888", "The Wall Street Journal: 1889", "Time Magazine: 1921", "The New Yorker: 1925 (Happy 100th!)", "Rolling Stone: 1967", "Wired: 1993"],
         revAllowed: true
     },
+    {
+        id: 365,
+        solution: ["DEGREE (AKA BACHELOR'S DEGREE)", "MOLAR: FIRST PERMANENT TOOTH TO ERUPT", "ITCH: MARILYN MONROE FILM", "GONE: LED ZEPPELIN SONG", "A SLAVE: 2013 BEST PICTURE",  "MORTGAGE: TYPICAL HOME LOAN", "WAR: MEDIEVAL CONFLICT FROM 1337-1453"],
+        initialOrderSequence: "2534176",
+        theme: "Numbers of years",
+        hint: "A revolutionary puzzle",
+        hint2: "Numbers of years",
+        post_solve: ["Bachelor's degree: 4 YEAR degree", "First permanent tooth to erupt: 6 YEAR molar", "Marilyn Monroe film: 7 YEAR Itch", "Led Zeppelin song: 10 YEARS Gone" ,"2013 Best Picture: 12 YEARS a Slave", "Typical home loan: 30 YEAR mortgage", "Medieval conflict from 1337-1453: 100 YEARS War"],
+        revAllowed: true
+    }
 ];
