@@ -3652,5 +3652,15 @@ export const puzzles = [
         hint2: "Numbers of years",
         post_solve: ["Bachelor's degree: 4 YEAR degree", "First permanent tooth to erupt: 6 YEAR molar", "Marilyn Monroe film: 7 YEAR Itch", "Led Zeppelin song: 10 YEARS Gone" ,"2013 Best Picture: 12 YEARS a Slave", "Typical home loan: 30 YEAR mortgage", "Medieval conflict from 1337-1453: 100 YEARS War<br>🎉 Happy birthday Order Up!!! 🎉"],
         revAllowed: true
+    },
+    {
+        id: 366,
+        solution: ["DRINKING VESSEL", "DRILL SERGEANT'S WORD", "PRE-___ (MARITAL AGREEMENT)", "LIL DOG", "HOW'S IT HANGING?", "COMMON LATE NIGHT 'BOOTY TEXT'", "'MHM'"],
+        initialOrderSequence: "4726513",
+        theme: "Letter + 'up'",
+        hint: "Order + Up!",
+        hint2: "Letter + 'up'",
+        post_solve: ["Drinking vessel: Cup", "Drill sergeant's word: Hup", "Pre-__ (Marital agreement): Nup", "Lil dog: Pup", "How's it hanging?: Sup", "Common late night 'booty text': U up?", "'Mhm': Yup"],
+        revAllowed: true
     }
 ];
