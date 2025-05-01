@@ -3662,5 +3662,15 @@ export const puzzles = [
         hint2: "Letter + 'up'",
         post_solve: ["Drinking vessel: Cup", "Drill sergeant's word: Hup", "Pre-__ (Marital agreement): Nup", "Lil dog: Pup", "How's it hanging?: Sup", "Common late night 'booty text': U up?", "'Mhm': Yup"],
         revAllowed: true
+    },
+    {
+        id: 367,
+        solution: ["SPINAL DISK", "STANDARD COMPACT DISC (CD-ROM)", "OLYMPIC DISCUS", "ULTIMATE DISC", "NYC MANHOLE COVER", "WORLD'S LARGEST GONG", "MILKY WAY BLACK HOLE ACCRETION DISK"],
+        initialOrderSequence: "5416273",
+        theme: "Disc diameters",
+        hint: "Disc/k counts",
+        hint2: "Disc diameters",
+        post_solve: ["Spinal disk: ~1 inch", "Standard CD: 4.7 inches", "Olympic discus: 7.09 (women) or 8.66 (men) inches", "Ultimate disc: 10.75 inches", "NYC manhole cover: 48 inches", "World's largest gong: 80 inches", "Milky way black hole accretion disk: .01 lightyears"],
+        revAllowed: true
     }
 ];
