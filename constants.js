@@ -3672,5 +3672,25 @@ export const puzzles = [
         hint2: "Disc diameters",
         post_solve: ["Spinal disk: ~1 inch", "Standard CD: 4.7 inches", "Olympic discus: 7.09 (women) or 8.66 (men) inches", "Ultimate disc: 10.75 inches", "NYC manhole cover: 48 inches", "World's largest gong: 80 inches", "Milky way black hole accretion disk: .01 lightyears"],
         revAllowed: true
+    },
+    {
+        id: 368,
+        solution: ["CHICAGO PIZZA STYLE", "COMEDIAN/ACTRESS TIFFANY", "PLACE FOR EXPERIMENTS WITH BACTERIA", "RED ROOT VEGETABLE", "DIRECTV DEVICE", "___ FISH: RHYMING EUROPEAN CANDY", "SOURCE OF 'SCHLEP' AND 'SCHMOOZE'"],
+        initialOrderSequence: "3654172",
+        theme: "Dishes (A<->Z)",
+        hint: "Do the dishes (A<->Z)",
+        hint2: "____dish (A<->Z)",
+        post_solve: ["Chicago pizza style: Deep dish", "Comedian/actress Tiffany: Haddish", "Place for experiments with bacteria: Petri dish", "Red root vegetable: Radish", "DirecTV device: Satellite dish", "Rhyming European candy: Swedish Fish", "Source of 'schlep' and 'schmooze': Yiddish"],
+        revAllowed: true
+    },
+    {
+        id: 369,
+        solution: ["STANDARD CONTRACT TEXT", "CHURCH DONATION DISH", "BASEBALL BATTER'S LOCALE", "CAR IDENTIFIER", "PASSOVER CENTERPIECE", "SLAB OF EARTH'S CRUST", "CUSTOMIZED CAR IDENTIFIER"],
+        initialOrderSequence: "3761425",
+        theme: "Plates A<->Z",
+        hint: "Plate collection (A<->Z)",
+        hint2: "____ plate (A<->Z)",
+        post_solve: ["Standard contract text: Boilerplate", "Church donation dish: Collection plate", "Baseball batter's locale: Home plate", "Car identifier: License plate", "Passover centerpiece: Seder plate", "Slab of Earth's crust: Tectonic plate", "Customized car identifier: Vanity plate"],
+        revAllowed: true
     }
 ];
