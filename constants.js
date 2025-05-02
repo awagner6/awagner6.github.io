@@ -3692,5 +3692,15 @@ export const puzzles = [
         hint2: "____ plate (A<->Z)",
         post_solve: ["Standard contract text: Boilerplate", "Church donation dish: Collection plate", "Baseball batter's locale: Home plate", "Car identifier: License plate", "Passover centerpiece: Seder plate", "Slab of Earth's crust: Tectonic plate", "Customized car identifier: Vanity plate"],
         revAllowed: true
+    },
+    {
+        id: 370,
+        solution: ["DODGERS (BROOKLYN -> LA)", "LAKERS (MINNEAPOLIS -> LA)", "JAZZ (NEW ORLEANS -> UTAH)", "COLTS (BALTIMORE -> INDIANAPOLIS)", "NETS (NEW JERSEY -> BROOKLYN)", "CHARGERS (SAN DIEGO -> LA)", "RAIDERS (OAKLAND -> LAS VEGAS)"],
+        initialOrderSequence: "4127365",
+        theme: "Timeline of teams moving",
+        hint: "Making moves",
+        hint2: "Timeline of teams moving",
+        post_solve: ["Dodgers (Brooklyn -> LA): 1958", "Lakers (Minneapolis -> LA): 1960", "Jazz (New Orleans -> Utah): 1979", "Colts (Baltimore -> Indianapolis): 1984", "Nets (New Jersey -> Brooklyn): 2012", "Chargers (San Diego -> Los Angeles): 2017", "Raiders (Oakland -> Las Vegas): 2020"],
+        revAllowed: true
     }
 ];
