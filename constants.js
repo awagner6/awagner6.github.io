@@ -3702,5 +3702,15 @@ export const puzzles = [
         hint2: "Timeline of teams moving",
         post_solve: ["Dodgers (Brooklyn -> LA): 1958", "Lakers (Minneapolis -> LA): 1960", "Jazz (New Orleans -> Utah): 1979", "Colts (Baltimore -> Indianapolis): 1984", "Nets (New Jersey -> Brooklyn): 2012", "Chargers (San Diego -> Los Angeles): 2017", "Raiders (Oakland -> Las Vegas): 2020"],
         revAllowed: true
-    }
+    },
+    {
+        id: 371,
+        solution: ["SYMBOL OF IRISH HERITAGE", "PIZZERIA OFFERING THAT MIGHT CAUSE BAD BREATH", "UNSOLVABLE PROBLEM FROM GREEK MYTH", "ELDER FAMILIAL NAME FOR THE 'COMMON KNOT'", "METAL BAND THAT COULD EASILY COME APART?", "UPDO HAIRSTYLE AKIN TO A BUN", "NECKTIE KNOT NAMED FOR ENGLISH ROYALTY"],
+        initialOrderSequence: "6731542",
+        theme: "Knots A<->Z",
+        hint: "A bad puzzle... KNOT!!!",
+        hint2: "Knots A<->Z",
+        post_solve: ["Symbol of Irish heritage: Celtic knot", "Pizzeria offering: Garlic knot", "Unsolvable problem: Gordian knot", "'Elder' common knot: Granny knot", "Metal band: Slipknot", "Updo akin to a bun: Topknot", "Necktie named for royalty: Windsor knot"],
+        revAllowed: true
+    },
 ];
