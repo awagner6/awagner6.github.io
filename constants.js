@@ -3722,6 +3722,5 @@ export const puzzles = [
         hint2: "Paintings by number of people",
         post_solve: ["Girl With A Pearl Earring: 1", "American Gothic: 2", "Nighthawks: 4", "Dance: 5", "The Last Supper: 13", "The School Of Athens: ~52", "The Garden Of Earthly Delights: 100+<br>Theme idea: Michael Lieberman"],
         revAllowed: true
-        
     }
 ];
