@@ -3713,4 +3713,15 @@ export const puzzles = [
         post_solve: ["Symbol of Irish heritage: Celtic knot", "Pizzeria offering: Garlic knot", "Unsolvable problem: Gordian knot", "'Elder' common knot: Granny knot", "Metal band: Slipknot", "Updo akin to a bun: Topknot", "Necktie named for royalty: Windsor knot"],
         revAllowed: true
     },
+    {
+        id: 372,
+        solution: ["GIRL WITH A PEARL EARRING (VERMEER)", "AMERICAN GOTHIC (WOOD)", "NIGHTHAWKS (HOPPER)", "DANCE (MATISSE)", "THE LAST SUPPER (DA VINCI)", "THE SCHOOL OF ATHENS (RAPHAEL)", "THE GARDEN OF EARTHLY DELIGHTS (BOSCH)"],
+        initialOrderSequence: "2651473",
+        theme: "Paintings by number of people",
+        hint: "Painting people",
+        hint2: "Paintings by number of people",
+        post_solve: ["Girl With A Pearl Earring: 1", "American Gothic: 2", "Nighthawks: 4", "Dance: 5", "The Last Supper: 13", "The School Of Athens: ~52", "The Garden Of Earthly Delights: 100+<br>Theme idea: Michael Lieberman"],
+        revAllowed: true
+        
+    }
 ];
